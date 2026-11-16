@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/vs_300"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:layout_gravity="bottom" android:id="@id/mGridView" android:background="@drawable/shape_6c3d3d3d_corner_10" android:padding="@dimen/vs_10" android:focusable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/vs_50" android:layout_marginRight="@dimen/vs_50" app:layout_constraintBottom_toBottomOf="parent" app:tv_horizontalSpacingWithMargins="@dimen/vs_10" app:tv_selectedItemIsCentered="true" app:tv_verticalSpacingWithMargins="@dimen/vs_10" />
+</FrameLayout>

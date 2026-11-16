@@ -1,0 +1,22 @@
+.class public interface abstract Landroidx/media3/exoplayer/upstream/PlayerIdAwareAllocator;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/media3/exoplayer/upstream/Allocator;
+
+
+# annotations
+.annotation build Landroidx/annotation/RestrictTo;
+    value = {
+        .enum Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract getTotalBytesAllocated()I
+.end method
+
+.method public abstract setPlayerId(Landroidx/media3/exoplayer/analytics/PlayerId;)V
+.end method

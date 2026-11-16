@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg_main" android:padding="@dimen/vs_30" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/ivQRCode" android:layout_width="@dimen/vs_240" android:layout_height="@dimen/vs_240" />
+        <TextView android:textSize="@dimen/ts_24" android:textColor="@color/color_CC000000" android:gravity="center" android:layout_gravity="center" android:id="@id/tvAddress" android:layout_width="@dimen/vs_340" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vs_20" android:lineSpacingMultiplier="1.5" android:textAlignment="gravity" />
+    </LinearLayout>
+</FrameLayout>

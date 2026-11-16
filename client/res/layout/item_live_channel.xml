@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/shape_live_focus" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0mm" android:layout_marginTop="10.0mm" android:layout_marginRight="10.0mm" android:layout_marginBottom="10.0mm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0mm" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/tvChannelNum" android:layout_width="60.0mm" android:layout_height="60.0mm" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    <TextView android:textSize="22.0mm" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="left" android:id="@id/tvChannelName" android:layout_width="0.0mm" android:layout_height="60.0mm" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

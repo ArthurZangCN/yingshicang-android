@@ -1,0 +1,8 @@
+client/build/
+client/dist/
+client/temp/
+*.unsigned.apk
+/tools/
+**/*.iml
+.idea/
+.DS_Store

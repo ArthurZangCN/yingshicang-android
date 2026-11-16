@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg_main" android:paddingLeft="@dimen/ts_16" android:paddingRight="@dimen/ts_16" android:paddingBottom="@dimen/ts_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="@dimen/vs_520" android:paddingHorizontal="@dimen/ts_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vs_15">
+        <TextView android:textSize="@dimen/ts_26" android:textColor="@color/color_FFFFFF" android:gravity="center" android:layout_gravity="center" android:id="@id/whiteList" android:background="@drawable/button_dialog_main" android:padding="@dimen/vs_20" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/vs_20" android:text="全选" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/ts_26" android:textColor="@color/color_FFFFFF" android:gravity="center" android:layout_gravity="center" android:id="@id/blackList" android:background="@drawable/button_dialog_main" android:padding="@dimen/vs_20" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="全不选" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/mGridView" android:layout_width="@dimen/vs_640" android:layout_height="wrap_content" app:tv_horizontalSpacingWithMargins="@dimen/vs_10" app:tv_selectedItemIsCentered="true" app:tv_verticalSpacingWithMargins="@dimen/vs_10" />
+</LinearLayout>

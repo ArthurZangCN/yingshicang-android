@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/mSortLayout" android:layout_width="fill_parent" android:layout_height="@dimen/vs_60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:id="@id/mItemLayout" android:background="@drawable/shape_setting_model_focus" android:padding="@dimen/vs_10" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="@dimen/vs_60" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imgItem" android:layout_width="@dimen/vs_40" android:layout_height="@dimen/vs_40" android:layout_marginLeft="@dimen/vs_10" android:layout_marginRight="@dimen/vs_10" android:layout_marginStart="@dimen/vs_10" android:layout_marginEnd="@dimen/vs_10" app:srcCompat="@drawable/icon_drive" />
+                <TextView android:textSize="@dimen/ts_10" android:textColor="@color/color_FFFFFF" android:layout_gravity="end|bottom|center" android:id="@id/txtMediaName" android:background="@color/color_000000_80" android:padding="@dimen/vs_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/vs_2" android:maxWidth="@dimen/vs_60" android:singleLine="true" android:layout_marginEnd="@dimen/vs_2" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/ts_22" android:textColor="@color/color_FFFFFF" android:ellipsize="marquee" android:gravity="center|left" android:layout_gravity="center" android:id="@id/txtItemName" android:paddingLeft="@dimen/vs_15" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/ts_16" android:textColor="@color/color_FFFFFF_70" android:layout_gravity="center|right" android:id="@id/txtModifiedDate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/vs_10" android:text="MM/dd/yyyy" android:layout_marginEnd="@dimen/vs_10" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/delDrive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:srcCompat="@drawable/icon_delete" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center" android:id="@id/imgConfig" android:background="@drawable/shape_setting_model_focus" android:padding="@dimen/vs_10" android:focusable="true" android:clickable="true" android:layout_width="@dimen/vs_80" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/vs_10" android:layout_marginStart="@dimen/vs_10" app:srcCompat="@drawable/icon_setting_small" />
+</LinearLayout>

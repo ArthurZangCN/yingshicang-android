@@ -1,0 +1,48 @@
+.class public final synthetic Landroidx/media3/exoplayer/t1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+.field public final synthetic b:Landroid/util/Pair;
+
+.field public final synthetic c:Landroidx/media3/exoplayer/drm/KeyRequestInfo;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/t1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/t1;->b:Landroid/util/Pair;
+
+    iput-object p3, p0, Landroidx/media3/exoplayer/t1;->c:Landroidx/media3/exoplayer/drm/KeyRequestInfo;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/exoplayer/t1;->b:Landroid/util/Pair;
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/t1;->c:Landroidx/media3/exoplayer/drm/KeyRequestInfo;
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/t1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+    invoke-static {v2, v0, v1}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->k(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
+
+    return-void
+.end method

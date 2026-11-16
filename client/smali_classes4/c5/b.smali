@@ -1,0 +1,465 @@
+.class public abstract Lc5/b;
+.super Lr/c;
+.source "SourceFile"
+
+
+# instance fields
+.field public final b:Ly5/b;
+
+.field public c:Z
+
+.field public d:Z
+
+.field public e:Ljava/util/concurrent/ScheduledExecutorService;
+
+.field public f:Ljava/util/concurrent/ScheduledFuture;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ScheduledFuture<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field public final g:J
+
+.field public final h:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    invoke-direct {p0, v0}, Lr/c;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    const-class v0, Lc5/b;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Ly5/d;->b(Ljava/lang/Class;)Ly5/b;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    iput-object v0, p0, Lc5/b;->b:Ly5/b;
+
+    .line 12
+    .line 13
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 14
+    .line 15
+    const-wide/16 v1, 0x3c
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-wide v0
+
+    .line 21
+    iput-wide v0, p0, Lc5/b;->g:J
+
+    .line 22
+    .line 23
+    new-instance v0, Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 26
+    .line 27
+    .line 28
+    iput-object v0, p0, Lc5/b;->h:Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    return-void
+.end method
+
+.method public static i(Lc5/b;Lc5/c;J)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    instance-of v0, p1, Lc5/d;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_0
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    check-cast p1, Lc5/d;
+
+    .line 10
+    .line 11
+    iget-wide v0, p1, Lc5/d;->q:J
+
+    .line 12
+    .line 13
+    cmp-long p2, v0, p2
+
+    .line 14
+    .line 15
+    iget-object p0, p0, Lc5/b;->b:Ly5/b;
+
+    .line 16
+    .line 17
+    if-gez p2, :cond_1
+
+    .line 18
+    .line 19
+    const-string p2, "Closing connection due to no pong received: {}"
+
+    .line 20
+    .line 21
+    invoke-interface {p0, p2, p1}, Ly5/b;->trace(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 22
+    .line 23
+    .line 24
+    const-string p0, "The connection was closed because the other endpoint did not respond with a pong in time. For more information check: https://github.com/TooTallNate/Java-WebSocket/wiki/Lost-connection-detection"
+
+    .line 25
+    .line 26
+    const/4 p2, 0x0
+
+    .line 27
+    const/16 p3, 0x3ee
+
+    .line 28
+    .line 29
+    invoke-virtual {p1, p3, p0, p2}, Lc5/d;->f(ILjava/lang/String;Z)V
+
+    .line 30
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_1
+    iget-object p2, p1, Lc5/d;->i:Le5/d;
+
+    .line 34
+    .line 35
+    sget-object p3, Le5/d;->OPEN:Le5/d;
+
+    .line 36
+    .line 37
+    if-ne p2, p3, :cond_4
+
+    .line 38
+    .line 39
+    iget-object p0, p1, Lc5/d;->d:Lr/c;
+
+    .line 40
+    .line 41
+    iget-object p2, p0, Lr/c;->a:Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    check-cast p2, Lh5/g;
+
+    .line 44
+    .line 45
+    if-nez p2, :cond_2
+
+    .line 46
+    .line 47
+    new-instance p2, Lh5/g;
+
+    .line 48
+    .line 49
+    invoke-direct {p2}, Lh5/g;-><init>()V
+
+    .line 50
+    .line 51
+    .line 52
+    iput-object p2, p0, Lr/c;->a:Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    :cond_2
+    iget-object p0, p0, Lr/c;->a:Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    check-cast p0, Lh5/g;
+
+    .line 57
+    .line 58
+    if-eqz p0, :cond_3
+
+    .line 59
+    .line 60
+    invoke-static {p0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p0
+
+    .line 64
+    invoke-virtual {p1, p0}, Lc5/d;->n(Ljava/util/List;)V
+
+    .line 65
+    .line 66
+    .line 67
+    goto :goto_0
+
+    .line 68
+    :cond_3
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    .line 69
+    .line 70
+    const-string p1, "onPreparePing(WebSocket) returned null. PingFrame to sent can\'t be null."
+
+    .line 71
+    .line 72
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 73
+    .line 74
+    .line 75
+    throw p0
+
+    .line 76
+    :cond_4
+    const-string p2, "Trying to ping a non open connection: {}"
+
+    .line 77
+    .line 78
+    invoke-interface {p0, p2, p1}, Ly5/b;->trace(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 79
+    .line 80
+    .line 81
+    :goto_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract j()Ljava/util/Collection;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Collection<",
+            "Lc5/c;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public final k()V
+    .locals 9
+
+    .line 1
+    iget-object v0, p0, Lc5/b;->h:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    iget-wide v1, p0, Lc5/b;->g:J
+
+    .line 5
+    .line 6
+    const-wide/16 v3, 0x0
+
+    .line 7
+    .line 8
+    cmp-long v1, v1, v3
+
+    .line 9
+    .line 10
+    if-gtz v1, :cond_0
+
+    .line 11
+    .line 12
+    iget-object v1, p0, Lc5/b;->b:Ly5/b;
+
+    .line 13
+    .line 14
+    const-string v2, "Connection lost timer deactivated"
+
+    .line 15
+    .line 16
+    invoke-interface {v1, v2}, Ly5/b;->trace(Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    monitor-exit v0
+
+    .line 20
+    return-void
+
+    .line 21
+    :catchall_0
+    move-exception v1
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    iget-object v1, p0, Lc5/b;->b:Ly5/b;
+
+    .line 24
+    .line 25
+    const-string v2, "Connection lost timer started"
+
+    .line 26
+    .line 27
+    invoke-interface {v1, v2}, Ly5/b;->trace(Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    iget-object v1, p0, Lc5/b;->e:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 31
+    .line 32
+    const/4 v2, 0x0
+
+    .line 33
+    if-eqz v1, :cond_1
+
+    .line 34
+    .line 35
+    invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
+
+    .line 36
+    .line 37
+    .line 38
+    iput-object v2, p0, Lc5/b;->e:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 39
+    .line 40
+    :cond_1
+    iget-object v1, p0, Lc5/b;->f:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 41
+    .line 42
+    if-eqz v1, :cond_2
+
+    .line 43
+    .line 44
+    const/4 v3, 0x0
+
+    .line 45
+    invoke-interface {v1, v3}, Ljava/util/concurrent/Future;->cancel(Z)Z
+
+    .line 46
+    .line 47
+    .line 48
+    iput-object v2, p0, Lc5/b;->f:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 49
+    .line 50
+    :cond_2
+    new-instance v1, Ll5/c;
+
+    .line 51
+    .line 52
+    invoke-direct {v1}, Ll5/c;-><init>()V
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-static {v1}, Ljava/util/concurrent/Executors;->newSingleThreadScheduledExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v1
+
+    .line 59
+    iput-object v1, p0, Lc5/b;->e:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 60
+    .line 61
+    new-instance v3, Lc5/a;
+
+    .line 62
+    .line 63
+    move-object v1, p0
+
+    .line 64
+    check-cast v1, Lk5/a;
+
+    .line 65
+    .line 66
+    invoke-direct {v3, v1}, Lc5/a;-><init>(Lk5/a;)V
+
+    .line 67
+    .line 68
+    .line 69
+    iget-object v2, p0, Lc5/b;->e:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 70
+    .line 71
+    iget-wide v6, p0, Lc5/b;->g:J
+
+    .line 72
+    .line 73
+    sget-object v8, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 74
+    .line 75
+    move-wide v4, v6
+
+    .line 76
+    invoke-interface/range {v2 .. v8}, Ljava/util/concurrent/ScheduledExecutorService;->scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v1
+
+    .line 80
+    iput-object v1, p0, Lc5/b;->f:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 81
+    .line 82
+    monitor-exit v0
+
+    .line 83
+    return-void
+
+    .line 84
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 85
+    throw v1
+.end method

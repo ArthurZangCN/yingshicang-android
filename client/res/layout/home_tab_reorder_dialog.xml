@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/ts_16" android:paddingRight="@dimen/ts_16" android:paddingBottom="@dimen/ts_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/ts_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_26" android:textColor="@color/color_000000_80" android:gravity="center" android:id="@id/title" android:paddingTop="@dimen/vs_15" android:layout_width="fill_parent" android:layout_height="@dimen/vs_60" android:text="配置首页TAB" />
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/mRecyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vs_15" android:layout_marginBottom="@dimen/vs_15" android:layout_above="@id/confirm" android:layout_below="@id/title" android:layout_marginVertical="@dimen/vs_15" app:tv_layoutManager="V7LinearLayoutManager" app:tv_selectedItemIsCentered="true" app:tv_verticalSpacingWithMargins="@dimen/vs_10" />
+    <TextView android:textSize="@dimen/ts_26" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm" android:background="@drawable/button_dialog_main" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/vs_60" android:text="确定" android:layout_alignParentBottom="true" />
+</RelativeLayout>

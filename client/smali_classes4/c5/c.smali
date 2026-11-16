@@ -1,0 +1,20 @@
+.class public interface abstract Lc5/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/String;)V
+.end method
+
+.method public abstract b(I)V
+.end method
+
+.method public abstract c(Ljava/lang/String;)V
+.end method
+
+.method public abstract d()Ljava/net/InetSocketAddress;
+.end method
+
+.method public abstract send(Ljava/lang/String;)V
+.end method

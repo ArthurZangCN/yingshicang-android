@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/ts_20" android:textColor="@color/color_FFFFFF" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvSearchWord" android:background="@drawable/button_dialog_main" android:padding="@dimen/vs_8" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/vs_5" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

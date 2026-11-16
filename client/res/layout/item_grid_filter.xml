@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:padding="@dimen/vs_1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/ts_24" android:textColor="@color/color_FFFFFF" android:gravity="center" android:layout_gravity="center" android:id="@id/filterName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/vs_10" android:textAlignment="gravity" android:layout_marginEnd="@dimen/vs_10" />
+    <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/mFilterKv" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tv_horizontalSpacingWithMargins="@dimen/vs_5" app:tv_selectedItemIsCentered="true" app:tv_verticalSpacingWithMargins="@dimen/vs_5" />
+</LinearLayout>

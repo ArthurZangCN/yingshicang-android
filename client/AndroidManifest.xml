@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:uses-libraryandroid="http://schemas.android.com/apk/res-auto" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:targetSandboxVersion="1" package="com.huawei.himovceie" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+    </queries>
+    <permission android:name="com.huawei.himovceie.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.huawei.himovceie.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/app_banner" android:configChanges="keyboardHidden|orientation|screenSize" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@drawable/app_icon" android:label="影视仓" android:largeHeap="true" android:name="com.github.tvbox.osc.base.App" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar">
+        <activity android:enabled="true" android:exported="true" android:launchMode="singleTop" android:name="com.github.tvbox.osc.ui.activity.HomeActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.github.tvbox.osc.ui.activity.LivePlayActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.github.tvbox.osc.ui.activity.DetailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.github.tvbox.osc.ui.activity.PushDetailActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.github.tvbox.osc.ui.activity.PlayActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.PushActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:launchMode="singleTask" android:name="com.github.tvbox.osc.ui.activity.SearchActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:launchMode="singleTask" android:name="com.github.tvbox.osc.ui.activity.FastSearchActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.SettingActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.HistoryActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.CollectActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.DriveActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.BackUpActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.github.CrashActivity"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.H5Activity" android:screenOrientation="sensorLandscape"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.pngcui.skyworth.dlna.service.MediaRenderService">
+            <intent-filter>
+                <action android:name="com.geniusgithub.start.engine"/>
+                <action android:name="com.geniusgithub.restart.engine"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:exported="true" android:name="com.github.tvbox.osc.receiver.SearchReceiver">
+            <intent-filter>
+                <action android:name="android.content.movie.search.Action"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.github.tvbox.osc.receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.github.tvbox.osc.receiver.CustomWebReceiver">
+            <intent-filter>
+                <action android:name="android.content.movie.custom.web.Action"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.huawei.himovceie.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="design_width_in_dp" android:value="1280"/>
+        <meta-data android:name="design_height_in_dp" android:value="720"/>
+        <meta-data android:name="xwalk_enable_download_mode" android:value="enable"/>
+        <meta-data android:name="xwalk_verify" android:value="disable"/>
+        <service android:exported="false" android:name="com.forcetech.service.P2PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P3PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P4PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P5PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P6PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P7PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P8PService"/>
+        <service android:exported="false" android:name="com.forcetech.service.P9PService"/>
+        <service android:exported="false" android:name="com.gsoft.mitv.MainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.huawei.himovceie.utilcode.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.huawei.himovceie.messenger"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.huawei.himovceie.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.huawei.himovceie.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="me.jessyan.autosize.InitProvider"/>
+        <service android:exported="false" android:name="com.tvbus.engine.TVService"/>
+        <provider android:authorities="com.github.razerdp.com.huawei.himovceie.BasePopupInitializer" android:exported="false" android:multiprocess="true" android:name="razerdp.basepopup.BasePopupInitializer"/>
+        <activity android:label="" android:name="com.obsez.android.lib.filechooser.permissions.PermissionActivity" android:theme="@style/Theme.Transparent"/>
+    </application>
+</manifest>

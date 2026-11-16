@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg_main" android:layout_width="@dimen/vs_590" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0dip" android:textColor="@color/color_CC000000" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="选择投屏设备" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/vs_320">
+        <ProgressBar android:layout_gravity="center" android:id="@id/play_loading" android:layout_width="@dimen/vs_50" android:layout_height="@dimen/vs_50" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/anim_loading" android:indeterminateBehavior="repeat" />
+        <com.owen.tvrecyclerview.widget.TvRecyclerView android:id="@id/recycler_view" android:padding="@dimen/ts_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/vs_320" app:tv_verticalSpacingWithMargins="@dimen/vs_10" />
+    </FrameLayout>
+</LinearLayout>

@@ -479,7 +479,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lkotlin/collections/q;->c0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p1}, Lkotlin/collections/p;->A(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p1
 

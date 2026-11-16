@@ -20,11 +20,11 @@
 # instance fields
 .field final synthetic this$0:Landroidx/media3/datasource/okhttp/OkHttpDataSource;
 
-.field final synthetic val$future:Lcom/google/common/util/concurrent/x;
+.field final synthetic val$future:Lcom/google/common/util/concurrent/b0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/media3/datasource/okhttp/OkHttpDataSource;Lcom/google/common/util/concurrent/x;)V
+.method public constructor <init>(Landroidx/media3/datasource/okhttp/OkHttpDataSource;Lcom/google/common/util/concurrent/b0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,7 +37,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;->val$future:Lcom/google/common/util/concurrent/x;
+    iput-object p2, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;->val$future:Lcom/google/common/util/concurrent/b0;
 
     .line 4
     .line 5
@@ -55,11 +55,11 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;->val$future:Lcom/google/common/util/concurrent/x;
+    iget-object p1, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;->val$future:Lcom/google/common/util/concurrent/b0;
 
     .line 2
     .line 3
-    invoke-virtual {p1, p2}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {p1, p2}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
 
     .line 4
     .line 5
@@ -71,11 +71,11 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;->val$future:Lcom/google/common/util/concurrent/x;
+    iget-object p1, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;->val$future:Lcom/google/common/util/concurrent/b0;
 
     .line 2
     .line 3
-    invoke-virtual {p1, p2}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
 
     .line 4
     .line 5

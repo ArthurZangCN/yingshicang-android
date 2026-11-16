@@ -28,13 +28,13 @@
 
 .field private connectionEstablished:Z
 
-.field private final contentTypePredicate:Lcom/google/common/base/k;
+.field private final contentTypePredicate:Lcom/google/common/base/m;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/k<",
+            "Lcom/google/common/base/m<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Lokhttp3/Call$Factory;Ljava/lang/String;Lokhttp3/CacheControl;Landroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/k;)V
+.method private constructor <init>(Lokhttp3/Call$Factory;Ljava/lang/String;Lokhttp3/CacheControl;Landroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/m;)V
     .locals 1
     .param p2    # Ljava/lang/String;
         .annotation build Landroidx/annotation/Nullable;
@@ -100,7 +100,7 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .param p5    # Lcom/google/common/base/k;
+    .param p5    # Lcom/google/common/base/m;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
@@ -111,7 +111,7 @@
             "Ljava/lang/String;",
             "Lokhttp3/CacheControl;",
             "Landroidx/media3/datasource/HttpDataSource$RequestProperties;",
-            "Lcom/google/common/base/k<",
+            "Lcom/google/common/base/m<",
             "Ljava/lang/String;",
             ">;)V"
         }
@@ -138,7 +138,7 @@
     iput-object p4, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->defaultRequestProperties:Landroidx/media3/datasource/HttpDataSource$RequestProperties;
 
     .line 8
-    iput-object p5, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->contentTypePredicate:Lcom/google/common/base/k;
+    iput-object p5, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->contentTypePredicate:Lcom/google/common/base/m;
 
     .line 9
     new-instance p1, Landroidx/media3/datasource/HttpDataSource$RequestProperties;
@@ -150,11 +150,11 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lokhttp3/Call$Factory;Ljava/lang/String;Lokhttp3/CacheControl;Landroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/k;Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;)V
+.method public synthetic constructor <init>(Lokhttp3/Call$Factory;Ljava/lang/String;Lokhttp3/CacheControl;Landroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/m;Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;)V
     .locals 0
 
     .line 1
-    invoke-direct/range {p0 .. p5}, Landroidx/media3/datasource/okhttp/OkHttpDataSource;-><init>(Lokhttp3/Call$Factory;Ljava/lang/String;Lokhttp3/CacheControl;Landroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/k;)V
+    invoke-direct/range {p0 .. p5}, Landroidx/media3/datasource/okhttp/OkHttpDataSource;-><init>(Lokhttp3/Call$Factory;Ljava/lang/String;Lokhttp3/CacheControl;Landroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/m;)V
 
     return-void
 .end method
@@ -204,11 +204,11 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lcom/google/common/util/concurrent/x;
+    new-instance v0, Lcom/google/common/util/concurrent/b0;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 4
     .line 5
@@ -217,7 +217,7 @@
 
     .line 7
     .line 8
-    invoke-direct {v1, p0, v0}, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;-><init>(Landroidx/media3/datasource/okhttp/OkHttpDataSource;Lcom/google/common/util/concurrent/x;)V
+    invoke-direct {v1, p0, v0}, Landroidx/media3/datasource/okhttp/OkHttpDataSource$1;-><init>(Landroidx/media3/datasource/okhttp/OkHttpDataSource;Lcom/google/common/util/concurrent/b0;)V
 
     .line 9
     .line 10
@@ -281,7 +281,7 @@
 .end method
 
 .method private makeRequest(Landroidx/media3/datasource/DataSpec;)Lokhttp3/Request;
-    .locals 10
+    .locals 9
 
     .line 1
     iget-wide v0, p1, Landroidx/media3/datasource/DataSpec;->position:J
@@ -315,7 +315,7 @@
     const/4 v5, 0x1
 
     .line 16
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_9
 
     .line 17
     .line 18
@@ -412,67 +412,67 @@
     .line 65
     .line 66
     .line 67
-    move-result-object v7
+    move-result-object v6
 
     .line 68
-    invoke-interface {v7}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {v6}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     .line 69
     .line 70
     .line 71
-    move-result-object v7
+    move-result-object v6
 
     .line 72
     :goto_0
-    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
 
     .line 73
     .line 74
     .line 75
-    move-result v8
+    move-result v7
 
     .line 76
-    if-eqz v8, :cond_2
+    if-eqz v7, :cond_2
 
     .line 77
     .line 78
-    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 79
     .line 80
     .line 81
-    move-result-object v8
+    move-result-object v7
 
     .line 82
-    check-cast v8, Ljava/util/Map$Entry;
+    check-cast v7, Ljava/util/Map$Entry;
 
     .line 83
     .line 84
-    invoke-interface {v8}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     .line 85
     .line 86
     .line 87
-    move-result-object v9
+    move-result-object v8
 
     .line 88
-    check-cast v9, Ljava/lang/String;
+    check-cast v8, Ljava/lang/String;
 
     .line 89
     .line 90
-    invoke-interface {v8}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-interface {v7}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     .line 91
     .line 92
     .line 93
-    move-result-object v8
+    move-result-object v7
 
     .line 94
-    check-cast v8, Ljava/lang/String;
+    check-cast v7, Ljava/lang/String;
 
     .line 95
     .line 96
-    invoke-virtual {v4, v9, v8}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
+    invoke-virtual {v4, v8, v7}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     .line 97
     .line 98
@@ -481,194 +481,195 @@
 
     .line 100
     :cond_2
-    invoke-static {v0, v1, v2, v3}, Landroidx/media3/datasource/HttpUtil;->buildRangeRequestHeader(JJ)Ljava/lang/String;
+    iget-object v6, p1, Landroidx/media3/datasource/DataSpec;->uri:Landroid/net/Uri;
 
     .line 101
     .line 102
+    invoke-static {v6}, Landroidx/media3/common/util/Util;->inferContentType(Landroid/net/Uri;)I
+
     .line 103
-    move-result-object v0
-
     .line 104
-    const-string v1, "Range"
-
     .line 105
+    move-result v6
+
     .line 106
-    if-eqz v0, :cond_3
+    const/4 v7, 0x4
 
     .line 107
-    .line 108
-    invoke-virtual {v4, v1, v0}, Lokhttp3/Request$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
+    if-ne v6, v7, :cond_3
 
+    .line 108
     .line 109
+    move v6, v5
+
     .line 110
-    .line 111
     goto :goto_1
 
-    .line 112
+    .line 111
     :cond_3
-    const-string v0, "bytes=0-"
+    const/4 v6, 0x0
+
+    .line 112
+    :goto_1
+    invoke-static {v0, v1, v2, v3, v6}, Landroidx/media3/datasource/HttpUtil;->buildRangeRequestHeader(JJZ)Ljava/lang/String;
 
     .line 113
     .line 114
-    invoke-virtual {v4, v1, v0}, Lokhttp3/Request$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
-
     .line 115
-    .line 116
-    .line 117
-    :goto_1
-    iget-object v0, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->userAgent:Ljava/lang/String;
+    move-result-object v0
 
-    .line 118
-    .line 119
+    .line 116
     if-eqz v0, :cond_4
 
-    .line 120
-    .line 121
-    invoke-virtual {v6, v0}, Ljava/util/HashMap;->containsValue(Ljava/lang/Object;)Z
+    .line 117
+    .line 118
+    const-string v1, "Range"
 
+    .line 119
+    .line 120
+    invoke-virtual {v4, v1, v0}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
+
+    .line 121
     .line 122
     .line 123
-    .line 124
-    move-result v0
+    :cond_4
+    iget-object v0, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->userAgent:Ljava/lang/String;
 
+    .line 124
     .line 125
-    if-nez v0, :cond_4
+    if-eqz v0, :cond_5
 
     .line 126
     .line 127
-    const-string v0, "User-Agent"
+    const-string v1, "User-Agent"
 
     .line 128
     .line 129
-    iget-object v1, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->userAgent:Ljava/lang/String;
+    invoke-virtual {v4, v1, v0}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     .line 130
     .line 131
-    invoke-virtual {v4, v0, v1}, Lokhttp3/Request$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
-
     .line 132
-    .line 133
-    .line 134
-    :cond_4
+    :cond_5
     invoke-virtual {p1, v5}, Landroidx/media3/datasource/DataSpec;->isFlagSet(I)Z
 
+    .line 133
+    .line 134
     .line 135
-    .line 136
-    .line 137
     move-result v0
 
+    .line 136
+    if-nez v0, :cond_6
+
+    .line 137
     .line 138
-    if-nez v0, :cond_5
+    const-string v0, "Accept-Encoding"
 
     .line 139
     .line 140
-    const-string v0, "Accept-Encoding"
+    const-string v1, "identity"
 
     .line 141
     .line 142
-    const-string v1, "identity"
+    invoke-virtual {v4, v0, v1}, Lokhttp3/Request$Builder;->header(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     .line 143
     .line 144
-    invoke-virtual {v4, v0, v1}, Lokhttp3/Request$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
-
     .line 145
+    :cond_6
+    iget-object v0, p1, Landroidx/media3/datasource/DataSpec;->httpBody:[B
+
     .line 146
     .line 147
-    :cond_5
-    iget-object v0, p1, Landroidx/media3/datasource/DataSpec;->httpBody:[B
+    if-eqz v0, :cond_7
 
     .line 148
     .line 149
-    if-eqz v0, :cond_6
+    invoke-static {v0}, Lokhttp3/RequestBody;->create([B)Lokhttp3/RequestBody;
 
     .line 150
     .line 151
-    invoke-static {v0}, Lokhttp3/RequestBody;->create([B)Lokhttp3/RequestBody;
-
     .line 152
-    .line 153
-    .line 154
     move-result-object v0
 
-    .line 155
+    .line 153
     goto :goto_2
 
-    .line 156
-    :cond_6
+    .line 154
+    :cond_7
     iget v0, p1, Landroidx/media3/datasource/DataSpec;->httpMethod:I
 
-    .line 157
-    .line 158
+    .line 155
+    .line 156
     const/4 v1, 0x2
 
+    .line 157
+    if-ne v0, v1, :cond_8
+
+    .line 158
     .line 159
-    if-ne v0, v1, :cond_7
+    sget-object v0, Landroidx/media3/common/util/Util;->EMPTY_BYTE_ARRAY:[B
 
     .line 160
     .line 161
-    sget-object v0, Landroidx/media3/common/util/Util;->EMPTY_BYTE_ARRAY:[B
+    invoke-static {v0}, Lokhttp3/RequestBody;->create([B)Lokhttp3/RequestBody;
 
     .line 162
     .line 163
-    invoke-static {v0}, Lokhttp3/RequestBody;->create([B)Lokhttp3/RequestBody;
-
     .line 164
-    .line 165
-    .line 166
     move-result-object v0
 
-    .line 167
+    .line 165
     goto :goto_2
 
-    .line 168
-    :cond_7
+    .line 166
+    :cond_8
     const/4 v0, 0x0
 
-    .line 169
+    .line 167
     :goto_2
     invoke-virtual {p1}, Landroidx/media3/datasource/DataSpec;->getHttpMethodString()Ljava/lang/String;
 
+    .line 168
+    .line 169
     .line 170
-    .line 171
-    .line 172
     move-result-object p1
 
-    .line 173
+    .line 171
     invoke-virtual {v4, p1, v0}, Lokhttp3/Request$Builder;->method(Ljava/lang/String;Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
 
+    .line 172
+    .line 173
     .line 174
-    .line 175
-    .line 176
     invoke-virtual {v4}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
 
+    .line 175
+    .line 176
     .line 177
-    .line 178
-    .line 179
     move-result-object p1
 
-    .line 180
+    .line 178
     return-object p1
 
-    .line 181
-    :cond_8
+    .line 179
+    :cond_9
     new-instance v0, Landroidx/media3/datasource/HttpDataSource$HttpDataSourceException;
+
+    .line 180
+    .line 181
+    const-string v1, "Malformed URL"
 
     .line 182
     .line 183
-    const-string v1, "Malformed URL"
+    const/16 v2, 0x3ec
 
     .line 184
     .line 185
-    const/16 v2, 0x3ec
+    invoke-direct {v0, v1, p1, v2, v5}, Landroidx/media3/datasource/HttpDataSource$HttpDataSourceException;-><init>(Ljava/lang/String;Landroidx/media3/datasource/DataSpec;II)V
 
     .line 186
     .line 187
-    invoke-direct {v0, v1, p1, v2, v5}, Landroidx/media3/datasource/HttpDataSource$HttpDataSourceException;-><init>(Ljava/lang/String;Landroidx/media3/datasource/DataSpec;II)V
-
     .line 188
-    .line 189
-    .line 190
     throw v0
 .end method
 
@@ -1452,7 +1453,7 @@
     .line 94
     .line 95
     .line 96
-    invoke-static {v0}, Ly1/b;->b(Ljava/io/InputStream;)[B
+    invoke-static {v0}, Li2/b;->b(Ljava/io/InputStream;)[B
 
     .line 97
     .line 98
@@ -1587,7 +1588,7 @@
     .line 153
     .line 154
     :goto_4
-    iget-object v5, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->contentTypePredicate:Lcom/google/common/base/k;
+    iget-object v5, p0, Landroidx/media3/datasource/okhttp/OkHttpDataSource;->contentTypePredicate:Lcom/google/common/base/m;
 
     .line 155
     .line 156
@@ -1595,7 +1596,7 @@
 
     .line 157
     .line 158
-    invoke-interface {v5, v2}, Lcom/google/common/base/k;->apply(Ljava/lang/Object;)Z
+    invoke-interface {v5, v2}, Lcom/google/common/base/m;->apply(Ljava/lang/Object;)Z
 
     .line 159
     .line 160

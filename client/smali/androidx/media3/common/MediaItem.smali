@@ -25,7 +25,11 @@
 
 .field public static final EMPTY:Landroidx/media3/common/MediaItem;
 
+.field private static final FIELD_ADBLOCK:Ljava/lang/String;
+
 .field private static final FIELD_CLIPPING_PROPERTIES:Ljava/lang/String;
+
+.field private static final FIELD_DECODE:Ljava/lang/String;
 
 .field private static final FIELD_LIVE_CONFIGURATION:Ljava/lang/String;
 
@@ -39,6 +43,8 @@
 
 
 # instance fields
+.field public final adblock:Z
+
 .field public final clippingConfiguration:Landroidx/media3/common/MediaItem$ClippingConfiguration;
 
 .field public final clippingProperties:Landroidx/media3/common/MediaItem$ClippingProperties;
@@ -48,6 +54,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
+
+.field public final decode:I
 
 .field public final liveConfiguration:Landroidx/media3/common/MediaItem$LiveConfiguration;
 
@@ -190,10 +198,40 @@
 
     .line 53
     .line 54
+    const/4 v0, 0x6
+
+    .line 55
+    invoke-static {v0}, Landroidx/media3/common/util/Util;->intToStringMaxRadix(I)Ljava/lang/String;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v0
+
+    .line 59
+    sput-object v0, Landroidx/media3/common/MediaItem;->FIELD_DECODE:Ljava/lang/String;
+
+    .line 60
+    .line 61
+    const/4 v0, 0x7
+
+    .line 62
+    invoke-static {v0}, Landroidx/media3/common/util/Util;->intToStringMaxRadix(I)Ljava/lang/String;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v0
+
+    .line 66
+    sput-object v0, Landroidx/media3/common/MediaItem;->FIELD_ADBLOCK:Ljava/lang/String;
+
+    .line 67
+    .line 68
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;)V
+.method private constructor <init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;IZ)V
     .locals 0
     .param p3    # Landroidx/media3/common/MediaItem$LocalConfiguration;
         .annotation build Landroidx/annotation/Nullable;
@@ -227,20 +265,26 @@
     .line 10
     iput-object p6, p0, Landroidx/media3/common/MediaItem;->requestMetadata:Landroidx/media3/common/MediaItem$RequestMetadata;
 
+    .line 11
+    iput p7, p0, Landroidx/media3/common/MediaItem;->decode:I
+
+    .line 12
+    iput-boolean p8, p0, Landroidx/media3/common/MediaItem;->adblock:Z
+
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;Landroidx/media3/common/MediaItem$1;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;IZLandroidx/media3/common/MediaItem$1;)V
     .locals 0
 
     .line 1
-    invoke-direct/range {p0 .. p6}, Landroidx/media3/common/MediaItem;-><init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;)V
+    invoke-direct/range {p0 .. p8}, Landroidx/media3/common/MediaItem;-><init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;IZ)V
 
     return-void
 .end method
 
 .method public static fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/MediaItem;
-    .locals 9
+    .locals 11
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
@@ -435,48 +479,78 @@
     .line 83
     .line 84
     .line 85
-    move-result-object p0
+    move-result-object v0
 
     .line 86
-    if-nez p0, :cond_4
+    if-nez v0, :cond_4
 
     .line 87
     .line 88
-    const/4 p0, 0x0
+    const/4 v0, 0x0
 
     .line 89
     :goto_8
-    move-object v5, p0
+    move-object v5, v0
 
     .line 90
     goto :goto_9
 
     .line 91
     :cond_4
-    invoke-static {p0}, Landroidx/media3/common/MediaItem$LocalConfiguration;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/MediaItem$LocalConfiguration;
+    invoke-static {v0}, Landroidx/media3/common/MediaItem$LocalConfiguration;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/MediaItem$LocalConfiguration;
 
     .line 92
     .line 93
     .line 94
-    move-result-object p0
+    move-result-object v0
 
     .line 95
     goto :goto_8
 
     .line 96
     :goto_9
-    new-instance p0, Landroidx/media3/common/MediaItem;
+    sget-object v0, Landroidx/media3/common/MediaItem;->FIELD_DECODE:Ljava/lang/String;
 
     .line 97
     .line 98
-    move-object v2, p0
+    const/4 v1, 0x1
 
     .line 99
-    invoke-direct/range {v2 .. v8}, Landroidx/media3/common/MediaItem;-><init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;)V
+    invoke-virtual {p0, v0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
 
     .line 100
     .line 101
     .line 102
+    move-result v9
+
+    .line 103
+    sget-object v0, Landroidx/media3/common/MediaItem;->FIELD_ADBLOCK:Ljava/lang/String;
+
+    .line 104
+    .line 105
+    const/4 v1, 0x0
+
+    .line 106
+    invoke-virtual {p0, v0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v10
+
+    .line 110
+    new-instance p0, Landroidx/media3/common/MediaItem;
+
+    .line 111
+    .line 112
+    move-object v2, p0
+
+    .line 113
+    invoke-direct/range {v2 .. v10}, Landroidx/media3/common/MediaItem;-><init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;IZ)V
+
+    .line 114
+    .line 115
+    .line 116
     return-object p0
 .end method
 
@@ -655,7 +729,21 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
+    .line 14
     :cond_5
+    sget-object p1, Landroidx/media3/common/MediaItem;->FIELD_DECODE:Ljava/lang/String;
+
+    iget v1, p0, Landroidx/media3/common/MediaItem;->decode:I
+
+    invoke-virtual {v0, p1, v1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 15
+    sget-object p1, Landroidx/media3/common/MediaItem;->FIELD_ADBLOCK:Ljava/lang/String;
+
+    iget-boolean v1, p0, Landroidx/media3/common/MediaItem;->adblock:Z
+
+    invoke-virtual {v0, p1, v1}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
+
     return-object v0
 .end method
 
@@ -726,7 +814,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -766,7 +854,7 @@
 
     .line 36
     .line 37
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 38
     .line 39
@@ -786,7 +874,7 @@
 
     .line 46
     .line 47
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 48
     .line 49
@@ -806,7 +894,7 @@
 
     .line 56
     .line 57
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 58
     .line 59
@@ -826,7 +914,7 @@
 
     .line 66
     .line 67
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 68
     .line 69
@@ -982,7 +1070,7 @@
 
     const/4 v0, 0x0
 
-    .line 14
+    .line 16
     invoke-direct {p0, v0}, Landroidx/media3/common/MediaItem;->toBundle(Z)Landroid/os/Bundle;
 
     move-result-object v0

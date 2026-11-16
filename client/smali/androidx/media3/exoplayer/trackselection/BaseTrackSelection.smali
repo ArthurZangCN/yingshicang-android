@@ -62,7 +62,7 @@
     move v0, v1
 
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 4
     iput p3, p0, Landroidx/media3/exoplayer/trackselection/BaseTrackSelection;->type:I
@@ -110,11 +110,11 @@
     :cond_1
     iget-object p2, p0, Landroidx/media3/exoplayer/trackselection/BaseTrackSelection;->formats:[Landroidx/media3/common/Format;
 
-    new-instance p3, Landroidx/media3/exoplayer/trackselection/f;
+    new-instance p3, Landroidx/media3/exoplayer/trackselection/d;
 
     const/4 v0, 0x2
 
-    invoke-direct {p3, v0}, Landroidx/media3/exoplayer/trackselection/f;-><init>(I)V
+    invoke-direct {p3, v0}, Landroidx/media3/exoplayer/trackselection/d;-><init>(I)V
 
     invoke-static {p2, p3}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -499,7 +499,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/o;->a(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)J
+    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/r;->a(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)J
 
     move-result-wide v0
 
@@ -754,7 +754,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/o;->b(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/r;->b(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)V
 
     return-void
 .end method
@@ -782,7 +782,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/o;->d(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/r;->d(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)V
 
     return-void
 .end method
@@ -791,7 +791,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3, p4}, Landroidx/media3/exoplayer/trackselection/o;->e(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;JLandroidx/media3/exoplayer/source/chunk/Chunk;Ljava/util/List;)Z
+    invoke-static {p0, p1, p2, p3, p4}, Landroidx/media3/exoplayer/trackselection/r;->e(Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;JLandroidx/media3/exoplayer/source/chunk/Chunk;Ljava/util/List;)Z
 
     move-result p1
 

@@ -3,47 +3,42 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/function/Consumer;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/core/util/Consumer;
+.field public final synthetic a:Landroid/location/LocationManager;
+
+.field public final synthetic b:Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/core/util/Consumer;)V
+.method public synthetic constructor <init>(Landroid/location/LocationManager;Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/core/location/d;->a:Landroidx/core/util/Consumer;
+    iput-object p1, p0, Landroidx/core/location/d;->a:Landroid/location/LocationManager;
+
+    iput-object p2, p0, Landroidx/core/location/d;->b:Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
+.method public final call()Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/core/location/d;->a:Landroidx/core/util/Consumer;
+    iget-object v0, p0, Landroidx/core/location/d;->a:Landroid/location/LocationManager;
 
-    check-cast p1, Landroid/location/Location;
+    iget-object v1, p0, Landroidx/core/location/d;->b:Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
 
-    invoke-interface {v0, p1}, Landroidx/core/util/Consumer;->accept(Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Landroidx/core/location/LocationManagerCompat;->b(Landroid/location/LocationManager;Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;)Ljava/lang/Boolean;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method public final synthetic andThen(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/util/function/Consumer$-CC;->$default$andThen(Ljava/util/function/Consumer;Ljava/util/function/Consumer;)Ljava/util/function/Consumer;
-
-    move-result-object p1
-
-    return-object p1
+    return-object v0
 .end method

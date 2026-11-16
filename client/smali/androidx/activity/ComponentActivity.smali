@@ -186,7 +186,7 @@
 
     new-instance v4, Landroidx/activity/b;
 
-    invoke-direct {v4, p0}, Landroidx/activity/b;-><init>(Landroidx/activity/ComponentActivity;)V
+    invoke-direct {v4, p0, v2}, Landroidx/activity/b;-><init>(Ljava/lang/Object;I)V
 
     invoke-direct {v3, v1, v4}, Landroidx/activity/FullyDrawnReporter;-><init>(Ljava/util/concurrent/Executor;Lkotlin/jvm/functions/Function0;)V
 
@@ -260,35 +260,35 @@
     .line 20
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
-    move-result-object v3
+    move-result-object v2
 
-    new-instance v4, Landroidx/activity/ComponentActivity$2;
+    new-instance v3, Landroidx/activity/ComponentActivity$2;
 
-    invoke-direct {v4, p0}, Landroidx/activity/ComponentActivity$2;-><init>(Landroidx/activity/ComponentActivity;)V
+    invoke-direct {v3, p0}, Landroidx/activity/ComponentActivity$2;-><init>(Landroidx/activity/ComponentActivity;)V
 
-    invoke-virtual {v3, v4}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
+    invoke-virtual {v2, v3}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
 
     .line 21
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
-    move-result-object v3
+    move-result-object v2
 
-    new-instance v4, Landroidx/activity/ComponentActivity$3;
+    new-instance v3, Landroidx/activity/ComponentActivity$3;
 
-    invoke-direct {v4, p0}, Landroidx/activity/ComponentActivity$3;-><init>(Landroidx/activity/ComponentActivity;)V
+    invoke-direct {v3, p0}, Landroidx/activity/ComponentActivity$3;-><init>(Landroidx/activity/ComponentActivity;)V
 
-    invoke-virtual {v3, v4}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
+    invoke-virtual {v2, v3}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
 
     .line 22
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
-    move-result-object v3
+    move-result-object v2
 
-    new-instance v4, Landroidx/activity/ComponentActivity$4;
+    new-instance v3, Landroidx/activity/ComponentActivity$4;
 
-    invoke-direct {v4, p0}, Landroidx/activity/ComponentActivity$4;-><init>(Landroidx/activity/ComponentActivity;)V
+    invoke-direct {v3, p0}, Landroidx/activity/ComponentActivity$4;-><init>(Landroidx/activity/ComponentActivity;)V
 
-    invoke-virtual {v3, v4}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
+    invoke-virtual {v2, v3}, Landroidx/lifecycle/Lifecycle;->addObserver(Landroidx/lifecycle/LifecycleObserver;)V
 
     .line 23
     invoke-virtual {v0}, Landroidx/savedstate/SavedStateRegistryController;->performAttach()V
@@ -319,7 +319,7 @@
 
     new-instance v1, Landroidx/activity/c;
 
-    invoke-direct {v1, p0, v2}, Landroidx/activity/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0}, Landroidx/activity/c;-><init>(Landroidx/activity/ComponentActivity;)V
 
     const-string v2, "android:support:activity-result"
 
@@ -422,11 +422,11 @@
     return-object p0
 .end method
 
-.method public static synthetic e(Landroidx/activity/ComponentActivity;)Lr3/q;
+.method public static synthetic e(Landroidx/activity/ComponentActivity;)Lv3/q;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/activity/ComponentActivity;->lambda$new$0()Lr3/q;
+    invoke-direct {p0}, Landroidx/activity/ComponentActivity;->lambda$new$0()Lv3/q;
 
     .line 2
     .line 3
@@ -437,7 +437,7 @@
     return-object p0
 .end method
 
-.method private synthetic lambda$new$0()Lr3/q;
+.method private synthetic lambda$new$0()Lv3/q;
     .locals 1
 
     .line 1

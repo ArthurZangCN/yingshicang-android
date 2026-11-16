@@ -102,7 +102,7 @@
 
     .line 6
     .line 7
-    invoke-static {p0}, Landroidx/core/content/pm/b;->j(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
+    invoke-static {p0}, Landroidx/core/content/pm/g;->g(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
 
     .line 8
     .line 9
@@ -933,7 +933,7 @@
 
     .line 6
     .line 7
-    invoke-static {p0, p1}, Landroidx/core/content/pm/a;->h(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
+    invoke-static {p0, p1}, Landroidx/core/content/pm/d;->i(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
 
     .line 8
     .line 9

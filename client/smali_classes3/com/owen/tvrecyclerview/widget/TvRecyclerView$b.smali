@@ -166,7 +166,7 @@
 
     .line 53
     :cond_3
-    new-instance v8, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;
+    new-instance v8, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;
 
     .line 54
     .line 55
@@ -194,7 +194,7 @@
     move-object v1, v6
 
     .line 65
-    invoke-direct/range {v0 .. v5}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;Landroid/content/Context;ZZI)V
+    invoke-direct/range {v0 .. v5}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;Landroid/content/Context;ZZI)V
 
     .line 66
     .line 67

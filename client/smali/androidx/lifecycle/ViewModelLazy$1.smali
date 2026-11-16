@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/lifecycle/ViewModelLazy;-><init>(Lf4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILkotlin/jvm/internal/f;)V
+    value = Landroidx/lifecycle/ViewModelLazy;-><init>(Ll4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILkotlin/jvm/internal/f;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

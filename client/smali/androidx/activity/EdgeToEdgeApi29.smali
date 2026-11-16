@@ -103,7 +103,7 @@
     .line 37
     .line 38
     .line 39
-    invoke-static {p3}, Landroid/support/v4/media/session/e;->n(Landroid/view/Window;)V
+    invoke-static {p3}, Landroidx/activity/g;->m(Landroid/view/Window;)V
 
     .line 40
     .line 41
@@ -127,7 +127,7 @@
 
     .line 50
     :cond_0
-    invoke-static {p3, v0}, Landroidx/activity/h;->j(Landroid/view/Window;Z)V
+    invoke-static {p3, v0}, Landroid/support/v4/media/session/f;->n(Landroid/view/Window;Z)V
 
     .line 51
     .line 52

@@ -3,58 +3,38 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/f;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/MediaSource$Factory;I)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsCollector;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Landroidx/media3/exoplayer/q;->a:I
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/q;->b:Landroidx/media3/exoplayer/source/MediaSource$Factory;
+    iput-object p1, p0, Landroidx/media3/exoplayer/q;->a:Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 2
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/q;->a:I
+    iget-object v0, p0, Landroidx/media3/exoplayer/q;->a:Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/q;->b:Landroidx/media3/exoplayer/source/MediaSource$Factory;
+    check-cast p1, Landroidx/media3/common/util/Clock;
 
-    packed-switch v0, :pswitch_data_0
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->o(Landroidx/media3/exoplayer/analytics/AnalyticsCollector;Landroidx/media3/common/util/Clock;)Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->p(Landroidx/media3/exoplayer/source/MediaSource$Factory;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+    move-result-object p1
 
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->h(Landroidx/media3/exoplayer/source/MediaSource$Factory;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

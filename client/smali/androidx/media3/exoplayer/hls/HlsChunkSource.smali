@@ -332,7 +332,7 @@
 
     .line 99
     .line 100
-    invoke-static {p1}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {p1}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     .line 101
     .line 102
@@ -1564,7 +1564,7 @@
     .line 119
     .line 120
     :cond_6
-    invoke-static {p2}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 121
     .line 122
@@ -1577,7 +1577,7 @@
     .line 125
     :cond_7
     :goto_2
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 126
     .line 127
@@ -2763,7 +2763,7 @@
 
     .line 98
     .line 99
-    invoke-static {v0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 100
     .line 101
@@ -2837,7 +2837,7 @@
 
     .line 17
     :cond_0
-    invoke-static/range {p6 .. p6}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static/range {p6 .. p6}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -3556,7 +3556,7 @@
 
     .line 358
     .line 359
-    invoke-static {v3}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 360
     .line 361
@@ -3915,7 +3915,7 @@
 
     .line 526
     .line 527
-    invoke-static {v2, v3, v4, v5}, Landroid/support/v4/media/f;->j(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3, v4, v5}, Landroid/support/v4/media/e;->m(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 528
     .line 529
@@ -3943,7 +3943,7 @@
 
     .line 540
     .line 541
-    invoke-static {v2}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 542
     .line 543
@@ -4390,7 +4390,7 @@
 
     .line 10
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 11
     .line 12

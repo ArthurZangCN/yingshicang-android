@@ -15,25 +15,25 @@
 
 
 # static fields
-.field public static final exo_download_completed:I = 0x7f11007c
+.field public static final exo_download_completed:I = 0x7f110086
 
-.field public static final exo_download_description:I = 0x7f11007d
+.field public static final exo_download_description:I = 0x7f110087
 
-.field public static final exo_download_downloading:I = 0x7f11007e
+.field public static final exo_download_downloading:I = 0x7f110088
 
-.field public static final exo_download_failed:I = 0x7f11007f
+.field public static final exo_download_failed:I = 0x7f110089
 
-.field public static final exo_download_notification_channel_name:I = 0x7f110080
+.field public static final exo_download_notification_channel_name:I = 0x7f11008a
 
-.field public static final exo_download_paused:I = 0x7f110081
+.field public static final exo_download_paused:I = 0x7f11008b
 
-.field public static final exo_download_paused_for_network:I = 0x7f110082
+.field public static final exo_download_paused_for_network:I = 0x7f11008c
 
-.field public static final exo_download_paused_for_wifi:I = 0x7f110083
+.field public static final exo_download_paused_for_wifi:I = 0x7f11008d
 
-.field public static final exo_download_removing:I = 0x7f110084
+.field public static final exo_download_removing:I = 0x7f11008e
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f110116
+.field public static final status_bar_notification_info_overflow:I = 0x7f110120
 
 
 # direct methods

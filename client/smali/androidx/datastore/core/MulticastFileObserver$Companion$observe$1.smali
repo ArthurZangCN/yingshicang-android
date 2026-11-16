@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,22 +18,22 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function2<",
-        "Lkotlinx/coroutines/channels/q<",
+        "Lkotlinx/coroutines/channels/t<",
         "-",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;",
         "Lkotlin/coroutines/d<",
         "-",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;",
         "Ljava/lang/Object;",
         ">;"
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.core.MulticastFileObserver$Companion$observe$1"
     f = "MulticastFileObserver.android.kt"
     l = {
@@ -72,7 +72,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p2}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, p1, p2}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -88,7 +88,7 @@
             "Lkotlin/coroutines/d<",
             "*>;)",
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -108,29 +108,29 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/channels/q;
+    check-cast p1, Lkotlinx/coroutines/channels/t;
 
     check-cast p2, Lkotlin/coroutines/d;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1;->invoke(Lkotlinx/coroutines/channels/q;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1;->invoke(Lkotlinx/coroutines/channels/t;Lkotlin/coroutines/d;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/channels/q;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public final invoke(Lkotlinx/coroutines/channels/t;Lkotlin/coroutines/d;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/channels/q<",
+            "Lkotlinx/coroutines/channels/t<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -143,7 +143,7 @@
 
     check-cast p1, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1;
 
-    sget-object p2, Lr3/q;->a:Lr3/q;
+    sget-object p2, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -182,7 +182,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 14
     .line 15
@@ -212,7 +212,7 @@
 
     .line 26
     .line 27
-    check-cast v1, Lkotlinx/coroutines/o0;
+    check-cast v1, Ln4/t0;
 
     .line 28
     .line 29
@@ -220,11 +220,11 @@
 
     .line 30
     .line 31
-    check-cast v3, Lkotlinx/coroutines/channels/q;
+    check-cast v3, Lkotlinx/coroutines/channels/t;
 
     .line 32
     .line 33
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 34
     .line 35
@@ -233,7 +233,7 @@
 
     .line 37
     :cond_2
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 38
     .line 39
@@ -242,7 +242,7 @@
 
     .line 41
     .line 42
-    check-cast p1, Lkotlinx/coroutines/channels/q;
+    check-cast p1, Lkotlinx/coroutines/channels/t;
 
     .line 43
     .line 44
@@ -254,7 +254,7 @@
 
     .line 47
     .line 48
-    invoke-direct {v1, v4, p1}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$flowObserver$1;-><init>(Ljava/io/File;Lkotlinx/coroutines/channels/q;)V
+    invoke-direct {v1, v4, p1}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$flowObserver$1;-><init>(Ljava/io/File;Lkotlinx/coroutines/channels/t;)V
 
     .line 49
     .line 50
@@ -280,7 +280,7 @@
     .line 60
     .line 61
     .line 62
-    invoke-static {v4, v5, v1}, Landroidx/datastore/core/MulticastFileObserver$Companion;->access$observe(Landroidx/datastore/core/MulticastFileObserver$Companion;Ljava/io/File;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/o0;
+    invoke-static {v4, v5, v1}, Landroidx/datastore/core/MulticastFileObserver$Companion;->access$observe(Landroidx/datastore/core/MulticastFileObserver$Companion;Ljava/io/File;Lkotlin/jvm/functions/Function1;)Ln4/t0;
 
     .line 63
     .line 64
@@ -288,7 +288,7 @@
     move-result-object v1
 
     .line 66
-    sget-object v4, Lr3/q;->a:Lr3/q;
+    sget-object v4, Lv3/q;->a:Lv3/q;
 
     .line 67
     .line 68
@@ -304,7 +304,7 @@
 
     .line 73
     .line 74
-    invoke-interface {p1, v4, p0}, Lkotlinx/coroutines/channels/t;->w(Ljava/lang/Object;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-interface {p1, v4, p0}, Lkotlinx/coroutines/channels/w;->x(Ljava/lang/Object;Lkotlin/coroutines/d;)Ljava/lang/Object;
 
     .line 75
     .line 76
@@ -328,7 +328,7 @@
 
     .line 83
     .line 84
-    invoke-direct {p1, v1}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;-><init>(Lkotlinx/coroutines/o0;)V
+    invoke-direct {p1, v1}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;-><init>(Ln4/t0;)V
 
     .line 85
     .line 86
@@ -348,7 +348,7 @@
 
     .line 93
     .line 94
-    invoke-static {v3, p1, p0}, Lkotlinx/coroutines/channels/o;->a(Lkotlinx/coroutines/channels/q;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-static {v3, p1, p0}, Lkotlinx/coroutines/channels/r;->a(Lkotlinx/coroutines/channels/t;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/d;)Ljava/lang/Object;
 
     .line 95
     .line 96
@@ -365,7 +365,7 @@
     .line 101
     :cond_4
     :goto_1
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 102
     .line 103

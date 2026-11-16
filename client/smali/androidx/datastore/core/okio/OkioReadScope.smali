@@ -223,7 +223,7 @@
     .line 43
     .line 44
     :try_start_0
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -277,7 +277,7 @@
     .line 67
     .line 68
     :try_start_1
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -295,7 +295,7 @@
 
     .line 74
     :cond_3
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 75
     .line 76
@@ -447,7 +447,7 @@
 
     .line 133
     :try_start_6
-    invoke-static {p1, p0}, Lcom/github/tvbox/osc/util/t;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Ld2/c;->e(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     .line 134
     .line 135
@@ -635,7 +635,7 @@
     move-exception p0
 
     .line 207
-    invoke-static {p1, p0}, Lcom/github/tvbox/osc/util/t;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Ld2/c;->e(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     .line 208
     .line 209

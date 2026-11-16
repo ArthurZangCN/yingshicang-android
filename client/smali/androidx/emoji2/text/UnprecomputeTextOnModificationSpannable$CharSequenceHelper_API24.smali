@@ -31,11 +31,11 @@
     return-void
 .end method
 
-.method public static chars(Ljava/lang/CharSequence;)Lj$/util/stream/IntStream;
+.method public static chars(Ljava/lang/CharSequence;)Ljava/util/stream/IntStream;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/emoji2/text/g;->a(Ljava/lang/CharSequence;)Lj$/util/stream/IntStream;
+    invoke-static {p0}, Landroid/support/v4/media/session/b;->p(Ljava/lang/CharSequence;)Ljava/util/stream/IntStream;
 
     .line 2
     .line 3
@@ -46,11 +46,11 @@
     return-object p0
 .end method
 
-.method public static codePoints(Ljava/lang/CharSequence;)Lj$/util/stream/IntStream;
+.method public static codePoints(Ljava/lang/CharSequence;)Ljava/util/stream/IntStream;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/emoji2/text/f;->a(Ljava/lang/CharSequence;)Lj$/util/stream/IntStream;
+    invoke-static {p0}, Landroid/support/v4/media/c;->s(Ljava/lang/CharSequence;)Ljava/util/stream/IntStream;
 
     .line 2
     .line 3

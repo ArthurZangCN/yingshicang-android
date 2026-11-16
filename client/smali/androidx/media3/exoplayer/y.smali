@@ -3,17 +3,58 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/common/util/ListenerSet$Event;
+.implements Lcom/google/common/base/z;
 
 
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)V
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Landroidx/media3/exoplayer/trackselection/TrackSelector;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/trackselection/TrackSelector;I)V
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/media3/common/Player$Listener;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->E(Landroidx/media3/common/Player$Listener;)V
+    iput p2, p0, Landroidx/media3/exoplayer/y;->a:I
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/y;->b:Landroidx/media3/exoplayer/trackselection/TrackSelector;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Landroidx/media3/exoplayer/y;->a:I
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/y;->b:Landroidx/media3/exoplayer/trackselection/TrackSelector;
+
+    packed-switch v0, :pswitch_data_0
+
+    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->s(Landroidx/media3/exoplayer/trackselection/TrackSelector;)Landroidx/media3/exoplayer/trackselection/TrackSelector;
+
+    move-result-object v0
+
+    return-object v0
+
+    :pswitch_0
+    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->m(Landroidx/media3/exoplayer/trackselection/TrackSelector;)Landroidx/media3/exoplayer/trackselection/TrackSelector;
+
+    move-result-object v0
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

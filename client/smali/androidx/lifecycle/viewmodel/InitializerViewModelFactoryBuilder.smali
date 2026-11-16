@@ -48,14 +48,14 @@
 
 
 # virtual methods
-.method public final addInitializer(Lf4/b;Lkotlin/jvm/functions/Function1;)V
+.method public final addInitializer(Ll4/b;Lkotlin/jvm/functions/Function1;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Landroidx/lifecycle/ViewModel;",
             ">(",
-            "Lf4/b<",
+            "Ll4/b<",
             "TT;>;",
             "Lkotlin/jvm/functions/Function1<",
             "-",
@@ -95,7 +95,7 @@
 
     .line 16
     .line 17
-    invoke-interface {p1}, Lkotlin/jvm/internal/c;->c()Ljava/lang/Class;
+    invoke-interface {p1}, Lkotlin/jvm/internal/c;->b()Ljava/lang/Class;
 
     .line 18
     .line 19

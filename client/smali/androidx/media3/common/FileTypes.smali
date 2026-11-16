@@ -23,6 +23,8 @@
 
 .field public static final AMR:I = 0x3
 
+.field public static final ASF:I = 0x16
+
 .field public static final AVI:I = 0x10
 
 .field public static final AVIF:I = 0x15
@@ -38,6 +40,8 @@
 .field private static final EXTENSION_ADTS:Ljava/lang/String; = ".adts"
 
 .field private static final EXTENSION_AMR:Ljava/lang/String; = ".amr"
+
+.field private static final EXTENSION_ASF:Ljava/lang/String; = ".asf"
 
 .field private static final EXTENSION_AVI:Ljava/lang/String; = ".avi"
 
@@ -93,6 +97,10 @@
 
 .field private static final EXTENSION_PS:Ljava/lang/String; = ".ps"
 
+.field private static final EXTENSION_RM:Ljava/lang/String; = ".rm"
+
+.field private static final EXTENSION_RMVB:Ljava/lang/String; = ".rmvb"
+
 .field private static final EXTENSION_SMF:Ljava/lang/String; = ".smf"
 
 .field private static final EXTENSION_TS:Ljava/lang/String; = ".ts"
@@ -108,6 +116,10 @@
 .field private static final EXTENSION_WEBP:Ljava/lang/String; = ".webp"
 
 .field private static final EXTENSION_WEBVTT:Ljava/lang/String; = ".webvtt"
+
+.field private static final EXTENSION_WMA:Ljava/lang/String; = ".wma"
+
+.field private static final EXTENSION_WMV:Ljava/lang/String; = ".wmv"
 
 .field public static final FLAC:I = 0x4
 
@@ -135,6 +147,8 @@
 .field public static final PNG:I = 0x11
 
 .field public static final PS:I = 0xa
+
+.field public static final RM:I = 0x17
 
 .field public static final TS:I = 0xb
 
@@ -314,7 +328,7 @@
 
     .line 73
     :cond_1
-    const/16 v1, 0x1f
+    const/16 v1, 0x22
 
     .line 74
     .line 75
@@ -343,7 +357,7 @@
 
     .line 86
     :cond_2
-    const/16 v1, 0x1e
+    const/16 v1, 0x21
 
     .line 87
     .line 88
@@ -372,7 +386,7 @@
 
     .line 99
     :cond_3
-    const/16 v1, 0x1d
+    const/16 v1, 0x20
 
     .line 100
     .line 101
@@ -401,7 +415,7 @@
 
     .line 112
     :cond_4
-    const/16 v1, 0x1c
+    const/16 v1, 0x1f
 
     .line 113
     .line 114
@@ -430,7 +444,7 @@
 
     .line 125
     :cond_5
-    const/16 v1, 0x1b
+    const/16 v1, 0x1e
 
     .line 126
     .line 127
@@ -459,7 +473,7 @@
 
     .line 138
     :cond_6
-    const/16 v1, 0x1a
+    const/16 v1, 0x1d
 
     .line 139
     .line 140
@@ -488,7 +502,7 @@
 
     .line 151
     :cond_7
-    const/16 v1, 0x19
+    const/16 v1, 0x1c
 
     .line 152
     .line 153
@@ -517,7 +531,7 @@
 
     .line 164
     :cond_8
-    const/16 v1, 0x18
+    const/16 v1, 0x1b
 
     .line 165
     .line 166
@@ -546,7 +560,7 @@
 
     .line 177
     :cond_9
-    const/16 v1, 0x17
+    const/16 v1, 0x1a
 
     .line 178
     .line 179
@@ -576,7 +590,7 @@
     .line 190
     .line 191
     :cond_a
-    const/16 v1, 0x16
+    const/16 v1, 0x19
 
     .line 192
     .line 193
@@ -606,729 +620,838 @@
     .line 204
     .line 205
     :cond_b
-    move v1, v3
+    const/16 v1, 0x18
 
     .line 206
+    .line 207
     goto/16 :goto_1
 
-    .line 207
     .line 208
+    .line 209
     :sswitch_b
     const-string v2, "audio/amr"
 
-    .line 209
     .line 210
+    .line 211
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 211
     .line 212
     .line 213
+    .line 214
     move-result v1
 
-    .line 214
+    .line 215
     if-nez v1, :cond_c
 
-    .line 215
     .line 216
+    .line 217
     goto/16 :goto_0
 
-    .line 217
     .line 218
-    :cond_c
-    move v1, v4
-
     .line 219
-    goto/16 :goto_1
+    :cond_c
+    const/16 v1, 0x17
 
     .line 220
     .line 221
-    :sswitch_c
-    const-string v2, "audio/ac4"
+    goto/16 :goto_1
 
     .line 222
     .line 223
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_c
+    const-string v2, "audio/ac4"
 
     .line 224
     .line 225
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 226
+    .line 227
+    .line 228
     move-result v1
 
-    .line 227
-    if-nez v1, :cond_d
-
-    .line 228
     .line 229
-    goto/16 :goto_0
+    if-nez v1, :cond_d
 
     .line 230
     .line 231
-    :cond_d
-    move v1, v5
+    goto/16 :goto_0
 
     .line 232
+    .line 233
+    :cond_d
+    const/16 v1, 0x16
+
+    .line 234
+    .line 235
     goto/16 :goto_1
 
-    .line 233
-    .line 234
+    .line 236
+    .line 237
     :sswitch_d
     const-string v2, "audio/ac3"
 
-    .line 235
-    .line 236
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 237
     .line 238
     .line 239
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 240
-    if-nez v1, :cond_e
-
     .line 241
     .line 242
-    goto/16 :goto_0
+    move-result v1
 
     .line 243
-    .line 244
-    :cond_e
-    move v1, v6
+    if-nez v1, :cond_e
 
+    .line 244
     .line 245
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 246
     .line 247
+    :cond_e
+    move v1, v3
+
+    .line 248
+    goto/16 :goto_1
+
+    .line 249
+    .line 250
     :sswitch_e
     const-string v2, "video/x-flv"
 
-    .line 248
-    .line 249
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 250
     .line 251
     .line 252
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 253
-    if-nez v1, :cond_f
-
     .line 254
     .line 255
-    goto/16 :goto_0
+    move-result v1
 
     .line 256
-    .line 257
-    :cond_f
-    move v1, v7
+    if-nez v1, :cond_f
 
+    .line 257
     .line 258
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 259
     .line 260
+    :cond_f
+    move v1, v4
+
+    .line 261
+    goto/16 :goto_1
+
+    .line 262
+    .line 263
     :sswitch_f
     const-string v2, "application/webm"
 
-    .line 261
-    .line 262
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 263
     .line 264
     .line 265
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 266
-    if-nez v1, :cond_10
-
     .line 267
     .line 268
-    goto/16 :goto_0
+    move-result v1
 
     .line 269
-    .line 270
-    :cond_10
-    move v1, v8
+    if-nez v1, :cond_10
 
+    .line 270
     .line 271
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 272
     .line 273
+    :cond_10
+    move v1, v5
+
+    .line 274
+    goto/16 :goto_1
+
+    .line 275
+    .line 276
     :sswitch_10
     const-string v2, "audio/x-matroska"
 
-    .line 274
-    .line 275
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 276
     .line 277
     .line 278
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 279
-    if-nez v1, :cond_11
-
     .line 280
     .line 281
-    goto/16 :goto_0
+    move-result v1
 
     .line 282
-    .line 283
-    :cond_11
-    move v1, v9
+    if-nez v1, :cond_11
 
+    .line 283
     .line 284
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 285
     .line 286
-    :sswitch_11
-    const-string v2, "image/png"
+    :cond_11
+    move v1, v6
 
     .line 287
-    .line 288
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 288
     .line 289
+    :sswitch_11
+    const-string v2, "application/vnd.rn-realmedia"
+
     .line 290
     .line 291
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 292
-    if-nez v1, :cond_12
-
     .line 293
     .line 294
-    goto/16 :goto_0
+    move-result v1
 
     .line 295
-    .line 296
-    :cond_12
-    move v1, v10
+    if-nez v1, :cond_12
 
+    .line 296
     .line 297
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 298
     .line 299
-    :sswitch_12
-    const-string v2, "image/bmp"
+    :cond_12
+    move v1, v7
 
     .line 300
-    .line 301
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 301
     .line 302
+    :sswitch_12
+    const-string v2, "image/png"
+
     .line 303
     .line 304
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 305
-    if-nez v1, :cond_13
-
     .line 306
     .line 307
-    goto/16 :goto_0
+    move-result v1
 
     .line 308
-    .line 309
-    :cond_13
-    move v1, v11
+    if-nez v1, :cond_13
 
+    .line 309
     .line 310
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 311
     .line 312
-    :sswitch_13
-    const-string v2, "text/vtt"
+    :cond_13
+    move v1, v8
 
     .line 313
-    .line 314
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 314
     .line 315
+    :sswitch_13
+    const-string v2, "image/bmp"
+
     .line 316
     .line 317
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 318
-    if-nez v1, :cond_14
-
     .line 319
     .line 320
-    goto/16 :goto_0
+    move-result v1
 
     .line 321
-    .line 322
-    :cond_14
-    move v1, v12
+    if-nez v1, :cond_14
 
+    .line 322
     .line 323
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 324
     .line 325
-    :sswitch_14
-    const-string v2, "video/x-msvideo"
+    :cond_14
+    move v1, v9
 
     .line 326
-    .line 327
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 327
     .line 328
+    :sswitch_14
+    const-string v2, "text/vtt"
+
     .line 329
     .line 330
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 331
-    if-nez v1, :cond_15
-
     .line 332
     .line 333
-    goto/16 :goto_0
+    move-result v1
 
     .line 334
-    .line 335
-    :cond_15
-    move v1, v13
+    if-nez v1, :cond_15
 
+    .line 335
     .line 336
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 337
     .line 338
-    :sswitch_15
-    const-string v2, "application/mp4"
+    :cond_15
+    move v1, v10
 
     .line 339
-    .line 340
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 340
     .line 341
+    :sswitch_15
+    const-string v2, "video/x-msvideo"
+
     .line 342
     .line 343
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 344
-    if-nez v1, :cond_16
-
     .line 345
     .line 346
-    goto/16 :goto_0
+    move-result v1
 
     .line 347
-    .line 348
-    :cond_16
-    move v1, v14
+    if-nez v1, :cond_16
 
+    .line 348
     .line 349
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 350
     .line 351
-    :sswitch_16
-    const-string v2, "image/webp"
+    :cond_16
+    move v1, v11
 
     .line 352
-    .line 353
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 353
     .line 354
+    :sswitch_16
+    const-string v2, "application/mp4"
+
     .line 355
     .line 356
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 357
-    if-nez v1, :cond_17
-
     .line 358
     .line 359
-    goto/16 :goto_0
+    move-result v1
 
     .line 360
-    .line 361
-    :cond_17
-    move v1, v15
+    if-nez v1, :cond_17
 
+    .line 361
     .line 362
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 363
     .line 364
-    :sswitch_17
-    const-string v2, "image/jpeg"
+    :cond_17
+    move v1, v12
 
     .line 365
-    .line 366
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 367
-    .line 368
-    .line 369
-    move-result v1
-
-    .line 370
-    if-nez v1, :cond_18
-
-    .line 371
-    .line 372
-    goto/16 :goto_0
-
-    .line 373
-    .line 374
-    :cond_18
-    move/from16 v1, v16
-
-    .line 375
-    .line 376
     goto/16 :goto_1
 
+    .line 366
+    .line 367
+    :sswitch_17
+    const-string v2, "image/webp"
+
+    .line 368
+    .line 369
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 370
+    .line 371
+    .line 372
+    move-result v1
+
+    .line 373
+    if-nez v1, :cond_18
+
+    .line 374
+    .line 375
+    goto/16 :goto_0
+
+    .line 376
     .line 377
+    :cond_18
+    move v1, v13
+
     .line 378
-    :sswitch_18
-    const-string v2, "image/heif"
+    goto/16 :goto_1
 
     .line 379
     .line 380
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_18
+    const-string v2, "image/jpeg"
 
     .line 381
     .line 382
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 383
+    .line 384
+    .line 385
     move-result v1
 
-    .line 384
-    if-nez v1, :cond_19
-
-    .line 385
     .line 386
-    goto/16 :goto_0
+    if-nez v1, :cond_19
 
     .line 387
     .line 388
-    :cond_19
-    move/from16 v1, v17
+    goto/16 :goto_0
 
     .line 389
     .line 390
-    goto :goto_1
+    :cond_19
+    move v1, v14
 
     .line 391
-    :sswitch_19
-    const-string v2, "image/heic"
+    goto/16 :goto_1
 
     .line 392
     .line 393
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_19
+    const-string v2, "image/heif"
 
     .line 394
     .line 395
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 396
+    .line 397
+    .line 398
     move-result v1
 
-    .line 397
-    if-nez v1, :cond_1a
-
-    .line 398
     .line 399
-    goto/16 :goto_0
+    if-nez v1, :cond_1a
 
     .line 400
     .line 401
-    :cond_1a
-    move/from16 v1, v18
+    goto/16 :goto_0
 
     .line 402
     .line 403
-    goto :goto_1
+    :cond_1a
+    move v1, v15
 
     .line 404
-    :sswitch_1a
-    const-string v2, "image/avif"
+    goto/16 :goto_1
 
     .line 405
     .line 406
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :sswitch_1a
+    const-string v2, "image/heic"
 
     .line 407
     .line 408
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 409
+    .line 410
+    .line 411
     move-result v1
 
-    .line 410
-    if-nez v1, :cond_1b
-
-    .line 411
     .line 412
-    goto/16 :goto_0
+    if-nez v1, :cond_1b
 
     .line 413
     .line 414
-    :cond_1b
-    move/from16 v1, v19
+    goto/16 :goto_0
 
     .line 415
     .line 416
-    goto :goto_1
+    :cond_1b
+    move/from16 v1, v16
 
     .line 417
-    :sswitch_1b
-    const-string v2, "audio/amr-wb"
-
     .line 418
-    .line 419
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_1
 
+    .line 419
     .line 420
+    :sswitch_1b
+    const-string v2, "image/avif"
+
     .line 421
     .line 422
-    move-result v1
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 423
-    if-nez v1, :cond_1c
-
     .line 424
     .line 425
-    goto/16 :goto_0
+    move-result v1
 
     .line 426
+    if-nez v1, :cond_1c
+
     .line 427
-    :cond_1c
-    move/from16 v1, v20
-
     .line 428
-    .line 429
-    goto :goto_1
+    goto/16 :goto_0
 
+    .line 429
     .line 430
-    :sswitch_1c
-    const-string v2, "video/webm"
+    :cond_1c
+    move/from16 v1, v17
 
     .line 431
     .line 432
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 433
-    .line 434
-    .line 435
-    move-result v1
-
-    .line 436
-    if-nez v1, :cond_1d
-
-    .line 437
-    .line 438
-    goto/16 :goto_0
-
-    .line 439
-    .line 440
-    :cond_1d
-    move/from16 v1, v21
-
-    .line 441
-    .line 442
     goto :goto_1
 
+    .line 433
+    :sswitch_1c
+    const-string v2, "audio/amr-wb"
+
+    .line 434
+    .line 435
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 436
+    .line 437
+    .line 438
+    move-result v1
+
+    .line 439
+    if-nez v1, :cond_1d
+
+    .line 440
+    .line 441
+    goto/16 :goto_0
+
+    .line 442
     .line 443
-    :sswitch_1d
-    const-string v2, "video/mp2t"
+    :cond_1d
+    move/from16 v1, v18
 
     .line 444
     .line 445
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 446
-    .line 447
-    .line 448
-    move-result v1
-
-    .line 449
-    if-nez v1, :cond_1e
-
-    .line 450
-    .line 451
-    goto/16 :goto_0
-
-    .line 452
-    .line 453
-    :cond_1e
-    const/4 v1, 0x2
-
-    .line 454
     goto :goto_1
 
-    .line 455
-    :sswitch_1e
-    const-string v2, "video/mp2p"
+    .line 446
+    :sswitch_1d
+    const-string v2, "video/webm"
 
-    .line 456
-    .line 457
+    .line 447
+    .line 448
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 458
-    .line 459
-    .line 460
+    .line 449
+    .line 450
+    .line 451
     move-result v1
 
+    .line 452
+    if-nez v1, :cond_1e
+
+    .line 453
+    .line 454
+    goto/16 :goto_0
+
+    .line 455
+    .line 456
+    :cond_1e
+    move/from16 v1, v19
+
+    .line 457
+    .line 458
+    goto :goto_1
+
+    .line 459
+    :sswitch_1e
+    const-string v2, "video/mp2t"
+
+    .line 460
     .line 461
-    if-nez v1, :cond_1f
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 462
     .line 463
-    goto/16 :goto_0
-
     .line 464
+    move-result v1
+
     .line 465
-    :cond_1f
-    move/from16 v1, v22
+    if-nez v1, :cond_1f
 
     .line 466
     .line 467
-    goto :goto_1
+    goto/16 :goto_0
 
     .line 468
-    :sswitch_1f
-    const-string v2, "audio/eac3-joc"
-
     .line 469
+    :cond_1f
+    move/from16 v1, v20
+
     .line 470
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 471
-    .line 472
-    .line 473
-    move-result v1
+    goto :goto_1
 
+    .line 472
+    :sswitch_1f
+    const-string v2, "video/mp2p"
+
+    .line 473
     .line 474
-    if-nez v1, :cond_20
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 475
     .line 476
-    goto/16 :goto_0
-
     .line 477
+    move-result v1
+
     .line 478
-    :cond_20
-    move/from16 v1, v23
+    if-nez v1, :cond_20
 
     .line 479
     .line 480
-    :goto_1
-    packed-switch v1, :pswitch_data_0
+    goto/16 :goto_0
 
     .line 481
     .line 482
+    :cond_20
+    move/from16 v1, v21
+
     .line 483
+    .line 484
+    goto :goto_1
+
+    .line 485
+    :sswitch_20
+    const-string v2, "video/x-ms-wmv"
+
+    .line 486
+    .line 487
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 488
+    .line 489
+    .line 490
+    move-result v1
+
+    .line 491
+    if-nez v1, :cond_21
+
+    .line 492
+    .line 493
+    goto/16 :goto_0
+
+    .line 494
+    .line 495
+    :cond_21
+    const/4 v1, 0x2
+
+    .line 496
+    goto :goto_1
+
+    .line 497
+    :sswitch_21
+    const-string v2, "audio/x-ms-wma"
+
+    .line 498
+    .line 499
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 500
+    .line 501
+    .line 502
+    move-result v1
+
+    .line 503
+    if-nez v1, :cond_22
+
+    .line 504
+    .line 505
+    goto/16 :goto_0
+
+    .line 506
+    .line 507
+    :cond_22
+    move/from16 v1, v22
+
+    .line 508
+    .line 509
+    goto :goto_1
+
+    .line 510
+    :sswitch_22
+    const-string v2, "audio/eac3-joc"
+
+    .line 511
+    .line 512
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 513
+    .line 514
+    .line 515
+    move-result v1
+
+    .line 516
+    if-nez v1, :cond_23
+
+    .line 517
+    .line 518
+    goto/16 :goto_0
+
+    .line 519
+    .line 520
+    :cond_23
+    move/from16 v1, v23
+
+    .line 521
+    .line 522
+    :goto_1
+    packed-switch v1, :pswitch_data_0
+
+    .line 523
+    .line 524
+    .line 525
     return v0
 
-    .line 484
+    .line 526
     :pswitch_0
     return v17
 
-    .line 485
+    .line 527
     :pswitch_1
     return v9
 
-    .line 486
+    .line 528
     :pswitch_2
     return v20
 
-    .line 487
+    .line 529
     :pswitch_3
     return v12
 
-    .line 488
+    .line 530
     :pswitch_4
     return v15
 
-    .line 489
+    .line 531
     :pswitch_5
     return v22
 
-    .line 490
+    .line 532
     :pswitch_6
     return v19
 
-    .line 491
+    .line 533
     :pswitch_7
+    const/16 v0, 0x17
+
+    .line 534
+    .line 535
+    return v0
+
+    .line 536
+    :pswitch_8
     return v7
 
-    .line 492
-    :pswitch_8
+    .line 537
+    :pswitch_9
     return v5
 
-    .line 493
-    :pswitch_9
+    .line 538
+    :pswitch_a
     return v11
 
-    .line 494
-    :pswitch_a
+    .line 539
+    :pswitch_b
     return v8
 
-    .line 495
-    :pswitch_b
+    .line 540
+    :pswitch_c
     return v16
 
-    .line 496
-    :pswitch_c
+    .line 541
+    :pswitch_d
     return v6
 
-    .line 497
-    :pswitch_d
+    .line 542
+    :pswitch_e
     return v10
 
-    .line 498
-    :pswitch_e
+    .line 543
+    :pswitch_f
     return v4
 
-    .line 499
-    :pswitch_f
+    .line 544
+    :pswitch_10
     return v3
 
-    .line 500
-    :pswitch_10
+    .line 545
+    :pswitch_11
     return v21
 
-    .line 501
-    :pswitch_11
+    .line 546
+    :pswitch_12
     return v18
 
-    .line 502
-    :pswitch_12
+    .line 547
+    :pswitch_13
     return v13
 
-    .line 503
-    :pswitch_13
+    .line 548
+    :pswitch_14
     return v14
 
-    .line 504
-    :pswitch_14
+    .line 549
+    :pswitch_15
+    const/16 v0, 0x16
+
+    .line 550
+    .line 551
+    return v0
+
+    .line 552
+    :pswitch_16
     return v23
 
-    .line 505
+    .line 553
     :sswitch_data_0
     .sparse-switch
-        -0x7e929daa -> :sswitch_1f
-        -0x6315f78b -> :sswitch_1e
-        -0x6315f787 -> :sswitch_1d
-        -0x63118f53 -> :sswitch_1c
-        -0x5fc6f775 -> :sswitch_1b
-        -0x58abd7ba -> :sswitch_1a
-        -0x58a8e8f5 -> :sswitch_19
-        -0x58a8e8f2 -> :sswitch_18
-        -0x58a7d764 -> :sswitch_17
-        -0x58a21830 -> :sswitch_16
-        -0x4a681e4e -> :sswitch_15
-        -0x405dba54 -> :sswitch_14
-        -0x3be2f26c -> :sswitch_13
-        -0x3468a12f -> :sswitch_12
-        -0x34686c8b -> :sswitch_11
+        -0x7e929daa -> :sswitch_22
+        -0x7309cb4e -> :sswitch_21
+        -0x6d8f5a3e -> :sswitch_20
+        -0x6315f78b -> :sswitch_1f
+        -0x6315f787 -> :sswitch_1e
+        -0x63118f53 -> :sswitch_1d
+        -0x5fc6f775 -> :sswitch_1c
+        -0x58abd7ba -> :sswitch_1b
+        -0x58a8e8f5 -> :sswitch_1a
+        -0x58a8e8f2 -> :sswitch_19
+        -0x58a7d764 -> :sswitch_18
+        -0x58a21830 -> :sswitch_17
+        -0x4a681e4e -> :sswitch_16
+        -0x405dba54 -> :sswitch_15
+        -0x3be2f26c -> :sswitch_14
+        -0x3468a12f -> :sswitch_13
+        -0x34686c8b -> :sswitch_12
+        -0x19f0606a -> :sswitch_11
         -0x17118226 -> :sswitch_10
         -0x2974308 -> :sswitch_f
         0xd45707 -> :sswitch_e
@@ -1348,54 +1471,6 @@
         0x79909c15 -> :sswitch_0
     .end sparse-switch
 
-    .line 506
-    .line 507
-    .line 508
-    .line 509
-    .line 510
-    .line 511
-    .line 512
-    .line 513
-    .line 514
-    .line 515
-    .line 516
-    .line 517
-    .line 518
-    .line 519
-    .line 520
-    .line 521
-    .line 522
-    .line 523
-    .line 524
-    .line 525
-    .line 526
-    .line 527
-    .line 528
-    .line 529
-    .line 530
-    .line 531
-    .line 532
-    .line 533
-    .line 534
-    .line 535
-    .line 536
-    .line 537
-    .line 538
-    .line 539
-    .line 540
-    .line 541
-    .line 542
-    .line 543
-    .line 544
-    .line 545
-    .line 546
-    .line 547
-    .line 548
-    .line 549
-    .line 550
-    .line 551
-    .line 552
-    .line 553
     .line 554
     .line 555
     .line 556
@@ -1478,15 +1553,78 @@
     .line 633
     .line 634
     .line 635
+    .line 636
+    .line 637
+    .line 638
+    .line 639
+    .line 640
+    .line 641
+    .line 642
+    .line 643
+    .line 644
+    .line 645
+    .line 646
+    .line 647
+    .line 648
+    .line 649
+    .line 650
+    .line 651
+    .line 652
+    .line 653
+    .line 654
+    .line 655
+    .line 656
+    .line 657
+    .line 658
+    .line 659
+    .line 660
+    .line 661
+    .line 662
+    .line 663
+    .line 664
+    .line 665
+    .line 666
+    .line 667
+    .line 668
+    .line 669
+    .line 670
+    .line 671
+    .line 672
+    .line 673
+    .line 674
+    .line 675
+    .line 676
+    .line 677
+    .line 678
+    .line 679
+    .line 680
+    .line 681
+    .line 682
+    .line 683
+    .line 684
+    .line 685
+    .line 686
+    .line 687
+    .line 688
+    .line 689
+    .line 690
+    .line 691
+    .line 692
+    .line 693
+    .line 694
+    .line 695
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_16
+        :pswitch_15
+        :pswitch_15
         :pswitch_14
         :pswitch_13
         :pswitch_12
         :pswitch_11
         :pswitch_10
         :pswitch_f
-        :pswitch_e
+        :pswitch_f
         :pswitch_e
         :pswitch_d
         :pswitch_c
@@ -1495,23 +1633,23 @@
         :pswitch_9
         :pswitch_8
         :pswitch_7
-        :pswitch_11
-        :pswitch_11
+        :pswitch_12
+        :pswitch_12
         :pswitch_6
-        :pswitch_14
+        :pswitch_16
         :pswitch_5
-        :pswitch_10
-        :pswitch_b
+        :pswitch_11
+        :pswitch_c
         :pswitch_4
         :pswitch_3
-        :pswitch_b
-        :pswitch_10
-        :pswitch_14
+        :pswitch_c
+        :pswitch_11
+        :pswitch_16
         :pswitch_2
         :pswitch_1
         :pswitch_0
-        :pswitch_11
-        :pswitch_11
+        :pswitch_12
+        :pswitch_12
     .end packed-switch
 .end method
 
@@ -1635,7 +1773,7 @@
     move-result v1
 
     .line 15
-    if-nez v1, :cond_23
+    if-nez v1, :cond_27
 
     .line 16
     .line 17
@@ -1655,7 +1793,7 @@
 
     .line 24
     .line 25
-    goto/16 :goto_c
+    goto/16 :goto_e
 
     .line 26
     .line 27
@@ -1695,7 +1833,7 @@
     move-result v1
 
     .line 43
-    if-nez v1, :cond_22
+    if-nez v1, :cond_26
 
     .line 44
     .line 45
@@ -1715,7 +1853,7 @@
 
     .line 52
     .line 53
-    goto/16 :goto_b
+    goto/16 :goto_d
 
     .line 54
     .line 55
@@ -1801,7 +1939,7 @@
     move-result v1
 
     .line 91
-    if-nez v1, :cond_21
+    if-nez v1, :cond_25
 
     .line 92
     .line 93
@@ -1817,7 +1955,7 @@
     move-result v1
 
     .line 99
-    if-nez v1, :cond_21
+    if-nez v1, :cond_25
 
     .line 100
     .line 101
@@ -1837,7 +1975,7 @@
 
     .line 108
     .line 109
-    goto/16 :goto_a
+    goto/16 :goto_c
 
     .line 110
     .line 111
@@ -1865,7 +2003,7 @@
     move-result v1
 
     .line 122
-    if-nez v1, :cond_20
+    if-nez v1, :cond_24
 
     .line 123
     .line 124
@@ -1885,7 +2023,7 @@
 
     .line 131
     .line 132
-    goto/16 :goto_9
+    goto/16 :goto_b
 
     .line 133
     .line 134
@@ -1925,7 +2063,7 @@
     move-result v4
 
     .line 150
-    if-nez v4, :cond_1f
+    if-nez v4, :cond_23
 
     .line 151
     .line 152
@@ -1952,7 +2090,7 @@
     move-result v4
 
     .line 163
-    if-nez v4, :cond_1f
+    if-nez v4, :cond_23
 
     .line 164
     .line 165
@@ -1975,7 +2113,7 @@
     move-result v1
 
     .line 174
-    if-nez v1, :cond_1f
+    if-nez v1, :cond_23
 
     .line 175
     .line 176
@@ -2006,7 +2144,7 @@
 
     .line 188
     .line 189
-    goto/16 :goto_8
+    goto/16 :goto_a
 
     .line 190
     .line 191
@@ -2034,7 +2172,7 @@
     move-result v1
 
     .line 202
-    if-nez v1, :cond_1e
+    if-nez v1, :cond_22
 
     .line 203
     .line 204
@@ -2054,7 +2192,7 @@
 
     .line 211
     .line 212
-    goto/16 :goto_7
+    goto/16 :goto_9
 
     .line 213
     .line 214
@@ -2071,7 +2209,7 @@
     move-result v1
 
     .line 220
-    if-nez v1, :cond_1d
+    if-nez v1, :cond_21
 
     .line 221
     .line 222
@@ -2087,7 +2225,7 @@
     move-result v1
 
     .line 228
-    if-nez v1, :cond_1d
+    if-nez v1, :cond_21
 
     .line 229
     .line 230
@@ -2103,7 +2241,7 @@
     move-result v1
 
     .line 236
-    if-nez v1, :cond_1d
+    if-nez v1, :cond_21
 
     .line 237
     .line 238
@@ -2123,7 +2261,7 @@
 
     .line 245
     .line 246
-    goto/16 :goto_6
+    goto/16 :goto_8
 
     .line 247
     .line 248
@@ -2140,7 +2278,7 @@
     move-result v3
 
     .line 254
-    if-nez v3, :cond_1c
+    if-nez v3, :cond_20
 
     .line 255
     .line 256
@@ -2167,7 +2305,7 @@
 
     .line 266
     .line 267
-    goto/16 :goto_5
+    goto/16 :goto_7
 
     .line 268
     .line 269
@@ -2184,7 +2322,7 @@
     move-result v1
 
     .line 275
-    if-nez v1, :cond_1b
+    if-nez v1, :cond_1f
 
     .line 276
     .line 277
@@ -2204,7 +2342,7 @@
 
     .line 284
     .line 285
-    goto/16 :goto_4
+    goto/16 :goto_6
 
     .line 286
     .line 287
@@ -2221,7 +2359,7 @@
     move-result v1
 
     .line 293
-    if-nez v1, :cond_1a
+    if-nez v1, :cond_1e
 
     .line 294
     .line 295
@@ -2241,327 +2379,435 @@
 
     .line 302
     .line 303
-    goto :goto_3
+    goto/16 :goto_5
 
     .line 304
+    .line 305
     :cond_f
     const-string v1, ".jpg"
 
-    .line 305
     .line 306
+    .line 307
     invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
-    .line 307
     .line 308
     .line 309
-    move-result v1
-
     .line 310
-    if-nez v1, :cond_19
+    move-result v1
 
     .line 311
+    if-nez v1, :cond_1d
+
     .line 312
+    .line 313
     const-string v1, ".jpeg"
 
-    .line 313
     .line 314
+    .line 315
     invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
-    .line 315
     .line 316
     .line 317
+    .line 318
     move-result v1
 
-    .line 318
+    .line 319
     if-eqz v1, :cond_10
 
-    .line 319
     .line 320
-    goto :goto_2
-
     .line 321
-    :cond_10
-    const-string v1, ".avi"
+    goto/16 :goto_4
 
     .line 322
     .line 323
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    :cond_10
+    const-string v1, ".avi"
 
     .line 324
     .line 325
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 326
+    .line 327
+    .line 328
     move-result v1
 
-    .line 327
-    if-eqz v1, :cond_11
-
-    .line 328
     .line 329
-    const/16 p0, 0x10
+    if-eqz v1, :cond_11
 
     .line 330
     .line 331
-    return p0
+    const/16 p0, 0x10
 
     .line 332
+    .line 333
+    return p0
+
+    .line 334
     :cond_11
     const-string v1, ".png"
 
-    .line 333
-    .line 334
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
     .line 335
     .line 336
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 337
+    .line 338
+    .line 339
     move-result v1
 
-    .line 338
-    if-eqz v1, :cond_12
-
-    .line 339
     .line 340
-    const/16 p0, 0x11
+    if-eqz v1, :cond_12
 
     .line 341
     .line 342
-    return p0
+    const/16 p0, 0x11
 
     .line 343
+    .line 344
+    return p0
+
+    .line 345
     :cond_12
     const-string v1, ".webp"
 
-    .line 344
-    .line 345
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
     .line 346
     .line 347
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 348
+    .line 349
+    .line 350
     move-result v1
 
-    .line 349
-    if-eqz v1, :cond_13
-
-    .line 350
     .line 351
-    const/16 p0, 0x12
+    if-eqz v1, :cond_13
 
     .line 352
     .line 353
-    return p0
+    const/16 p0, 0x12
 
     .line 354
+    .line 355
+    return p0
+
+    .line 356
     :cond_13
     const-string v1, ".bmp"
 
-    .line 355
-    .line 356
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
     .line 357
     .line 358
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 359
+    .line 360
+    .line 361
     move-result v1
 
-    .line 360
-    if-nez v1, :cond_18
-
-    .line 361
     .line 362
-    const-string v1, ".dib"
+    if-nez v1, :cond_1c
 
     .line 363
     .line 364
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    const-string v1, ".dib"
 
     .line 365
     .line 366
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 367
+    .line 368
+    .line 369
     move-result v1
 
-    .line 368
+    .line 370
     if-eqz v1, :cond_14
 
-    .line 369
-    .line 370
-    goto :goto_1
-
     .line 371
+    .line 372
+    goto :goto_3
+
+    .line 373
     :cond_14
     const-string v1, ".heic"
 
-    .line 372
-    .line 373
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
     .line 374
     .line 375
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 376
+    .line 377
+    .line 378
     move-result v1
 
-    .line 377
-    if-nez v1, :cond_17
-
-    .line 378
     .line 379
-    const-string v1, ".heif"
+    if-nez v1, :cond_1b
 
     .line 380
     .line 381
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    const-string v1, ".heif"
 
     .line 382
     .line 383
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 384
+    .line 385
+    .line 386
     move-result v1
 
-    .line 385
+    .line 387
     if-eqz v1, :cond_15
 
-    .line 386
-    .line 387
-    goto :goto_0
-
     .line 388
+    .line 389
+    goto :goto_2
+
+    .line 390
     :cond_15
     const-string v1, ".avif"
 
-    .line 389
-    .line 390
-    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
     .line 391
     .line 392
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
     .line 393
-    move-result p0
-
     .line 394
-    if-eqz p0, :cond_16
-
     .line 395
+    move-result v1
+
     .line 396
-    const/16 p0, 0x15
+    if-eqz v1, :cond_16
 
     .line 397
     .line 398
-    return p0
+    const/16 p0, 0x15
 
     .line 399
-    :cond_16
-    return v0
-
     .line 400
-    :cond_17
-    :goto_0
-    const/16 p0, 0x14
-
-    .line 401
-    .line 402
     return p0
 
+    .line 401
+    :cond_16
+    const-string v1, ".rm"
+
+    .line 402
     .line 403
-    :cond_18
-    :goto_1
-    const/16 p0, 0x13
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     .line 404
     .line 405
-    return p0
-
     .line 406
-    :cond_19
-    :goto_2
-    const/16 p0, 0xe
+    move-result v1
 
     .line 407
-    .line 408
-    return p0
+    if-nez v1, :cond_1a
 
+    .line 408
     .line 409
-    :cond_1a
-    :goto_3
-    const/16 p0, 0xd
+    const-string v1, ".rmvb"
 
     .line 410
     .line 411
-    return p0
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     .line 412
-    :cond_1b
-    :goto_4
-    const/16 p0, 0xc
-
     .line 413
     .line 414
-    return p0
+    move-result v1
 
     .line 415
-    :cond_1c
-    :goto_5
-    const/16 p0, 0xb
+    if-eqz v1, :cond_17
 
     .line 416
     .line 417
-    return p0
+    goto :goto_1
 
     .line 418
-    :cond_1d
-    :goto_6
-    const/16 p0, 0xa
+    :cond_17
+    const-string v1, ".asf"
 
     .line 419
     .line 420
-    return p0
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     .line 421
-    :cond_1e
-    :goto_7
-    const/16 p0, 0x9
-
     .line 422
     .line 423
-    return p0
+    move-result v1
 
     .line 424
-    :cond_1f
-    :goto_8
-    const/16 p0, 0x8
+    if-nez v1, :cond_19
 
     .line 425
     .line 426
-    return p0
+    const-string v1, ".wma"
 
     .line 427
-    :cond_20
-    :goto_9
-    const/4 p0, 0x6
-
     .line 428
-    return p0
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     .line 429
-    :cond_21
-    :goto_a
-    const/16 p0, 0xf
-
     .line 430
     .line 431
-    return p0
+    move-result v1
 
     .line 432
-    :cond_22
-    :goto_b
-    const/4 p0, 0x2
+    if-nez v1, :cond_19
 
     .line 433
-    return p0
-
     .line 434
-    :cond_23
-    :goto_c
-    const/4 p0, 0x0
+    const-string v1, ".wmv"
 
     .line 435
+    .line 436
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    .line 437
+    .line 438
+    .line 439
+    move-result p0
+
+    .line 440
+    if-eqz p0, :cond_18
+
+    .line 441
+    .line 442
+    goto :goto_0
+
+    .line 443
+    :cond_18
+    return v0
+
+    .line 444
+    :cond_19
+    :goto_0
+    const/16 p0, 0x16
+
+    .line 445
+    .line 446
+    return p0
+
+    .line 447
+    :cond_1a
+    :goto_1
+    const/16 p0, 0x17
+
+    .line 448
+    .line 449
+    return p0
+
+    .line 450
+    :cond_1b
+    :goto_2
+    const/16 p0, 0x14
+
+    .line 451
+    .line 452
+    return p0
+
+    .line 453
+    :cond_1c
+    :goto_3
+    const/16 p0, 0x13
+
+    .line 454
+    .line 455
+    return p0
+
+    .line 456
+    :cond_1d
+    :goto_4
+    const/16 p0, 0xe
+
+    .line 457
+    .line 458
+    return p0
+
+    .line 459
+    :cond_1e
+    :goto_5
+    const/16 p0, 0xd
+
+    .line 460
+    .line 461
+    return p0
+
+    .line 462
+    :cond_1f
+    :goto_6
+    const/16 p0, 0xc
+
+    .line 463
+    .line 464
+    return p0
+
+    .line 465
+    :cond_20
+    :goto_7
+    const/16 p0, 0xb
+
+    .line 466
+    .line 467
+    return p0
+
+    .line 468
+    :cond_21
+    :goto_8
+    const/16 p0, 0xa
+
+    .line 469
+    .line 470
+    return p0
+
+    .line 471
+    :cond_22
+    :goto_9
+    const/16 p0, 0x9
+
+    .line 472
+    .line 473
+    return p0
+
+    .line 474
+    :cond_23
+    :goto_a
+    const/16 p0, 0x8
+
+    .line 475
+    .line 476
+    return p0
+
+    .line 477
+    :cond_24
+    :goto_b
+    const/4 p0, 0x6
+
+    .line 478
+    return p0
+
+    .line 479
+    :cond_25
+    :goto_c
+    const/16 p0, 0xf
+
+    .line 480
+    .line 481
+    return p0
+
+    .line 482
+    :cond_26
+    :goto_d
+    const/4 p0, 0x2
+
+    .line 483
+    return p0
+
+    .line 484
+    :cond_27
+    :goto_e
+    const/4 p0, 0x0
+
+    .line 485
     return p0
 .end method

@@ -457,7 +457,7 @@
 
     .line 15
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 16
     .line 17

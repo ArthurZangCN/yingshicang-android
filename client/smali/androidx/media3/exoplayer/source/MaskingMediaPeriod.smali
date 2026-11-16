@@ -355,7 +355,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/source/l;->a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/source/k;->a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -887,7 +887,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10

@@ -2855,7 +2855,7 @@
     new-instance v1, Landroidx/media3/extractor/text/CuesWithTiming;
 
     .line 10
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v4
 
@@ -5101,7 +5101,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/b;->a(Landroidx/media3/extractor/text/SubtitleParser;[BLandroidx/media3/extractor/text/SubtitleParser$OutputOptions;Landroidx/media3/common/util/Consumer;)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/d;->a(Landroidx/media3/extractor/text/SubtitleParser;[BLandroidx/media3/extractor/text/SubtitleParser$OutputOptions;Landroidx/media3/common/util/Consumer;)V
 
     return-void
 .end method
@@ -5110,7 +5110,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/b;->b(Landroidx/media3/extractor/text/SubtitleParser;[BII)Landroidx/media3/extractor/text/Subtitle;
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/d;->b(Landroidx/media3/extractor/text/SubtitleParser;[BII)Landroidx/media3/extractor/text/Subtitle;
 
     move-result-object p1
 

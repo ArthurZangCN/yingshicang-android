@@ -2,35 +2,36 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/concurrent/Executor;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/common/util/BackgroundThreadStateHandler;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/util/BackgroundThreadStateHandler;)V
+.method public static bridge synthetic a(Ljava/lang/Object;)Landroid/media/MediaRoute2Info;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    check-cast p0, Landroid/media/MediaRoute2Info;
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/f;->a:Landroidx/media3/common/util/BackgroundThreadStateHandler;
-
-    return-void
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
-
-# virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 1
+.method public static bridge synthetic b(Ljava/lang/Object;)Landroid/media/MediaRouter2$ControllerCallback;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/f;->a:Landroidx/media3/common/util/BackgroundThreadStateHandler;
+    check-cast p0, Landroid/media/MediaRouter2$ControllerCallback;
 
-    invoke-virtual {v0, p1}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->runInBackground(Ljava/lang/Runnable;)V
+    return-object p0
+.end method
 
+.method public static bridge synthetic c(Landroid/media/MediaRouter2;Landroidx/media3/exoplayer/i;Landroid/media/MediaRouter2$RouteCallback;Landroid/media/RouteDiscoveryPreference;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Landroid/media/MediaRouter2;->registerRouteCallback(Ljava/util/concurrent/Executor;Landroid/media/MediaRouter2$RouteCallback;Landroid/media/RouteDiscoveryPreference;)V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method

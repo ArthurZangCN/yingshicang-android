@@ -27,13 +27,13 @@
 
 .field private final dataSourceFactory:Landroidx/media3/datasource/DataSource$Factory;
 
-.field private final downloadExecutorSupplier:Lcom/google/common/base/x;
+.field private final downloadExecutorSupplier:Lcom/google/common/base/z;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;"
         }
@@ -41,6 +41,8 @@
 .end field
 
 .field private final drmSessionManager:Landroidx/media3/exoplayer/drm/DrmSessionManager;
+
+.field private hasSeenNonEstimatedSeekMap:Z
 
 .field private listener:Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Listener;
     .annotation build Landroidx/annotation/Nullable;
@@ -81,13 +83,13 @@
 
 
 # direct methods
-.method private constructor <init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;IZILandroidx/media3/common/Format;Lcom/google/common/base/x;)V
+.method private constructor <init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;IZILandroidx/media3/common/Format;Lcom/google/common/base/z;)V
     .locals 0
     .param p9    # Landroidx/media3/common/Format;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .param p10    # Lcom/google/common/base/x;
+    .param p10    # Lcom/google/common/base/z;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
@@ -101,7 +103,7 @@
             "Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;",
             "IZI",
             "Landroidx/media3/common/Format;",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)V"
         }
@@ -148,16 +150,16 @@
     iput-wide p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
 
     .line 14
-    iput-object p10, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iput-object p10, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;IZILandroidx/media3/common/Format;Lcom/google/common/base/x;Landroidx/media3/exoplayer/source/ProgressiveMediaSource$1;)V
+.method public synthetic constructor <init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;IZILandroidx/media3/common/Format;Lcom/google/common/base/z;Landroidx/media3/exoplayer/source/ProgressiveMediaSource$1;)V
     .locals 0
 
     .line 1
-    invoke-direct/range {p0 .. p10}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;-><init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;IZILandroidx/media3/common/Format;Lcom/google/common/base/x;)V
+    invoke-direct/range {p0 .. p10}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;-><init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;IZILandroidx/media3/common/Format;Lcom/google/common/base/z;)V
 
     return-void
 .end method
@@ -323,7 +325,7 @@
 
     .line 30
     .line 31
-    invoke-static {p1, v0}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -489,7 +491,7 @@
     move-result-wide v16
 
     .line 62
-    iget-object v0, v15, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iget-object v0, v15, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     .line 63
     .line 64
@@ -497,7 +499,7 @@
 
     .line 65
     .line 66
-    invoke-interface {v0}, Lcom/google/common/base/x;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lcom/google/common/base/z;->get()Ljava/lang/Object;
 
     .line 67
     .line 68
@@ -593,27 +595,31 @@
     .locals 3
 
     .line 1
-    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
+    iget-boolean v0, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->hasSeenNonEstimatedSeekMap:Z
 
     .line 2
     .line 3
+    if-eqz v0, :cond_0
+
     .line 4
     .line 5
-    .line 6
-    cmp-long v0, p1, v0
+    invoke-interface {p3}, Landroidx/media3/extractor/SeekMap;->isEstimated()Z
 
+    .line 6
     .line 7
     .line 8
-    if-nez v0, :cond_0
+    move-result v0
 
     .line 9
-    .line 10
-    iget-wide p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
+    if-eqz v0, :cond_0
 
+    .line 10
     .line 11
+    return-void
+
     .line 12
     :cond_0
-    invoke-interface {p3}, Landroidx/media3/extractor/SeekMap;->isSeekable()Z
+    invoke-interface {p3}, Landroidx/media3/extractor/SeekMap;->isEstimated()Z
 
     .line 13
     .line 14
@@ -621,84 +627,120 @@
     move-result v0
 
     .line 16
-    iget-boolean v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsPlaceholder:Z
+    xor-int/lit8 v0, v0, 0x1
 
     .line 17
     .line 18
-    if-nez v1, :cond_1
+    iput-boolean v0, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->hasSeenNonEstimatedSeekMap:Z
 
     .line 19
     .line 20
-    iget-wide v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
+    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
 
     .line 21
     .line 22
-    cmp-long v1, v1, p1
-
     .line 23
     .line 24
-    if-nez v1, :cond_1
-
     .line 25
+    cmp-long v0, p1, v0
+
     .line 26
-    iget-boolean v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsSeekable:Z
-
     .line 27
+    if-nez v0, :cond_1
+
     .line 28
-    if-ne v1, v0, :cond_1
-
     .line 29
+    iget-wide p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
+
     .line 30
-    iget-boolean v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsLive:Z
-
     .line 31
-    .line 32
-    if-ne v1, p4, :cond_1
+    :cond_1
+    invoke-interface {p3}, Landroidx/media3/extractor/SeekMap;->isSeekable()Z
 
+    .line 32
     .line 33
     .line 34
-    return-void
+    move-result v0
 
     .line 35
-    :cond_1
-    iput-wide p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsPlaceholder:Z
 
     .line 36
     .line 37
-    iput-boolean v0, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsSeekable:Z
+    if-nez v1, :cond_2
 
     .line 38
     .line 39
-    iput-boolean p4, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsLive:Z
+    iget-wide v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
 
     .line 40
     .line 41
-    const/4 p1, 0x0
+    cmp-long v1, v1, p1
 
     .line 42
-    iput-boolean p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsPlaceholder:Z
-
     .line 43
-    .line 44
-    invoke-direct {p0}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->notifySourceInfoRefreshed()V
+    if-nez v1, :cond_2
 
+    .line 44
     .line 45
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsSeekable:Z
+
     .line 46
     .line 47
-    iget-object p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->listener:Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Listener;
+    if-ne v1, v0, :cond_2
 
     .line 48
     .line 49
-    if-eqz p1, :cond_2
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsLive:Z
 
     .line 50
     .line 51
-    invoke-interface {p1, p0, p3}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Listener;->onSeekMap(Landroidx/media3/exoplayer/source/MediaSource;Landroidx/media3/extractor/SeekMap;)V
+    if-ne v1, p4, :cond_2
 
     .line 52
     .line 53
+    return-void
+
     .line 54
     :cond_2
+    iput-wide p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineDurationUs:J
+
+    .line 55
+    .line 56
+    iput-boolean v0, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsSeekable:Z
+
+    .line 57
+    .line 58
+    iput-boolean p4, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsLive:Z
+
+    .line 59
+    .line 60
+    const/4 p1, 0x0
+
+    .line 61
+    iput-boolean p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->timelineIsPlaceholder:Z
+
+    .line 62
+    .line 63
+    invoke-direct {p0}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->notifySourceInfoRefreshed()V
+
+    .line 64
+    .line 65
+    .line 66
+    iget-object p1, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaSource;->listener:Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Listener;
+
+    .line 67
+    .line 68
+    if-eqz p1, :cond_3
+
+    .line 69
+    .line 70
+    invoke-interface {p1, p0, p3}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Listener;->onSeekMap(Landroidx/media3/exoplayer/source/MediaSource;Landroidx/media3/extractor/SeekMap;)V
+
+    .line 71
+    .line 72
+    .line 73
+    :cond_3
     return-void
 .end method
 

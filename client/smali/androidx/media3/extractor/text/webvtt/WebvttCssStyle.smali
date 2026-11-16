@@ -788,7 +788,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p1}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7

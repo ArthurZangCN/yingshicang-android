@@ -85,14 +85,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/e;
+    new-instance v0, Landroidx/constraintlayout/core/state/g;
 
     .line 2
     .line 3
     const/4 v1, 0x5
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/e;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/g;-><init>(I)V
 
     .line 5
     .line 6
@@ -786,11 +786,11 @@
 
     .line 195
     .line 196
-    if-nez v6, :cond_e
+    if-nez v6, :cond_f
 
     .line 197
     .line 198
-    if-nez v5, :cond_c
+    if-nez v5, :cond_d
 
     .line 199
     .line 200
@@ -824,10 +824,10 @@
     .line 214
     .line 215
     .line 216
-    move-result-wide v6
+    move-result-wide v7
 
     .line 217
-    iput-wide v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
+    iput-wide v7, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
 
     .line 218
     .line 219
@@ -835,15 +835,15 @@
 
     .line 220
     :cond_9
-    and-int/lit16 v6, p2, 0xe0
+    and-int/lit16 v8, p2, 0xe0
 
     .line 221
     .line 222
-    const/16 v8, 0xc0
+    const/16 v9, 0xc0
 
     .line 223
     .line 224
-    if-ne v6, v8, :cond_a
+    if-ne v8, v9, :cond_a
 
     .line 225
     .line 226
@@ -865,10 +865,10 @@
     .line 234
     .line 235
     .line 236
-    move-result-wide v6
+    move-result-wide v7
 
     .line 237
-    iput-wide v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
+    iput-wide v7, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
 
     .line 238
     .line 239
@@ -880,11 +880,11 @@
 
     .line 241
     .line 242
-    const/16 v6, 0xe0
+    const/16 v8, 0xe0
 
     .line 243
     .line 244
-    if-ne p2, v6, :cond_b
+    if-ne p2, v8, :cond_b
 
     .line 245
     .line 246
@@ -906,10 +906,10 @@
     .line 254
     .line 255
     .line 256
-    move-result-wide v6
+    move-result-wide v7
 
     .line 257
-    iput-wide v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
+    iput-wide v7, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
 
     .line 258
     .line 259
@@ -921,7 +921,7 @@
 
     .line 261
     :goto_1
-    if-eqz p2, :cond_c
+    if-eqz p2, :cond_d
 
     .line 262
     .line 263
@@ -929,230 +929,248 @@
 
     .line 264
     .line 265
-    const/16 v6, 0x100
+    const/16 v7, 0x100
 
     .line 266
     .line 267
-    invoke-direct {v5, v0, v6}, Landroidx/media3/extractor/ts/TsPayloadReader$TrackIdGenerator;-><init>(II)V
+    invoke-direct {v5, v0, v7}, Landroidx/media3/extractor/ts/TsPayloadReader$TrackIdGenerator;-><init>(II)V
 
     .line 268
     .line 269
     .line 270
-    iget-object v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->output:Landroidx/media3/extractor/ExtractorOutput;
+    iget-object v7, p0, Landroidx/media3/extractor/ts/PsExtractor;->output:Landroidx/media3/extractor/ExtractorOutput;
 
     .line 271
     .line 272
-    invoke-interface {p2, v6, v5}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->createTracks(Landroidx/media3/extractor/ExtractorOutput;Landroidx/media3/extractor/ts/TsPayloadReader$TrackIdGenerator;)V
+    invoke-interface {p2, v7, v5}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->createTracks(Landroidx/media3/extractor/ExtractorOutput;Landroidx/media3/extractor/ts/TsPayloadReader$TrackIdGenerator;)V
 
     .line 273
     .line 274
     .line 275
-    new-instance v5, Landroidx/media3/extractor/ts/PsExtractor$PesReader;
+    if-ne v0, v6, :cond_c
 
     .line 276
     .line 277
-    iget-object v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->timestampAdjuster:Landroidx/media3/common/util/TimestampAdjuster;
+    move v5, v3
 
     .line 278
+    goto :goto_2
+
     .line 279
-    invoke-direct {v5, p2, v6}, Landroidx/media3/extractor/ts/PsExtractor$PesReader;-><init>(Landroidx/media3/extractor/ts/ElementaryStreamReader;Landroidx/media3/common/util/TimestampAdjuster;)V
+    :cond_c
+    move v5, v1
 
     .line 280
+    :goto_2
+    new-instance v6, Landroidx/media3/extractor/ts/PsExtractor$PesReader;
+
     .line 281
     .line 282
-    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPayloadReaders:Landroid/util/SparseArray;
+    iget-object v7, p0, Landroidx/media3/extractor/ts/PsExtractor;->timestampAdjuster:Landroidx/media3/common/util/TimestampAdjuster;
 
     .line 283
     .line 284
-    invoke-virtual {p2, v0, v5}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    invoke-direct {v6, p2, v7, v5}, Landroidx/media3/extractor/ts/PsExtractor$PesReader;-><init>(Landroidx/media3/extractor/ts/ElementaryStreamReader;Landroidx/media3/common/util/TimestampAdjuster;Z)V
 
     .line 285
     .line 286
     .line 287
-    :cond_c
-    iget-boolean p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->foundAudioTrack:Z
+    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPayloadReaders:Landroid/util/SparseArray;
 
     .line 288
     .line 289
-    if-eqz p2, :cond_d
+    invoke-virtual {p2, v0, v6}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 290
     .line 291
-    iget-boolean p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->foundVideoTrack:Z
-
     .line 292
+    move-object v5, v6
+
     .line 293
-    if-eqz p2, :cond_d
+    :cond_d
+    iget-boolean p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->foundAudioTrack:Z
 
     .line 294
     .line 295
-    iget-wide v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
+    if-eqz p2, :cond_e
 
     .line 296
     .line 297
-    const-wide/16 v8, 0x2000
+    iget-boolean p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->foundVideoTrack:Z
 
     .line 298
     .line 299
-    add-long/2addr v6, v8
+    if-eqz p2, :cond_e
 
     .line 300
-    goto :goto_2
-
     .line 301
-    :cond_d
-    const-wide/32 v6, 0x100000
+    iget-wide v6, p0, Landroidx/media3/extractor/ts/PsExtractor;->lastTrackPosition:J
 
     .line 302
     .line 303
-    .line 304
-    :goto_2
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
+    const-wide/16 v8, 0x2000
 
+    .line 304
     .line 305
+    add-long/2addr v6, v8
+
     .line 306
+    goto :goto_3
+
     .line 307
-    move-result-wide v8
+    :cond_e
+    const-wide/32 v6, 0x100000
 
     .line 308
-    cmp-long p2, v8, v6
-
     .line 309
     .line 310
-    if-lez p2, :cond_e
+    :goto_3
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
 
     .line 311
     .line 312
-    iput-boolean v3, p0, Landroidx/media3/extractor/ts/PsExtractor;->foundAllTracks:Z
-
     .line 313
+    move-result-wide v8
+
     .line 314
-    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->output:Landroidx/media3/extractor/ExtractorOutput;
+    cmp-long p2, v8, v6
 
     .line 315
     .line 316
-    invoke-interface {p2}, Landroidx/media3/extractor/ExtractorOutput;->endTracks()V
+    if-lez p2, :cond_f
 
     .line 317
     .line 318
+    iput-boolean v3, p0, Landroidx/media3/extractor/ts/PsExtractor;->foundAllTracks:Z
+
     .line 319
-    :cond_e
-    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
-
     .line 320
-    .line 321
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
+    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->output:Landroidx/media3/extractor/ExtractorOutput;
 
+    .line 321
     .line 322
+    invoke-interface {p2}, Landroidx/media3/extractor/ExtractorOutput;->endTracks()V
+
     .line 323
     .line 324
-    move-result-object p2
-
     .line 325
-    invoke-interface {p1, p2, v1, v2}, Landroidx/media3/extractor/ExtractorInput;->peekFully([BII)V
+    :cond_f
+    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 326
     .line 327
-    .line 328
-    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
+    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
 
+    .line 328
     .line 329
     .line 330
-    invoke-virtual {p2, v1}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+    move-result-object p2
 
     .line 331
+    invoke-interface {p1, p2, v1, v2}, Landroidx/media3/extractor/ExtractorInput;->peekFully([BII)V
+
     .line 332
     .line 333
+    .line 334
     iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
-    .line 334
     .line 335
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
-
     .line 336
+    invoke-virtual {p2, v1}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+
     .line 337
     .line 338
-    move-result p2
-
     .line 339
-    add-int/2addr p2, v4
+    iget-object p2, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 340
-    if-nez v5, :cond_f
-
     .line 341
-    .line 342
-    invoke-interface {p1, p2}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
+    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
 
+    .line 342
     .line 343
     .line 344
+    move-result p2
+
     .line 345
-    goto :goto_3
+    add-int/2addr p2, v4
 
     .line 346
-    :cond_f
-    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
+    if-nez v5, :cond_10
 
     .line 347
     .line 348
-    invoke-virtual {v0, p2}, Landroidx/media3/common/util/ParsableByteArray;->reset(I)V
+    invoke-interface {p1, p2}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
 
     .line 349
     .line 350
     .line 351
-    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
+    goto :goto_4
 
     .line 352
-    .line 353
-    invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
+    :cond_10
+    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
+    .line 353
     .line 354
+    invoke-virtual {v0, p2}, Landroidx/media3/common/util/ParsableByteArray;->reset(I)V
+
     .line 355
     .line 356
-    move-result-object v0
-
     .line 357
-    invoke-interface {p1, v0, v1, p2}, Landroidx/media3/extractor/ExtractorInput;->readFully([BII)V
+    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 358
     .line 359
-    .line 360
-    iget-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
+    invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
 
+    .line 360
     .line 361
     .line 362
-    invoke-virtual {p1, v4}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+    move-result-object v0
 
     .line 363
+    invoke-interface {p1, v0, v1, p2}, Landroidx/media3/extractor/ExtractorInput;->readFully([BII)V
+
     .line 364
     .line 365
+    .line 366
     iget-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
-    .line 366
     .line 367
-    invoke-virtual {v5, p1}, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->consume(Landroidx/media3/common/util/ParsableByteArray;)V
-
     .line 368
+    invoke-virtual {p1, v4}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+
     .line 369
     .line 370
+    .line 371
     iget-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
-    .line 371
     .line 372
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->capacity()I
-
     .line 373
+    invoke-virtual {v5, p1}, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->consume(Landroidx/media3/common/util/ParsableByteArray;)V
+
     .line 374
     .line 375
-    move-result p2
-
     .line 376
-    invoke-virtual {p1, p2}, Landroidx/media3/common/util/ParsableByteArray;->setLimit(I)V
+    iget-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor;->psPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 377
     .line 378
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->capacity()I
+
     .line 379
-    :goto_3
+    .line 380
+    .line 381
+    move-result p2
+
+    .line 382
+    invoke-virtual {p1, p2}, Landroidx/media3/common/util/ParsableByteArray;->setLimit(I)V
+
+    .line 383
+    .line 384
+    .line 385
+    :goto_4
     return v1
 .end method
 

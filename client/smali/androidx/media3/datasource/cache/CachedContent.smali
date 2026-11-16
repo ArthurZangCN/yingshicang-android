@@ -311,7 +311,7 @@
 
     .line 12
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 13
     .line 14
@@ -332,7 +332,7 @@
 
     .line 21
     :goto_1
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 22
     .line 23
@@ -718,7 +718,7 @@
 
     .line 7
     .line 8
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/d;->b(Ljava/lang/String;II)I
+    invoke-static {v2, v0, v1}, Landroidx/concurrent/futures/a;->a(Ljava/lang/String;II)I
 
     .line 9
     .line 10
@@ -1009,7 +1009,7 @@
     move-result v0
 
     .line 7
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 8
     .line 9

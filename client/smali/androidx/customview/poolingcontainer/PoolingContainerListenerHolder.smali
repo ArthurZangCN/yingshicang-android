@@ -76,7 +76,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->B(Ljava/util/List;)I
+    invoke-static {v0}, Lcom/blankj/utilcode/util/f;->i(Ljava/util/List;)I
 
     .line 4
     .line 5

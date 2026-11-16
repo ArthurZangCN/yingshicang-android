@@ -387,7 +387,7 @@
 
     .line 13
     :goto_0
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -433,7 +433,7 @@
     move-result p1
 
     .line 11
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 12
     .line 13
@@ -468,167 +468,217 @@
     move-result v2
 
     .line 7
-    if-ge v1, v2, :cond_1
+    const/4 v3, 0x0
 
     .line 8
+    if-ge v1, v2, :cond_1
+
     .line 9
+    .line 10
     invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    .line 10
     .line 11
     .line 12
+    .line 13
     move-result-object v2
 
-    .line 13
+    .line 14
     check-cast v2, Landroidx/media3/common/DrmInitData$SchemeData;
 
-    .line 14
     .line 15
-    sget-object v3, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
-
     .line 16
+    sget-object v4, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
+
     .line 17
-    iget-object v4, v2, Landroidx/media3/common/DrmInitData$SchemeData;->uuid:Ljava/util/UUID;
-
     .line 18
-    .line 19
-    invoke-virtual {v3, v4}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
+    iget-object v5, v2, Landroidx/media3/common/DrmInitData$SchemeData;->uuid:Ljava/util/UUID;
 
+    .line 19
     .line 20
+    invoke-virtual {v4, v5}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
+
     .line 21
     .line 22
-    move-result v3
-
     .line 23
-    if-eqz v3, :cond_0
+    move-result v4
 
     .line 24
+    if-eqz v4, :cond_0
+
     .line 25
+    .line 26
     iget-object v2, v2, Landroidx/media3/common/DrmInitData$SchemeData;->licenseServerUrl:Ljava/lang/String;
 
-    .line 26
     .line 27
+    .line 28
     if-eqz v2, :cond_0
 
-    .line 28
     .line 29
+    .line 30
     invoke-virtual {p0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 30
     .line 31
     .line 32
+    .line 33
     goto :goto_1
 
-    .line 33
+    .line 34
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
-    .line 34
     .line 35
+    .line 36
     goto :goto_0
 
-    .line 36
-    :cond_1
-    const/4 v2, 0x0
-
     .line 37
-    :goto_1
-    if-nez v2, :cond_2
+    :cond_1
+    move-object v2, v3
 
     .line 38
-    .line 39
-    return-void
+    :goto_1
+    if-nez v2, :cond_3
 
+    .line 39
     .line 40
-    :cond_2
-    :goto_2
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    invoke-static {p0}, Landroidx/media3/exoplayer/drm/ClearKeyUtil;->buildClearKeyPssh(Ljava/util/List;)[B
 
     .line 41
     .line 42
     .line 43
-    move-result v1
+    move-result-object v1
 
     .line 44
-    if-ge v0, v1, :cond_4
+    if-eqz v1, :cond_2
 
     .line 45
     .line 46
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    new-instance v2, Landroidx/media3/common/DrmInitData$SchemeData;
 
     .line 47
     .line 48
-    .line 49
-    move-result-object v1
+    sget-object v4, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
 
+    .line 49
     .line 50
-    check-cast v1, Landroidx/media3/common/DrmInitData$SchemeData;
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 51
     .line 52
-    sget-object v3, Landroidx/media3/common/C;->COMMON_PSSH_UUID:Ljava/util/UUID;
-
     .line 53
+    move-result-object v0
+
     .line 54
-    iget-object v4, v1, Landroidx/media3/common/DrmInitData$SchemeData;->uuid:Ljava/util/UUID;
+    check-cast v0, Landroidx/media3/common/DrmInitData$SchemeData;
 
     .line 55
     .line 56
-    invoke-virtual {v3, v4}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
+    iget-object v0, v0, Landroidx/media3/common/DrmInitData$SchemeData;->mimeType:Ljava/lang/String;
 
     .line 57
     .line 58
+    invoke-direct {v2, v4, v3, v0, v1}, Landroidx/media3/common/DrmInitData$SchemeData;-><init>(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;[B)V
+
     .line 59
-    move-result v3
-
     .line 60
-    if-eqz v3, :cond_3
-
     .line 61
-    .line 62
-    iget-object v3, v1, Landroidx/media3/common/DrmInitData$SchemeData;->licenseServerUrl:Ljava/lang/String;
+    invoke-virtual {p0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 62
     .line 63
     .line 64
-    if-nez v3, :cond_3
+    :cond_2
+    return-void
 
     .line 65
-    .line 66
-    new-instance v3, Landroidx/media3/common/DrmInitData$SchemeData;
+    :cond_3
+    :goto_2
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
+    .line 66
     .line 67
     .line 68
-    sget-object v4, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
+    move-result v1
 
     .line 69
+    if-ge v0, v1, :cond_5
+
     .line 70
-    iget-object v5, v1, Landroidx/media3/common/DrmInitData$SchemeData;->mimeType:Ljava/lang/String;
-
     .line 71
-    .line 72
-    iget-object v1, v1, Landroidx/media3/common/DrmInitData$SchemeData;->data:[B
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
+    .line 72
     .line 73
     .line 74
-    invoke-direct {v3, v4, v2, v5, v1}, Landroidx/media3/common/DrmInitData$SchemeData;-><init>(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;[B)V
+    move-result-object v1
 
     .line 75
+    check-cast v1, Landroidx/media3/common/DrmInitData$SchemeData;
+
     .line 76
     .line 77
-    invoke-virtual {p0, v0, v3}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
+    sget-object v3, Landroidx/media3/common/C;->COMMON_PSSH_UUID:Ljava/util/UUID;
 
     .line 78
     .line 79
+    iget-object v4, v1, Landroidx/media3/common/DrmInitData$SchemeData;->uuid:Ljava/util/UUID;
+
     .line 80
-    :cond_3
+    .line 81
+    invoke-virtual {v3, v4}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
+
+    .line 82
+    .line 83
+    .line 84
+    move-result v3
+
+    .line 85
+    if-eqz v3, :cond_4
+
+    .line 86
+    .line 87
+    iget-object v3, v1, Landroidx/media3/common/DrmInitData$SchemeData;->licenseServerUrl:Ljava/lang/String;
+
+    .line 88
+    .line 89
+    if-nez v3, :cond_4
+
+    .line 90
+    .line 91
+    new-instance v3, Landroidx/media3/common/DrmInitData$SchemeData;
+
+    .line 92
+    .line 93
+    sget-object v4, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
+
+    .line 94
+    .line 95
+    iget-object v5, v1, Landroidx/media3/common/DrmInitData$SchemeData;->mimeType:Ljava/lang/String;
+
+    .line 96
+    .line 97
+    iget-object v1, v1, Landroidx/media3/common/DrmInitData$SchemeData;->data:[B
+
+    .line 98
+    .line 99
+    invoke-direct {v3, v4, v2, v5, v1}, Landroidx/media3/common/DrmInitData$SchemeData;-><init>(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;[B)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-virtual {p0, v0, v3}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 103
+    .line 104
+    .line 105
+    :cond_4
     add-int/lit8 v0, v0, 0x1
 
-    .line 81
-    .line 82
+    .line 106
+    .line 107
     goto :goto_2
 
-    .line 83
-    :cond_4
+    .line 108
+    :cond_5
     return-void
 .end method
 
@@ -1700,7 +1750,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0}, Lcom/google/common/base/w;->a(C)Lcom/google/common/base/w;
+    invoke-static {v0}, Lcom/google/common/base/y;->a(C)Lcom/google/common/base/y;
 
     .line 13
     .line 14
@@ -1723,7 +1773,7 @@
     move-result-object p0
 
     .line 23
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 24
     .line 25
@@ -1731,7 +1781,7 @@
     move-result-object p0
 
     .line 27
-    invoke-virtual {v0, p0}, Lcom/google/common/base/w;->c(Ljava/lang/CharSequence;)Ljava/util/List;
+    invoke-virtual {v0, p0}, Lcom/google/common/base/y;->c(Ljava/lang/CharSequence;)Ljava/util/List;
 
     .line 28
     .line 29
@@ -1892,7 +1942,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -2658,7 +2708,7 @@
 
     .line 17
     .line 18
-    invoke-static {v3, v2}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v3, v2}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 19
     .line 20
@@ -2724,14 +2774,30 @@
 
     .line 9
     :cond_0
-    invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    const-string p1, "[^0-9]"
 
     .line 10
     .line 11
+    const-string p2, ""
+
     .line 12
+    .line 13
+    invoke-virtual {p0, p1, p2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    .line 18
+    .line 19
+    .line 20
     move-result-wide p2
 
-    .line 13
+    .line 21
     :goto_0
     return-wide p2
 .end method
@@ -3726,7 +3792,7 @@
     move-result-object v7
 
     .line 73
-    iget-object v8, v0, Landroidx/media3/exoplayer/dash/manifest/DashManifestParser$RepresentationInfo;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v8, v0, Landroidx/media3/exoplayer/dash/manifest/DashManifestParser$RepresentationInfo;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 74
     .line 75
@@ -4076,6 +4142,25 @@
 
     .line 8
     :goto_0
+    invoke-virtual {p1}, Lorg/xmlpull/v1/XmlPullParserException;->getDetail()Ljava/lang/Throwable;
+
+    move-result-object p2
+
+    instance-of p2, p2, Ljava/io/IOException;
+
+    if-eqz p2, :cond_1
+
+    .line 9
+    invoke-virtual {p1}, Lorg/xmlpull/v1/XmlPullParserException;->getDetail()Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/io/IOException;
+
+    throw p1
+
+    .line 10
+    :cond_1
     invoke-static {v0, p1}, Landroidx/media3/common/ParserException;->createForMalformedManifest(Ljava/lang/String;Ljava/lang/Throwable;)Landroidx/media3/common/ParserException;
 
     move-result-object p1
@@ -5955,11 +6040,11 @@
     const/4 v3, 0x0
 
     .line 11
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_8
 
     .line 12
     .line 13
-    invoke-static {v0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 14
     .line 15
@@ -6102,320 +6187,319 @@
     .line 73
     .line 74
     .line 75
-    goto :goto_5
+    goto/16 :goto_5
 
     .line 76
+    .line 77
     :pswitch_0
     const-string v0, "value"
 
-    .line 77
     .line 78
+    .line 79
     invoke-interface {p1, v1, v0}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 79
     .line 80
     .line 81
+    .line 82
     move-result-object v0
 
-    .line 82
+    .line 83
     const-string v4, "default_KID"
 
-    .line 83
     .line 84
+    .line 85
     invoke-static {p1, v4}, Landroidx/media3/common/util/XmlPullParserUtil;->getAttributeValueIgnorePrefix(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 85
     .line 86
     .line 87
-    move-result-object v4
-
     .line 88
-    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    move-result-object v4
 
     .line 89
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
     .line 90
     .line 91
-    move-result v5
-
     .line 92
-    if-nez v5, :cond_5
+    move-result v5
 
     .line 93
+    if-nez v5, :cond_4
+
     .line 94
-    const-string v5, "00000000-0000-0000-0000-000000000000"
-
     .line 95
-    .line 96
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
 
+    .line 96
     .line 97
     .line 98
-    .line 99
     move-result v5
 
+    .line 99
+    const/16 v6, 0x24
+
     .line 100
-    if-nez v5, :cond_5
-
     .line 101
+    if-ge v5, v6, :cond_5
+
     .line 102
-    const-string v5, "\\s+"
-
     .line 103
-    .line 104
-    invoke-virtual {v4, v5}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    :cond_4
+    invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
+    .line 104
     .line 105
     .line 106
-    .line 107
     move-result-object v4
 
+    .line 107
+    invoke-virtual {v4}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
     .line 108
-    array-length v5, v4
-
     .line 109
-    new-array v5, v5, [Ljava/util/UUID;
-
     .line 110
+    move-result-object v4
+
     .line 111
-    move v6, v3
+    :cond_5
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     .line 112
-    :goto_1
-    array-length v7, v4
-
     .line 113
-    if-ge v6, v7, :cond_4
-
     .line 114
+    move-result v5
+
     .line 115
-    aget-object v7, v4, v6
+    if-nez v5, :cond_7
 
     .line 116
     .line 117
-    invoke-static {v7}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
+    const-string v5, "00000000-0000-0000-0000-000000000000"
 
     .line 118
     .line 119
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 120
-    move-result-object v7
-
     .line 121
-    aput-object v7, v5, v6
-
     .line 122
+    move-result v5
+
     .line 123
-    add-int/lit8 v6, v6, 0x1
+    if-nez v5, :cond_7
 
     .line 124
     .line 125
-    goto :goto_1
+    const-string v5, "\\s+"
 
     .line 126
-    :cond_4
-    sget-object v4, Landroidx/media3/common/C;->COMMON_PSSH_UUID:Ljava/util/UUID;
-
     .line 127
-    .line 128
-    invoke-static {v4, v5, v1}, Landroidx/media3/extractor/mp4/PsshAtomUtil;->buildPsshAtom(Ljava/util/UUID;[Ljava/util/UUID;[B)[B
+    invoke-virtual {v4, v5}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
+    .line 128
     .line 129
     .line 130
+    move-result-object v4
+
     .line 131
-    move-result-object v5
+    array-length v5, v4
 
     .line 132
-    move-object v6, v1
+    new-array v5, v5, [Ljava/util/UUID;
 
     .line 133
-    goto :goto_6
-
     .line 134
-    :cond_5
-    const-string v4, "Ignoring <ContentProtection> with schemeIdUri=\"urn:mpeg:dash:mp4protection:2011\" (ClearKey) due to missing required default_KID attribute."
+    move v6, v3
 
     .line 135
+    :goto_1
+    array-length v7, v4
+
     .line 136
-    invoke-static {v2, v4}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+    if-ge v6, v7, :cond_6
 
     .line 137
     .line 138
-    .line 139
-    move-object v4, v1
+    aget-object v7, v4, v6
 
+    .line 139
     .line 140
-    :goto_2
-    move-object v5, v4
+    invoke-static {v7}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     .line 141
-    :goto_3
-    move-object v6, v5
-
     .line 142
-    goto :goto_6
-
     .line 143
-    :pswitch_1
-    sget-object v4, Landroidx/media3/common/C;->WIDEVINE_UUID:Ljava/util/UUID;
+    move-result-object v7
 
     .line 144
-    .line 145
-    :goto_4
-    move-object v0, v1
+    aput-object v7, v5, v6
 
+    .line 145
     .line 146
-    move-object v5, v0
+    add-int/lit8 v6, v6, 0x1
 
     .line 147
-    goto :goto_3
-
     .line 148
-    :pswitch_2
-    sget-object v4, Landroidx/media3/common/C;->PLAYREADY_UUID:Ljava/util/UUID;
+    goto :goto_1
 
     .line 149
-    .line 150
-    goto :goto_4
+    :cond_6
+    sget-object v4, Landroidx/media3/common/C;->COMMON_PSSH_UUID:Ljava/util/UUID;
 
+    .line 150
     .line 151
-    :pswitch_3
-    sget-object v4, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
+    invoke-static {v4, v5, v1}, Landroidx/media3/extractor/mp4/PsshAtomUtil;->buildPsshAtom(Ljava/util/UUID;[Ljava/util/UUID;[B)[B
 
     .line 152
     .line 153
-    goto :goto_4
-
     .line 154
-    :cond_6
-    :goto_5
-    move-object v0, v1
+    move-result-object v5
 
     .line 155
-    move-object v4, v0
+    move-object v6, v1
 
     .line 156
-    goto :goto_2
+    goto :goto_6
 
     .line 157
     :cond_7
-    :goto_6
-    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    const-string v4, "Ignoring <ContentProtection> with schemeIdUri=\"urn:mpeg:dash:mp4protection:2011\" (ClearKey) due to missing required default_KID attribute."
 
     .line 158
     .line 159
-    .line 160
-    const-string v7, "clearkey:Laurl"
+    invoke-static {v2, v4}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 160
     .line 161
     .line 162
-    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    move-object v4, v1
 
     .line 163
+    :goto_2
+    move-object v5, v4
+
     .line 164
+    :goto_3
+    move-object v6, v5
+
     .line 165
-    move-result v7
+    goto :goto_6
 
     .line 166
-    const/4 v8, 0x4
+    :pswitch_1
+    sget-object v4, Landroidx/media3/common/C;->WIDEVINE_UUID:Ljava/util/UUID;
 
     .line 167
-    if-nez v7, :cond_8
-
     .line 168
+    :goto_4
+    move-object v0, v1
+
     .line 169
-    const-string v7, "dashif:Laurl"
+    move-object v5, v0
 
     .line 170
+    goto :goto_3
+
     .line 171
-    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    :pswitch_2
+    sget-object v4, Landroidx/media3/common/C;->PLAYREADY_UUID:Ljava/util/UUID;
 
     .line 172
     .line 173
+    goto :goto_4
+
     .line 174
-    move-result v7
+    :pswitch_3
+    sget-object v4, Landroidx/media3/common/C;->CLEARKEY_UUID:Ljava/util/UUID;
 
     .line 175
-    if-eqz v7, :cond_9
-
     .line 176
+    goto :goto_4
+
     .line 177
     :cond_8
-    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    :goto_5
+    move-object v0, v1
 
     .line 178
+    move-object v4, v0
+
     .line 179
+    goto :goto_2
+
     .line 180
-    move-result v7
+    :cond_9
+    :goto_6
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     .line 181
-    if-ne v7, v8, :cond_9
-
     .line 182
     .line 183
-    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+    const-string v7, "clearkey:Laurl"
 
     .line 184
     .line 185
+    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+
     .line 186
-    move-result-object v6
-
     .line 187
-    goto :goto_7
-
     .line 188
-    :cond_9
-    const-string v7, "ms:laurl"
+    move-result v7
 
     .line 189
+    const/4 v8, 0x4
+
     .line 190
-    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+    if-nez v7, :cond_a
 
     .line 191
     .line 192
-    .line 193
-    move-result v7
+    const-string v7, "dashif:Laurl"
 
+    .line 193
     .line 194
-    if-eqz v7, :cond_a
+    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 195
     .line 196
-    const-string v6, "licenseUrl"
-
     .line 197
+    move-result v7
+
     .line 198
-    invoke-interface {p1, v1, v6}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    if-eqz v7, :cond_b
 
     .line 199
     .line 200
-    .line 201
-    move-result-object v6
-
-    .line 202
-    goto :goto_7
-
-    .line 203
     :cond_a
-    if-nez v5, :cond_c
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    .line 204
-    .line 205
-    const-string v7, "pssh"
-
-    .line 206
-    .line 207
-    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTagIgnorePrefix(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    .line 208
-    .line 209
-    .line 210
+    .line 201
+    .line 202
+    .line 203
     move-result v7
 
+    .line 204
+    if-ne v7, v8, :cond_b
+
+    .line 205
+    .line 206
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    .line 207
+    .line 208
+    .line 209
+    move-result-object v6
+
+    .line 210
+    goto :goto_7
+
     .line 211
-    if-eqz v7, :cond_c
+    :cond_b
+    const-string v7, "ms:laurl"
 
     .line 212
     .line 213
-    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 214
     .line 215
@@ -6423,197 +6507,248 @@
     move-result v7
 
     .line 217
-    if-ne v7, v8, :cond_c
+    if-eqz v7, :cond_c
 
     .line 218
     .line 219
-    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+    const-string v6, "licenseUrl"
 
     .line 220
     .line 221
+    invoke-interface {p1, v1, v6}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
     .line 222
-    move-result-object v4
-
     .line 223
-    invoke-static {v4, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
-
     .line 224
+    move-result-object v6
+
     .line 225
+    goto :goto_7
+
     .line 226
-    move-result-object v4
+    :cond_c
+    if-nez v5, :cond_e
 
     .line 227
-    invoke-static {v4}, Landroidx/media3/extractor/mp4/PsshAtomUtil;->parseUuid([B)Ljava/util/UUID;
-
     .line 228
+    const-string v7, "pssh"
+
     .line 229
     .line 230
-    move-result-object v5
+    invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTagIgnorePrefix(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     .line 231
-    if-nez v5, :cond_b
-
     .line 232
     .line 233
-    const-string v4, "Skipping malformed cenc:pssh data"
+    move-result v7
 
     .line 234
+    if-eqz v7, :cond_e
+
     .line 235
-    invoke-static {v2, v4}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 236
-    .line 237
-    .line 238
-    move-object v4, v5
-
-    .line 239
-    move-object v5, v1
-
-    .line 240
-    goto :goto_7
-
-    .line 241
-    :cond_b
-    move-object v10, v5
-
-    .line 242
-    move-object v5, v4
-
-    .line 243
-    move-object v4, v10
-
-    .line 244
-    goto :goto_7
-
-    .line 245
-    :cond_c
-    if-nez v5, :cond_d
-
-    .line 246
-    .line 247
-    sget-object v7, Landroidx/media3/common/C;->PLAYREADY_UUID:Ljava/util/UUID;
-
-    .line 248
-    .line 249
-    invoke-virtual {v7, v4}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
-
-    .line 250
-    .line 251
-    .line 252
-    move-result v9
-
-    .line 253
-    if-eqz v9, :cond_d
-
-    .line 254
-    .line 255
-    const-string v9, "mspr:pro"
-
-    .line 256
-    .line 257
-    invoke-static {p1, v9}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
-
-    .line 258
-    .line 259
-    .line 260
-    move-result v9
-
-    .line 261
-    if-eqz v9, :cond_d
-
-    .line 262
-    .line 263
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    .line 264
-    .line 265
-    .line 266
-    move-result v9
+    .line 237
+    .line 238
+    .line 239
+    move-result v7
 
-    .line 267
-    if-ne v9, v8, :cond_d
+    .line 240
+    if-ne v7, v8, :cond_e
 
-    .line 268
-    .line 269
+    .line 241
+    .line 242
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
-    .line 270
-    .line 271
-    .line 272
+    .line 243
+    .line 244
+    .line 245
+    move-result-object v4
+
+    .line 246
+    invoke-static {v4, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 247
+    .line 248
+    .line 249
+    move-result-object v4
+
+    .line 250
+    invoke-static {v4}, Landroidx/media3/extractor/mp4/PsshAtomUtil;->parseUuid([B)Ljava/util/UUID;
+
+    .line 251
+    .line 252
+    .line 253
     move-result-object v5
 
-    .line 273
-    invoke-static {v5, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+    .line 254
+    if-nez v5, :cond_d
 
-    .line 274
-    .line 275
-    .line 276
-    move-result-object v5
+    .line 255
+    .line 256
+    const-string v4, "Skipping malformed cenc:pssh data"
 
-    .line 277
-    invoke-static {v7, v5}, Landroidx/media3/extractor/mp4/PsshAtomUtil;->buildPsshAtom(Ljava/util/UUID;[B)[B
+    .line 257
+    .line 258
+    invoke-static {v2, v4}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 278
-    .line 279
-    .line 280
-    move-result-object v5
+    .line 259
+    .line 260
+    .line 261
+    move-object v4, v5
 
-    .line 281
+    .line 262
+    move-object v5, v1
+
+    .line 263
     goto :goto_7
 
-    .line 282
+    .line 264
     :cond_d
+    move-object v10, v5
+
+    .line 265
+    move-object v5, v4
+
+    .line 266
+    move-object v4, v10
+
+    .line 267
+    goto :goto_7
+
+    .line 268
+    :cond_e
+    if-nez v5, :cond_f
+
+    .line 269
+    .line 270
+    sget-object v7, Landroidx/media3/common/C;->PLAYREADY_UUID:Ljava/util/UUID;
+
+    .line 271
+    .line 272
+    invoke-virtual {v7, v4}, Ljava/util/UUID;->equals(Ljava/lang/Object;)Z
+
+    .line 273
+    .line 274
+    .line 275
+    move-result v9
+
+    .line 276
+    if-eqz v9, :cond_f
+
+    .line 277
+    .line 278
+    const-string v9, "mspr:pro"
+
+    .line 279
+    .line 280
+    invoke-static {p1, v9}, Landroidx/media3/common/util/XmlPullParserUtil;->isStartTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+
+    .line 281
+    .line 282
+    .line 283
+    move-result v9
+
+    .line 284
+    if-eqz v9, :cond_f
+
+    .line 285
+    .line 286
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    .line 287
+    .line 288
+    .line 289
+    move-result v9
+
+    .line 290
+    if-ne v9, v8, :cond_f
+
+    .line 291
+    .line 292
+    invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
+
+    .line 293
+    .line 294
+    .line 295
+    move-result-object v5
+
+    .line 296
+    invoke-static {v5, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 297
+    .line 298
+    .line 299
+    move-result-object v5
+
+    .line 300
+    invoke-static {v7, v5}, Landroidx/media3/extractor/mp4/PsshAtomUtil;->buildPsshAtom(Ljava/util/UUID;[B)[B
+
+    .line 301
+    .line 302
+    .line 303
+    move-result-object v5
+
+    .line 304
+    goto :goto_7
+
+    .line 305
+    :cond_f
     invoke-static {p1}, Landroidx/media3/exoplayer/dash/manifest/DashManifestParser;->maybeSkipTag(Lorg/xmlpull/v1/XmlPullParser;)V
 
-    .line 283
-    .line 284
-    .line 285
+    .line 306
+    .line 307
+    .line 308
     :goto_7
     const-string v7, "ContentProtection"
 
-    .line 286
-    .line 287
+    .line 309
+    .line 310
     invoke-static {p1, v7}, Landroidx/media3/common/util/XmlPullParserUtil;->isEndTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
-    .line 288
-    .line 289
-    .line 290
+    .line 311
+    .line 312
+    .line 313
     move-result v7
 
-    .line 291
-    if-eqz v7, :cond_7
+    .line 314
+    if-eqz v7, :cond_9
 
-    .line 292
-    .line 293
-    if-eqz v4, :cond_e
+    .line 315
+    .line 316
+    if-eqz v4, :cond_10
 
-    .line 294
-    .line 295
+    .line 317
+    .line 318
     new-instance v1, Landroidx/media3/common/DrmInitData$SchemeData;
 
-    .line 296
-    .line 297
+    .line 319
+    .line 320
     const-string p1, "video/mp4"
 
-    .line 298
-    .line 299
+    .line 321
+    .line 322
     invoke-direct {v1, v4, v6, p1, v5}, Landroidx/media3/common/DrmInitData$SchemeData;-><init>(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;[B)V
 
-    .line 300
-    .line 301
-    .line 302
-    :cond_e
+    .line 323
+    .line 324
+    .line 325
+    :cond_10
     invoke-static {v0, v1}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
-    .line 303
-    .line 304
-    .line 305
+    .line 326
+    .line 327
+    .line 328
     move-result-object p1
 
-    .line 306
+    .line 329
     return-object p1
 
-    .line 307
+    .line 330
+    nop
+
+    .line 331
     :sswitch_data_0
     .sparse-switch
         -0x7610741f -> :sswitch_3
@@ -6622,24 +6757,24 @@
         0x6c0c9d2a -> :sswitch_0
     .end sparse-switch
 
-    .line 308
-    .line 309
-    .line 310
-    .line 311
-    .line 312
-    .line 313
-    .line 314
-    .line 315
-    .line 316
-    .line 317
-    .line 318
-    .line 319
-    .line 320
-    .line 321
-    .line 322
-    .line 323
-    .line 324
-    .line 325
+    .line 332
+    .line 333
+    .line 334
+    .line 335
+    .line 336
+    .line 337
+    .line 338
+    .line 339
+    .line 340
+    .line 341
+    .line 342
+    .line 343
+    .line 344
+    .line 345
+    .line 346
+    .line 347
+    .line 348
+    .line 349
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_3
@@ -9408,7 +9543,7 @@
     const/4 v2, 0x0
 
     .line 310
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 311
     .line 312
@@ -10722,7 +10857,7 @@
 
     .line 18
     .line 19
-    invoke-static {v4, v3}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v4, v3}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 20
     .line 21
@@ -10762,7 +10897,7 @@
 
     .line 36
     .line 37
-    invoke-static {v3, v4}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v3, v4}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 38
     .line 39
@@ -11353,21 +11488,6 @@
     .line 242
     .line 243
     .line 244
-    .line 245
-    .line 246
-    .line 247
-    .line 248
-    .line 249
-    .line 250
-    .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_a
@@ -11437,7 +11557,7 @@
 
     .line 18
     .line 19
-    invoke-static {v3, v2}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v3, v2}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 20
     .line 21
@@ -11516,7 +11636,7 @@
 
     .line 18
     .line 19
-    invoke-static {v4, v3}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v4, v3}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 20
     .line 21
@@ -13028,7 +13148,7 @@
 
     .line 18
     .line 19
-    invoke-static {v4, v3}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v4, v3}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 20
     .line 21
@@ -13331,7 +13451,7 @@
 
     .line 18
     .line 19
-    invoke-static {v4, v3}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v4, v3}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 20
     .line 21
@@ -13351,7 +13471,7 @@
 
     .line 28
     .line 29
-    invoke-static {v3, v4}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v3, v4}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 30
     .line 31

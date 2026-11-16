@@ -230,7 +230,7 @@
 
 # virtual methods
 .method public acquire(Landroidx/media3/common/Format;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;->this$0:Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager;
@@ -250,23 +250,20 @@
     .line 8
     .line 9
     .line 10
-    new-instance v1, Landroidx/media3/exoplayer/drm/d;
+    new-instance v1, Landroidx/media3/exoplayer/drm/f;
 
     .line 11
     .line 12
-    const/4 v2, 0x0
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/drm/f;-><init>(Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;Landroidx/media3/common/Format;)V
 
     .line 13
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/drm/d;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 14
     .line 15
-    .line 16
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 16
     .line 17
     .line 18
-    .line 19
     return-void
 .end method
 
@@ -291,11 +288,11 @@
     .line 8
     .line 9
     .line 10
-    new-instance v1, Landroidx/media3/exoplayer/drm/e;
+    new-instance v1, Landroidx/media3/exoplayer/drm/g;
 
     .line 11
     .line 12
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/drm/e;-><init>(Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/drm/g;-><init>(Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;)V
 
     .line 13
     .line 14

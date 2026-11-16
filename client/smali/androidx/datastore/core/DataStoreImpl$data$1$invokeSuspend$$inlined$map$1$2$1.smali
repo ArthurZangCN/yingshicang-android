@@ -1,5 +1,5 @@
 .class public final Landroidx/datastore/core/DataStoreImpl$data$1$invokeSuspend$$inlined$map$1$2$1;
-.super Lu3/c;
+.super Ly3/c;
 .source "SourceFile"
 
 
@@ -13,7 +13,7 @@
     name = null
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.core.DataStoreImpl$data$1$invokeSuspend$$inlined$map$1$2"
     f = "DataStoreImpl.kt"
     l = {
@@ -39,7 +39,7 @@
 
     iput-object p1, p0, Landroidx/datastore/core/DataStoreImpl$data$1$invokeSuspend$$inlined$map$1$2$1;->this$0:Landroidx/datastore/core/DataStoreImpl$data$1$invokeSuspend$$inlined$map$1$2;
 
-    invoke-direct {p0, p2}, Lu3/c;-><init>(Lkotlin/coroutines/d;)V
+    invoke-direct {p0, p2}, Ly3/c;-><init>(Lkotlin/coroutines/d;)V
 
     return-void
 .end method

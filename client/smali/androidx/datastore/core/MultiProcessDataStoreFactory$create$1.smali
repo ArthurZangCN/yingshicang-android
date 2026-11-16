@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/datastore/core/MultiProcessDataStoreFactory;->create(Landroidx/datastore/core/Serializer;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Ljava/util/List;Lkotlinx/coroutines/b0;Lkotlin/jvm/functions/Function0;)Landroidx/datastore/core/DataStore;
+    value = Landroidx/datastore/core/MultiProcessDataStoreFactory;->create(Landroidx/datastore/core/Serializer;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Ljava/util/List;Ln4/e0;Lkotlin/jvm/functions/Function0;)Landroidx/datastore/core/DataStore;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,19 +28,26 @@
 
 
 # instance fields
-.field final synthetic $scope:Lkotlinx/coroutines/b0;
+.field final synthetic $scope:Ln4/e0;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/b0;)V
+.method public constructor <init>(Ln4/e0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/datastore/core/MultiProcessDataStoreFactory$create$1;->$scope:Lkotlinx/coroutines/b0;
+    .line 1
+    iput-object p1, p0, Landroidx/datastore/core/MultiProcessDataStoreFactory$create$1;->$scope:Ln4/e0;
 
+    .line 2
+    .line 3
     const/4 p1, 0x1
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/k;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -56,9 +63,9 @@
     .line 1
     new-instance v0, Landroidx/datastore/core/MultiProcessCoordinator;
 
-    iget-object v1, p0, Landroidx/datastore/core/MultiProcessDataStoreFactory$create$1;->$scope:Lkotlinx/coroutines/b0;
+    iget-object v1, p0, Landroidx/datastore/core/MultiProcessDataStoreFactory$create$1;->$scope:Ln4/e0;
 
-    invoke-interface {v1}, Lkotlinx/coroutines/b0;->getCoroutineContext()Lkotlin/coroutines/f;
+    invoke-interface {v1}, Ln4/e0;->getCoroutineContext()Lkotlin/coroutines/f;
 
     move-result-object v1
 

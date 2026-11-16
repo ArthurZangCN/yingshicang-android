@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)I
+.method public static bridge synthetic a(Landroid/graphics/drawable/AnimatedImageDrawable;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;->getPid()I
+    invoke-virtual {p0}, Landroid/graphics/drawable/AnimatedImageDrawable;->getIntrinsicWidth()I
 
     .line 2
     .line 3
@@ -34,22 +34,22 @@
     return p0
 .end method
 
-.method public static bridge synthetic c(Landroid/view/DisplayCutout;)I
-    .locals 0
+.method public static bridge synthetic c(Landroid/content/pm/PackageInfo;)J
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/DisplayCutout;->getSafeInsetTop()I
+    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
 
     .line 2
     .line 3
     .line 4
-    move-result p0
+    move-result-wide v0
 
     .line 5
-    return p0
+    return-wide v0
 .end method
 
-.method public static bridge synthetic d(Landroid/os/Parcelable;)Landroid/app/Person;
+.method public static bridge synthetic d(Ljava/lang/Object;)Landroid/app/Person;
     .locals 0
 
     .line 1
@@ -58,18 +58,7 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic e(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroid/content/pm/PackageInfo;->signingInfo:Landroid/content/pm/SigningInfo;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static bridge synthetic f(Landroid/graphics/ImageDecoder$Source;)Landroid/graphics/Bitmap;
+.method public static bridge synthetic e(Landroid/graphics/ImageDecoder$Source;)Landroid/graphics/Bitmap;
     .locals 0
 
     .line 1
@@ -84,7 +73,7 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic g(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/Bitmap;
+.method public static bridge synthetic f(Landroid/graphics/ImageDecoder$Source;Lm0/a;)Landroid/graphics/Bitmap;
     .locals 0
 
     .line 1
@@ -99,7 +88,7 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic h(Landroid/graphics/ImageDecoder$Source;Lw/a;)Landroid/graphics/drawable/Drawable;
+.method public static bridge synthetic g(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/drawable/Drawable;
     .locals 0
 
     .line 1
@@ -114,11 +103,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic i(Landroid/os/Looper;)Landroid/os/Handler;
+.method public static bridge synthetic h(Landroid/service/media/MediaBrowserService;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroid/os/Handler;->createAsync(Landroid/os/Looper;)Landroid/os/Handler;
+    invoke-virtual {p0}, Landroid/service/media/MediaBrowserService;->getCurrentBrowserInfo()Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
     .line 2
     .line 3
@@ -129,15 +118,30 @@
     return-object p0
 .end method
 
-.method public static synthetic j(Landroid/text/TextPaint;)Landroid/text/PrecomputedText$Params$Builder;
-    .locals 1
+.method public static bridge synthetic i(Landroid/telephony/TelephonyManager;)Landroid/telephony/SignalStrength;
+    .locals 0
 
     .line 1
-    new-instance v0, Landroid/text/PrecomputedText$Params$Builder;
+    invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSignalStrength()Landroid/telephony/SignalStrength;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Landroid/text/PrecomputedText$Params$Builder;-><init>(Landroid/text/TextPaint;)V
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static synthetic j(Ljava/lang/CharSequence;II)Landroid/view/textclassifier/TextSelection$Request$Builder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/view/textclassifier/TextSelection$Request$Builder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Landroid/view/textclassifier/TextSelection$Request$Builder;-><init>(Ljava/lang/CharSequence;II)V
 
     .line 4
     .line 5
@@ -145,104 +149,14 @@
     return-object v0
 .end method
 
-.method public static bridge synthetic k(Ljava/lang/CharSequence;Landroid/text/PrecomputedText$Params;)Landroid/text/PrecomputedText;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/text/PrecomputedText;->create(Ljava/lang/CharSequence;Landroid/text/PrecomputedText$Params;)Landroid/text/PrecomputedText;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic l(Landroid/view/textclassifier/TextClassifier;Landroid/view/textclassifier/TextSelection$Request;)Landroid/view/textclassifier/TextSelection;
-    .locals 0
-
-    .line 1
-    invoke-interface {p0, p1}, Landroid/view/textclassifier/TextClassifier;->suggestSelection(Landroid/view/textclassifier/TextSelection$Request;)Landroid/view/textclassifier/TextSelection;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic m(Landroid/graphics/ImageDecoder;II)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/graphics/ImageDecoder;->setTargetSize(II)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic n(Landroid/graphics/ImageDecoder;Landroid/graphics/ColorSpace;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/graphics/ImageDecoder;->setTargetColorSpace(Landroid/graphics/ColorSpace;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic o(Landroid/graphics/drawable/AnimatedImageDrawable;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/graphics/drawable/AnimatedImageDrawable;->stop()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic p(Landroid/text/PrecomputedText;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/text/PrecomputedText;->removeSpan(Ljava/lang/Object;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic q(Landroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/CharSequence;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setPaneTitle(Ljava/lang/CharSequence;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic r(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
+.method public static bridge synthetic k(Landroid/graphics/ImageDecoder;)V
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setOutlineAmbientShadowColor(I)V
+    invoke-virtual {p0, v0}, Landroid/graphics/ImageDecoder;->setMemorySizePolicy(I)V
 
     .line 3
     .line 4
@@ -250,28 +164,44 @@
     return-void
 .end method
 
-.method public static bridge synthetic s(Ljava/lang/Object;)V
+.method public static bridge synthetic l(Landroid/view/accessibility/AccessibilityNodeInfo;Z)V
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/graphics/ImageDecoder$Source;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public static bridge synthetic t(Landroid/net/LinkProperties;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/net/LinkProperties;->isPrivateDnsActive()Z
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setScreenReaderFocusable(Z)V
 
     .line 2
     .line 3
     .line 4
-    move-result p0
+    return-void
+.end method
+
+.method public static bridge synthetic m(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setOutlineSpotShadowColor(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public static bridge synthetic n(Landroid/text/PrecomputedText;IILjava/lang/Class;)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Landroid/text/PrecomputedText;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
     .line 5
-    return p0
+    return-object p0
 .end method

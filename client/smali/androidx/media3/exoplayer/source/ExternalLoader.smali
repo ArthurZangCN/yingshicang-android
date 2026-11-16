@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract load(Landroidx/media3/exoplayer/source/ExternalLoader$LoadRequest;)Lcom/google/common/util/concurrent/t;
+.method public abstract load(Landroidx/media3/exoplayer/source/ExternalLoader$LoadRequest;)Lcom/google/common/util/concurrent/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/exoplayer/source/ExternalLoader$LoadRequest;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation

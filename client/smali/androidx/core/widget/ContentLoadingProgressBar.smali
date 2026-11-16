@@ -70,16 +70,18 @@
     iput-boolean v0, p0, Landroidx/core/widget/ContentLoadingProgressBar;->mDismissed:Z
 
     .line 7
-    new-instance p1, Landroidx/core/widget/a;
+    new-instance p1, Landroidx/constraintlayout/helper/widget/a;
 
-    invoke-direct {p1, p0, v0}, Landroidx/core/widget/a;-><init>(Ljava/lang/Object;I)V
+    const/4 p2, 0x1
+
+    invoke-direct {p1, p0, p2}, Landroidx/constraintlayout/helper/widget/a;-><init>(Ljava/lang/Object;I)V
 
     iput-object p1, p0, Landroidx/core/widget/ContentLoadingProgressBar;->mDelayedHide:Ljava/lang/Runnable;
 
     .line 8
-    new-instance p1, Landroidx/core/widget/b;
+    new-instance p1, Landroidx/core/widget/a;
 
-    invoke-direct {p1, p0, v0}, Landroidx/core/widget/b;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, v0}, Landroidx/core/widget/a;-><init>(Ljava/lang/Object;I)V
 
     iput-object p1, p0, Landroidx/core/widget/ContentLoadingProgressBar;->mDelayedShow:Ljava/lang/Runnable;
 
@@ -405,14 +407,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/activity/a;
+    new-instance v0, Landroidx/core/widget/b;
 
     .line 2
     .line 3
-    const/4 v1, 0x4
+    const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/core/widget/b;-><init>(Ljava/lang/Object;I)V
 
     .line 5
     .line 6
@@ -463,14 +465,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/appcompat/app/a;
+    new-instance v0, Landroidx/activity/a;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x2
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/appcompat/app/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
 
     .line 5
     .line 6

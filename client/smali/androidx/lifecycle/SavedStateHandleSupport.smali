@@ -519,7 +519,7 @@
     move-result-object v3
 
     .line 19
-    invoke-virtual {v0, v3, v1}, Landroidx/lifecycle/viewmodel/InitializerViewModelFactoryBuilder;->addInitializer(Lf4/b;Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v3, v1}, Landroidx/lifecycle/viewmodel/InitializerViewModelFactoryBuilder;->addInitializer(Ll4/b;Lkotlin/jvm/functions/Function1;)V
 
     .line 20
     .line 21

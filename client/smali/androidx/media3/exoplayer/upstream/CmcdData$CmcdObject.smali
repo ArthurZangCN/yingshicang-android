@@ -23,10 +23,10 @@
 # instance fields
 .field public final bitrateKbps:I
 
-.field public final customDataList:Lcom/google/common/collect/f2;
+.field public final customDataList:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -79,11 +79,11 @@
     iput-object v0, p0, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject;->objectType:Ljava/lang/String;
 
     .line 7
-    invoke-static {p1}, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject$Builder;->access$600(Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject$Builder;->access$600(Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject$Builder;)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject;->customDataList:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject;->customDataList:Lcom/google/common/collect/e2;
 
     return-void
 .end method
@@ -321,7 +321,7 @@
     .line 111
     .line 112
     :cond_3
-    iget-object v1, p0, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject;->customDataList:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/upstream/CmcdData$CmcdObject;->customDataList:Lcom/google/common/collect/e2;
 
     .line 113
     .line 114

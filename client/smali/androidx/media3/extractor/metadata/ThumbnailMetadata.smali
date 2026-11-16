@@ -146,7 +146,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Lcom/google/common/primitives/d;->b(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/c;->b(J)I
 
     .line 4
     .line 5

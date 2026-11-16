@@ -121,7 +121,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1}, Landroidx/core/app/b;->g(Landroid/content/Intent;)Landroid/app/job/JobWorkItem;
+    invoke-static {p1}, Landroidx/appcompat/app/c;->e(Landroid/content/Intent;)Landroid/app/job/JobWorkItem;
 
     .line 6
     .line 7
@@ -129,7 +129,7 @@
     move-result-object p1
 
     .line 9
-    invoke-static {v0, v1, p1}, Landroidx/appcompat/app/e;->k(Landroid/app/job/JobScheduler;Landroid/app/job/JobInfo;Landroid/app/job/JobWorkItem;)V
+    invoke-static {v0, v1, p1}, Landroidx/core/app/f;->y(Landroid/app/job/JobScheduler;Landroid/app/job/JobInfo;Landroid/app/job/JobWorkItem;)V
 
     .line 10
     .line 11

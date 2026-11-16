@@ -7,10 +7,10 @@
 
 
 # instance fields
-.field public final children:Lcom/google/common/collect/f2;
+.field public final children:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/avi/AviChunk;",
             ">;"
         }
@@ -21,12 +21,12 @@
 
 
 # direct methods
-.method private constructor <init>(ILcom/google/common/collect/f2;)V
+.method private constructor <init>(ILcom/google/common/collect/e2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/avi/AviChunk;",
             ">;)V"
         }
@@ -42,7 +42,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/media3/extractor/avi/ListChunk;->children:Lcom/google/common/collect/f2;
+    iput-object p2, p0, Landroidx/media3/extractor/avi/ListChunk;->children:Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -130,11 +130,11 @@
     .locals 7
 
     .line 1
-    new-instance v0, Lcom/google/common/collect/f2$a;
+    new-instance v0, Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/common/collect/f2$a;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/collect/e2$a;-><init>()V
 
     .line 4
     .line 5
@@ -274,7 +274,7 @@
 
     .line 71
     :cond_1
-    invoke-virtual {v0, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 72
     .line 73
@@ -298,7 +298,7 @@
 
     .line 82
     .line 83
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 84
     .line 85
@@ -306,7 +306,7 @@
     move-result-object v0
 
     .line 87
-    invoke-direct {p1, p0, v0}, Landroidx/media3/extractor/avi/ListChunk;-><init>(ILcom/google/common/collect/f2;)V
+    invoke-direct {p1, p0, v0}, Landroidx/media3/extractor/avi/ListChunk;-><init>(ILcom/google/common/collect/e2;)V
 
     .line 88
     .line 89
@@ -332,11 +332,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/extractor/avi/ListChunk;->children:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/extractor/avi/ListChunk;->children:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 4
     .line 5

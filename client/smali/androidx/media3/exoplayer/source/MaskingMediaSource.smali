@@ -1021,7 +1021,7 @@
 .end method
 
 .method public updateMediaItem(Landroidx/media3/common/MediaItem;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-boolean v0, p0, Landroidx/media3/exoplayer/source/MaskingMediaSource;->hasRealTimeline:Z
@@ -1036,60 +1036,55 @@
 
     .line 6
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/source/TimelineWithUpdatedMediaItem;
+    iget-object v1, v0, Landroidx/media3/exoplayer/source/ForwardingTimeline;->timeline:Landroidx/media3/common/Timeline;
 
     .line 8
     .line 9
-    iget-object v2, p0, Landroidx/media3/exoplayer/source/MaskingMediaSource;->timeline:Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/source/TimelineWithUpdatedMediaItem;->create(Landroidx/media3/common/Timeline;Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/source/TimelineWithUpdatedMediaItem;
 
     .line 10
     .line 11
-    iget-object v2, v2, Landroidx/media3/exoplayer/source/ForwardingTimeline;->timeline:Landroidx/media3/common/Timeline;
-
     .line 12
+    move-result-object v1
+
     .line 13
-    invoke-direct {v1, v2, p1}, Landroidx/media3/exoplayer/source/TimelineWithUpdatedMediaItem;-><init>(Landroidx/media3/common/Timeline;Landroidx/media3/common/MediaItem;)V
+    invoke-virtual {v0, v1}, Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;->cloneWithUpdatedTimeline(Landroidx/media3/common/Timeline;)Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;->cloneWithUpdatedTimeline(Landroidx/media3/common/Timeline;)Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;
-
-    .line 17
-    .line 18
-    .line 19
     move-result-object v0
 
-    .line 20
+    .line 17
     iput-object v0, p0, Landroidx/media3/exoplayer/source/MaskingMediaSource;->timeline:Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;
 
-    .line 21
-    .line 22
+    .line 18
+    .line 19
     goto :goto_0
 
-    .line 23
+    .line 20
     :cond_0
     invoke-static {p1}, Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;->createWithPlaceholderTimeline(Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;
 
-    .line 24
-    .line 25
-    .line 26
+    .line 21
+    .line 22
+    .line 23
     move-result-object v0
 
-    .line 27
+    .line 24
     iput-object v0, p0, Landroidx/media3/exoplayer/source/MaskingMediaSource;->timeline:Landroidx/media3/exoplayer/source/MaskingMediaSource$MaskingTimeline;
 
-    .line 28
-    .line 29
+    .line 25
+    .line 26
     :goto_0
     iget-object v0, p0, Landroidx/media3/exoplayer/source/WrappingMediaSource;->mediaSource:Landroidx/media3/exoplayer/source/MediaSource;
 
-    .line 30
-    .line 31
+    .line 27
+    .line 28
     invoke-interface {v0, p1}, Landroidx/media3/exoplayer/source/MediaSource;->updateMediaItem(Landroidx/media3/common/MediaItem;)V
 
-    .line 32
-    .line 33
-    .line 34
+    .line 29
+    .line 30
+    .line 31
     return-void
 .end method

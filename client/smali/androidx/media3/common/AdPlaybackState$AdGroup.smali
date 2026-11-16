@@ -332,7 +332,7 @@
     move v4, v7
 
     :goto_0
-    invoke-static {v4}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v4}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 5
     array-length v4, v1
@@ -347,7 +347,7 @@
     move v6, v7
 
     :goto_1
-    invoke-static {v6}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v6}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     move-wide v4, p1
 
@@ -1780,7 +1780,7 @@
 
     .line 8
     .line 9
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 10
     .line 11
@@ -3383,7 +3383,7 @@
 
     .line 20
     :goto_1
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 21
     .line 22
@@ -3425,7 +3425,7 @@
 
     .line 40
     :cond_3
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 41
     .line 42

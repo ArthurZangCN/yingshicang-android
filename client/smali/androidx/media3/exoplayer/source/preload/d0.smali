@@ -2,35 +2,32 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;)V
+.method public static a(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;Ljava/io/IOException;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/d0;->a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;
-
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
-    .locals 1
+.method public static b(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;JJF)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/d0;->a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;
+    return-void
+.end method
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;->b(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;)V
+.method public static c(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;Ljava/io/IOException;)V
+    .locals 0
 
+    .line 1
+    return-void
+.end method
+
+.method public static d(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;Landroidx/media3/common/MediaItem;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method

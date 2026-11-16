@@ -23,10 +23,10 @@
 
 .field public final allowSkippingMediaCodecFlush:Z
 
-.field public final disabledTrackTypes:Lcom/google/common/collect/s2;
+.field public final disabledTrackTypes:Lcom/google/common/collect/r2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/s2<",
+            "Lcom/google/common/collect/r2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -101,11 +101,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    invoke-static {p1}, Landroidx/media3/exoplayer/ScrubbingModeParameters$Builder;->access$100(Landroidx/media3/exoplayer/ScrubbingModeParameters$Builder;)Lcom/google/common/collect/s2;
+    invoke-static {p1}, Landroidx/media3/exoplayer/ScrubbingModeParameters$Builder;->access$100(Landroidx/media3/exoplayer/ScrubbingModeParameters$Builder;)Lcom/google/common/collect/r2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iput-object v0, p0, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 4
     invoke-static {p1}, Landroidx/media3/exoplayer/ScrubbingModeParameters$Builder;->access$200(Landroidx/media3/exoplayer/ScrubbingModeParameters$Builder;)Ljava/lang/Double;
@@ -225,15 +225,15 @@
 
     .line 8
     .line 9
-    iget-object v0, p0, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 10
     .line 11
-    iget-object v2, p1, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v2, p1, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 12
     .line 13
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/s2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/r2;->equals(Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -277,7 +277,7 @@
 
     .line 34
     .line 35
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
@@ -297,7 +297,7 @@
 
     .line 44
     .line 45
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 46
     .line 47
@@ -356,7 +356,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/ScrubbingModeParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 2
     .line 3
@@ -492,7 +492,7 @@
 
     .line 64
     .line 65
-    invoke-static {v8}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v8}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 66
     .line 67

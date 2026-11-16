@@ -376,7 +376,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 54
     .line 55
@@ -1258,7 +1258,7 @@
 
     .line 118
     .line 119
-    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/f;->j(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/e;->m(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 120
     .line 121

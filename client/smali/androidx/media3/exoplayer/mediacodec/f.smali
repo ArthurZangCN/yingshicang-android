@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static synthetic a(II)Landroid/media/MediaCodec$CryptoInfo$Pattern;
-    .locals 1
+.method public static bridge synthetic a(Landroid/media/MediaCodec$CryptoInfo;Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroid/media/MediaCodec$CryptoInfo$Pattern;
+    invoke-virtual {p0, p1}, Landroid/media/MediaCodec$CryptoInfo;->setPattern(Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
 
-    invoke-direct {v0, p0, p1}, Landroid/media/MediaCodec$CryptoInfo$Pattern;-><init>(II)V
-
-    return-object v0
+    return-void
 .end method

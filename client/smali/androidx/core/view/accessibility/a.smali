@@ -4,48 +4,38 @@
 
 
 # direct methods
-.method public static bridge synthetic a()I
-    .locals 1
-
-    .line 1
-    invoke-static {}, Landroid/os/IBinder;->getSuggestedMaxIpcSizeBytes()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public static bridge synthetic b(Landroid/media/MediaParser$SeekPoint;)J
+.method public static bridge synthetic a(Landroid/media/MediaParser$InputReader;)J
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Landroid/media/MediaParser$SeekPoint;->position:J
-
-    .line 2
-    .line 3
-    return-wide v0
-.end method
-
-.method public static bridge synthetic c(Landroid/media/DrmInitData;I)Landroid/media/DrmInitData$SchemeInitData;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/media/DrmInitData;->getSchemeInitDataAt(I)Landroid/media/DrmInitData$SchemeInitData;
+    invoke-interface {p0}, Landroid/media/MediaParser$InputReader;->getLength()J
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    move-result-wide v0
 
     .line 5
-    return-object p0
+    return-wide v0
 .end method
 
-.method public static bridge synthetic d(Landroid/media/MediaParser$TrackData;)Landroid/media/MediaFormat;
+.method public static synthetic b()Landroid/content/res/loader/ResourcesLoader;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/content/res/loader/ResourcesLoader;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/content/res/loader/ResourcesLoader;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static bridge synthetic c(Landroid/media/MediaParser$TrackData;)Landroid/media/MediaFormat;
     .locals 0
 
     .line 1
@@ -56,11 +46,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic e(Landroid/media/MediaParser$SeekMap;J)Landroid/util/Pair;
+.method public static bridge synthetic d(Ljava/lang/String;Landroidx/media3/exoplayer/source/mediaparser/OutputConsumerAdapterV30;)Landroid/media/MediaParser;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/media/MediaParser$SeekMap;->getSeekPoints(J)Landroid/util/Pair;
+    invoke-static {p0, p1}, Landroid/media/MediaParser;->createByName(Ljava/lang/String;Landroid/media/MediaParser$OutputConsumer;)Landroid/media/MediaParser;
 
     .line 2
     .line 3
@@ -71,11 +61,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic f(Landroid/content/Context;)Landroid/view/Display;
+.method public static bridge synthetic e(Landroid/view/WindowManager;)Landroid/view/WindowMetrics;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/Context;->getDisplay()Landroid/view/Display;
+    invoke-interface {p0}, Landroid/view/WindowManager;->getMaximumWindowMetrics()Landroid/view/WindowMetrics;
 
     .line 2
     .line 3
@@ -86,124 +76,74 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic g()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+.method public static bridge synthetic f()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_IME_ENTER:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_PRESS_AND_HOLD:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
 
     return-object v0
 .end method
 
-.method public static synthetic h()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroid/content/res/loader/ResourcesLoader;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public static bridge synthetic i(Landroid/media/MediaParser;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    const-string v1, "android.media.mediaparser.inBandCryptoInfo"
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public static bridge synthetic j(Landroid/media/MediaParser;Landroid/media/MediaParser$SeekPoint;)V
+.method public static bridge synthetic g(Landroid/media/MediaParser;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/media/MediaParser;->seek(Landroid/media/MediaParser$SeekPoint;)V
+    invoke-virtual {p0}, Landroid/media/MediaParser;->getParserName()Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic h(Landroid/media/MediaParser;)V
+    .locals 2
+
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    const-string v1, "android.media.mediaparser.ignoreTimestampOffset"
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
+
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
-.method public static bridge synthetic k()Z
+.method public static bridge synthetic i(Landroid/media/MediaParser;Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    invoke-static {}, Landroid/os/Environment;->isExternalStorageManager()Z
+    const-string v0, "android.media.mediaParser.exposeCaptionFormats"
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public static bridge synthetic l(Landroid/media/MediaParser$SeekMap;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/media/MediaParser$SeekMap;->isSeekable()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic m(Landroid/media/MediaParser;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    const-string v1, "android.media.mediaparser.ts.ignoreAacStream"
+    invoke-virtual {p0, v0, p1}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
 
     .line 4
     .line 5
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
-.method public static bridge synthetic n(Landroid/media/MediaParser;)V
-    .locals 2
+.method public static bridge synthetic j(Landroid/view/WindowManager$LayoutParams;I)V
+    .locals 0
 
     .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroid/view/WindowManager$LayoutParams;->setFitInsetsTypes(I)V
 
     .line 2
     .line 3
-    const-string v1, "android.media.mediaParser.overrideInBandCaptionDeclarations"
-
     .line 4
-    .line 5
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    .line 6
-    .line 7
-    .line 8
     return-void
 .end method

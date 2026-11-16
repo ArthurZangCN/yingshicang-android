@@ -184,7 +184,7 @@
 
     .line 35
     .line 36
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 37
     .line 38

@@ -62,11 +62,11 @@
     .line 5
     new-instance p1, Landroidx/activity/OnBackPressedDispatcher;
 
-    new-instance p2, Landroidx/activity/g;
+    new-instance p2, Landroidx/activity/a;
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    invoke-direct {p2, p0, v0}, Landroidx/activity/g;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p2, p0, v0}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
 
     invoke-direct {p1, p2}, Landroidx/activity/OnBackPressedDispatcher;-><init>(Ljava/lang/Runnable;)V
 

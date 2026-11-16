@@ -9,31 +9,31 @@
 
 
 # virtual methods
-.method public abstract decodeBitmap([B)Lcom/google/common/util/concurrent/t;
+.method public abstract decodeBitmap([B)Lcom/google/common/util/concurrent/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroid/graphics/Bitmap;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract loadBitmap(Landroid/net/Uri;)Lcom/google/common/util/concurrent/t;
+.method public abstract loadBitmap(Landroid/net/Uri;)Lcom/google/common/util/concurrent/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/net/Uri;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroid/graphics/Bitmap;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract loadBitmapFromMetadata(Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/t;
+.method public abstract loadBitmapFromMetadata(Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/x;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
@@ -42,7 +42,7 @@
             "(",
             "Landroidx/media3/common/MediaMetadata;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroid/graphics/Bitmap;",
             ">;"
         }

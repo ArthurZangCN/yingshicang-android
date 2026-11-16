@@ -76,7 +76,7 @@
     move-result-object v1
 
     .line 7
-    invoke-static {v1}, Lkotlin/collections/z;->N(Ljava/util/Map;)Ljava/util/LinkedHashMap;
+    invoke-static {v1}, Lkotlin/collections/y;->A(Ljava/util/Map;)Ljava/util/LinkedHashMap;
 
     .line 8
     .line 9
@@ -111,7 +111,7 @@
     move-result-object v1
 
     .line 7
-    invoke-static {v1}, Lkotlin/collections/z;->N(Ljava/util/Map;)Ljava/util/LinkedHashMap;
+    invoke-static {v1}, Lkotlin/collections/y;->A(Ljava/util/Map;)Ljava/util/LinkedHashMap;
 
     .line 8
     .line 9

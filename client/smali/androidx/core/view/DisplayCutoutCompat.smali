@@ -694,7 +694,7 @@
 
     .line 7
     :cond_0
-    invoke-static {v0}, Landroid/support/v4/media/session/d;->c(Landroid/view/DisplayCutout;)I
+    invoke-static {v0}, Landroidx/core/content/pm/a;->d(Landroid/view/DisplayCutout;)I
 
     .line 8
     .line 9

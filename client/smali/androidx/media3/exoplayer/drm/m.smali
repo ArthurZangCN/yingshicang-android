@@ -4,39 +4,29 @@
 
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/drm/ExoMediaDrm;)Ljava/util/List;
+.method public static a(Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/common/Format;)Landroidx/media3/exoplayer/drm/DrmSessionManager$DrmSessionReference;
     .locals 0
+    .param p1    # Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
+    sget-object p0, Landroidx/media3/exoplayer/drm/DrmSessionManager$DrmSessionReference;->EMPTY:Landroidx/media3/exoplayer/drm/DrmSessionManager$DrmSessionReference;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    throw p0
+    return-object p0
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[B)V
+.method public static b(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
     .locals 0
 
     .line 1
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    throw p0
+    return-void
 .end method
 
-.method public static c(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[BLandroidx/media3/exoplayer/analytics/PlayerId;)V
+.method public static c(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
     .locals 0
 
     .line 1

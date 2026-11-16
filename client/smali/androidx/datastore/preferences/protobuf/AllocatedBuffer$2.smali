@@ -147,7 +147,7 @@
     const-string v1, "Invalid position: "
 
     .line 5
-    invoke-static {v1, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

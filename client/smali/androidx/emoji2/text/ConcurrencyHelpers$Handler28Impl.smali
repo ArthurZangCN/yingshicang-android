@@ -37,7 +37,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/core/app/g;->i(Landroid/os/Looper;)Landroid/os/Handler;
+    invoke-static {p0}, Landroidx/core/content/pm/a;->h(Landroid/os/Looper;)Landroid/os/Handler;
 
     .line 2
     .line 3

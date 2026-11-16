@@ -120,7 +120,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/k;->a(Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/common/Format;)Landroidx/media3/exoplayer/drm/DrmSessionManager$DrmSessionReference;
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/m;->a(Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/common/Format;)Landroidx/media3/exoplayer/drm/DrmSessionManager$DrmSessionReference;
 
     move-result-object p1
 
@@ -131,7 +131,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/drm/k;->b(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/drm/m;->b(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
 
     return-void
 .end method
@@ -140,7 +140,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/drm/k;->c(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/drm/m;->c(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
 
     return-void
 .end method

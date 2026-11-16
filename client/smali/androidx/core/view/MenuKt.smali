@@ -74,7 +74,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/view/MenuItem;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -131,7 +131,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Landroid/view/MenuItem;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -376,7 +376,7 @@
     .line 12
     .line 13
     .line 14
-    sget-object p0, Lr3/q;->a:Lr3/q;
+    sget-object p0, Lv3/q;->a:Lv3/q;
 
     .line 15
     .line 16

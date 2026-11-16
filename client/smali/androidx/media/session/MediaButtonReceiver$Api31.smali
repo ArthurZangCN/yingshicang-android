@@ -33,7 +33,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/core/app/f;->b(Ljava/lang/Object;)Landroid/app/ForegroundServiceStartNotAllowedException;
+    invoke-static {p0}, Landroidx/media/session/b;->d(Ljava/lang/Object;)Landroid/app/ForegroundServiceStartNotAllowedException;
 
     .line 2
     .line 3
@@ -50,7 +50,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/media/session/a;->p(Ljava/lang/Object;)Z
+    invoke-static {p0}, Landroidx/core/app/h;->s(Ljava/lang/Object;)Z
 
     .line 2
     .line 3

@@ -9,11 +9,15 @@
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
 
-.field public final synthetic b:Landroidx/media3/exoplayer/source/MediaLoadData;
+.field public final synthetic b:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+.field public final synthetic c:Landroidx/media3/exoplayer/source/MediaLoadData;
+
+.field public final synthetic d:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
     .locals 0
 
     .line 1
@@ -21,7 +25,11 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/p;->a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/source/p;->b:Landroidx/media3/exoplayer/source/MediaLoadData;
+    iput-object p2, p0, Landroidx/media3/exoplayer/source/p;->b:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+    iput-object p3, p0, Landroidx/media3/exoplayer/source/p;->c:Landroidx/media3/exoplayer/source/MediaLoadData;
+
+    iput p4, p0, Landroidx/media3/exoplayer/source/p;->d:I
 
     return-void
 .end method
@@ -29,16 +37,20 @@
 
 # virtual methods
 .method public final accept(Ljava/lang/Object;)V
-    .locals 2
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/p;->b:Landroidx/media3/exoplayer/source/MediaLoadData;
+    iget v0, p0, Landroidx/media3/exoplayer/source/p;->d:I
 
     check-cast p1, Landroidx/media3/exoplayer/source/MediaSourceEventListener;
 
     iget-object v1, p0, Landroidx/media3/exoplayer/source/p;->a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
 
-    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->e(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/MediaLoadData;Landroidx/media3/exoplayer/source/MediaSourceEventListener;)V
+    iget-object v2, p0, Landroidx/media3/exoplayer/source/p;->b:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+    iget-object v3, p0, Landroidx/media3/exoplayer/source/p;->c:Landroidx/media3/exoplayer/source/MediaLoadData;
+
+    invoke-static {v1, v2, v3, v0, p1}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->c(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;ILandroidx/media3/exoplayer/source/MediaSourceEventListener;)V
 
     return-void
 .end method

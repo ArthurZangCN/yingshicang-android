@@ -156,11 +156,11 @@
     .line 43
     .line 44
     .line 45
-    new-instance v0, Landroidx/media3/exoplayer/drm/f;
+    new-instance v0, Landroidx/media3/exoplayer/drm/h;
 
     .line 46
     .line 47
-    invoke-direct {v0, p1}, Landroidx/media3/exoplayer/drm/f;-><init>(Landroidx/media3/exoplayer/drm/DefaultDrmSession;)V
+    invoke-direct {v0, p1}, Landroidx/media3/exoplayer/drm/h;-><init>(Landroidx/media3/exoplayer/drm/DefaultDrmSession;)V
 
     .line 48
     .line 49

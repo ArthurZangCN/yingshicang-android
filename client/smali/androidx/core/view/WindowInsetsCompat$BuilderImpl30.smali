@@ -71,7 +71,7 @@
     move-result-object p2
 
     .line 11
-    invoke-static {v0, p1, p2}, Landroidx/core/view/n;->v(Landroid/view/WindowInsets$Builder;ILandroid/graphics/Insets;)V
+    invoke-static {v0, p1, p2}, Landroidx/core/view/p;->e(Landroid/view/WindowInsets$Builder;ILandroid/graphics/Insets;)V
 
     .line 12
     .line 13
@@ -107,7 +107,7 @@
     move-result-object p2
 
     .line 11
-    invoke-static {v0, p1, p2}, Landroidx/core/view/p;->f(Landroid/view/WindowInsets$Builder;ILandroid/graphics/Insets;)V
+    invoke-static {v0, p1, p2}, Landroidx/core/content/pm/k;->r(Landroid/view/WindowInsets$Builder;ILandroid/graphics/Insets;)V
 
     .line 12
     .line 13
@@ -131,7 +131,7 @@
     move-result p1
 
     .line 7
-    invoke-static {v0, p1, p2}, Landroidx/core/view/o;->y(Landroid/view/WindowInsets$Builder;IZ)V
+    invoke-static {v0, p1, p2}, Landroidx/core/view/q;->f(Landroid/view/WindowInsets$Builder;IZ)V
 
     .line 8
     .line 9

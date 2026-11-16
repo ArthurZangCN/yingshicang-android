@@ -18,7 +18,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -76,7 +76,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -136,7 +136,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannedString;"
         }
@@ -183,7 +183,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -242,7 +242,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -279,7 +279,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -328,7 +328,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -390,7 +390,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -448,7 +448,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -506,7 +506,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -564,7 +564,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }
@@ -622,7 +622,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/SpannableStringBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/SpannableStringBuilder;"
         }

@@ -351,7 +351,7 @@
 .end method
 
 .method public static recreate(Landroid/app/Activity;)V
-    .locals 3
+    .locals 2
     .param p0    # Landroid/app/Activity;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -396,23 +396,20 @@
     .line 18
     .line 19
     .line 20
-    new-instance v1, Landroidx/activity/a;
+    new-instance v1, Landroidx/core/app/a;
 
     .line 21
     .line 22
-    const/4 v2, 0x3
+    invoke-direct {v1, p0}, Landroidx/core/app/a;-><init>(Landroid/app/Activity;)V
 
     .line 23
-    invoke-direct {v1, p0, v2}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
-
     .line 24
     .line 25
-    .line 26
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 26
     .line 27
     .line 28
-    .line 29
     :goto_0
     return-void
 .end method
@@ -605,7 +602,7 @@
 
     .line 70
     .line 71
-    invoke-static {p2, p1, v0}, Landroid/support/v4/media/a;->c(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, v0}, Landroid/support/v4/media/f;->h(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 72
     .line 73

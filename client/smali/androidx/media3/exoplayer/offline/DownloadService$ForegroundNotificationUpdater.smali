@@ -235,11 +235,11 @@
 
     .line 71
     .line 72
-    new-instance v1, Landroidx/media3/exoplayer/offline/j;
+    new-instance v1, Landroidx/media3/exoplayer/offline/h;
 
     .line 73
     .line 74
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/offline/j;-><init>(Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/offline/h;-><init>(Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;)V
 
     .line 75
     .line 76

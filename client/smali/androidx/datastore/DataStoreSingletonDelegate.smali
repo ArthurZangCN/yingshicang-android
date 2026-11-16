@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lb4/a;
+.implements Lh4/a;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lb4/a<",
+        "Lh4/a<",
         "Landroid/content/Context;",
         "Landroidx/datastore/core/DataStore<",
         "TT;>;>;"
@@ -60,7 +60,7 @@
     .end annotation
 .end field
 
-.field private final scope:Lkotlinx/coroutines/b0;
+.field private final scope:Ln4/e0;
 
 .field private final serializer:Landroidx/datastore/core/okio/OkioSerializer;
     .annotation system Ldalvik/annotation/Signature;
@@ -73,7 +73,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroidx/datastore/core/okio/OkioSerializer;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/b0;)V
+.method public constructor <init>(Ljava/lang/String;Landroidx/datastore/core/okio/OkioSerializer;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Lkotlin/jvm/functions/Function1;Ln4/e0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -91,7 +91,7 @@
             "+",
             "Landroidx/datastore/core/DataMigration<",
             "TT;>;>;>;",
-            "Lkotlinx/coroutines/b0;",
+            "Ln4/e0;",
             ")V"
         }
     .end annotation
@@ -154,7 +154,7 @@
 
     .line 31
     .line 32
-    iput-object p5, p0, Landroidx/datastore/DataStoreSingletonDelegate;->scope:Lkotlinx/coroutines/b0;
+    iput-object p5, p0, Landroidx/datastore/DataStoreSingletonDelegate;->scope:Ln4/e0;
 
     .line 33
     .line 34
@@ -187,13 +187,13 @@
 
 
 # virtual methods
-.method public getValue(Landroid/content/Context;Lf4/g;)Landroidx/datastore/core/DataStore;
+.method public getValue(Landroid/content/Context;Ll4/g;)Landroidx/datastore/core/DataStore;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lf4/g<",
+            "Ll4/g<",
             "*>;)",
             "Landroidx/datastore/core/DataStore<",
             "TT;>;"
@@ -272,10 +272,10 @@
     check-cast p1, Ljava/util/List;
 
     .line 11
-    iget-object v2, p0, Landroidx/datastore/DataStoreSingletonDelegate;->scope:Lkotlinx/coroutines/b0;
+    iget-object v2, p0, Landroidx/datastore/DataStoreSingletonDelegate;->scope:Ln4/e0;
 
     .line 12
-    invoke-virtual {v0, v8, v1, p1, v2}, Landroidx/datastore/core/DataStoreFactory;->create(Landroidx/datastore/core/Storage;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Ljava/util/List;Lkotlinx/coroutines/b0;)Landroidx/datastore/core/DataStore;
+    invoke-virtual {v0, v8, v1, p1, v2}, Landroidx/datastore/core/DataStoreFactory;->create(Landroidx/datastore/core/Storage;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Ljava/util/List;Ln4/e0;)Landroidx/datastore/core/DataStore;
 
     move-result-object p1
 
@@ -314,13 +314,13 @@
     return-object p2
 .end method
 
-.method public bridge synthetic getValue(Ljava/lang/Object;Lf4/g;)Ljava/lang/Object;
+.method public bridge synthetic getValue(Ljava/lang/Object;Ll4/g;)Ljava/lang/Object;
     .locals 0
 
     .line 15
     check-cast p1, Landroid/content/Context;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/DataStoreSingletonDelegate;->getValue(Landroid/content/Context;Lf4/g;)Landroidx/datastore/core/DataStore;
+    invoke-virtual {p0, p1, p2}, Landroidx/datastore/DataStoreSingletonDelegate;->getValue(Landroid/content/Context;Ll4/g;)Landroidx/datastore/core/DataStore;
 
     move-result-object p1
 

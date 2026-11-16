@@ -218,11 +218,11 @@
     .line 8
     new-instance v0, Landroidx/core/view/MenuHostHelper;
 
-    new-instance v1, Landroidx/activity/g;
+    new-instance v1, Landroidx/appcompat/widget/d;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p0, v2}, Landroidx/activity/g;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Landroidx/appcompat/widget/d;-><init>(Ljava/lang/Object;I)V
 
     invoke-direct {v0, v1}, Landroidx/core/view/MenuHostHelper;-><init>(Ljava/lang/Runnable;)V
 
@@ -9796,14 +9796,14 @@
 
     .line 41
     .line 42
-    new-instance v1, Landroidx/activity/a;
+    new-instance v1, Landroidx/activity/h;
 
     .line 43
     .line 44
     const/4 v2, 0x2
 
     .line 45
-    invoke-direct {v1, p0, v2}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Landroidx/activity/h;-><init>(Ljava/lang/Object;I)V
 
     .line 46
     .line 47

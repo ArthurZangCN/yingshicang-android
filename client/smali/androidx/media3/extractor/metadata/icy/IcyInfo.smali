@@ -260,7 +260,7 @@
 
     .line 32
     .line 33
-    invoke-static {v3, v2, v0}, Landroid/support/v4/media/e;->c(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v2, v0}, Landroid/support/v4/media/e;->l(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 34
     .line 35

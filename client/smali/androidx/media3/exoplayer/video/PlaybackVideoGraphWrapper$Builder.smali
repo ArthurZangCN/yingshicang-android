@@ -189,7 +189,7 @@
     xor-int/2addr v0, v1
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7

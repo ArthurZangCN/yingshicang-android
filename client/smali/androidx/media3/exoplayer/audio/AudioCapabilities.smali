@@ -17,13 +17,13 @@
 
 
 # static fields
-.field static final ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/h2;
+.field static final ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/g2;
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             ">;"
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field private static final EXTERNAL_SURROUND_SOUND_ENCODINGS:Lcom/google/common/collect/f2;
+.field private static final EXTERNAL_SURROUND_SOUND_ENCODINGS:Lcom/google/common/collect/e2;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "InlinedApi"
@@ -52,7 +52,7 @@
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -91,7 +91,7 @@
 
     .line 4
     .line 5
-    invoke-static {v1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -141,7 +141,7 @@
     move-result-object v2
 
     .line 29
-    invoke-static {v0, v1, v2}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0, v1, v2}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 30
     .line 31
@@ -149,20 +149,20 @@
     move-result-object v0
 
     .line 33
-    sput-object v0, Landroidx/media3/exoplayer/audio/AudioCapabilities;->EXTERNAL_SURROUND_SOUND_ENCODINGS:Lcom/google/common/collect/f2;
+    sput-object v0, Landroidx/media3/exoplayer/audio/AudioCapabilities;->EXTERNAL_SURROUND_SOUND_ENCODINGS:Lcom/google/common/collect/e2;
 
     .line 34
     .line 35
-    new-instance v0, Lcom/google/common/collect/h2$b;
+    new-instance v0, Lcom/google/common/collect/g2$b;
 
     .line 36
     .line 37
-    invoke-direct {v0}, Lcom/google/common/collect/h2$b;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/collect/g2$b;-><init>()V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 41
     .line 42
@@ -179,7 +179,7 @@
     move-result-object v1
 
     .line 49
-    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 50
     .line 51
@@ -195,7 +195,7 @@
     move-result-object v1
 
     .line 57
-    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 58
     .line 59
@@ -224,7 +224,7 @@
     move-result-object v3
 
     .line 72
-    invoke-virtual {v0, v1, v3}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, v3}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 73
     .line 74
@@ -241,7 +241,7 @@
     move-result-object v1
 
     .line 81
-    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 82
     .line 83
@@ -258,12 +258,12 @@
     move-result-object v1
 
     .line 90
-    invoke-virtual {v0, v2, v1}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v2, v1}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 91
     .line 92
     .line 93
-    invoke-virtual {v0, v1, v1}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, v1}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 94
     .line 95
@@ -280,7 +280,7 @@
     move-result-object v2
 
     .line 102
-    invoke-virtual {v0, v2, v1}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v2, v1}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 103
     .line 104
@@ -288,7 +288,7 @@
     const/4 v1, 0x1
 
     .line 106
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2$b;->a(Z)Lcom/google/common/collect/a5;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2$b;->a(Z)Lcom/google/common/collect/a5;
 
     .line 107
     .line 108
@@ -296,7 +296,7 @@
     move-result-object v0
 
     .line 110
-    sput-object v0, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/h2;
+    sput-object v0, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/g2;
 
     .line 111
     .line 112
@@ -412,7 +412,7 @@
     .end annotation
 
     .line 2
-    invoke-static {p1, p2}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/f2;
+    invoke-static {p1, p2}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
@@ -421,11 +421,11 @@
     return-void
 .end method
 
-.method public static synthetic access$000(Ljava/util/List;)Lcom/google/common/collect/f2;
+.method public static synthetic access$000(Ljava/util/List;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles(Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles(Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -495,23 +495,23 @@
     return v0
 .end method
 
-.method private static getAllBluetoothDeviceTypes()Lcom/google/common/collect/s2;
+.method private static getAllBluetoothDeviceTypes()Lcom/google/common/collect/r2;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/s2<",
+            "Lcom/google/common/collect/r2<",
             "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Lcom/google/common/collect/s2$a;
+    new-instance v0, Lcom/google/common/collect/r2$a;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/common/collect/s2$a;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/collect/r2$a;-><init>()V
 
     .line 4
     .line 5
@@ -560,7 +560,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {v0, v4}, Lcom/google/common/collect/s2$a;->k([Ljava/lang/Object;)Lcom/google/common/collect/s2$a;
+    invoke-virtual {v0, v4}, Lcom/google/common/collect/r2$a;->k([Ljava/lang/Object;)Lcom/google/common/collect/r2$a;
 
     .line 27
     .line 28
@@ -613,7 +613,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {v0, v3}, Lcom/google/common/collect/s2$a;->k([Ljava/lang/Object;)Lcom/google/common/collect/s2$a;
+    invoke-virtual {v0, v3}, Lcom/google/common/collect/r2$a;->k([Ljava/lang/Object;)Lcom/google/common/collect/r2$a;
 
     .line 54
     .line 55
@@ -639,13 +639,13 @@
     move-result-object v1
 
     .line 66
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/s2$a;->j(Ljava/lang/Object;)Lcom/google/common/collect/s2$a;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/r2$a;->j(Ljava/lang/Object;)Lcom/google/common/collect/r2$a;
 
     .line 67
     .line 68
     .line 69
     :cond_1
-    invoke-virtual {v0}, Lcom/google/common/collect/s2$a;->m()Lcom/google/common/collect/s2;
+    invoke-virtual {v0}, Lcom/google/common/collect/r2$a;->m()Lcom/google/common/collect/r2;
 
     .line 70
     .line 71
@@ -656,7 +656,7 @@
     return-object v0
 .end method
 
-.method private static getAudioProfiles(Ljava/util/List;)Lcom/google/common/collect/f2;
+.method private static getAudioProfiles(Ljava/util/List;)Lcom/google/common/collect/e2;
     .locals 6
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -674,7 +674,7 @@
             "Ljava/util/List<",
             "Landroid/media/AudioProfile;",
             ">;)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;",
             ">;"
         }
@@ -700,7 +700,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/google/common/primitives/b;->g([I)Ljava/util/List;
+    invoke-static {v3}, Lcom/google/common/primitives/b;->n([I)Ljava/util/List;
 
     move-result-object v3
 
@@ -723,12 +723,12 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Landroidx/core/view/e;->c(Ljava/lang/Object;)Landroid/media/AudioProfile;
+    invoke-static {v2}, Landroidx/core/location/s;->e(Ljava/lang/Object;)Landroid/media/AudioProfile;
 
     move-result-object v2
 
     .line 5
-    invoke-static {v2}, Landroidx/core/view/a;->b(Landroid/media/AudioProfile;)I
+    invoke-static {v2}, Landroidx/media/session/a;->b(Landroid/media/AudioProfile;)I
 
     move-result v3
 
@@ -740,7 +740,7 @@
 
     .line 6
     :cond_0
-    invoke-static {v2}, Landroidx/core/os/a;->a(Landroid/media/AudioProfile;)I
+    invoke-static {v2}, Landroidx/media/session/b;->c(Landroid/media/AudioProfile;)I
 
     move-result v3
 
@@ -751,14 +751,14 @@
 
     if-nez v4, :cond_1
 
-    sget-object v4, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/h2;
+    sget-object v4, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/g2;
 
     .line 8
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Lcom/google/common/collect/h2;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Lcom/google/common/collect/g2;->containsKey(Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -793,11 +793,11 @@
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
-    invoke-static {v2}, Landroidx/core/app/f;->q(Landroid/media/AudioProfile;)[I
+    invoke-static {v2}, Landroidx/core/app/h;->t(Landroid/media/AudioProfile;)[I
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/google/common/primitives/b;->g([I)Ljava/util/List;
+    invoke-static {v2}, Lcom/google/common/primitives/b;->n([I)Ljava/util/List;
 
     move-result-object v2
 
@@ -813,11 +813,11 @@
 
     new-instance v4, Ljava/util/HashSet;
 
-    invoke-static {v2}, Landroidx/core/app/f;->q(Landroid/media/AudioProfile;)[I
+    invoke-static {v2}, Landroidx/core/app/h;->t(Landroid/media/AudioProfile;)[I
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/google/common/primitives/b;->g([I)Ljava/util/List;
+    invoke-static {v2}, Lcom/google/common/primitives/b;->n([I)Ljava/util/List;
 
     move-result-object v2
 
@@ -833,7 +833,7 @@
 
     .line 15
     :cond_3
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     move-result-object p0
 
@@ -882,20 +882,20 @@
     invoke-direct {v2, v3, v1}, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;-><init>(ILjava/util/Set;)V
 
     .line 19
-    invoke-virtual {p0, v2}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {p0, v2}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     goto :goto_2
 
     .line 20
     :cond_4
-    invoke-virtual {p0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {p0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static getAudioProfiles([II)Lcom/google/common/collect/f2;
+.method private static getAudioProfiles([II)Lcom/google/common/collect/e2;
     .locals 4
     .param p0    # [I
         .annotation build Landroidx/annotation/Nullable;
@@ -904,14 +904,14 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([II)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;",
             ">;"
         }
     .end annotation
 
     .line 21
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     move-result-object v0
 
@@ -938,7 +938,7 @@
     invoke-direct {v3, v2, p1}, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;-><init>(II)V
 
     .line 26
-    invoke-virtual {v0, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -946,7 +946,7 @@
 
     .line 27
     :cond_1
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     move-result-object p0
 
@@ -1069,9 +1069,9 @@
 
     .line 11
     :cond_4
-    new-instance p3, Lcom/google/common/collect/s2$a;
+    new-instance p3, Lcom/google/common/collect/r2$a;
 
-    invoke-direct {p3}, Lcom/google/common/collect/s2$a;-><init>()V
+    invoke-direct {p3}, Lcom/google/common/collect/r2$a;-><init>()V
 
     const/4 v0, 0x2
 
@@ -1080,7 +1080,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p3, v0}, Lcom/google/common/collect/s2$a;->j(Ljava/lang/Object;)Lcom/google/common/collect/s2$a;
+    invoke-virtual {p3, v0}, Lcom/google/common/collect/r2$a;->j(Ljava/lang/Object;)Lcom/google/common/collect/r2$a;
 
     const/16 v0, 0x1d
 
@@ -1103,25 +1103,25 @@
 
     .line 14
     :cond_5
-    invoke-static {p2}, Landroidx/media3/exoplayer/audio/AudioCapabilities$Api29;->getDirectPlaybackSupportedEncodings(Landroidx/media3/common/AudioAttributes;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Landroidx/media3/exoplayer/audio/AudioCapabilities$Api29;->getDirectPlaybackSupportedEncodings(Landroidx/media3/common/AudioAttributes;)Lcom/google/common/collect/e2;
 
     move-result-object p0
 
-    invoke-virtual {p3, p0}, Lcom/google/common/collect/s2$a;->l(Ljava/util/List;)V
+    invoke-virtual {p3, p0}, Lcom/google/common/collect/r2$a;->l(Ljava/util/List;)V
 
     .line 15
     new-instance p0, Landroidx/media3/exoplayer/audio/AudioCapabilities;
 
     .line 16
-    invoke-virtual {p3}, Lcom/google/common/collect/s2$a;->m()Lcom/google/common/collect/s2;
+    invoke-virtual {p3}, Lcom/google/common/collect/r2$a;->m()Lcom/google/common/collect/r2;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {p1}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/f2;
+    invoke-static {p1, v1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
@@ -1176,9 +1176,9 @@
     if-ne p0, v2, :cond_9
 
     .line 21
-    sget-object p0, Landroidx/media3/exoplayer/audio/AudioCapabilities;->EXTERNAL_SURROUND_SOUND_ENCODINGS:Lcom/google/common/collect/f2;
+    sget-object p0, Landroidx/media3/exoplayer/audio/AudioCapabilities;->EXTERNAL_SURROUND_SOUND_ENCODINGS:Lcom/google/common/collect/e2;
 
-    invoke-virtual {p3, p0}, Lcom/google/common/collect/s2$a;->l(Ljava/util/List;)V
+    invoke-virtual {p3, p0}, Lcom/google/common/collect/r2$a;->l(Ljava/util/List;)V
 
     :cond_9
     if-eqz p1, :cond_b
@@ -1205,22 +1205,22 @@
     if-eqz p0, :cond_a
 
     .line 25
-    invoke-static {p0}, Lcom/google/common/primitives/b;->g([I)Ljava/util/List;
+    invoke-static {p0}, Lcom/google/common/primitives/b;->n([I)Ljava/util/List;
 
     move-result-object p0
 
-    invoke-virtual {p3, p0}, Lcom/google/common/collect/s2$a;->l(Ljava/util/List;)V
+    invoke-virtual {p3, p0}, Lcom/google/common/collect/r2$a;->l(Ljava/util/List;)V
 
     .line 26
     :cond_a
     new-instance p0, Landroidx/media3/exoplayer/audio/AudioCapabilities;
 
     .line 27
-    invoke-virtual {p3}, Lcom/google/common/collect/s2$a;->m()Lcom/google/common/collect/s2;
+    invoke-virtual {p3}, Lcom/google/common/collect/r2$a;->m()Lcom/google/common/collect/r2;
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {p2}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     move-result-object p2
 
@@ -1232,7 +1232,7 @@
     move-result p1
 
     .line 29
-    invoke-static {p2, p1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/f2;
+    invoke-static {p2, p1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
@@ -1245,16 +1245,16 @@
     new-instance p0, Landroidx/media3/exoplayer/audio/AudioCapabilities;
 
     .line 31
-    invoke-virtual {p3}, Lcom/google/common/collect/s2$a;->m()Lcom/google/common/collect/s2;
+    invoke-virtual {p3}, Lcom/google/common/collect/r2$a;->m()Lcom/google/common/collect/r2;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {p1}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     move-result-object p1
 
     .line 32
-    invoke-static {p1, v1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/f2;
+    invoke-static {p1, v1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAudioProfiles([II)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
@@ -1493,7 +1493,7 @@
     .line 17
     .line 18
     :goto_0
-    invoke-static {}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAllBluetoothDeviceTypes()Lcom/google/common/collect/s2;
+    invoke-static {}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->getAllBluetoothDeviceTypes()Lcom/google/common/collect/r2;
 
     .line 19
     .line 20
@@ -1532,7 +1532,7 @@
     move-result-object v4
 
     .line 36
-    invoke-virtual {p1, v4}, Lcom/google/common/collect/d2;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v4}, Lcom/google/common/collect/c2;->contains(Ljava/lang/Object;)Z
 
     .line 37
     .line 38
@@ -1703,13 +1703,13 @@
     move-result v0
 
     .line 5
-    sget-object v1, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/h2;
+    sget-object v1, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/g2;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/google/common/collect/h2;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Lcom/google/common/collect/g2;->containsKey(Ljava/lang/Object;)Z
 
     move-result v1
 

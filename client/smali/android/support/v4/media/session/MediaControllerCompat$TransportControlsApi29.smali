@@ -52,7 +52,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, p1}, Landroid/support/v4/media/session/a;->n(Landroid/media/session/MediaController$TransportControls;F)V
+    invoke-static {v0, p1}, Landroid/support/v4/media/session/f;->m(Landroid/media/session/MediaController$TransportControls;F)V
 
     .line 9
     .line 10

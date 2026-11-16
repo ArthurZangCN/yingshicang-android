@@ -22,13 +22,13 @@
 
 .field private connectTimeoutMs:I
 
-.field private contentTypePredicate:Lcom/google/common/base/k;
+.field private contentTypePredicate:Lcom/google/common/base/m;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/k<",
+            "Lcom/google/common/base/m<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -127,7 +127,7 @@
 
     iget-object v6, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->defaultRequestProperties:Landroidx/media3/datasource/HttpDataSource$RequestProperties;
 
-    iget-object v7, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->contentTypePredicate:Lcom/google/common/base/k;
+    iget-object v7, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->contentTypePredicate:Lcom/google/common/base/m;
 
     iget-boolean v8, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->keepPostFor302Redirects:Z
 
@@ -135,7 +135,7 @@
 
     move-object v0, v10
 
-    invoke-direct/range {v0 .. v9}, Landroidx/media3/datasource/DefaultHttpDataSource;-><init>(Ljava/lang/String;IIZZLandroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/k;ZLandroidx/media3/datasource/DefaultHttpDataSource$1;)V
+    invoke-direct/range {v0 .. v9}, Landroidx/media3/datasource/DefaultHttpDataSource;-><init>(Ljava/lang/String;IIZZLandroidx/media3/datasource/HttpDataSource$RequestProperties;Lcom/google/common/base/m;ZLandroidx/media3/datasource/DefaultHttpDataSource$1;)V
 
     .line 4
     iget-object v0, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->transferListener:Landroidx/media3/datasource/TransferListener;
@@ -188,9 +188,9 @@
     return-object p0
 .end method
 
-.method public setContentTypePredicate(Lcom/google/common/base/k;)Landroidx/media3/datasource/DefaultHttpDataSource$Factory;
+.method public setContentTypePredicate(Lcom/google/common/base/m;)Landroidx/media3/datasource/DefaultHttpDataSource$Factory;
     .locals 0
-    .param p1    # Lcom/google/common/base/k;
+    .param p1    # Lcom/google/common/base/m;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
@@ -200,7 +200,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/base/k<",
+            "Lcom/google/common/base/m<",
             "Ljava/lang/String;",
             ">;)",
             "Landroidx/media3/datasource/DefaultHttpDataSource$Factory;"
@@ -208,7 +208,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->contentTypePredicate:Lcom/google/common/base/k;
+    iput-object p1, p0, Landroidx/media3/datasource/DefaultHttpDataSource$Factory;->contentTypePredicate:Lcom/google/common/base/m;
 
     .line 2
     .line 3

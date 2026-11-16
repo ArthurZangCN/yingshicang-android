@@ -42,7 +42,7 @@
 
 .field private static final SUBRIP_TAG_PATTERN:Ljava/util/regex/Pattern;
 
-.field private static final SUBRIP_TIMECODE:Ljava/lang/String; = "(?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d{3}))?"
+.field private static final SUBRIP_TIMECODE:Ljava/lang/String; = "(?:(\\d+):)?(\\d+):(\\d+)(?:[,.](\\d+))?"
 
 .field private static final SUBRIP_TIMING_LINE:Ljava/util/regex/Pattern;
 
@@ -50,6 +50,10 @@
 
 
 # instance fields
+.field private index:I
+
+.field private lastIndex:I
+
 .field private final parsableByteArray:Landroidx/media3/common/util/ParsableByteArray;
 
 .field private final tags:Ljava/util/ArrayList;
@@ -70,7 +74,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d{3}))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d{3}))?)\\s*"
+    const-string v0, "\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:[,.](\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:[,.](\\d+))?)\\s*"
 
     .line 2
     .line 3
@@ -114,45 +118,56 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x0
 
     .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    iput v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->lastIndex:I
 
+    .line 6
     .line 7
+    iput v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->index:I
+
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
-    new-instance v0, Ljava/util/ArrayList;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 12
     .line 13
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
     .line 14
+    iput-object v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
+
     .line 15
     .line 16
-    iput-object v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->tags:Ljava/util/ArrayList;
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 17
     .line 18
-    new-instance v0, Landroidx/media3/common/util/ParsableByteArray;
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 19
     .line 20
-    invoke-direct {v0}, Landroidx/media3/common/util/ParsableByteArray;-><init>()V
-
     .line 21
+    iput-object v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->tags:Ljava/util/ArrayList;
+
     .line 22
     .line 23
-    iput-object v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->parsableByteArray:Landroidx/media3/common/util/ParsableByteArray;
+    new-instance v0, Landroidx/media3/common/util/ParsableByteArray;
 
     .line 24
     .line 25
+    invoke-direct {v0}, Landroidx/media3/common/util/ParsableByteArray;-><init>()V
+
+    .line 26
+    .line 27
+    .line 28
+    iput-object v0, p0, Landroidx/media3/extractor/text/subrip/SubripParser;->parsableByteArray:Landroidx/media3/common/util/ParsableByteArray;
+
+    .line 29
+    .line 30
     return-void
 .end method
 
@@ -1329,7 +1344,7 @@
 
     move-result-object v9
 
-    if-eqz v9, :cond_2
+    if-eqz v9, :cond_4
 
     .line 8
     invoke-virtual {v9}, Ljava/lang/String;->isEmpty()Z
@@ -1343,103 +1358,142 @@
     .line 9
     :cond_1
     :try_start_0
+    iget v10, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->lastIndex:I
+
+    iget v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->index:I
+
+    if-ne v10, v11, :cond_2
+
+    .line 10
     invoke-static {v9}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v10
+
+    iput v10, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->index:I
+
+    .line 11
+    iput v10, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->lastIndex:I
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 10
+    goto :goto_1
+
+    :catch_0
+    move-object v6, v4
+
+    move-object v4, v3
+
+    goto/16 :goto_8
+
+    .line 12
+    :cond_2
+    :goto_1
+    iget v10, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->lastIndex:I
+
+    iget v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->index:I
+
+    if-ne v10, v11, :cond_3
+
+    .line 13
     iget-object v9, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->parsableByteArray:Landroidx/media3/common/util/ParsableByteArray;
 
     invoke-virtual {v9, v1}, Landroidx/media3/common/util/ParsableByteArray;->readLine(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v9
 
-    if-nez v9, :cond_3
+    goto :goto_2
 
-    .line 11
+    .line 14
+    :cond_3
+    iput v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->lastIndex:I
+
+    :goto_2
+    if-nez v9, :cond_5
+
+    .line 15
     const-string v1, "Unexpected end"
 
     invoke-static {v4, v1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_2
+    :cond_4
     move-object v4, v3
 
-    goto/16 :goto_7
+    goto/16 :goto_9
 
-    .line 12
-    :cond_3
+    .line 16
+    :cond_5
     sget-object v10, Landroidx/media3/extractor/text/subrip/SubripParser;->SUBRIP_TIMING_LINE:Ljava/util/regex/Pattern;
 
     invoke-virtual {v10, v9}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v10
 
-    .line 13
+    .line 17
     invoke-virtual {v10}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v11
 
-    if-eqz v11, :cond_b
+    if-eqz v11, :cond_d
 
     const/4 v9, 0x1
 
-    .line 14
+    .line 18
     invoke-static {v10, v9}, Landroidx/media3/extractor/text/subrip/SubripParser;->parseTimecode(Ljava/util/regex/Matcher;I)J
 
     move-result-wide v13
 
     const/4 v9, 0x6
 
-    .line 15
+    .line 19
     invoke-static {v10, v9}, Landroidx/media3/extractor/text/subrip/SubripParser;->parseTimecode(Ljava/util/regex/Matcher;I)J
 
     move-result-wide v9
 
-    .line 16
+    .line 20
     iget-object v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
 
     const/4 v12, 0x0
 
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->setLength(I)V
 
-    .line 17
+    .line 21
     iget-object v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->tags:Ljava/util/ArrayList;
 
     invoke-virtual {v11}, Ljava/util/ArrayList;->clear()V
 
-    .line 18
+    .line 22
     iget-object v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->parsableByteArray:Landroidx/media3/common/util/ParsableByteArray;
 
     invoke-virtual {v11, v1}, Landroidx/media3/common/util/ParsableByteArray;->readLine(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v11
 
-    .line 19
-    :goto_1
+    .line 23
+    :catch_1
     invoke-static {v11}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v15
 
-    if-nez v15, :cond_5
+    if-nez v15, :cond_7
 
-    .line 20
+    .line 24
     iget-object v15, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
 
     invoke-virtual {v15}, Ljava/lang/StringBuilder;->length()I
 
     move-result v15
 
-    if-lez v15, :cond_4
+    if-lez v15, :cond_6
 
-    .line 21
+    .line 25
     iget-object v15, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
 
     const-string v6, "<br>"
 
     invoke-virtual {v15, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 22
-    :cond_4
+    .line 26
+    :cond_6
     iget-object v6, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
 
     iget-object v15, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->tags:Ljava/util/ArrayList;
@@ -1450,17 +1504,25 @@
 
     invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 23
+    .line 27
     iget-object v6, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->parsableByteArray:Landroidx/media3/common/util/ParsableByteArray;
 
     invoke-virtual {v6, v1}, Landroidx/media3/common/util/ParsableByteArray;->readLine(Ljava/nio/charset/Charset;)Ljava/lang/String;
 
     move-result-object v11
 
-    goto :goto_1
+    .line 28
+    :try_start_1
+    invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    .line 24
-    :cond_5
+    move-result v6
+
+    iput v6, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->lastIndex:I
+    :try_end_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 29
+    :cond_7
     iget-object v6, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->textBuilder:Ljava/lang/StringBuilder;
 
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -1471,17 +1533,17 @@
 
     move-result-object v6
 
-    .line 25
-    :goto_2
+    .line 30
+    :goto_3
     iget-object v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->tags:Ljava/util/ArrayList;
 
     invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
 
     move-result v11
 
-    if-ge v12, v11, :cond_7
+    if-ge v12, v11, :cond_9
 
-    .line 26
+    .line 31
     iget-object v11, v0, Landroidx/media3/extractor/text/subrip/SubripParser;->tags:Ljava/util/ArrayList;
 
     invoke-virtual {v11, v12}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1490,83 +1552,83 @@
 
     check-cast v11, Ljava/lang/String;
 
-    .line 27
+    .line 32
     const-string v15, "\\{\\\\an[1-9]\\}"
 
     invoke-virtual {v11, v15}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
 
     move-result v15
 
-    if-eqz v15, :cond_6
+    if-eqz v15, :cond_8
 
     move-object/from16 v17, v4
-
-    goto :goto_3
-
-    :cond_6
-    add-int/lit8 v12, v12, 0x1
-
-    goto :goto_2
-
-    :cond_7
-    move-object/from16 v17, v4
-
-    const/4 v11, 0x0
-
-    .line 28
-    :goto_3
-    iget-wide v3, v2, Landroidx/media3/extractor/text/SubtitleParser$OutputOptions;->startTimeUs:J
-
-    cmp-long v12, v3, v7
-
-    if-eqz v12, :cond_a
-
-    cmp-long v3, v9, v3
-
-    if-ltz v3, :cond_8
 
     goto :goto_4
 
     :cond_8
-    if-eqz v5, :cond_9
+    add-int/lit8 v12, v12, 0x1
 
-    .line 29
-    new-instance v3, Landroidx/media3/extractor/text/CuesWithTiming;
-
-    .line 30
-    invoke-direct {v0, v6, v11}, Landroidx/media3/extractor/text/subrip/SubripParser;->buildCue(Landroid/text/Spanned;Ljava/lang/String;)Landroidx/media3/common/text/Cue;
-
-    move-result-object v4
-
-    invoke-static {v4}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
-
-    move-result-object v12
-
-    sub-long v15, v9, v13
-
-    move-object v11, v3
-
-    invoke-direct/range {v11 .. v16}, Landroidx/media3/extractor/text/CuesWithTiming;-><init>(Ljava/util/List;JJ)V
-
-    .line 31
-    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    goto :goto_3
 
     :cond_9
-    move-object/from16 v4, p5
+    move-object/from16 v17, v4
+
+    const/4 v11, 0x0
+
+    .line 33
+    :goto_4
+    iget-wide v3, v2, Landroidx/media3/extractor/text/SubtitleParser$OutputOptions;->startTimeUs:J
+
+    cmp-long v12, v3, v7
+
+    if-eqz v12, :cond_c
+
+    cmp-long v3, v9, v3
+
+    if-ltz v3, :cond_a
 
     goto :goto_5
 
-    .line 32
     :cond_a
-    :goto_4
+    if-eqz v5, :cond_b
+
+    .line 34
     new-instance v3, Landroidx/media3/extractor/text/CuesWithTiming;
 
-    .line 33
+    .line 35
     invoke-direct {v0, v6, v11}, Landroidx/media3/extractor/text/subrip/SubripParser;->buildCue(Landroid/text/Spanned;Ljava/lang/String;)Landroidx/media3/common/text/Cue;
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v4}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
+
+    move-result-object v12
+
+    sub-long v15, v9, v13
+
+    move-object v11, v3
+
+    invoke-direct/range {v11 .. v16}, Landroidx/media3/extractor/text/CuesWithTiming;-><init>(Ljava/util/List;JJ)V
+
+    .line 36
+    invoke-interface {v5, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_b
+    move-object/from16 v4, p5
+
+    goto :goto_6
+
+    .line 37
+    :cond_c
+    :goto_5
+    new-instance v3, Landroidx/media3/extractor/text/CuesWithTiming;
+
+    .line 38
+    invoke-direct {v0, v6, v11}, Landroidx/media3/extractor/text/subrip/SubripParser;->buildCue(Landroid/text/Spanned;Ljava/lang/String;)Landroidx/media3/common/text/Cue;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v12
 
@@ -1578,22 +1640,22 @@
 
     move-object/from16 v4, p5
 
-    .line 34
+    .line 39
     invoke-interface {v4, v3}, Landroidx/media3/common/util/Consumer;->accept(Ljava/lang/Object;)V
 
-    :goto_5
+    :goto_6
     move-object v3, v4
 
     move-object/from16 v4, v17
 
     goto/16 :goto_0
 
-    :cond_b
+    :cond_d
     move-object/from16 v17, v4
 
     move-object v4, v3
 
-    .line 35
+    .line 40
     const-string v3, "Skipping invalid timing: "
 
     invoke-virtual {v3, v9}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
@@ -1604,19 +1666,15 @@
 
     invoke-static {v6, v3}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    :goto_6
+    :goto_7
     move-object v3, v4
 
     move-object v4, v6
 
     goto/16 :goto_0
 
-    :catch_0
-    move-object v6, v4
-
-    move-object v4, v3
-
-    .line 36
+    .line 41
+    :goto_8
     const-string v3, "Skipping invalid index: "
 
     invoke-virtual {v3, v9}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
@@ -1625,22 +1683,22 @@
 
     invoke-static {v6, v3}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    goto :goto_6
+    goto :goto_7
 
-    :goto_7
-    if-eqz v5, :cond_c
+    :goto_9
+    if-eqz v5, :cond_e
 
-    .line 37
+    .line 42
     invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    :goto_8
+    :goto_a
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_c
+    if-eqz v2, :cond_e
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1648,12 +1706,12 @@
 
     check-cast v2, Landroidx/media3/extractor/text/CuesWithTiming;
 
-    .line 38
+    .line 43
     invoke-interface {v4, v2}, Landroidx/media3/common/util/Consumer;->accept(Ljava/lang/Object;)V
 
-    goto :goto_8
+    goto :goto_a
 
-    :cond_c
+    :cond_e
     return-void
 .end method
 
@@ -1661,7 +1719,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/b;->a(Landroidx/media3/extractor/text/SubtitleParser;[BLandroidx/media3/extractor/text/SubtitleParser$OutputOptions;Landroidx/media3/common/util/Consumer;)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/d;->a(Landroidx/media3/extractor/text/SubtitleParser;[BLandroidx/media3/extractor/text/SubtitleParser$OutputOptions;Landroidx/media3/common/util/Consumer;)V
 
     return-void
 .end method
@@ -1670,7 +1728,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/b;->b(Landroidx/media3/extractor/text/SubtitleParser;[BII)Landroidx/media3/extractor/text/Subtitle;
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/d;->b(Landroidx/media3/extractor/text/SubtitleParser;[BII)Landroidx/media3/extractor/text/Subtitle;
 
     move-result-object p1
 
@@ -1681,7 +1739,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/extractor/text/b;->c(Landroidx/media3/extractor/text/SubtitleParser;)V
+    invoke-static {p0}, Landroidx/media3/extractor/text/d;->c(Landroidx/media3/extractor/text/SubtitleParser;)V
 
     return-void
 .end method

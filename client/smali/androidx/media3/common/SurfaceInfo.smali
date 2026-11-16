@@ -88,7 +88,7 @@
     :goto_1
     const-string v1, "orientationDegrees must be 0, 90, 180, or 270"
 
-    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 5
     iput-object p1, p0, Landroidx/media3/common/SurfaceInfo;->surface:Landroid/view/Surface;

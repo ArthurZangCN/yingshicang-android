@@ -282,7 +282,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 4
     .line 5

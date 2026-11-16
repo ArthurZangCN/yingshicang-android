@@ -212,7 +212,7 @@
 
     .line 11
     :cond_0
-    invoke-static {v4, v5}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -231,7 +231,7 @@
     aget v2, v2, v0
 
     .line 13
-    invoke-static {v2}, Landroidx/media3/exoplayer/w1;->h(I)I
+    invoke-static {v2}, Landroidx/media3/exoplayer/a2;->h(I)I
 
     move-result v2
 
@@ -359,7 +359,7 @@
 
     .line 18
     .line 19
-    invoke-static {v7}, Landroidx/media3/exoplayer/w1;->k(I)I
+    invoke-static {v7}, Landroidx/media3/exoplayer/a2;->k(I)I
 
     .line 20
     .line 21
@@ -489,7 +489,7 @@
     move-result p1
 
     .line 5
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->k(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->k(I)I
 
     .line 6
     .line 7

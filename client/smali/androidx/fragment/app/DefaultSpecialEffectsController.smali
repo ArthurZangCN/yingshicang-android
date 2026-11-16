@@ -2865,7 +2865,7 @@
     const/4 v0, 0x1
 
     .line 2
-    invoke-static {p1, v0}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {p1, v0}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 3
     .line 4

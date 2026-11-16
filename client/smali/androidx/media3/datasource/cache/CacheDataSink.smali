@@ -104,7 +104,7 @@
     :goto_1
     const-string v3, "fragmentSize must be positive or C.LENGTH_UNSET."
 
-    invoke-static {v0, v3}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    invoke-static {v0, v3}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
     cmp-long v0, p2, v1
 

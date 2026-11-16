@@ -27,16 +27,16 @@
     .locals 3
 
     .line 3
-    invoke-static {p1}, Landroidx/core/graphics/a;->n(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Ljava/lang/String;
+    invoke-static {p1}, Landroidx/core/content/pm/a;->m(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p1}, Landroidx/core/app/g;->a(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)I
+    invoke-static {p1}, Landroidx/core/app/i;->b(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)I
 
     move-result v1
 
     .line 4
-    invoke-static {p1}, Landroid/support/v4/media/session/d;->b(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)I
+    invoke-static {p1}, Landroidx/core/text/a;->b(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)I
 
     move-result v2
 
@@ -56,7 +56,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroidx/media/MediaSessionManagerImplBase$RemoteUserInfoImplBase;-><init>(Ljava/lang/String;II)V
 
     .line 2
-    invoke-static {p1, p2, p3}, Landroidx/core/content/pm/f;->g(Ljava/lang/String;II)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+    invoke-static {p1, p2, p3}, Landroidx/core/content/pm/h;->f(Ljava/lang/String;II)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
     move-result-object p1
 
@@ -69,7 +69,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/core/graphics/a;->n(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Ljava/lang/String;
+    invoke-static {p0}, Landroidx/core/content/pm/a;->m(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Ljava/lang/String;
 
     .line 2
     .line 3

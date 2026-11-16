@@ -30,7 +30,7 @@
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/v;->a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->c(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
+    invoke-static {v0}, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->d(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
 
     return-void
 .end method

@@ -749,7 +749,7 @@
     move-result v0
 
     .line 7
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 8
     .line 9

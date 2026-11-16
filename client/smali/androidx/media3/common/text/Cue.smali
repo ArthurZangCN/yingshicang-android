@@ -539,7 +539,7 @@
 
     .line 4
     :goto_0
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 5
     :goto_1
@@ -2313,7 +2313,7 @@
 
     .line 169
     .line 170
-    invoke-static {v0}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 171
     .line 172
@@ -2429,7 +2429,7 @@
     move-result v2
 
     .line 23
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 24
     .line 25

@@ -670,7 +670,7 @@
 
     .line 64
     .line 65
-    invoke-static {}, Landroid/support/v4/media/session/c;->i()Ljava/lang/Class;
+    invoke-static {}, Landroid/support/v4/media/b;->g()Ljava/lang/Class;
 
     .line 66
     .line 67
@@ -711,7 +711,7 @@
 
     .line 85
     :cond_4
-    invoke-static {}, Landroid/support/v4/media/b;->j()Ljava/lang/Class;
+    invoke-static {}, Landroid/support/v4/media/c;->f()Ljava/lang/Class;
 
     .line 86
     .line 87

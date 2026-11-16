@@ -15,17 +15,17 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/media3/exoplayer/source/preload/y;->a:I
+    iput p3, p0, Landroidx/media3/exoplayer/source/preload/y;->a:I
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/source/preload/y;->b:Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/y;->b:Ljava/lang/Object;
 
-    iput-object p3, p0, Landroidx/media3/exoplayer/source/preload/y;->c:Ljava/lang/Object;
+    iput-object p2, p0, Landroidx/media3/exoplayer/source/preload/y;->c:Ljava/lang/Object;
 
     return-void
 .end method
@@ -44,11 +44,11 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v2, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
+    check-cast v2, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;
 
-    check-cast v1, Landroidx/media3/common/Timeline;
+    check-cast v1, Landroidx/media3/exoplayer/source/MediaPeriod;
 
-    invoke-static {v2, v1}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->f(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Landroidx/media3/common/Timeline;)V
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;->a(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;Landroidx/media3/exoplayer/source/MediaPeriod;)V
 
     return-void
 

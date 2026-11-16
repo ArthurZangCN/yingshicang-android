@@ -15,43 +15,43 @@
 
 
 # static fields
-.field public static final ic_call_answer:I = 0x7f080110
+.field public static final ic_call_answer:I = 0x7f08010f
 
-.field public static final ic_call_answer_low:I = 0x7f080111
+.field public static final ic_call_answer_low:I = 0x7f080110
 
-.field public static final ic_call_answer_video:I = 0x7f080112
+.field public static final ic_call_answer_video:I = 0x7f080111
 
-.field public static final ic_call_answer_video_low:I = 0x7f080113
+.field public static final ic_call_answer_video_low:I = 0x7f080112
 
-.field public static final ic_call_decline:I = 0x7f080114
+.field public static final ic_call_decline:I = 0x7f080113
 
-.field public static final ic_call_decline_low:I = 0x7f080115
+.field public static final ic_call_decline_low:I = 0x7f080114
 
-.field public static final notification_action_background:I = 0x7f0801dc
+.field public static final notification_action_background:I = 0x7f0801db
 
-.field public static final notification_bg:I = 0x7f0801dd
+.field public static final notification_bg:I = 0x7f0801dc
 
-.field public static final notification_bg_low:I = 0x7f0801de
+.field public static final notification_bg_low:I = 0x7f0801dd
 
-.field public static final notification_bg_low_normal:I = 0x7f0801df
+.field public static final notification_bg_low_normal:I = 0x7f0801de
 
-.field public static final notification_bg_low_pressed:I = 0x7f0801e0
+.field public static final notification_bg_low_pressed:I = 0x7f0801df
 
-.field public static final notification_bg_normal:I = 0x7f0801e1
+.field public static final notification_bg_normal:I = 0x7f0801e0
 
-.field public static final notification_bg_normal_pressed:I = 0x7f0801e2
+.field public static final notification_bg_normal_pressed:I = 0x7f0801e1
 
-.field public static final notification_icon_background:I = 0x7f0801e3
+.field public static final notification_icon_background:I = 0x7f0801e2
 
-.field public static final notification_oversize_large_icon_bg:I = 0x7f0801e4
+.field public static final notification_oversize_large_icon_bg:I = 0x7f0801e3
 
-.field public static final notification_template_icon_bg:I = 0x7f0801e5
+.field public static final notification_template_icon_bg:I = 0x7f0801e4
 
-.field public static final notification_template_icon_low_bg:I = 0x7f0801e6
+.field public static final notification_template_icon_low_bg:I = 0x7f0801e5
 
-.field public static final notification_tile_bg:I = 0x7f0801e7
+.field public static final notification_tile_bg:I = 0x7f0801e6
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f0801e8
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0801e7
 
 
 # direct methods

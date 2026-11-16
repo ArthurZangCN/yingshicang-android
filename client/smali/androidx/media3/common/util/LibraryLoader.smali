@@ -225,7 +225,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
     .line 9
     .line 10

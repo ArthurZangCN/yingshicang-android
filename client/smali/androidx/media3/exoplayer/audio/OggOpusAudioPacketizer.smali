@@ -781,7 +781,7 @@
     int-to-long v0, v0
 
     .line 13
-    invoke-static {v0, v1}, Lb5/b;->e(J)B
+    invoke-static {v0, v1}, Ld2/c;->h(J)B
 
     .line 14
     .line 15
@@ -944,7 +944,7 @@
     int-to-long p2, p5
 
     .line 44
-    invoke-static {p2, p3}, Lb5/b;->e(J)B
+    invoke-static {p2, p3}, Ld2/c;->h(J)B
 
     .line 45
     .line 46

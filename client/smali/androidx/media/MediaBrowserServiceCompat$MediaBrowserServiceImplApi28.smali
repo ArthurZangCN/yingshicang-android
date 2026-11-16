@@ -73,7 +73,7 @@
 
     .line 14
     .line 15
-    invoke-static {v1}, Landroidx/core/app/e;->g(Landroid/service/media/MediaBrowserService;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+    invoke-static {v1}, Landroidx/core/app/g;->h(Landroid/service/media/MediaBrowserService;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
     .line 16
     .line 17

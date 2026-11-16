@@ -12,13 +12,17 @@
 
 
 # direct methods
-.method public static final ioDispatcher()Lkotlinx/coroutines/y;
+.method public static final ioDispatcher()Ln4/b0;
     .locals 1
 
     .line 1
-    sget-object v0, Lkotlinx/coroutines/n0;->b:Li4/b;
+    sget-object v0, Ln4/r0;->a:Lr4/c;
 
     .line 2
     .line 3
+    sget-object v0, Lr4/b;->a:Lr4/b;
+
+    .line 4
+    .line 5
     return-object v0
 .end method

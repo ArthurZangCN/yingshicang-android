@@ -2,49 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;
+
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/MediaParser;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    const-string v1, "android.media.mediaparser.ignoreTimestampOffset"
-
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    return-void
-.end method
-
-.method public static bridge synthetic b(Landroid/media/MediaParser;Landroid/media/MediaParser$SeekableInputReader;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/media/MediaParser;->advance(Landroid/media/MediaParser$SeekableInputReader;)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/y;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;
+
     return-void
 .end method
 
-.method public static bridge synthetic c(Landroid/media/MediaParser;)V
-    .locals 2
+
+# virtual methods
+.method public final run()V
+    .locals 1
 
     .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/y;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;
 
-    .line 2
-    .line 3
-    const-string v1, "android.media.mediaparser.ts.ignoreAvcStream"
+    invoke-interface {v0}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;->onPrepared()V
 
-    .line 4
-    .line 5
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    .line 6
-    .line 7
-    .line 8
     return-void
 .end method

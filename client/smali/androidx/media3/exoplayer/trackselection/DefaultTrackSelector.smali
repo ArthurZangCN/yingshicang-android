@@ -91,14 +91,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/trackselection/d;
+    new-instance v0, Landroidx/media3/exoplayer/trackselection/q;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/media3/exoplayer/trackselection/d;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/exoplayer/trackselection/q;-><init>(I)V
 
     .line 5
     .line 6
@@ -309,11 +309,11 @@
     return p0
 .end method
 
-.method public static synthetic access$4300(Landroidx/media3/common/Format;Lcom/google/common/collect/f2;)I
+.method public static synthetic access$4300(Landroidx/media3/common/Format;Lcom/google/common/collect/e2;)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->getBestLabelMatchIndex(Landroidx/media3/common/Format;Lcom/google/common/collect/f2;)I
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->getBestLabelMatchIndex(Landroidx/media3/common/Format;Lcom/google/common/collect/e2;)I
 
     .line 2
     .line 3
@@ -619,7 +619,7 @@
 
     .line 50
     :cond_1
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 51
     .line 52
@@ -670,11 +670,11 @@
 
     .line 74
     .line 75
-    iget-object p1, p1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object p1, p1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 76
     .line 77
-    invoke-static {p1}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {p1}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     .line 78
     .line 79
@@ -768,11 +768,11 @@
     move-result-object v1
 
     .line 10
-    iget-object v2, p1, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object v2, p1, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 11
     .line 12
-    invoke-virtual {v2, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -824,7 +824,7 @@
 
     .line 36
     .line 37
-    iget-object v2, v2, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object v2, v2, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 38
     .line 39
@@ -840,7 +840,7 @@
 
     .line 44
     .line 45
-    iget-object v2, v1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object v2, v1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 46
     .line 47
@@ -924,13 +924,13 @@
     return-object p0
 .end method
 
-.method private static getBestLabelMatchIndex(Landroidx/media3/common/Format;Lcom/google/common/collect/f2;)I
+.method private static getBestLabelMatchIndex(Landroidx/media3/common/Format;Lcom/google/common/collect/e2;)I
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/common/Format;",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;)I"
         }
@@ -2121,9 +2121,6 @@
     .line 75
     .line 76
     .line 77
-    .line 78
-    .line 79
-    .line 80
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -2305,7 +2302,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/w1;->n(IZ)Z
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/a2;->n(IZ)Z
 
     .line 2
     .line 3
@@ -2363,7 +2360,7 @@
     move v4, p2
 
     .line 13
-    invoke-static/range {v0 .. v6}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$AudioTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[IZLcom/google/common/base/k;I)Lcom/google/common/collect/f2;
+    invoke-static/range {v0 .. v6}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$AudioTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[IZLcom/google/common/base/m;I)Lcom/google/common/collect/e2;
 
     .line 14
     .line 15
@@ -2378,7 +2375,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p2, p0, p3}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$ImageTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[I)Lcom/google/common/collect/f2;
+    invoke-static {p1, p2, p0, p3}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$ImageTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[I)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2411,7 +2408,7 @@
     move-object v5, p2
 
     .line 7
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TextTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[ILjava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TextTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[ILjava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -2448,7 +2445,7 @@
     move-object v6, p3
 
     .line 9
-    invoke-static/range {v0 .. v6}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[ILjava/lang/String;ILandroid/graphics/Point;)Lcom/google/common/collect/f2;
+    invoke-static/range {v0 .. v6}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;->createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[ILjava/lang/String;ILandroid/graphics/Point;)Lcom/google/common/collect/e2;
 
     .line 10
     .line 11
@@ -3147,7 +3144,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->i(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->i(I)I
 
     .line 2
     .line 3
@@ -3178,7 +3175,7 @@
 
     .line 14
     .line 15
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->i(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->i(I)I
 
     .line 16
     .line 17
@@ -3245,7 +3242,7 @@
 
     .line 43
     :goto_1
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->i(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->i(I)I
 
     .line 44
     .line 45
@@ -3355,7 +3352,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2}, Landroidx/media3/exoplayer/w1;->m(I)I
+    invoke-static {v2}, Landroidx/media3/exoplayer/a2;->m(I)I
 
     .line 29
     .line 30
@@ -3575,7 +3572,7 @@
 
     .line 76
     .line 77
-    invoke-static {v13}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v13}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 78
     .line 79
@@ -4150,7 +4147,7 @@
 
     .line 18
     .line 19
-    invoke-static {v1, v2}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    invoke-static {v1, v2}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
     .line 20
     .line 21
@@ -4574,7 +4571,7 @@
 .end method
 
 .method public selectAudioTrack(Landroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;[[[I[ILandroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;)Landroid/util/Pair;
-    .locals 10
+    .locals 8
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
@@ -4608,91 +4605,91 @@
     move-result v2
 
     .line 7
-    const/4 v3, 0x1
-
-    .line 8
     if-ge v1, v2, :cond_1
 
+    .line 8
     .line 9
-    .line 10
     const/4 v2, 0x2
 
-    .line 11
+    .line 10
     invoke-virtual {p1, v1}, Landroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;->getRendererType(I)I
 
+    .line 11
     .line 12
     .line 13
+    move-result v3
+
     .line 14
-    move-result v4
+    if-ne v2, v3, :cond_0
 
     .line 15
-    if-ne v2, v4, :cond_0
-
     .line 16
-    .line 17
     invoke-virtual {p1, v1}, Landroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;->getTrackGroups(I)Landroidx/media3/exoplayer/source/TrackGroupArray;
 
+    .line 17
     .line 18
     .line 19
-    .line 20
     move-result-object v2
 
-    .line 21
+    .line 20
     iget v2, v2, Landroidx/media3/exoplayer/source/TrackGroupArray;->length:I
 
+    .line 21
     .line 22
-    .line 23
     if-lez v2, :cond_0
 
+    .line 23
     .line 24
-    .line 25
-    move v0, v3
+    const/4 v1, 0x1
 
-    .line 26
+    .line 25
     goto :goto_1
 
-    .line 27
+    .line 26
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
+    .line 27
     .line 28
-    .line 29
     goto :goto_0
 
-    .line 30
+    .line 29
     :cond_1
+    move v1, v0
+
+    .line 30
     :goto_1
-    new-instance v8, Landroidx/media3/exoplayer/trackselection/e;
+    new-instance v6, Landroidx/media3/exoplayer/trackselection/e;
 
     .line 31
     .line 32
-    invoke-direct {v8, p0, p4, v0, p3}, Landroidx/media3/exoplayer/trackselection/e;-><init>(Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;Z[I)V
+    invoke-direct {v6, p0, p4, v1, p3}, Landroidx/media3/exoplayer/trackselection/e;-><init>(Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;Z[I)V
 
     .line 33
     .line 34
     .line 35
-    new-instance v9, Landroidx/media3/exoplayer/trackselection/a;
+    new-instance v7, Landroidx/media3/exoplayer/trackselection/f;
 
     .line 36
     .line 37
-    invoke-direct {v9, v3}, Landroidx/media3/exoplayer/trackselection/a;-><init>(I)V
+    invoke-direct {v7, v0}, Landroidx/media3/exoplayer/trackselection/f;-><init>(I)V
 
     .line 38
     .line 39
     .line 40
-    const/4 v5, 0x1
+    const/4 v3, 0x1
 
     .line 41
-    move-object v4, p0
+    move-object v2, p0
 
     .line 42
-    move-object v6, p1
+    move-object v4, p1
 
     .line 43
-    move-object v7, p2
+    move-object v5, p2
 
     .line 44
-    invoke-direct/range {v4 .. v9}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->selectTracksForType(ILandroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;[[[ILandroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TrackInfo$Factory;Ljava/util/Comparator;)Landroid/util/Pair;
+    invoke-direct/range {v2 .. v7}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->selectTracksForType(ILandroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;[[[ILandroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TrackInfo$Factory;Ljava/util/Comparator;)Landroid/util/Pair;
 
     .line 45
     .line 46
@@ -4745,50 +4742,47 @@
 
     .line 10
     :cond_0
-    new-instance v4, Landroidx/media3/common/k;
+    new-instance v4, Landroidx/media3/common/j;
 
     .line 11
     .line 12
-    const/4 v0, 0x3
+    invoke-direct {v4, p3}, Landroidx/media3/common/j;-><init>(Ljava/lang/Object;)V
 
     .line 13
-    invoke-direct {v4, p3, v0}, Landroidx/media3/common/k;-><init>(Ljava/lang/Object;I)V
-
     .line 14
     .line 15
-    .line 16
     new-instance v5, Landroidx/media3/exoplayer/trackselection/a;
 
+    .line 16
     .line 17
-    .line 18
     const/4 p3, 0x0
 
-    .line 19
+    .line 18
     invoke-direct {v5, p3}, Landroidx/media3/exoplayer/trackselection/a;-><init>(I)V
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     const/4 v1, 0x4
 
-    .line 23
+    .line 22
     move-object v0, p0
 
-    .line 24
+    .line 23
     move-object v2, p1
 
-    .line 25
+    .line 24
     move-object v3, p2
 
-    .line 26
+    .line 25
     invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->selectTracksForType(ILandroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;[[[ILandroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TrackInfo$Factory;Ljava/util/Comparator;)Landroid/util/Pair;
 
+    .line 26
     .line 27
     .line 28
-    .line 29
     move-result-object p1
 
-    .line 30
+    .line 29
     return-object p1
 .end method
 
@@ -4876,7 +4870,7 @@
 
     .line 33
     .line 34
-    invoke-static {v8, v9}, Landroidx/media3/exoplayer/w1;->n(IZ)Z
+    invoke-static {v8, v9}, Landroidx/media3/exoplayer/a2;->n(IZ)Z
 
     .line 35
     .line 36
@@ -5049,47 +5043,44 @@
 
     .line 20
     :cond_1
-    new-instance v7, Landroidx/media3/exoplayer/analytics/z;
+    new-instance v7, Landroidx/media3/exoplayer/analytics/c0;
 
     .line 21
     .line 22
-    invoke-direct {v7, p3, p4, v2}, Landroidx/media3/exoplayer/analytics/z;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v7, p3, p4, v2}, Landroidx/media3/exoplayer/analytics/c0;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 23
     .line 24
     .line 25
-    new-instance v8, Landroidx/media3/exoplayer/trackselection/f;
+    new-instance v8, Landroidx/media3/exoplayer/trackselection/g;
 
     .line 26
     .line 27
-    const/4 p3, 0x0
+    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
 
     .line 28
-    invoke-direct {v8, p3}, Landroidx/media3/exoplayer/trackselection/f;-><init>(I)V
-
     .line 29
     .line 30
-    .line 31
     const/4 v4, 0x3
 
-    .line 32
+    .line 31
     move-object v3, p0
 
-    .line 33
+    .line 32
     move-object v5, p1
 
-    .line 34
+    .line 33
     move-object v6, p2
 
-    .line 35
+    .line 34
     invoke-direct/range {v3 .. v8}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->selectTracksForType(ILandroidx/media3/exoplayer/trackselection/MappingTrackSelector$MappedTrackInfo;[[[ILandroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TrackInfo$Factory;Ljava/util/Comparator;)Landroid/util/Pair;
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     move-result-object p1
 
-    .line 39
+    .line 38
     return-object p1
 .end method
 
@@ -5289,7 +5280,7 @@
 
     .line 84
     .line 85
-    iget-object v6, v1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v6, v1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 86
     .line 87
@@ -5301,7 +5292,7 @@
     move-result-object v5
 
     .line 91
-    invoke-virtual {v6, v5}, Lcom/google/common/collect/d2;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v5}, Lcom/google/common/collect/c2;->contains(Ljava/lang/Object;)Z
 
     .line 92
     .line 93
@@ -5376,7 +5367,7 @@
 
     .line 125
     .line 126
-    iget-object v3, v1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v3, v1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 127
     .line 128
@@ -5388,7 +5379,7 @@
     move-result-object p5
 
     .line 132
-    invoke-virtual {v3, p5}, Lcom/google/common/collect/d2;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v3, p5}, Lcom/google/common/collect/c2;->contains(Ljava/lang/Object;)Z
 
     .line 133
     .line 134

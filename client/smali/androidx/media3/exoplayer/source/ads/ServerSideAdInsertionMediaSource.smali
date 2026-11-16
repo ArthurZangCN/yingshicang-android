@@ -29,10 +29,10 @@
     .end annotation
 .end field
 
-.field private adPlaybackStates:Lcom/google/common/collect/h2;
+.field private adPlaybackStates:Lcom/google/common/collect/g2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/Object;",
             "Landroidx/media3/common/AdPlaybackState;",
             ">;"
@@ -109,7 +109,7 @@
 
     .line 13
     .line 14
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 15
     .line 16
@@ -117,7 +117,7 @@
     move-result-object p1
 
     .line 18
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 19
     .line 20
@@ -151,11 +151,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;Lcom/google/common/collect/h2;Landroidx/media3/common/Timeline;)V
+.method public static synthetic a(Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;Lcom/google/common/collect/g2;Landroidx/media3/common/Timeline;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->lambda$setAdPlaybackStates$0(Lcom/google/common/collect/h2;Landroidx/media3/common/Timeline;)V
+    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->lambda$setAdPlaybackStates$0(Lcom/google/common/collect/g2;Landroidx/media3/common/Timeline;)V
 
     return-void
 .end method
@@ -547,7 +547,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -591,7 +591,7 @@
     move-result-object p1
 
     .line 54
-    invoke-static {p1}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 55
     .line 56
@@ -698,7 +698,7 @@
     return-object p1
 .end method
 
-.method private synthetic lambda$setAdPlaybackStates$0(Lcom/google/common/collect/h2;Landroidx/media3/common/Timeline;)V
+.method private synthetic lambda$setAdPlaybackStates$0(Lcom/google/common/collect/g2;Landroidx/media3/common/Timeline;)V
     .locals 3
 
     .line 1
@@ -756,7 +756,7 @@
     move-result-object v2
 
     .line 27
-    invoke-virtual {p1, v2}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -797,7 +797,7 @@
     move-result-object v0
 
     .line 47
-    invoke-virtual {p1, v0}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
     .line 49
@@ -823,7 +823,7 @@
     .line 59
     .line 60
     :cond_2
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 61
     .line 62
@@ -831,7 +831,7 @@
 
     .line 63
     .line 64
-    invoke-direct {v0, p2, p1}, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource$ServerSideAdInsertionTimeline;-><init>(Landroidx/media3/common/Timeline;Lcom/google/common/collect/h2;)V
+    invoke-direct {v0, p2, p1}, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource$ServerSideAdInsertionTimeline;-><init>(Landroidx/media3/common/Timeline;Lcom/google/common/collect/g2;)V
 
     .line 65
     .line 66
@@ -1025,7 +1025,7 @@
     move-result-object v1
 
     .line 60
-    invoke-static {v1}, Lcom/blankj/utilcode/util/i;->l(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/r;->c(Ljava/util/List;)Ljava/lang/Object;
 
     .line 61
     .line 62
@@ -1060,7 +1060,7 @@
 
     .line 76
     :cond_2
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 77
     .line 78
@@ -1068,7 +1068,7 @@
 
     .line 79
     .line 80
-    invoke-virtual {v1, v2}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 81
     .line 82
@@ -1321,7 +1321,7 @@
 
     .line 20
     .line 21
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 22
     .line 23
@@ -1333,7 +1333,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -1371,7 +1371,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/h;->a(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/j;->a(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
 
     return-void
 .end method
@@ -1720,7 +1720,7 @@
 
     .line 20
     .line 21
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 22
     .line 23
@@ -1732,7 +1732,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -1815,7 +1815,7 @@
 
     .line 20
     .line 21
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 22
     .line 23
@@ -1827,7 +1827,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -1915,7 +1915,7 @@
 
     .line 22
     .line 23
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 24
     .line 25
@@ -1927,7 +1927,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
     .line 31
@@ -2017,7 +2017,7 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 25
     .line 26
@@ -2029,7 +2029,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 31
     .line 32
@@ -2089,11 +2089,11 @@
     .line 10
     .line 11
     :cond_0
-    iget-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 12
     .line 13
-    invoke-virtual {p1}, Lcom/google/common/collect/h2;->isEmpty()Z
+    invoke-virtual {p1}, Lcom/google/common/collect/g2;->isEmpty()Z
 
     .line 14
     .line 15
@@ -2109,11 +2109,11 @@
 
     .line 20
     .line 21
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 22
     .line 23
-    invoke-direct {p1, p2, v0}, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource$ServerSideAdInsertionTimeline;-><init>(Landroidx/media3/common/Timeline;Lcom/google/common/collect/h2;)V
+    invoke-direct {p1, p2, v0}, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource$ServerSideAdInsertionTimeline;-><init>(Landroidx/media3/common/Timeline;Lcom/google/common/collect/g2;)V
 
     .line 24
     .line 25
@@ -2163,7 +2163,7 @@
 
     .line 15
     .line 16
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 17
     .line 18
@@ -2175,7 +2175,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -2482,12 +2482,12 @@
     throw v0
 .end method
 
-.method public setAdPlaybackStates(Lcom/google/common/collect/h2;Landroidx/media3/common/Timeline;)V
+.method public setAdPlaybackStates(Lcom/google/common/collect/g2;Landroidx/media3/common/Timeline;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/Object;",
             "Landroidx/media3/common/AdPlaybackState;",
             ">;",
@@ -2497,7 +2497,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, Lcom/google/common/collect/h2;->isEmpty()Z
+    invoke-virtual {p1}, Lcom/google/common/collect/g2;->isEmpty()Z
 
     .line 2
     .line 3
@@ -2511,12 +2511,12 @@
     xor-int/2addr v0, v1
 
     .line 7
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p1}, Lcom/google/common/collect/h2;->values()Lcom/google/common/collect/d2;
+    invoke-virtual {p1}, Lcom/google/common/collect/g2;->values()Lcom/google/common/collect/c2;
 
     .line 11
     .line 12
@@ -2524,7 +2524,7 @@
     move-result-object v0
 
     .line 14
-    invoke-virtual {v0}, Lcom/google/common/collect/d2;->asList()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/c2;->asList()Lcom/google/common/collect/e2;
 
     .line 15
     .line 16
@@ -2551,12 +2551,12 @@
 
     .line 26
     .line 27
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->q(Ljava/lang/Object;)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->v(Ljava/lang/Object;)V
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {p1}, Lcom/google/common/collect/h2;->entrySet()Lcom/google/common/collect/s2;
+    invoke-virtual {p1}, Lcom/google/common/collect/g2;->entrySet()Lcom/google/common/collect/r2;
 
     .line 31
     .line 32
@@ -2564,7 +2564,7 @@
     move-result-object v3
 
     .line 34
-    invoke-virtual {v3}, Lcom/google/common/collect/s2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v3}, Lcom/google/common/collect/r2;->iterator()Lcom/google/common/collect/o6;
 
     .line 35
     .line 36
@@ -2629,16 +2629,16 @@
     move-result v6
 
     .line 66
-    invoke-static {v6}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v6}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 67
     .line 68
     .line 69
-    iget-object v6, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iget-object v6, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 70
     .line 71
-    invoke-virtual {v6, v5}, Lcom/google/common/collect/h2;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v5}, Lcom/google/common/collect/g2;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 72
     .line 73
@@ -2679,7 +2679,7 @@
 
     .line 90
     .line 91
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 92
     .line 93
@@ -2766,7 +2766,7 @@
 
     .line 132
     :goto_1
-    invoke-static {v9}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v9}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 133
     .line 134
@@ -2805,7 +2805,7 @@
 
     .line 149
     :goto_2
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 150
     .line 151
@@ -2850,7 +2850,7 @@
 
     .line 169
     :goto_3
-    invoke-static {v7}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v7}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 170
     .line 171
@@ -2876,7 +2876,7 @@
 
     .line 179
     .line 180
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/h2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/ads/ServerSideAdInsertionMediaSource;->adPlaybackStates:Lcom/google/common/collect/g2;
 
     .line 181
     .line 182
@@ -2891,36 +2891,33 @@
 
     .line 185
     :cond_7
-    new-instance v1, Landroidx/media3/common/util/m;
+    new-instance v2, Landroidx/media3/exoplayer/audio/f;
 
     .line 186
     .line 187
-    const/4 v2, 0x2
+    invoke-direct {v2, p0, v1, p1, p2}, Landroidx/media3/exoplayer/audio/f;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 188
-    invoke-direct {v1, p0, v2, p1, p2}, Landroidx/media3/common/util/m;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 189
     .line 190
-    .line 191
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 191
     .line 192
     .line 193
-    .line 194
     :goto_4
     monitor-exit p0
 
-    .line 195
+    .line 194
     return-void
 
-    .line 196
+    .line 195
     :goto_5
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 197
+    .line 196
     throw p1
 .end method
 

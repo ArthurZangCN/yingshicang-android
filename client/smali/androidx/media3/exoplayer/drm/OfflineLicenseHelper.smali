@@ -184,11 +184,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/x;)V
+.method public static synthetic a(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/b0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p1, p0, p2}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$acquireFirstSessionOnHandlerThread$3(Landroidx/media3/exoplayer/drm/DrmSession;Lcom/google/common/util/concurrent/x;)V
+    invoke-direct {p1, p0, p2}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$acquireFirstSessionOnHandlerThread$3(Landroidx/media3/exoplayer/drm/DrmSession;Lcom/google/common/util/concurrent/b0;)V
 
     return-void
 .end method
@@ -221,11 +221,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, Lcom/google/common/util/concurrent/x;
+    new-instance v0, Lcom/google/common/util/concurrent/b0;
 
     .line 7
     .line 8
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 9
     .line 10
@@ -243,7 +243,7 @@
 
     .line 17
     .line 18
-    new-instance v8, Landroidx/media3/exoplayer/drm/s;
+    new-instance v8, Landroidx/media3/exoplayer/drm/u;
 
     .line 19
     .line 20
@@ -265,7 +265,7 @@
     move-object v6, p3
 
     .line 26
-    invoke-direct/range {v1 .. v6}, Landroidx/media3/exoplayer/drm/s;-><init>(Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;I[BLcom/google/common/util/concurrent/x;Landroidx/media3/common/Format;)V
+    invoke-direct/range {v1 .. v6}, Landroidx/media3/exoplayer/drm/u;-><init>(Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;I[BLcom/google/common/util/concurrent/b0;Landroidx/media3/common/Format;)V
 
     .line 27
     .line 28
@@ -300,11 +300,11 @@
     .line 41
     .line 42
     .line 43
-    new-instance p2, Lcom/google/common/util/concurrent/x;
+    new-instance p2, Lcom/google/common/util/concurrent/b0;
 
     .line 44
     .line 45
-    invoke-direct {p2}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {p2}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 46
     .line 47
@@ -313,14 +313,14 @@
 
     .line 49
     .line 50
-    new-instance v0, Landroidx/media3/exoplayer/drm/i;
+    new-instance v0, Landroidx/media3/exoplayer/audio/m;
 
     .line 51
     .line 52
     const/4 v1, 0x1
 
     .line 53
-    invoke-direct {v0, p0, v1, p1, p2}, Landroidx/media3/exoplayer/drm/i;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1, p2}, Landroidx/media3/exoplayer/audio/m;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 54
     .line 55
@@ -429,11 +429,11 @@
     move-result-object p1
 
     .line 5
-    new-instance p2, Lcom/google/common/util/concurrent/x;
+    new-instance p2, Lcom/google/common/util/concurrent/b0;
 
     .line 6
     .line 7
-    invoke-direct {p2}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {p2}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 8
     .line 9
@@ -442,14 +442,14 @@
 
     .line 11
     .line 12
-    new-instance v0, Landroidx/media3/exoplayer/audio/e;
+    new-instance v0, Landroidx/media3/common/util/j;
 
     .line 13
     .line 14
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     .line 15
-    invoke-direct {v0, p0, v1, p2, p1}, Landroidx/media3/exoplayer/audio/e;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p2, p1}, Landroidx/media3/common/util/j;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 16
     .line 17
@@ -532,43 +532,43 @@
     throw p1
 .end method
 
-.method public static synthetic b(Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/x;)V
+.method public static synthetic b(Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/b0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$releaseManagerOnHandlerThread$4(Lcom/google/common/util/concurrent/x;)V
+    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$releaseManagerOnHandlerThread$4(Lcom/google/common/util/concurrent/b0;)V
 
     return-void
 .end method
 
-.method public static synthetic c(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/x;)V
+.method public static synthetic c(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/b0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p1, p2, p0}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$acquireSessionAndGetOfflineLicenseKeySetIdOnHandlerThread$1(Lcom/google/common/util/concurrent/x;Landroidx/media3/exoplayer/drm/DrmSession;)V
+    invoke-direct {p1, p2, p0}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$acquireSessionAndGetOfflineLicenseKeySetIdOnHandlerThread$1(Lcom/google/common/util/concurrent/b0;Landroidx/media3/exoplayer/drm/DrmSession;)V
 
     return-void
 .end method
 
-.method public static synthetic d(Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;I[BLcom/google/common/util/concurrent/x;Landroidx/media3/common/Format;)V
+.method public static synthetic d(Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;I[BLcom/google/common/util/concurrent/b0;Landroidx/media3/common/Format;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$acquireFirstSessionOnHandlerThread$2(I[BLcom/google/common/util/concurrent/x;Landroidx/media3/common/Format;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$acquireFirstSessionOnHandlerThread$2(I[BLcom/google/common/util/concurrent/b0;Landroidx/media3/common/Format;)V
 
     return-void
 .end method
 
-.method public static synthetic e(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/x;)V
+.method public static synthetic e(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/b0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p1, p2, p0}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$getLicenseDurationRemainingSec$0(Lcom/google/common/util/concurrent/x;Landroidx/media3/exoplayer/drm/DrmSession;)V
+    invoke-direct {p1, p2, p0}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->lambda$getLicenseDurationRemainingSec$0(Lcom/google/common/util/concurrent/b0;Landroidx/media3/exoplayer/drm/DrmSession;)V
 
     return-void
 .end method
 
-.method private lambda$acquireFirstSessionOnHandlerThread$2(I[BLcom/google/common/util/concurrent/x;Landroidx/media3/common/Format;)V
+.method private lambda$acquireFirstSessionOnHandlerThread$2(I[BLcom/google/common/util/concurrent/b0;Landroidx/media3/common/Format;)V
     .locals 3
 
     .line 1
@@ -641,7 +641,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-virtual {p3, p1}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {p3, p1}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -674,7 +674,7 @@
     move-exception p1
 
     .line 48
-    invoke-virtual {p3, p1}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {p3, p1}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
 
     .line 49
     .line 50
@@ -683,7 +683,7 @@
     return-void
 .end method
 
-.method private synthetic lambda$acquireFirstSessionOnHandlerThread$3(Landroidx/media3/exoplayer/drm/DrmSession;Lcom/google/common/util/concurrent/x;)V
+.method private synthetic lambda$acquireFirstSessionOnHandlerThread$3(Landroidx/media3/exoplayer/drm/DrmSession;Lcom/google/common/util/concurrent/b0;)V
     .locals 3
 
     .line 1
@@ -741,7 +741,7 @@
     .line 25
     :cond_0
     :goto_0
-    invoke-virtual {p2, v0}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v0}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -752,7 +752,7 @@
 
     .line 29
     :goto_1
-    invoke-virtual {p2, v0}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {p2, v0}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
 
     .line 30
     .line 31
@@ -779,7 +779,7 @@
     return-void
 .end method
 
-.method private synthetic lambda$acquireSessionAndGetOfflineLicenseKeySetIdOnHandlerThread$1(Lcom/google/common/util/concurrent/x;Landroidx/media3/exoplayer/drm/DrmSession;)V
+.method private synthetic lambda$acquireSessionAndGetOfflineLicenseKeySetIdOnHandlerThread$1(Lcom/google/common/util/concurrent/b0;Landroidx/media3/exoplayer/drm/DrmSession;)V
     .locals 1
 
     .line 1
@@ -792,7 +792,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -817,7 +817,7 @@
 
     .line 15
     :try_start_1
-    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -847,7 +847,7 @@
     throw p1
 .end method
 
-.method private lambda$getLicenseDurationRemainingSec$0(Lcom/google/common/util/concurrent/x;Landroidx/media3/exoplayer/drm/DrmSession;)V
+.method private lambda$getLicenseDurationRemainingSec$0(Lcom/google/common/util/concurrent/b0;Landroidx/media3/exoplayer/drm/DrmSession;)V
     .locals 1
 
     .line 1
@@ -865,7 +865,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -890,7 +890,7 @@
 
     .line 18
     :try_start_1
-    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -920,7 +920,7 @@
     throw p1
 .end method
 
-.method private synthetic lambda$releaseManagerOnHandlerThread$4(Lcom/google/common/util/concurrent/x;)V
+.method private synthetic lambda$releaseManagerOnHandlerThread$4(Lcom/google/common/util/concurrent/b0;)V
     .locals 1
 
     .line 1
@@ -937,7 +937,7 @@
     const/4 v0, 0x0
 
     .line 7
-    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -951,7 +951,7 @@
     move-exception v0
 
     .line 12
-    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
 
     .line 13
     .line 14
@@ -972,7 +972,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 2
     iget-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseUri:Landroid/net/Uri;
@@ -987,7 +987,7 @@
 
     iget-boolean v2, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forceDefaultLicenseUri:Z
 
-    iget-object v3, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v3, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     const/4 v5, 0x0
 
@@ -1174,11 +1174,11 @@
     .locals 4
 
     .line 1
-    new-instance v0, Lcom/google/common/util/concurrent/x;
+    new-instance v0, Lcom/google/common/util/concurrent/b0;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 4
     .line 5
@@ -1187,14 +1187,14 @@
 
     .line 7
     .line 8
-    new-instance v2, Le/a;
+    new-instance v2, Landroidx/lifecycle/b;
 
     .line 9
     .line 10
-    const/4 v3, 0x4
+    const/4 v3, 0x6
 
     .line 11
-    invoke-direct {v2, v3, p0, v0}, Le/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, p0, v0, v3}, Landroidx/lifecycle/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 12
     .line 13
@@ -1269,7 +1269,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 10
     .line 11
@@ -1307,7 +1307,7 @@
 .end method
 
 .method public declared-synchronized getLicenseDurationRemainingSec([B)Landroid/util/Pair;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
@@ -1350,11 +1350,11 @@
 
     .line 12
     :try_start_2
-    new-instance v0, Lcom/google/common/util/concurrent/x;
+    new-instance v0, Lcom/google/common/util/concurrent/b0;
 
     .line 13
     .line 14
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 15
     .line 16
@@ -1363,174 +1363,171 @@
 
     .line 18
     .line 19
-    new-instance v2, Landroidx/media3/exoplayer/drm/r;
+    new-instance v2, Landroidx/media3/common/util/l;
 
     .line 20
     .line 21
-    const/4 v3, 0x0
+    invoke-direct {v2, p1, p0, v0}, Landroidx/media3/common/util/l;-><init>(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/b0;)V
 
     .line 22
-    invoke-direct {v2, p0, v3, v0, p1}, Landroidx/media3/exoplayer/drm/r;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 23
     .line 24
-    .line 25
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     :try_start_3
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/a$i;->get()Ljava/lang/Object;
 
+    .line 28
     .line 29
     .line 30
-    .line 31
     move-result-object p1
 
-    .line 32
+    .line 31
     check-cast p1, Landroid/util/Pair;
     :try_end_3
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/lang/InterruptedException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
+    .line 32
     .line 33
-    .line 34
     :try_start_4
     invoke-direct {p0}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->releaseManagerOnHandlerThread()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
+    .line 34
     .line 35
     .line 36
-    .line 37
     monitor-exit p0
 
-    .line 38
+    .line 37
     return-object p1
 
-    .line 39
+    .line 38
     :catchall_0
     move-exception p1
 
-    .line 40
+    .line 39
     goto :goto_2
 
-    .line 41
+    .line 40
     :catchall_1
     move-exception p1
 
-    .line 42
+    .line 41
     goto :goto_1
 
-    .line 43
+    .line 42
     :catch_0
     move-exception p1
 
-    .line 44
+    .line 43
     goto :goto_0
 
-    .line 45
+    .line 44
     :catch_1
     move-exception p1
 
-    .line 46
+    .line 45
     :goto_0
     :try_start_5
     new-instance v0, Ljava/lang/IllegalStateException;
 
+    .line 46
     .line 47
-    .line 48
     invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 48
     .line 49
     .line 50
-    .line 51
     throw v0
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 52
+    .line 51
     :goto_1
     :try_start_6
     invoke-direct {p0}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->releaseManagerOnHandlerThread()V
 
+    .line 52
     .line 53
     .line 54
-    .line 55
     throw p1
 
-    .line 56
+    .line 55
     :catch_2
     move-exception p1
 
-    .line 57
+    .line 56
     invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
+    .line 57
     .line 58
     .line 59
-    .line 60
     move-result-object v0
 
-    .line 61
+    .line 60
     instance-of v0, v0, Landroidx/media3/exoplayer/drm/KeysExpiredException;
 
+    .line 61
     .line 62
-    .line 63
     if-eqz v0, :cond_0
 
+    .line 63
     .line 64
-    .line 65
     const-wide/16 v0, 0x0
 
+    .line 65
     .line 66
-    .line 67
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 67
     .line 68
     .line 69
-    .line 70
     move-result-object p1
 
-    .line 71
+    .line 70
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 71
     .line 72
     .line 73
-    .line 74
     move-result-object v0
 
-    .line 75
+    .line 74
     invoke-static {p1, v0}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
+    .line 75
     .line 76
     .line 77
-    .line 78
     move-result-object p1
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 79
+    .line 78
     monitor-exit p0
 
-    .line 80
+    .line 79
     return-object p1
 
-    .line 81
+    .line 80
     :cond_0
     :try_start_7
     throw p1
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    .line 82
+    .line 81
     :goto_2
     monitor-exit p0
 
-    .line 83
+    .line 82
     throw p1
 .end method
 

@@ -4,22 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/content/pm/ApplicationInfo;)I
+.method public static bridge synthetic a(Landroid/location/GnssStatus;I)F
     .locals 0
 
     .line 1
-    iget p0, p0, Landroid/content/pm/ApplicationInfo;->minSdkVersion:I
-
-    .line 2
-    .line 3
-    return p0
-.end method
-
-.method public static bridge synthetic b(Landroid/location/GnssStatus;I)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/location/GnssStatus;->getSvid(I)I
+    invoke-virtual {p0, p1}, Landroid/location/GnssStatus;->getElevationDegrees(I)F
 
     .line 2
     .line 3
@@ -30,41 +19,41 @@
     return p0
 .end method
 
-.method public static bridge synthetic c(Landroid/os/LocaleList;)I
-    .locals 0
+.method public static bridge synthetic b()Landroid/icu/util/TimeZone;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/LocaleList;->size()I
+    const-string v0, "UTC"
 
     .line 2
     .line 3
-    .line 4
-    move-result p0
+    invoke-static {v0}, Landroid/icu/util/TimeZone;->getTimeZone(Ljava/lang/String;)Landroid/icu/util/TimeZone;
 
+    .line 4
     .line 5
-    return p0
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method
 
-.method public static bridge synthetic d(Landroid/view/accessibility/AccessibilityNodeInfo;)I
+.method public static bridge synthetic c(Ljava/lang/Object;)Landroid/location/GnssStatus;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getDrawingOrder()I
+    check-cast p0, Landroid/location/GnssStatus;
 
     .line 2
     .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
+    return-object p0
 .end method
 
-.method public static bridge synthetic e(Landroid/content/Context;)Landroid/content/Context;
+.method public static bridge synthetic d(Landroid/service/media/MediaBrowserService;)Landroid/os/Bundle;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/Context;->createDeviceProtectedStorageContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/service/media/MediaBrowserService;->getBrowserRootHints()Landroid/os/Bundle;
 
     .line 2
     .line 3
@@ -75,29 +64,7 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic f(Ljava/lang/Object;)Landroid/location/GnssMeasurementsEvent$Callback;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/location/GnssMeasurementsEvent$Callback;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static bridge synthetic g(Ljava/lang/Object;)Landroid/media/AudioRouting$OnRoutingChangedListener;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/media/AudioRouting$OnRoutingChangedListener;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static bridge synthetic h(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
+.method public static bridge synthetic e(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
     .locals 0
 
     .line 1
@@ -112,11 +79,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic i(Landroid/view/View;Landroid/view/MotionEvent;I)Landroid/view/PointerIcon;
+.method public static bridge synthetic f(Landroid/graphics/Bitmap;FF)Landroid/view/PointerIcon;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/view/View;->onResolvePointerIcon(Landroid/view/MotionEvent;I)Landroid/view/PointerIcon;
+    invoke-static {p0, p1, p2}, Landroid/view/PointerIcon;->create(Landroid/graphics/Bitmap;FF)Landroid/view/PointerIcon;
 
     .line 2
     .line 3
@@ -127,22 +94,22 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic j()Ljava/lang/Class;
+.method public static bridge synthetic g()Ljava/lang/Class;
     .locals 1
 
     .line 1
-    const-class v0, Landroid/app/Notification$DecoratedCustomViewStyle;
+    const-class v0, Landroid/app/Notification$MessagingStyle;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public static bridge synthetic k(Landroid/os/LocaleList;)Ljava/lang/String;
+.method public static bridge synthetic h(Landroid/util/FloatProperty;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/LocaleList;->toLanguageTags()Ljava/lang/String;
+    invoke-virtual {p0, p1}, Landroid/util/FloatProperty;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -153,11 +120,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic l(Landroid/os/storage/StorageVolume;)Ljava/lang/String;
+.method public static bridge synthetic i(Landroid/view/inputmethod/InputMethodSubtype;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->getState()Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodSubtype;->getLanguageTag()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -168,22 +135,7 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic m(Landroid/text/Spanned;I)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/text/Html;->toHtml(Landroid/text/Spanned;I)Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic n(Ljavax/net/ssl/ExtendedSSLSession;)Ljava/util/List;
+.method public static bridge synthetic j(Ljavax/net/ssl/ExtendedSSLSession;)Ljava/util/List;
     .locals 0
 
     .line 1
@@ -198,33 +150,112 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic o()Ljava/util/Locale$Category;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ljava/util/Locale$Category;->DISPLAY:Ljava/util/Locale$Category;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public static synthetic p()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroid/media/MediaCodec$CryptoInfo$Pattern;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public static bridge synthetic q(Landroid/icu/text/DateFormat;Landroid/icu/util/TimeZone;)V
+.method public static bridge synthetic k(Landroid/os/LocaleList;I)Ljava/util/Locale;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/icu/text/DateFormat;->setTimeZone(Landroid/icu/util/TimeZone;)V
+    invoke-virtual {p0, p1}, Landroid/os/LocaleList;->get(I)Ljava/util/Locale;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic l(Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture;
+    .locals 0
+
+    .line 1
+    check-cast p0, Ljava/util/concurrent/CompletableFuture;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static bridge synthetic m(Lcom/google/common/collect/h0;Lcom/google/common/collect/i0;Lcom/google/common/collect/d0;Lcom/google/android/material/color/utilities/c;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3, p4}, Ljava/util/stream/Collector;->of(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic n(Ljava/util/function/Supplier;Lcom/google/common/collect/n0;Lcom/google/common/collect/o0;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Ljava/util/stream/Collector;->of(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic o(Ljava/util/stream/IntStream;Li5/a;)Ljava/util/stream/IntStream;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p1}, Ljava/util/stream/IntStream;->map(Ljava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic p(Ljava/util/stream/Stream;Lcom/google/common/collect/p0;)Ljava/util/stream/Stream;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p1}, Ljava/util/stream/Stream;->peek(Ljava/util/function/Consumer;)Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic q(Ljava/util/stream/Stream;Li5/e;)Ljava/util/stream/Stream;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0, p1}, Ljava/util/stream/Stream;->filter(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic r(Landroid/app/Activity;ZLandroid/content/ComponentName;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/app/Activity;->setVrModeEnabled(ZLandroid/content/ComponentName;)V
 
     .line 2
     .line 3
@@ -232,11 +263,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic r(Landroid/media/MediaCodec$CryptoInfo$Pattern;II)V
+.method public static bridge synthetic s(Landroid/location/GnssMeasurementsEvent$Callback;I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/media/MediaCodec$CryptoInfo$Pattern;->set(II)V
+    invoke-virtual {p0, p1}, Landroid/location/GnssMeasurementsEvent$Callback;->onStatusChanged(I)V
 
     .line 2
     .line 3
@@ -244,7 +275,7 @@
     return-void
 .end method
 
-.method public static bridge synthetic s(Landroid/media/browse/MediaBrowser;Ljava/lang/String;Landroid/os/Bundle;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V
+.method public static bridge synthetic t(Landroid/media/browse/MediaBrowser;Ljava/lang/String;Landroid/os/Bundle;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V
     .locals 0
 
     .line 1
@@ -253,11 +284,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic t(Landroid/media/session/MediaController$TransportControls;Landroid/net/Uri;Landroid/os/Bundle;)V
+.method public static bridge synthetic u(Landroid/widget/EditText;Landroid/os/LocaleList;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/media/session/MediaController$TransportControls;->prepareFromUri(Landroid/net/Uri;Landroid/os/Bundle;)V
+    invoke-virtual {p0, p1}, Landroid/widget/EditText;->setImeHintLocales(Landroid/os/LocaleList;)V
 
     .line 2
     .line 3
@@ -265,11 +296,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic u(Landroid/view/View;Landroid/view/PointerIcon;)V
+.method public static bridge synthetic v(Ljava/util/List;Ljava/util/Comparator;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->setPointerIcon(Landroid/view/PointerIcon;)V
+    invoke-interface {p0, p1}, Ljava/util/List;->sort(Ljava/util/Comparator;)V
 
     .line 2
     .line 3
@@ -277,55 +308,58 @@
     return-void
 .end method
 
-.method public static bridge synthetic v(Landroid/view/accessibility/AccessibilityNodeInfo;Z)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setImportantForAccessibility(Z)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic w(Landroid/location/GnssStatus;I)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/location/GnssStatus;->hasAlmanacData(I)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic x(Landroid/os/LocaleList;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/os/LocaleList;->isEmpty()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic y()Ljava/util/Locale$Category;
+.method public static bridge synthetic w(Ljava/util/concurrent/CompletableFuture;)V
     .locals 1
 
     .line 1
-    sget-object v0, Ljava/util/Locale$Category;->FORMAT:Ljava/util/Locale$Category;
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p0, v0}, Ljava/util/concurrent/CompletableFuture;->complete(Ljava/lang/Object;)Z
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public static bridge synthetic x(Landroid/os/storage/StorageVolume;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->isRemovable()Z
 
     .line 2
     .line 3
-    return-object v0
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic y(Landroid/security/NetworkSecurityPolicy;Ljava/lang/String;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/security/NetworkSecurityPolicy;->isCleartextTrafficPermitted(Ljava/lang/String;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic z(Landroid/media/DrmInitData$SchemeInitData;)[B
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroid/media/DrmInitData$SchemeInitData;->data:[B
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

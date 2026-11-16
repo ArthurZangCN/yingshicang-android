@@ -17,10 +17,10 @@
 # instance fields
 .field private forceDefaultLicenseUri:Z
 
-.field private forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+.field private forcedSessionTrackTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -32,10 +32,10 @@
     .end annotation
 .end field
 
-.field private licenseRequestHeaders:Lcom/google/common/collect/h2;
+.field private licenseRequestHeaders:Lcom/google/common/collect/g2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -68,11 +68,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     const/4 v0, 0x1
 
@@ -80,11 +80,11 @@
     iput-boolean v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->playClearContentWithoutKey:Z
 
     .line 8
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     return-void
 .end method
@@ -115,9 +115,9 @@
     iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseUri:Landroid/net/Uri;
 
     .line 12
-    iget-object v0, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v0, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 13
     iget-boolean v0, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->multiSession:Z
@@ -135,9 +135,9 @@
     iput-boolean v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forceDefaultLicenseUri:Z
 
     .line 16
-    iget-object v0, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 17
     invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration;->access$600(Landroidx/media3/common/MediaItem$DrmConfiguration;)[B
@@ -207,11 +207,11 @@
     return p0
 .end method
 
-.method public static synthetic access$1200(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$1200(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -262,11 +262,11 @@
     return p0
 .end method
 
-.method public static synthetic access$900(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/h2;
+.method public static synthetic access$900(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/g2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object p0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 2
     .line 3
@@ -372,7 +372,7 @@
     move-result-object v0
 
     .line 13
-    invoke-static {p1, v0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1, v0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 14
     .line 15
@@ -384,7 +384,7 @@
 
     .line 18
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -414,7 +414,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -422,7 +422,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -481,7 +481,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/h2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/h2;
+    invoke-static {p1}, Lcom/google/common/collect/g2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/g2;
 
     .line 2
     .line 3
@@ -489,7 +489,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iput-object p1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 6
     .line 7

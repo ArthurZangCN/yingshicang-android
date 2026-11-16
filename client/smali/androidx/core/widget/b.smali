@@ -29,156 +29,157 @@
 
 # virtual methods
 .method public final run()V
-    .locals 7
+    .locals 6
 
     .line 1
-    iget v0, p0, Landroidx/core/widget/b;->a:I
+    const/4 v0, 0x4
 
     .line 2
-    .line 3
-    const-string v1, "this$0"
+    iget v1, p0, Landroidx/core/widget/b;->a:I
 
+    .line 3
     .line 4
+    const/4 v2, 0x0
+
     .line 5
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
     .line 6
-    iget-object v3, p0, Landroidx/core/widget/b;->b:Ljava/lang/Object;
+    const-string v4, "this$0"
 
     .line 7
     .line 8
-    packed-switch v0, :pswitch_data_0
+    iget-object v5, p0, Landroidx/core/widget/b;->b:Ljava/lang/Object;
 
     .line 9
     .line 10
-    .line 11
-    check-cast v3, Lcom/obsez/android/lib/filechooser/ChooserDialog;
+    packed-switch v1, :pswitch_data_0
 
+    .line 11
     .line 12
     .line 13
-    invoke-static {v3}, Lcom/obsez/android/lib/filechooser/ChooserDialog;->i(Lcom/obsez/android/lib/filechooser/ChooserDialog;)V
+    check-cast v5, Lorg/chromium/base/task/TaskRunnerImpl;
 
     .line 14
     .line 15
+    invoke-virtual {v5}, Lorg/chromium/base/task/TaskRunnerImpl;->runPreNativeTask()V
+
     .line 16
+    .line 17
+    .line 18
     return-void
 
-    .line 17
-    :pswitch_0
-    check-cast v3, Lcom/github/tvbox/osc/ui/view/ChoosePlayPopUp;
-
-    .line 18
     .line 19
-    sget v0, Lcom/github/tvbox/osc/ui/view/ChoosePlayPopUp;->r:I
+    :pswitch_0
+    check-cast v5, Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     .line 20
     .line 21
-    invoke-static {v3, v1}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5}, Lcom/google/android/material/timepicker/MaterialTimePicker;->c(Lcom/google/android/material/timepicker/MaterialTimePicker;)V
 
     .line 22
     .line 23
     .line 24
-    iget-object v0, v3, Lcom/github/tvbox/osc/ui/view/ChoosePlayPopUp;->o:Lcom/owen/tvrecyclerview/widget/TvRecyclerView;
+    return-void
 
     .line 25
+    :pswitch_1
+    check-cast v5, Landroidx/media3/ui/SubtitleView;
+
     .line 26
-    if-eqz v0, :cond_1
-
     .line 27
-    .line 28
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+    const-string v1, "$subtitleView"
 
+    .line 28
     .line 29
+    invoke-static {v5, v1}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 30
     .line 31
-    move-result-object v0
-
     .line 32
-    if-eqz v0, :cond_1
+    sget-object v1, Lkotlin/collections/r;->INSTANCE:Lkotlin/collections/r;
 
     .line 33
     .line 34
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getChildCount()I
+    invoke-virtual {v5, v1}, Landroidx/media3/ui/SubtitleView;->setCues(Ljava/util/List;)V
 
     .line 35
     .line 36
     .line 37
-    move-result v1
+    invoke-virtual {v5}, Landroid/view/View;->getVisibility()I
 
     .line 38
-    const/4 v4, 0x0
-
     .line 39
-    :goto_0
-    if-ge v4, v1, :cond_1
-
     .line 40
+    move-result v1
+
     .line 41
-    invoke-virtual {v0, v4}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getChildAt(I)Landroid/view/View;
+    if-ne v1, v0, :cond_0
 
     .line 42
     .line 43
+    goto :goto_0
+
     .line 44
-    move-result-object v5
+    :cond_0
+    invoke-virtual {v5, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 45
-    if-eqz v5, :cond_0
-
     .line 46
     .line 47
-    new-instance v6, Lp1/k1;
+    :goto_0
+    return-void
 
     .line 48
-    .line 49
-    invoke-direct {v6, v3, v2}, Lp1/k1;-><init>(Ljava/lang/Object;I)V
+    :pswitch_2
+    check-cast v5, Lcom/github/tvbox/osc/ui/view/PlayerMoreFucPop;
 
+    .line 49
     .line 50
+    sget v0, Lcom/github/tvbox/osc/ui/view/PlayerMoreFucPop;->t:I
+
     .line 51
     .line 52
-    invoke-virtual {v5, v6}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-static {v5, v4}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 53
     .line 54
     .line 55
-    :cond_0
-    add-int/lit8 v4, v4, 0x1
+    invoke-virtual {v5}, Lrazerdp/basepopup/BasePopupWindow;->b()V
 
     .line 56
     .line 57
-    goto :goto_0
-
     .line 58
-    :cond_1
     return-void
 
     .line 59
-    :pswitch_1
-    check-cast v3, Lcom/github/tvbox/osc/ui/dialog/z0;
+    :pswitch_3
+    check-cast v5, Lcom/github/tvbox/osc/ui/dialog/c1;
 
     .line 60
     .line 61
-    sget v0, Lcom/github/tvbox/osc/ui/dialog/z0;->m:I
+    sget v0, Lcom/github/tvbox/osc/ui/dialog/c1;->m:I
 
     .line 62
     .line 63
-    invoke-static {v3, v1}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v4}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 64
     .line 65
     .line 66
-    iget-object v0, v3, Lcom/github/tvbox/osc/ui/dialog/z0;->b:Landroid/widget/TextView;
+    iget-object v0, v5, Lcom/github/tvbox/osc/ui/dialog/c1;->b:Landroid/widget/TextView;
 
     .line 67
     .line 68
-    if-nez v0, :cond_2
+    if-nez v0, :cond_1
 
     .line 69
     .line 70
     goto :goto_1
 
     .line 71
-    :cond_2
-    invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
+    :cond_1
+    invoke-virtual {v0, v3}, Landroid/view/View;->setFocusable(Z)V
 
     .line 72
     .line 73
@@ -187,740 +188,525 @@
     return-void
 
     .line 75
-    :pswitch_2
-    check-cast v3, Ljava/io/File;
+    :pswitch_4
+    check-cast v5, Lcom/github/tvbox/osc/ui/dialog/p0;
 
     .line 76
     .line 77
-    sget v0, Lj1/k;->j:I
+    iget-object v0, v5, Lcom/github/tvbox/osc/ui/dialog/p0;->a:Lcom/github/tvbox/osc/ui/dialog/q0;
 
     .line 78
     .line 79
-    invoke-static {v3}, Lcom/blankj/utilcode/util/o0;->d(Ljava/io/File;)Z
+    invoke-virtual {v0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
     .line 80
     .line 81
     .line 82
-    move-result v0
+    move-result-object v0
 
     .line 83
-    const/4 v1, 0x0
+    const-string v1, "\u672a\u67e5\u8be2\u5230\u5339\u914d\u5b57\u5e55"
 
     .line 84
-    if-nez v0, :cond_3
-
     .line 85
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
     .line 86
-    goto :goto_3
-
     .line 87
-    :cond_3
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 88
+    move-result-object v0
+
     .line 89
-    const/16 v4, 0x18
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 90
     .line 91
-    if-ge v0, v4, :cond_4
-
     .line 92
+    return-void
+
     .line 93
-    invoke-static {v3}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
+    :pswitch_5
+    check-cast v5, Ly1/m;
 
     .line 94
     .line 95
-    .line 96
-    move-result-object v3
+    iget-object v0, v5, Ly1/m;->a:Landroid/content/Context;
 
+    .line 96
     .line 97
-    goto :goto_2
+    invoke-static {v0, v2, v3}, Lg2/a$a;->a(Landroid/content/Context;ZZ)V
 
     .line 98
-    :cond_4
-    new-instance v5, Ljava/lang/StringBuilder;
-
     .line 99
     .line 100
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    return-void
 
     .line 101
+    :pswitch_6
+    check-cast v5, Ljava/util/Map;
+
     .line 102
     .line 103
-    invoke-static {}, Lcom/blankj/utilcode/util/k0;->a()Landroid/app/Application;
+    const-string v0, "config"
 
     .line 104
     .line 105
+    invoke-interface {v5, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 106
-    move-result-object v6
-
     .line 107
-    invoke-virtual {v6}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
     .line 108
-    .line 109
-    .line 110
-    move-result-object v6
+    move-result-object v0
 
+    .line 109
+    check-cast v0, Ljava/lang/String;
+
+    .line 110
     .line 111
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lcom/github/tvbox/osc/bean/CastBean;->objectFrom(Ljava/lang/String;)Lcom/github/tvbox/osc/bean/CastBean;
 
     .line 112
     .line 113
     .line 114
-    const-string v6, ".utilcode.fileprovider"
+    move-result-object v0
 
     .line 115
-    .line 116
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v0, :cond_4
 
+    .line 116
     .line 117
+    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
+
     .line 118
     .line 119
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 120
-    .line 121
-    .line 122
-    move-result-object v5
+    move-result-object v1
 
+    .line 121
+    if-nez v1, :cond_2
+
+    .line 122
     .line 123
-    invoke-static {}, Lcom/blankj/utilcode/util/k0;->a()Landroid/app/Application;
+    goto :goto_2
 
     .line 124
+    :cond_2
+    invoke-static {}, Lcom/github/tvbox/osc/api/c;->get()Lcom/github/tvbox/osc/api/c;
+
     .line 125
     .line 126
-    move-result-object v6
-
     .line 127
-    invoke-static {v6, v5, v3}, Landroidx/core/content/FileProvider;->getUriForFile(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
+    move-result-object v1
 
     .line 128
+    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
+
     .line 129
     .line 130
-    move-result-object v3
-
     .line 131
-    :goto_2
-    if-nez v3, :cond_5
+    move-result-object v2
 
     .line 132
-    .line 133
-    goto :goto_3
+    iget-object v2, v2, Lcom/github/tvbox/osc/bean/VodInfo;->sourceKey:Ljava/lang/String;
 
+    .line 133
     .line 134
-    :cond_5
-    new-instance v1, Landroid/content/Intent;
+    invoke-virtual {v1, v2}, Lcom/github/tvbox/osc/api/c;->getSource(Ljava/lang/String;)Lcom/github/tvbox/osc/bean/SourceBean;
 
     .line 135
     .line 136
-    const-string v5, "android.intent.action.VIEW"
-
     .line 137
+    move-result-object v1
+
     .line 138
-    invoke-direct {v1, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    if-nez v1, :cond_3
 
     .line 139
     .line 140
-    .line 141
-    const-string v5, "application/vnd.android.package-archive"
+    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getHomeApiUrl()Ljava/lang/String;
 
+    .line 141
     .line 142
     .line 143
-    invoke-virtual {v1, v3, v5}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+    move-result-object v1
 
     .line 144
+    sget v2, Lcom/movie/libutils/d;->a:I
+
     .line 145
     .line 146
-    if-lt v0, v4, :cond_6
+    const-string v2, "home_api"
 
     .line 147
     .line 148
-    invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+    invoke-static {v2, v1}, Lcom/orhanobut/hawk/Hawk;->put(Ljava/lang/String;Ljava/lang/Object;)Z
 
     .line 149
     .line 150
     .line 151
-    :cond_6
-    const/high16 v0, 0x10000000
+    invoke-static {}, Lm6/c;->b()Lm6/c;
 
     .line 152
     .line 153
-    invoke-virtual {v1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
-
     .line 154
-    .line 155
-    .line 156
     move-result-object v1
 
+    .line 155
+    new-instance v2, Lr1/a;
+
+    .line 156
     .line 157
-    :goto_3
-    if-nez v1, :cond_7
+    const/16 v3, 0x19
 
     .line 158
     .line 159
-    goto :goto_4
+    invoke-direct {v2, v3}, Lr1/a;-><init>(I)V
 
     .line 160
-    :cond_7
-    invoke-static {}, Lcom/blankj/utilcode/util/k0;->a()Landroid/app/Application;
-
     .line 161
     .line 162
+    invoke-virtual {v1, v2}, Lm6/c;->e(Ljava/lang/Object;)V
+
     .line 163
-    move-result-object v0
-
     .line 164
-    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
     .line 165
+    new-instance v1, Landroidx/appcompat/app/a;
+
     .line 166
     .line 167
-    :goto_4
-    return-void
+    const/4 v2, 0x7
 
     .line 168
-    :pswitch_3
-    check-cast v3, Ljava/util/Map;
+    invoke-direct {v1, v0, v2}, Landroidx/appcompat/app/a;-><init>(Ljava/lang/Object;I)V
 
     .line 169
     .line 170
-    const-string v0, "config"
-
     .line 171
-    .line 172
-    invoke-interface {v3, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const-wide/16 v2, 0x5dc
 
+    .line 172
     .line 173
+    invoke-static {v2, v3, v1}, Lcom/blankj/utilcode/util/y;->e(JLjava/lang/Runnable;)V
+
     .line 174
     .line 175
-    move-result-object v0
-
     .line 176
-    check-cast v0, Ljava/lang/String;
+    goto :goto_2
 
     .line 177
-    .line 178
-    invoke-static {v0}, Lcom/github/tvbox/osc/bean/CastBean;->objectFrom(Ljava/lang/String;)Lcom/github/tvbox/osc/bean/CastBean;
+    :cond_3
+    invoke-static {v0}, Ly1/a;->c(Lcom/github/tvbox/osc/bean/CastBean;)V
 
+    .line 178
     .line 179
     .line 180
+    :cond_4
+    :goto_2
+    return-void
+
     .line 181
-    move-result-object v0
+    :pswitch_7
+    check-cast v5, Lcom/github/tvbox/osc/player/controller/LiveController;
 
     .line 182
-    if-eqz v0, :cond_b
-
     .line 183
-    .line 184
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
+    iget-object v1, v5, Lcom/github/tvbox/osc/player/controller/LiveController;->Q:Landroid/view/View;
 
+    .line 184
     .line 185
+    invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
+
     .line 186
     .line 187
-    move-result-object v1
-
     .line 188
-    if-nez v1, :cond_8
+    return-void
 
     .line 189
+    :pswitch_8
+    check-cast v5, Lcom/airbnb/lottie/a0;
+
     .line 190
-    goto/16 :goto_8
-
     .line 191
-    .line 192
-    :cond_8
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
+    iget-object v0, v5, Lcom/airbnb/lottie/a0;->N:Ljava/util/concurrent/Semaphore;
 
+    .line 192
     .line 193
+    iget-object v1, v5, Lcom/airbnb/lottie/a0;->p:Lp/c;
+
     .line 194
     .line 195
-    move-result-object v1
+    if-nez v1, :cond_5
 
     .line 196
-    invoke-static {}, Lcom/github/tvbox/osc/api/c;->get()Lcom/github/tvbox/osc/api/c;
-
     .line 197
+    goto :goto_5
+
     .line 198
+    :cond_5
+    :try_start_0
+    invoke-virtual {v0}, Ljava/util/concurrent/Semaphore;->acquire()V
+
     .line 199
-    move-result-object v3
-
     .line 200
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
-
     .line 201
+    iget-object v2, v5, Lcom/airbnb/lottie/a0;->b:Lt/f;
+
     .line 202
     .line 203
-    move-result-object v4
+    invoke-virtual {v2}, Lt/f;->c()F
 
     .line 204
-    iget-object v4, v4, Lcom/github/tvbox/osc/bean/VodInfo;->sourceKey:Ljava/lang/String;
-
     .line 205
     .line 206
-    invoke-virtual {v3, v4}, Lcom/github/tvbox/osc/api/c;->getSource(Ljava/lang/String;)Lcom/github/tvbox/osc/bean/SourceBean;
+    move-result v2
 
     .line 207
+    invoke-virtual {v1, v2}, Lp/c;->s(F)V
+
     .line 208
     .line 209
-    move-result-object v3
-
     .line 210
-    sget-object v4, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    sget-boolean v1, Lcom/airbnb/lottie/a0;->S:Z
 
     .line 211
     .line 212
-    const-string v5, "HISTORY_MERGE"
+    if-eqz v1, :cond_7
 
     .line 213
     .line 214
-    invoke-static {v5, v4}, Lcom/movie/libutils/d;->a(Ljava/lang/String;Ljava/lang/Boolean;)Z
+    iget-boolean v1, v5, Lcom/airbnb/lottie/a0;->L:Z
 
     .line 215
     .line 216
-    .line 217
-    move-result v4
+    if-eqz v1, :cond_7
 
+    .line 217
     .line 218
-    if-eqz v4, :cond_9
+    iget-object v1, v5, Lcom/airbnb/lottie/a0;->O:Landroid/os/Handler;
 
     .line 219
     .line 220
-    new-instance v4, Ljava/lang/StringBuilder;
+    if-nez v1, :cond_6
 
     .line 221
     .line 222
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v1, Landroid/os/Handler;
 
     .line 223
     .line 224
-    .line 225
-    iget-object v5, v1, Lcom/github/tvbox/osc/bean/VodInfo;->name:Ljava/lang/String;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
+    .line 225
     .line 226
     .line 227
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
     .line 228
+    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
     .line 229
     .line 230
-    iget v1, v1, Lcom/github/tvbox/osc/bean/VodInfo;->playIndex:I
-
     .line 231
-    .line 232
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iput-object v1, v5, Lcom/airbnb/lottie/a0;->O:Landroid/os/Handler;
 
+    .line 232
     .line 233
+    new-instance v1, Landroidx/core/widget/a;
+
     .line 234
     .line 235
-    :goto_5
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x5
 
     .line 236
+    invoke-direct {v1, v5, v2}, Landroidx/core/widget/a;-><init>(Ljava/lang/Object;I)V
+
     .line 237
     .line 238
-    move-result-object v1
-
     .line 239
-    goto :goto_6
+    iput-object v1, v5, Lcom/airbnb/lottie/a0;->P:Landroidx/core/widget/a;
 
     .line 240
-    :cond_9
-    new-instance v4, Ljava/lang/StringBuilder;
-
     .line 241
+    goto :goto_3
+
     .line 242
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    :catchall_0
+    move-exception v1
 
     .line 243
+    goto :goto_4
+
     .line 244
+    :cond_6
+    :goto_3
+    iget-object v1, v5, Lcom/airbnb/lottie/a0;->O:Landroid/os/Handler;
+
     .line 245
-    iget-object v5, v1, Lcom/github/tvbox/osc/bean/VodInfo;->sourceKey:Ljava/lang/String;
-
     .line 246
-    .line 247
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, v5, Lcom/airbnb/lottie/a0;->P:Landroidx/core/widget/a;
 
+    .line 247
     .line 248
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 249
     .line 250
-    iget-object v5, v1, Lcom/github/tvbox/osc/bean/VodInfo;->id:Ljava/lang/String;
-
     .line 251
-    .line 252
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catch_0
+    :cond_7
+    invoke-virtual {v0}, Ljava/util/concurrent/Semaphore;->release()V
 
+    .line 252
     .line 253
     .line 254
+    goto :goto_5
+
     .line 255
-    iget-object v5, v1, Lcom/github/tvbox/osc/bean/VodInfo;->playFlag:Ljava/lang/String;
+    :goto_4
+    invoke-virtual {v0}, Ljava/util/concurrent/Semaphore;->release()V
 
     .line 256
     .line 257
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 258
+    throw v1
+
     .line 259
+    :goto_5
+    return-void
+
     .line 260
-    iget v5, v1, Lcom/github/tvbox/osc/bean/VodInfo;->playIndex:I
+    :pswitch_9
+    check-cast v5, Landroidx/room/RoomTrackingLiveData;
 
     .line 261
     .line 262
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-static {v5}, Landroidx/room/RoomTrackingLiveData;->a(Landroidx/room/RoomTrackingLiveData;)V
 
     .line 263
     .line 264
     .line 265
-    iget-object v1, v1, Lcom/github/tvbox/osc/bean/VodInfo;->playNote:Ljava/lang/String;
+    return-void
 
     .line 266
-    .line 267
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_a
+    check-cast v5, Landroidx/room/QueryInterceptorStatement;
 
+    .line 267
     .line 268
+    invoke-static {v5}, Landroidx/room/QueryInterceptorStatement;->b(Landroidx/room/QueryInterceptorStatement;)V
+
     .line 269
     .line 270
-    goto :goto_5
-
     .line 271
-    :goto_6
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/x;->b(Ljava/lang/String;)Ljava/lang/String;
+    return-void
 
     .line 272
+    :pswitch_b
+    check-cast v5, Landroidx/room/QueryInterceptorDatabase;
+
     .line 273
     .line 274
-    move-result-object v1
+    invoke-static {v5}, Landroidx/room/QueryInterceptorDatabase;->b(Landroidx/room/QueryInterceptorDatabase;)V
 
     .line 275
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getProgress()Ljava/lang/Long;
-
     .line 276
     .line 277
+    return-void
+
     .line 278
-    move-result-object v4
+    :pswitch_c
+    check-cast v5, Landroidx/room/AutoCloser;
 
     .line 279
-    invoke-static {v4, v1}, Lcom/blankj/utilcode/util/f;->C(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 280
+    invoke-static {v5}, Landroidx/room/AutoCloser;->a(Landroidx/room/AutoCloser;)V
+
     .line 281
     .line 282
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
-
     .line 283
-    .line 284
-    .line 285
-    move-result-object v1
+    return-void
 
+    .line 284
+    :pswitch_d
+    check-cast v5, Landroidx/media3/exoplayer/video/spherical/SphericalGLSurfaceView;
+
+    .line 285
     .line 286
-    if-nez v1, :cond_a
+    invoke-static {v5}, Landroidx/media3/exoplayer/video/spherical/SphericalGLSurfaceView;->a(Landroidx/media3/exoplayer/video/spherical/SphericalGLSurfaceView;)V
 
     .line 287
     .line 288
-    const-string v1, "\u6295\u5c4f\u5f02\u5e38\uff0c\u8bf7\u91cd\u65b0\u6295\u5c4f"
-
     .line 289
+    return-void
+
     .line 290
-    invoke-static {v1}, Li2/m;->b(Ljava/lang/String;)V
+    :pswitch_e
+    check-cast v5, Landroidx/media3/exoplayer/video/VideoSink$Listener;
 
     .line 291
     .line 292
+    invoke-interface {v5}, Landroidx/media3/exoplayer/video/VideoSink$Listener;->onFrameAvailableForRendering()V
+
     .line 293
-    goto :goto_7
-
     .line 294
-    :cond_a
-    new-instance v1, Landroid/os/Bundle;
-
     .line 295
+    return-void
+
     .line 296
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+    :pswitch_f
+    check-cast v5, Landroidx/media3/exoplayer/dash/DashMediaSource;
 
     .line 297
     .line 298
-    .line 299
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
+    invoke-static {v5}, Landroidx/media3/exoplayer/dash/DashMediaSource;->a(Landroidx/media3/exoplayer/dash/DashMediaSource;)V
 
+    .line 299
     .line 300
     .line 301
+    return-void
+
     .line 302
-    move-result-object v4
+    :pswitch_10
+    check-cast v5, Landroidx/media3/exoplayer/audio/DefaultAudioSink;
 
     .line 303
-    iget-object v4, v4, Lcom/github/tvbox/osc/bean/VodInfo;->id:Ljava/lang/String;
-
     .line 304
-    .line 305
-    const-string v5, "id"
+    invoke-static {v5}, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->b(Landroidx/media3/exoplayer/audio/DefaultAudioSink;)V
 
+    .line 305
     .line 306
     .line 307
-    invoke-virtual {v1, v5, v4}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    return-void
 
     .line 308
+    :pswitch_11
+    check-cast v5, Landroidx/core/widget/ContentLoadingProgressBar;
+
     .line 309
     .line 310
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
+    invoke-static {v5}, Landroidx/core/widget/ContentLoadingProgressBar;->b(Landroidx/core/widget/ContentLoadingProgressBar;)V
 
     .line 311
     .line 312
     .line 313
-    move-result-object v4
+    return-void
 
     .line 314
-    iget-object v4, v4, Lcom/github/tvbox/osc/bean/VodInfo;->sourceKey:Ljava/lang/String;
+    nop
 
     .line 315
-    .line 316
-    const-string v5, "sourceKey"
-
-    .line 317
-    .line 318
-    invoke-virtual {v1, v5, v4}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 319
-    .line 320
-    .line 321
-    const-string v4, "autoFullScreenAndPlay"
-
-    .line 322
-    .line 323
-    invoke-virtual {v1, v4, v2}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 324
-    .line 325
-    .line 326
-    const-string v4, "isFromIpPush"
-
-    .line 327
-    .line 328
-    invoke-virtual {v1, v4, v2}, Landroid/os/BaseBundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 329
-    .line 330
-    .line 331
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
-
-    .line 332
-    .line 333
-    .line 334
-    move-result-object v2
-
-    .line 335
-    iget-object v2, v2, Lcom/github/tvbox/osc/bean/VodInfo;->sourceKey:Ljava/lang/String;
-
-    .line 336
-    .line 337
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getVodInfo()Lcom/github/tvbox/osc/bean/VodInfo;
-
-    .line 338
-    .line 339
-    .line 340
-    move-result-object v4
-
-    .line 341
-    invoke-static {v2, v4}, Lcom/github/tvbox/osc/cache/RoomDataManger;->g(Ljava/lang/String;Lcom/github/tvbox/osc/bean/VodInfo;)V
-
-    .line 342
-    .line 343
-    .line 344
-    invoke-static {}, Lcom/blankj/utilcode/util/a;->a()V
-
-    .line 345
-    .line 346
-    .line 347
-    new-instance v2, Landroid/content/Intent;
-
-    .line 348
-    .line 349
-    invoke-static {}, Lcom/blankj/utilcode/util/a;->b()Landroid/app/Activity;
-
-    .line 350
-    .line 351
-    .line 352
-    move-result-object v4
-
-    .line 353
-    const-class v5, Lcom/github/tvbox/osc/ui/activity/DetailActivity;
-
-    .line 354
-    .line 355
-    invoke-direct {v2, v4, v5}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 356
-    .line 357
-    .line 358
-    invoke-virtual {v2, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
-
-    .line 359
-    .line 360
-    .line 361
-    invoke-static {v2}, Lcom/blankj/utilcode/util/a;->d(Landroid/content/Intent;)V
-
-    .line 362
-    .line 363
-    .line 364
-    :goto_7
-    if-nez v3, :cond_b
-
-    .line 365
-    .line 366
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/bean/CastBean;->getHomeApiUrl()Ljava/lang/String;
-
-    .line 367
-    .line 368
-    .line 369
-    move-result-object v0
-
-    .line 370
-    const-string v1, "api_url"
-
-    .line 371
-    .line 372
-    invoke-static {v1, v0}, Lcom/orhanobut/hawk/Hawk;->put(Ljava/lang/String;Ljava/lang/Object;)Z
-
-    .line 373
-    .line 374
-    .line 375
-    invoke-static {}, La5/c;->b()La5/c;
-
-    .line 376
-    .line 377
-    .line 378
-    move-result-object v0
-
-    .line 379
-    new-instance v1, Lb1/a;
-
-    .line 380
-    .line 381
-    const/16 v2, 0x19
-
-    .line 382
-    .line 383
-    invoke-direct {v1, v2}, Lb1/a;-><init>(I)V
-
-    .line 384
-    .line 385
-    .line 386
-    invoke-virtual {v0, v1}, La5/c;->f(Ljava/lang/Object;)V
-
-    .line 387
-    .line 388
-    .line 389
-    :cond_b
-    :goto_8
-    return-void
-
-    .line 390
-    :pswitch_4
-    check-cast v3, Lcom/github/tvbox/osc/parse/ParseJobNew;
-
-    .line 391
-    .line 392
-    iget-object v0, v3, Lcom/github/tvbox/osc/parse/ParseJobNew;->d:Le1/c;
-
-    .line 393
-    .line 394
-    if-eqz v0, :cond_c
-
-    .line 395
-    .line 396
-    invoke-interface {v0}, Le1/c;->a()V
-
-    .line 397
-    .line 398
-    .line 399
-    :cond_c
-    invoke-virtual {v3}, Lcom/github/tvbox/osc/parse/ParseJobNew;->g()V
-
-    .line 400
-    .line 401
-    .line 402
-    return-void
-
-    .line 403
-    :pswitch_5
-    check-cast v3, Landroidx/room/RoomTrackingLiveData;
-
-    .line 404
-    .line 405
-    invoke-static {v3}, Landroidx/room/RoomTrackingLiveData;->a(Landroidx/room/RoomTrackingLiveData;)V
-
-    .line 406
-    .line 407
-    .line 408
-    return-void
-
-    .line 409
-    :pswitch_6
-    check-cast v3, Landroidx/room/QueryInterceptorStatement;
-
-    .line 410
-    .line 411
-    invoke-static {v3}, Landroidx/room/QueryInterceptorStatement;->d(Landroidx/room/QueryInterceptorStatement;)V
-
-    .line 412
-    .line 413
-    .line 414
-    return-void
-
-    .line 415
-    :pswitch_7
-    check-cast v3, Landroidx/room/MultiInstanceInvalidationClient;
-
-    .line 416
-    .line 417
-    invoke-static {v3}, Landroidx/room/MultiInstanceInvalidationClient;->a(Landroidx/room/MultiInstanceInvalidationClient;)V
-
-    .line 418
-    .line 419
-    .line 420
-    return-void
-
-    .line 421
-    :pswitch_8
-    check-cast v3, Landroidx/media3/exoplayer/video/VideoSink$Listener;
-
-    .line 422
-    .line 423
-    invoke-interface {v3}, Landroidx/media3/exoplayer/video/VideoSink$Listener;->onFirstFrameRendered()V
-
-    .line 424
-    .line 425
-    .line 426
-    return-void
-
-    .line 427
-    :pswitch_9
-    check-cast v3, Landroidx/media3/exoplayer/dash/DashMediaSource;
-
-    .line 428
-    .line 429
-    invoke-static {v3}, Landroidx/media3/exoplayer/dash/DashMediaSource;->b(Landroidx/media3/exoplayer/dash/DashMediaSource;)V
-
-    .line 430
-    .line 431
-    .line 432
-    return-void
-
-    .line 433
-    :pswitch_a
-    check-cast v3, Landroidx/core/widget/ContentLoadingProgressBar;
-
-    .line 434
-    .line 435
-    invoke-static {v3}, Landroidx/core/widget/ContentLoadingProgressBar;->c(Landroidx/core/widget/ContentLoadingProgressBar;)V
-
-    .line 436
-    .line 437
-    .line 438
-    return-void
-
-    .line 439
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
         :pswitch_a
         :pswitch_9
         :pswitch_8

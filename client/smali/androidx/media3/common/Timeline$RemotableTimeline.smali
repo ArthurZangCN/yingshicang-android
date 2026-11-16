@@ -18,10 +18,10 @@
 
 
 # instance fields
-.field private final periods:Lcom/google/common/collect/f2;
+.field private final periods:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Timeline$Period;",
             ">;"
         }
@@ -32,10 +32,10 @@
 
 .field private final windowIndicesInShuffled:[I
 
-.field private final windows:Lcom/google/common/collect/f2;
+.field private final windows:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Timeline$Window;",
             ">;"
         }
@@ -44,15 +44,15 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/common/collect/f2;Lcom/google/common/collect/f2;[I)V
+.method public constructor <init>(Lcom/google/common/collect/e2;Lcom/google/common/collect/e2;[I)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Timeline$Window;",
             ">;",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Timeline$Period;",
             ">;[I)V"
         }
@@ -93,16 +93,16 @@
 
     .line 15
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 16
     .line 17
     .line 18
-    iput-object p1, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->windows:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->windows:Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
-    iput-object p2, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->periods:Lcom/google/common/collect/f2;
+    iput-object p2, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->periods:Lcom/google/common/collect/e2;
 
     .line 21
     .line 22
@@ -371,7 +371,7 @@
     .locals 10
 
     .line 1
-    iget-object p3, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->periods:Lcom/google/common/collect/f2;
+    iget-object p3, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->periods:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -430,7 +430,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->periods:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->periods:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -565,7 +565,7 @@
 
     .line 6
     .line 7
-    iget-object v1, v13, Landroidx/media3/common/Timeline$RemotableTimeline;->windows:Lcom/google/common/collect/f2;
+    iget-object v1, v13, Landroidx/media3/common/Timeline$RemotableTimeline;->windows:Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -721,7 +721,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->windows:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/Timeline$RemotableTimeline;->windows:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3

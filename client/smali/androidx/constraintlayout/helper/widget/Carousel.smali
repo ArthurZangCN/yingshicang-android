@@ -1420,197 +1420,194 @@
 
     .line 198
     .line 199
-    new-instance v3, Landroidx/activity/g;
+    new-instance v3, Landroidx/constraintlayout/helper/widget/a;
 
     .line 200
     .line 201
-    const/4 v4, 0x2
+    invoke-direct {v3, p0, v1}, Landroidx/constraintlayout/helper/widget/a;-><init>(Ljava/lang/Object;I)V
 
     .line 202
-    invoke-direct {v3, p0, v4}, Landroidx/activity/g;-><init>(Ljava/lang/Object;I)V
-
     .line 203
     .line 204
-    .line 205
     invoke-virtual {v0, v3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
+    .line 205
     .line 206
     .line 207
-    .line 208
     goto :goto_5
 
-    .line 209
+    .line 208
     :cond_e
     iget v3, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mIndex:I
 
+    .line 209
     .line 210
-    .line 211
     if-ne v0, v3, :cond_f
 
+    .line 211
     .line 212
-    .line 213
     iput v2, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mTargetIndex:I
 
+    .line 213
     .line 214
-    .line 215
     :cond_f
     :goto_5
     iget v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mBackwardTransition:I
 
+    .line 215
     .line 216
-    .line 217
     if-eq v0, v2, :cond_14
 
+    .line 217
     .line 218
-    .line 219
     iget v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mForwardTransition:I
 
+    .line 219
     .line 220
-    .line 221
     if-ne v0, v2, :cond_10
 
+    .line 221
     .line 222
-    .line 223
     goto :goto_8
 
-    .line 224
+    .line 223
     :cond_10
     iget-boolean v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mInfiniteCarousel:Z
 
+    .line 224
     .line 225
-    .line 226
     if-eqz v0, :cond_11
 
+    .line 226
     .line 227
-    .line 228
     return-void
 
-    .line 229
+    .line 228
     :cond_11
     iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mAdapter:Landroidx/constraintlayout/helper/widget/Carousel$Adapter;
 
+    .line 229
     .line 230
-    .line 231
     invoke-interface {v0}, Landroidx/constraintlayout/helper/widget/Carousel$Adapter;->count()I
 
+    .line 231
     .line 232
     .line 233
-    .line 234
     move-result v0
 
-    .line 235
+    .line 234
     iget v2, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mIndex:I
 
+    .line 235
     .line 236
-    .line 237
     const/4 v3, 0x1
 
-    .line 238
+    .line 237
     if-nez v2, :cond_12
 
+    .line 238
     .line 239
-    .line 240
     iget v2, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mBackwardTransition:I
 
+    .line 240
     .line 241
-    .line 242
     invoke-direct {p0, v2, v1}, Landroidx/constraintlayout/helper/widget/Carousel;->enableTransition(IZ)Z
 
+    .line 242
     .line 243
     .line 244
-    .line 245
     goto :goto_6
 
-    .line 246
+    .line 245
     :cond_12
     iget v2, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mBackwardTransition:I
 
+    .line 246
     .line 247
-    .line 248
     invoke-direct {p0, v2, v3}, Landroidx/constraintlayout/helper/widget/Carousel;->enableTransition(IZ)Z
 
+    .line 248
     .line 249
     .line 250
-    .line 251
     iget-object v2, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mMotionLayout:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
+    .line 251
     .line 252
-    .line 253
     iget v4, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mBackwardTransition:I
 
+    .line 253
     .line 254
-    .line 255
     invoke-virtual {v2, v4}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setTransition(I)V
 
+    .line 255
     .line 256
     .line 257
-    .line 258
     :goto_6
     iget v2, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mIndex:I
 
+    .line 258
     .line 259
-    .line 260
     sub-int/2addr v0, v3
 
-    .line 261
+    .line 260
     if-ne v2, v0, :cond_13
 
+    .line 261
     .line 262
-    .line 263
     iget v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mForwardTransition:I
 
+    .line 263
     .line 264
-    .line 265
     invoke-direct {p0, v0, v1}, Landroidx/constraintlayout/helper/widget/Carousel;->enableTransition(IZ)Z
 
+    .line 265
     .line 266
     .line 267
-    .line 268
     goto :goto_7
 
-    .line 269
+    .line 268
     :cond_13
     iget v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mForwardTransition:I
 
+    .line 269
     .line 270
-    .line 271
     invoke-direct {p0, v0, v3}, Landroidx/constraintlayout/helper/widget/Carousel;->enableTransition(IZ)Z
 
+    .line 271
     .line 272
     .line 273
-    .line 274
     iget-object v0, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mMotionLayout:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
+    .line 274
     .line 275
-    .line 276
     iget v1, p0, Landroidx/constraintlayout/helper/widget/Carousel;->mForwardTransition:I
 
+    .line 276
     .line 277
-    .line 278
     invoke-virtual {v0, v1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setTransition(I)V
 
+    .line 278
     .line 279
     .line 280
-    .line 281
     :goto_7
     return-void
 
-    .line 282
+    .line 281
     :cond_14
     :goto_8
     const-string v0, "Carousel"
 
+    .line 282
     .line 283
-    .line 284
     const-string v1, "No backward or forward transitions defined for Carousel!"
 
+    .line 284
     .line 285
-    .line 286
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 286
     .line 287
     .line 288
-    .line 289
     return-void
 .end method
 

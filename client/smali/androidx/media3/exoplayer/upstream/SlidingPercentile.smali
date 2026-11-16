@@ -623,7 +623,7 @@
     const/4 v0, 0x1
 
     .line 54
-    invoke-static {p1, v0}, Landroid/support/v4/media/d;->c(Ljava/util/ArrayList;I)Ljava/lang/Object;
+    invoke-static {p1, v0}, Landroid/support/v4/media/a;->b(Ljava/util/ArrayList;I)Ljava/lang/Object;
 
     .line 55
     .line 56

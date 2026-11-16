@@ -24,7 +24,7 @@
         "Ljava/lang/Integer;",
         "Ljava/lang/Integer;",
         "Ljava/lang/Integer;",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
@@ -85,7 +85,7 @@
 
     invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/core/widget/TextViewKt$addTextChangedListener$1;->invoke(Ljava/lang/CharSequence;III)V
 
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     return-object p1
 .end method

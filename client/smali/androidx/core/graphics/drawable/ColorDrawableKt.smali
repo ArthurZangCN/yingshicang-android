@@ -34,7 +34,7 @@
     .line 2
     new-instance v0, Landroid/graphics/drawable/ColorDrawable;
 
-    invoke-static {p0}, Landroidx/appcompat/app/d;->e(Landroid/graphics/Color;)I
+    invoke-static {p0}, Landroidx/appcompat/app/d;->c(Landroid/graphics/Color;)I
 
     move-result p0
 

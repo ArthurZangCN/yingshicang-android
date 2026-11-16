@@ -3621,7 +3621,7 @@
     move-result-object v3
 
     .line 647
-    invoke-static {v1, v3}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v1, v3}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 648
     .line 649
@@ -3932,7 +3932,7 @@
 
     .line 789
     :cond_28
-    invoke-static {v1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 790
     .line 791
@@ -3974,7 +3974,7 @@
 
     .line 807
     :cond_29
-    invoke-static {v1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 808
     .line 809
@@ -4082,597 +4082,599 @@
 
     .line 857
     .line 858
-    goto/16 :goto_6
+    const v3, 0x8000
 
     .line 859
     .line 860
+    .line 861
+    move v4, v3
+
+    .line 862
+    move-object v1, v6
+
+    .line 863
+    move-object v3, v1
+
+    .line 864
+    goto/16 :goto_2
+
+    .line 865
+    .line 866
     :pswitch_14
     iget-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
 
-    .line 861
-    .line 862
-    invoke-direct {v0, v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
-
-    .line 863
-    .line 864
-    .line 865
-    move-result-object v1
-
-    .line 866
-    invoke-static {v1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
-
     .line 867
     .line 868
+    invoke-direct {v0, v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
+
     .line 869
+    .line 870
+    .line 871
     move-result-object v1
 
-    .line 870
-    move-object v3, v6
-
-    .line 871
-    move-object/from16 v17, v13
-
     .line 872
-    .line 873
-    goto/16 :goto_5
+    invoke-static {v1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
+    .line 873
     .line 874
     .line 875
-    :pswitch_15
-    new-instance v1, Landroidx/media3/common/util/ParsableByteArray;
+    move-result-object v1
 
     .line 876
+    move-object v3, v6
+
     .line 877
-    iget-object v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
+    move-object/from16 v17, v13
 
     .line 878
     .line 879
-    invoke-direct {v0, v3}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
+    goto/16 :goto_5
 
     .line 880
     .line 881
-    .line 882
-    move-result-object v3
+    :pswitch_15
+    new-instance v1, Landroidx/media3/common/util/ParsableByteArray;
 
+    .line 882
     .line 883
-    invoke-direct {v1, v3}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
+    iget-object v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
 
     .line 884
     .line 885
-    .line 886
-    invoke-static {v1}, Landroidx/media3/extractor/AvcConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/extractor/AvcConfig;
+    invoke-direct {v0, v3}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
 
+    .line 886
     .line 887
     .line 888
+    move-result-object v3
+
     .line 889
-    move-result-object v1
+    invoke-direct {v1, v3}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
 
     .line 890
-    iget-object v3, v1, Landroidx/media3/extractor/AvcConfig;->initializationData:Ljava/util/List;
-
     .line 891
     .line 892
-    iget v4, v1, Landroidx/media3/extractor/AvcConfig;->nalUnitLengthFieldLength:I
+    invoke-static {v1}, Landroidx/media3/extractor/AvcConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/extractor/AvcConfig;
 
     .line 893
     .line 894
-    iput v4, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->nalUnitLengthFieldLength:I
-
     .line 895
+    move-result-object v1
+
     .line 896
-    iget-object v1, v1, Landroidx/media3/extractor/AvcConfig;->codecs:Ljava/lang/String;
+    iget-object v3, v1, Landroidx/media3/extractor/AvcConfig;->initializationData:Ljava/util/List;
 
     .line 897
     .line 898
-    const-string v17, "video/avc"
+    iget v4, v1, Landroidx/media3/extractor/AvcConfig;->nalUnitLengthFieldLength:I
 
     .line 899
     .line 900
-    goto/16 :goto_7
+    iput v4, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->nalUnitLengthFieldLength:I
 
     .line 901
     .line 902
+    iget-object v1, v1, Landroidx/media3/extractor/AvcConfig;->codecs:Ljava/lang/String;
+
+    .line 903
+    .line 904
+    const-string v17, "video/avc"
+
+    .line 905
+    .line 906
+    goto/16 :goto_7
+
+    .line 907
+    .line 908
     :pswitch_16
     const/4 v1, 0x4
 
-    .line 903
+    .line 909
     new-array v3, v1, [B
 
-    .line 904
-    .line 905
+    .line 910
+    .line 911
     iget-object v4, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
 
-    .line 906
-    .line 907
+    .line 912
+    .line 913
     invoke-direct {v0, v4}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
 
-    .line 908
-    .line 909
-    .line 910
-    move-result-object v4
-
-    .line 911
-    const/4 v7, 0x0
-
-    .line 912
-    invoke-static {v4, v7, v3, v7, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 913
     .line 914
     .line 915
-    invoke-static {v3}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
-
     .line 916
+    move-result-object v4
+
     .line 917
+    const/4 v7, 0x0
+
     .line 918
-    move-result-object v1
+    invoke-static {v4, v7, v3, v7, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 919
-    move-object/from16 v17, v2
-
     .line 920
     .line 921
+    invoke-static {v3}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
+
+    .line 922
+    .line 923
+    .line 924
+    move-result-object v1
+
+    .line 925
+    move-object/from16 v17, v2
+
+    .line 926
+    .line 927
     :goto_c
     move-object v3, v6
 
-    .line 922
+    .line 928
     :goto_d
     const/4 v4, -0x1
 
-    .line 923
+    .line 929
     goto/16 :goto_3
 
-    .line 924
-    .line 925
+    .line 930
+    .line 931
     :pswitch_17
     const/4 v7, 0x0
 
-    .line 926
+    .line 932
     new-instance v1, Landroidx/media3/common/util/ParsableByteArray;
 
-    .line 927
-    .line 928
-    iget-object v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
-
-    .line 929
-    .line 930
-    invoke-direct {v0, v3}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
-
-    .line 931
-    .line 932
     .line 933
-    move-result-object v3
-
     .line 934
-    invoke-direct {v1, v3}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
+    iget-object v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
 
     .line 935
     .line 936
-    .line 937
-    invoke-static {v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->parseFourCcPrivate(Landroidx/media3/common/util/ParsableByteArray;)Landroid/util/Pair;
+    invoke-direct {v0, v3}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
 
+    .line 937
     .line 938
     .line 939
+    move-result-object v3
+
     .line 940
-    move-result-object v1
+    invoke-direct {v1, v3}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
 
     .line 941
-    iget-object v3, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
-
     .line 942
     .line 943
-    move-object/from16 v17, v3
+    invoke-static {v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->parseFourCcPrivate(Landroidx/media3/common/util/ParsableByteArray;)Landroid/util/Pair;
 
     .line 944
     .line 945
-    check-cast v17, Ljava/lang/String;
-
     .line 946
+    move-result-object v1
+
     .line 947
-    iget-object v1, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
+    iget-object v3, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     .line 948
     .line 949
-    check-cast v1, Ljava/util/List;
+    move-object/from16 v17, v3
 
     .line 950
     .line 951
-    goto :goto_c
+    check-cast v17, Ljava/lang/String;
 
     .line 952
-    :pswitch_18
-    const/4 v7, 0x0
-
     .line 953
-    const-string v17, "audio/mpeg"
+    iget-object v1, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     .line 954
     .line 955
-    :goto_e
-    const/16 v3, 0x1000
+    check-cast v1, Ljava/util/List;
 
     .line 956
     .line 957
-    move v4, v3
+    goto :goto_c
 
     .line 958
-    move-object v1, v6
+    :pswitch_18
+    const/4 v7, 0x0
 
     .line 959
-    move-object v3, v1
+    const-string v17, "audio/mpeg"
 
     .line 960
+    .line 961
+    :goto_e
+    const/16 v3, 0x1000
+
+    .line 962
+    .line 963
+    move v4, v3
+
+    .line 964
+    move-object v1, v6
+
+    .line 965
+    move-object v3, v1
+
+    .line 966
     goto/16 :goto_3
 
-    .line 961
-    .line 962
+    .line 967
+    .line 968
     :pswitch_19
     const/4 v7, 0x0
 
-    .line 963
-    const-string v17, "audio/mpeg-L2"
-
-    .line 964
-    .line 965
-    goto :goto_e
-
-    .line 966
-    :pswitch_1a
-    const/4 v7, 0x0
-
-    .line 967
-    iget-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
-
-    .line 968
     .line 969
-    invoke-direct {v0, v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
+    const-string v17, "audio/mpeg-L2"
 
     .line 970
     .line 971
+    goto :goto_e
+
     .line 972
-    move-result-object v1
+    :pswitch_1a
+    const/4 v7, 0x0
 
     .line 973
-    invoke-static {v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->parseVorbisCodecPrivate([B)Ljava/util/List;
+    iget-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
 
     .line 974
     .line 975
+    invoke-direct {v0, v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
+
     .line 976
+    .line 977
+    .line 978
     move-result-object v1
 
-    .line 977
-    const-string v17, "audio/vorbis"
-
-    .line 978
     .line 979
-    const/16 v3, 0x2000
+    invoke-static {v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->parseVorbisCodecPrivate([B)Ljava/util/List;
 
     .line 980
     .line 981
-    move v4, v3
-
     .line 982
-    move-object v3, v6
+    move-result-object v1
 
     .line 983
-    goto/16 :goto_3
+    const-string v17, "audio/vorbis"
 
     .line 984
     .line 985
+    const/16 v3, 0x2000
+
+    .line 986
+    .line 987
+    move v4, v3
+
+    .line 988
+    move-object v3, v6
+
+    .line 989
+    goto/16 :goto_3
+
+    .line 990
+    .line 991
     :pswitch_1b
     const/4 v7, 0x0
 
-    .line 986
+    .line 992
     new-instance v1, Landroidx/media3/extractor/TrueHdSampleRechunker;
 
-    .line 987
-    .line 988
+    .line 993
+    .line 994
     invoke-direct {v1}, Landroidx/media3/extractor/TrueHdSampleRechunker;-><init>()V
 
-    .line 989
-    .line 990
-    .line 991
+    .line 995
+    .line 996
+    .line 997
     iput-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->trueHdSampleRechunker:Landroidx/media3/extractor/TrueHdSampleRechunker;
 
-    .line 992
-    .line 993
-    const-string v17, "audio/true-hd"
-
-    .line 994
-    .line 995
-    move-object v1, v6
-
-    .line 996
-    move-object v3, v1
-
-    .line 997
-    goto :goto_d
-
     .line 998
-    :pswitch_1c
-    const/4 v7, 0x0
-
     .line 999
-    new-instance v1, Landroidx/media3/common/util/ParsableByteArray;
+    const-string v17, "audio/true-hd"
 
     .line 1000
     .line 1001
-    iget-object v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
+    move-object v1, v6
 
     .line 1002
+    move-object v3, v1
+
     .line 1003
-    invoke-direct {v0, v3}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
+    goto :goto_d
 
     .line 1004
-    .line 1005
-    .line 1006
-    move-result-object v3
+    :pswitch_1c
+    const/4 v7, 0x0
 
+    .line 1005
+    new-instance v1, Landroidx/media3/common/util/ParsableByteArray;
+
+    .line 1006
     .line 1007
-    invoke-direct {v1, v3}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
+    iget-object v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecId:Ljava/lang/String;
 
     .line 1008
     .line 1009
-    .line 1010
-    invoke-static {v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->parseMsAcmCodecPrivate(Landroidx/media3/common/util/ParsableByteArray;)Z
+    invoke-direct {v0, v3}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getCodecPrivate(Ljava/lang/String;)[B
 
+    .line 1010
     .line 1011
     .line 1012
+    move-result-object v3
+
     .line 1013
-    move-result v1
+    invoke-direct {v1, v3}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
 
     .line 1014
-    if-eqz v1, :cond_2b
-
     .line 1015
     .line 1016
-    iget v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->audioBitDepth:I
+    invoke-static {v1}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->parseMsAcmCodecPrivate(Landroidx/media3/common/util/ParsableByteArray;)Z
 
     .line 1017
     .line 1018
-    invoke-static {v1}, Landroidx/media3/common/util/Util;->getPcmEncoding(I)I
-
     .line 1019
-    .line 1020
-    .line 1021
-    move-result v8
+    move-result v1
 
+    .line 1020
+    if-eqz v1, :cond_2b
+
+    .line 1021
     .line 1022
-    if-nez v8, :cond_2a
+    iget v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->audioBitDepth:I
 
     .line 1023
     .line 1024
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroidx/media3/common/util/Util;->getPcmEncoding(I)I
 
     .line 1025
     .line 1026
-    const-string v3, "Unsupported PCM bit depth: "
-
     .line 1027
+    move-result v8
+
     .line 1028
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    if-nez v8, :cond_2a
 
     .line 1029
     .line 1030
+    new-instance v1, Ljava/lang/StringBuilder;
+
     .line 1031
-    iget v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->audioBitDepth:I
-
     .line 1032
-    .line 1033
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v3, "Unsupported PCM bit depth: "
 
+    .line 1033
     .line 1034
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 1035
     .line 1036
-    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 1037
+    iget v3, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->audioBitDepth:I
+
     .line 1038
     .line 1039
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 1040
     .line 1041
     .line 1042
-    move-result-object v1
+    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 1043
-    invoke-static {v10, v1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 1044
     .line 1045
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 1046
-    :goto_f
-    move-object v1, v6
-
     .line 1047
-    move-object v3, v1
-
     .line 1048
-    move-object/from16 v17, v18
+    move-result-object v1
 
     .line 1049
-    .line 1050
-    goto/16 :goto_d
+    invoke-static {v10, v1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 1050
     .line 1051
     .line 1052
-    :cond_2a
+    :goto_f
     move-object v1, v6
 
     .line 1053
     move-object v3, v1
 
     .line 1054
-    const/4 v4, -0x1
+    move-object/from16 v17, v18
 
     .line 1055
-    goto :goto_11
-
     .line 1056
-    :cond_2b
-    const-string v1, "Non-PCM MS/ACM is unsupported. Setting mimeType to audio/x-unknown"
+    goto/16 :goto_d
 
     .line 1057
     .line 1058
-    invoke-static {v10, v1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+    :cond_2a
+    move-object v1, v6
 
     .line 1059
+    move-object v3, v1
+
     .line 1060
+    const/4 v4, -0x1
+
     .line 1061
-    goto :goto_f
+    goto :goto_11
 
     .line 1062
+    :cond_2b
+    const-string v1, "Non-PCM MS/ACM is unsupported. Setting mimeType to audio/x-unknown"
+
+    .line 1063
+    .line 1064
+    invoke-static {v10, v1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 1065
+    .line 1066
+    .line 1067
+    goto :goto_f
+
+    .line 1068
     :pswitch_1d
     const/4 v7, 0x0
 
-    .line 1063
-    iget-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecPrivate:[B
-
-    .line 1064
-    .line 1065
-    if-nez v1, :cond_2c
-
-    .line 1066
-    .line 1067
-    move-object v1, v6
-
-    .line 1068
-    goto :goto_10
-
     .line 1069
-    :cond_2c
-    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iget-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->codecPrivate:[B
 
     .line 1070
     .line 1071
-    .line 1072
-    move-result-object v1
+    if-nez v1, :cond_2c
 
+    .line 1072
     .line 1073
-    :goto_10
-    const-string v17, "video/mp4v-es"
+    move-object v1, v6
 
     .line 1074
+    goto :goto_10
+
     .line 1075
-    goto/16 :goto_c
+    :cond_2c
+    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 1076
     .line 1077
-    :goto_11
-    iget-object v9, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->dolbyVisionConfigBytes:[B
-
     .line 1078
+    move-result-object v1
+
     .line 1079
-    if-eqz v9, :cond_2d
+    :goto_10
+    const-string v17, "video/mp4v-es"
 
     .line 1080
     .line 1081
-    new-instance v9, Landroidx/media3/common/util/ParsableByteArray;
+    goto/16 :goto_c
 
     .line 1082
     .line 1083
-    iget-object v10, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->dolbyVisionConfigBytes:[B
+    :goto_11
+    iget-object v9, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->dolbyVisionConfigBytes:[B
 
     .line 1084
     .line 1085
-    invoke-direct {v9, v10}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
+    if-eqz v9, :cond_2d
 
     .line 1086
     .line 1087
-    .line 1088
-    invoke-static {v9}, Landroidx/media3/container/DolbyVisionConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/container/DolbyVisionConfig;
+    new-instance v9, Landroidx/media3/common/util/ParsableByteArray;
 
+    .line 1088
     .line 1089
+    iget-object v10, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->dolbyVisionConfigBytes:[B
+
     .line 1090
     .line 1091
-    move-result-object v9
+    invoke-direct {v9, v10}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
 
     .line 1092
-    if-eqz v9, :cond_2d
-
     .line 1093
     .line 1094
-    iget-object v3, v9, Landroidx/media3/container/DolbyVisionConfig;->codecs:Ljava/lang/String;
+    invoke-static {v9}, Landroidx/media3/container/DolbyVisionConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/container/DolbyVisionConfig;
 
     .line 1095
     .line 1096
-    const-string v17, "video/dolby-vision"
-
     .line 1097
+    move-result-object v9
+
     .line 1098
-    :cond_2d
-    move-object/from16 v9, v17
+    if-eqz v9, :cond_2d
 
     .line 1099
     .line 1100
-    iget-boolean v10, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->flagDefault:Z
+    iget-object v3, v9, Landroidx/media3/container/DolbyVisionConfig;->codecs:Ljava/lang/String;
 
     .line 1101
     .line 1102
-    iget-boolean v11, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->flagForced:Z
+    const-string v17, "video/dolby-vision"
 
     .line 1103
     .line 1104
-    if-eqz v11, :cond_2e
+    :cond_2d
+    move-object/from16 v9, v17
 
     .line 1105
     .line 1106
-    const/16 v16, 0x2
+    iget-boolean v10, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->flagDefault:Z
 
     .line 1107
     .line 1108
-    goto :goto_12
+    iget-boolean v11, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->flagForced:Z
 
     .line 1109
+    .line 1110
+    if-eqz v11, :cond_2e
+
+    .line 1111
+    .line 1112
+    const/16 v16, 0x2
+
+    .line 1113
+    .line 1114
+    goto :goto_12
+
+    .line 1115
     :cond_2e
     move/from16 v16, v7
 
-    .line 1110
-    .line 1111
+    .line 1116
+    .line 1117
     :goto_12
     or-int v10, v10, v16
 
-    .line 1112
-    .line 1113
+    .line 1118
+    .line 1119
     new-instance v11, Landroidx/media3/common/Format$Builder;
 
-    .line 1114
-    .line 1115
-    invoke-direct {v11}, Landroidx/media3/common/Format$Builder;-><init>()V
-
-    .line 1116
-    .line 1117
-    .line 1118
-    invoke-static {v9}, Landroidx/media3/common/MimeTypes;->isAudio(Ljava/lang/String;)Z
-
-    .line 1119
     .line 1120
     .line 1121
-    move-result v16
+    invoke-direct {v11}, Landroidx/media3/common/Format$Builder;-><init>()V
 
     .line 1122
-    if-eqz v16, :cond_2f
-
     .line 1123
     .line 1124
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->channelCount:I
+    invoke-static {v9}, Landroidx/media3/common/MimeTypes;->isAudio(Ljava/lang/String;)Z
 
     .line 1125
     .line 1126
-    invoke-virtual {v11, v2}, Landroidx/media3/common/Format$Builder;->setChannelCount(I)Landroidx/media3/common/Format$Builder;
-
     .line 1127
-    .line 1128
-    .line 1129
-    move-result-object v2
+    move-result v16
 
+    .line 1128
+    if-eqz v16, :cond_2f
+
+    .line 1129
     .line 1130
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->sampleRate:I
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->channelCount:I
 
     .line 1131
     .line 1132
-    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setSampleRate(I)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v11, v2}, Landroidx/media3/common/Format$Builder;->setChannelCount(I)Landroidx/media3/common/Format$Builder;
 
     .line 1133
     .line 1134
@@ -4680,171 +4682,171 @@
     move-result-object v2
 
     .line 1136
-    invoke-virtual {v2, v8}, Landroidx/media3/common/Format$Builder;->setPcmEncoding(I)Landroidx/media3/common/Format$Builder;
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->sampleRate:I
 
     .line 1137
     .line 1138
-    .line 1139
-    goto/16 :goto_18
+    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setSampleRate(I)Landroidx/media3/common/Format$Builder;
 
+    .line 1139
     .line 1140
     .line 1141
-    :cond_2f
-    invoke-static {v9}, Landroidx/media3/common/MimeTypes;->isVideo(Ljava/lang/String;)Z
+    move-result-object v2
 
     .line 1142
+    invoke-virtual {v2, v8}, Landroidx/media3/common/Format$Builder;->setPcmEncoding(I)Landroidx/media3/common/Format$Builder;
+
     .line 1143
     .line 1144
-    move-result v8
-
     .line 1145
-    if-eqz v8, :cond_3b
+    goto/16 :goto_18
 
     .line 1146
     .line 1147
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayUnit:I
+    :cond_2f
+    invoke-static {v9}, Landroidx/media3/common/MimeTypes;->isVideo(Ljava/lang/String;)Z
 
     .line 1148
     .line 1149
-    if-nez v2, :cond_32
-
     .line 1150
+    move-result v8
+
     .line 1151
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayWidth:I
+    if-eqz v8, :cond_3b
 
     .line 1152
     .line 1153
-    const/4 v5, -0x1
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayUnit:I
 
     .line 1154
-    if-ne v2, v5, :cond_30
-
     .line 1155
+    if-nez v2, :cond_32
+
     .line 1156
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->width:I
-
     .line 1157
-    .line 1158
-    :cond_30
-    iput v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayWidth:I
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayWidth:I
 
+    .line 1158
     .line 1159
+    const/4 v5, -0x1
+
     .line 1160
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayHeight:I
+    if-ne v2, v5, :cond_30
 
     .line 1161
     .line 1162
-    if-ne v2, v5, :cond_31
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->width:I
 
     .line 1163
     .line 1164
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->height:I
+    :cond_30
+    iput v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayWidth:I
 
     .line 1165
     .line 1166
-    :cond_31
-    iput v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayHeight:I
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayHeight:I
 
     .line 1167
     .line 1168
-    goto :goto_13
+    if-ne v2, v5, :cond_31
 
     .line 1169
-    :cond_32
-    const/4 v5, -0x1
-
     .line 1170
-    :goto_13
-    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayWidth:I
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->height:I
 
     .line 1171
     .line 1172
-    if-eq v2, v5, :cond_33
+    :cond_31
+    iput v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayHeight:I
 
     .line 1173
     .line 1174
-    iget v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayHeight:I
+    goto :goto_13
 
     .line 1175
+    :cond_32
+    const/4 v5, -0x1
+
     .line 1176
-    if-eq v8, v5, :cond_33
+    :goto_13
+    iget v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayWidth:I
 
     .line 1177
     .line 1178
-    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->height:I
+    if-eq v2, v5, :cond_33
 
     .line 1179
     .line 1180
-    mul-int/2addr v12, v2
+    iget v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->displayHeight:I
 
     .line 1181
-    int-to-float v2, v12
-
     .line 1182
-    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->width:I
+    if-eq v8, v5, :cond_33
 
     .line 1183
     .line 1184
-    mul-int/2addr v12, v8
+    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->height:I
 
     .line 1185
-    int-to-float v8, v12
-
     .line 1186
-    div-float/2addr v2, v8
+    mul-int/2addr v12, v2
 
     .line 1187
-    goto :goto_14
+    int-to-float v2, v12
 
     .line 1188
-    :cond_33
-    const/high16 v2, -0x40800000    # -1.0f
+    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->width:I
 
     .line 1189
     .line 1190
-    :goto_14
-    iget-boolean v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->hasColorInfo:Z
+    mul-int/2addr v12, v8
 
     .line 1191
+    int-to-float v8, v12
+
     .line 1192
-    if-eqz v8, :cond_34
+    div-float/2addr v2, v8
 
     .line 1193
+    goto :goto_14
+
     .line 1194
-    invoke-direct/range {p0 .. p0}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getHdrStaticInfo()[B
+    :cond_33
+    const/high16 v2, -0x40800000    # -1.0f
 
     .line 1195
     .line 1196
-    .line 1197
-    move-result-object v6
+    :goto_14
+    iget-boolean v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->hasColorInfo:Z
 
+    .line 1197
     .line 1198
-    new-instance v8, Landroidx/media3/common/ColorInfo$Builder;
+    if-eqz v8, :cond_34
 
     .line 1199
     .line 1200
-    invoke-direct {v8}, Landroidx/media3/common/ColorInfo$Builder;-><init>()V
+    invoke-direct/range {p0 .. p0}, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->getHdrStaticInfo()[B
 
     .line 1201
     .line 1202
     .line 1203
-    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->colorSpace:I
+    move-result-object v6
 
     .line 1204
-    .line 1205
-    invoke-virtual {v8, v12}, Landroidx/media3/common/ColorInfo$Builder;->setColorSpace(I)Landroidx/media3/common/ColorInfo$Builder;
+    new-instance v8, Landroidx/media3/common/ColorInfo$Builder;
 
+    .line 1205
     .line 1206
+    invoke-direct {v8}, Landroidx/media3/common/ColorInfo$Builder;-><init>()V
+
     .line 1207
     .line 1208
-    move-result-object v8
-
     .line 1209
-    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->colorRange:I
+    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->colorSpace:I
 
     .line 1210
     .line 1211
-    invoke-virtual {v8, v12}, Landroidx/media3/common/ColorInfo$Builder;->setColorRange(I)Landroidx/media3/common/ColorInfo$Builder;
+    invoke-virtual {v8, v12}, Landroidx/media3/common/ColorInfo$Builder;->setColorSpace(I)Landroidx/media3/common/ColorInfo$Builder;
 
     .line 1212
     .line 1213
@@ -4852,11 +4854,11 @@
     move-result-object v8
 
     .line 1215
-    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->colorTransfer:I
+    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->colorRange:I
 
     .line 1216
     .line 1217
-    invoke-virtual {v8, v12}, Landroidx/media3/common/ColorInfo$Builder;->setColorTransfer(I)Landroidx/media3/common/ColorInfo$Builder;
+    invoke-virtual {v8, v12}, Landroidx/media3/common/ColorInfo$Builder;->setColorRange(I)Landroidx/media3/common/ColorInfo$Builder;
 
     .line 1218
     .line 1219
@@ -4864,19 +4866,19 @@
     move-result-object v8
 
     .line 1221
-    invoke-virtual {v8, v6}, Landroidx/media3/common/ColorInfo$Builder;->setHdrStaticInfo([B)Landroidx/media3/common/ColorInfo$Builder;
+    iget v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->colorTransfer:I
 
     .line 1222
     .line 1223
+    invoke-virtual {v8, v12}, Landroidx/media3/common/ColorInfo$Builder;->setColorTransfer(I)Landroidx/media3/common/ColorInfo$Builder;
+
     .line 1224
-    move-result-object v6
-
     .line 1225
-    iget v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->bitsPerChannel:I
-
     .line 1226
+    move-result-object v8
+
     .line 1227
-    invoke-virtual {v6, v8}, Landroidx/media3/common/ColorInfo$Builder;->setLumaBitdepth(I)Landroidx/media3/common/ColorInfo$Builder;
+    invoke-virtual {v8, v6}, Landroidx/media3/common/ColorInfo$Builder;->setHdrStaticInfo([B)Landroidx/media3/common/ColorInfo$Builder;
 
     .line 1228
     .line 1229
@@ -4888,7 +4890,7 @@
 
     .line 1232
     .line 1233
-    invoke-virtual {v6, v8}, Landroidx/media3/common/ColorInfo$Builder;->setChromaBitdepth(I)Landroidx/media3/common/ColorInfo$Builder;
+    invoke-virtual {v6, v8}, Landroidx/media3/common/ColorInfo$Builder;->setLumaBitdepth(I)Landroidx/media3/common/ColorInfo$Builder;
 
     .line 1234
     .line 1235
@@ -4896,60 +4898,60 @@
     move-result-object v6
 
     .line 1237
-    invoke-virtual {v6}, Landroidx/media3/common/ColorInfo$Builder;->build()Landroidx/media3/common/ColorInfo;
+    iget v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->bitsPerChannel:I
 
     .line 1238
     .line 1239
+    invoke-virtual {v6, v8}, Landroidx/media3/common/ColorInfo$Builder;->setChromaBitdepth(I)Landroidx/media3/common/ColorInfo$Builder;
+
     .line 1240
+    .line 1241
+    .line 1242
     move-result-object v6
 
-    .line 1241
-    :cond_34
-    iget-object v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
-
-    .line 1242
     .line 1243
-    if-eqz v8, :cond_35
+    invoke-virtual {v6}, Landroidx/media3/common/ColorInfo$Builder;->build()Landroidx/media3/common/ColorInfo;
 
     .line 1244
     .line 1245
-    invoke-static {}, Landroidx/media3/extractor/mkv/MatroskaExtractor;->access$800()Ljava/util/Map;
-
     .line 1246
-    .line 1247
-    .line 1248
-    move-result-object v8
+    move-result-object v6
 
+    .line 1247
+    :cond_34
+    iget-object v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
+
+    .line 1248
     .line 1249
-    iget-object v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
+    if-eqz v8, :cond_35
 
     .line 1250
     .line 1251
-    invoke-interface {v8, v12}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-static {}, Landroidx/media3/extractor/mkv/MatroskaExtractor;->access$800()Ljava/util/Map;
 
     .line 1252
     .line 1253
     .line 1254
-    move-result v8
+    move-result-object v8
 
     .line 1255
-    if-eqz v8, :cond_35
+    iget-object v12, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
 
     .line 1256
     .line 1257
-    invoke-static {}, Landroidx/media3/extractor/mkv/MatroskaExtractor;->access$800()Ljava/util/Map;
+    invoke-interface {v8, v12}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     .line 1258
     .line 1259
     .line 1260
-    move-result-object v5
+    move-result v8
 
     .line 1261
-    iget-object v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
+    if-eqz v8, :cond_35
 
     .line 1262
     .line 1263
-    invoke-interface {v5, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {}, Landroidx/media3/extractor/mkv/MatroskaExtractor;->access$800()Ljava/util/Map;
 
     .line 1264
     .line 1265
@@ -4957,222 +4959,222 @@
     move-result-object v5
 
     .line 1267
-    check-cast v5, Ljava/lang/Integer;
+    iget-object v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
 
     .line 1268
     .line 1269
-    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+    invoke-interface {v5, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 1270
     .line 1271
     .line 1272
-    move-result v12
+    move-result-object v5
 
     .line 1273
-    goto :goto_15
+    check-cast v5, Ljava/lang/Integer;
 
     .line 1274
-    :cond_35
-    move v12, v5
-
     .line 1275
-    :goto_15
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionType:I
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
 
     .line 1276
     .line 1277
-    if-nez v5, :cond_3a
-
     .line 1278
+    move-result v12
+
     .line 1279
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseYaw:F
+    goto :goto_15
 
     .line 1280
+    :cond_35
+    move v12, v5
+
     .line 1281
-    const/4 v8, 0x0
+    :goto_15
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionType:I
 
     .line 1282
-    invoke-static {v5, v8}, Ljava/lang/Float;->compare(FF)I
-
     .line 1283
-    .line 1284
-    .line 1285
-    move-result v5
-
-    .line 1286
     if-nez v5, :cond_3a
 
+    .line 1284
+    .line 1285
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseYaw:F
+
+    .line 1286
     .line 1287
+    const/4 v8, 0x0
+
     .line 1288
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPosePitch:F
+    invoke-static {v5, v8}, Ljava/lang/Float;->compare(FF)I
 
     .line 1289
     .line 1290
-    invoke-static {v5, v8}, Ljava/lang/Float;->compare(FF)I
-
     .line 1291
-    .line 1292
-    .line 1293
     move-result v5
 
-    .line 1294
+    .line 1292
     if-nez v5, :cond_3a
+
+    .line 1293
+    .line 1294
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPosePitch:F
 
     .line 1295
     .line 1296
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
+    invoke-static {v5, v8}, Ljava/lang/Float;->compare(FF)I
 
     .line 1297
     .line 1298
-    invoke-static {v5, v8}, Ljava/lang/Float;->compare(FF)I
-
     .line 1299
-    .line 1300
-    .line 1301
     move-result v5
 
+    .line 1300
+    if-nez v5, :cond_3a
+
+    .line 1301
     .line 1302
-    if-nez v5, :cond_36
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
 
     .line 1303
     .line 1304
-    move v5, v7
+    invoke-static {v5, v8}, Ljava/lang/Float;->compare(FF)I
 
     .line 1305
-    goto :goto_17
-
     .line 1306
-    :cond_36
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
-
     .line 1307
+    move-result v5
+
     .line 1308
-    const/high16 v7, 0x42b40000    # 90.0f
+    if-nez v5, :cond_36
 
     .line 1309
     .line 1310
-    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
+    move v5, v7
 
     .line 1311
-    .line 1312
-    .line 1313
-    move-result v5
+    goto :goto_17
 
+    .line 1312
+    :cond_36
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
+
+    .line 1313
     .line 1314
-    if-nez v5, :cond_37
+    const/high16 v7, 0x42b40000    # 90.0f
 
     .line 1315
     .line 1316
-    const/16 v5, 0x5a
+    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
 
     .line 1317
     .line 1318
+    .line 1319
+    move-result v5
+
+    .line 1320
+    if-nez v5, :cond_37
+
+    .line 1321
+    .line 1322
+    const/16 v5, 0x5a
+
+    .line 1323
+    .line 1324
     goto :goto_17
 
-    .line 1319
+    .line 1325
     :cond_37
     iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
 
-    .line 1320
-    .line 1321
-    const/high16 v7, -0x3ccc0000    # -180.0f
-
-    .line 1322
-    .line 1323
-    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
-
-    .line 1324
-    .line 1325
     .line 1326
-    move-result v5
-
     .line 1327
-    if-eqz v5, :cond_39
+    const/high16 v7, -0x3ccc0000    # -180.0f
 
     .line 1328
     .line 1329
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
+    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
 
     .line 1330
     .line 1331
-    const/high16 v7, 0x43340000    # 180.0f
-
     .line 1332
+    move-result v5
+
     .line 1333
-    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
+    if-eqz v5, :cond_39
 
     .line 1334
     .line 1335
-    .line 1336
-    move-result v5
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
 
+    .line 1336
     .line 1337
-    if-nez v5, :cond_38
+    const/high16 v7, 0x43340000    # 180.0f
 
     .line 1338
     .line 1339
-    goto :goto_16
+    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
 
     .line 1340
+    .line 1341
+    .line 1342
+    move-result v5
+
+    .line 1343
+    if-nez v5, :cond_38
+
+    .line 1344
+    .line 1345
+    goto :goto_16
+
+    .line 1346
     :cond_38
     iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionPoseRoll:F
 
-    .line 1341
-    .line 1342
-    const/high16 v7, -0x3d4c0000    # -90.0f
-
-    .line 1343
-    .line 1344
-    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
-
-    .line 1345
-    .line 1346
     .line 1347
-    move-result v5
-
     .line 1348
-    if-nez v5, :cond_3a
+    const/high16 v7, -0x3d4c0000    # -90.0f
 
     .line 1349
     .line 1350
-    const/16 v5, 0x10e
+    invoke-static {v5, v7}, Ljava/lang/Float;->compare(FF)I
 
     .line 1351
     .line 1352
+    .line 1353
+    move-result v5
+
+    .line 1354
+    if-nez v5, :cond_3a
+
+    .line 1355
+    .line 1356
+    const/16 v5, 0x10e
+
+    .line 1357
+    .line 1358
     goto :goto_17
 
-    .line 1353
+    .line 1359
     :cond_39
     :goto_16
     const/16 v5, 0xb4
 
-    .line 1354
-    .line 1355
+    .line 1360
+    .line 1361
     goto :goto_17
 
-    .line 1356
+    .line 1362
     :cond_3a
     move v5, v12
 
-    .line 1357
+    .line 1363
     :goto_17
     iget v7, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->width:I
 
-    .line 1358
-    .line 1359
-    invoke-virtual {v11, v7}, Landroidx/media3/common/Format$Builder;->setWidth(I)Landroidx/media3/common/Format$Builder;
-
-    .line 1360
-    .line 1361
-    .line 1362
-    move-result-object v7
-
-    .line 1363
-    iget v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->height:I
-
     .line 1364
     .line 1365
-    invoke-virtual {v7, v8}, Landroidx/media3/common/Format$Builder;->setHeight(I)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v11, v7}, Landroidx/media3/common/Format$Builder;->setWidth(I)Landroidx/media3/common/Format$Builder;
 
     .line 1366
     .line 1367
@@ -5180,27 +5182,27 @@
     move-result-object v7
 
     .line 1369
-    invoke-virtual {v7, v2}, Landroidx/media3/common/Format$Builder;->setPixelWidthHeightRatio(F)Landroidx/media3/common/Format$Builder;
+    iget v8, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->height:I
 
     .line 1370
     .line 1371
+    invoke-virtual {v7, v8}, Landroidx/media3/common/Format$Builder;->setHeight(I)Landroidx/media3/common/Format$Builder;
+
     .line 1372
-    move-result-object v2
-
     .line 1373
-    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setRotationDegrees(I)Landroidx/media3/common/Format$Builder;
-
     .line 1374
+    move-result-object v7
+
     .line 1375
+    invoke-virtual {v7, v2}, Landroidx/media3/common/Format$Builder;->setPixelWidthHeightRatio(F)Landroidx/media3/common/Format$Builder;
+
     .line 1376
+    .line 1377
+    .line 1378
     move-result-object v2
 
-    .line 1377
-    iget-object v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionData:[B
-
-    .line 1378
     .line 1379
-    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setProjectionData([B)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setRotationDegrees(I)Landroidx/media3/common/Format$Builder;
 
     .line 1380
     .line 1381
@@ -5208,11 +5210,11 @@
     move-result-object v2
 
     .line 1383
-    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->stereoMode:I
+    iget-object v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->projectionData:[B
 
     .line 1384
     .line 1385
-    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setStereoMode(I)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setProjectionData([B)Landroidx/media3/common/Format$Builder;
 
     .line 1386
     .line 1387
@@ -5220,28 +5222,28 @@
     move-result-object v2
 
     .line 1389
-    invoke-virtual {v2, v6}, Landroidx/media3/common/Format$Builder;->setColorInfo(Landroidx/media3/common/ColorInfo;)Landroidx/media3/common/Format$Builder;
+    iget v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->stereoMode:I
 
     .line 1390
     .line 1391
+    invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setStereoMode(I)Landroidx/media3/common/Format$Builder;
+
     .line 1392
+    .line 1393
+    .line 1394
+    move-result-object v2
+
+    .line 1395
+    invoke-virtual {v2, v6}, Landroidx/media3/common/Format$Builder;->setColorInfo(Landroidx/media3/common/ColorInfo;)Landroidx/media3/common/Format$Builder;
+
+    .line 1396
+    .line 1397
+    .line 1398
     goto :goto_18
 
-    .line 1393
+    .line 1399
     :cond_3b
     invoke-virtual {v12, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 1394
-    .line 1395
-    .line 1396
-    move-result v7
-
-    .line 1397
-    if-nez v7, :cond_3d
-
-    .line 1398
-    .line 1399
-    invoke-virtual {v15, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 1400
     .line 1401
@@ -5253,19 +5255,19 @@
 
     .line 1404
     .line 1405
-    invoke-virtual {v5, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v15, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 1406
     .line 1407
     .line 1408
-    move-result v5
+    move-result v7
 
     .line 1409
-    if-nez v5, :cond_3d
+    if-nez v7, :cond_3d
 
     .line 1410
     .line 1411
-    invoke-virtual {v13, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 1412
     .line 1413
@@ -5277,7 +5279,7 @@
 
     .line 1416
     .line 1417
-    invoke-virtual {v14, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v13, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 1418
     .line 1419
@@ -5289,143 +5291,143 @@
 
     .line 1422
     .line 1423
-    invoke-virtual {v2, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v14, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 1424
     .line 1425
     .line 1426
-    move-result v2
+    move-result v5
 
     .line 1427
-    if-eqz v2, :cond_3c
+    if-nez v5, :cond_3d
 
     .line 1428
     .line 1429
-    goto :goto_18
+    invoke-virtual {v2, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 1430
+    .line 1431
+    .line 1432
+    move-result v2
+
+    .line 1433
+    if-eqz v2, :cond_3c
+
+    .line 1434
+    .line 1435
+    goto :goto_18
+
+    .line 1436
     :cond_3c
     const-string v1, "Unexpected MIME type."
 
-    .line 1431
-    .line 1432
+    .line 1437
+    .line 1438
     invoke-static {v1, v6}, Landroidx/media3/common/ParserException;->createForMalformedContainer(Ljava/lang/String;Ljava/lang/Throwable;)Landroidx/media3/common/ParserException;
 
-    .line 1433
-    .line 1434
-    .line 1435
+    .line 1439
+    .line 1440
+    .line 1441
     move-result-object v1
 
-    .line 1436
+    .line 1442
     throw v1
 
-    .line 1437
+    .line 1443
     :cond_3d
     :goto_18
     iget-object v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
 
-    .line 1438
-    .line 1439
-    if-eqz v2, :cond_3e
-
-    .line 1440
-    .line 1441
-    invoke-static {}, Landroidx/media3/extractor/mkv/MatroskaExtractor;->access$800()Ljava/util/Map;
-
-    .line 1442
-    .line 1443
     .line 1444
-    move-result-object v2
-
     .line 1445
-    iget-object v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
+    if-eqz v2, :cond_3e
 
     .line 1446
     .line 1447
-    invoke-interface {v2, v5}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-static {}, Landroidx/media3/extractor/mkv/MatroskaExtractor;->access$800()Ljava/util/Map;
 
     .line 1448
     .line 1449
     .line 1450
-    move-result v2
+    move-result-object v2
 
     .line 1451
-    if-nez v2, :cond_3e
+    iget-object v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
 
     .line 1452
     .line 1453
-    iget-object v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
+    invoke-interface {v2, v5}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     .line 1454
     .line 1455
+    .line 1456
+    move-result v2
+
+    .line 1457
+    if-nez v2, :cond_3e
+
+    .line 1458
+    .line 1459
+    iget-object v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->name:Ljava/lang/String;
+
+    .line 1460
+    .line 1461
     invoke-virtual {v11, v2}, Landroidx/media3/common/Format$Builder;->setLabel(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
-    .line 1456
-    .line 1457
-    .line 1458
+    .line 1462
+    .line 1463
+    .line 1464
     :cond_3e
     move/from16 v2, p1
 
-    .line 1459
-    .line 1460
-    invoke-virtual {v11, v2}, Landroidx/media3/common/Format$Builder;->setId(I)Landroidx/media3/common/Format$Builder;
-
-    .line 1461
-    .line 1462
-    .line 1463
-    move-result-object v2
-
-    .line 1464
-    iget-boolean v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->isWebm:Z
-
     .line 1465
     .line 1466
-    if-eqz v5, :cond_3f
+    invoke-virtual {v11, v2}, Landroidx/media3/common/Format$Builder;->setId(I)Landroidx/media3/common/Format$Builder;
 
     .line 1467
     .line 1468
-    const-string v5, "video/webm"
-
     .line 1469
+    move-result-object v2
+
     .line 1470
-    goto :goto_19
+    iget-boolean v5, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->isWebm:Z
 
     .line 1471
+    .line 1472
+    if-eqz v5, :cond_3f
+
+    .line 1473
+    .line 1474
+    const-string v5, "video/webm"
+
+    .line 1475
+    .line 1476
+    goto :goto_19
+
+    .line 1477
     :cond_3f
     const-string v5, "video/x-matroska"
 
-    .line 1472
-    .line 1473
+    .line 1478
+    .line 1479
     :goto_19
     invoke-virtual {v2, v5}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
-    .line 1474
-    .line 1475
-    .line 1476
+    .line 1480
+    .line 1481
+    .line 1482
     move-result-object v2
 
-    .line 1477
+    .line 1483
     invoke-virtual {v2, v9}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
-    .line 1478
-    .line 1479
-    .line 1480
-    move-result-object v2
-
-    .line 1481
-    invoke-virtual {v2, v4}, Landroidx/media3/common/Format$Builder;->setMaxInputSize(I)Landroidx/media3/common/Format$Builder;
-
-    .line 1482
-    .line 1483
     .line 1484
+    .line 1485
+    .line 1486
     move-result-object v2
 
-    .line 1485
-    iget-object v4, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->language:Ljava/lang/String;
-
-    .line 1486
     .line 1487
-    invoke-virtual {v2, v4}, Landroidx/media3/common/Format$Builder;->setLanguage(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v2, v4}, Landroidx/media3/common/Format$Builder;->setMaxInputSize(I)Landroidx/media3/common/Format$Builder;
 
     .line 1488
     .line 1489
@@ -5433,35 +5435,35 @@
     move-result-object v2
 
     .line 1491
-    invoke-virtual {v2, v10}, Landroidx/media3/common/Format$Builder;->setSelectionFlags(I)Landroidx/media3/common/Format$Builder;
+    iget-object v4, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->language:Ljava/lang/String;
 
     .line 1492
     .line 1493
+    invoke-virtual {v2, v4}, Landroidx/media3/common/Format$Builder;->setLanguage(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
     .line 1494
+    .line 1495
+    .line 1496
     move-result-object v2
 
-    .line 1495
+    .line 1497
+    invoke-virtual {v2, v10}, Landroidx/media3/common/Format$Builder;->setSelectionFlags(I)Landroidx/media3/common/Format$Builder;
+
+    .line 1498
+    .line 1499
+    .line 1500
+    move-result-object v2
+
+    .line 1501
     invoke-virtual {v2, v1}, Landroidx/media3/common/Format$Builder;->setInitializationData(Ljava/util/List;)Landroidx/media3/common/Format$Builder;
 
-    .line 1496
-    .line 1497
-    .line 1498
-    move-result-object v1
-
-    .line 1499
-    invoke-virtual {v1, v3}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
-
-    .line 1500
-    .line 1501
     .line 1502
+    .line 1503
+    .line 1504
     move-result-object v1
 
-    .line 1503
-    iget-object v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->drmInitData:Landroidx/media3/common/DrmInitData;
-
-    .line 1504
     .line 1505
-    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setDrmInitData(Landroidx/media3/common/DrmInitData;)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v1, v3}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
     .line 1506
     .line 1507
@@ -5469,24 +5471,36 @@
     move-result-object v1
 
     .line 1509
-    invoke-virtual {v1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+    iget-object v2, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->drmInitData:Landroidx/media3/common/DrmInitData;
 
     .line 1510
     .line 1511
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setDrmInitData(Landroidx/media3/common/DrmInitData;)Landroidx/media3/common/Format$Builder;
+
     .line 1512
+    .line 1513
+    .line 1514
     move-result-object v1
 
-    .line 1513
-    iput-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->format:Landroidx/media3/common/Format;
-
-    .line 1514
     .line 1515
-    return-void
+    invoke-virtual {v1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
 
     .line 1516
+    .line 1517
+    .line 1518
+    move-result-object v1
+
+    .line 1519
+    iput-object v1, v0, Landroidx/media3/extractor/mkv/MatroskaExtractor$Track;->format:Landroidx/media3/common/Format;
+
+    .line 1520
+    .line 1521
+    return-void
+
+    .line 1522
     nop
 
-    .line 1517
+    .line 1523
     :sswitch_data_0
     .sparse-switch
         -0x7ce7f5de -> :sswitch_21
@@ -5525,12 +5539,6 @@
         0x744ad97d -> :sswitch_0
     .end sparse-switch
 
-    .line 1518
-    .line 1519
-    .line 1520
-    .line 1521
-    .line 1522
-    .line 1523
     .line 1524
     .line 1525
     .line 1526

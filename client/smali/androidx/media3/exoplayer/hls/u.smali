@@ -3,34 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
-
-
-# direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/u;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
-
-    return-void
-.end method
+.implements Lcom/google/common/base/f;
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/u;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
+    check-cast p1, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->a(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
+    invoke-static {p1}, Landroidx/media3/exoplayer/hls/HlsMediaPeriod;->a(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)Ljava/util/List;
 
-    return-void
+    move-result-object p1
+
+    return-object p1
 .end method

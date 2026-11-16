@@ -131,7 +131,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, Landroidx/core/view/n;->o(Landroid/view/View;)Landroid/view/WindowInsetsController;
+    invoke-static {v0}, Landroidx/core/content/pm/k;->h(Landroid/view/View;)Landroid/view/WindowInsetsController;
 
     .line 11
     .line 12
@@ -172,7 +172,7 @@
     .line 27
     .line 28
     .line 29
-    invoke-static {v0, v3}, Landroidx/core/view/q;->h(Landroid/view/WindowInsetsController;Landroidx/core/view/r;)V
+    invoke-static {v0, v3}, Landroidx/core/view/o;->p(Landroid/view/WindowInsetsController;Landroidx/core/view/r;)V
 
     .line 30
     .line 31
@@ -239,12 +239,12 @@
     .line 62
     .line 63
     :cond_2
-    invoke-static {v0, v3}, Landroidx/core/content/pm/g;->t(Landroid/view/WindowInsetsController;Landroidx/core/view/r;)V
+    invoke-static {v0, v3}, Landroidx/core/view/p;->h(Landroid/view/WindowInsetsController;Landroidx/core/view/r;)V
 
     .line 64
     .line 65
     .line 66
-    invoke-static {}, Landroidx/core/view/o;->b()I
+    invoke-static {}, Landroidx/core/content/pm/i;->b()I
 
     .line 67
     .line 68
@@ -252,7 +252,7 @@
     move-result v1
 
     .line 70
-    invoke-static {v0, v1}, Landroidx/core/view/n;->x(Landroid/view/WindowInsetsController;I)V
+    invoke-static {v0, v1}, Landroidx/core/view/q;->i(Landroid/view/WindowInsetsController;I)V
 
     .line 71
     .line 72
@@ -344,7 +344,7 @@
 
     .line 34
     .line 35
-    invoke-static {v0}, Landroidx/core/view/n;->o(Landroid/view/View;)Landroid/view/WindowInsetsController;
+    invoke-static {v0}, Landroidx/core/content/pm/k;->h(Landroid/view/View;)Landroid/view/WindowInsetsController;
 
     .line 36
     .line 37
@@ -364,7 +364,7 @@
 
     .line 42
     .line 43
-    invoke-static {}, Landroidx/core/view/o;->b()I
+    invoke-static {}, Landroidx/core/content/pm/i;->b()I
 
     .line 44
     .line 45
@@ -372,7 +372,7 @@
     move-result v1
 
     .line 47
-    invoke-static {v0, v1}, Landroidx/core/view/p;->h(Landroid/view/WindowInsetsController;I)V
+    invoke-static {v0, v1}, Landroidx/core/view/n;->s(Landroid/view/WindowInsetsController;I)V
 
     .line 48
     .line 49

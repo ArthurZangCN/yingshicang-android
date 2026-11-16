@@ -2853,7 +2853,7 @@
     .line 70
     .line 71
     :cond_0
-    invoke-static {v1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 72
     .line 73

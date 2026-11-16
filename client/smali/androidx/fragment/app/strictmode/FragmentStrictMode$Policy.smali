@@ -80,11 +80,11 @@
 
     .line 10
     .line 11
-    sget-object v2, Lkotlin/collections/u;->INSTANCE:Lkotlin/collections/u;
+    sget-object v2, Lkotlin/collections/t;->INSTANCE:Lkotlin/collections/t;
 
     .line 12
     .line 13
-    invoke-static {}, Lkotlin/collections/z;->J()Lkotlin/collections/t;
+    invoke-static {}, Lkotlin/collections/y;->w()Lkotlin/collections/s;
 
     .line 14
     .line 15

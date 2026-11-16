@@ -21,7 +21,7 @@
 
     .line 7
     .line 8
-    invoke-static {p0, v0}, Lkotlin/sequences/l;->G(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/g;
+    invoke-static {p0, v0}, Lkotlin/sequences/l;->B(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/g;
 
     .line 9
     .line 10
@@ -33,7 +33,7 @@
 
     .line 13
     .line 14
-    invoke-static {p0, v0}, Lkotlin/sequences/p;->I(Lkotlin/sequences/g;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/e;
+    invoke-static {p0, v0}, Lkotlin/sequences/p;->D(Lkotlin/sequences/g;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/e;
 
     .line 15
     .line 16
@@ -41,7 +41,7 @@
     move-result-object p0
 
     .line 18
-    invoke-static {p0}, Lkotlin/sequences/p;->H(Lkotlin/sequences/e;)Ljava/lang/Object;
+    invoke-static {p0}, Lkotlin/sequences/p;->C(Lkotlin/sequences/e;)Ljava/lang/Object;
 
     .line 19
     .line 20

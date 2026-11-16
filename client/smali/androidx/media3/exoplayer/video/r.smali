@@ -2,39 +2,47 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
+
+.field public final synthetic b:I
+
+.field public final synthetic c:J
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/exoplayer/video/VideoSink$VideoSinkException;)V
+.method public synthetic constructor <init>(IJLandroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;)V
     .locals 0
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p4, p0, Landroidx/media3/exoplayer/video/r;->a:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
+
+    iput p1, p0, Landroidx/media3/exoplayer/video/r;->b:I
+
+    iput-wide p2, p0, Landroidx/media3/exoplayer/video/r;->c:J
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 4
 
     .line 1
-    return-void
-.end method
+    iget v0, p0, Landroidx/media3/exoplayer/video/r;->b:I
 
-.method public static c(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
-    .locals 0
+    iget-wide v1, p0, Landroidx/media3/exoplayer/video/r;->c:J
 
-    .line 1
-    return-void
-.end method
+    iget-object v3, p0, Landroidx/media3/exoplayer/video/r;->a:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
 
-.method public static d(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
-    .locals 0
+    invoke-static {v0, v1, v2, v3}, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;->c(IJLandroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;)V
 
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoSize;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

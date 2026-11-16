@@ -32,7 +32,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/r;->a(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/exoplayer/video/VideoSink$VideoSinkException;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/v;->a(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/exoplayer/video/VideoSink$VideoSinkException;)V
 
     return-void
 .end method
@@ -41,7 +41,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/video/r;->b(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/video/v;->b(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
 
     return-void
 .end method
@@ -50,7 +50,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/video/r;->c(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/video/v;->c(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/video/r;->d(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/video/v;->d(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/r;->e(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoSize;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/v;->e(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoSize;)V
 
     return-void
 .end method

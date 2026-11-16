@@ -48,7 +48,7 @@
 
     .line 5
     .line 6
-    invoke-static {p5, p1}, Landroidx/media3/exoplayer/w1;->n(IZ)Z
+    invoke-static {p5, p1}, Landroidx/media3/exoplayer/a2;->n(IZ)Z
 
     .line 7
     .line 8
@@ -132,7 +132,7 @@
     return p0
 .end method
 
-.method public static createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[I)Lcom/google/common/collect/f2;
+.method public static createForTrackGroup(ILandroidx/media3/common/TrackGroup;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;[I)Lcom/google/common/collect/e2;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -140,14 +140,14 @@
             "Landroidx/media3/common/TrackGroup;",
             "Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;",
             "[I)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$ImageTrackInfo;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -195,7 +195,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-virtual {v0, v8}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v8}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -208,7 +208,7 @@
 
     .line 28
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 29
     .line 30

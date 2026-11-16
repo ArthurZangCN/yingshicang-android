@@ -19,10 +19,10 @@
 
 .field private final loadingFinished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field private loadingFuture:Lcom/google/common/util/concurrent/t;
+.field private loadingFuture:Lcom/google/common/util/concurrent/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -365,7 +365,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/source/l;->a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/source/k;->a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -438,7 +438,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-interface {p1, p2}, Landroidx/media3/exoplayer/source/ExternalLoader;->load(Landroidx/media3/exoplayer/source/ExternalLoader$LoadRequest;)Lcom/google/common/util/concurrent/t;
+    invoke-interface {p1, p2}, Landroidx/media3/exoplayer/source/ExternalLoader;->load(Landroidx/media3/exoplayer/source/ExternalLoader$LoadRequest;)Lcom/google/common/util/concurrent/x;
 
     .line 14
     .line 15
@@ -446,7 +446,7 @@
     move-result-object p1
 
     .line 17
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/ExternallyLoadedMediaPeriod;->loadingFuture:Lcom/google/common/util/concurrent/t;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/ExternallyLoadedMediaPeriod;->loadingFuture:Lcom/google/common/util/concurrent/x;
 
     .line 18
     .line 19
@@ -459,11 +459,11 @@
     .line 22
     .line 23
     .line 24
-    sget-object p3, Lcom/google/common/util/concurrent/i;->INSTANCE:Lcom/google/common/util/concurrent/i;
+    sget-object p3, Lcom/google/common/util/concurrent/k;->INSTANCE:Lcom/google/common/util/concurrent/k;
 
     .line 25
     .line 26
-    invoke-static {p1, p2, p3}, Lcom/google/common/util/concurrent/n;->g(Lcom/google/common/util/concurrent/t;Lcom/google/common/util/concurrent/m;Ljava/util/concurrent/Executor;)V
+    invoke-static {p1, p2, p3}, Lcom/google/common/util/concurrent/q;->n(Lcom/google/common/util/concurrent/x;Lcom/google/common/util/concurrent/p;Ljava/util/concurrent/Executor;)V
 
     .line 27
     .line 28
@@ -489,7 +489,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/ExternallyLoadedMediaPeriod;->loadingFuture:Lcom/google/common/util/concurrent/t;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/ExternallyLoadedMediaPeriod;->loadingFuture:Lcom/google/common/util/concurrent/x;
 
     .line 2
     .line 3

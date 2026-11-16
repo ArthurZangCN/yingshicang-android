@@ -36,6 +36,9 @@
 
 .method public static create()Landroidx/concurrent/futures/ResolvableFuture;
     .locals 1
+    .annotation build Landroidx/annotation/NonNull;
+    .end annotation
+
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -87,6 +90,10 @@
 
 .method public setException(Ljava/lang/Throwable;)Z
     .locals 0
+    .param p1    # Ljava/lang/Throwable;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
 
     .line 1
     invoke-super {p0, p1}, Landroidx/concurrent/futures/AbstractResolvableFuture;->setException(Ljava/lang/Throwable;)Z
@@ -100,18 +107,22 @@
     return p1
 .end method
 
-.method public setFuture(Lcom/google/common/util/concurrent/t;)Z
+.method public setFuture(Lcom/google/common/util/concurrent/x;)Z
     .locals 0
+    .param p1    # Lcom/google/common/util/concurrent/x;
+        .annotation build Landroidx/annotation/NonNull;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "+TV;>;)Z"
         }
     .end annotation
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/concurrent/futures/AbstractResolvableFuture;->setFuture(Lcom/google/common/util/concurrent/t;)Z
+    invoke-super {p0, p1}, Landroidx/concurrent/futures/AbstractResolvableFuture;->setFuture(Lcom/google/common/util/concurrent/x;)Z
 
     .line 2
     .line 3

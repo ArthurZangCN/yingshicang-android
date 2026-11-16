@@ -439,7 +439,7 @@
     .locals 5
 
     .line 4
-    invoke-static {p1}, Lcom/blankj/utilcode/util/i;->E(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/common/base/j;->L(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

@@ -468,16 +468,16 @@
     const/4 v0, 0x4
 
     .line 2
-    invoke-static {p0, v0}, Lcom/github/tvbox/osc/util/t;->m(II)V
+    invoke-static {p0, v0}, Lcom/github/tvbox/osc/util/h0;->q(II)V
 
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->m(II)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->q(II)V
 
     .line 4
-    invoke-static {p2, v0}, Lcom/github/tvbox/osc/util/t;->m(II)V
+    invoke-static {p2, v0}, Lcom/github/tvbox/osc/util/h0;->q(II)V
 
     .line 5
-    invoke-static {p3, v0}, Lcom/github/tvbox/osc/util/t;->m(II)V
+    invoke-static {p3, v0}, Lcom/github/tvbox/osc/util/h0;->q(II)V
 
     const/4 v0, 0x0
 

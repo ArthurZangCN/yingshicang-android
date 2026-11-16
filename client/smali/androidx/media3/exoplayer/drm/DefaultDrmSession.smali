@@ -253,7 +253,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-static {p5}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p5}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 39
     .line 40
@@ -795,14 +795,14 @@
 
     .line 131
     .line 132
-    new-instance p1, Landroidx/constraintlayout/core/state/d;
+    new-instance p1, Landroidx/media3/exoplayer/drm/e;
 
     .line 133
     .line 134
-    const/4 v0, 0x6
+    const/4 v0, 0x0
 
     .line 135
-    invoke-direct {p1, v0}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
+    invoke-direct {p1, v0}, Landroidx/media3/exoplayer/drm/e;-><init>(I)V
 
     .line 136
     .line 137
@@ -1035,11 +1035,11 @@
 
     .line 22
     .line 23
-    new-instance p2, Landroidx/media3/exoplayer/drm/c;
+    new-instance p2, Landroidx/media3/exoplayer/drm/d;
 
     .line 24
     .line 25
-    invoke-direct {p2, p1}, Landroidx/media3/exoplayer/drm/c;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {p2, p1}, Landroidx/media3/exoplayer/drm/d;-><init>(Ljava/lang/Throwable;)V
 
     .line 26
     .line 27
@@ -1138,7 +1138,7 @@
 .end method
 
 .method private onKeyResponse(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->currentKeyRequest:Landroidx/media3/exoplayer/drm/ExoMediaDrm$KeyRequest;
@@ -1243,135 +1243,135 @@
     const/4 v0, 0x3
 
     .line 47
-    const/4 v2, 0x4
-
-    .line 48
     if-ne p2, v0, :cond_2
 
+    .line 48
     .line 49
-    .line 50
     iget-object p2, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->mediaDrm:Landroidx/media3/exoplayer/drm/ExoMediaDrm;
 
+    .line 50
     .line 51
-    .line 52
     iget-object v0, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->offlineLicenseKeySetId:[B
 
+    .line 52
     .line 53
-    .line 54
     invoke-static {v0}, Landroidx/media3/common/util/Util;->castNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     move-result-object v0
 
-    .line 58
+    .line 57
     check-cast v0, [B
 
+    .line 58
     .line 59
-    .line 60
     invoke-interface {p2, v0, p1}, Landroidx/media3/exoplayer/drm/ExoMediaDrm;->provideKeyResponse([B[B)[B
 
+    .line 60
     .line 61
     .line 62
+    new-instance p1, Landroidx/media3/exoplayer/drm/b;
+
     .line 63
-    new-instance p1, Landroidx/constraintlayout/core/state/f;
-
     .line 64
-    .line 65
-    invoke-direct {p1, v2}, Landroidx/constraintlayout/core/state/f;-><init>(I)V
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
+    .line 65
     .line 66
     .line 67
-    .line 68
     invoke-direct {p0, p1}, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->dispatchEvent(Landroidx/media3/common/util/Consumer;)V
 
+    .line 68
     .line 69
     .line 70
-    .line 71
     goto :goto_1
 
-    .line 72
+    .line 71
     :catch_0
     move-exception p1
 
-    .line 73
+    .line 72
     goto :goto_0
 
-    .line 74
+    .line 73
     :catch_1
     move-exception p1
 
-    .line 75
+    .line 74
     goto :goto_0
 
-    .line 76
+    .line 75
     :cond_2
     iget-object p2, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->mediaDrm:Landroidx/media3/exoplayer/drm/ExoMediaDrm;
 
+    .line 76
     .line 77
-    .line 78
     iget-object v0, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->sessionId:[B
 
+    .line 78
     .line 79
-    .line 80
     invoke-interface {p2, v0, p1}, Landroidx/media3/exoplayer/drm/ExoMediaDrm;->provideKeyResponse([B[B)[B
 
+    .line 80
     .line 81
     .line 82
-    .line 83
     move-result-object p1
 
-    .line 84
+    .line 83
     iget p2, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->mode:I
 
+    .line 84
     .line 85
-    .line 86
     const/4 v0, 0x2
 
-    .line 87
+    .line 86
     if-eq p2, v0, :cond_3
 
+    .line 87
     .line 88
-    .line 89
     if-nez p2, :cond_4
 
+    .line 89
     .line 90
-    .line 91
     iget-object p2, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->offlineLicenseKeySetId:[B
 
+    .line 91
     .line 92
-    .line 93
     if-eqz p2, :cond_4
 
+    .line 93
     .line 94
-    .line 95
     :cond_3
     if-eqz p1, :cond_4
 
+    .line 95
     .line 96
-    .line 97
     array-length p2, p1
 
-    .line 98
+    .line 97
     if-eqz p2, :cond_4
 
+    .line 98
     .line 99
-    .line 100
     iput-object p1, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->offlineLicenseKeySetId:[B
 
+    .line 100
     .line 101
-    .line 102
     :cond_4
-    iput v2, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->state:I
+    const/4 p1, 0x4
+
+    .line 102
+    iput p1, p0, Landroidx/media3/exoplayer/drm/DefaultDrmSession;->state:I
 
     .line 103
     .line 104
-    new-instance p1, Landroidx/media3/exoplayer/drm/b;
+    new-instance p1, Landroidx/media3/exoplayer/drm/c;
 
     .line 105
     .line 106
-    invoke-direct {p1, v1}, Landroidx/media3/exoplayer/drm/b;-><init>(Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
+    invoke-direct {p1, v1}, Landroidx/media3/exoplayer/drm/c;-><init>(Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
 
     .line 107
     .line 108
@@ -2305,7 +2305,7 @@
 
     .line 53
     :cond_2
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 54
     .line 55

@@ -90,7 +90,7 @@
 
     .line 27
     :cond_1
-    invoke-static {p0}, Landroidx/appcompat/app/c;->i(Landroid/view/Display;)Landroid/view/Display$HdrCapabilities;
+    invoke-static {p0}, Landroidx/media3/exoplayer/video/h;->a(Landroid/view/Display;)Landroid/view/Display$HdrCapabilities;
 
     .line 28
     .line 29
@@ -106,7 +106,7 @@
 
     .line 34
     :cond_2
-    invoke-static {p0}, Landroid/support/v4/media/session/b;->A(Landroid/view/Display$HdrCapabilities;)[I
+    invoke-static {p0}, Landroid/support/v4/media/session/d;->B(Landroid/view/Display$HdrCapabilities;)[I
 
     .line 35
     .line 36

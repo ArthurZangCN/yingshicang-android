@@ -390,7 +390,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/extractor/d;->a(Landroidx/media3/extractor/TrackOutput;J)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/extractor/f;->a(Landroidx/media3/extractor/TrackOutput;J)V
 
     return-void
 .end method
@@ -568,7 +568,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/d;->b(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/DataReader;IZ)I
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/f;->b(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/DataReader;IZ)I
 
     move-result p1
 
@@ -583,7 +583,7 @@
 
     invoke-virtual {p4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p4, p1, p2, p3}, Landroidx/media3/extractor/d;->b(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/DataReader;IZ)I
+    invoke-static {p4, p1, p2, p3}, Landroidx/media3/extractor/f;->b(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/DataReader;IZ)I
 
     move-result p1
 
@@ -594,7 +594,7 @@
     .locals 0
 
     .line 2
-    invoke-static {p0, p1, p2}, Landroidx/media3/extractor/d;->c(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/util/ParsableByteArray;I)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/extractor/f;->c(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/util/ParsableByteArray;I)V
 
     return-void
 .end method
@@ -607,7 +607,7 @@
 
     invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p3, p1, p2}, Landroidx/media3/extractor/d;->c(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/util/ParsableByteArray;I)V
+    invoke-static {p3, p1, p2}, Landroidx/media3/extractor/f;->c(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/util/ParsableByteArray;I)V
 
     return-void
 .end method

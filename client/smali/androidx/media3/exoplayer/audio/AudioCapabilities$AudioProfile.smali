@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field private final channelMasks:Lcom/google/common/collect/s2;
+.field private final channelMasks:Lcom/google/common/collect/r2;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/s2<",
+            "Lcom/google/common/collect/r2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -65,7 +65,7 @@
 
     .line 11
     .line 12
-    invoke-static {v2}, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->getAllChannelMasksForMaxChannelCount(I)Lcom/google/common/collect/s2;
+    invoke-static {v2}, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->getAllChannelMasksForMaxChannelCount(I)Lcom/google/common/collect/r2;
 
     .line 13
     .line 14
@@ -114,7 +114,7 @@
     const/4 p1, 0x0
 
     .line 10
-    iput-object p1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     return-void
 .end method
@@ -141,14 +141,14 @@
     iput p1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->encoding:I
 
     .line 3
-    invoke-static {p2}, Lcom/google/common/collect/s2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/s2;
+    invoke-static {p2}, Lcom/google/common/collect/r2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/r2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 4
-    invoke-virtual {p1}, Lcom/google/common/collect/s2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {p1}, Lcom/google/common/collect/r2;->iterator()Lcom/google/common/collect/o6;
 
     move-result-object p1
 
@@ -189,23 +189,23 @@
     return-void
 .end method
 
-.method private static getAllChannelMasksForMaxChannelCount(I)Lcom/google/common/collect/s2;
+.method private static getAllChannelMasksForMaxChannelCount(I)Lcom/google/common/collect/r2;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
-            "Lcom/google/common/collect/s2<",
+            "Lcom/google/common/collect/r2<",
             "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Lcom/google/common/collect/s2$a;
+    new-instance v0, Lcom/google/common/collect/r2$a;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/common/collect/s2$a;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/collect/r2$a;-><init>()V
 
     .line 4
     .line 5
@@ -234,7 +234,7 @@
     move-result-object v2
 
     .line 17
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/s2$a;->j(Ljava/lang/Object;)Lcom/google/common/collect/s2$a;
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/r2$a;->j(Ljava/lang/Object;)Lcom/google/common/collect/r2$a;
 
     .line 18
     .line 19
@@ -247,7 +247,7 @@
 
     .line 23
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/s2$a;->m()Lcom/google/common/collect/s2;
+    invoke-virtual {v0}, Lcom/google/common/collect/r2$a;->m()Lcom/google/common/collect/r2;
 
     .line 24
     .line 25
@@ -322,15 +322,15 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 26
     .line 27
-    iget-object p1, p1, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object p1, p1, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 28
     .line 29
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -357,7 +357,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 2
     .line 3
@@ -401,7 +401,7 @@
 
     .line 21
     :cond_1
-    sget-object p1, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/h2;
+    sget-object p1, Landroidx/media3/exoplayer/audio/AudioCapabilities;->ALL_SURROUND_ENCODINGS_AND_MAX_CHANNELS:Lcom/google/common/collect/g2;
 
     .line 22
     .line 23
@@ -428,7 +428,7 @@
     move-result-object v0
 
     .line 34
-    invoke-virtual {p1, p2, v0}, Lcom/google/common/collect/h2;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2, v0}, Lcom/google/common/collect/g2;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -479,7 +479,7 @@
 
     .line 9
     .line 10
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 11
     .line 12
@@ -494,7 +494,7 @@
 
     .line 16
     :cond_0
-    invoke-virtual {v1}, Lcom/google/common/collect/s2;->hashCode()I
+    invoke-virtual {v1}, Lcom/google/common/collect/r2;->hashCode()I
 
     .line 17
     .line 18
@@ -513,7 +513,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 2
     .line 3
@@ -556,7 +556,7 @@
 
     .line 19
     :cond_2
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 20
     .line 21
@@ -568,7 +568,7 @@
     move-result-object p1
 
     .line 25
-    invoke-virtual {v0, p1}, Lcom/google/common/collect/d2;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lcom/google/common/collect/c2;->contains(Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -632,7 +632,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/s2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioCapabilities$AudioProfile;->channelMasks:Lcom/google/common/collect/r2;
 
     .line 29
     .line 30

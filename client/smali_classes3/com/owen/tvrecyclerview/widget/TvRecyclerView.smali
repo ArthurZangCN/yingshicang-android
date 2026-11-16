@@ -10,18 +10,19 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;,
         Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;,
-        Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;,
         Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;,
         Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;,
-        Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;,
+        Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;,
+        Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;,
         Lcom/owen/tvrecyclerview/widget/TvRecyclerView$ISavedState;
     }
 .end annotation
 
 
 # static fields
-.field public static final v:[Ljava/lang/Class;
+.field public static final A:[Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
@@ -30,6 +31,8 @@
         }
     .end annotation
 .end field
+
+.field public static B:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;
 
 
 # instance fields
@@ -59,21 +62,31 @@
 
 .field public m:Z
 
-.field public n:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+.field public n:Z
 
-.field public o:La3/a;
+.field public o:Z
 
-.field public p:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;
+.field public p:Z
 
-.field public final q:Landroid/graphics/Rect;
+.field public q:Z
 
-.field public final r:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
+.field public r:I
 
-.field public s:Z
+.field public s:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
-.field public final t:Z
+.field public t:Lk3/a;
 
-.field public final u:Landroid/graphics/Point;
+.field public u:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+
+.field public final v:Landroid/graphics/Rect;
+
+.field public final w:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
+
+.field public x:Z
+
+.field public final y:Z
+
+.field public final z:Landroid/graphics/Point;
 
 
 # direct methods
@@ -121,7 +134,7 @@
 
     .line 18
     .line 19
-    sput-object v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->v:[Ljava/lang/Class;
+    sput-object v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->A:[Ljava/lang/Class;
 
     .line 20
     .line 21
@@ -184,63 +197,66 @@
     iput-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->m:Z
 
     .line 11
+    iput v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:I
+
+    .line 12
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->q:Landroid/graphics/Rect;
+    iput-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->v:Landroid/graphics/Rect;
 
-    .line 12
+    .line 13
     new-instance v2, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
 
     invoke-direct {v2, p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;)V
 
-    iput-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
-
-    .line 13
-    iput-boolean v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Z
+    iput-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->w:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
 
     .line 14
+    iput-boolean v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->x:Z
+
+    .line 15
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    iput-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->u:Landroid/graphics/Point;
-
-    .line 15
-    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->setChildrenDrawingOrderEnabled(Z)V
+    iput-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->z:Landroid/graphics/Point;
 
     .line 16
-    invoke-virtual {p0, v1}, Landroid/view/View;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->setChildrenDrawingOrderEnabled(Z)V
 
     .line 17
+    invoke-virtual {p0, v1}, Landroid/view/View;->setWillNotDraw(Z)V
+
+    .line 18
     invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setHasFixedSize(Z)V
 
     const/4 v2, 0x2
 
-    .line 18
+    .line 19
     invoke-virtual {p0, v2}, Landroid/view/View;->setOverScrollMode(I)V
 
-    .line 19
+    .line 20
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setClipChildren(Z)V
 
-    .line 20
+    .line 21
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->setClipToPadding(Z)V
 
-    .line 21
+    .line 22
     invoke-virtual {p0, v1}, Landroid/view/View;->setFocusable(Z)V
 
-    .line 22
+    .line 23
     invoke-virtual {p0, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
-    .line 23
+    .line 24
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getItemAnimator()Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 24
+    .line 25
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getItemAnimator()Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
 
     move-result-object v3
@@ -249,7 +265,7 @@
 
     invoke-virtual {v3, v0}, Landroidx/recyclerview/widget/SimpleItemAnimator;->setSupportsChangeAnimations(Z)V
 
-    .line 25
+    .line 26
     :cond_0
     sget-object v3, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView:[I
 
@@ -257,43 +273,43 @@
 
     move-result-object v3
 
-    .line 26
+    .line 27
     sget v4, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_layoutManager:I
 
     invoke-virtual {v3, v4}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 27
+    .line 28
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    .line 28
+    .line 29
     const-string v5, ": Could not instantiate the LayoutManager: "
 
     if-eqz v4, :cond_1
 
-    .line 29
+    .line 30
     invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 30
+    .line 31
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v6
 
     if-eqz v6, :cond_1
 
-    .line 31
-    invoke-static {p1, v4}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    .line 32
+    invoke-static {p1, v4}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->g(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 32
+    .line 33
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -303,7 +319,7 @@
 
     move-result-object v6
 
-    .line 33
+    .line 34
     invoke-virtual {v6, v4}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v6
@@ -320,18 +336,18 @@
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 34
-    :try_start_1
-    sget-object v7, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->v:[Ljava/lang/Class;
-
     .line 35
+    :try_start_1
+    sget-object v7, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->A:[Ljava/lang/Class;
+
+    .line 36
     invoke-virtual {v6, v7}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v7
 
     const/4 v8, 0x3
 
-    .line 36
+    .line 37
     new-array v8, v8, [Ljava/lang/Object;
 
     aput-object p1, v8, v0
@@ -381,7 +397,7 @@
     :catch_5
     move-exception p1
 
-    .line 37
+    .line 38
     :try_start_2
     new-array p3, v0, [Ljava/lang/Class;
 
@@ -398,12 +414,12 @@
 
     const/4 v8, 0x0
 
-    .line 38
+    .line 39
     :goto_0
     :try_start_3
     invoke-virtual {v7, v1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
-    .line 39
+    .line 40
     invoke-virtual {v7, v8}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -417,10 +433,10 @@
     :catch_6
     move-exception p3
 
-    .line 40
+    .line 41
     invoke-virtual {p3, p1}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 41
+    .line 42
     new-instance p1, Ljava/lang/IllegalStateException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -453,7 +469,7 @@
     .catch Ljava/lang/IllegalAccessException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Ljava/lang/ClassCastException; {:try_start_3 .. :try_end_3} :catch_0
 
-    .line 42
+    .line 43
     :goto_1
     new-instance p3, Ljava/lang/IllegalStateException;
 
@@ -481,7 +497,7 @@
 
     throw p3
 
-    .line 43
+    .line 44
     :goto_2
     new-instance p3, Ljava/lang/IllegalStateException;
 
@@ -509,7 +525,7 @@
 
     throw p3
 
-    .line 44
+    .line 45
     :goto_3
     new-instance p3, Ljava/lang/IllegalStateException;
 
@@ -535,7 +551,7 @@
 
     throw p3
 
-    .line 45
+    .line 46
     :goto_4
     new-instance p3, Ljava/lang/IllegalStateException;
 
@@ -561,7 +577,7 @@
 
     throw p3
 
-    .line 46
+    .line 47
     :goto_5
     new-instance p3, Ljava/lang/IllegalStateException;
 
@@ -589,7 +605,7 @@
 
     throw p3
 
-    .line 47
+    .line 48
     :cond_1
     :goto_6
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_selectedItemIsCentered:I
@@ -600,7 +616,7 @@
 
     iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->g:Z
 
-    .line 48
+    .line 49
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_isMenu:I
 
     invoke-virtual {v3, p1, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -609,7 +625,7 @@
 
     iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->i:Z
 
-    .line 49
+    .line 50
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_isMemoryFocus:I
 
     invoke-virtual {v3, p1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -618,7 +634,7 @@
 
     iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->h:Z
 
-    .line 50
+    .line 51
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_loadMoreBeforehandCount:I
 
     const/4 p2, 0x4
@@ -629,7 +645,7 @@
 
     iput p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->k:I
 
-    .line 51
+    .line 52
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_selectedItemOffsetStart:I
 
     invoke-virtual {v3, p1, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
@@ -638,7 +654,7 @@
 
     iput p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e:I
 
-    .line 52
+    .line 53
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_selectedItemOffsetEnd:I
 
     invoke-virtual {v3, p1, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
@@ -647,33 +663,42 @@
 
     iput p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f:I
 
-    .line 53
+    .line 54
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_optimizeLayout:I
 
     invoke-virtual {v3, p1, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->t:Z
+    iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->y:Z
 
-    .line 54
+    .line 55
+    sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_leanbackTouchMode:I
+
+    invoke-virtual {v3, p1, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result p1
+
+    iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
+
+    .line 56
     sget p1, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_verticalSpacingWithMargins:I
 
     invoke-virtual {v3, p1, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
     move-result p1
 
-    .line 55
+    .line 57
     sget p2, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_tv_horizontalSpacingWithMargins:I
 
     invoke-virtual {v3, p2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
     move-result p2
 
-    .line 56
-    invoke-virtual {p0, p1, p2}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->i(II)V
+    .line 58
+    invoke-virtual {p0, p1, p2}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->j(II)V
 
-    .line 57
+    .line 59
     invoke-virtual {v3}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -745,7 +770,7 @@
     return-void
 .end method
 
-.method public static f(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+.method public static g(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -954,6 +979,17 @@
 
     .line 15
     return v0
+.end method
+
+.method public static setLeanbackTouchModeProvider(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;)V
+    .locals 0
+
+    .line 1
+    sput-object p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->B:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;
+
+    .line 2
+    .line 3
+    return-void
 .end method
 
 
@@ -1349,6 +1385,233 @@
     return v0
 .end method
 
+.method public final dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 4
+
+    .line 1
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_5
+
+    .line 4
+    .line 5
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    const/16 v1, 0x1002
+
+    .line 10
+    .line 11
+    and-int/2addr v0, v1
+
+    .line 12
+    const/4 v2, 0x0
+
+    .line 13
+    const/4 v3, 0x1
+
+    .line 14
+    if-ne v0, v1, :cond_0
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-lez v0, :cond_5
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getToolType(I)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    if-ne v0, v3, :cond_5
+
+    .line 28
+    .line 29
+    :goto_0
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    if-eqz v0, :cond_2
+
+    .line 34
+    .line 35
+    if-eq v0, v3, :cond_1
+
+    .line 36
+    .line 37
+    const/4 v1, 0x3
+
+    .line 38
+    if-eq v0, v1, :cond_1
+
+    .line 39
+    .line 40
+    goto :goto_1
+
+    .line 41
+    :cond_1
+    iput-boolean v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->p:Z
+
+    .line 42
+    .line 43
+    iput-boolean v3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->q:Z
+
+    .line 44
+    .line 45
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getScrollState()I
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v0
+
+    .line 49
+    if-nez v0, :cond_5
+
+    .line 50
+    .line 51
+    new-instance v0, Landroidx/activity/a;
+
+    .line 52
+    .line 53
+    const/16 v1, 0xb
+
+    .line 54
+    .line 55
+    invoke-direct {v0, p0, v1}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {p0, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 59
+    .line 60
+    .line 61
+    goto :goto_1
+
+    .line 62
+    :cond_2
+    iput-boolean v3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->p:Z
+
+    .line 63
+    .line 64
+    iput-boolean v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->q:Z
+
+    .line 65
+    .line 66
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getFocusedChild()Landroid/view/View;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v0
+
+    .line 70
+    if-eqz v0, :cond_3
+
+    .line 71
+    .line 72
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->getChildAdapterPosition(Landroid/view/View;)I
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v0
+
+    .line 76
+    const/4 v1, -0x1
+
+    .line 77
+    if-eq v0, v1, :cond_3
+
+    .line 78
+    .line 79
+    iput v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:I
+
+    .line 80
+    .line 81
+    goto :goto_1
+
+    .line 82
+    :cond_3
+    iget v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->l:I
+
+    .line 83
+    .line 84
+    if-ltz v0, :cond_4
+
+    .line 85
+    .line 86
+    iput v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:I
+
+    .line 87
+    .line 88
+    goto :goto_1
+
+    .line 89
+    :cond_4
+    invoke-virtual {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFirstVisibleAndFocusablePosition()I
+
+    .line 90
+    .line 91
+    .line 92
+    move-result v0
+
+    .line 93
+    invoke-static {v0, v2}, Ljava/lang/Math;->max(II)I
+
+    .line 94
+    .line 95
+    .line 96
+    move-result v0
+
+    .line 97
+    iput v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:I
+
+    .line 98
+    .line 99
+    :cond_5
+    :goto_1
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 100
+    .line 101
+    .line 102
+    move-result p1
+
+    .line 103
+    return p1
+.end method
+
 .method public final dispatchUnhandledMove(Landroid/view/View;I)Z
     .locals 0
 
@@ -1364,7 +1627,372 @@
     return p1
 .end method
 
-.method public final e(IIII)I
+.method public final e(Landroid/view/View;)Z
+    .locals 6
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-eqz p1, :cond_8
+
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v1
+
+    .line 8
+    if-nez v1, :cond_0
+
+    .line 9
+    .line 10
+    goto/16 :goto_5
+
+    .line 11
+    .line 12
+    :cond_0
+    iget-boolean v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->g:Z
+
+    .line 13
+    .line 14
+    iget-object v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->v:Landroid/graphics/Rect;
+
+    .line 15
+    .line 16
+    if-eqz v1, :cond_2
+
+    .line 17
+    .line 18
+    invoke-virtual {p0, p1, v2}, Landroidx/recyclerview/widget/RecyclerView;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollHorizontally()Z
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v1
+
+    .line 29
+    if-eqz v1, :cond_1
+
+    .line 30
+    .line 31
+    invoke-direct {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFreeWidth()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v3
+
+    .line 39
+    :goto_0
+    sub-int/2addr v1, v3
+
+    .line 40
+    goto :goto_1
+
+    .line 41
+    :cond_1
+    invoke-direct {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFreeHeight()I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v1
+
+    .line 45
+    invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v3
+
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :goto_1
+    div-int/lit8 v1, v1, 0x2
+
+    .line 51
+    .line 52
+    iput v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e:I
+
+    .line 53
+    .line 54
+    iput v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f:I
+
+    .line 55
+    .line 56
+    :cond_2
+    iget v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e:I
+
+    .line 57
+    .line 58
+    iget v3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f:I
+
+    .line 59
+    .line 60
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v4
+
+    .line 64
+    if-eqz v4, :cond_5
+
+    .line 65
+    .line 66
+    invoke-virtual {p0, p1, v2}, Landroidx/recyclerview/widget/RecyclerView;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object p1
+
+    .line 73
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollHorizontally()Z
+
+    .line 74
+    .line 75
+    .line 76
+    move-result p1
+
+    .line 77
+    if-eqz p1, :cond_3
+
+    .line 78
+    .line 79
+    iget p1, v2, Landroid/graphics/Rect;->right:I
+
+    .line 80
+    .line 81
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
+
+    .line 82
+    .line 83
+    .line 84
+    move-result v4
+
+    .line 85
+    add-int/2addr v4, p1
+
+    .line 86
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result p1
+
+    .line 90
+    sub-int/2addr v4, p1
+
+    .line 91
+    iget p1, v2, Landroid/graphics/Rect;->left:I
+
+    .line 92
+    .line 93
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
+
+    .line 94
+    .line 95
+    .line 96
+    move-result v5
+
+    .line 97
+    sub-int/2addr p1, v5
+
+    .line 98
+    invoke-virtual {p0, p1, v4, v1, v3}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f(IIII)I
+
+    .line 99
+    .line 100
+    .line 101
+    move-result p1
+
+    .line 102
+    goto :goto_2
+
+    .line 103
+    :cond_3
+    move p1, v0
+
+    .line 104
+    :goto_2
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v4
+
+    .line 108
+    invoke-virtual {v4}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v4
+
+    .line 112
+    if-eqz v4, :cond_4
+
+    .line 113
+    .line 114
+    iget v4, v2, Landroid/graphics/Rect;->bottom:I
+
+    .line 115
+    .line 116
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v5
+
+    .line 120
+    add-int/2addr v5, v4
+
+    .line 121
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    .line 122
+    .line 123
+    .line 124
+    move-result v4
+
+    .line 125
+    sub-int/2addr v5, v4
+
+    .line 126
+    iget v2, v2, Landroid/graphics/Rect;->top:I
+
+    .line 127
+    .line 128
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
+
+    .line 129
+    .line 130
+    .line 131
+    move-result v4
+
+    .line 132
+    sub-int/2addr v2, v4
+
+    .line 133
+    invoke-virtual {p0, v2, v5, v1, v3}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f(IIII)I
+
+    .line 134
+    .line 135
+    .line 136
+    move-result v1
+
+    .line 137
+    goto :goto_3
+
+    .line 138
+    :cond_4
+    move v1, v0
+
+    .line 139
+    goto :goto_3
+
+    .line 140
+    :cond_5
+    move p1, v0
+
+    .line 141
+    move v1, p1
+
+    .line 142
+    :goto_3
+    filled-new-array {p1, v1}, [I
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object p1
+
+    .line 146
+    aget v1, p1, v0
+
+    .line 147
+    .line 148
+    const/4 v2, 0x1
+
+    .line 149
+    aget p1, p1, v2
+
+    .line 150
+    .line 151
+    invoke-virtual {p0, v1, p1}, Landroidx/recyclerview/widget/RecyclerView;->smoothScrollBy(II)V
+
+    .line 152
+    .line 153
+    .line 154
+    if-nez v1, :cond_7
+
+    .line 155
+    .line 156
+    if-eqz p1, :cond_6
+
+    .line 157
+    .line 158
+    goto :goto_4
+
+    .line 159
+    :cond_6
+    invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
+
+    .line 160
+    .line 161
+    .line 162
+    return v0
+
+    .line 163
+    :cond_7
+    :goto_4
+    return v2
+
+    .line 164
+    :cond_8
+    :goto_5
+    return v0
+.end method
+
+.method public final f(IIII)I
     .locals 3
 
     .line 1
@@ -1850,7 +2478,7 @@
     .line 133
     .line 134
     :goto_2
-    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->p:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;
+    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->u:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
 
     .line 135
     .line 136
@@ -1858,7 +2486,7 @@
 
     .line 137
     .line 138
-    invoke-interface {v0, p2}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;->a(I)Z
+    invoke-interface {v0, p2}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;->a(I)Z
 
     .line 139
     .line 140
@@ -1896,217 +2524,6 @@
     :cond_9
     :goto_4
     return-object v0
-.end method
-
-.method public final g(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    iget-object v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
-
-    .line 6
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;)V
-
-    .line 10
-    .line 11
-    .line 12
-    const/4 v2, 0x1
-
-    .line 13
-    iput-boolean v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Z
-
-    .line 14
-    .line 15
-    :cond_0
-    invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->registerAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const/4 p1, 0x0
-
-    .line 19
-    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p1
-
-    .line 23
-    if-eqz p1, :cond_3
-
-    .line 24
-    .line 25
-    if-eqz v0, :cond_3
-
-    .line 26
-    .line 27
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v0
-
-    .line 31
-    instance-of v0, v0, Lcom/owen/tvrecyclerview/BaseLayoutManager;
-
-    .line 32
-    .line 33
-    if-eqz v0, :cond_3
-
-    .line 34
-    .line 35
-    invoke-virtual {p0}, Landroid/view/View;->hasFocus()Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v0
-
-    .line 39
-    iput-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->m:Z
-
-    .line 40
-    .line 41
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v0
-
-    .line 49
-    if-eqz v0, :cond_1
-
-    .line 50
-    .line 51
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v0
-
-    .line 55
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedTop(Landroid/view/View;)I
-
-    .line 56
-    .line 57
-    .line 58
-    move-result p1
-
-    .line 59
-    goto :goto_0
-
-    .line 60
-    :cond_1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v0
-
-    .line 64
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedLeft(Landroid/view/View;)I
-
-    .line 65
-    .line 66
-    .line 67
-    move-result p1
-
-    .line 68
-    :goto_0
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v0
-
-    .line 72
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
-
-    .line 73
-    .line 74
-    .line 75
-    move-result v0
-
-    .line 76
-    if-eqz v0, :cond_2
-
-    .line 77
-    .line 78
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v0
-
-    .line 82
-    goto :goto_1
-
-    .line 83
-    :cond_2
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v0
-
-    .line 87
-    :goto_1
-    sub-int/2addr p1, v0
-
-    .line 88
-    invoke-virtual {p0, p1, p1}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
-
-    .line 89
-    .line 90
-    .line 91
-    goto :goto_2
-
-    .line 92
-    :cond_3
-    invoke-virtual {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFirstVisibleAndFocusablePosition()I
-
-    .line 93
-    .line 94
-    .line 95
-    move-result p1
-
-    .line 96
-    iput p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->l:I
-
-    .line 97
-    .line 98
-    :goto_2
-    return-void
 .end method
 
 .method public final getChildDrawingOrder(II)I
@@ -2604,18 +3021,229 @@
     return v0
 .end method
 
-.method public getmOnItemListener()Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+.method public getmOnItemListener()Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final h(IIZZ)V
+.method public final h(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->w:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$c;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->unregisterAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;)V
+
+    .line 10
+    .line 11
+    .line 12
+    const/4 v2, 0x1
+
+    .line 13
+    iput-boolean v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->x:Z
+
+    .line 14
+    .line 15
+    :cond_0
+    invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->registerAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 p1, 0x0
+
+    .line 19
+    invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    if-eqz p1, :cond_3
+
+    .line 24
+    .line 25
+    if-eqz v0, :cond_3
+
+    .line 26
+    .line 27
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    instance-of v0, v0, Lcom/owen/tvrecyclerview/BaseLayoutManager;
+
+    .line 32
+    .line 33
+    if-eqz v0, :cond_3
+
+    .line 34
+    .line 35
+    invoke-virtual {p0}, Landroid/view/View;->hasFocus()Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    iput-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->m:Z
+
+    .line 40
+    .line 41
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result v0
+
+    .line 49
+    if-eqz v0, :cond_1
+
+    .line 50
+    .line 51
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedTop(Landroid/view/View;)I
+
+    .line 56
+    .line 57
+    .line 58
+    move-result p1
+
+    .line 59
+    goto :goto_0
+
+    .line 60
+    :cond_1
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedLeft(Landroid/view/View;)I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result p1
+
+    .line 68
+    :goto_0
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v0
+
+    .line 72
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v0
+
+    .line 76
+    if-eqz v0, :cond_2
+
+    .line 77
+    .line 78
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
+
+    .line 79
+    .line 80
+    .line 81
+    move-result v0
+
+    .line 82
+    goto :goto_1
+
+    .line 83
+    :cond_2
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
+
+    .line 84
+    .line 85
+    .line 86
+    move-result v0
+
+    .line 87
+    :goto_1
+    sub-int/2addr p1, v0
+
+    .line 88
+    invoke-virtual {p0, p1, p1}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
+
+    .line 89
+    .line 90
+    .line 91
+    goto :goto_2
+
+    .line 92
+    :cond_3
+    invoke-virtual {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFirstVisibleAndFocusablePosition()I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result p1
+
+    .line 96
+    iput p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->l:I
+
+    .line 97
+    .line 98
+    :goto_2
+    return-void
+.end method
+
+.method public final i(IIZZ)V
     .locals 7
 
     .line 1
@@ -2687,7 +3315,7 @@
     .line 32
     .line 33
     :cond_1
-    new-instance v6, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;
+    new-instance v6, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;
 
     .line 34
     .line 35
@@ -2714,7 +3342,7 @@
     move v5, p2
 
     .line 44
-    invoke-direct/range {v0 .. v5}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;Landroid/content/Context;ZZI)V
+    invoke-direct/range {v0 .. v5}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;Landroid/content/Context;ZZI)V
 
     .line 45
     .line 46
@@ -2740,7 +3368,15 @@
     return-void
 .end method
 
-.method public final i(II)V
+.method public final isInEditMode()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final j(II)V
     .locals 5
 
     .line 1
@@ -2871,95 +3507,370 @@
     return-void
 .end method
 
-.method public final isInEditMode()Z
+.method public final k()V
+    .locals 3
+
+    .line 1
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 7
+    iput-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->q:Z
+
+    .line 8
+    .line 9
+    iget v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:I
+
+    .line 10
+    .line 11
+    if-gez v1, :cond_2
+
+    .line 12
+    .line 13
+    iget v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->l:I
+
+    .line 14
+    .line 15
+    if-ltz v1, :cond_1
+
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_1
+    move v1, v0
+
+    .line 19
+    :cond_2
+    :goto_0
+    iput v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->l:I
+
+    .line 20
+    .line 21
+    iput v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->r:I
+
+    .line 22
+    .line 23
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    if-eqz v2, :cond_3
+
+    .line 28
+    .line 29
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v2
+
+    .line 33
+    invoke-virtual {v2, v1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->findViewByPosition(I)Landroid/view/View;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v2
+
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_3
+    const/4 v2, 0x0
+
+    .line 39
+    :goto_1
+    if-eqz v2, :cond_5
+
+    .line 40
+    .line 41
+    invoke-virtual {v2}, Landroid/view/View;->isFocusable()Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v0
+
+    .line 45
+    if-eqz v0, :cond_4
+
+    .line 46
+    .line 47
+    invoke-virtual {v2}, Landroid/view/View;->hasFocus()Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v0
+
+    .line 51
+    if-nez v0, :cond_4
+
+    .line 52
+    .line 53
+    invoke-virtual {v2}, Landroid/view/View;->requestFocus()Z
+
+    .line 54
+    .line 55
+    .line 56
+    :cond_4
+    invoke-virtual {p0, v2}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e(Landroid/view/View;)Z
+
+    .line 57
+    .line 58
+    .line 59
+    return-void
+
+    .line 60
+    :cond_5
+    iget v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e:I
+
+    .line 61
+    .line 62
+    invoke-virtual {p0, v1, v2, v0, v0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->i(IIZZ)V
+
+    .line 63
+    .line 64
+    .line 65
+    new-instance v0, Lz1/o;
+
+    .line 66
+    .line 67
+    const/4 v2, 0x2
+
+    .line 68
+    invoke-direct {v0, p0, v1, v2}, Lz1/o;-><init>(Landroid/view/KeyEvent$Callback;II)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {p0, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 72
+    .line 73
+    .line 74
+    return-void
+.end method
+
+.method public final onAttachedToWindow()V
     .locals 1
 
+    .line 1
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    sget-object v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->B:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    if-eqz v0, :cond_0
+
+    .line 14
+    .line 15
+    invoke-static {v0}, Lc8/d;->b(Landroid/content/Context;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-eqz v0, :cond_0
+
+    .line 20
+    .line 21
     const/4 v0, 0x1
 
-    return v0
+    .line 22
+    iput-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
+
+    .line 23
+    .line 24
+    :cond_0
+    invoke-super {p0}, Landroidx/recyclerview/widget/RecyclerView;->onAttachedToWindow()V
+
+    .line 25
+    .line 26
+    .line 27
+    return-void
 .end method
 
 .method public final onChildAttachedToWindow(Landroid/view/View;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->isClickable()Z
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->o:Z
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    const/4 v1, 0x1
 
-    .line 5
+    .line 4
     if-eqz v0, :cond_0
 
+    .line 5
     .line 6
-    .line 7
-    invoke-static {p1}, Landroidx/core/view/ViewCompat;->hasOnClickListeners(Landroid/view/View;)Z
+    invoke-virtual {p1}, Landroid/view/View;->isFocusable()Z
 
+    .line 7
     .line 8
     .line 9
-    .line 10
     move-result v0
 
-    .line 11
-    if-nez v0, :cond_0
+    .line 10
+    if-eqz v0, :cond_0
 
+    .line 11
     .line 12
+    const/4 v0, 0x0
+
     .line 13
-    invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     .line 14
     .line 15
     .line 16
-    new-instance v0, Lcom/github/tvbox/osc/ui/dialog/t0;
+    goto :goto_0
 
     .line 17
-    .line 18
-    const/4 v1, 0x1
+    :cond_0
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
 
+    .line 18
     .line 19
-    invoke-direct {v0, p0, v1}, Lcom/github/tvbox/osc/ui/dialog/t0;-><init>(Landroid/view/KeyEvent$Callback;I)V
+    if-eqz v0, :cond_1
 
     .line 20
     .line 21
-    .line 22
-    invoke-virtual {p1, v0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {p1}, Landroid/view/View;->isFocusable()Z
 
+    .line 22
     .line 23
     .line 24
+    move-result v0
+
     .line 25
-    :cond_0
-    invoke-virtual {p1}, Landroid/view/View;->isFocusable()Z
+    if-eqz v0, :cond_1
 
     .line 26
     .line 27
+    invoke-virtual {p1, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
+
     .line 28
-    move-result v0
-
     .line 29
-    if-eqz v0, :cond_1
-
     .line 30
-    .line 31
-    invoke-virtual {p1}, Landroid/view/View;->getOnFocusChangeListener()Landroid/view/View$OnFocusChangeListener;
+    :cond_1
+    :goto_0
+    invoke-virtual {p1}, Landroid/view/View;->isClickable()Z
 
+    .line 31
     .line 32
     .line 33
+    move-result v0
+
     .line 34
-    move-result-object v0
+    if-eqz v0, :cond_2
 
     .line 35
-    if-nez v0, :cond_1
-
     .line 36
-    .line 37
-    invoke-virtual {p1, p0}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-static {p1}, Landroidx/core/view/ViewCompat;->hasOnClickListeners(Landroid/view/View;)Z
 
+    .line 37
     .line 38
     .line 39
+    move-result v0
+
     .line 40
-    :cond_1
+    if-nez v0, :cond_2
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 43
+    .line 44
+    .line 45
+    new-instance v0, Lb2/m;
+
+    .line 46
+    .line 47
+    invoke-direct {v0, p0, v1}, Lb2/m;-><init>(Ljava/lang/Object;I)V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {p1, v0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+
+    .line 51
+    .line 52
+    .line 53
+    :cond_2
+    invoke-virtual {p1}, Landroid/view/View;->isFocusable()Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v0
+
+    .line 57
+    if-eqz v0, :cond_3
+
+    .line 58
+    .line 59
+    invoke-virtual {p1}, Landroid/view/View;->getOnFocusChangeListener()Landroid/view/View$OnFocusChangeListener;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v0
+
+    .line 63
+    if-nez v0, :cond_3
+
+    .line 64
+    .line 65
+    invoke-virtual {p1, p0}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+
+    .line 66
+    .line 67
+    .line 68
+    :cond_3
     return-void
 .end method
 
@@ -2967,7 +3878,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
     .line 2
     .line 3
@@ -2987,7 +3898,7 @@
     move-result v1
 
     .line 11
-    invoke-interface {v0, p1, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;->a(Landroid/view/View;I)V
+    invoke-interface {v0, p1, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;->a(Landroid/view/View;I)V
 
     .line 12
     .line 13
@@ -3067,7 +3978,7 @@
     .line 33
     .line 34
     :cond_1
-    iget-object p2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+    iget-object p2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
     .line 35
     .line 36
@@ -3075,7 +3986,7 @@
 
     .line 37
     .line 38
-    invoke-interface {p2, p1, v0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;->b(Landroid/view/View;I)V
+    invoke-interface {p2, p1, v0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;->c(Landroid/view/View;I)V
 
     .line 39
     .line 40
@@ -3102,7 +4013,7 @@
     .line 50
     .line 51
     .line 52
-    iget-object p2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+    iget-object p2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
     .line 53
     .line 54
@@ -3114,7 +4025,7 @@
 
     .line 57
     .line 58
-    invoke-interface {p2, p1, v0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;->c(Landroid/view/View;I)V
+    invoke-interface {p2, p1, v0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;->b(Landroid/view/View;I)V
 
     .line 59
     .line 60
@@ -3176,11 +4087,11 @@
 
     .line 20
     .line 21
-    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Z
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->x:Z
 
     .line 22
     .line 23
-    iget-boolean v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->t:Z
+    iget-boolean v2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->y:Z
 
     .line 24
     .line 25
@@ -3215,7 +4126,7 @@
     .line 37
     .line 38
     .line 39
-    iput-boolean v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Z
+    iput-boolean v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->x:Z
 
     .line 40
     .line 41
@@ -3842,378 +4753,72 @@
     .line 5
     .line 6
     .line 7
-    :cond_0
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->onScrollStateChanged(I)V
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
 
     .line 8
     .line 9
+    if-eqz v0, :cond_0
+
     .line 10
-    return-void
-.end method
-
-.method public final requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
-    .locals 4
-
-    .line 1
-    const/4 p2, 0x0
-
-    .line 2
-    if-eqz p1, :cond_8
-
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p3
-
-    .line 8
-    if-nez p3, :cond_0
-
-    .line 9
-    .line 10
-    goto/16 :goto_5
-
     .line 11
+    iget-boolean v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->q:Z
+
     .line 12
-    :cond_0
-    iget-boolean p3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->g:Z
-
     .line 13
+    if-eqz v0, :cond_0
+
     .line 14
-    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->q:Landroid/graphics/Rect;
-
     .line 15
-    .line 16
-    if-eqz p3, :cond_2
+    invoke-virtual {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->k()V
 
+    .line 16
     .line 17
     .line 18
-    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
+    :cond_0
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->onScrollStateChanged(I)V
 
     .line 19
     .line 20
     .line 21
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+    return-void
+.end method
 
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p3
+.method public final requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
+    .locals 0
 
-    .line 25
-    invoke-virtual {p3}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollHorizontally()Z
+    .line 1
+    iget-boolean p2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
 
-    .line 26
-    .line 27
-    .line 28
-    move-result p3
+    .line 2
+    .line 3
+    if-eqz p2, :cond_0
 
-    .line 29
-    if-eqz p3, :cond_1
+    .line 4
+    .line 5
+    iget-boolean p2, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->p:Z
 
-    .line 30
-    .line 31
-    invoke-direct {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFreeWidth()I
+    .line 6
+    .line 7
+    if-eqz p2, :cond_0
 
-    .line 32
-    .line 33
-    .line 34
-    move-result p3
+    .line 8
+    .line 9
+    const/4 p1, 0x0
 
-    .line 35
-    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
+    .line 10
+    return p1
 
-    .line 36
-    .line 37
-    .line 38
-    move-result v1
+    .line 11
+    :cond_0
+    invoke-virtual {p0, p1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e(Landroid/view/View;)Z
 
-    .line 39
-    :goto_0
-    sub-int/2addr p3, v1
-
-    .line 40
-    goto :goto_1
-
-    .line 41
-    :cond_1
-    invoke-direct {p0}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->getFreeHeight()I
-
-    .line 42
-    .line 43
-    .line 44
-    move-result p3
-
-    .line 45
-    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v1
-
-    .line 49
-    goto :goto_0
-
-    .line 50
-    :goto_1
-    div-int/lit8 p3, p3, 0x2
-
-    .line 51
-    .line 52
-    iput p3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e:I
-
-    .line 53
-    .line 54
-    iput p3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f:I
-
-    .line 55
-    .line 56
-    :cond_2
-    iget p3, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e:I
-
-    .line 57
-    .line 58
-    iget v1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->f:I
-
-    .line 59
-    .line 60
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v2
-
-    .line 64
-    if-eqz v2, :cond_5
-
-    .line 65
-    .line 66
-    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object p1
-
-    .line 73
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollHorizontally()Z
-
-    .line 74
-    .line 75
-    .line 76
+    .line 12
+    .line 13
+    .line 14
     move-result p1
 
-    .line 77
-    if-eqz p1, :cond_3
-
-    .line 78
-    .line 79
-    iget p1, v0, Landroid/graphics/Rect;->right:I
-
-    .line 80
-    .line 81
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
-
-    .line 82
-    .line 83
-    .line 84
-    move-result v2
-
-    .line 85
-    add-int/2addr v2, p1
-
-    .line 86
-    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
-
-    .line 87
-    .line 88
-    .line 89
-    move-result p1
-
-    .line 90
-    sub-int/2addr v2, p1
-
-    .line 91
-    iget p1, v0, Landroid/graphics/Rect;->left:I
-
-    .line 92
-    .line 93
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
-
-    .line 94
-    .line 95
-    .line 96
-    move-result v3
-
-    .line 97
-    sub-int/2addr p1, v3
-
-    .line 98
-    invoke-virtual {p0, p1, v2, p3, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e(IIII)I
-
-    .line 99
-    .line 100
-    .line 101
-    move-result p1
-
-    .line 102
-    goto :goto_2
-
-    .line 103
-    :cond_3
-    move p1, p2
-
-    .line 104
-    :goto_2
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v2
-
-    .line 108
-    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v2
-
-    .line 112
-    if-eqz v2, :cond_4
-
-    .line 113
-    .line 114
-    iget v2, v0, Landroid/graphics/Rect;->bottom:I
-
-    .line 115
-    .line 116
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
-
-    .line 117
-    .line 118
-    .line 119
-    move-result v3
-
-    .line 120
-    add-int/2addr v3, v2
-
-    .line 121
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
-
-    .line 122
-    .line 123
-    .line 124
-    move-result v2
-
-    .line 125
-    sub-int/2addr v3, v2
-
-    .line 126
-    iget v0, v0, Landroid/graphics/Rect;->top:I
-
-    .line 127
-    .line 128
-    invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
-
-    .line 129
-    .line 130
-    .line 131
-    move-result v2
-
-    .line 132
-    sub-int/2addr v0, v2
-
-    .line 133
-    invoke-virtual {p0, v0, v3, p3, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->e(IIII)I
-
-    .line 134
-    .line 135
-    .line 136
-    move-result p3
-
-    .line 137
-    goto :goto_3
-
-    .line 138
-    :cond_4
-    move p3, p2
-
-    .line 139
-    goto :goto_3
-
-    .line 140
-    :cond_5
-    move p1, p2
-
-    .line 141
-    move p3, p1
-
-    .line 142
-    :goto_3
-    filled-new-array {p1, p3}, [I
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object p1
-
-    .line 146
-    aget p3, p1, p2
-
-    .line 147
-    .line 148
-    const/4 v0, 0x1
-
-    .line 149
-    aget p1, p1, v0
-
-    .line 150
-    .line 151
-    invoke-virtual {p0, p3, p1}, Landroidx/recyclerview/widget/RecyclerView;->smoothScrollBy(II)V
-
-    .line 152
-    .line 153
-    .line 154
-    if-nez p3, :cond_7
-
-    .line 155
-    .line 156
-    if-eqz p1, :cond_6
-
-    .line 157
-    .line 158
-    goto :goto_4
-
-    .line 159
-    :cond_6
-    invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
-
-    .line 160
-    .line 161
-    .line 162
-    return p2
-
-    .line 163
-    :cond_7
-    :goto_4
-    return v0
-
-    .line 164
-    :cond_8
-    :goto_5
-    return p2
+    .line 15
+    return p1
 .end method
 
 .method public final scrollToPosition(I)V
@@ -4227,7 +4832,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {p0, p1, v0, v1, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->h(IIZZ)V
+    invoke-virtual {p0, p1, v0, v1, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->i(IIZZ)V
 
     .line 5
     .line 6
@@ -4247,7 +4852,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->g(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+    invoke-virtual {p0, p1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->h(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
     .line 5
     .line 6
@@ -4257,6 +4862,83 @@
     .line 8
     .line 9
     .line 10
+    return-void
+.end method
+
+.method public setContentSingleTapMode(Z)V
+    .locals 4
+
+    .line 1
+    iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->o:Z
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_1
+
+    .line 4
+    .line 5
+    const/4 p1, 0x0
+
+    .line 6
+    invoke-virtual {p0, p1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    move v1, p1
+
+    .line 14
+    :goto_0
+    if-ge v1, v0, :cond_1
+
+    .line 15
+    .line 16
+    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v2
+
+    .line 20
+    if-eqz v2, :cond_0
+
+    .line 21
+    .line 22
+    invoke-virtual {v2}, Landroid/view/View;->isFocusable()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v3
+
+    .line 26
+    if-eqz v3, :cond_0
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, p1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
+
+    .line 29
+    .line 30
+    .line 31
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_1
     return-void
 .end method
 
@@ -4373,6 +5055,17 @@
     return-void
 .end method
 
+.method public setLeanbackTouchMode(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
 .method public setLoadMoreBeforehandCount(I)V
     .locals 0
 
@@ -4406,40 +5099,40 @@
     return-void
 .end method
 
-.method public setOnInBorderKeyEventListener(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;)V
+.method public setOnInBorderKeyEventListener(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->p:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$d;
+    iput-object p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->u:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public setOnItemListener(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;)V
+.method public setOnItemListener(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->n:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+    iput-object p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public setOnItemLongListener(La3/a;)V
+.method public setOnItemLongListener(Lk3/a;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->o:La3/a;
+    iput-object p1, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->t:Lk3/a;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public setOnLoadMoreListener(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;)V
+.method public setOnLoadMoreListener(Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;)V
     .locals 0
 
     return-void
@@ -4528,7 +5221,7 @@
 
     .line 17
     .line 18
-    new-instance v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;
+    new-instance v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;
 
     .line 19
     .line 20
@@ -4556,7 +5249,7 @@
     move-object v2, p0
 
     .line 30
-    invoke-direct/range {v1 .. v6}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$g;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;Landroid/content/Context;ZZI)V
+    invoke-direct/range {v1 .. v6}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView$h;-><init>(Lcom/owen/tvrecyclerview/widget/TvRecyclerView;Landroid/content/Context;ZZI)V
 
     .line 31
     .line 32
@@ -4613,7 +5306,7 @@
     .line 11
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->u:Landroid/graphics/Point;
+    iget-object v0, p0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->z:Landroid/graphics/Point;
 
     .line 12
     .line 13
@@ -4650,7 +5343,7 @@
     const/4 v2, 0x0
 
     .line 5
-    invoke-virtual {p0, p1, v0, v2, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->h(IIZZ)V
+    invoke-virtual {p0, p1, v0, v2, v1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->i(IIZZ)V
 
     .line 6
     .line 7
@@ -4670,7 +5363,7 @@
 
     .line 4
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->g(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+    invoke-virtual {p0, p1}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->h(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
     .line 5
     .line 6

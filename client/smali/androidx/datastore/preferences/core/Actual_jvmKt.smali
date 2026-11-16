@@ -36,7 +36,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lkotlin/collections/q;->q0(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {p0}, Lkotlin/collections/p;->O(Ljava/lang/Iterable;)Ljava/util/Set;
 
     .line 7
     .line 8
@@ -44,7 +44,7 @@
     move-result-object p0
 
     .line 10
-    invoke-static {p0}, Lj$/util/DesugarCollections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
 
     .line 11
     .line 12
@@ -90,7 +90,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lj$/util/DesugarCollections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     .line 7
     .line 8
@@ -110,13 +110,17 @@
     return-object p0
 .end method
 
-.method public static final ioDispatcher()Lkotlinx/coroutines/y;
+.method public static final ioDispatcher()Ln4/b0;
     .locals 1
 
     .line 1
-    sget-object v0, Lkotlinx/coroutines/n0;->b:Li4/b;
+    sget-object v0, Ln4/r0;->a:Lr4/c;
 
     .line 2
     .line 3
+    sget-object v0, Lr4/b;->a:Lr4/b;
+
+    .line 4
+    .line 5
     return-object v0
 .end method

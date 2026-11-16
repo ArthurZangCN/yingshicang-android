@@ -118,11 +118,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/common/util/BackgroundThreadStateHandler;Lcom/google/common/base/e;)V
+.method public static synthetic a(Landroidx/media3/common/util/BackgroundThreadStateHandler;Lcom/google/common/base/f;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->lambda$updateStateAsync$1(Lcom/google/common/base/e;)V
+    invoke-direct {p0, p1}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->lambda$updateStateAsync$1(Lcom/google/common/base/f;)V
 
     return-void
 .end method
@@ -195,7 +195,7 @@
     return-void
 .end method
 
-.method private synthetic lambda$updateStateAsync$1(Lcom/google/common/base/e;)V
+.method private synthetic lambda$updateStateAsync$1(Lcom/google/common/base/f;)V
     .locals 2
 
     .line 1
@@ -203,7 +203,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1, v0}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v0}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -215,14 +215,14 @@
 
     .line 8
     .line 9
-    new-instance v0, Landroidx/core/content/res/a;
+    new-instance v0, Landroidx/lifecycle/b;
 
     .line 10
     .line 11
-    const/4 v1, 0x1
+    const/4 v1, 0x2
 
     .line 12
-    invoke-direct {v0, v1, p0, p1}, Landroidx/core/content/res/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, v1}, Landroidx/lifecycle/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 13
     .line 14
@@ -399,7 +399,7 @@
 
     .line 27
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 28
     .line 29
@@ -476,14 +476,14 @@
 
     .line 2
     .line 3
-    new-instance v0, Landroidx/media3/common/util/a;
+    new-instance v0, Landroidx/media3/common/util/g;
 
     .line 4
     .line 5
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 6
-    invoke-direct {v0, v1, p0, p1}, Landroidx/media3/common/util/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, v1}, Landroidx/media3/common/util/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 7
     .line 8
@@ -496,14 +496,14 @@
     return-void
 .end method
 
-.method public updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
-    .locals 3
+.method public updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "TT;TT;>;",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "TT;TT;>;)V"
         }
     .end annotation
@@ -529,48 +529,48 @@
     move-result-object v1
 
     .line 11
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 12
-    if-ne v0, v1, :cond_0
+    const/4 v3, 0x1
 
     .line 13
-    .line 14
-    move v0, v2
+    if-ne v0, v1, :cond_0
 
+    .line 14
     .line 15
-    goto :goto_0
+    move v0, v3
 
     .line 16
-    :cond_0
-    const/4 v0, 0x0
+    goto :goto_0
 
     .line 17
-    :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    :cond_0
+    move v0, v2
 
     .line 18
+    :goto_0
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
+
     .line 19
     .line 20
+    .line 21
     iget v0, p0, Landroidx/media3/common/util/BackgroundThreadStateHandler;->pendingOperations:I
 
-    .line 21
     .line 22
-    add-int/2addr v0, v2
-
     .line 23
-    iput v0, p0, Landroidx/media3/common/util/BackgroundThreadStateHandler;->pendingOperations:I
+    add-int/2addr v0, v3
 
     .line 24
+    iput v0, p0, Landroidx/media3/common/util/BackgroundThreadStateHandler;->pendingOperations:I
+
     .line 25
-    new-instance v0, Le/b;
-
     .line 26
-    .line 27
-    const/4 v1, 0x2
+    new-instance v0, Landroidx/media3/common/util/a;
 
+    .line 27
     .line 28
-    invoke-direct {v0, v1, p0, p2}, Le/b;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p2, v2}, Landroidx/media3/common/util/a;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 29
     .line 30
@@ -584,7 +584,7 @@
 
     .line 35
     .line 36
-    invoke-interface {p1, p2}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p2}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 37
     .line 38

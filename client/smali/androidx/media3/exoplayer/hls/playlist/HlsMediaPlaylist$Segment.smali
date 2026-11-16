@@ -55,7 +55,7 @@
     const/16 v16, 0x0
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v17
 
@@ -149,7 +149,7 @@
     iput-object v1, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$Segment;->title:Ljava/lang/String;
 
     .line 5
-    invoke-static/range {p17 .. p17}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static/range {p17 .. p17}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object v1
 

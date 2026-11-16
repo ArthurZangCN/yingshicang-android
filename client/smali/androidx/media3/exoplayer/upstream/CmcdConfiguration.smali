@@ -149,7 +149,7 @@
     move v3, v2
 
     :goto_1
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     if-eqz p2, :cond_2
 
@@ -164,7 +164,7 @@
     move v0, v2
 
     :cond_3
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 5
     invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

@@ -388,7 +388,7 @@
 
     .line 58
     .line 59
-    invoke-static {v4}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 60
     .line 61

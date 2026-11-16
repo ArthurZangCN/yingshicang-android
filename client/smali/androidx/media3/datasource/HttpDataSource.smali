@@ -21,13 +21,13 @@
 
 
 # static fields
-.field public static final REJECT_PAYWALL_TYPES:Lcom/google/common/base/k;
+.field public static final REJECT_PAYWALL_TYPES:Lcom/google/common/base/m;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/k<",
+            "Lcom/google/common/base/m<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -52,7 +52,7 @@
     .line 5
     .line 6
     .line 7
-    sput-object v0, Landroidx/media3/datasource/HttpDataSource;->REJECT_PAYWALL_TYPES:Lcom/google/common/base/k;
+    sput-object v0, Landroidx/media3/datasource/HttpDataSource;->REJECT_PAYWALL_TYPES:Lcom/google/common/base/m;
 
     .line 8
     .line 9

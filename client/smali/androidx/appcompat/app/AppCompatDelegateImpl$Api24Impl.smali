@@ -45,7 +45,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroid/support/v4/media/b;->h(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
+    invoke-static {p0}, Landroid/support/v4/media/b;->e(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
 
     .line 2
     .line 3
@@ -53,7 +53,7 @@
     move-result-object p0
 
     .line 5
-    invoke-static {p1}, Landroid/support/v4/media/b;->h(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
+    invoke-static {p1}, Landroid/support/v4/media/b;->e(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
 
     .line 6
     .line 7
@@ -61,7 +61,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0, p0}, Landroid/support/v4/media/c;->y(Ljava/lang/Object;Landroid/os/LocaleList;)Z
+    invoke-static {v0, p0}, Landroid/support/v4/media/c;->A(Ljava/lang/Object;Landroid/os/LocaleList;)Z
 
     .line 10
     .line 11
@@ -73,7 +73,7 @@
 
     .line 14
     .line 15
-    invoke-static {p2, v0}, Landroidx/appcompat/app/c;->m(Landroid/content/res/Configuration;Landroid/os/LocaleList;)V
+    invoke-static {p2, v0}, Landroid/support/v4/media/session/b;->q(Landroid/content/res/Configuration;Landroid/os/LocaleList;)V
 
     .line 16
     .line 17
@@ -96,7 +96,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroid/support/v4/media/b;->h(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
+    invoke-static {p0}, Landroid/support/v4/media/b;->e(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
 
     .line 2
     .line 3
@@ -104,7 +104,7 @@
     move-result-object p0
 
     .line 5
-    invoke-static {p0}, Landroid/support/v4/media/b;->k(Landroid/os/LocaleList;)Ljava/lang/String;
+    invoke-static {p0}, Landroid/support/v4/media/session/e;->j(Landroid/os/LocaleList;)Ljava/lang/String;
 
     .line 6
     .line 7
@@ -137,7 +137,7 @@
     move-result-object p0
 
     .line 5
-    invoke-static {p0}, Landroid/support/v4/media/session/b;->j(Ljava/lang/String;)Landroid/os/LocaleList;
+    invoke-static {p0}, Landroid/support/v4/media/session/c;->k(Ljava/lang/String;)Landroid/os/LocaleList;
 
     .line 6
     .line 7
@@ -145,7 +145,7 @@
     move-result-object p0
 
     .line 9
-    invoke-static {p0}, Landroid/support/v4/media/session/c;->q(Landroid/os/LocaleList;)V
+    invoke-static {p0}, Landroid/support/v4/media/session/d;->v(Landroid/os/LocaleList;)V
 
     .line 10
     .line 11
@@ -167,7 +167,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Landroid/support/v4/media/session/b;->j(Ljava/lang/String;)Landroid/os/LocaleList;
+    invoke-static {p1}, Landroid/support/v4/media/session/c;->k(Ljava/lang/String;)Landroid/os/LocaleList;
 
     .line 6
     .line 7
@@ -175,7 +175,7 @@
     move-result-object p1
 
     .line 9
-    invoke-static {p0, p1}, Landroidx/appcompat/app/c;->m(Landroid/content/res/Configuration;Landroid/os/LocaleList;)V
+    invoke-static {p0, p1}, Landroid/support/v4/media/session/b;->q(Landroid/content/res/Configuration;Landroid/os/LocaleList;)V
 
     .line 10
     .line 11

@@ -226,7 +226,7 @@
     move-result-object p0
 
     .line 13
-    invoke-static {p0}, Landroidx/core/app/g;->e(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
+    invoke-static {p0}, Landroidx/core/content/pm/a;->f(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
 
     .line 14
     .line 15
@@ -510,7 +510,7 @@
 
     .line 80
     .line 81
-    invoke-static {p2, p1}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 82
     .line 83
@@ -535,7 +535,7 @@
 
     .line 92
     .line 93
-    invoke-static {p2, p1}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 94
     .line 95

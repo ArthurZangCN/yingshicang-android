@@ -1,8 +1,8 @@
 # 影视仓 Android（魔改版工程）
 
-基于本机 `影视仓_6.1.8_opt.apk`（`com.github.tvbox.osc`，4×DEX）的 **apktool 解包工程**，用于 NAS 直播对齐 DSMTV、aipan 点播、NAS OTA 等改造。
+基于 `tools/影视仓_6.2.5_64位.apk`（`com.github.tvbox.osc`，3×DEX）的 **apktool 解包工程**，用于 NAS 直播对齐 DSMTV、aipan 点播、NAS OTA 等改造。
 
-与 [yingshicang-win](https://github.com/ArthurZangCN/yingshicang-win) 的关系：Win 端由 **6.2.3** 静态分析实现协议面；本仓库基线 APK 为 **6.1.8 opt**（`D:\down\影视仓_6.1.8_opt.apk`）。包结构一致，改造时以 smali 行为为准，必要时再换 6.2.3 基线。
+与 [yingshicang-win](https://github.com/ArthurZangCN/yingshicang-win) 的关系：Win 端由 **6.2.3** 静态分析实现协议面；本 Android 基线为 **6.2.5 64 位**，与 Win 同系版本，更利于行为对齐。
 
 ## 目录
 
@@ -15,7 +15,7 @@
 
 ## 反编译是否「完整」
 
-- **工程面**：apktool 已解出 `AndroidManifest`、资源、`assets`、`lib/arm64-v8a`、**classes.dex～4 → smali～smali_classes4**（约 243MB 树），满足 **smali 级修改 + 回编译 + 重签名**。
+- **工程面**：apktool 已解出 `AndroidManifest`、资源、`assets`、`lib/arm64-v8a`、**classes.dex～3 → smali～smali_classes3**（约 292MB 树），满足 **smali 级修改 + 回编译 + 重签名**。
 - **不是**：可读的 **Java/Kotlin 源码树**（Kotlin 多为 smali + 部分 `kotlin/` 元数据）；混淆名会保留。
 - **官方 OTA** 仍指向 `api.montain.top`（见 `Epginfo` 常量），魔改需改 NAS `getver` 或关原检查。
 

@@ -112,7 +112,7 @@
 
     .line 31
     .line 32
-    sget-object p1, Lkotlin/collections/s;->INSTANCE:Lkotlin/collections/s;
+    sget-object p1, Lkotlin/collections/r;->INSTANCE:Lkotlin/collections/r;
 
     .line 33
     .line 34

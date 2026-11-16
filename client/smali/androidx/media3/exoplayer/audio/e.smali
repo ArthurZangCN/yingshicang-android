@@ -7,29 +7,29 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic b:I
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final synthetic c:J
 
-.field public final synthetic d:Ljava/lang/Object;
+.field public final synthetic d:J
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;IJJ)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Landroidx/media3/exoplayer/audio/e;->a:I
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/e;->a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/audio/e;->b:Ljava/lang/Object;
+    iput p2, p0, Landroidx/media3/exoplayer/audio/e;->b:I
 
-    iput-object p3, p0, Landroidx/media3/exoplayer/audio/e;->c:Ljava/lang/Object;
+    iput-wide p3, p0, Landroidx/media3/exoplayer/audio/e;->c:J
 
-    iput-object p4, p0, Landroidx/media3/exoplayer/audio/e;->d:Ljava/lang/Object;
+    iput-wide p5, p0, Landroidx/media3/exoplayer/audio/e;->d:J
 
     return-void
 .end method
@@ -37,80 +37,18 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 6
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/audio/e;->a:I
+    iget-wide v2, p0, Landroidx/media3/exoplayer/audio/e;->c:J
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/e;->d:Ljava/lang/Object;
+    iget-wide v4, p0, Landroidx/media3/exoplayer/audio/e;->d:J
 
-    iget-object v2, p0, Landroidx/media3/exoplayer/audio/e;->c:Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/e;->a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
-    iget-object v3, p0, Landroidx/media3/exoplayer/audio/e;->b:Ljava/lang/Object;
+    iget v1, p0, Landroidx/media3/exoplayer/audio/e;->b:I
 
-    packed-switch v0, :pswitch_data_0
-
-    check-cast v3, Landroidx/room/QueryInterceptorDatabase;
-
-    check-cast v2, Landroidx/sqlite/db/SupportSQLiteQuery;
-
-    check-cast v1, Landroidx/room/QueryInterceptorProgram;
-
-    invoke-static {v3, v2, v1}, Landroidx/room/QueryInterceptorDatabase;->p(Landroidx/room/QueryInterceptorDatabase;Landroidx/sqlite/db/SupportSQLiteQuery;Landroidx/room/QueryInterceptorProgram;)V
+    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->b(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;IJJ)V
 
     return-void
-
-    :pswitch_0
-    check-cast v3, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
-
-    check-cast v2, Landroidx/media3/common/Format;
-
-    check-cast v1, Landroidx/media3/exoplayer/DecoderReuseEvaluation;
-
-    invoke-static {v3, v2, v1}, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;->h(Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;)V
-
-    return-void
-
-    :pswitch_1
-    check-cast v3, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;
-
-    check-cast v2, Lcom/google/common/util/concurrent/x;
-
-    check-cast v1, Landroidx/media3/exoplayer/drm/DrmSession;
-
-    invoke-static {v1, v3, v2}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->c(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/x;)V
-
-    return-void
-
-    :pswitch_2
-    check-cast v3, Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;
-
-    check-cast v2, Landroidx/media3/exoplayer/drm/DrmSessionEventListener;
-
-    check-cast v1, Ljava/lang/Exception;
-
-    invoke-static {v3, v2, v1}, Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;->d(Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/exoplayer/drm/DrmSessionEventListener;Ljava/lang/Exception;)V
-
-    return-void
-
-    :pswitch_3
-    check-cast v3, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
-
-    check-cast v2, Landroidx/media3/common/Format;
-
-    check-cast v1, Landroidx/media3/exoplayer/DecoderReuseEvaluation;
-
-    invoke-static {v3, v2, v1}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->i(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

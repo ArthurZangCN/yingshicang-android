@@ -3,17 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/core/view/OnReceiveContentViewBehavior;
+.implements Landroid/view/View$OnUnhandledKeyEventListener;
 
 
-# virtual methods
-.method public final onReceiveContent(Landroidx/core/view/ContentInfoCompat;)Landroidx/core/view/ContentInfoCompat;
+# instance fields
+.field public final synthetic a:Landroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;)V
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/core/view/ViewCompat;->a(Landroidx/core/view/ContentInfoCompat;)Landroidx/core/view/ContentInfoCompat;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p1
+    iput-object p1, p0, Landroidx/core/view/t;->a:Landroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;
 
-    return-object p1
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onUnhandledKeyEvent(Landroid/view/View;Landroid/view/KeyEvent;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/t;->a:Landroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;
+
+    invoke-interface {v0, p1, p2}, Landroidx/core/view/ViewCompat$OnUnhandledKeyEventListenerCompat;->onUnhandledKeyEvent(Landroid/view/View;Landroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    return p1
 .end method

@@ -6,10 +6,10 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/concurrent/futures/CallbackToFutureAdapter$FutureGarbageCollectedException;,
         Landroidx/concurrent/futures/CallbackToFutureAdapter$Completer;,
         Landroidx/concurrent/futures/CallbackToFutureAdapter$SafeFuture;,
-        Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver;
+        Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver;,
+        Landroidx/concurrent/futures/CallbackToFutureAdapter$FutureGarbageCollectedException;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
     return-void
 .end method
 
-.method public static getFuture(Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver;)Lcom/google/common/util/concurrent/t;
+.method public static getFuture(Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver;)Lcom/google/common/util/concurrent/x;
     .locals 3
     .param p0    # Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver;
         .annotation build Landroidx/annotation/NonNull;
@@ -43,7 +43,7 @@
             ">(",
             "Landroidx/concurrent/futures/CallbackToFutureAdapter$Resolver<",
             "TT;>;)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "TT;>;"
         }
     .end annotation

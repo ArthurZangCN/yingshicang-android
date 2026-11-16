@@ -108,9 +108,9 @@
 .method public static constructor <clinit>()V
     .locals 5
 
-    const v0, 0x7f0403f0
+    const v0, 0x7f040408
 
-    const v1, 0x7f04046f
+    const v1, 0x7f040487
 
     filled-new-array {v0, v1}, [I
 
@@ -192,7 +192,7 @@
         0x7f040235
         0x7f040236
         0x7f040237
-        0x7f040591
+        0x7f0405a9
     .end array-data
 
     :array_2

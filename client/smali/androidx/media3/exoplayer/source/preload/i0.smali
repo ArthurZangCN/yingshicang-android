@@ -9,11 +9,9 @@
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
 
-.field public final synthetic b:J
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;J)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
     .locals 0
 
     .line 1
@@ -21,22 +19,18 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/i0;->a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
 
-    iput-wide p2, p0, Landroidx/media3/exoplayer/source/preload/i0;->b:J
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/i0;->a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
 
-    iget-wide v1, p0, Landroidx/media3/exoplayer/source/preload/i0;->b:J
-
-    invoke-static {v0, v1, v2}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->e(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;J)V
+    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->c(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
 
     return-void
 .end method

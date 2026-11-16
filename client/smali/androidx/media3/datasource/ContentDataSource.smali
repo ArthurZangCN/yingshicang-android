@@ -419,7 +419,7 @@
 
     .line 25
     .line 26
-    invoke-static {v5, v6}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 27
     .line 28
@@ -648,276 +648,268 @@
     move-result-object v2
 
     .line 134
-    invoke-static {v2}, Lj$/nio/channels/DesugarChannels;->convertMaybeLegacyFileChannelFromLibrary(Ljava/nio/channels/FileChannel;)Ljava/nio/channels/FileChannel;
+    invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->size()J
 
     .line 135
     .line 136
     .line 137
-    move-result-object v2
+    move-result-wide v6
 
     .line 138
-    invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->size()J
+    cmp-long v4, v6, v13
 
     .line 139
     .line 140
-    .line 141
-    move-result-wide v6
+    if-nez v4, :cond_3
 
+    .line 141
     .line 142
-    cmp-long v4, v6, v13
+    iput-wide v9, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
 
     .line 143
     .line 144
-    if-nez v4, :cond_3
-
-    .line 145
-    .line 146
-    iput-wide v9, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
-
-    .line 147
-    .line 148
     goto :goto_2
 
-    .line 149
+    .line 145
     :cond_3
     invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->position()J
 
-    .line 150
-    .line 151
-    .line 152
+    .line 146
+    .line 147
+    .line 148
     move-result-wide v15
 
-    .line 153
+    .line 149
     sub-long/2addr v6, v15
 
-    .line 154
+    .line 150
     iput-wide v6, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
+
+    .line 151
+    .line 152
+    cmp-long v2, v6, v13
+
+    .line 153
+    .line 154
+    if-ltz v2, :cond_4
 
     .line 155
     .line 156
-    cmp-long v2, v6, v13
-
-    .line 157
-    .line 158
-    if-ltz v2, :cond_4
-
-    .line 159
-    .line 160
     goto :goto_2
 
-    .line 161
+    .line 157
     :cond_4
     new-instance v0, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;
 
-    .line 162
-    .line 163
+    .line 158
+    .line 159
     invoke-direct {v0, v12, v11}, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;-><init>(Ljava/io/IOException;I)V
 
-    .line 164
-    .line 165
-    .line 166
+    .line 160
+    .line 161
+    .line 162
     throw v0
 
-    .line 167
+    .line 163
     :cond_5
     sub-long v7, v15, v6
 
-    .line 168
-    .line 169
+    .line 164
+    .line 165
     iput-wide v7, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
     :try_end_0
     .catch Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 170
-    .line 171
+    .line 166
+    .line 167
     cmp-long v2, v7, v13
 
-    .line 172
-    .line 173
+    .line 168
+    .line 169
     if-ltz v2, :cond_9
 
-    .line 174
-    .line 175
+    .line 170
+    .line 171
     :goto_2
     iget-wide v2, v0, Landroidx/media3/datasource/DataSpec;->length:J
 
+    .line 172
+    .line 173
+    cmp-long v4, v2, v9
+
+    .line 174
+    .line 175
+    if-eqz v4, :cond_7
+
     .line 176
     .line 177
-    cmp-long v4, v2, v9
+    iget-wide v6, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
 
     .line 178
     .line 179
-    if-eqz v4, :cond_7
+    cmp-long v4, v6, v9
 
     .line 180
     .line 181
-    iget-wide v6, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
+    if-nez v4, :cond_6
 
     .line 182
     .line 183
-    cmp-long v4, v6, v9
-
-    .line 184
-    .line 185
-    if-nez v4, :cond_6
-
-    .line 186
-    .line 187
     goto :goto_3
 
-    .line 188
+    .line 184
     :cond_6
     invoke-static {v6, v7, v2, v3}, Ljava/lang/Math;->min(JJ)J
 
-    .line 189
-    .line 190
-    .line 191
+    .line 185
+    .line 186
+    .line 187
     move-result-wide v2
 
-    .line 192
+    .line 188
     :goto_3
     iput-wide v2, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
 
-    .line 193
-    .line 194
+    .line 189
+    .line 190
     :cond_7
     const/4 v2, 0x1
 
-    .line 195
+    .line 191
     iput-boolean v2, v1, Landroidx/media3/datasource/ContentDataSource;->opened:Z
 
-    .line 196
-    .line 197
+    .line 192
+    .line 193
     invoke-virtual/range {p0 .. p1}, Landroidx/media3/datasource/BaseDataSource;->transferStarted(Landroidx/media3/datasource/DataSpec;)V
 
+    .line 194
+    .line 195
+    .line 196
+    iget-wide v2, v0, Landroidx/media3/datasource/DataSpec;->length:J
+
+    .line 197
     .line 198
+    cmp-long v0, v2, v9
+
     .line 199
     .line 200
-    iget-wide v2, v0, Landroidx/media3/datasource/DataSpec;->length:J
+    if-eqz v0, :cond_8
 
     .line 201
     .line 202
-    cmp-long v0, v2, v9
-
-    .line 203
-    .line 204
-    if-eqz v0, :cond_8
-
-    .line 205
-    .line 206
     goto :goto_4
 
-    .line 207
+    .line 203
     :cond_8
     iget-wide v2, v1, Landroidx/media3/datasource/ContentDataSource;->bytesRemaining:J
 
-    .line 208
-    .line 209
+    .line 204
+    .line 205
     :goto_4
     return-wide v2
 
-    .line 210
+    .line 206
     :cond_9
     :try_start_1
     new-instance v0, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;
 
-    .line 211
-    .line 212
+    .line 207
+    .line 208
     invoke-direct {v0, v12, v11}, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;-><init>(Ljava/io/IOException;I)V
 
-    .line 213
-    .line 214
-    .line 215
+    .line 209
+    .line 210
+    .line 211
     throw v0
 
-    .line 216
+    .line 212
     :cond_a
     new-instance v0, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;
 
-    .line 217
-    .line 218
+    .line 213
+    .line 214
     invoke-direct {v0, v12, v11}, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;-><init>(Ljava/io/IOException;I)V
 
-    .line 219
-    .line 220
-    .line 221
+    .line 215
+    .line 216
+    .line 217
     throw v0
 
-    .line 222
+    .line 218
     :cond_b
     new-instance v0, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;
 
+    .line 219
+    .line 220
+    new-instance v5, Ljava/io/IOException;
+
+    .line 221
+    .line 222
+    new-instance v6, Ljava/lang/StringBuilder;
+
     .line 223
     .line 224
-    new-instance v5, Ljava/io/IOException;
+    invoke-direct {v6, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 225
     .line 226
-    new-instance v6, Ljava/lang/StringBuilder;
-
     .line 227
-    .line 228
-    invoke-direct {v6, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 229
-    .line 230
-    .line 231
     invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 228
+    .line 229
+    .line 230
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 231
     .line 232
     .line 233
+    move-result-object v2
+
     .line 234
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v5, v2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
     .line 235
     .line 236
     .line 237
-    move-result-object v2
-
-    .line 238
-    invoke-direct {v5, v2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    .line 239
-    .line 240
-    .line 241
     invoke-direct {v0, v5, v3}, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;-><init>(Ljava/io/IOException;I)V
 
-    .line 242
-    .line 243
-    .line 244
+    .line 238
+    .line 239
+    .line 240
     throw v0
     :try_end_1
     .catch Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 245
+    .line 241
     :goto_5
     new-instance v2, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;
 
+    .line 242
+    .line 243
+    instance-of v4, v0, Ljava/io/FileNotFoundException;
+
+    .line 244
+    .line 245
+    if-eqz v4, :cond_c
+
     .line 246
     .line 247
-    instance-of v4, v0, Ljava/io/FileNotFoundException;
+    const/16 v3, 0x7d5
 
     .line 248
     .line 249
-    if-eqz v4, :cond_c
-
-    .line 250
-    .line 251
-    const/16 v3, 0x7d5
-
-    .line 252
-    .line 253
     :cond_c
     invoke-direct {v2, v0, v3}, Landroidx/media3/datasource/ContentDataSource$ContentDataSourceException;-><init>(Ljava/io/IOException;I)V
 
-    .line 254
-    .line 255
-    .line 256
+    .line 250
+    .line 251
+    .line 252
     throw v2
 
-    .line 257
+    .line 253
     :goto_6
     throw v0
 .end method

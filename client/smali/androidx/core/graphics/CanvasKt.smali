@@ -14,7 +14,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -56,7 +56,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -98,7 +98,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -140,7 +140,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -182,7 +182,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -224,7 +224,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -344,7 +344,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -484,7 +484,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -536,7 +536,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -693,7 +693,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -822,7 +822,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

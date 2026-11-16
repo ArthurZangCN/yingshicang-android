@@ -354,7 +354,7 @@
 
     .line 67
     .line 68
-    sget v1, Lz1/a;->a:I
+    sget v1, Lj2/a;->a:I
 
     .line 69
     .line 70

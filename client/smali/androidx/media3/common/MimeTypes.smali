@@ -75,12 +75,18 @@
 
 .field public static final APPLICATION_MPD:Ljava/lang/String; = "application/dash+xml"
 
+.field public static final APPLICATION_OCTET:Ljava/lang/String; = "application/octet-stream"
+
+.field public static final APPLICATION_OCTET_STREAM:Ljava/lang/String; = "application/octet-stream"
+
 .field public static final APPLICATION_PGS:Ljava/lang/String; = "application/pgs"
 
 .field public static final APPLICATION_RAWCC:Ljava/lang/String; = "application/x-rawcc"
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
+
+.field public static final APPLICATION_RM:Ljava/lang/String; = "application/vnd.rn-realmedia"
 
 .field public static final APPLICATION_RTSP:Ljava/lang/String; = "application/x-rtsp"
 
@@ -118,6 +124,17 @@
 .field public static final AUDIO_AMR_NB:Ljava/lang/String; = "audio/3gpp"
 
 .field public static final AUDIO_AMR_WB:Ljava/lang/String; = "audio/amr-wb"
+
+.field public static final AUDIO_ATRAC3:Ljava/lang/String; = "audio/atrac3"
+
+.field public static final AUDIO_ATRAC3P:Ljava/lang/String; = "audio/atrac3p"
+
+.field public static final AUDIO_AV3A:Ljava/lang/String; = "audio/av3a"
+    .annotation build Landroidx/media3/common/util/UnstableApi;
+    .end annotation
+.end field
+
+.field public static final AUDIO_COOK:Ljava/lang/String; = "audio/cook"
 
 .field public static final AUDIO_DTS:Ljava/lang/String; = "audio/vnd.dts"
 
@@ -173,7 +190,11 @@
 
 .field public static final AUDIO_OPUS:Ljava/lang/String; = "audio/opus"
 
+.field public static final AUDIO_RALF:Ljava/lang/String; = "audio/x-ralf"
+
 .field public static final AUDIO_RAW:Ljava/lang/String; = "audio/raw"
+
+.field public static final AUDIO_SIPR:Ljava/lang/String; = "audio/x-sipr"
 
 .field public static final AUDIO_TRUEHD:Ljava/lang/String; = "audio/true-hd"
 
@@ -187,6 +208,18 @@
 .field public static final AUDIO_WAV:Ljava/lang/String; = "audio/wav"
 
 .field public static final AUDIO_WEBM:Ljava/lang/String; = "audio/webm"
+
+.field public static final AUDIO_WMA:Ljava/lang/String; = "audio/x-ms-wma"
+
+.field public static final AUDIO_WMA1:Ljava/lang/String; = "audio/x-ms-wmav1"
+
+.field public static final AUDIO_WMA2:Ljava/lang/String; = "audio/x-ms-wmav2"
+
+.field public static final AUDIO_WMA_LOSSLESS:Ljava/lang/String; = "audio/x-ms-wmalossless"
+
+.field public static final AUDIO_WMA_PRO:Ljava/lang/String; = "audio/x-ms-wmapro"
+
+.field public static final AUDIO_WMA_VOICE:Ljava/lang/String; = "audio/x-ms-wmavoice"
 
 .field public static final BASE_TYPE_APPLICATION:Ljava/lang/String; = "application"
     .annotation build Landroidx/media3/common/util/UnstableApi;
@@ -335,6 +368,14 @@
     .end annotation
 .end field
 
+.field public static final VIDEO_RV10:Ljava/lang/String; = "video/x-rv10"
+
+.field public static final VIDEO_RV20:Ljava/lang/String; = "video/x-rv20"
+
+.field public static final VIDEO_RV30:Ljava/lang/String; = "video/x-rv30"
+
+.field public static final VIDEO_RV40:Ljava/lang/String; = "video/x-rv40"
+
 .field public static final VIDEO_UNKNOWN:Ljava/lang/String; = "video/x-unknown"
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
@@ -353,6 +394,12 @@
 .end field
 
 .field public static final VIDEO_WEBM:Ljava/lang/String; = "video/webm"
+
+.field public static final VIDEO_WMV:Ljava/lang/String; = "video/x-ms-wmv"
+
+.field public static final VIDEO_WMV1:Ljava/lang/String; = "video/x-ms-wmv1"
+
+.field public static final VIDEO_WMV2:Ljava/lang/String; = "video/x-ms-wmv2"
 
 .field private static final customMimeTypes:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -891,9 +938,6 @@
     .line 214
     .line 215
     .line 216
-    .line 217
-    .line 218
-    .line 219
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -1802,16 +1846,6 @@
     .line 214
     .line 215
     .line 216
-    .line 217
-    .line 218
-    .line 219
-    .line 220
-    .line 221
-    .line 222
-    .line 223
-    .line 224
-    .line 225
-    .line 226
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_b
@@ -1861,7 +1895,7 @@
     move-result-object p0
 
     .line 9
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 10
     .line 11
@@ -3231,9 +3265,6 @@
     .line 75
     .line 76
     .line 77
-    .line 78
-    .line 79
-    .line 80
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_2
@@ -4703,7 +4734,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7

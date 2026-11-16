@@ -237,11 +237,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/core/app/a;
+    new-instance v1, Landroidx/core/app/b;
 
     .line 4
     .line 5
-    invoke-direct {v1, p3}, Landroidx/core/app/a;-><init>(Landroid/app/SharedElementCallback$OnSharedElementsReadyListener;)V
+    invoke-direct {v1, p3}, Landroidx/core/app/b;-><init>(Landroid/app/SharedElementCallback$OnSharedElementsReadyListener;)V
 
     .line 6
     .line 7

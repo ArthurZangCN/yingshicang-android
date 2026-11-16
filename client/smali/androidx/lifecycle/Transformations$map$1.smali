@@ -21,7 +21,7 @@
         "Lkotlin/jvm/internal/k;",
         "Lkotlin/jvm/functions/Function1<",
         "TX;",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
@@ -79,7 +79,7 @@
     .line 1
     invoke-virtual {p0, p1}, Landroidx/lifecycle/Transformations$map$1;->invoke(Ljava/lang/Object;)V
 
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     return-object p1
 .end method

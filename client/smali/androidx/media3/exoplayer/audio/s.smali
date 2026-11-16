@@ -2,35 +2,30 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/audio/DefaultAudioSink;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/DefaultAudioSink;)V
+.method public static bridge synthetic a(ILandroid/content/Context;)Landroid/content/Context;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1, p0}, Landroid/content/Context;->createDeviceContext(I)Landroid/content/Context;
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/audio/s;->a:Landroidx/media3/exoplayer/audio/DefaultAudioSink;
+    move-result-object p0
 
-    return-void
+    return-object p0
 .end method
 
-
-# virtual methods
-.method public final run()V
+.method public static bridge synthetic b(Landroid/widget/EditText;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/s;->a:Landroidx/media3/exoplayer/audio/DefaultAudioSink;
+    const/4 v0, 0x1
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->b(Landroidx/media3/exoplayer/audio/DefaultAudioSink;)V
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/widget/EditText;->setIsHandwritingDelegate(Z)V
 
+    .line 3
+    .line 4
+    .line 5
     return-void
 .end method

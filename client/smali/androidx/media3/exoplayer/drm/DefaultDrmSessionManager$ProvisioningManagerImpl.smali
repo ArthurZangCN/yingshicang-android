@@ -83,7 +83,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -100,7 +100,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 16
     .line 17
@@ -160,7 +160,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -177,7 +177,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 16
     .line 17

@@ -75,13 +75,13 @@
     return p0
 .end method
 
-.method private continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/k;)Z
-    .locals 3
+.method private continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/m;)Z
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;",
-            "Lcom/google/common/base/k<",
+            "Lcom/google/common/base/m<",
             "Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;",
             ">;)Z"
         }
@@ -120,7 +120,7 @@
 
     .line 16
     .line 17
-    invoke-interface {p2, v0}, Lcom/google/common/base/k;->apply(Ljava/lang/Object;)Z
+    invoke-interface {p2, v0}, Lcom/google/common/base/m;->apply(Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -128,14 +128,14 @@
     move-result p2
 
     .line 21
-    const/4 v1, 0x1
-
-    .line 22
     if-eqz p2, :cond_0
 
+    .line 22
     .line 23
+    const/4 p1, 0x1
+
     .line 24
-    return v1
+    return p1
 
     .line 25
     :cond_0
@@ -143,16 +143,16 @@
 
     .line 26
     .line 27
-    new-instance v2, Landroidx/media3/exoplayer/source/preload/q;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/s;
 
     .line 28
     .line 29
-    invoke-direct {v2, v0, v1}, Landroidx/media3/exoplayer/source/preload/q;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;I)V
+    invoke-direct {v1, v0}, Landroidx/media3/exoplayer/source/preload/s;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)V
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {p2, p1, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onCompleted(Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;)V
+    invoke-virtual {p2, p1, v1}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onCompleted(Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/m;)V
 
     .line 33
     .line 34
@@ -390,16 +390,16 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/source/preload/s;
+    new-instance v0, Landroidx/media3/exoplayer/source/preload/r;
 
     .line 2
     .line 3
-    invoke-direct {v0, p2, p3}, Landroidx/media3/exoplayer/source/preload/s;-><init>(J)V
+    invoke-direct {v0, p2, p3}, Landroidx/media3/exoplayer/source/preload/r;-><init>(J)V
 
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/k;)Z
+    invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/m;)Z
 
     .line 7
     .line 8
@@ -411,7 +411,7 @@
 .end method
 
 .method public onLoadedToTheEndOfSource(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
-    .locals 3
+    .locals 4
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->this$0:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;
@@ -454,20 +454,23 @@
 
     .line 19
     .line 20
-    new-instance v2, Landroidx/media3/exoplayer/source/preload/t;
+    new-instance v2, Landroidx/media3/exoplayer/source/preload/n;
 
     .line 21
     .line 22
-    invoke-direct {v2, v0}, Landroidx/media3/exoplayer/source/preload/t;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)V
+    const/4 v3, 0x1
 
     .line 23
+    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/source/preload/n;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;I)V
+
     .line 24
     .line 25
-    invoke-virtual {v1, p1, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onCompleted(Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;)V
-
     .line 26
+    invoke-virtual {v1, p1, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onCompleted(Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/m;)V
+
     .line 27
     .line 28
+    .line 29
     :cond_1
     :goto_0
     return-void
@@ -576,19 +579,19 @@
 
     .line 19
     .line 20
-    new-instance v2, Landroidx/media3/exoplayer/source/preload/o;
+    new-instance v2, Landroidx/media3/exoplayer/source/preload/m;
 
     .line 21
     .line 22
     const/4 v3, 0x1
 
     .line 23
-    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/source/preload/o;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;I)V
+    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/source/preload/m;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;I)V
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {v1, p1, p2, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onError(Landroidx/media3/exoplayer/source/preload/PreloadException;Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;)V
+    invoke-virtual {v1, p1, p2, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onError(Landroidx/media3/exoplayer/source/preload/PreloadException;Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/m;)V
 
     .line 27
     .line 28
@@ -602,7 +605,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/source/preload/p;
+    new-instance v0, Landroidx/media3/exoplayer/source/preload/o;
 
     .line 2
     .line 3
@@ -611,7 +614,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/k;)Z
+    invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/m;)Z
 
     .line 7
     .line 8
@@ -626,7 +629,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/source/preload/r;
+    new-instance v0, Landroidx/media3/exoplayer/source/preload/q;
 
     .line 2
     .line 3
@@ -635,7 +638,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/k;)Z
+    invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->continueOrCompletePreloading(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Lcom/google/common/base/m;)Z
 
     .line 7
     .line 8
@@ -647,7 +650,7 @@
 .end method
 
 .method public onUsedByPlayer(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
-    .locals 4
+    .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->this$0:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;
@@ -690,23 +693,20 @@
 
     .line 19
     .line 20
-    new-instance v2, Landroidx/media3/exoplayer/source/preload/q;
+    new-instance v2, Landroidx/media3/exoplayer/source/preload/p;
 
     .line 21
     .line 22
-    const/4 v3, 0x0
+    invoke-direct {v2, v0}, Landroidx/media3/exoplayer/source/preload/p;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)V
 
     .line 23
-    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/source/preload/q;-><init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;I)V
-
     .line 24
     .line 25
-    .line 26
-    invoke-virtual {v1, p1, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onSkipped(Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;)V
+    invoke-virtual {v1, p1, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->onSkipped(Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/m;)V
 
+    .line 26
     .line 27
     .line 28
-    .line 29
     :cond_1
     :goto_0
     return-void

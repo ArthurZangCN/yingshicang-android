@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function2<",
         "TT;",
         "Lkotlin/coroutines/d<",
@@ -28,7 +28,7 @@
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.core.DataMigrationInitializer$Companion$runMigrations$2"
     f = "DataMigrationInitializer.kt"
     l = {
@@ -47,7 +47,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Ljava/lang/Object;",
             ">;>;"
@@ -90,7 +90,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Ljava/lang/Object;",
             ">;>;",
@@ -107,7 +107,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p3}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, p1, p3}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -123,7 +123,7 @@
             "Lkotlin/coroutines/d<",
             "*>;)",
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -172,7 +172,7 @@
 
     check-cast p1, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;
 
-    sget-object p2, Lr3/q;->a:Lr3/q;
+    sget-object p2, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/core/DataMigrationInitializer$Companion$runMigrations$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -227,7 +227,7 @@
 
     .line 20
     .line 21
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 22
     .line 23
@@ -281,7 +281,7 @@
 
     .line 46
     .line 47
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 48
     .line 49
@@ -299,7 +299,7 @@
 
     .line 54
     :cond_2
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 55
     .line 56

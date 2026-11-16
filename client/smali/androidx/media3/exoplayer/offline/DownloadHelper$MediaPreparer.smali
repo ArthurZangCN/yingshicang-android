@@ -117,11 +117,11 @@
 
     .line 24
     .line 25
-    new-instance p1, Landroidx/media3/exoplayer/offline/e;
+    new-instance p1, Landroidx/media3/exoplayer/offline/c;
 
     .line 26
     .line 27
-    invoke-direct {p1, p0}, Landroidx/media3/exoplayer/offline/e;-><init>(Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;)V
+    invoke-direct {p1, p0}, Landroidx/media3/exoplayer/offline/c;-><init>(Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;)V
 
     .line 28
     .line 29

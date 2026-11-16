@@ -62,7 +62,7 @@
 
     .line 10
     .line 11
-    invoke-direct {v0, v1}, Landroidx/arch/core/executor/b;-><init>(I)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 12
     .line 13

@@ -539,9 +539,6 @@
     .line 242
     .line 243
     .line 244
-    .line 245
-    .line 246
-    .line 247
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_b

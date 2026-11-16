@@ -1,5 +1,5 @@
 .class public final Landroidx/lifecycle/PausingDispatcher;
-.super Lkotlinx/coroutines/y;
+.super Ln4/b0;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lkotlinx/coroutines/y;-><init>()V
+    invoke-direct {p0}, Ln4/b0;-><init>()V
 
     .line 2
     .line 3
@@ -82,15 +82,15 @@
     .line 4
     .line 5
     .line 6
-    sget-object v0, Lkotlinx/coroutines/n0;->a:Li4/c;
+    sget-object v0, Ln4/r0;->a:Lr4/c;
 
     .line 7
     .line 8
-    sget-object v0, Lkotlinx/coroutines/internal/q;->a:Lkotlinx/coroutines/m1;
+    sget-object v0, Lp4/p;->a:Ln4/o1;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lkotlinx/coroutines/m1;->getImmediate()Lkotlinx/coroutines/m1;
+    invoke-virtual {v0}, Ln4/o1;->getImmediate()Ln4/o1;
 
     .line 11
     .line 12
@@ -98,7 +98,7 @@
     move-result-object v0
 
     .line 14
-    invoke-virtual {v0, p1}, Lkotlinx/coroutines/y;->isDispatchNeeded(Lkotlin/coroutines/f;)Z
+    invoke-virtual {v0, p1}, Ln4/b0;->isDispatchNeeded(Lkotlin/coroutines/f;)Z
 
     .line 15
     .line 16

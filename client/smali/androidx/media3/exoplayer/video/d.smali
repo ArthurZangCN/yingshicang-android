@@ -38,13 +38,20 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v1, Landroidx/media3/exoplayer/video/VideoFrameReleaseHelper$VSyncSamplerV33;
+    check-cast v1, Landroidx/media3/exoplayer/video/VideoSink$Listener;
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/video/VideoFrameReleaseHelper$VSyncSamplerV33;->a(Landroidx/media3/exoplayer/video/VideoFrameReleaseHelper$VSyncSamplerV33;)V
+    invoke-interface {v1}, Landroidx/media3/exoplayer/video/VideoSink$Listener;->onFirstFrameRendered()V
 
     return-void
 
     :pswitch_0
+    check-cast v1, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper;
+
+    invoke-static {v1}, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper;->b(Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper;)V
+
+    return-void
+
+    :pswitch_1
     check-cast v1, Landroidx/media3/exoplayer/video/DefaultVideoSink$FrameRendererImpl;
 
     invoke-static {v1}, Landroidx/media3/exoplayer/video/DefaultVideoSink$FrameRendererImpl;->a(Landroidx/media3/exoplayer/video/DefaultVideoSink$FrameRendererImpl;)V
@@ -55,6 +62,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

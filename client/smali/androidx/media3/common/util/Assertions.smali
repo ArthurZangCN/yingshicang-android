@@ -23,7 +23,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {p0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     .end annotation
 
     .line 2
-    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
     .line 17
     .line 18
@@ -134,7 +134,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     return-object p0
 .end method
@@ -155,7 +155,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    invoke-static {v0, p1}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, p1}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     return-object p0
 .end method
@@ -203,7 +203,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object p0
 .end method
@@ -214,7 +214,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     return-void
 .end method
@@ -225,7 +225,7 @@
     .end annotation
 
     .line 2
-    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
     return-void
 .end method
@@ -273,7 +273,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object p0
 .end method

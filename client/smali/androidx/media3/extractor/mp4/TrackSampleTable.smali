@@ -67,7 +67,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 14
     .line 15
@@ -93,7 +93,7 @@
 
     .line 23
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 24
     .line 25
@@ -112,7 +112,7 @@
 
     .line 31
     :cond_2
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 32
     .line 33

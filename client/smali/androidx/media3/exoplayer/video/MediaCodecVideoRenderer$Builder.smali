@@ -109,22 +109,22 @@
     return-void
 .end method
 
-.method public static synthetic access$000(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;
+.method public static synthetic access$000(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroid/content/Context;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->codecAdapterFactory:Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;
+    iget-object p0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->context:Landroid/content/Context;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static synthetic access$100(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
+.method public static synthetic access$100(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->mediaCodecSelector:Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
+    iget-object p0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->codecAdapterFactory:Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;
 
     .line 2
     .line 3
@@ -164,7 +164,18 @@
     return p0
 .end method
 
-.method public static synthetic access$200(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Z
+.method public static synthetic access$200(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->mediaCodecSelector:Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static synthetic access$300(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Z
     .locals 0
 
     .line 1
@@ -175,7 +186,7 @@
     return p0
 .end method
 
-.method public static synthetic access$300(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)F
+.method public static synthetic access$400(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)F
     .locals 0
 
     .line 1
@@ -184,17 +195,6 @@
     .line 2
     .line 3
     return p0
-.end method
-
-.method public static synthetic access$400(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroid/content/Context;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->context:Landroid/content/Context;
-
-    .line 2
-    .line 3
-    return-object p0
 .end method
 
 .method public static synthetic access$500(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)I
@@ -268,7 +268,7 @@
     xor-int/2addr v0, v1
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -314,7 +314,7 @@
 
     .line 25
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 26
     .line 27

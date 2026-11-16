@@ -2,15 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/google/common/base/z;
 
-# direct methods
-.method public static bridge synthetic a(Landroid/view/Choreographer$FrameTimeline;)J
-    .locals 2
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/Choreographer$FrameTimeline;->getExpectedPresentationTimeNanos()J
+    invoke-static {}, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$ReflectiveDefaultVideoFrameProcessorFactory;->a()Ljava/lang/Class;
 
-    move-result-wide v0
+    move-result-object v0
 
-    return-wide v0
+    return-object v0
 .end method

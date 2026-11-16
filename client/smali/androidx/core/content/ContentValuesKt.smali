@@ -4,12 +4,12 @@
 
 
 # direct methods
-.method public static final varargs contentValuesOf([Lr3/h;)Landroid/content/ContentValues;
+.method public static final varargs contentValuesOf([Lv3/h;)Landroid/content/ContentValues;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
-            "Lr3/h<",
+            "Lv3/h<",
             "Ljava/lang/String;",
             "+",
             "Ljava/lang/Object;",
@@ -46,7 +46,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v3}, Lr3/h;->component1()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h;->component1()Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -58,7 +58,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {v3}, Lr3/h;->component2()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h;->component2()Ljava/lang/Object;
 
     .line 20
     .line 21

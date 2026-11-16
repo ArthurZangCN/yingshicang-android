@@ -85,7 +85,7 @@
     :goto_0
     const-string v1, "percent must be in the range of [0, 100]"
 
-    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 5
     iput p1, p0, Landroidx/media3/common/PercentageRating;->percent:F
@@ -129,7 +129,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 14
     .line 15
@@ -280,7 +280,7 @@
 
     .line 12
     .line 13
-    invoke-static {v1}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v1}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 14
     .line 15

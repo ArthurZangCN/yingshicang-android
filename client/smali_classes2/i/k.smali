@@ -1,0 +1,7 @@
+.class public interface abstract Li/k;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lm/f;
+.implements Li/c;

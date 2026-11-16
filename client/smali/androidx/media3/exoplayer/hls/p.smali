@@ -7,33 +7,21 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/MediaItem;
+.field public final synthetic a:Landroidx/media3/common/Player;
 
 .field public final synthetic b:Ljava/lang/Object;
 
-.field public final synthetic c:I
-
-.field public final synthetic d:I
-
-.field public final synthetic e:Landroidx/media3/common/Metadata;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/common/Metadata;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayer;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/p;->a:Landroidx/media3/common/MediaItem;
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/p;->a:Landroidx/media3/common/Player;
 
     iput-object p2, p0, Landroidx/media3/exoplayer/hls/p;->b:Ljava/lang/Object;
-
-    iput p3, p0, Landroidx/media3/exoplayer/hls/p;->c:I
-
-    iput p4, p0, Landroidx/media3/exoplayer/hls/p;->d:I
-
-    iput-object p5, p0, Landroidx/media3/exoplayer/hls/p;->e:Landroidx/media3/common/Metadata;
 
     return-void
 .end method
@@ -41,24 +29,16 @@
 
 # virtual methods
 .method public final accept(Ljava/lang/Object;)V
-    .locals 6
+    .locals 2
 
     .line 1
-    iget-object v4, p0, Landroidx/media3/exoplayer/hls/p;->e:Landroidx/media3/common/Metadata;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/p;->b:Ljava/lang/Object;
 
-    move-object v5, p1
+    check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
 
-    check-cast v5, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
+    iget-object v1, p0, Landroidx/media3/exoplayer/hls/p;->a:Landroidx/media3/common/Player;
 
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/p;->a:Landroidx/media3/common/MediaItem;
-
-    iget-object v1, p0, Landroidx/media3/exoplayer/hls/p;->b:Ljava/lang/Object;
-
-    iget v2, p0, Landroidx/media3/exoplayer/hls/p;->c:I
-
-    iget v3, p0, Landroidx/media3/exoplayer/hls/p;->d:I
-
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->f(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/common/Metadata;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->d(Landroidx/media3/common/Player;Ljava/lang/Object;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
 
     return-void
 .end method

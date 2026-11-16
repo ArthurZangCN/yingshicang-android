@@ -29,7 +29,7 @@
             "Landroid/graphics/ImageDecoder$ImageInfo;",
             "-",
             "Landroid/graphics/ImageDecoder$Source;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/graphics/Bitmap;"
         }
@@ -45,7 +45,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, v0}, Landroidx/core/app/g;->g(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/Bitmap;
+    invoke-static {p0, v0}, Landroidx/core/content/pm/a;->g(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/Bitmap;
 
     .line 7
     .line 8
@@ -73,7 +73,7 @@
             "Landroid/graphics/ImageDecoder$ImageInfo;",
             "-",
             "Landroid/graphics/ImageDecoder$Source;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/graphics/drawable/Drawable;"
         }
@@ -89,7 +89,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, v0}, Landroidx/core/graphics/a;->h(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p0, v0}, Landroidx/core/app/g;->g(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/drawable/Drawable;
 
     .line 7
     .line 8

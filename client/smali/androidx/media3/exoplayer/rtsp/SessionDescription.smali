@@ -30,10 +30,10 @@
 
 
 # instance fields
-.field public final attributes:Lcom/google/common/collect/h2;
+.field public final attributes:Lcom/google/common/collect/g2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -58,10 +58,10 @@
     .end annotation
 .end field
 
-.field public final mediaDescriptionList:Lcom/google/common/collect/f2;
+.field public final mediaDescriptionList:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/rtsp/MediaDescription;",
             ">;"
         }
@@ -111,22 +111,22 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/common/collect/h2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/h2;
+    invoke-static {v0}, Lcom/google/common/collect/g2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/g2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/h2;
+    iput-object v0, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/g2;
 
     .line 4
-    invoke-static {p1}, Landroidx/media3/exoplayer/rtsp/SessionDescription$Builder;->access$200(Landroidx/media3/exoplayer/rtsp/SessionDescription$Builder;)Lcom/google/common/collect/f2$a;
+    invoke-static {p1}, Landroidx/media3/exoplayer/rtsp/SessionDescription$Builder;->access$200(Landroidx/media3/exoplayer/rtsp/SessionDescription$Builder;)Lcom/google/common/collect/e2$a;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/e2;
 
     .line 5
     invoke-static {p1}, Landroidx/media3/exoplayer/rtsp/SessionDescription$Builder;->access$300(Landroidx/media3/exoplayer/rtsp/SessionDescription$Builder;)Ljava/lang/String;
@@ -293,15 +293,15 @@
 
     .line 25
     .line 26
-    iget-object v2, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/h2;
+    iget-object v2, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/g2;
 
     .line 27
     .line 28
-    iget-object v3, p1, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/h2;
+    iget-object v3, p1, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/g2;
 
     .line 29
     .line 30
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/h2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/g2;->equals(Ljava/lang/Object;)Z
 
     .line 31
     .line 32
@@ -313,15 +313,15 @@
 
     .line 35
     .line 36
-    iget-object v2, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/e2;
 
     .line 37
     .line 38
-    iget-object v3, p1, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/e2;
 
     .line 39
     .line 40
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 41
     .line 42
@@ -341,7 +341,7 @@
 
     .line 49
     .line 50
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -361,7 +361,7 @@
 
     .line 59
     .line 60
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 61
     .line 62
@@ -381,7 +381,7 @@
 
     .line 69
     .line 70
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 71
     .line 72
@@ -401,7 +401,7 @@
 
     .line 79
     .line 80
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 81
     .line 82
@@ -421,7 +421,7 @@
 
     .line 89
     .line 90
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 91
     .line 92
@@ -441,7 +441,7 @@
 
     .line 99
     .line 100
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 101
     .line 102
@@ -461,7 +461,7 @@
 
     .line 109
     .line 110
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 111
     .line 112
@@ -481,7 +481,7 @@
 
     .line 119
     .line 120
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 121
     .line 122
@@ -501,7 +501,7 @@
 
     .line 129
     .line 130
-    invoke-static {v2, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 131
     .line 132
@@ -533,11 +533,11 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/h2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->attributes:Lcom/google/common/collect/g2;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/google/common/collect/h2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/g2;->hashCode()I
 
     .line 4
     .line 5
@@ -553,11 +553,11 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/e2;
 
     .line 12
     .line 13
-    invoke-virtual {v1}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v1}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 14
     .line 15

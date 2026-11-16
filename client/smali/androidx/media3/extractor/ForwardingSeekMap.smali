@@ -72,6 +72,25 @@
     return-object p1
 .end method
 
+.method public isEstimated()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/extractor/ForwardingSeekMap;->seekMap:Landroidx/media3/extractor/SeekMap;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/media3/extractor/SeekMap;->isEstimated()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
 .method public isSeekable()Z
     .locals 1
 

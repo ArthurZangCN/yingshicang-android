@@ -42,10 +42,10 @@
 
 .field public final hasProgramDateTime:Z
 
-.field public final interstitials:Lcom/google/common/collect/f2;
+.field public final interstitials:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$Interstitial;",
             ">;"
         }
@@ -213,32 +213,32 @@
     iput-object v3, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->protectionSchemes:Landroidx/media3/common/DrmInitData;
 
     .line 14
-    invoke-static/range {p22 .. p22}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static/range {p22 .. p22}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object v3
 
     iput-object v3, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->segments:Ljava/util/List;
 
     .line 15
-    invoke-static/range {p23 .. p23}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static/range {p23 .. p23}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object v3
 
     iput-object v3, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->trailingParts:Ljava/util/List;
 
     .line 16
-    invoke-static/range {p25 .. p25}, Lcom/google/common/collect/h2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/h2;
+    invoke-static/range {p25 .. p25}, Lcom/google/common/collect/g2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/g2;
 
     move-result-object v3
 
     iput-object v3, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->renditionReports:Ljava/util/Map;
 
     .line 17
-    invoke-static/range {p26 .. p26}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static/range {p26 .. p26}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object v3
 
-    iput-object v3, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->interstitials:Lcom/google/common/collect/f2;
+    iput-object v3, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->interstitials:Lcom/google/common/collect/e2;
 
     .line 18
     invoke-interface/range {p23 .. p23}, Ljava/util/List;->isEmpty()Z
@@ -250,7 +250,7 @@
     if-nez v3, :cond_0
 
     .line 19
-    invoke-static/range {p23 .. p23}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static/range {p23 .. p23}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -276,7 +276,7 @@
     if-nez v3, :cond_1
 
     .line 22
-    invoke-static/range {p22 .. p22}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static/range {p22 .. p22}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -524,7 +524,7 @@
 
     .line 67
     .line 68
-    iget-object v1, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->interstitials:Lcom/google/common/collect/f2;
+    iget-object v1, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->interstitials:Lcom/google/common/collect/e2;
 
     .line 69
     .line 70
@@ -698,7 +698,7 @@
 
     .line 70
     .line 71
-    iget-object v1, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->interstitials:Lcom/google/common/collect/f2;
+    iget-object v1, v0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;->interstitials:Lcom/google/common/collect/e2;
 
     .line 72
     .line 73

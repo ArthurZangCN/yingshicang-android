@@ -26,7 +26,7 @@
             "TT;>;-",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;+",
             "Ljava/lang/Object;",
             ">;>;"
@@ -58,7 +58,7 @@
             "TT;>;-",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;+",
             "Ljava/lang/Object;",
             ">;>;)V"
@@ -84,7 +84,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {p2}, Lkotlin/collections/q;->n0(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p2}, Lkotlin/collections/p;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 12
     .line 13
@@ -130,7 +130,7 @@
             "(",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -227,7 +227,7 @@
 
     .line 42
     .line 43
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 44
     .line 45
@@ -261,7 +261,7 @@
 
     .line 58
     .line 59
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 60
     .line 61
@@ -270,7 +270,7 @@
 
     .line 63
     :cond_3
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 64
     .line 65
@@ -426,7 +426,7 @@
     .line 133
     .line 134
     .line 135
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 136
     .line 137

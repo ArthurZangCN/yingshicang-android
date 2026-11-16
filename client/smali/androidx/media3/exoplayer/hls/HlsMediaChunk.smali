@@ -81,10 +81,10 @@
 
 .field private publishedDurationUs:J
 
-.field private sampleQueueFirstSampleIndices:Lcom/google/common/collect/f2;
+.field private sampleQueueFirstSampleIndices:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -328,11 +328,11 @@
     iput-object v0, v12, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->playerId:Landroidx/media3/exoplayer/analytics/PlayerId;
 
     .line 24
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, v12, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/f2;
+    iput-object v0, v12, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/e2;
 
     .line 25
     sget-object v0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->uidSource:Ljava/util/concurrent/atomic/AtomicInteger;
@@ -1151,7 +1151,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 2
     .line 3
@@ -1580,11 +1580,11 @@
 
     .line 104
     :cond_2
-    new-instance v2, Landroidx/media3/exoplayer/hls/q;
+    new-instance v2, Landroidx/media3/exoplayer/hls/t;
 
     .line 105
     .line 106
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v2, v4}, Landroidx/media3/exoplayer/hls/t;-><init>(I)V
 
     .line 107
     .line 108
@@ -1593,7 +1593,7 @@
 
     .line 110
     .line 111
-    invoke-virtual {p1, v3, v2}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/k;)Landroidx/media3/common/Metadata$Entry;
+    invoke-virtual {p1, v3, v2}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/m;)Landroidx/media3/common/Metadata$Entry;
 
     .line 112
     .line 113
@@ -2071,12 +2071,12 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
     .line 8
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -2099,7 +2099,7 @@
 
     .line 18
     :cond_0
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -2160,13 +2160,13 @@
     return-wide v2
 .end method
 
-.method public init(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Lcom/google/common/collect/f2;)V
+.method public init(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Lcom/google/common/collect/e2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;)V"
         }
@@ -2177,7 +2177,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/f2;
+    iput-object p2, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->sampleQueueFirstSampleIndices:Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -2324,11 +2324,15 @@
 
     .line 37
     .line 38
+    :try_start_0
     invoke-direct {p0}, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->loadMedia()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 39
     .line 40
     .line 41
+    :catch_0
     :cond_1
     iget-boolean v0, p0, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->loadCanceled:Z
 

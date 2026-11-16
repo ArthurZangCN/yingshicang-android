@@ -9,11 +9,9 @@
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-.field public final synthetic b:Landroidx/media3/exoplayer/hls/HlsMediaChunk;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Landroidx/media3/exoplayer/hls/HlsMediaChunk;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
     .locals 0
 
     .line 1
@@ -21,22 +19,18 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/hls/v;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/hls/v;->b:Landroidx/media3/exoplayer/hls/HlsMediaChunk;
-
     return-void
 .end method
 
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/hls/v;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/hls/v;->b:Landroidx/media3/exoplayer/hls/HlsMediaChunk;
-
-    invoke-static {v0, v1}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->c(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Landroidx/media3/exoplayer/hls/HlsMediaChunk;)V
+    invoke-static {v0}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->b(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
 
     return-void
 .end method

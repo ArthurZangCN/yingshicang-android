@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final notification_material_background_media_default_color:I = 0x7f06032e
+.field public static final notification_material_background_media_default_color:I = 0x7f060330
 
-.field public static final primary_text_default_material_dark:I = 0x7f060335
+.field public static final primary_text_default_material_dark:I = 0x7f060337
 
-.field public static final secondary_text_default_material_dark:I = 0x7f06033d
+.field public static final secondary_text_default_material_dark:I = 0x7f06033f
 
 
 # direct methods

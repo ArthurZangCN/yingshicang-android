@@ -150,14 +150,14 @@
     move-result-object p1
 
     .line 7
-    new-instance p2, Landroidx/media3/exoplayer/a;
+    new-instance p2, Landroidx/media3/exoplayer/j;
 
     .line 8
     .line 9
-    const/4 v0, 0x2
+    const/4 v0, 0x1
 
     .line 10
-    invoke-direct {p2, p0, v0}, Landroidx/media3/exoplayer/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p2, p0, v0}, Landroidx/media3/exoplayer/j;-><init>(Ljava/lang/Object;I)V
 
     .line 11
     .line 12

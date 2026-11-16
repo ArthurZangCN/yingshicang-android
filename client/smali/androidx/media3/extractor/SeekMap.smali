@@ -22,5 +22,8 @@
 .method public abstract getSeekPoints(J)Landroidx/media3/extractor/SeekMap$SeekPoints;
 .end method
 
+.method public abstract isEstimated()Z
+.end method
+
 .method public abstract isSeekable()Z
 .end method

@@ -2,37 +2,13 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/os/Handler$Callback;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/common/util/StuckPlayerDetector;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/util/StuckPlayerDetector;)V
-    .locals 0
+.method public static a(Landroidx/media3/common/util/TimestampIterator;)J
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
 
-    iput-object p1, p0, Landroidx/media3/common/util/h;->a:Landroidx/media3/common/util/StuckPlayerDetector;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final handleMessage(Landroid/os/Message;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/media3/common/util/h;->a:Landroidx/media3/common/util/StuckPlayerDetector;
-
-    invoke-static {v0, p1}, Landroidx/media3/common/util/StuckPlayerDetector;->a(Landroidx/media3/common/util/StuckPlayerDetector;Landroid/os/Message;)Z
-
-    move-result p1
-
-    return p1
+    return-wide v0
 .end method

@@ -152,31 +152,28 @@
 
     .line 54
     .line 55
-    const/4 p2, 0x0
-
-    .line 56
-    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/video/a;-><init>(I)V
-
-    .line 57
-    .line 58
-    .line 59
-    iput-object p1, p0, Landroidx/media3/exoplayer/video/DefaultVideoSink;->listenerExecutor:Ljava/util/concurrent/Executor;
-
-    .line 60
-    .line 61
-    new-instance p1, Landroidx/media3/exoplayer/video/b;
-
-    .line 62
-    .line 63
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
+    .line 56
+    .line 57
+    .line 58
+    iput-object p1, p0, Landroidx/media3/exoplayer/video/DefaultVideoSink;->listenerExecutor:Ljava/util/concurrent/Executor;
+
+    .line 59
+    .line 60
+    new-instance p1, Landroidx/media3/exoplayer/video/b;
+
+    .line 61
+    .line 62
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    .line 63
     .line 64
     .line 65
-    .line 66
     iput-object p1, p0, Landroidx/media3/exoplayer/video/DefaultVideoSink;->videoFrameMetadataListener:Landroidx/media3/exoplayer/video/VideoFrameMetadataListener;
 
+    .line 66
     .line 67
-    .line 68
     return-void
 .end method
 
@@ -552,7 +549,7 @@
     move-result p1
 
     .line 5
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7

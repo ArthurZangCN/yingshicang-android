@@ -35,7 +35,7 @@
             "Ljava/util/concurrent/CopyOnWriteArrayList<",
             "Lkotlin/jvm/functions/Function1<",
             "Ljava/lang/String;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;>;"
         }
     .end annotation

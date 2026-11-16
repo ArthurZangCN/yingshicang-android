@@ -4,14 +4,14 @@
 
 
 # direct methods
-.method public static final withTryLock(Lkotlinx/coroutines/sync/a;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+.method public static final withTryLock(Lt4/a;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
             "Ljava/lang/Object;",
             ">(",
-            "Lkotlinx/coroutines/sync/a;",
+            "Lt4/a;",
             "Ljava/lang/Object;",
             "Lkotlin/jvm/functions/Function1<",
             "-",
@@ -39,7 +39,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-interface {p0, p1}, Lkotlinx/coroutines/sync/a;->b(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Lt4/a;->b(Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -70,7 +70,7 @@
 
     .line 24
     .line 25
-    invoke-interface {p0, p1}, Lkotlinx/coroutines/sync/a;->c(Ljava/lang/Object;)V
+    invoke-interface {p0, p1}, Lt4/a;->c(Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -87,7 +87,7 @@
 
     .line 31
     .line 32
-    invoke-interface {p0, p1}, Lkotlinx/coroutines/sync/a;->c(Ljava/lang/Object;)V
+    invoke-interface {p0, p1}, Lt4/a;->c(Ljava/lang/Object;)V
 
     .line 33
     .line 34
@@ -96,7 +96,7 @@
     throw p2
 .end method
 
-.method public static synthetic withTryLock$default(Lkotlinx/coroutines/sync/a;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/Object;
+.method public static synthetic withTryLock$default(Lt4/a;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
@@ -130,7 +130,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-interface {p0, p1}, Lkotlinx/coroutines/sync/a;->b(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Lt4/a;->b(Ljava/lang/Object;)Z
 
     .line 17
     .line 18
@@ -161,7 +161,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p0, p1}, Lkotlinx/coroutines/sync/a;->c(Ljava/lang/Object;)V
+    invoke-interface {p0, p1}, Lt4/a;->c(Ljava/lang/Object;)V
 
     .line 31
     .line 32
@@ -178,7 +178,7 @@
 
     .line 36
     .line 37
-    invoke-interface {p0, p1}, Lkotlinx/coroutines/sync/a;->c(Ljava/lang/Object;)V
+    invoke-interface {p0, p1}, Lt4/a;->c(Ljava/lang/Object;)V
 
     .line 38
     .line 39

@@ -3,11 +3,428 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker$Factory;
+.implements Landroidx/media3/effect/GlShaderProgram$ErrorListener;
+.implements Landroidx/media3/exoplayer/metadata/MetadataOutput;
+.implements Landroidx/media3/exoplayer/drm/ExoMediaDrm$Provider;
+.implements Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+.implements Landroidx/media3/exoplayer/upstream/CmcdConfiguration$Factory;
 
 
 # direct methods
-.method public static a(Landroidx/recyclerview/widget/RecyclerView;Ljava/lang/StringBuilder;)Ljava/lang/String;
+.method public static a(Lm7/b;)Ln7/a;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lm7/b;->isDebugEnabled()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object v0, Lorg/slf4j/event/b;->DEBUG:Lorg/slf4j/event/b;
+
+    .line 8
+    .line 9
+    invoke-interface {p0, v0}, Lm7/b;->makeLoggingEventBuilder(Lorg/slf4j/event/b;)Ln7/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    sget-object p0, Ln7/b;->a:Ln7/b;
+
+    .line 15
+    .line 16
+    return-object p0
+.end method
+
+.method public static b(Lm7/b;)Ln7/a;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lm7/b;->isErrorEnabled()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object v0, Lorg/slf4j/event/b;->ERROR:Lorg/slf4j/event/b;
+
+    .line 8
+    .line 9
+    invoke-interface {p0, v0}, Lm7/b;->makeLoggingEventBuilder(Lorg/slf4j/event/b;)Ln7/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    sget-object p0, Ln7/b;->a:Ln7/b;
+
+    .line 15
+    .line 16
+    return-object p0
+.end method
+
+.method public static c(Lm7/b;)Ln7/a;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lm7/b;->isInfoEnabled()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object v0, Lorg/slf4j/event/b;->INFO:Lorg/slf4j/event/b;
+
+    .line 8
+    .line 9
+    invoke-interface {p0, v0}, Lm7/b;->makeLoggingEventBuilder(Lorg/slf4j/event/b;)Ln7/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    sget-object p0, Ln7/b;->a:Ln7/b;
+
+    .line 15
+    .line 16
+    return-object p0
+.end method
+
+.method public static d(Lm7/b;Lorg/slf4j/event/b;)Ln7/a;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0, p1}, Lm7/b;->isEnabledForLevel(Lorg/slf4j/event/b;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {p0, p1}, Lm7/b;->makeLoggingEventBuilder(Lorg/slf4j/event/b;)Ln7/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
+
+    .line 12
+    :cond_0
+    sget-object p0, Ln7/b;->a:Ln7/b;
+
+    .line 13
+    .line 14
+    return-object p0
+.end method
+
+.method public static e(Lm7/b;)Ln7/a;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lm7/b;->isTraceEnabled()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object v0, Lorg/slf4j/event/b;->TRACE:Lorg/slf4j/event/b;
+
+    .line 8
+    .line 9
+    invoke-interface {p0, v0}, Lm7/b;->makeLoggingEventBuilder(Lorg/slf4j/event/b;)Ln7/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    sget-object p0, Ln7/b;->a:Ln7/b;
+
+    .line 15
+    .line 16
+    return-object p0
+.end method
+
+.method public static f(Lm7/b;)Ln7/a;
+    .locals 1
+
+    .line 1
+    invoke-interface {p0}, Lm7/b;->isWarnEnabled()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    sget-object v0, Lorg/slf4j/event/b;->WARN:Lorg/slf4j/event/b;
+
+    .line 8
+    .line 9
+    invoke-interface {p0, v0}, Lm7/b;->makeLoggingEventBuilder(Lorg/slf4j/event/b;)Ln7/a;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    sget-object p0, Ln7/b;->a:Ln7/b;
+
+    .line 15
+    .line 16
+    return-object p0
+.end method
+
+.method public static g(Lm7/b;Lorg/slf4j/event/b;)Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Lorg/slf4j/event/b;->toInt()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_4
+
+    .line 6
+    .line 7
+    const/16 v1, 0xa
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_3
+
+    .line 10
+    .line 11
+    const/16 v1, 0x14
+
+    .line 12
+    .line 13
+    if-eq v0, v1, :cond_2
+
+    .line 14
+    .line 15
+    const/16 v1, 0x1e
+
+    .line 16
+    .line 17
+    if-eq v0, v1, :cond_1
+
+    .line 18
+    .line 19
+    const/16 v1, 0x28
+
+    .line 20
+    .line 21
+    if-ne v0, v1, :cond_0
+
+    .line 22
+    .line 23
+    invoke-interface {p0}, Lm7/b;->isErrorEnabled()Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result p0
+
+    .line 27
+    return p0
+
+    .line 28
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 29
+    .line 30
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    const-string v1, "Level ["
+
+    .line 33
+    .line 34
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    .line 40
+    const-string p1, "] not recognized."
+
+    .line 41
+    .line 42
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    throw p0
+
+    .line 53
+    :cond_1
+    invoke-interface {p0}, Lm7/b;->isWarnEnabled()Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result p0
+
+    .line 57
+    return p0
+
+    .line 58
+    :cond_2
+    invoke-interface {p0}, Lm7/b;->isInfoEnabled()Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result p0
+
+    .line 62
+    return p0
+
+    .line 63
+    :cond_3
+    invoke-interface {p0}, Lm7/b;->isDebugEnabled()Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result p0
+
+    .line 67
+    return p0
+
+    .line 68
+    :cond_4
+    invoke-interface {p0}, Lm7/b;->isTraceEnabled()Z
+
+    .line 69
+    .line 70
+    .line 71
+    move-result p0
+
+    .line 72
+    return p0
+.end method
+
+.method public static h(CLjava/lang/StringBuffer;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Lo7/a;->r(C)Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    return-object p0
+.end method
+
+.method public static i(Landroidx/recyclerview/widget/RecyclerView;Ljava/lang/StringBuilder;)Ljava/lang/String;
     .locals 0
 
     .line 1
@@ -35,7 +452,7 @@
     return-object p0
 .end method
 
-.method public static b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static j(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -43,38 +460,62 @@
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 7
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 10
     .line 11
     .line 12
+    move-result-object p0
+
+    .line 13
+    return-object p0
+.end method
+
+.method public static k(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 7
+    .line 8
+    .line 9
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 16
-    .line 17
-    .line 18
     move-result-object p0
 
-    .line 19
+    .line 16
     return-object p0
 .end method
 
-.method public static c(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+.method public static l(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .line 1
@@ -99,80 +540,32 @@
     return-object p0
 .end method
 
-.method public static synthetic d()Ljava/util/Iterator;
-    .locals 3
+.method public static m(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-virtual {p0, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 2
-    :try_start_0
-    new-array v0, v0, [Lkotlinx/coroutines/z;
-
     .line 3
     .line 4
-    new-instance v1, Lkotlinx/coroutines/android/AndroidExceptionPreHandler;
+    invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 5
     .line 6
-    invoke-direct {v1}, Lkotlinx/coroutines/android/AndroidExceptionPreHandler;-><init>()V
-
     .line 7
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 8
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    aput-object v1, v0, v2
+    move-result-object p0
 
     .line 11
-    .line 12
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 20
-    return-object v0
-
-    .line 21
-    :catchall_0
-    move-exception v0
-
-    .line 22
-    new-instance v1, Ljava/util/ServiceConfigurationError;
-
-    .line 23
-    .line 24
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v2
-
-    .line 28
-    invoke-direct {v1, v2, v0}, Ljava/util/ServiceConfigurationError;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 29
-    .line 30
-    .line 31
-    throw v1
+    return-object p0
 .end method
 
-.method public static e(Ljava/lang/String;ILjava/lang/String;)V
+.method public static n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
     .locals 1
 
     .line 1
@@ -185,7 +578,83 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 10
+    .line 11
+    .line 12
+    return-object v0
+.end method
+
+.method public static o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 10
+    .line 11
+    .line 12
+    return-object v0
+.end method
+
+.method public static p(Ljava/lang/ClassNotFoundException;)Ljava/lang/Throwable;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/NoClassDefFoundError;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/NoClassDefFoundError;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p0}, Ljava/lang/Throwable;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method
+
+.method public static q(Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 7
     .line 8
@@ -198,7 +667,7 @@
     move-result-object p0
 
     .line 13
-    invoke-static {p2, p0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 14
     .line 15
@@ -208,36 +677,131 @@
 
 
 # virtual methods
-.method public createTracker(Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParserFactory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker;
-    .locals 7
+.method public acquireExoMediaDrm(Ljava/util/UUID;)Landroidx/media3/exoplayer/drm/ExoMediaDrm;
+    .locals 0
 
     .line 1
-    new-instance v6, Landroidx/media3/exoplayer/hls/playlist/DefaultHlsPlaylistTracker;
+    invoke-static {p1}, Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;->b(Ljava/util/UUID;)Landroidx/media3/exoplayer/drm/ExoMediaDrm;
 
     .line 2
     .line 3
-    move-object v0, v6
-
     .line 4
-    move-object v1, p1
+    move-result-object p1
 
     .line 5
-    move-object v2, p2
+    return-object p1
+.end method
 
-    .line 6
-    move-object v3, p3
+.method public createCmcdConfiguration(Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/upstream/CmcdConfiguration;
+    .locals 0
 
-    .line 7
-    move-object v4, p4
+    .line 1
+    invoke-static {p1}, Landroidx/media3/exoplayer/upstream/c;->a(Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/upstream/CmcdConfiguration;
 
-    .line 8
-    move-object v5, p5
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
 
-    .line 9
-    invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/hls/playlist/DefaultHlsPlaylistTracker;-><init>(Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParserFactory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Lcom/google/common/base/x;)V
+    .line 5
+    return-object p1
+.end method
 
-    .line 10
-    .line 11
-    .line 12
-    return-object v6
+.method public createExtractor(Landroid/net/Uri;Landroidx/media3/common/Format;Ljava/util/List;Landroidx/media3/common/util/TimestampAdjuster;Ljava/util/Map;Landroidx/media3/extractor/ExtractorInput;Landroidx/media3/exoplayer/analytics/PlayerId;)Landroidx/media3/exoplayer/hls/HlsMediaChunkExtractor;
+    .locals 0
+
+    .line 1
+    invoke-static/range {p1 .. p7}, Landroidx/media3/exoplayer/hls/MediaParserHlsMediaChunkExtractor;->a(Landroid/net/Uri;Landroidx/media3/common/Format;Ljava/util/List;Landroidx/media3/common/util/TimestampAdjuster;Ljava/util/Map;Landroidx/media3/extractor/ExtractorInput;Landroidx/media3/exoplayer/analytics/PlayerId;)Landroidx/media3/exoplayer/hls/HlsMediaChunkExtractor;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public synthetic experimentalParseSubtitlesDuringExtraction(Z)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/hls/a;->a(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Z)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public synthetic experimentalSetCodecsToParseWithinGopSampleDependencies(I)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/hls/a;->b(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;I)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public synthetic getOutputTextFormat(Landroidx/media3/common/Format;)Landroidx/media3/common/Format;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/hls/a;->c(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Landroidx/media3/common/Format;)Landroidx/media3/common/Format;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public onError(Landroidx/media3/common/VideoFrameProcessingException;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Landroidx/media3/effect/DebugViewShaderProgram;->c(Landroidx/media3/common/VideoFrameProcessingException;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public onMetadata(Landroidx/media3/common/Metadata;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Landroidx/media3/exoplayer/DefaultRendererCapabilitiesList$Factory;->a(Landroidx/media3/common/Metadata;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public synthetic setSubtitleParserFactory(Landroidx/media3/extractor/text/SubtitleParser$Factory;)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/hls/a;->d(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Landroidx/media3/extractor/text/SubtitleParser$Factory;)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
 .end method

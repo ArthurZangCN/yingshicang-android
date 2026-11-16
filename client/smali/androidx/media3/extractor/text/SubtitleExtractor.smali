@@ -41,6 +41,8 @@
 
 .field private final cueEncoder:Landroidx/media3/extractor/text/CueEncoder;
 
+.field private final detector:Ld7/b;
+
 .field private final format:Landroidx/media3/common/Format;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -123,117 +125,130 @@
 
     .line 23
     .line 24
-    if-eqz p2, :cond_0
+    new-instance v0, Ld7/b;
 
     .line 25
     .line 26
-    invoke-virtual {p2}, Landroidx/media3/common/Format;->buildUpon()Landroidx/media3/common/Format$Builder;
+    invoke-direct {v0}, Ld7/b;-><init>()V
 
     .line 27
     .line 28
     .line 29
-    move-result-object v0
+    iput-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->detector:Ld7/b;
 
     .line 30
-    const-string v1, "application/x-media3-cues"
-
     .line 31
-    .line 32
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    if-eqz p2, :cond_0
 
+    .line 32
     .line 33
+    invoke-virtual {p2}, Landroidx/media3/common/Format;->buildUpon()Landroidx/media3/common/Format$Builder;
+
     .line 34
     .line 35
+    .line 36
     move-result-object v0
 
-    .line 36
-    iget-object p2, p2, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
-
     .line 37
-    .line 38
-    invoke-virtual {v0, p2}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    const-string v1, "application/x-media3-cues"
 
+    .line 38
     .line 39
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
     .line 40
     .line 41
-    move-result-object p2
-
     .line 42
-    invoke-interface {p1}, Landroidx/media3/extractor/text/SubtitleParser;->getCueReplacementBehavior()I
+    move-result-object v0
 
     .line 43
+    iget-object p2, p2, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
+
     .line 44
     .line 45
-    move-result p1
+    invoke-virtual {v0, p2}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
     .line 46
-    invoke-virtual {p2, p1}, Landroidx/media3/common/Format$Builder;->setCueReplacementBehavior(I)Landroidx/media3/common/Format$Builder;
-
     .line 47
     .line 48
+    move-result-object p2
+
     .line 49
-    move-result-object p1
+    invoke-interface {p1}, Landroidx/media3/extractor/text/SubtitleParser;->getCueReplacementBehavior()I
 
     .line 50
-    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
-
     .line 51
     .line 52
+    move-result p1
+
     .line 53
-    move-result-object p1
+    invoke-virtual {p2, p1}, Landroidx/media3/common/Format$Builder;->setCueReplacementBehavior(I)Landroidx/media3/common/Format$Builder;
 
     .line 54
+    .line 55
+    .line 56
+    move-result-object p1
+
+    .line 57
+    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
     goto :goto_0
 
-    .line 55
+    .line 62
     :cond_0
     const/4 p1, 0x0
 
-    .line 56
+    .line 63
     :goto_0
     iput-object p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->format:Landroidx/media3/common/Format;
 
-    .line 57
-    .line 58
-    new-instance p1, Ljava/util/ArrayList;
-
-    .line 59
-    .line 60
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 61
-    .line 62
-    .line 63
-    iput-object p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->samples:Ljava/util/List;
-
     .line 64
     .line 65
-    const/4 p1, 0x0
+    new-instance p1, Ljava/util/ArrayList;
 
     .line 66
-    iput p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
-
     .line 67
-    .line 68
-    sget-object p1, Landroidx/media3/common/util/Util;->EMPTY_LONG_ARRAY:[J
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 68
     .line 69
     .line 70
-    iput-object p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->timestamps:[J
+    iput-object p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->samples:Ljava/util/List;
 
     .line 71
     .line 72
-    const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
+    const/4 p1, 0x0
 
     .line 73
+    iput p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
+
     .line 74
     .line 75
+    sget-object p1, Landroidx/media3/common/util/Util;->EMPTY_LONG_ARRAY:[J
+
     .line 76
     .line 77
-    iput-wide p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->seekTimeUs:J
+    iput-object p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->timestamps:[J
 
     .line 78
     .line 79
+    const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
+
+    .line 80
+    .line 81
+    .line 82
+    .line 83
+    .line 84
+    iput-wide p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->seekTimeUs:J
+
+    .line 85
+    .line 86
     return-void
 .end method
 
@@ -243,6 +258,156 @@
     .line 1
     invoke-direct {p0, p1}, Landroidx/media3/extractor/text/SubtitleExtractor;->lambda$parseAndWriteToOutput$0(Landroidx/media3/extractor/text/CuesWithTiming;)V
 
+    return-void
+.end method
+
+.method private convertToUtf8()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->subtitleData:[B
+
+    .line 2
+    .line 3
+    array-length v0, v0
+
+    .line 4
+    iget v1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->bytesRead:I
+
+    .line 5
+    .line 6
+    if-eq v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    return-void
+
+    .line 9
+    :cond_0
+    iget-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->detector:Ld7/b;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ld7/b;->c()V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->detector:Ld7/b;
+
+    .line 15
+    .line 16
+    iget-object v1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->subtitleData:[B
+
+    .line 17
+    .line 18
+    iget v2, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->bytesRead:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v2, v1}, Ld7/b;->b(I[B)V
+
+    .line 21
+    .line 22
+    .line 23
+    iget-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->detector:Ld7/b;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0}, Ld7/b;->a()V
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->detector:Ld7/b;
+
+    .line 29
+    .line 30
+    iget-object v0, v0, Ld7/b;->f:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    if-nez v0, :cond_1
+
+    .line 33
+    .line 34
+    return-void
+
+    .line 35
+    :cond_1
+    const-string v1, "UTF"
+
+    .line 36
+    .line 37
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v0
+
+    .line 41
+    if-nez v0, :cond_2
+
+    .line 42
+    .line 43
+    new-instance v0, Ljava/lang/String;
+
+    .line 44
+    .line 45
+    iget-object v1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->subtitleData:[B
+
+    .line 46
+    .line 47
+    iget-object v2, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->detector:Ld7/b;
+
+    .line 48
+    .line 49
+    iget-object v2, v2, Ld7/b;->f:Ljava/lang/String;
+
+    .line 50
+    .line 51
+    invoke-static {v2}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v2
+
+    .line 55
+    invoke-direct {v0, v1, v2}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    .line 56
+    .line 57
+    .line 58
+    sget-object v1, Lcom/google/common/base/d;->a:Ljava/nio/charset/Charset;
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    iput-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->subtitleData:[B
+
+    .line 65
+    .line 66
+    :cond_2
+    iget-object v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->subtitleData:[B
+
+    .line 67
+    .line 68
+    array-length v0, v0
+
+    .line 69
+    iput v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->bytesRead:I
+
+    .line 70
+    .line 71
     return-void
 .end method
 
@@ -262,7 +427,7 @@
 
     .line 6
     .line 7
-    iget-object v4, p1, Landroidx/media3/extractor/text/CuesWithTiming;->cues:Lcom/google/common/collect/f2;
+    iget-object v4, p1, Landroidx/media3/extractor/text/CuesWithTiming;->cues:Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -407,11 +572,11 @@
 
     .line 30
     .line 31
-    new-instance v6, Landroidx/core/view/inputmethod/a;
+    new-instance v6, Landroidx/media3/extractor/text/b;
 
     .line 32
     .line 33
-    invoke-direct {v6, p0}, Landroidx/core/view/inputmethod/a;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v6, p0}, Landroidx/media3/extractor/text/b;-><init>(Landroidx/media3/extractor/text/SubtitleExtractor;)V
 
     .line 34
     .line 35
@@ -709,7 +874,7 @@
     move-result-wide v0
 
     .line 15
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 16
     .line 17
@@ -915,7 +1080,7 @@
 
     .line 10
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 11
     .line 12
@@ -1038,7 +1203,7 @@
 
     .line 13
     :goto_0
-    invoke-static {p2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -1082,7 +1247,7 @@
     move-result-wide v3
 
     .line 35
-    invoke-static {v3, v4}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v3, v4}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 36
     .line 37
@@ -1151,63 +1316,68 @@
 
     .line 65
     .line 66
-    invoke-direct {p0}, Landroidx/media3/extractor/text/SubtitleExtractor;->parseAndWriteToOutput()V
+    invoke-direct {p0}, Landroidx/media3/extractor/text/SubtitleExtractor;->convertToUtf8()V
 
     .line 67
     .line 68
     .line 69
-    iput v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
+    invoke-direct {p0}, Landroidx/media3/extractor/text/SubtitleExtractor;->parseAndWriteToOutput()V
 
     .line 70
     .line 71
+    .line 72
+    iput v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
+
+    .line 73
+    .line 74
     :cond_4
     iget p2, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
 
-    .line 72
-    .line 73
-    const/4 v2, 0x3
-
-    .line 74
-    if-ne p2, v2, :cond_5
-
     .line 75
     .line 76
-    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/SubtitleExtractor;->skipInput(Landroidx/media3/extractor/ExtractorInput;)Z
+    const/4 v2, 0x3
 
     .line 77
+    if-ne p2, v2, :cond_5
+
     .line 78
     .line 79
-    move-result p1
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/SubtitleExtractor;->skipInput(Landroidx/media3/extractor/ExtractorInput;)Z
 
     .line 80
-    if-eqz p1, :cond_5
-
     .line 81
     .line 82
-    invoke-direct {p0}, Landroidx/media3/extractor/text/SubtitleExtractor;->writeToOutput()V
+    move-result p1
 
     .line 83
+    if-eqz p1, :cond_5
+
     .line 84
     .line 85
-    iput v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
+    invoke-direct {p0}, Landroidx/media3/extractor/text/SubtitleExtractor;->writeToOutput()V
 
     .line 86
     .line 87
+    .line 88
+    iput v0, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
+
+    .line 89
+    .line 90
     :cond_5
     iget p1, p0, Landroidx/media3/extractor/text/SubtitleExtractor;->state:I
 
-    .line 88
-    .line 89
+    .line 91
+    .line 92
     if-ne p1, v0, :cond_6
 
-    .line 90
-    .line 91
+    .line 93
+    .line 94
     const/4 p1, -0x1
 
-    .line 92
+    .line 95
     return p1
 
-    .line 93
+    .line 96
     :cond_6
     return v1
 .end method
@@ -1280,7 +1450,7 @@
 
     .line 12
     :goto_0
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 13
     .line 14

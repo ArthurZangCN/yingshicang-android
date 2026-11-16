@@ -2,28 +2,69 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
+.field public final synthetic c:Ljava/lang/Object;
+
 
 # direct methods
-.method public static bridge synthetic a(Landroid/app/UiModeManager;)F
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/app/UiModeManager;->getContrast()F
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
+    iput p3, p0, Landroidx/media3/exoplayer/audio/p;->a:I
 
-    .line 5
-    return p0
-.end method
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/p;->b:Ljava/lang/Object;
 
-.method public static bridge synthetic b(Landroid/media/AudioTrack$Builder;Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/media/AudioTrack$Builder;->setContext(Landroid/content/Context;)Landroid/media/AudioTrack$Builder;
+    iput-object p2, p0, Landroidx/media3/exoplayer/audio/p;->c:Ljava/lang/Object;
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Landroidx/media3/exoplayer/audio/p;->a:I
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/audio/p;->c:Ljava/lang/Object;
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/audio/p;->b:Ljava/lang/Object;
+
+    packed-switch v0, :pswitch_data_0
+
+    check-cast v2, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+    check-cast v1, Landroidx/media3/exoplayer/audio/AudioSink$AudioTrackConfig;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->j(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;Landroidx/media3/exoplayer/audio/AudioSink$AudioTrackConfig;)V
+
+    return-void
+
+    :pswitch_0
+    check-cast v2, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
+
+    check-cast v1, Landroid/media/AudioRouting;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;->b(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;Landroid/media/AudioRouting;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

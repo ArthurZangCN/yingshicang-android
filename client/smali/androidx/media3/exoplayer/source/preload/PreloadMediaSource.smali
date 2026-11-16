@@ -382,14 +382,14 @@
 
     .line 26
     .line 27
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/g;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/t;
 
     .line 28
     .line 29
     const/4 v2, 0x1
 
     .line 30
-    invoke-direct {v1, p0, v2}, Landroidx/media3/exoplayer/source/preload/g;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Landroidx/media3/exoplayer/source/preload/t;-><init>(Ljava/lang/Object;I)V
 
     .line 31
     .line 32
@@ -1094,11 +1094,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/h0;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/i0;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/preload/h0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/preload/i0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
 
     .line 6
     .line 7
@@ -1290,7 +1290,7 @@
 .end method
 
 .method public onChildSourceInfoRefreshed(Landroidx/media3/common/Timeline;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->timeline:Landroidx/media3/common/Timeline;
@@ -1306,23 +1306,20 @@
 
     .line 7
     .line 8
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/y;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/k0;
 
     .line 9
     .line 10
-    const/4 v2, 0x1
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/preload/k0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;Landroidx/media3/common/Timeline;)V
 
     .line 11
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/source/preload/y;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 12
     .line 13
-    .line 14
     invoke-interface {v0, v1}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
 
+    .line 14
     .line 15
     .line 16
-    .line 17
     return-void
 .end method
 
@@ -1334,11 +1331,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/i0;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/j0;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0, p1, p2}, Landroidx/media3/exoplayer/source/preload/i0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;J)V
+    invoke-direct {v1, p0, p1, p2}, Landroidx/media3/exoplayer/source/preload/j0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;J)V
 
     .line 6
     .line 7
@@ -1393,7 +1390,7 @@
 
     .line 17
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 18
     .line 19
@@ -1559,11 +1556,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/g0;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/h0;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/preload/g0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/preload/h0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
 
     .line 6
     .line 7

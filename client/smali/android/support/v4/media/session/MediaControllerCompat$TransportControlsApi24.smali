@@ -41,7 +41,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/c;->p(Landroid/media/session/MediaController$TransportControls;)V
+    invoke-static {v0}, Landroid/support/v4/media/session/e;->t(Landroid/media/session/MediaController$TransportControls;)V
 
     .line 4
     .line 5
@@ -73,7 +73,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/session/c;->p(Landroid/media/session/MediaController$TransportControls;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/session/c;->y(Landroid/media/session/MediaController$TransportControls;Ljava/lang/String;Landroid/os/Bundle;)V
 
     .line 4
     .line 5
@@ -89,7 +89,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/b;->t(Landroid/media/session/MediaController$TransportControls;Landroid/net/Uri;Landroid/os/Bundle;)V
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/session/d;->t(Landroid/media/session/MediaController$TransportControls;Landroid/net/Uri;Landroid/os/Bundle;)V
 
     .line 4
     .line 5

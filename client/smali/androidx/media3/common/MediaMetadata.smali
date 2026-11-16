@@ -273,6 +273,14 @@
     .end annotation
 .end field
 
+.field public final author:Ljava/lang/CharSequence;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation build Landroidx/media3/common/util/UnstableApi;
+    .end annotation
+.end field
+
 .field public final compilation:Ljava/lang/CharSequence;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -386,13 +394,13 @@
     .end annotation
 .end field
 
-.field public final supportedCommands:Lcom/google/common/collect/f2;
+.field public final supportedCommands:Lcom/google/common/collect/e2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -1308,62 +1316,69 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->composer:Ljava/lang/CharSequence;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->author:Ljava/lang/CharSequence;
 
     .line 39
     invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$2800(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->conductor:Ljava/lang/CharSequence;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->composer:Ljava/lang/CharSequence;
 
     .line 40
-    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$2900(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/Integer;
+    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$2900(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->discNumber:Ljava/lang/Integer;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->conductor:Ljava/lang/CharSequence;
 
     .line 41
     invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3000(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/Integer;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->totalDiscCount:Ljava/lang/Integer;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->discNumber:Ljava/lang/Integer;
 
     .line 42
-    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3100(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
+    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3100(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/Integer;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->genre:Ljava/lang/CharSequence;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->totalDiscCount:Ljava/lang/Integer;
 
     .line 43
     invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3200(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->compilation:Ljava/lang/CharSequence;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->genre:Ljava/lang/CharSequence;
 
     .line 44
     invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3300(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->station:Ljava/lang/CharSequence;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->compilation:Ljava/lang/CharSequence;
 
     .line 45
-    iput-object v2, p0, Landroidx/media3/common/MediaMetadata;->mediaType:Ljava/lang/Integer;
-
-    .line 46
-    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3400(Landroidx/media3/common/MediaMetadata$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3400(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->station:Ljava/lang/CharSequence;
+
+    .line 46
+    iput-object v2, p0, Landroidx/media3/common/MediaMetadata;->mediaType:Ljava/lang/Integer;
 
     .line 47
-    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3500(Landroidx/media3/common/MediaMetadata$Builder;)Landroid/os/Bundle;
+    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3500(Landroidx/media3/common/MediaMetadata$Builder;)Lcom/google/common/collect/e2;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
+
+    .line 48
+    invoke-static {p1}, Landroidx/media3/common/MediaMetadata$Builder;->access$3600(Landroidx/media3/common/MediaMetadata$Builder;)Landroid/os/Bundle;
 
     move-result-object p1
 
@@ -1752,695 +1767,703 @@
     move-result-object v2
 
     .line 182
-    invoke-virtual {v1, v2}, Landroidx/media3/common/MediaMetadata$Builder;->setExtras(Landroid/os/Bundle;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v2}, Landroidx/media3/common/util/Util;->convertToNullIfInvalid(Landroid/os/Bundle;)Landroid/os/Bundle;
 
     .line 183
     .line 184
     .line 185
-    sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_USER_RATING:Ljava/lang/String;
+    move-result-object v2
 
     .line 186
-    .line 187
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Landroidx/media3/common/MediaMetadata$Builder;->setExtras(Landroid/os/Bundle;)Landroidx/media3/common/MediaMetadata$Builder;
 
+    .line 187
     .line 188
     .line 189
-    .line 190
-    move-result v2
+    sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_USER_RATING:Ljava/lang/String;
 
+    .line 190
     .line 191
-    if-eqz v2, :cond_1
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 192
     .line 193
-    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
-
     .line 194
-    .line 195
-    .line 196
-    move-result-object v1
+    move-result v2
 
+    .line 195
+    if-eqz v2, :cond_1
+
+    .line 196
     .line 197
-    if-eqz v1, :cond_1
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     .line 198
     .line 199
-    invoke-static {v1}, Landroidx/media3/common/Rating;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/Rating;
-
     .line 200
-    .line 201
-    .line 202
     move-result-object v1
 
+    .line 201
+    if-eqz v1, :cond_1
+
+    .line 202
     .line 203
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setUserRating(Landroidx/media3/common/Rating;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Landroidx/media3/common/Rating;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/Rating;
 
     .line 204
     .line 205
     .line 206
+    move-result-object v1
+
+    .line 207
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setUserRating(Landroidx/media3/common/Rating;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 208
+    .line 209
+    .line 210
     :cond_1
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_OVERALL_RATING:Ljava/lang/String;
 
-    .line 207
-    .line 208
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 209
-    .line 210
     .line 211
-    move-result v2
-
     .line 212
-    if-eqz v2, :cond_2
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 213
     .line 214
-    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
-
     .line 215
-    .line 216
-    .line 217
-    move-result-object v1
+    move-result v2
 
+    .line 216
+    if-eqz v2, :cond_2
+
+    .line 217
     .line 218
-    if-eqz v1, :cond_2
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     .line 219
     .line 220
-    invoke-static {v1}, Landroidx/media3/common/Rating;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/Rating;
-
     .line 221
-    .line 222
-    .line 223
     move-result-object v1
 
+    .line 222
+    if-eqz v1, :cond_2
+
+    .line 223
     .line 224
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setOverallRating(Landroidx/media3/common/Rating;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Landroidx/media3/common/Rating;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/Rating;
 
     .line 225
     .line 226
     .line 227
+    move-result-object v1
+
+    .line 228
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setOverallRating(Landroidx/media3/common/Rating;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 229
+    .line 230
+    .line 231
     :cond_2
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_DURATION_MS:Ljava/lang/String;
 
-    .line 228
-    .line 229
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 230
-    .line 231
     .line 232
-    move-result v2
-
     .line 233
-    if-eqz v2, :cond_3
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 234
     .line 235
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
-
     .line 236
-    .line 237
-    .line 238
-    move-result-wide v1
+    move-result v2
 
+    .line 237
+    if-eqz v2, :cond_3
+
+    .line 238
     .line 239
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
     .line 240
     .line 241
     .line 242
-    move-result-object v1
+    move-result-wide v1
 
     .line 243
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setDurationMs(Ljava/lang/Long;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 244
     .line 245
     .line 246
+    move-result-object v1
+
+    .line 247
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setDurationMs(Ljava/lang/Long;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 248
+    .line 249
+    .line 250
     :cond_3
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_TRACK_NUMBER:Ljava/lang/String;
 
-    .line 247
-    .line 248
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 249
-    .line 250
     .line 251
-    move-result v2
-
     .line 252
-    if-eqz v2, :cond_4
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 253
     .line 254
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 255
-    .line 256
-    .line 257
-    move-result v1
+    move-result v2
 
+    .line 256
+    if-eqz v2, :cond_4
+
+    .line 257
     .line 258
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 259
     .line 260
     .line 261
-    move-result-object v1
+    move-result v1
 
     .line 262
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setTrackNumber(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 263
     .line 264
     .line 265
+    move-result-object v1
+
+    .line 266
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setTrackNumber(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 267
+    .line 268
+    .line 269
     :cond_4
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_TOTAL_TRACK_COUNT:Ljava/lang/String;
 
-    .line 266
-    .line 267
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 268
-    .line 269
     .line 270
-    move-result v2
-
     .line 271
-    if-eqz v2, :cond_5
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 272
     .line 273
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 274
-    .line 275
-    .line 276
-    move-result v1
+    move-result v2
 
+    .line 275
+    if-eqz v2, :cond_5
+
+    .line 276
     .line 277
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 278
     .line 279
     .line 280
-    move-result-object v1
+    move-result v1
 
     .line 281
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setTotalTrackCount(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 282
     .line 283
     .line 284
+    move-result-object v1
+
+    .line 285
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setTotalTrackCount(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 286
+    .line 287
+    .line 288
     :cond_5
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_FOLDER_TYPE:Ljava/lang/String;
 
-    .line 285
-    .line 286
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 287
-    .line 288
     .line 289
-    move-result v2
-
     .line 290
-    if-eqz v2, :cond_6
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 291
     .line 292
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 293
-    .line 294
-    .line 295
-    move-result v1
+    move-result v2
 
+    .line 294
+    if-eqz v2, :cond_6
+
+    .line 295
     .line 296
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 297
     .line 298
     .line 299
-    move-result-object v1
+    move-result v1
 
     .line 300
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setFolderType(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 301
     .line 302
     .line 303
+    move-result-object v1
+
+    .line 304
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setFolderType(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 305
+    .line 306
+    .line 307
     :cond_6
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_IS_BROWSABLE:Ljava/lang/String;
 
-    .line 304
-    .line 305
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 306
-    .line 307
     .line 308
-    move-result v2
-
     .line 309
-    if-eqz v2, :cond_7
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 310
     .line 311
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
-
     .line 312
-    .line 313
-    .line 314
-    move-result v1
+    move-result v2
 
+    .line 313
+    if-eqz v2, :cond_7
+
+    .line 314
     .line 315
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     .line 316
     .line 317
     .line 318
-    move-result-object v1
+    move-result v1
 
     .line 319
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setIsBrowsable(Ljava/lang/Boolean;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 320
     .line 321
     .line 322
+    move-result-object v1
+
+    .line 323
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setIsBrowsable(Ljava/lang/Boolean;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 324
+    .line 325
+    .line 326
     :cond_7
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_IS_PLAYABLE:Ljava/lang/String;
 
-    .line 323
-    .line 324
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 325
-    .line 326
     .line 327
-    move-result v2
-
     .line 328
-    if-eqz v2, :cond_8
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 329
     .line 330
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
-
     .line 331
-    .line 332
-    .line 333
-    move-result v1
+    move-result v2
 
+    .line 332
+    if-eqz v2, :cond_8
+
+    .line 333
     .line 334
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getBoolean(Ljava/lang/String;)Z
 
     .line 335
     .line 336
     .line 337
-    move-result-object v1
+    move-result v1
 
     .line 338
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setIsPlayable(Ljava/lang/Boolean;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 339
     .line 340
     .line 341
+    move-result-object v1
+
+    .line 342
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setIsPlayable(Ljava/lang/Boolean;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 343
+    .line 344
+    .line 345
     :cond_8
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_RECORDING_YEAR:Ljava/lang/String;
 
-    .line 342
-    .line 343
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 344
-    .line 345
     .line 346
-    move-result v2
-
     .line 347
-    if-eqz v2, :cond_9
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 348
     .line 349
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 350
-    .line 351
-    .line 352
-    move-result v1
+    move-result v2
 
+    .line 351
+    if-eqz v2, :cond_9
+
+    .line 352
     .line 353
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 354
     .line 355
     .line 356
-    move-result-object v1
+    move-result v1
 
     .line 357
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setRecordingYear(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 358
     .line 359
     .line 360
+    move-result-object v1
+
+    .line 361
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setRecordingYear(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 362
+    .line 363
+    .line 364
     :cond_9
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_RECORDING_MONTH:Ljava/lang/String;
 
-    .line 361
-    .line 362
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 363
-    .line 364
     .line 365
-    move-result v2
-
     .line 366
-    if-eqz v2, :cond_a
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 367
     .line 368
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 369
-    .line 370
-    .line 371
-    move-result v1
+    move-result v2
 
+    .line 370
+    if-eqz v2, :cond_a
+
+    .line 371
     .line 372
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 373
     .line 374
     .line 375
-    move-result-object v1
+    move-result v1
 
     .line 376
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setRecordingMonth(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 377
     .line 378
     .line 379
+    move-result-object v1
+
+    .line 380
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setRecordingMonth(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 381
+    .line 382
+    .line 383
     :cond_a
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_RECORDING_DAY:Ljava/lang/String;
 
-    .line 380
-    .line 381
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 382
-    .line 383
     .line 384
-    move-result v2
-
     .line 385
-    if-eqz v2, :cond_b
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 386
     .line 387
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 388
-    .line 389
-    .line 390
-    move-result v1
+    move-result v2
 
+    .line 389
+    if-eqz v2, :cond_b
+
+    .line 390
     .line 391
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 392
     .line 393
     .line 394
-    move-result-object v1
+    move-result v1
 
     .line 395
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setRecordingDay(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 396
     .line 397
     .line 398
+    move-result-object v1
+
+    .line 399
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setRecordingDay(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 400
+    .line 401
+    .line 402
     :cond_b
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_RELEASE_YEAR:Ljava/lang/String;
 
-    .line 399
-    .line 400
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 401
-    .line 402
     .line 403
-    move-result v2
-
     .line 404
-    if-eqz v2, :cond_c
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 405
     .line 406
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 407
-    .line 408
-    .line 409
-    move-result v1
+    move-result v2
 
+    .line 408
+    if-eqz v2, :cond_c
+
+    .line 409
     .line 410
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 411
     .line 412
     .line 413
-    move-result-object v1
+    move-result v1
 
     .line 414
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setReleaseYear(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 415
     .line 416
     .line 417
+    move-result-object v1
+
+    .line 418
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setReleaseYear(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 419
+    .line 420
+    .line 421
     :cond_c
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_RELEASE_MONTH:Ljava/lang/String;
 
-    .line 418
-    .line 419
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 420
-    .line 421
     .line 422
-    move-result v2
-
     .line 423
-    if-eqz v2, :cond_d
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 424
     .line 425
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 426
-    .line 427
-    .line 428
-    move-result v1
+    move-result v2
 
+    .line 427
+    if-eqz v2, :cond_d
+
+    .line 428
     .line 429
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 430
     .line 431
     .line 432
-    move-result-object v1
+    move-result v1
 
     .line 433
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setReleaseMonth(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 434
     .line 435
     .line 436
+    move-result-object v1
+
+    .line 437
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setReleaseMonth(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 438
+    .line 439
+    .line 440
     :cond_d
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_RELEASE_DAY:Ljava/lang/String;
 
-    .line 437
-    .line 438
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 439
-    .line 440
     .line 441
-    move-result v2
-
     .line 442
-    if-eqz v2, :cond_e
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 443
     .line 444
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 445
-    .line 446
-    .line 447
-    move-result v1
+    move-result v2
 
+    .line 446
+    if-eqz v2, :cond_e
+
+    .line 447
     .line 448
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 449
     .line 450
     .line 451
-    move-result-object v1
+    move-result v1
 
     .line 452
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setReleaseDay(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 453
     .line 454
     .line 455
+    move-result-object v1
+
+    .line 456
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setReleaseDay(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 457
+    .line 458
+    .line 459
     :cond_e
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_DISC_NUMBER:Ljava/lang/String;
 
-    .line 456
-    .line 457
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 458
-    .line 459
     .line 460
-    move-result v2
-
     .line 461
-    if-eqz v2, :cond_f
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 462
     .line 463
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 464
-    .line 465
-    .line 466
-    move-result v1
+    move-result v2
 
+    .line 465
+    if-eqz v2, :cond_f
+
+    .line 466
     .line 467
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 468
     .line 469
     .line 470
-    move-result-object v1
+    move-result v1
 
     .line 471
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setDiscNumber(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 472
     .line 473
     .line 474
+    move-result-object v1
+
+    .line 475
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setDiscNumber(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 476
+    .line 477
+    .line 478
     :cond_f
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_TOTAL_DISC_COUNT:Ljava/lang/String;
 
-    .line 475
-    .line 476
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 477
-    .line 478
     .line 479
-    move-result v2
-
     .line 480
-    if-eqz v2, :cond_10
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 481
     .line 482
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 483
-    .line 484
-    .line 485
-    move-result v1
+    move-result v2
 
+    .line 484
+    if-eqz v2, :cond_10
+
+    .line 485
     .line 486
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 487
     .line 488
     .line 489
-    move-result-object v1
+    move-result v1
 
     .line 490
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setTotalDiscCount(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 491
     .line 492
     .line 493
+    move-result-object v1
+
+    .line 494
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setTotalDiscCount(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 495
+    .line 496
+    .line 497
     :cond_10
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_MEDIA_TYPE:Ljava/lang/String;
 
-    .line 494
-    .line 495
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
-
-    .line 496
-    .line 497
     .line 498
-    move-result v2
-
     .line 499
-    if-eqz v2, :cond_11
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
     .line 500
     .line 501
-    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
     .line 502
-    .line 503
-    .line 504
-    move-result v1
+    move-result v2
 
+    .line 503
+    if-eqz v2, :cond_11
+
+    .line 504
     .line 505
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
 
     .line 506
     .line 507
     .line 508
-    move-result-object v1
+    move-result v1
 
     .line 509
-    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setMediaType(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 510
     .line 511
     .line 512
+    move-result-object v1
+
+    .line 513
+    invoke-virtual {v0, v1}, Landroidx/media3/common/MediaMetadata$Builder;->setMediaType(Ljava/lang/Integer;)Landroidx/media3/common/MediaMetadata$Builder;
+
+    .line 514
+    .line 515
+    .line 516
     :cond_11
     sget-object v1, Landroidx/media3/common/MediaMetadata;->FIELD_SUPPORTED_COMMANDS:Ljava/lang/String;
 
-    .line 513
-    .line 514
-    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
-
-    .line 515
-    .line 516
     .line 517
-    move-result-object p0
-
     .line 518
-    if-eqz p0, :cond_12
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 519
     .line 520
+    .line 521
+    move-result-object p0
+
+    .line 522
+    if-eqz p0, :cond_12
+
+    .line 523
+    .line 524
     invoke-virtual {v0, p0}, Landroidx/media3/common/MediaMetadata$Builder;->setSupportedCommands(Ljava/util/List;)Landroidx/media3/common/MediaMetadata$Builder;
 
-    .line 521
-    .line 522
-    .line 523
+    .line 525
+    .line 526
+    .line 527
     :cond_12
     invoke-virtual {v0}, Landroidx/media3/common/MediaMetadata$Builder;->build()Landroidx/media3/common/MediaMetadata;
 
-    .line 524
-    .line 525
-    .line 526
+    .line 528
+    .line 529
+    .line 530
     move-result-object p0
 
-    .line 527
+    .line 531
     return-object p0
 .end method
 
@@ -2658,7 +2681,7 @@
 
     .line 23
     .line 24
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 25
     .line 26
@@ -2678,7 +2701,7 @@
 
     .line 33
     .line 34
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 35
     .line 36
@@ -2698,7 +2721,7 @@
 
     .line 43
     .line 44
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 45
     .line 46
@@ -2718,7 +2741,7 @@
 
     .line 53
     .line 54
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 55
     .line 56
@@ -2738,7 +2761,7 @@
 
     .line 63
     .line 64
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 65
     .line 66
@@ -2758,7 +2781,7 @@
 
     .line 73
     .line 74
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 75
     .line 76
@@ -2778,7 +2801,7 @@
 
     .line 83
     .line 84
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 85
     .line 86
@@ -2798,7 +2821,7 @@
 
     .line 93
     .line 94
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 95
     .line 96
@@ -2818,7 +2841,7 @@
 
     .line 103
     .line 104
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 105
     .line 106
@@ -2838,7 +2861,7 @@
 
     .line 113
     .line 114
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 115
     .line 116
@@ -2878,7 +2901,7 @@
 
     .line 133
     .line 134
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 135
     .line 136
@@ -2898,7 +2921,7 @@
 
     .line 143
     .line 144
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 145
     .line 146
@@ -2918,7 +2941,7 @@
 
     .line 153
     .line 154
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 155
     .line 156
@@ -2938,7 +2961,7 @@
 
     .line 163
     .line 164
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 165
     .line 166
@@ -2958,7 +2981,7 @@
 
     .line 173
     .line 174
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 175
     .line 176
@@ -2978,7 +3001,7 @@
 
     .line 183
     .line 184
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 185
     .line 186
@@ -2998,7 +3021,7 @@
 
     .line 193
     .line 194
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 195
     .line 196
@@ -3018,7 +3041,7 @@
 
     .line 203
     .line 204
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 205
     .line 206
@@ -3038,7 +3061,7 @@
 
     .line 213
     .line 214
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 215
     .line 216
@@ -3058,7 +3081,7 @@
 
     .line 223
     .line 224
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 225
     .line 226
@@ -3078,7 +3101,7 @@
 
     .line 233
     .line 234
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 235
     .line 236
@@ -3098,7 +3121,7 @@
 
     .line 243
     .line 244
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 245
     .line 246
@@ -3118,7 +3141,7 @@
 
     .line 253
     .line 254
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 255
     .line 256
@@ -3138,7 +3161,7 @@
 
     .line 263
     .line 264
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 265
     .line 266
@@ -3158,7 +3181,7 @@
 
     .line 273
     .line 274
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 275
     .line 276
@@ -3178,7 +3201,7 @@
 
     .line 283
     .line 284
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 285
     .line 286
@@ -3198,7 +3221,7 @@
 
     .line 293
     .line 294
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 295
     .line 296
@@ -3218,7 +3241,7 @@
 
     .line 303
     .line 304
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 305
     .line 306
@@ -3238,7 +3261,7 @@
 
     .line 313
     .line 314
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 315
     .line 316
@@ -3258,7 +3281,7 @@
 
     .line 323
     .line 324
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 325
     .line 326
@@ -3278,7 +3301,7 @@
 
     .line 333
     .line 334
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     .line 335
     .line 336
@@ -3298,7 +3321,7 @@
 
     .line 343
     .line 344
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 345
     .line 346
@@ -3310,15 +3333,15 @@
 
     .line 349
     .line 350
-    iget-object v2, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 351
     .line 352
-    iget-object v3, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 353
     .line 354
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 355
     .line 356
@@ -3836,7 +3859,7 @@
 
     .line 217
     .line 218
-    iget-object v2, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 219
     .line 220
@@ -3844,7 +3867,7 @@
 
     .line 221
     .line 222
-    invoke-static {v0}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 223
     .line 224
@@ -4608,7 +4631,7 @@
     .line 374
     .line 375
     :cond_20
-    iget-object v1, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 376
     .line 377
@@ -4632,7 +4655,7 @@
 
     .line 386
     .line 387
-    iget-object v3, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object v3, p0, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 388
     .line 389

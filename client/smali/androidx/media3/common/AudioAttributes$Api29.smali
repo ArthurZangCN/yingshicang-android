@@ -48,7 +48,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/appcompat/widget/a;->k(Landroid/media/AudioAttributes$Builder;I)V
+    invoke-static {p0, p1}, Landroidx/appcompat/widget/a;->m(Landroid/media/AudioAttributes$Builder;I)V
 
     .line 2
     .line 3
@@ -60,7 +60,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroid/support/v4/media/session/a;->m(Landroid/media/AudioAttributes$Builder;Z)V
+    invoke-static {p0, p1}, Landroid/support/v4/media/session/h;->l(Landroid/media/AudioAttributes$Builder;Z)V
 
     .line 2
     .line 3

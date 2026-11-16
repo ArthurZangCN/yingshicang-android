@@ -219,7 +219,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {v1, p1, v2}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->parseNext(BLjava/io/DataInputStream;)Lcom/google/common/collect/f2;
+    invoke-virtual {v1, p1, v2}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->parseNext(BLjava/io/DataInputStream;)Lcom/google/common/collect/e2;
 
     .line 20
     .line 21

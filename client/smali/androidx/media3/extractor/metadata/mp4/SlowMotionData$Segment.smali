@@ -39,14 +39,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/media3/datasource/cache/c;
+    new-instance v0, Landroidx/media3/exoplayer/hls/playlist/b;
 
     .line 2
     .line 3
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/media3/datasource/cache/c;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/exoplayer/hls/playlist/b;-><init>(I)V
 
     .line 5
     .line 6
@@ -86,7 +86,7 @@
 
     .line 11
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 12
     .line 13
@@ -121,7 +121,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/google/common/collect/z0;->a:Lcom/google/common/collect/z0$a;
+    sget-object v0, Lcom/google/common/collect/y0;->a:Lcom/google/common/collect/y0$a;
 
     .line 2
     .line 3
@@ -133,7 +133,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/common/collect/z0$a;->b(JJ)Lcom/google/common/collect/z0;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/common/collect/y0$a;->b(JJ)Lcom/google/common/collect/y0;
 
     .line 8
     .line 9
@@ -149,7 +149,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/common/collect/z0;->b(JJ)Lcom/google/common/collect/z0;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/google/common/collect/y0;->b(JJ)Lcom/google/common/collect/y0;
 
     .line 16
     .line 17
@@ -165,7 +165,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v0, p0, p1}, Lcom/google/common/collect/z0;->a(II)Lcom/google/common/collect/z0;
+    invoke-virtual {v0, p0, p1}, Lcom/google/common/collect/y0;->a(II)Lcom/google/common/collect/y0;
 
     .line 24
     .line 25
@@ -173,7 +173,7 @@
     move-result-object p0
 
     .line 27
-    invoke-virtual {p0}, Lcom/google/common/collect/z0;->g()I
+    invoke-virtual {p0}, Lcom/google/common/collect/y0;->g()I
 
     .line 28
     .line 29
@@ -364,7 +364,7 @@
 
     .line 30
     .line 31
-    invoke-static {v3}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v3}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 32
     .line 33

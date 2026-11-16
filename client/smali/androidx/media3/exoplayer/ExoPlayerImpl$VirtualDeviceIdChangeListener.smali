@@ -51,9 +51,9 @@
     iput-object v0, p0, Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;->contextReference:Ljava/lang/ref/WeakReference;
 
     .line 4
-    new-instance v0, Landroidx/media3/exoplayer/a1;
+    new-instance v0, Landroidx/media3/exoplayer/f1;
 
-    invoke-direct {v0, p0}, Landroidx/media3/exoplayer/a1;-><init>(Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;)V
+    invoke-direct {v0, p0}, Landroidx/media3/exoplayer/f1;-><init>(Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;)V
 
     iput-object v0, p0, Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;->listener:Ljava/util/function/IntConsumer;
 
@@ -73,13 +73,13 @@
     move-result-object p1
 
     .line 6
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v1, Landroidx/media3/exoplayer/b1;
+    new-instance v1, Landroidx/media3/exoplayer/g1;
 
-    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/b1;-><init>(Landroidx/media3/common/util/HandlerWrapper;)V
+    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/g1;-><init>(Landroidx/media3/common/util/HandlerWrapper;)V
 
-    invoke-static {p2, v1, v0}, Landroidx/media3/exoplayer/y0;->a(Landroid/content/Context;Landroidx/media3/exoplayer/b1;Landroidx/media3/exoplayer/a1;)V
+    invoke-static {p2, v1, v0}, Landroidx/media3/exoplayer/d1;->a(Landroid/content/Context;Landroidx/media3/exoplayer/g1;Landroidx/media3/exoplayer/f1;)V
 
     return-void
 .end method
@@ -197,7 +197,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v1}, Landroidx/media3/exoplayer/z0;->a(Landroid/content/Context;Ljava/util/function/IntConsumer;)V
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/e1;->a(Landroid/content/Context;Ljava/util/function/IntConsumer;)V
 
     .line 15
     .line 16

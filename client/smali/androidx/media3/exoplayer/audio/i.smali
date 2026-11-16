@@ -2,105 +2,41 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+.field public final synthetic b:J
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/audio/AudioSink;Landroidx/media3/common/Format;)Landroidx/media3/exoplayer/audio/AudioOffloadSupport;
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;J)V
     .locals 0
 
     .line 1
-    sget-object p0, Landroidx/media3/exoplayer/audio/AudioOffloadSupport;->DEFAULT_UNSUPPORTED:Landroidx/media3/exoplayer/audio/AudioOffloadSupport;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    return-object p0
-.end method
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/i;->a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
-.method public static b(Landroidx/media3/exoplayer/audio/AudioSink;)V
-    .locals 0
+    iput-wide p2, p0, Landroidx/media3/exoplayer/audio/i;->b:J
 
-    .line 1
     return-void
 .end method
 
-.method public static c(Landroidx/media3/exoplayer/audio/AudioSink;Landroidx/media3/exoplayer/audio/AudioOutputProvider;)V
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 3
 
     .line 1
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/i;->a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
-    .line 2
-    .line 3
-    const-string p1, "AudioSink doesn\'t support setAudioOutputProvider"
+    iget-wide v1, p0, Landroidx/media3/exoplayer/audio/i;->b:J
 
-    .line 4
-    .line 5
-    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-static {v0, v1, v2}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->f(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;J)V
 
-    .line 6
-    .line 7
-    .line 8
-    throw p0
-.end method
-
-.method public static d(Landroidx/media3/exoplayer/audio/AudioSink;Landroidx/media3/common/util/Clock;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/audio/AudioSink;II)V
-    .locals 0
-    .annotation build Landroidx/annotation/RequiresApi;
-        value = 0x1d
-    .end annotation
-
-    .line 1
-    return-void
-.end method
-
-.method public static f(Landroidx/media3/exoplayer/audio/AudioSink;I)V
-    .locals 0
-    .annotation build Landroidx/annotation/RequiresApi;
-        value = 0x1d
-    .end annotation
-
-    .line 1
-    return-void
-.end method
-
-.method public static g(Landroidx/media3/exoplayer/audio/AudioSink;J)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static h(Landroidx/media3/exoplayer/audio/AudioSink;Landroidx/media3/exoplayer/analytics/PlayerId;)V
-    .locals 0
-    .param p1    # Landroidx/media3/exoplayer/analytics/PlayerId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static i(Landroidx/media3/exoplayer/audio/AudioSink;Landroid/media/AudioDeviceInfo;)V
-    .locals 0
-    .param p1    # Landroid/media/AudioDeviceInfo;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static j(Landroidx/media3/exoplayer/audio/AudioSink;I)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

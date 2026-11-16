@@ -44,10 +44,10 @@
 # instance fields
 .field public final forceDefaultLicenseUri:Z
 
-.field public final forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+.field public final forcedSessionTrackTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -59,10 +59,10 @@
     .end annotation
 .end field
 
-.field public final licenseRequestHeaders:Lcom/google/common/collect/h2;
+.field public final licenseRequestHeaders:Lcom/google/common/collect/g2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -79,13 +79,13 @@
 
 .field public final playClearContentWithoutKey:Z
 
-.field public final requestHeaders:Lcom/google/common/collect/h2;
+.field public final requestHeaders:Lcom/google/common/collect/g2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -98,13 +98,13 @@
 
 .field public final scheme:Ljava/util/UUID;
 
-.field public final sessionForClearTypes:Lcom/google/common/collect/f2;
+.field public final sessionForClearTypes:Lcom/google/common/collect/e2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -282,7 +282,7 @@
     const/4 v0, 0x1
 
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 4
     invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$300(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Ljava/util/UUID;
@@ -306,18 +306,18 @@
     iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseUri:Landroid/net/Uri;
 
     .line 9
-    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$900(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/h2;
+    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$900(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/g2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->requestHeaders:Lcom/google/common/collect/h2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->requestHeaders:Lcom/google/common/collect/g2;
 
     .line 10
-    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$900(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/h2;
+    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$900(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/g2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 11
     invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$1000(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Z
@@ -341,18 +341,18 @@
     iput-boolean v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->playClearContentWithoutKey:Z
 
     .line 14
-    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$1200(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$1200(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->sessionForClearTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->sessionForClearTypes:Lcom/google/common/collect/e2;
 
     .line 15
-    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$1200(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$1200(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 16
     invoke-static {p1}, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;->access$1300(Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;)[B
@@ -471,7 +471,7 @@
     move-result-object v2
 
     .line 30
-    invoke-static {v2}, Landroidx/media3/common/util/BundleCollectionUtil;->bundleToStringImmutableMap(Landroid/os/Bundle;)Lcom/google/common/collect/h2;
+    invoke-static {v2}, Landroidx/media3/common/util/BundleCollectionUtil;->bundleToStringImmutableMap(Landroid/os/Bundle;)Lcom/google/common/collect/g2;
 
     .line 31
     .line 32
@@ -539,7 +539,7 @@
     move-result-object v6
 
     .line 64
-    invoke-static {v6}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {v6}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 65
     .line 66
@@ -722,7 +722,7 @@
 
     .line 26
     .line 27
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 28
     .line 29
@@ -734,15 +734,15 @@
 
     .line 32
     .line 33
-    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 34
     .line 35
-    iget-object v3, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v3, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 36
     .line 37
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 38
     .line 39
@@ -790,15 +790,15 @@
 
     .line 60
     .line 61
-    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 62
     .line 63
-    iget-object v3, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 64
     .line 65
-    invoke-virtual {v1, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 66
     .line 67
@@ -928,11 +928,11 @@
 
     .line 21
     .line 22
-    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 23
     .line 24
-    invoke-virtual {v1}, Lcom/google/common/collect/h2;->hashCode()I
+    invoke-virtual {v1}, Lcom/google/common/collect/g2;->hashCode()I
 
     .line 25
     .line 26
@@ -980,11 +980,11 @@
 
     .line 45
     .line 46
-    iget-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 47
     .line 48
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 49
     .line 50
@@ -1071,11 +1071,11 @@
     .line 25
     .line 26
     :cond_0
-    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 27
     .line 28
-    invoke-virtual {v1}, Lcom/google/common/collect/h2;->isEmpty()Z
+    invoke-virtual {v1}, Lcom/google/common/collect/g2;->isEmpty()Z
 
     .line 29
     .line 30
@@ -1091,7 +1091,7 @@
 
     .line 35
     .line 36
-    iget-object v2, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/h2;
+    iget-object v2, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->licenseRequestHeaders:Lcom/google/common/collect/g2;
 
     .line 37
     .line 38
@@ -1163,7 +1163,7 @@
     .line 71
     .line 72
     :cond_4
-    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 73
     .line 74
@@ -1187,7 +1187,7 @@
 
     .line 83
     .line 84
-    iget-object v3, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/f2;
+    iget-object v3, p0, Landroidx/media3/common/MediaItem$DrmConfiguration;->forcedSessionTrackTypes:Lcom/google/common/collect/e2;
 
     .line 85
     .line 86

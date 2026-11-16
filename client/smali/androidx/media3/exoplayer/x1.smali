@@ -2,15 +2,47 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+.field public final synthetic b:Landroid/util/Pair;
+
+.field public final synthetic c:Landroidx/media3/exoplayer/drm/KeyRequestInfo;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/RenderersFactory;Landroidx/media3/exoplayer/Renderer;Landroid/os/Handler;Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/audio/AudioRendererEventListener;Landroidx/media3/exoplayer/text/TextOutput;Landroidx/media3/exoplayer/metadata/MetadataOutput;)Landroidx/media3/exoplayer/Renderer;
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
     .locals 0
-    .annotation build Landroidx/annotation/Nullable;
-    .end annotation
 
     .line 1
-    const/4 p0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-object p0
+    iput-object p1, p0, Landroidx/media3/exoplayer/x1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/x1;->b:Landroid/util/Pair;
+
+    iput-object p3, p0, Landroidx/media3/exoplayer/x1;->c:Landroidx/media3/exoplayer/drm/KeyRequestInfo;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/exoplayer/x1;->b:Landroid/util/Pair;
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/x1;->c:Landroidx/media3/exoplayer/drm/KeyRequestInfo;
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/x1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+    invoke-static {v2, v0, v1}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->k(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
+
+    return-void
 .end method

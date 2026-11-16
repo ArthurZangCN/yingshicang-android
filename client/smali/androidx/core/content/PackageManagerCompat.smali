@@ -289,7 +289,7 @@
     return-object v3
 .end method
 
-.method public static getUnusedAppRestrictionsStatus(Landroid/content/Context;)Lcom/google/common/util/concurrent/t;
+.method public static getUnusedAppRestrictionsStatus(Landroid/content/Context;)Lcom/google/common/util/concurrent/x;
     .locals 7
     .param p0    # Landroid/content/Context;
         .annotation build Landroidx/annotation/NonNull;
@@ -303,7 +303,7 @@
             "(",
             "Landroid/content/Context;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -560,11 +560,11 @@
     .line 118
     .line 119
     .line 120
-    new-instance p0, Landroidx/core/content/n;
+    new-instance p0, Landroidx/core/content/p;
 
     .line 121
     .line 122
-    invoke-direct {p0, v1}, Landroidx/core/content/n;-><init>(Landroidx/core/content/UnusedAppRestrictionsBackportServiceConnection;)V
+    invoke-direct {p0, v1}, Landroidx/core/content/p;-><init>(Landroidx/core/content/UnusedAppRestrictionsBackportServiceConnection;)V
 
     .line 123
     .line 124

@@ -240,7 +240,7 @@
 
     .line 14
     .line 15
-    invoke-static {}, Lcom/google/common/collect/h2;->builder()Lcom/google/common/collect/h2$b;
+    invoke-static {}, Lcom/google/common/collect/g2;->builder()Lcom/google/common/collect/g2$b;
 
     .line 16
     .line 17
@@ -248,7 +248,7 @@
     move-result-object v1
 
     .line 19
-    invoke-virtual {v1, v0}, Lcom/google/common/collect/h2$b;->i(Ljava/util/Map;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v1, v0}, Lcom/google/common/collect/g2$b;->i(Ljava/util/Map;)Lcom/google/common/collect/g2$b;
 
     .line 20
     .line 21
@@ -260,7 +260,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1, p3}, Lcom/google/common/collect/h2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/h2$b;
+    invoke-virtual {v0, v1, p3}, Lcom/google/common/collect/g2$b;->f(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/g2$b;
 
     .line 26
     .line 27
@@ -268,7 +268,7 @@
     move-result-object p3
 
     .line 29
-    invoke-virtual {p3}, Lcom/google/common/collect/h2$b;->b()Lcom/google/common/collect/h2;
+    invoke-virtual {p3}, Lcom/google/common/collect/g2$b;->b()Lcom/google/common/collect/g2;
 
     .line 30
     .line 31

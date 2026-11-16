@@ -546,7 +546,7 @@
 
     .line 35
     .line 36
-    invoke-static {p0}, Landroidx/appcompat/widget/a;->b(Landroid/media/AudioAttributes;)I
+    invoke-static {p0}, Landroidx/appcompat/widget/b;->c(Landroid/media/AudioAttributes;)I
 
     .line 37
     .line 38
@@ -559,7 +559,7 @@
     .line 41
     .line 42
     .line 43
-    invoke-static {p0}, Landroid/support/v4/media/session/e;->s(Landroid/media/AudioAttributes;)Z
+    invoke-static {p0}, Landroidx/activity/g;->r(Landroid/media/AudioAttributes;)Z
 
     .line 44
     .line 45
@@ -581,7 +581,7 @@
 
     .line 53
     .line 54
-    invoke-static {p0}, Landroidx/media3/common/b;->a(Landroid/media/AudioAttributes;)I
+    invoke-static {p0}, Landroidx/core/view/accessibility/d;->a(Landroid/media/AudioAttributes;)I
 
     .line 55
     .line 56
@@ -594,7 +594,7 @@
     .line 59
     .line 60
     .line 61
-    invoke-static {p0}, Landroidx/media3/common/d;->a(Landroid/media/AudioAttributes;)Z
+    invoke-static {p0}, Landroidx/media3/common/b;->b(Landroid/media/AudioAttributes;)Z
 
     .line 62
     .line 63

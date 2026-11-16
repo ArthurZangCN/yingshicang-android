@@ -7,17 +7,21 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/appcompat/widget/TooltipCompatHandler;
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/appcompat/widget/TooltipCompatHandler;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/d;->a:Landroidx/appcompat/widget/TooltipCompatHandler;
+    iput p2, p0, Landroidx/appcompat/widget/d;->a:I
+
+    iput-object p1, p0, Landroidx/appcompat/widget/d;->b:Ljava/lang/Object;
 
     return-void
 .end method
@@ -25,12 +29,32 @@
 
 # virtual methods
 .method public final run()V
-    .locals 1
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/d;->a:Landroidx/appcompat/widget/TooltipCompatHandler;
+    iget v0, p0, Landroidx/appcompat/widget/d;->a:I
 
-    invoke-static {v0}, Landroidx/appcompat/widget/TooltipCompatHandler;->a(Landroidx/appcompat/widget/TooltipCompatHandler;)V
+    iget-object v1, p0, Landroidx/appcompat/widget/d;->b:Ljava/lang/Object;
+
+    packed-switch v0, :pswitch_data_0
+
+    check-cast v1, Landroidx/appcompat/widget/Toolbar;
+
+    invoke-virtual {v1}, Landroidx/appcompat/widget/Toolbar;->invalidateMenu()V
 
     return-void
+
+    :pswitch_0
+    check-cast v1, Landroidx/appcompat/widget/TooltipCompatHandler;
+
+    invoke-static {v1}, Landroidx/appcompat/widget/TooltipCompatHandler;->a(Landroidx/appcompat/widget/TooltipCompatHandler;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

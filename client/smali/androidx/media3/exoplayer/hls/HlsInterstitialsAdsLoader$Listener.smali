@@ -24,7 +24,7 @@
 .method public abstract onAdStarted(Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
 .end method
 
-.method public abstract onAssetListLoadCompleted(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;)V
+.method public abstract onAssetListLoadCompleted(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Lorg/json/JSONObject;)V
 .end method
 
 .method public abstract onAssetListLoadFailed(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILjava/io/IOException;Z)V

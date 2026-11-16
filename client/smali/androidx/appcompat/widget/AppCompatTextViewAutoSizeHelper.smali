@@ -29,7 +29,7 @@
 
 .field private static final VERY_WIDE:I = 0x100000
 
-.field private static sTextViewMethodByNameCache:Lj$/util/concurrent/ConcurrentHashMap;
+.field private static sTextViewMethodByNameCache:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "BanConcurrentHashMap"
@@ -38,7 +38,7 @@
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj$/util/concurrent/ConcurrentHashMap<",
+            "Ljava/util/concurrent/ConcurrentHashMap<",
             "Ljava/lang/String;",
             "Ljava/lang/reflect/Method;",
             ">;"
@@ -92,16 +92,16 @@
 
     .line 7
     .line 8
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 9
     .line 10
-    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 11
     .line 12
     .line 13
-    sput-object v0, Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->sTextViewMethodByNameCache:Lj$/util/concurrent/ConcurrentHashMap;
+    sput-object v0, Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->sTextViewMethodByNameCache:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 14
     .line 15
@@ -546,11 +546,11 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->sTextViewMethodByNameCache:Lj$/util/concurrent/ConcurrentHashMap;
+    sget-object v0, Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->sTextViewMethodByNameCache:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p0}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -597,11 +597,11 @@
     .line 24
     .line 25
     .line 26
-    sget-object v1, Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->sTextViewMethodByNameCache:Lj$/util/concurrent/ConcurrentHashMap;
+    sget-object v1, Landroidx/appcompat/widget/AppCompatTextViewAutoSizeHelper;->sTextViewMethodByNameCache:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 27
     .line 28
-    invoke-virtual {v1, p0, v0}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p0, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3130,7 +3130,7 @@
 
     .line 53
     .line 54
-    invoke-static {v1, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 55
     .line 56

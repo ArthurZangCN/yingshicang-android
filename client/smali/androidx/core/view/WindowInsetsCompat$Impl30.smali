@@ -30,7 +30,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Landroidx/core/view/o;->p()Landroid/view/WindowInsets;
+    invoke-static {}, Landroidx/core/view/o;->g()Landroid/view/WindowInsets;
 
     .line 2
     .line 3
@@ -117,7 +117,7 @@
     move-result p1
 
     .line 7
-    invoke-static {v0, p1}, Landroidx/core/view/n;->e(Landroid/view/WindowInsets;I)Landroid/graphics/Insets;
+    invoke-static {v0, p1}, Landroidx/core/view/n;->g(Landroid/view/WindowInsets;I)Landroid/graphics/Insets;
 
     .line 8
     .line 9
@@ -154,7 +154,7 @@
     move-result p1
 
     .line 7
-    invoke-static {v0, p1}, Landroidx/core/content/pm/g;->e(Landroid/view/WindowInsets;I)Landroid/graphics/Insets;
+    invoke-static {v0, p1}, Landroidx/core/content/pm/i;->e(Landroid/view/WindowInsets;I)Landroid/graphics/Insets;
 
     .line 8
     .line 9
@@ -189,7 +189,7 @@
     move-result p1
 
     .line 7
-    invoke-static {v0, p1}, Landroidx/core/view/p;->j(Landroid/view/WindowInsets;I)Z
+    invoke-static {v0, p1}, Landroidx/core/view/p;->i(Landroid/view/WindowInsets;I)Z
 
     .line 8
     .line 9

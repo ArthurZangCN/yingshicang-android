@@ -4,7 +4,6 @@
 
 # interfaces
 .implements Landroidx/databinding/ObservableMap;
-.implements Lj$/util/Map;
 
 
 # annotations
@@ -18,8 +17,7 @@
         "Landroidx/collection/ArrayMap<",
         "TK;TV;>;",
         "Landroidx/databinding/ObservableMap<",
-        "TK;TV;>;",
-        "Lj$/util/Map;"
+        "TK;TV;>;"
     }
 .end annotation
 

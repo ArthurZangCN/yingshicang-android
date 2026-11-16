@@ -2,20 +2,41 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
+
+.field public final synthetic b:J
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadControl;Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;J)V
     .locals 0
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/j0;->a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
+
+    iput-wide p2, p0, Landroidx/media3/exoplayer/source/preload/j0;->b:J
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadControl;Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)Z
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 3
 
     .line 1
-    const/4 p0, 0x0
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/j0;->a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
 
-    return p0
+    iget-wide v1, p0, Landroidx/media3/exoplayer/source/preload/j0;->b:J
+
+    invoke-static {v0, v1, v2}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->e(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;J)V
+
+    return-void
 .end method

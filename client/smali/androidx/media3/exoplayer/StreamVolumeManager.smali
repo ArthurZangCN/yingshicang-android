@@ -101,14 +101,14 @@
 
     .line 24
     .line 25
-    new-instance v5, Landroidx/media3/exoplayer/k0;
+    new-instance v5, Landroidx/media3/exoplayer/y0;
 
     .line 26
     .line 27
     const/4 v0, 0x2
 
     .line 28
-    invoke-direct {v5, p0, v0}, Landroidx/media3/exoplayer/k0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v5, p0, v0}, Landroidx/media3/exoplayer/y0;-><init>(Ljava/lang/Object;I)V
 
     .line 29
     .line 30
@@ -137,11 +137,11 @@
 
     .line 40
     .line 41
-    new-instance p1, Landroidx/media3/exoplayer/y1;
+    new-instance p1, Landroidx/media3/exoplayer/c2;
 
     .line 42
     .line 43
-    invoke-direct {p1, p0, p3}, Landroidx/media3/exoplayer/y1;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;I)V
+    invoke-direct {p1, p0, p3}, Landroidx/media3/exoplayer/c2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;I)V
 
     .line 44
     .line 45
@@ -1311,7 +1311,7 @@
 
 # virtual methods
 .method public decreaseVolume(I)V
-    .locals 4
+    .locals 3
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "WrongConstant"
@@ -1323,32 +1323,29 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/z1;
+    new-instance v1, Landroidx/media3/exoplayer/e2;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    invoke-direct {v1, v2}, Landroidx/media3/exoplayer/z1;-><init>(I)V
-
     .line 7
     .line 8
+    new-instance v2, Landroidx/media3/exoplayer/f2;
+
     .line 9
-    new-instance v3, Landroidx/media3/exoplayer/a2;
-
     .line 10
-    .line 11
-    invoke-direct {v3, p0, p1, v2}, Landroidx/media3/exoplayer/a2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;II)V
+    invoke-direct {v2, p0, p1}, Landroidx/media3/exoplayer/f2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;I)V
 
+    .line 11
     .line 12
     .line 13
-    .line 14
-    invoke-virtual {v0, v1, v3}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
 
+    .line 14
     .line 15
     .line 16
-    .line 17
     return-void
 .end method
 
@@ -1446,28 +1443,28 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/z1;
+    new-instance v1, Landroidx/media3/exoplayer/d2;
 
     .line 4
     .line 5
-    const/4 v2, 0x1
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    invoke-direct {v1, v2}, Landroidx/media3/exoplayer/z1;-><init>(I)V
-
     .line 7
     .line 8
-    .line 9
-    new-instance v3, Landroidx/media3/exoplayer/a2;
+    new-instance v2, Landroidx/media3/exoplayer/i2;
 
+    .line 9
     .line 10
+    const/4 v3, 0x1
+
     .line 11
-    invoke-direct {v3, p0, p1, v2}, Landroidx/media3/exoplayer/a2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;II)V
+    invoke-direct {v2, p0, p1, v3}, Landroidx/media3/exoplayer/i2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;II)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v0, v1, v3}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
 
     .line 15
     .line 16
@@ -1510,29 +1507,32 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/g2;
+    new-instance v1, Landroidx/media3/exoplayer/l2;
 
     .line 4
     .line 5
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v1, v2}, Landroidx/media3/exoplayer/l2;-><init>(I)V
+
     .line 7
     .line 8
-    new-instance v2, Landroidx/media3/exoplayer/h2;
-
     .line 9
-    .line 10
-    invoke-direct {v2, p0}, Landroidx/media3/exoplayer/h2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;)V
+    new-instance v2, Landroidx/media3/exoplayer/m2;
 
+    .line 10
     .line 11
+    invoke-direct {v2, p0}, Landroidx/media3/exoplayer/m2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;)V
+
     .line 12
     .line 13
-    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
-
     .line 14
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
+
     .line 15
     .line 16
+    .line 17
     return-void
 .end method
 
@@ -1549,25 +1549,25 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/e2;
+    new-instance v1, Landroidx/media3/exoplayer/j2;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/e2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;Z)V
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/j2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;Z)V
 
     .line 6
     .line 7
     .line 8
-    new-instance v2, Landroidx/media3/exoplayer/f2;
+    new-instance v2, Landroidx/media3/exoplayer/k2;
 
     .line 9
     .line 10
-    invoke-direct {v2, p0, p1, p2}, Landroidx/media3/exoplayer/f2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;ZI)V
+    invoke-direct {v2, p0, p1, p2}, Landroidx/media3/exoplayer/k2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;ZI)V
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
 
     .line 14
     .line 15
@@ -1576,36 +1576,39 @@
 .end method
 
 .method public setStreamType(I)V
-    .locals 3
+    .locals 4
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/StreamVolumeManager;->stateHandler:Landroidx/media3/common/util/BackgroundThreadStateHandler;
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/c2;
+    new-instance v1, Landroidx/media3/exoplayer/h2;
 
     .line 4
     .line 5
-    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/c2;-><init>(I)V
+    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/h2;-><init>(I)V
 
     .line 6
     .line 7
     .line 8
-    new-instance v2, Landroidx/media3/exoplayer/d2;
+    new-instance v2, Landroidx/media3/exoplayer/i2;
 
     .line 9
     .line 10
-    invoke-direct {v2, p0, p1}, Landroidx/media3/exoplayer/d2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;I)V
+    const/4 v3, 0x0
 
     .line 11
+    invoke-direct {v2, p0, p1, v3}, Landroidx/media3/exoplayer/i2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;II)V
+
     .line 12
     .line 13
-    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
-
     .line 14
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
+
     .line 15
     .line 16
+    .line 17
     return-void
 .end method
 
@@ -1622,28 +1625,28 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/u0;
+    new-instance v1, Landroidx/media3/exoplayer/c0;
 
     .line 4
     .line 5
     const/4 v2, 0x1
 
     .line 6
-    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/u0;-><init>(II)V
+    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/c0;-><init>(II)V
 
     .line 7
     .line 8
     .line 9
-    new-instance v2, Landroidx/media3/exoplayer/b2;
+    new-instance v2, Landroidx/media3/exoplayer/g2;
 
     .line 10
     .line 11
-    invoke-direct {v2, p0, p1, p2}, Landroidx/media3/exoplayer/b2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;II)V
+    invoke-direct {v2, p0, p1, p2}, Landroidx/media3/exoplayer/g2;-><init>(Landroidx/media3/exoplayer/StreamVolumeManager;II)V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
 
     .line 15
     .line 16

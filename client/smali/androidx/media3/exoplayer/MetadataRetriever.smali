@@ -50,7 +50,7 @@
     return-void
 .end method
 
-.method public static retrieveMetadata(Landroid/content/Context;Landroidx/media3/common/MediaItem;)Lcom/google/common/util/concurrent/t;
+.method public static retrieveMetadata(Landroid/content/Context;Landroidx/media3/common/MediaItem;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -58,7 +58,7 @@
             "Landroid/content/Context;",
             "Landroidx/media3/common/MediaItem;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/exoplayer/source/TrackGroupArray;",
             ">;"
         }
@@ -70,14 +70,14 @@
     .line 1
     sget-object v0, Landroidx/media3/common/util/Clock;->DEFAULT:Landroidx/media3/common/util/Clock;
 
-    invoke-static {p0, p1, v0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveMetadata(Landroid/content/Context;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/t;
+    invoke-static {p0, p1, v0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveMetadata(Landroid/content/Context;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/x;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static retrieveMetadata(Landroid/content/Context;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/t;
+.method public static retrieveMetadata(Landroid/content/Context;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
@@ -89,13 +89,10 @@
             "Landroidx/media3/common/MediaItem;",
             "Landroidx/media3/common/util/Clock;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/exoplayer/source/TrackGroupArray;",
             ">;"
         }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 3
@@ -113,7 +110,7 @@
 
     .line 4
     :try_start_0
-    invoke-virtual {p0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveTrackGroups()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveTrackGroups()Lcom/google/common/util/concurrent/x;
 
     move-result-object p1
     :try_end_0
@@ -147,7 +144,7 @@
     throw p1
 .end method
 
-.method public static retrieveMetadata(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/common/MediaItem;)Lcom/google/common/util/concurrent/t;
+.method public static retrieveMetadata(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/common/MediaItem;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -155,7 +152,7 @@
             "Landroidx/media3/exoplayer/source/MediaSource$Factory;",
             "Landroidx/media3/common/MediaItem;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/exoplayer/source/TrackGroupArray;",
             ">;"
         }
@@ -167,14 +164,14 @@
     .line 2
     sget-object v0, Landroidx/media3/common/util/Clock;->DEFAULT:Landroidx/media3/common/util/Clock;
 
-    invoke-static {p0, p1, v0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveMetadata(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/t;
+    invoke-static {p0, p1, v0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveMetadata(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/x;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static retrieveMetadata(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/t;
+.method private static retrieveMetadata(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/common/MediaItem;Landroidx/media3/common/util/Clock;)Lcom/google/common/util/concurrent/x;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -183,13 +180,10 @@
             "Landroidx/media3/common/MediaItem;",
             "Landroidx/media3/common/util/Clock;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/exoplayer/source/TrackGroupArray;",
             ">;"
         }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
     .line 7
@@ -216,7 +210,7 @@
 
     .line 11
     :try_start_0
-    invoke-virtual {p0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveTrackGroups()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0}, Landroidx/media3/exoplayer/MetadataRetriever;->retrieveTrackGroups()Lcom/google/common/util/concurrent/x;
 
     move-result-object p1
     :try_end_0
@@ -269,7 +263,7 @@
 
     .line 6
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 7
     .line 8
@@ -304,12 +298,12 @@
     return-void
 .end method
 
-.method public retrieveDurationUs()Lcom/google/common/util/concurrent/t;
+.method public retrieveDurationUs()Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Ljava/lang/Long;",
             ">;"
         }
@@ -320,7 +314,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveDurationUs()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {v0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveDurationUs()Lcom/google/common/util/concurrent/x;
 
     .line 4
     .line 5
@@ -331,12 +325,12 @@
     return-object v0
 .end method
 
-.method public retrieveTimeline()Lcom/google/common/util/concurrent/t;
+.method public retrieveTimeline()Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/common/Timeline;",
             ">;"
         }
@@ -347,7 +341,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTimeline()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {v0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTimeline()Lcom/google/common/util/concurrent/x;
 
     .line 4
     .line 5
@@ -358,12 +352,12 @@
     return-object v0
 .end method
 
-.method public retrieveTrackGroups()Lcom/google/common/util/concurrent/t;
+.method public retrieveTrackGroups()Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/exoplayer/source/TrackGroupArray;",
             ">;"
         }
@@ -374,7 +368,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTrackGroups()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {v0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTrackGroups()Lcom/google/common/util/concurrent/x;
 
     .line 4
     .line 5

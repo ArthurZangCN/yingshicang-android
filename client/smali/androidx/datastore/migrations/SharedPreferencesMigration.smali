@@ -54,7 +54,7 @@
 
 .field private final name:Ljava/lang/String;
 
-.field private final sharedPrefs$delegate:Lr3/d;
+.field private final sharedPrefs$delegate:Lv3/d;
 
 .field private final shouldRunMigration:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
@@ -447,11 +447,11 @@
     iput-object p6, p0, Landroidx/datastore/migrations/SharedPreferencesMigration;->name:Ljava/lang/String;
 
     .line 10
-    invoke-static {p1}, Lr3/e;->b(Lkotlin/jvm/functions/Function0;)Lr3/l;
+    invoke-static {p1}, Lv3/e;->b(Lkotlin/jvm/functions/Function0;)Lv3/l;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/datastore/migrations/SharedPreferencesMigration;->sharedPrefs$delegate:Lr3/d;
+    iput-object p1, p0, Landroidx/datastore/migrations/SharedPreferencesMigration;->sharedPrefs$delegate:Lv3/d;
 
     .line 11
     invoke-static {}, Landroidx/datastore/migrations/SharedPreferencesMigration_androidKt;->getMIGRATE_ALL_KEYS()Ljava/util/Set;
@@ -466,7 +466,7 @@
 
     .line 12
     :cond_0
-    invoke-static {p2}, Lkotlin/collections/q;->p0(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {p2}, Lkotlin/collections/p;->N(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p1
 
@@ -674,11 +674,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/datastore/migrations/SharedPreferencesMigration;->sharedPrefs$delegate:Lr3/d;
+    iget-object v0, p0, Landroidx/datastore/migrations/SharedPreferencesMigration;->sharedPrefs$delegate:Lv3/d;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lr3/d;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lv3/d;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -785,7 +785,7 @@
 
     .line 17
     .line 18
-    invoke-static {p2, v1}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v1}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 19
     .line 20
@@ -810,7 +810,7 @@
             "(",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -969,7 +969,7 @@
     .line 74
     .line 75
     :cond_3
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 76
     .line 77
@@ -1138,7 +1138,7 @@
 
     .line 39
     .line 40
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 41
     .line 42
@@ -1164,7 +1164,7 @@
 
     .line 52
     :cond_2
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 53
     .line 54

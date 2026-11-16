@@ -15,17 +15,17 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/media3/exoplayer/video/f;->a:I
+    iput p3, p0, Landroidx/media3/exoplayer/video/f;->a:I
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/video/f;->b:Ljava/lang/Object;
 
     iput-object p2, p0, Landroidx/media3/exoplayer/video/f;->c:Ljava/lang/Object;
-
-    iput-object p3, p0, Landroidx/media3/exoplayer/video/f;->b:Ljava/lang/Object;
 
     return-void
 .end method
@@ -38,9 +38,9 @@
     .line 1
     iget v0, p0, Landroidx/media3/exoplayer/video/f;->a:I
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/video/f;->b:Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/media3/exoplayer/video/f;->c:Ljava/lang/Object;
 
-    iget-object v2, p0, Landroidx/media3/exoplayer/video/f;->c:Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/media3/exoplayer/video/f;->b:Ljava/lang/Object;
 
     packed-switch v0, :pswitch_data_0
 
@@ -53,15 +53,6 @@
     return-void
 
     :pswitch_0
-    check-cast v2, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
-
-    check-cast v1, Landroidx/media3/common/VideoSize;
-
-    invoke-static {v2, v1}, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;->f(Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;Landroidx/media3/common/VideoSize;)V
-
-    return-void
-
-    :pswitch_1
     check-cast v2, Landroidx/media3/exoplayer/video/DefaultVideoSink$FrameRendererImpl;
 
     check-cast v1, Landroidx/media3/common/VideoSize;
@@ -74,7 +65,6 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

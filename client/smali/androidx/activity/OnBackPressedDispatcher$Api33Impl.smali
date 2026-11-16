@@ -84,7 +84,7 @@
         value = {
             "(",
             "Lkotlin/jvm/functions/Function0<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/window/OnBackInvokedCallback;"
         }

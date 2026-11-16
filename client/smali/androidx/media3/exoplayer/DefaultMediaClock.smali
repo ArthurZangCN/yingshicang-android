@@ -477,7 +477,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v0}, Landroidx/media3/exoplayer/h1;->a(Landroidx/media3/exoplayer/MediaClock;)Z
+    invoke-static {v0}, Landroidx/media3/exoplayer/m1;->a(Landroidx/media3/exoplayer/MediaClock;)Z
 
     .line 11
     .line 12

@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method public static final getViewModelScope(Landroidx/lifecycle/ViewModel;)Lkotlinx/coroutines/b0;
+.method public static final getViewModelScope(Landroidx/lifecycle/ViewModel;)Ln4/e0;
     .locals 4
 
     .line 1
@@ -33,7 +33,7 @@
     move-result-object v1
 
     .line 12
-    check-cast v1, Lkotlinx/coroutines/b0;
+    check-cast v1, Ln4/e0;
 
     .line 13
     .line 14
@@ -49,7 +49,7 @@
 
     .line 18
     .line 19
-    invoke-static {}, Lcom/blankj/utilcode/util/i;->a()Lkotlinx/coroutines/t1;
+    invoke-static {}, Ld2/c;->d()Ln4/w1;
 
     .line 20
     .line 21
@@ -57,15 +57,15 @@
     move-result-object v2
 
     .line 23
-    sget-object v3, Lkotlinx/coroutines/n0;->a:Li4/c;
+    sget-object v3, Ln4/r0;->a:Lr4/c;
 
     .line 24
     .line 25
-    sget-object v3, Lkotlinx/coroutines/internal/q;->a:Lkotlinx/coroutines/m1;
+    sget-object v3, Lp4/p;->a:Ln4/o1;
 
     .line 26
     .line 27
-    invoke-virtual {v3}, Lkotlinx/coroutines/m1;->getImmediate()Lkotlinx/coroutines/m1;
+    invoke-virtual {v3}, Ln4/o1;->getImmediate()Ln4/o1;
 
     .line 28
     .line 29
@@ -103,7 +103,7 @@
     .line 45
     .line 46
     .line 47
-    check-cast p0, Lkotlinx/coroutines/b0;
+    check-cast p0, Ln4/e0;
 
     .line 48
     .line 49

@@ -105,31 +105,31 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/media3/common/h;
+    new-instance v0, Landroidx/media3/common/k;
 
     .line 2
     .line 3
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/media3/common/h;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/common/k;-><init>(I)V
 
     .line 5
     .line 6
     .line 7
-    sget-object v1, Landroidx/media3/common/Timeline;->FIELD_WINDOWS:Ljava/lang/String;
+    sget-object v2, Landroidx/media3/common/Timeline;->FIELD_WINDOWS:Ljava/lang/String;
 
     .line 8
     .line 9
-    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBinder(Ljava/lang/String;)Landroid/os/IBinder;
+    invoke-virtual {p0, v2}, Landroid/os/Bundle;->getBinder(Ljava/lang/String;)Landroid/os/IBinder;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v1
+    move-result-object v2
 
     .line 13
-    invoke-static {v0, v1}, Landroidx/media3/common/Timeline;->fromBundleListRetriever(Lcom/google/common/base/e;Landroid/os/IBinder;)Lcom/google/common/collect/f2;
+    invoke-static {v0, v2}, Landroidx/media3/common/Timeline;->fromBundleListRetriever(Lcom/google/common/base/f;Landroid/os/IBinder;)Lcom/google/common/collect/e2;
 
     .line 14
     .line 15
@@ -137,84 +137,81 @@
     move-result-object v0
 
     .line 17
-    new-instance v1, Landroidx/media3/common/i;
+    new-instance v2, Landroidx/media3/common/l;
 
     .line 18
     .line 19
-    const/4 v2, 0x1
+    invoke-direct {v2, v1}, Landroidx/media3/common/l;-><init>(I)V
 
     .line 20
-    invoke-direct {v1, v2}, Landroidx/media3/common/i;-><init>(I)V
-
     .line 21
     .line 22
+    sget-object v1, Landroidx/media3/common/Timeline;->FIELD_PERIODS:Ljava/lang/String;
+
     .line 23
-    sget-object v2, Landroidx/media3/common/Timeline;->FIELD_PERIODS:Ljava/lang/String;
-
     .line 24
-    .line 25
-    invoke-virtual {p0, v2}, Landroid/os/Bundle;->getBinder(Ljava/lang/String;)Landroid/os/IBinder;
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBinder(Ljava/lang/String;)Landroid/os/IBinder;
 
+    .line 25
     .line 26
     .line 27
-    .line 28
-    move-result-object v2
-
-    .line 29
-    invoke-static {v1, v2}, Landroidx/media3/common/Timeline;->fromBundleListRetriever(Lcom/google/common/base/e;Landroid/os/IBinder;)Lcom/google/common/collect/f2;
-
-    .line 30
-    .line 31
-    .line 32
     move-result-object v1
 
-    .line 33
+    .line 28
+    invoke-static {v2, v1}, Landroidx/media3/common/Timeline;->fromBundleListRetriever(Lcom/google/common/base/f;Landroid/os/IBinder;)Lcom/google/common/collect/e2;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
     sget-object v2, Landroidx/media3/common/Timeline;->FIELD_SHUFFLED_WINDOW_INDICES:Ljava/lang/String;
 
+    .line 33
     .line 34
-    .line 35
     invoke-virtual {p0, v2}, Landroid/os/BaseBundle;->getIntArray(Ljava/lang/String;)[I
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     move-result-object p0
 
-    .line 39
+    .line 38
     new-instance v2, Landroidx/media3/common/Timeline$RemotableTimeline;
 
+    .line 39
     .line 40
-    .line 41
     if-nez p0, :cond_0
 
+    .line 41
     .line 42
-    .line 43
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
 
+    .line 43
     .line 44
     .line 45
-    .line 46
     move-result p0
 
-    .line 47
+    .line 46
     invoke-static {p0}, Landroidx/media3/common/Timeline;->generateUnshuffledIndices(I)[I
 
+    .line 47
     .line 48
     .line 49
-    .line 50
     move-result-object p0
 
-    .line 51
+    .line 50
     :cond_0
-    invoke-direct {v2, v0, v1, p0}, Landroidx/media3/common/Timeline$RemotableTimeline;-><init>(Lcom/google/common/collect/f2;Lcom/google/common/collect/f2;[I)V
+    invoke-direct {v2, v0, v1, p0}, Landroidx/media3/common/Timeline$RemotableTimeline;-><init>(Lcom/google/common/collect/e2;Lcom/google/common/collect/e2;[I)V
 
+    .line 51
     .line 52
     .line 53
-    .line 54
     return-object v2
 .end method
 
-.method private static fromBundleListRetriever(Lcom/google/common/base/e;Landroid/os/IBinder;)Lcom/google/common/collect/f2;
+.method private static fromBundleListRetriever(Lcom/google/common/base/f;Landroid/os/IBinder;)Lcom/google/common/collect/e2;
     .locals 0
     .param p1    # Landroid/os/IBinder;
         .annotation build Landroidx/annotation/Nullable;
@@ -225,12 +222,12 @@
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "Landroid/os/Bundle;",
             "TT;>;",
             "Landroid/os/IBinder;",
             ")",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "TT;>;"
         }
     .end annotation
@@ -240,7 +237,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -252,7 +249,7 @@
 
     .line 8
     :cond_0
-    invoke-static {p1}, Landroidx/media3/common/BundleListRetriever;->getList(Landroid/os/IBinder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/BundleListRetriever;->getList(Landroid/os/IBinder;)Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -260,7 +257,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p0, p1}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {p0, p1}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 13
     .line 14
@@ -350,7 +347,7 @@
     move-result-object p1
 
     .line 20
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 21
     .line 22
@@ -395,7 +392,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {v0, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 43
     .line 44
@@ -427,7 +424,7 @@
 
     .line 56
     .line 57
-    invoke-static {p1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 58
     .line 59
@@ -435,7 +432,7 @@
     move-result-object p1
 
     .line 61
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 62
     .line 63
@@ -451,7 +448,7 @@
     move-result-object v2
 
     .line 69
-    invoke-direct {v1, p1, v0, v2}, Landroidx/media3/common/Timeline$RemotableTimeline;-><init>(Lcom/google/common/collect/f2;Lcom/google/common/collect/f2;[I)V
+    invoke-direct {v1, p1, v0, v2}, Landroidx/media3/common/Timeline$RemotableTimeline;-><init>(Lcom/google/common/collect/e2;Lcom/google/common/collect/e2;[I)V
 
     .line 70
     .line 71
@@ -1192,7 +1189,7 @@
 
     move-result v0
 
-    invoke-static {p3, v0}, Lcom/github/tvbox/osc/util/t;->m(II)V
+    invoke-static {p3, v0}, Lcom/github/tvbox/osc/util/h0;->q(II)V
 
     .line 4
     invoke-virtual {p0, p3, p1, p6, p7}, Landroidx/media3/common/Timeline;->getWindow(ILandroidx/media3/common/Timeline$Window;J)Landroidx/media3/common/Timeline$Window;

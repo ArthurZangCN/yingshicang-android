@@ -158,7 +158,7 @@
     .line 13
     iput p1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->liveMaxSpeed:F
 
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     .line 14
     iput-boolean p1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->parseSubtitlesDuringExtraction:Z
@@ -580,7 +580,7 @@
 
     .line 58
     .line 59
-    invoke-static {v2, p1, v0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v2, p1, v0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 60
     .line 61
@@ -832,7 +832,7 @@
 
     .line 39
     .line 40
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 41
     .line 42
@@ -1190,7 +1190,7 @@
 
     .line 218
     .line 219
-    iget-object v1, v1, Landroidx/media3/common/MediaItem$LocalConfiguration;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    iget-object v1, v1, Landroidx/media3/common/MediaItem$LocalConfiguration;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
     .line 220
     .line 221
@@ -1413,298 +1413,301 @@
     move-result-object v6
 
     .line 329
-    new-instance v7, Landroidx/media3/exoplayer/source/d;
+    new-instance v7, Landroidx/media3/exoplayer/analytics/m0;
 
     .line 330
     .line 331
-    invoke-direct {v7, p0, v6}, Landroidx/media3/exoplayer/source/d;-><init>(Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;Landroidx/media3/common/Format;)V
+    const/4 v8, 0x4
 
     .line 332
+    invoke-direct {v7, p0, v6, v8}, Landroidx/media3/exoplayer/analytics/m0;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 333
     .line 334
+    .line 335
     new-instance v8, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;
 
-    .line 335
     .line 336
+    .line 337
     iget-object v9, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->dataSourceFactory:Landroidx/media3/datasource/DataSource$Factory;
 
-    .line 337
     .line 338
+    .line 339
     invoke-direct {v8, v9, v7}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;-><init>(Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/extractor/ExtractorsFactory;)V
 
-    .line 339
     .line 340
     .line 341
+    .line 342
     iget-object v7, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->subtitleParserFactory:Landroidx/media3/extractor/text/SubtitleParser$Factory;
 
-    .line 342
     .line 343
+    .line 344
     invoke-interface {v7, v6}, Landroidx/media3/extractor/text/SubtitleParser$Factory;->supportsFormat(Landroidx/media3/common/Format;)Z
 
-    .line 344
     .line 345
     .line 346
+    .line 347
     move-result v7
 
-    .line 347
+    .line 348
     if-eqz v7, :cond_9
 
-    .line 348
     .line 349
+    .line 350
     invoke-virtual {v6}, Landroidx/media3/common/Format;->buildUpon()Landroidx/media3/common/Format$Builder;
 
-    .line 350
     .line 351
     .line 352
-    move-result-object v7
-
     .line 353
-    const-string v9, "application/x-media3-cues"
+    move-result-object v7
 
     .line 354
+    const-string v9, "application/x-media3-cues"
+
     .line 355
+    .line 356
     invoke-virtual {v7, v9}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
-    .line 356
     .line 357
     .line 358
-    move-result-object v7
-
     .line 359
-    iget-object v9, v6, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
+    move-result-object v7
 
     .line 360
+    iget-object v9, v6, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
+
     .line 361
+    .line 362
     invoke-virtual {v7, v9}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
-    .line 362
     .line 363
     .line 364
+    .line 365
     move-result-object v7
 
-    .line 365
+    .line 366
     iget-object v9, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->subtitleParserFactory:Landroidx/media3/extractor/text/SubtitleParser$Factory;
 
-    .line 366
     .line 367
+    .line 368
     invoke-interface {v9, v6}, Landroidx/media3/extractor/text/SubtitleParser$Factory;->getCueReplacementBehavior(Landroidx/media3/common/Format;)I
 
-    .line 368
     .line 369
     .line 370
+    .line 371
     move-result v6
 
-    .line 371
+    .line 372
     invoke-virtual {v7, v6}, Landroidx/media3/common/Format$Builder;->setCueReplacementBehavior(I)Landroidx/media3/common/Format$Builder;
 
-    .line 372
     .line 373
     .line 374
-    move-result-object v6
-
     .line 375
-    invoke-virtual {v6}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+    move-result-object v6
 
     .line 376
+    invoke-virtual {v6}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+
     .line 377
     .line 378
+    .line 379
     move-result-object v6
 
-    .line 379
+    .line 380
     :cond_9
     invoke-virtual {v8, v5, v6}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;->enableLazyLoadingWithSingleTrack(ILandroidx/media3/common/Format;)Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;
 
-    .line 380
     .line 381
     .line 382
-    move-result-object v6
-
     .line 383
-    iget-boolean v7, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->loadOnlySelectedTracks:Z
+    move-result-object v6
 
     .line 384
+    iget-boolean v7, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->loadOnlySelectedTracks:Z
+
     .line 385
+    .line 386
     invoke-virtual {v6, v7}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;->setLoadOnlySelectedTracks(Z)Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;
 
-    .line 386
     .line 387
     .line 388
+    .line 389
     move-result-object v6
 
-    .line 389
+    .line 390
     iget-object v7, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->loadErrorHandlingPolicy:Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;
 
-    .line 390
     .line 391
+    .line 392
     if-eqz v7, :cond_a
 
-    .line 392
     .line 393
+    .line 394
     invoke-virtual {v6, v7}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;->setLoadErrorHandlingPolicy(Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;)Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;
 
-    .line 394
     .line 395
     .line 396
+    .line 397
     :cond_a
     add-int/lit8 v7, v0, 0x1
 
-    .line 397
     .line 398
+    .line 399
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 399
     .line 400
     .line 401
-    move-result-object v8
-
     .line 402
-    check-cast v8, Landroidx/media3/common/MediaItem$SubtitleConfiguration;
+    move-result-object v8
 
     .line 403
+    check-cast v8, Landroidx/media3/common/MediaItem$SubtitleConfiguration;
+
     .line 404
+    .line 405
     iget-object v8, v8, Landroidx/media3/common/MediaItem$SubtitleConfiguration;->uri:Landroid/net/Uri;
 
-    .line 405
     .line 406
+    .line 407
     invoke-virtual {v8}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    .line 407
     .line 408
     .line 409
-    move-result-object v8
-
     .line 410
-    invoke-static {v8}, Landroidx/media3/common/MediaItem;->fromUri(Ljava/lang/String;)Landroidx/media3/common/MediaItem;
+    move-result-object v8
 
     .line 411
+    invoke-static {v8}, Landroidx/media3/common/MediaItem;->fromUri(Ljava/lang/String;)Landroidx/media3/common/MediaItem;
+
     .line 412
     .line 413
+    .line 414
     move-result-object v8
 
-    .line 414
+    .line 415
     invoke-virtual {v6, v8}, Landroidx/media3/exoplayer/source/ProgressiveMediaSource$Factory;->createMediaSource(Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/source/ProgressiveMediaSource;
 
-    .line 415
     .line 416
     .line 417
+    .line 418
     move-result-object v6
 
-    .line 418
+    .line 419
     aput-object v6, v2, v7
 
-    .line 419
     .line 420
+    .line 421
     goto :goto_1
 
-    .line 421
+    .line 422
     :cond_b
     new-instance v6, Landroidx/media3/exoplayer/source/SingleSampleMediaSource$Factory;
 
-    .line 422
     .line 423
+    .line 424
     iget-object v7, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->dataSourceFactory:Landroidx/media3/datasource/DataSource$Factory;
 
-    .line 424
     .line 425
+    .line 426
     invoke-direct {v6, v7}, Landroidx/media3/exoplayer/source/SingleSampleMediaSource$Factory;-><init>(Landroidx/media3/datasource/DataSource$Factory;)V
 
-    .line 426
     .line 427
     .line 428
+    .line 429
     iget-object v7, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->loadErrorHandlingPolicy:Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;
 
-    .line 429
     .line 430
+    .line 431
     if-eqz v7, :cond_c
 
-    .line 431
     .line 432
+    .line 433
     invoke-virtual {v6, v7}, Landroidx/media3/exoplayer/source/SingleSampleMediaSource$Factory;->setLoadErrorHandlingPolicy(Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;)Landroidx/media3/exoplayer/source/SingleSampleMediaSource$Factory;
 
-    .line 433
     .line 434
     .line 435
+    .line 436
     :cond_c
     add-int/lit8 v7, v0, 0x1
 
-    .line 436
     .line 437
+    .line 438
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 438
     .line 439
     .line 440
+    .line 441
     move-result-object v8
 
-    .line 441
+    .line 442
     check-cast v8, Landroidx/media3/common/MediaItem$SubtitleConfiguration;
 
-    .line 442
     .line 443
+    .line 444
     invoke-virtual {v6, v8, v3, v4}, Landroidx/media3/exoplayer/source/SingleSampleMediaSource$Factory;->createMediaSource(Landroidx/media3/common/MediaItem$SubtitleConfiguration;J)Landroidx/media3/exoplayer/source/SingleSampleMediaSource;
 
-    .line 444
     .line 445
     .line 446
+    .line 447
     move-result-object v6
 
-    .line 447
+    .line 448
     aput-object v6, v2, v7
 
-    .line 448
     .line 449
+    .line 450
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
-    .line 450
     .line 451
+    .line 452
     goto/16 :goto_0
 
-    .line 452
     .line 453
+    .line 454
     :cond_d
     new-instance v0, Landroidx/media3/exoplayer/source/MergingMediaSource;
 
-    .line 454
     .line 455
+    .line 456
     invoke-direct {v0, v2}, Landroidx/media3/exoplayer/source/MergingMediaSource;-><init>([Landroidx/media3/exoplayer/source/MediaSource;)V
 
-    .line 456
     .line 457
     .line 458
+    .line 459
     :cond_e
     invoke-static {p1, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->maybeClipMediaSource(Landroidx/media3/common/MediaItem;Landroidx/media3/exoplayer/source/MediaSource;)Landroidx/media3/exoplayer/source/MediaSource;
 
-    .line 459
     .line 460
     .line 461
+    .line 462
     move-result-object v0
 
-    .line 462
+    .line 463
     invoke-direct {p0, p1, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->maybeWrapWithAdsMediaSource(Landroidx/media3/common/MediaItem;Landroidx/media3/exoplayer/source/MediaSource;)Landroidx/media3/exoplayer/source/MediaSource;
 
-    .line 463
     .line 464
     .line 465
+    .line 466
     move-result-object p1
 
-    .line 466
+    .line 467
     return-object p1
 
-    .line 467
+    .line 468
     :catch_0
     move-exception p1
 
-    .line 468
+    .line 469
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 469
     .line 470
+    .line 471
     invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
 
-    .line 471
     .line 472
     .line 473
+    .line 474
     throw v0
 .end method
 
@@ -1880,7 +1883,7 @@
     return-object p0
 .end method
 
-.method public setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
     .locals 1
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
@@ -1888,7 +1891,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)",
             "Landroidx/media3/exoplayer/source/MediaSource$Factory;"
@@ -1900,7 +1903,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->setDownloadExecutor(Lcom/google/common/base/x;)V
+    invoke-virtual {v0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->setDownloadExecutor(Lcom/google/common/base/z;)V
 
     .line 4
     .line 5
@@ -1919,7 +1922,7 @@
     const-string v1, "MediaSource.Factory#setDrmSessionManagerProvider no longer handles null by instantiating a new DefaultDrmSessionManagerProvider. Explicitly construct and pass an instance in order to retain the old behavior."
 
     .line 3
-    invoke-static {p1, v1}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v1}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     invoke-virtual {v0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->setDrmSessionManagerProvider(Landroidx/media3/exoplayer/drm/DrmSessionManagerProvider;)V
@@ -2031,7 +2034,7 @@
     const-string v0, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior."
 
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory;->loadErrorHandlingPolicy:Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;
 

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/util/concurrent/m;
+.implements Lcom/google/common/util/concurrent/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTrackGroups()Lcom/google/common/util/concurrent/t;
+    value = Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTrackGroups()Lcom/google/common/util/concurrent/x;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/google/common/util/concurrent/m<",
+        "Lcom/google/common/util/concurrent/p<",
         "Landroidx/media3/exoplayer/MetadataRetrieverInternal$InternalResult;",
         ">;"
     }
@@ -29,11 +29,11 @@
 # instance fields
 .field final synthetic this$0:Landroidx/media3/exoplayer/MetadataRetrieverInternal;
 
-.field final synthetic val$externalFuture:Lcom/google/common/util/concurrent/x;
+.field final synthetic val$externalFuture:Lcom/google/common/util/concurrent/b0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/x;)V
+.method public constructor <init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/b0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -46,7 +46,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;->val$externalFuture:Lcom/google/common/util/concurrent/x;
+    iput-object p2, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;->val$externalFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 4
     .line 5
@@ -64,11 +64,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;->val$externalFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;->val$externalFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {v0, p1}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
 
     .line 4
     .line 5
@@ -80,11 +80,11 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;->val$externalFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;->val$externalFuture:Lcom/google/common/util/concurrent/b0;
 
     iget-object p1, p1, Landroidx/media3/exoplayer/MetadataRetrieverInternal$InternalResult;->trackGroups:Landroidx/media3/exoplayer/source/TrackGroupArray;
 
-    invoke-virtual {v0, p1}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
 
     return-void
 .end method

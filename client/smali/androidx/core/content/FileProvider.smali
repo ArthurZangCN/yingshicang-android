@@ -363,7 +363,7 @@
 
     .line 44
     .line 45
-    invoke-static {p2, p1}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 46
     .line 47
@@ -813,7 +813,7 @@
 
     .line 65
     .line 66
-    invoke-static {v1, p0}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 67
     .line 68
@@ -1199,7 +1199,7 @@
 .end method
 
 .method private static removeTrailingSlash(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
+    .locals 3
     .param p0    # Ljava/lang/String;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -1228,9 +1228,11 @@
     move-result v0
 
     .line 11
-    add-int/lit8 v0, v0, -0x1
+    const/4 v1, 0x1
 
     .line 12
+    sub-int/2addr v0, v1
+
     .line 13
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
@@ -1240,37 +1242,25 @@
     move-result v0
 
     .line 17
-    const/16 v1, 0x2f
+    const/16 v2, 0x2f
 
     .line 18
     .line 19
-    if-ne v0, v1, :cond_0
+    if-ne v0, v2, :cond_0
 
     .line 20
     .line 21
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    const/4 v0, 0x0
 
     .line 22
+    invoke-static {p0, v1, v0}, Landroid/support/v4/media/f;->e(Ljava/lang/String;II)Ljava/lang/String;
+
     .line 23
     .line 24
-    move-result v0
-
     .line 25
-    add-int/lit8 v0, v0, -0x1
-
-    .line 26
-    .line 27
-    const/4 v1, 0x0
-
-    .line 28
-    invoke-virtual {p0, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
     move-result-object p0
 
-    .line 32
+    .line 26
     :cond_0
     return-object p0
 .end method

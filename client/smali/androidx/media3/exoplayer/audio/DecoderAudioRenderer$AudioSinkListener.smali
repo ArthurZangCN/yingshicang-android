@@ -52,7 +52,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)V
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$400(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)V
 
     .line 4
     .line 5
@@ -68,7 +68,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
     .line 4
     .line 5
@@ -105,7 +105,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
     .line 11
     .line 12
@@ -129,7 +129,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
     .line 4
     .line 5
@@ -153,7 +153,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
     .line 4
     .line 5
@@ -173,7 +173,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/audio/j;->f(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/audio/k;->f(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
 
     return-void
 .end method
@@ -182,32 +182,44 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/audio/j;->g(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/audio/k;->g(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
 
     return-void
 .end method
 
 .method public onPositionAdvancing(J)V
-    .locals 1
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    const/4 v1, 0x1
 
     .line 4
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$202(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;Z)Z
+
     .line 5
     .line 6
-    move-result-object v0
-
     .line 7
-    invoke-virtual {v0, p1, p2}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->positionAdvancing(J)V
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer$AudioSinkListener;->this$0:Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;
 
     .line 8
     .line 9
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
     .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0, p1, p2}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->positionAdvancing(J)V
+
+    .line 14
+    .line 15
+    .line 16
     return-void
 .end method
 
@@ -254,7 +266,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
     .line 4
     .line 5
@@ -278,7 +290,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$200(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;->access$300(Landroidx/media3/exoplayer/audio/DecoderAudioRenderer;)Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
 
     .line 4
     .line 5

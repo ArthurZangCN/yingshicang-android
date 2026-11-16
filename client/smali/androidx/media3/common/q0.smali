@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
 .field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer$State;
 
-.field public final synthetic b:Z
+.field public final synthetic b:Landroidx/media3/common/TrackSelectionParameters;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;Z)V
+.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/TrackSelectionParameters;)V
     .locals 0
 
     .line 1
@@ -21,7 +21,7 @@
 
     iput-object p1, p0, Landroidx/media3/common/q0;->a:Landroidx/media3/common/SimpleBasePlayer$State;
 
-    iput-boolean p2, p0, Landroidx/media3/common/q0;->b:Z
+    iput-object p2, p0, Landroidx/media3/common/q0;->b:Landroidx/media3/common/TrackSelectionParameters;
 
     return-void
 .end method
@@ -34,9 +34,9 @@
     .line 1
     iget-object v0, p0, Landroidx/media3/common/q0;->a:Landroidx/media3/common/SimpleBasePlayer$State;
 
-    iget-boolean v1, p0, Landroidx/media3/common/q0;->b:Z
+    iget-object v1, p0, Landroidx/media3/common/q0;->b:Landroidx/media3/common/TrackSelectionParameters;
 
-    invoke-static {v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->l0(Landroidx/media3/common/SimpleBasePlayer$State;Z)Landroidx/media3/common/SimpleBasePlayer$State;
+    invoke-static {v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->N(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/TrackSelectionParameters;)Landroidx/media3/common/SimpleBasePlayer$State;
 
     move-result-object v0
 

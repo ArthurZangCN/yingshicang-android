@@ -358,11 +358,9 @@
 .end method
 
 .method public static getInterpolator(ILjava/lang/String;)Landroidx/constraintlayout/core/state/Interpolator;
-    .locals 2
+    .locals 1
 
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     packed-switch p0, :pswitch_data_0
 
@@ -374,23 +372,25 @@
     :pswitch_0
     new-instance p0, Landroidx/constraintlayout/core/state/f;
 
-    invoke-direct {p0, v1}, Landroidx/constraintlayout/core/state/f;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/f;-><init>(I)V
 
     return-object p0
 
     .line 2
     :pswitch_1
-    new-instance p0, Landroidx/constraintlayout/core/state/b;
+    new-instance p0, Landroidx/constraintlayout/core/state/g;
 
-    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/g;-><init>(I)V
 
     return-object p0
 
     .line 3
     :pswitch_2
-    new-instance p0, Landroidx/constraintlayout/core/state/c;
+    new-instance p0, Landroidx/constraintlayout/core/state/b;
 
-    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
 
     return-object p0
 
@@ -398,7 +398,7 @@
     :pswitch_3
     new-instance p0, Landroidx/constraintlayout/core/state/e;
 
-    invoke-direct {p0, v1}, Landroidx/constraintlayout/core/state/e;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/e;-><init>(I)V
 
     return-object p0
 
@@ -406,7 +406,7 @@
     :pswitch_4
     new-instance p0, Landroidx/constraintlayout/core/state/d;
 
-    invoke-direct {p0, v1}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
 
     return-object p0
 
@@ -414,7 +414,7 @@
     :pswitch_5
     new-instance p0, Landroidx/constraintlayout/core/state/c;
 
-    invoke-direct {p0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
 
     return-object p0
 
@@ -422,7 +422,7 @@
     :pswitch_6
     new-instance p0, Landroidx/constraintlayout/core/state/b;
 
-    invoke-direct {p0, v1}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
 
     return-object p0
 
@@ -430,7 +430,7 @@
     :pswitch_7
     new-instance p0, Landroidx/constraintlayout/core/state/a;
 
-    invoke-direct {p0, p1, v1}, Landroidx/constraintlayout/core/state/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p0, p1}, Landroidx/constraintlayout/core/state/a;-><init>(Ljava/lang/Object;)V
 
     return-object p0
 

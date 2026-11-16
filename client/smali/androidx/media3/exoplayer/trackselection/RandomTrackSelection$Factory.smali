@@ -105,25 +105,22 @@
     .locals 0
 
     .line 1
-    new-instance p2, Landroidx/media3/common/k;
+    new-instance p2, Landroidx/media3/common/j;
 
     .line 2
     .line 3
-    const/4 p3, 0x4
+    invoke-direct {p2, p0}, Landroidx/media3/common/j;-><init>(Ljava/lang/Object;)V
 
     .line 4
-    invoke-direct {p2, p0, p3}, Landroidx/media3/common/k;-><init>(Ljava/lang/Object;I)V
-
     .line 5
     .line 6
-    .line 7
     invoke-static {p1, p2}, Landroidx/media3/exoplayer/trackselection/TrackSelectionUtil;->createTrackSelectionsForDefinitions([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;Landroidx/media3/exoplayer/trackselection/TrackSelectionUtil$AdaptiveTrackSelectionFactory;)[Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;
 
+    .line 7
     .line 8
     .line 9
-    .line 10
     move-result-object p1
 
-    .line 11
+    .line 10
     return-object p1
 .end method

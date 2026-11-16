@@ -224,7 +224,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/core/app/b;->l(Landroid/media/MediaCodec;)Landroid/os/PersistableBundle;
+    invoke-static {v0}, Landroidx/core/app/e;->j(Landroid/media/MediaCodec;)Landroid/os/PersistableBundle;
 
     .line 4
     .line 5
@@ -516,11 +516,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/mediacodec/v;
+    new-instance v1, Landroidx/media3/exoplayer/mediacodec/t;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/mediacodec/v;-><init>(Landroidx/media3/exoplayer/mediacodec/SynchronousMediaCodecAdapter;Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$OnFrameRenderedListener;)V
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/mediacodec/t;-><init>(Landroidx/media3/exoplayer/mediacodec/SynchronousMediaCodecAdapter;Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$OnFrameRenderedListener;)V
 
     .line 6
     .line 7
@@ -601,7 +601,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media/session/a;->k(Landroid/media/MediaCodec;Ljava/util/List;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/a;->a(Landroid/media/MediaCodec;Ljava/util/List;)V
 
     .line 4
     .line 5
@@ -629,7 +629,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/a;->a(Landroid/media/MediaCodec;Ljava/util/List;)V
+    invoke-static {v0, p1}, Landroidx/media/session/b;->k(Landroid/media/MediaCodec;Ljava/util/List;)V
 
     .line 4
     .line 5

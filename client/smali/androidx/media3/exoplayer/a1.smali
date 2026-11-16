@@ -3,43 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/function/IntConsumer;
+.implements Lcom/google/common/base/f;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/a1;->a:Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;
+    iput p1, p0, Landroidx/media3/exoplayer/a1;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(I)V
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/a1;->a:Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;
+    iget v0, p0, Landroidx/media3/exoplayer/a1;->a:I
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;->a(Landroidx/media3/exoplayer/ExoPlayerImpl$VirtualDeviceIdChangeListener;I)V
+    check-cast p1, Ljava/lang/Integer;
 
-    return-void
-.end method
-
-.method public final synthetic andThen(Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/util/function/IntConsumer$-CC;->$default$andThen(Ljava/util/function/IntConsumer;Ljava/util/function/IntConsumer;)Ljava/util/function/IntConsumer;
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->f(ILjava/lang/Integer;)Ljava/lang/Integer;
 
     move-result-object p1
 

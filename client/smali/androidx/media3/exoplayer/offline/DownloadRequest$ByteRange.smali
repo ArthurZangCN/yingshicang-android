@@ -81,7 +81,7 @@
 
     .line 2
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     cmp-long v0, p3, v0
 
@@ -101,7 +101,7 @@
     .line 3
     :cond_2
     :goto_1
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 4
     iput-wide p1, p0, Landroidx/media3/exoplayer/offline/DownloadRequest$ByteRange;->offset:J

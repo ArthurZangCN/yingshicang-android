@@ -422,7 +422,7 @@
 
     move-object v6, v1
 
-    invoke-static/range {v2 .. v7}, Landroid/support/v4/media/session/e;->r(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v2 .. v7}, Landroid/support/v4/media/session/h;->r(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     goto :goto_1
 
@@ -440,7 +440,7 @@
 
     move v7, p3
 
-    invoke-static/range {v2 .. v7}, Landroidx/activity/h;->n(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v2 .. v7}, Landroidx/appcompat/widget/a;->q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 17
     :cond_2
@@ -2854,7 +2854,7 @@
 
     .line 140
     .line 141
-    invoke-static {v0, p2}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p2}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 142
     .line 143
@@ -4911,7 +4911,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 7
     .line 8

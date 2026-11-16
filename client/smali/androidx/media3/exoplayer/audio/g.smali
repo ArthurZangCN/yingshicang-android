@@ -7,29 +7,25 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+.field public final synthetic a:I
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final synthetic b:Z
 
-.field public final synthetic c:J
-
-.field public final synthetic d:J
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;Ljava/lang/String;JJ)V
+.method public synthetic constructor <init>(ILjava/lang/Object;Z)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/audio/g;->a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    iput p1, p0, Landroidx/media3/exoplayer/audio/g;->a:I
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/audio/g;->b:Ljava/lang/String;
+    iput-object p2, p0, Landroidx/media3/exoplayer/audio/g;->c:Ljava/lang/Object;
 
-    iput-wide p3, p0, Landroidx/media3/exoplayer/audio/g;->c:J
-
-    iput-wide p5, p0, Landroidx/media3/exoplayer/audio/g;->d:J
+    iput-boolean p3, p0, Landroidx/media3/exoplayer/audio/g;->b:Z
 
     return-void
 .end method
@@ -37,18 +33,34 @@
 
 # virtual methods
 .method public final run()V
-    .locals 6
+    .locals 3
 
     .line 1
-    iget-wide v2, p0, Landroidx/media3/exoplayer/audio/g;->c:J
+    iget v0, p0, Landroidx/media3/exoplayer/audio/g;->a:I
 
-    iget-wide v4, p0, Landroidx/media3/exoplayer/audio/g;->d:J
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/audio/g;->b:Z
 
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/g;->a:Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+    iget-object v2, p0, Landroidx/media3/exoplayer/audio/g;->c:Ljava/lang/Object;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/g;->b:Ljava/lang/String;
+    packed-switch v0, :pswitch_data_0
 
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->m(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;Ljava/lang/String;JJ)V
+    check-cast v2, Landroidx/media3/exoplayer/offline/DownloadHelper;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/offline/DownloadHelper;->d(Landroidx/media3/exoplayer/offline/DownloadHelper;Z)V
 
     return-void
+
+    :pswitch_0
+    check-cast v2, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;->a(Landroidx/media3/exoplayer/audio/AudioRendererEventListener$EventDispatcher;Z)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

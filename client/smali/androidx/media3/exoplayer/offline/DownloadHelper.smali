@@ -301,11 +301,11 @@
     return p0
 .end method
 
-.method public static synthetic access$100(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource;
+.method public static synthetic access$100(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource;
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/offline/DownloadHelper;->createMediaSourceInternal(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource;
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/offline/DownloadHelper;->createMediaSourceInternal(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource;
 
     .line 2
     .line 3
@@ -358,11 +358,11 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p2, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object v0, p2, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Lcom/google/common/collect/h2;->values()Lcom/google/common/collect/d2;
+    invoke-virtual {v0}, Lcom/google/common/collect/g2;->values()Lcom/google/common/collect/c2;
 
     .line 12
     .line 13
@@ -370,7 +370,7 @@
     move-result-object v0
 
     .line 15
-    invoke-virtual {v0}, Lcom/google/common/collect/d2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v0}, Lcom/google/common/collect/c2;->iterator()Lcom/google/common/collect/o6;
 
     .line 16
     .line 17
@@ -471,7 +471,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -480,7 +480,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -514,7 +514,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -523,7 +523,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 15
     .line 16
@@ -532,7 +532,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 20
     .line 21
@@ -563,7 +563,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -572,7 +572,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -628,20 +628,20 @@
     const/4 v0, 0x0
 
     .line 3
-    invoke-static {p0, p1, p2, v0}, Landroidx/media3/exoplayer/offline/DownloadHelper;->createMediaSourceInternal(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource;
+    invoke-static {p0, p1, p2, v0}, Landroidx/media3/exoplayer/offline/DownloadHelper;->createMediaSourceInternal(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static createMediaSourceInternal(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource;
+.method private static createMediaSourceInternal(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/DataSource$Factory;Landroidx/media3/exoplayer/drm/DrmSessionManager;Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource;
     .locals 2
     .param p2    # Landroidx/media3/exoplayer/drm/DrmSessionManager;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .param p3    # Lcom/google/common/base/x;
+    .param p3    # Lcom/google/common/base/z;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
@@ -651,7 +651,7 @@
             "Landroidx/media3/common/MediaItem;",
             "Landroidx/media3/datasource/DataSource$Factory;",
             "Landroidx/media3/exoplayer/drm/DrmSessionManager;",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)",
             "Landroidx/media3/exoplayer/source/MediaSource;"
@@ -711,7 +711,7 @@
 
     .line 26
     .line 27
-    invoke-interface {v0, p3}, Landroidx/media3/exoplayer/source/MediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+    invoke-interface {v0, p3}, Landroidx/media3/exoplayer/source/MediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
 
     .line 28
     .line 29
@@ -721,11 +721,11 @@
 
     .line 31
     .line 32
-    new-instance p1, Landroidx/media3/exoplayer/offline/c;
+    new-instance p1, Landroidx/media3/exoplayer/offline/b;
 
     .line 33
     .line 34
-    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/offline/c;-><init>(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
+    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/offline/b;-><init>(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
 
     .line 35
     .line 36
@@ -781,7 +781,7 @@
 
     move-result p0
 
-    invoke-static {p0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {p0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 4
     new-instance p0, Landroidx/media3/exoplayer/offline/DownloadHelper$Factory;
@@ -1532,7 +1532,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {p0}, Landroidx/media3/common/Tracks;->getGroups()Lcom/google/common/collect/f2;
+    invoke-virtual {p0}, Landroidx/media3/common/Tracks;->getGroups()Lcom/google/common/collect/e2;
 
     .line 28
     .line 29
@@ -1772,14 +1772,14 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, Le/b;
+    new-instance v1, Landroidx/lifecycle/b;
 
     .line 7
     .line 8
-    const/4 v2, 0x5
+    const/4 v2, 0x7
 
     .line 9
-    invoke-direct {v1, v2, p0, p1}, Le/b;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/lifecycle/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 10
     .line 11
@@ -1980,7 +1980,7 @@
 
     .line 90
     .line 91
-    invoke-static {v7}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v7}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 92
     .line 93
@@ -2127,61 +2127,64 @@
 
     .line 160
     .line 161
-    goto :goto_3
+    move v0, v3
 
     .line 162
-    :cond_4
-    move v3, v2
+    goto :goto_3
 
     .line 163
-    :goto_3
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    :cond_4
+    move v0, v2
 
     .line 164
+    :goto_3
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
+
     .line 165
     .line 166
+    .line 167
     iget-object v0, p0, Landroidx/media3/exoplayer/offline/DownloadHelper;->mediaPreparer:Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;
 
-    .line 167
     .line 168
+    .line 169
     iget-object v0, v0, Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;->seekMap:Landroidx/media3/extractor/SeekMap;
 
-    .line 169
     .line 170
+    .line 171
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 171
     .line 172
     .line 173
+    .line 174
     invoke-direct {p0}, Landroidx/media3/exoplayer/offline/DownloadHelper;->setPreparedWithProgressiveSource()V
 
-    .line 174
     .line 175
     .line 176
+    .line 177
     :goto_4
     iget-object v0, p0, Landroidx/media3/exoplayer/offline/DownloadHelper;->callbackHandler:Landroid/os/Handler;
 
-    .line 177
     .line 178
+    .line 179
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 179
     .line 180
     .line 181
-    new-instance v1, Landroidx/media3/exoplayer/offline/d;
-
     .line 182
-    .line 183
-    invoke-direct {v1, p0, v2}, Landroidx/media3/exoplayer/offline/d;-><init>(Landroidx/media3/exoplayer/offline/DownloadHelper;Z)V
+    new-instance v1, Landroidx/media3/exoplayer/audio/g;
 
+    .line 183
     .line 184
+    invoke-direct {v1, v3, p0, v2}, Landroidx/media3/exoplayer/audio/g;-><init>(ILjava/lang/Object;Z)V
+
     .line 185
     .line 186
+    .line 187
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 187
     .line 188
     .line 189
+    .line 190
     return-void
 .end method
 
@@ -4077,7 +4080,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -4124,14 +4127,14 @@
 
     .line 31
     .line 32
-    new-instance v1, Landroidx/media3/common/util/a;
+    new-instance v1, Landroidx/core/content/res/a;
 
     .line 33
     .line 34
-    const/4 v2, 0x4
+    const/4 v2, 0x5
 
     .line 35
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/common/util/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/core/content/res/a;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 36
     .line 37

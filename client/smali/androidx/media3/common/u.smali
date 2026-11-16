@@ -3,60 +3,48 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Landroidx/media3/common/util/ListenerSet$Event;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer;
+.field public final synthetic a:I
 
-.field public final synthetic b:Landroidx/media3/common/SimpleBasePlayer$State;
+.field public final synthetic b:Landroidx/media3/common/Player$PositionInfo;
 
-.field public final synthetic c:Ljava/util/List;
-
-.field public final synthetic d:I
-
-.field public final synthetic e:I
+.field public final synthetic c:Landroidx/media3/common/Player$PositionInfo;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;II)V
+.method public synthetic constructor <init>(Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/common/u;->a:Landroidx/media3/common/SimpleBasePlayer;
+    iput p3, p0, Landroidx/media3/common/u;->a:I
 
-    iput-object p2, p0, Landroidx/media3/common/u;->b:Landroidx/media3/common/SimpleBasePlayer$State;
+    iput-object p1, p0, Landroidx/media3/common/u;->b:Landroidx/media3/common/Player$PositionInfo;
 
-    iput-object p3, p0, Landroidx/media3/common/u;->c:Ljava/util/List;
-
-    iput p4, p0, Landroidx/media3/common/u;->d:I
-
-    iput p5, p0, Landroidx/media3/common/u;->e:I
+    iput-object p2, p0, Landroidx/media3/common/u;->c:Landroidx/media3/common/Player$PositionInfo;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 5
+.method public final invoke(Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/media3/common/u;->d:I
+    iget-object v0, p0, Landroidx/media3/common/u;->c:Landroidx/media3/common/Player$PositionInfo;
 
-    iget v1, p0, Landroidx/media3/common/u;->e:I
+    check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    iget-object v2, p0, Landroidx/media3/common/u;->a:Landroidx/media3/common/SimpleBasePlayer;
+    iget v1, p0, Landroidx/media3/common/u;->a:I
 
-    iget-object v3, p0, Landroidx/media3/common/u;->b:Landroidx/media3/common/SimpleBasePlayer$State;
+    iget-object v2, p0, Landroidx/media3/common/u;->b:Landroidx/media3/common/Player$PositionInfo;
 
-    iget-object v4, p0, Landroidx/media3/common/u;->c:Ljava/util/List;
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/common/SimpleBasePlayer;->D(ILandroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$Listener;)V
 
-    invoke-static {v2, v3, v4, v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->v(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;II)Landroidx/media3/common/SimpleBasePlayer$State;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

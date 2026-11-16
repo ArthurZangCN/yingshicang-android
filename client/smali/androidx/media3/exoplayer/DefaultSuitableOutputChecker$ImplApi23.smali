@@ -571,7 +571,7 @@
 
 # virtual methods
 .method public disable()V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi23;->isSuitableForPlaybackState:Landroidx/media3/common/util/BackgroundThreadStateHandler;
@@ -583,28 +583,25 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, Landroidx/media3/exoplayer/a;
+    new-instance v1, Landroidx/media3/exoplayer/b;
 
     .line 7
     .line 8
-    const/4 v2, 0x0
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/b;-><init>(Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi23;)V
 
     .line 9
-    invoke-direct {v1, p0, v2}, Landroidx/media3/exoplayer/a;-><init>(Ljava/lang/Object;I)V
-
     .line 10
     .line 11
-    .line 12
     invoke-virtual {v0, v1}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->runInBackground(Ljava/lang/Runnable;)V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 .end method
 
 .method public enable(Landroidx/media3/exoplayer/SuitableOutputChecker$Callback;Landroid/content/Context;Landroid/os/Looper;Landroid/os/Looper;Landroidx/media3/common/util/Clock;)V
-    .locals 8
+    .locals 7
 
     .line 1
     new-instance v6, Landroidx/media3/common/util/BackgroundThreadStateHandler;
@@ -615,44 +612,44 @@
 
     .line 4
     .line 5
-    new-instance v5, Landroidx/media3/exoplayer/b;
+    new-instance v5, Landroidx/media3/exoplayer/c;
 
     .line 6
     .line 7
-    const/4 v7, 0x0
+    invoke-direct {v5, p1}, Landroidx/media3/exoplayer/c;-><init>(Ljava/lang/Object;)V
 
     .line 8
-    invoke-direct {v5, p1, v7}, Landroidx/media3/exoplayer/b;-><init>(Landroidx/media3/exoplayer/SuitableOutputChecker$Callback;I)V
-
     .line 9
     .line 10
-    .line 11
     move-object v0, v6
 
-    .line 12
+    .line 11
     move-object v2, p4
 
-    .line 13
+    .line 12
     move-object v3, p3
 
-    .line 14
+    .line 13
     move-object v4, p5
 
-    .line 15
+    .line 14
     invoke-direct/range {v0 .. v5}, Landroidx/media3/common/util/BackgroundThreadStateHandler;-><init>(Ljava/lang/Object;Landroid/os/Looper;Landroid/os/Looper;Landroidx/media3/common/util/Clock;Landroidx/media3/common/util/BackgroundThreadStateHandler$StateChangeListener;)V
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     iput-object v6, p0, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi23;->isSuitableForPlaybackState:Landroidx/media3/common/util/BackgroundThreadStateHandler;
 
+    .line 18
     .line 19
-    .line 20
-    new-instance p1, Landroidx/media3/exoplayer/c;
+    new-instance p1, Landroidx/media3/exoplayer/d;
 
+    .line 20
     .line 21
+    const/4 p3, 0x0
+
     .line 22
-    invoke-direct {p1, v7, p0, p2}, Landroidx/media3/exoplayer/c;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, p0, p2, p3}, Landroidx/media3/exoplayer/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 23
     .line 24

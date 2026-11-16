@@ -316,7 +316,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -399,7 +399,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -432,11 +432,11 @@
     move-result-object v0
 
     .line 25
-    new-instance v1, Landroidx/media3/exoplayer/offline/i;
+    new-instance v1, Landroidx/media3/exoplayer/offline/g;
 
     .line 26
     .line 27
-    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/offline/i;-><init>(Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;Landroidx/media3/exoplayer/offline/DownloadService;)V
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/offline/g;-><init>(Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;Landroidx/media3/exoplayer/offline/DownloadService;)V
 
     .line 28
     .line 29
@@ -473,7 +473,7 @@
 
     .line 8
     :goto_0
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -585,7 +585,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/offline/h;->c(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Z)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/offline/f;->c(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Z)V
 
     return-void
 .end method

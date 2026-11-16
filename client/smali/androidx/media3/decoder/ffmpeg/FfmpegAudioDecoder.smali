@@ -20,9 +20,17 @@
 
 .field private static final AUDIO_DECODER_ERROR_OTHER:I = -0x2
 
-.field private static final OUTPUT_BUFFER_SIZE_16BIT:I = 0x10000
+.field private static final FLAC_METADATA_BLOCK_HEADER_SIZE:I = 0x4
 
-.field private static final OUTPUT_BUFFER_SIZE_32BIT:I = 0x20000
+.field private static final FLAC_METADATA_TYPE_STREAM_INFO:I = 0x0
+
+.field private static final FLAC_STREAM_INFO_DATA_SIZE:I = 0x22
+
+.field private static final INITIAL_OUTPUT_BUFFER_SIZE_16BIT:I = 0xffff
+
+.field private static final INITIAL_OUTPUT_BUFFER_SIZE_32BIT:I = 0x1fffe
+
+.field private static final flacStreamMarker:[B
 
 
 # instance fields
@@ -41,12 +49,47 @@
 
 .field private nativeContext:J
 
-.field private final outputBufferSize:I
+.field private outputBufferSize:I
 
 .field private volatile sampleRate:I
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    new-array v0, v0, [B
+
+    .line 3
+    .line 4
+    fill-array-data v0, :array_0
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->flacStreamMarker:[B
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    nop
+
+    .line 11
+    :array_0
+    .array-data 1
+        0x66t
+        0x4ct
+        0x61t
+        0x43t
+    .end array-data
+.end method
+
 .method public constructor <init>(Landroidx/media3/common/Format;IIIZ)V
     .locals 6
 
@@ -80,7 +123,7 @@
 
     .line 15
     .line 16
-    invoke-static {p2}, Landroidx/media3/common/util/Assertions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 17
     .line 18
@@ -94,165 +137,157 @@
     .line 22
     .line 23
     .line 24
-    move-result-object p2
+    move-result-object v1
 
     .line 25
-    invoke-static {p2}, Landroidx/media3/common/util/Assertions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 26
     .line 27
     .line 28
-    move-result-object p2
+    iput-object v1, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->codecName:Ljava/lang/String;
 
     .line 29
-    move-object v1, p2
-
     .line 30
-    check-cast v1, Ljava/lang/String;
+    iget-object p2, p1, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
 
     .line 31
     .line 32
-    iput-object v1, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->codecName:Ljava/lang/String;
+    iget-object p3, p1, Landroidx/media3/common/Format;->initializationData:Ljava/util/List;
 
     .line 33
     .line 34
-    iget-object p2, p1, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
+    invoke-static {p2, p3}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getExtraData(Ljava/lang/String;Ljava/util/List;)[B
 
     .line 35
     .line 36
-    iget-object p3, p1, Landroidx/media3/common/Format;->initializationData:Ljava/util/List;
-
     .line 37
+    move-result-object v2
+
     .line 38
-    invoke-static {p2, p3}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getExtraData(Ljava/lang/String;Ljava/util/List;)[B
+    iput-object v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
 
     .line 39
     .line 40
-    .line 41
-    move-result-object v2
-
-    .line 42
-    iput-object v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
-
-    .line 43
-    .line 44
     if-eqz p5, :cond_0
 
-    .line 45
-    .line 46
+    .line 41
+    .line 42
     const/4 p2, 0x4
 
-    .line 47
+    .line 43
     goto :goto_0
 
-    .line 48
+    .line 44
     :cond_0
     const/4 p2, 0x2
 
-    .line 49
+    .line 45
     :goto_0
     iput p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->encoding:I
 
-    .line 50
-    .line 51
+    .line 46
+    .line 47
     if-eqz p5, :cond_1
 
+    .line 48
+    .line 49
+    const p2, 0x1fffe
+
+    .line 50
+    .line 51
     .line 52
+    goto :goto_1
+
     .line 53
-    const/high16 p2, 0x20000
+    :cond_1
+    const p2, 0xffff
 
     .line 54
     .line 55
-    goto :goto_1
-
     .line 56
-    :cond_1
-    const/high16 p2, 0x10000
-
-    .line 57
-    .line 58
     :goto_1
     iput p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->outputBufferSize:I
 
+    .line 57
+    .line 58
+    iget v4, p1, Landroidx/media3/common/Format;->sampleRate:I
+
     .line 59
     .line 60
-    iget v4, p1, Landroidx/media3/common/Format;->sampleRate:I
+    iget v5, p1, Landroidx/media3/common/Format;->channelCount:I
 
     .line 61
     .line 62
-    iget v5, p1, Landroidx/media3/common/Format;->channelCount:I
-
-    .line 63
-    .line 64
     move-object v0, p0
 
-    .line 65
+    .line 63
     move v3, p5
 
-    .line 66
+    .line 64
     invoke-direct/range {v0 .. v5}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegInitialize(Ljava/lang/String;[BZII)J
 
+    .line 65
+    .line 66
     .line 67
-    .line 68
-    .line 69
     move-result-wide p1
 
-    .line 70
+    .line 68
     iput-wide p1, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->nativeContext:J
+
+    .line 69
+    .line 70
+    const-wide/16 v0, 0x0
 
     .line 71
     .line 72
-    const-wide/16 v0, 0x0
+    cmp-long p1, p1, v0
 
     .line 73
     .line 74
-    cmp-long p1, p1, v0
+    if-eqz p1, :cond_2
 
     .line 75
     .line 76
-    if-eqz p1, :cond_2
+    invoke-virtual {p0, p4}, Landroidx/media3/decoder/SimpleDecoder;->setInitialInputBufferSize(I)V
 
     .line 77
     .line 78
-    invoke-virtual {p0, p4}, Landroidx/media3/decoder/SimpleDecoder;->setInitialInputBufferSize(I)V
-
     .line 79
-    .line 80
-    .line 81
     return-void
 
-    .line 82
+    .line 80
     :cond_2
     new-instance p1, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;
 
+    .line 81
+    .line 82
+    const-string p2, "Initialization failed."
+
     .line 83
     .line 84
-    const-string p2, "Initialization failed."
+    invoke-direct {p1, p2}, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;-><init>(Ljava/lang/String;)V
 
     .line 85
     .line 86
-    invoke-direct {p1, p2}, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;-><init>(Ljava/lang/String;)V
-
     .line 87
-    .line 88
-    .line 89
     throw p1
 
-    .line 90
+    .line 88
     :cond_3
     new-instance p1, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;
 
+    .line 89
+    .line 90
+    const-string p2, "Failed to load decoder native libraries."
+
     .line 91
     .line 92
-    const-string p2, "Failed to load decoder native libraries."
+    invoke-direct {p1, p2}, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;-><init>(Ljava/lang/String;)V
 
     .line 93
     .line 94
-    invoke-direct {p1, p2}, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;-><init>(Ljava/lang/String;)V
-
     .line 95
-    .line 96
-    .line 97
     throw p1
 .end method
 
@@ -265,7 +300,239 @@
     return-void
 .end method
 
-.method private native ffmpegDecode(JLjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;I)I
+.method private static arrayStartsWith([B[B)Z
+    .locals 4
+
+    .line 1
+    array-length v0, p0
+
+    .line 2
+    array-length v1, p1
+
+    .line 3
+    const/4 v2, 0x0
+
+    .line 4
+    if-ge v0, v1, :cond_0
+
+    .line 5
+    .line 6
+    return v2
+
+    .line 7
+    :cond_0
+    move v0, v2
+
+    .line 8
+    :goto_0
+    array-length v1, p1
+
+    .line 9
+    if-ge v0, v1, :cond_2
+
+    .line 10
+    .line 11
+    aget-byte v1, p0, v0
+
+    .line 12
+    .line 13
+    aget-byte v3, p1, v0
+
+    .line 14
+    .line 15
+    if-eq v1, v3, :cond_1
+
+    .line 16
+    .line 17
+    return v2
+
+    .line 18
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_2
+    const/4 p0, 0x1
+
+    .line 22
+    return p0
+.end method
+
+.method private static extractFlacStreamInfo([B)[B
+    .locals 7
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .line 1
+    sget-object v0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->flacStreamMarker:[B
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->arrayStartsWith([B[B)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-eqz v1, :cond_0
+
+    .line 9
+    .line 10
+    array-length v0, v0
+
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    move v0, v2
+
+    .line 13
+    :goto_0
+    array-length v1, p0
+
+    .line 14
+    sub-int/2addr v1, v0
+
+    .line 15
+    const/16 v3, 0x22
+
+    .line 16
+    .line 17
+    if-ne v1, v3, :cond_1
+
+    .line 18
+    .line 19
+    new-array v1, v3, [B
+
+    .line 20
+    .line 21
+    invoke-static {p0, v0, v1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object v1
+
+    .line 25
+    :cond_1
+    array-length v1, p0
+
+    .line 26
+    add-int/lit8 v4, v0, 0x4
+
+    .line 27
+    .line 28
+    if-lt v1, v4, :cond_2
+
+    .line 29
+    .line 30
+    aget-byte v1, p0, v0
+
+    .line 31
+    .line 32
+    and-int/lit8 v1, v1, 0x7f
+
+    .line 33
+    .line 34
+    add-int/lit8 v5, v0, 0x1
+
+    .line 35
+    .line 36
+    aget-byte v5, p0, v5
+
+    .line 37
+    .line 38
+    and-int/lit16 v5, v5, 0xff
+
+    .line 39
+    .line 40
+    shl-int/lit8 v5, v5, 0x10
+
+    .line 41
+    .line 42
+    add-int/lit8 v6, v0, 0x2
+
+    .line 43
+    .line 44
+    aget-byte v6, p0, v6
+
+    .line 45
+    .line 46
+    and-int/lit16 v6, v6, 0xff
+
+    .line 47
+    .line 48
+    shl-int/lit8 v6, v6, 0x8
+
+    .line 49
+    .line 50
+    or-int/2addr v5, v6
+
+    .line 51
+    add-int/lit8 v6, v0, 0x3
+
+    .line 52
+    .line 53
+    aget-byte v6, p0, v6
+
+    .line 54
+    .line 55
+    and-int/lit16 v6, v6, 0xff
+
+    .line 56
+    .line 57
+    or-int/2addr v5, v6
+
+    .line 58
+    if-nez v1, :cond_2
+
+    .line 59
+    .line 60
+    if-ne v5, v3, :cond_2
+
+    .line 61
+    .line 62
+    array-length v1, p0
+
+    .line 63
+    add-int/lit8 v0, v0, 0x26
+
+    .line 64
+    .line 65
+    if-lt v1, v0, :cond_2
+
+    .line 66
+    .line 67
+    new-array v0, v3, [B
+
+    .line 68
+    .line 69
+    invoke-static {p0, v4, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 70
+    .line 71
+    .line 72
+    return-object v0
+
+    .line 73
+    :cond_2
+    const/4 p0, 0x0
+
+    .line 74
+    return-object p0
+.end method
+
+.method private native ffmpegDecode(JLjava/nio/ByteBuffer;ILandroidx/media3/decoder/SimpleDecoderOutputBuffer;Ljava/nio/ByteBuffer;I)I
 .end method
 
 .method private native ffmpegGetChannelCount(J)I
@@ -434,14 +701,14 @@
 
     .line 23
     :cond_0
-    const/4 v2, 0x3
+    const/4 v2, 0x4
 
     .line 24
     goto :goto_0
 
     .line 25
     :sswitch_1
-    const-string v0, "audio/alac"
+    const-string v0, "audio/flac"
 
     .line 26
     .line 27
@@ -461,14 +728,14 @@
 
     .line 34
     :cond_1
-    const/4 v2, 0x2
+    const/4 v2, 0x3
 
     .line 35
     goto :goto_0
 
     .line 36
     :sswitch_2
-    const-string v0, "audio/mp4a-latm"
+    const-string v0, "audio/alac"
 
     .line 37
     .line 38
@@ -488,14 +755,14 @@
 
     .line 45
     :cond_2
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
     .line 46
     goto :goto_0
 
     .line 47
     :sswitch_3
-    const-string v0, "audio/vorbis"
+    const-string v0, "audio/mp4a-latm"
 
     .line 48
     .line 49
@@ -515,94 +782,211 @@
 
     .line 56
     :cond_3
-    move v2, v1
+    const/4 v2, 0x1
 
     .line 57
+    goto :goto_0
+
+    .line 58
+    :sswitch_4
+    const-string v0, "audio/vorbis"
+
+    .line 59
+    .line 60
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result p0
+
+    .line 64
+    if-nez p0, :cond_4
+
+    .line 65
+    .line 66
+    goto :goto_0
+
+    .line 67
+    :cond_4
+    move v2, v1
+
+    .line 68
     :goto_0
     packed-switch v2, :pswitch_data_0
 
-    .line 58
-    .line 59
-    .line 60
-    const/4 p0, 0x0
-
-    .line 61
-    return-object p0
-
-    .line 62
-    :pswitch_0
-    invoke-static {p1}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getAlacExtraData(Ljava/util/List;)[B
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object p0
-
-    .line 66
-    return-object p0
-
-    .line 67
-    :pswitch_1
-    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 68
     .line 69
     .line 70
-    move-result-object p0
-
     .line 71
-    check-cast p0, [B
+    const/4 p0, 0x0
 
     .line 72
-    .line 73
     return-object p0
+
+    .line 73
+    :pswitch_0
+    invoke-static {p1}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getFlacExtraData(Ljava/util/List;)[B
 
     .line 74
-    :pswitch_2
-    invoke-static {p1}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getVorbisExtraData(Ljava/util/List;)[B
-
     .line 75
     .line 76
-    .line 77
     move-result-object p0
 
-    .line 78
+    .line 77
     return-object p0
 
-    .line 79
-    :sswitch_data_0
-    .sparse-switch
-        -0x3bd43e14 -> :sswitch_3
-        -0x3313c2e -> :sswitch_2
-        0x59ac6426 -> :sswitch_1
-        0x59b2d2d8 -> :sswitch_0
-    .end sparse-switch
+    .line 78
+    :pswitch_1
+    invoke-static {p1}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getAlacExtraData(Ljava/util/List;)[B
 
+    .line 79
     .line 80
     .line 81
+    move-result-object p0
+
     .line 82
+    return-object p0
+
     .line 83
+    :pswitch_2
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
     .line 84
     .line 85
     .line 86
+    move-result-object p0
+
     .line 87
+    check-cast p0, [B
+
     .line 88
     .line 89
+    return-object p0
+
     .line 90
+    :pswitch_3
+    invoke-static {p1}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->getVorbisExtraData(Ljava/util/List;)[B
+
     .line 91
     .line 92
     .line 93
+    move-result-object p0
+
     .line 94
+    return-object p0
+
     .line 95
+    :sswitch_data_0
+    .sparse-switch
+        -0x3bd43e14 -> :sswitch_4
+        -0x3313c2e -> :sswitch_3
+        0x59ac6426 -> :sswitch_2
+        0x59aeaa01 -> :sswitch_1
+        0x59b2d2d8 -> :sswitch_0
+    .end sparse-switch
+
     .line 96
     .line 97
+    .line 98
+    .line 99
+    .line 100
+    .line 101
+    .line 102
+    .line 103
+    .line 104
+    .line 105
+    .line 106
+    .line 107
+    .line 108
+    .line 109
+    .line 110
+    .line 111
+    .line 112
+    .line 113
+    .line 114
+    .line 115
+    .line 116
+    .line 117
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_3
         :pswitch_2
         :pswitch_1
         :pswitch_0
-        :pswitch_1
+        :pswitch_2
     .end packed-switch
+.end method
+
+.method private static getFlacExtraData(Ljava/util/List;)[B
+    .locals 2
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "[B>;)[B"
+        }
+    .end annotation
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    :goto_0
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v1
+
+    .line 6
+    if-ge v0, v1, :cond_1
+
+    .line 7
+    .line 8
+    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    check-cast v1, [B
+
+    .line 13
+    .line 14
+    invoke-static {v1}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extractFlacStreamInfo([B)[B
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    if-eqz v1, :cond_0
+
+    .line 19
+    .line 20
+    return-object v1
+
+    .line 21
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 25
+    return-object p0
 .end method
 
 .method private static getVorbisExtraData(Ljava/util/List;)[B
@@ -783,6 +1167,25 @@
     return-object v3
 .end method
 
+.method private growOutputBuffer(Landroidx/media3/decoder/SimpleDecoderOutputBuffer;I)Ljava/nio/ByteBuffer;
+    .locals 0
+
+    .line 1
+    iput p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->outputBufferSize:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroidx/media3/decoder/SimpleDecoderOutputBuffer;->grow(I)Ljava/nio/ByteBuffer;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
 .method private static synthetic lambda$createOutputBuffer$0(Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;Landroidx/media3/decoder/DecoderOutputBuffer;)V
     .locals 0
 
@@ -890,7 +1293,7 @@
 .end method
 
 .method public decode(Landroidx/media3/decoder/DecoderInputBuffer;Landroidx/media3/decoder/SimpleDecoderOutputBuffer;Z)Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;
-    .locals 7
+    .locals 8
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
@@ -946,26 +1349,27 @@
 
     invoke-virtual {p2, v0, v1, p1}, Landroidx/media3/decoder/SimpleDecoderOutputBuffer;->init(JI)Ljava/nio/ByteBuffer;
 
-    move-result-object p1
+    move-result-object v6
 
     .line 7
     iget-wide v1, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->nativeContext:J
 
-    iget v6, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->outputBufferSize:I
+    iget v7, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->outputBufferSize:I
 
     move-object v0, p0
 
-    move-object v5, p1
-
-    invoke-direct/range {v0 .. v6}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegDecode(JLjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;I)I
-
-    move-result p3
-
-    const/4 v0, -0x2
-
-    if-ne p3, v0, :cond_1
+    move-object v5, p2
 
     .line 8
+    invoke-direct/range {v0 .. v7}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegDecode(JLjava/nio/ByteBuffer;ILandroidx/media3/decoder/SimpleDecoderOutputBuffer;Ljava/nio/ByteBuffer;I)I
+
+    move-result p1
+
+    const/4 p3, -0x2
+
+    if-ne p1, p3, :cond_1
+
+    .line 9
     new-instance p1, Landroidx/media3/decoder/ffmpeg/FfmpegDecoderException;
 
     const-string p2, "Error decoding (see logcat)."
@@ -975,108 +1379,115 @@
     return-object p1
 
     :cond_1
-    const/4 v0, -0x1
+    const/4 p3, -0x1
 
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    if-ne p3, v0, :cond_2
-
-    .line 9
-    iput-boolean v2, p2, Landroidx/media3/decoder/DecoderOutputBuffer;->shouldBeSkipped:Z
-
-    return-object v1
-
-    :cond_2
-    if-nez p3, :cond_3
+    if-ne p1, p3, :cond_2
 
     .line 10
-    iput-boolean v2, p2, Landroidx/media3/decoder/DecoderOutputBuffer;->shouldBeSkipped:Z
+    iput-boolean v1, p2, Landroidx/media3/decoder/DecoderOutputBuffer;->shouldBeSkipped:Z
 
-    return-object v1
+    return-object v0
+
+    :cond_2
+    if-nez p1, :cond_3
 
     .line 11
-    :cond_3
-    iget-boolean p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->hasOutputFormat:Z
+    iput-boolean v1, p2, Landroidx/media3/decoder/DecoderOutputBuffer;->shouldBeSkipped:Z
 
-    if-nez p2, :cond_5
+    return-object v0
 
     .line 12
-    iget-wide v3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->nativeContext:J
+    :cond_3
+    iget-boolean p3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->hasOutputFormat:Z
 
-    invoke-direct {p0, v3, v4}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegGetChannelCount(J)I
-
-    move-result p2
-
-    iput p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->channelCount:I
+    if-nez p3, :cond_5
 
     .line 13
-    iget-wide v3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->nativeContext:J
+    iget-wide v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->nativeContext:J
 
-    invoke-direct {p0, v3, v4}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegGetSampleRate(J)I
+    invoke-direct {p0, v2, v3}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegGetChannelCount(J)I
 
-    move-result p2
+    move-result p3
 
-    iput p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->sampleRate:I
+    iput p3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->channelCount:I
 
     .line 14
-    iget p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->sampleRate:I
+    iget-wide v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->nativeContext:J
 
-    if-nez p2, :cond_4
+    invoke-direct {p0, v2, v3}, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->ffmpegGetSampleRate(J)I
 
-    const-string p2, "alac"
+    move-result p3
 
-    iget-object v0, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->codecName:Ljava/lang/String;
-
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_4
+    iput p3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->sampleRate:I
 
     .line 15
-    iget-object p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
+    iget p3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->sampleRate:I
 
-    invoke-static {p2}, Landroidx/media3/common/util/Assertions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    if-nez p3, :cond_4
+
+    const-string p3, "alac"
+
+    iget-object v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->codecName:Ljava/lang/String;
+
+    invoke-virtual {p3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_4
 
     .line 16
-    new-instance p2, Landroidx/media3/common/util/ParsableByteArray;
-
-    iget-object v0, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
-
-    invoke-direct {p2, v0}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
+    iget-object p3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
 
     .line 17
-    iget-object v0, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
-
-    array-length v0, v0
-
-    add-int/lit8 v0, v0, -0x4
-
-    invoke-virtual {p2, v0}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 18
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedIntToInt()I
+    new-instance p3, Landroidx/media3/common/util/ParsableByteArray;
 
-    move-result p2
+    iget-object v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
 
-    iput p2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->sampleRate:I
+    invoke-direct {p3, v2}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
 
     .line 19
-    :cond_4
-    iput-boolean v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->hasOutputFormat:Z
+    iget-object v2, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->extraData:[B
 
-    :cond_5
-    const/4 p2, 0x0
+    array-length v2, v2
+
+    add-int/lit8 v2, v2, -0x4
+
+    invoke-virtual {p3, v2}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
 
     .line 20
-    invoke-virtual {p1, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    invoke-virtual {p3}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedIntToInt()I
+
+    move-result p3
+
+    iput p3, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->sampleRate:I
 
     .line 21
-    invoke-virtual {p1, p3}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+    :cond_4
+    iput-boolean v1, p0, Landroidx/media3/decoder/ffmpeg/FfmpegAudioDecoder;->hasOutputFormat:Z
 
-    return-object v1
+    .line 22
+    :cond_5
+    iget-object p2, p2, Landroidx/media3/decoder/SimpleDecoderOutputBuffer;->data:Ljava/nio/ByteBuffer;
+
+    .line 23
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 p3, 0x0
+
+    .line 24
+    invoke-virtual {p2, p3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 25
+    invoke-virtual {p2, p1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+
+    return-object v0
 .end method
 
 .method public getChannelCount()I

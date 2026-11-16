@@ -616,7 +616,7 @@
 
     .line 11
     .line 12
-    invoke-static {v1}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 13
     .line 14
@@ -670,7 +670,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, v0}, Landroid/support/v4/media/f;->l(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v0}, Landroid/support/v4/media/a;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 40
     .line 41

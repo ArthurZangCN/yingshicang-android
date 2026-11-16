@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/core/SingleProcessCoordinator$updateNotifications$1;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,22 +18,22 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function2<",
         "Lkotlinx/coroutines/flow/d<",
         "-",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;",
         "Lkotlin/coroutines/d<",
         "-",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;",
         "Ljava/lang/Object;",
         ">;"
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.core.SingleProcessCoordinator$updateNotifications$1"
     f = "SingleProcessCoordinator.kt"
     l = {}
@@ -60,7 +60,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0, p1}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, v0, p1}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -76,7 +76,7 @@
             "Lkotlin/coroutines/d<",
             "*>;)",
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -110,11 +110,11 @@
             "(",
             "Lkotlinx/coroutines/flow/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -127,7 +127,7 @@
 
     check-cast p1, Landroidx/datastore/core/SingleProcessCoordinator$updateNotifications$1;
 
-    sget-object p2, Lr3/q;->a:Lr3/q;
+    sget-object p2, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/core/SingleProcessCoordinator$updateNotifications$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,12 +152,12 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 11
     .line 12

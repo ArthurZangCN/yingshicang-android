@@ -191,7 +191,7 @@
 
     .line 48
     :cond_1
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 49
     .line 50
@@ -207,7 +207,7 @@
     move-result-object v3
 
     .line 56
-    invoke-static {v3}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v3}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 57
     .line 58
@@ -215,7 +215,7 @@
     move-result-object v3
 
     .line 60
-    invoke-static {v3, v2}, Landroidx/core/content/pm/d;->j(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
+    invoke-static {v3, v2}, Landroidx/core/content/pm/b;->i(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
 
     .line 61
     .line 62
@@ -535,7 +535,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -551,7 +551,7 @@
     move-result-object p0
 
     .line 15
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -567,7 +567,7 @@
     move-result-object v0
 
     .line 23
-    invoke-static {p0, v0}, Landroidx/core/app/c;->i(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;)Landroid/content/Intent;
+    invoke-static {p0, v0}, Landroidx/appcompat/app/c;->f(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;)Landroid/content/Intent;
 
     .line 24
     .line 25
@@ -647,7 +647,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -663,7 +663,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -671,7 +671,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0, p1, p2}, Landroidx/core/content/pm/d;->h(Landroid/content/pm/ShortcutManager;Ljava/util/List;Ljava/lang/CharSequence;)V
+    invoke-static {v0, p1, p2}, Landroidx/core/content/pm/c;->h(Landroid/content/pm/ShortcutManager;Ljava/util/List;Ljava/lang/CharSequence;)V
 
     .line 20
     .line 21
@@ -850,7 +850,7 @@
 
     .line 43
     :cond_0
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 44
     .line 45
@@ -866,7 +866,7 @@
     move-result-object v2
 
     .line 51
-    invoke-static {v2}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v2}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 52
     .line 53
@@ -874,7 +874,7 @@
     move-result-object v2
 
     .line 55
-    invoke-static {v2, v1}, Landroidx/core/content/pm/a;->g(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)V
+    invoke-static {v2, v1}, Landroidx/core/content/pm/d;->g(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)V
 
     .line 56
     .line 57
@@ -979,7 +979,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -995,7 +995,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -1003,7 +1003,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0}, Landroidx/core/content/pm/c;->g(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->g(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
 
     .line 20
     .line 21
@@ -1057,7 +1057,7 @@
     move-result-object v2
 
     .line 46
-    invoke-static {v2}, Landroidx/core/content/pm/d;->b(Ljava/lang/Object;)Landroid/content/pm/ShortcutInfo;
+    invoke-static {v2}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutInfo;
 
     .line 47
     .line 48
@@ -1291,7 +1291,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 11
     .line 12
@@ -1307,7 +1307,7 @@
     move-result-object p0
 
     .line 18
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 19
     .line 20
@@ -1315,7 +1315,7 @@
     move-result-object p0
 
     .line 22
-    invoke-static {p0}, Landroidx/core/content/pm/a;->b(Landroid/content/pm/ShortcutManager;)I
+    invoke-static {p0}, Landroidx/core/content/pm/c;->a(Landroid/content/pm/ShortcutManager;)I
 
     .line 23
     .line 24
@@ -1366,7 +1366,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 11
     .line 12
@@ -1382,7 +1382,7 @@
     move-result-object p0
 
     .line 18
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 19
     .line 20
@@ -1390,7 +1390,7 @@
     move-result-object p0
 
     .line 22
-    invoke-static {p0}, Landroidx/core/content/pm/e;->a(Landroid/content/pm/ShortcutManager;)I
+    invoke-static {p0}, Landroidx/core/content/pm/e;->j(Landroid/content/pm/ShortcutManager;)I
 
     .line 23
     .line 24
@@ -1441,7 +1441,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 11
     .line 12
@@ -1457,7 +1457,7 @@
     move-result-object p0
 
     .line 18
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 19
     .line 20
@@ -1465,7 +1465,7 @@
     move-result-object p0
 
     .line 22
-    invoke-static {p0}, Landroidx/core/content/pm/c;->a(Landroid/content/pm/ShortcutManager;)I
+    invoke-static {p0}, Landroidx/core/content/pm/e;->a(Landroid/content/pm/ShortcutManager;)I
 
     .line 23
     .line 24
@@ -2034,7 +2034,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -2050,7 +2050,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -2058,7 +2058,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0, p1}, Landroidx/core/content/pm/g;->m(Landroid/content/pm/ShortcutManager;I)Ljava/util/List;
+    invoke-static {v0, p1}, Landroidx/core/content/pm/j;->i(Landroid/content/pm/ShortcutManager;I)Ljava/util/List;
 
     .line 20
     .line 21
@@ -2086,7 +2086,7 @@
 
     .line 31
     .line 32
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 33
     .line 34
@@ -2102,7 +2102,7 @@
     move-result-object v0
 
     .line 40
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 41
     .line 42
@@ -2127,7 +2127,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0}, Landroidx/core/content/pm/b;->b(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
+    invoke-static {v0}, Landroidx/core/content/pm/e;->f(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
 
     .line 54
     .line 55
@@ -2149,7 +2149,7 @@
 
     .line 63
     .line 64
-    invoke-static {v0}, Landroidx/core/content/pm/c;->g(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->g(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
 
     .line 65
     .line 66
@@ -2171,7 +2171,7 @@
 
     .line 74
     .line 75
-    invoke-static {v0}, Landroidx/core/content/pm/c;->m(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
+    invoke-static {v0}, Landroidx/core/content/pm/f;->c(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
 
     .line 76
     .line 77
@@ -2265,7 +2265,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 11
     .line 12
@@ -2281,7 +2281,7 @@
     move-result-object p0
 
     .line 18
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 19
     .line 20
@@ -2289,7 +2289,7 @@
     move-result-object p0
 
     .line 22
-    invoke-static {p0}, Landroidx/core/content/pm/b;->g(Landroid/content/pm/ShortcutManager;)Z
+    invoke-static {p0}, Landroidx/core/content/pm/c;->j(Landroid/content/pm/ShortcutManager;)Z
 
     .line 23
     .line 24
@@ -2366,7 +2366,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -2382,7 +2382,7 @@
     move-result-object p0
 
     .line 15
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -2390,7 +2390,7 @@
     move-result-object p0
 
     .line 19
-    invoke-static {p0}, Landroidx/core/app/c;->z(Landroid/content/pm/ShortcutManager;)Z
+    invoke-static {p0}, Landroidx/core/app/d;->w(Landroid/content/pm/ShortcutManager;)Z
 
     .line 20
     .line 21
@@ -2682,7 +2682,7 @@
 
     .line 67
     .line 68
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 69
     .line 70
@@ -2698,7 +2698,7 @@
     move-result-object v1
 
     .line 76
-    invoke-static {v1}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v1}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 77
     .line 78
@@ -2714,7 +2714,7 @@
     move-result-object v4
 
     .line 84
-    invoke-static {v1, v4}, Landroidx/core/content/pm/g;->n(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;)V
+    invoke-static {v1, v4}, Landroidx/core/content/pm/i;->p(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;)V
 
     .line 85
     .line 86
@@ -2731,7 +2731,7 @@
 
     .line 91
     .line 92
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 93
     .line 94
@@ -2747,7 +2747,7 @@
     move-result-object v1
 
     .line 100
-    invoke-static {v1}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v1}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 101
     .line 102
@@ -2755,7 +2755,7 @@
     move-result-object v1
 
     .line 104
-    invoke-static {v1}, Landroidx/core/content/pm/b;->g(Landroid/content/pm/ShortcutManager;)Z
+    invoke-static {v1}, Landroidx/core/content/pm/c;->j(Landroid/content/pm/ShortcutManager;)Z
 
     .line 105
     .line 106
@@ -2771,7 +2771,7 @@
 
     .line 111
     :cond_5
-    invoke-static {v1}, Landroidx/core/content/pm/c;->n(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
+    invoke-static {v1}, Landroidx/core/content/pm/d;->b(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
 
     .line 112
     .line 113
@@ -2815,7 +2815,7 @@
     move-result-object v4
 
     .line 133
-    invoke-static {v1, v4}, Landroidx/core/content/pm/e;->h(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
+    invoke-static {v1, v4}, Landroidx/core/content/pm/d;->h(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
 
     .line 134
     .line 135
@@ -2845,7 +2845,7 @@
     move-result-object v4
 
     .line 148
-    invoke-static {v1, v4}, Landroidx/core/content/pm/d;->g(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
+    invoke-static {v1, v4}, Landroidx/core/content/pm/g;->c(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
 
     .line 149
     .line 150
@@ -3190,7 +3190,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -3206,7 +3206,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -3319,7 +3319,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 8
     .line 9
@@ -3335,7 +3335,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 16
     .line 17
@@ -3343,7 +3343,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0, p1}, Landroidx/core/content/pm/c;->k(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
+    invoke-static {v0, p1}, Landroidx/core/content/pm/g;->h(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
 
     .line 20
     .line 21
@@ -3457,7 +3457,7 @@
 
     .line 11
     :cond_0
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 12
     .line 13
@@ -3473,7 +3473,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 20
     .line 21
@@ -3481,7 +3481,7 @@
     move-result-object v0
 
     .line 23
-    invoke-static {v0, p1}, Landroidx/core/content/pm/h;->h(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
+    invoke-static {v0, p1}, Landroidx/core/content/pm/k;->m(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
 
     .line 24
     .line 25
@@ -3574,7 +3574,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -3696,7 +3696,7 @@
 
     .line 12
     .line 13
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 14
     .line 15
@@ -3712,7 +3712,7 @@
     move-result-object v0
 
     .line 21
-    invoke-static {v0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 22
     .line 23
@@ -3720,7 +3720,7 @@
     move-result-object v0
 
     .line 25
-    invoke-static {v0, p1}, Landroidx/core/content/pm/a;->f(Landroid/content/pm/ShortcutManager;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Landroidx/core/content/pm/e;->h(Landroid/content/pm/ShortcutManager;Ljava/lang/String;)V
 
     .line 26
     .line 27
@@ -3845,7 +3845,7 @@
 
     .line 19
     .line 20
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 21
     .line 22
@@ -3861,7 +3861,7 @@
     move-result-object p0
 
     .line 28
-    invoke-static {p0}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 29
     .line 30
@@ -3877,7 +3877,7 @@
     move-result-object p1
 
     .line 36
-    invoke-static {p0, p1, p2}, Landroidx/appcompat/app/d;->v(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;Landroid/content/IntentSender;)Z
+    invoke-static {p0, p1, p2}, Landroidx/core/app/d;->x(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;Landroid/content/IntentSender;)Z
 
     .line 37
     .line 38
@@ -4095,7 +4095,7 @@
 
     .line 51
     :cond_0
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 52
     .line 53
@@ -4111,7 +4111,7 @@
     move-result-object v3
 
     .line 59
-    invoke-static {v3}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v3}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 60
     .line 61
@@ -4119,7 +4119,7 @@
     move-result-object v3
 
     .line 63
-    invoke-static {v3, v2}, Landroidx/core/content/pm/b;->h(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
+    invoke-static {v3, v2}, Landroidx/core/content/pm/g;->e(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
 
     .line 64
     .line 65
@@ -4383,7 +4383,7 @@
 
     .line 48
     :cond_1
-    invoke-static {}, Landroidx/core/content/pm/c;->f()Ljava/lang/Class;
+    invoke-static {}, Landroidx/core/content/pm/c;->e()Ljava/lang/Class;
 
     .line 49
     .line 50
@@ -4399,7 +4399,7 @@
     move-result-object v3
 
     .line 56
-    invoke-static {v3}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
+    invoke-static {v3}, Landroidx/core/content/pm/b;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutManager;
 
     .line 57
     .line 58
@@ -4407,7 +4407,7 @@
     move-result-object v3
 
     .line 60
-    invoke-static {v3, v2}, Landroidx/core/content/pm/e;->j(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
+    invoke-static {v3, v2}, Landroidx/core/content/pm/c;->k(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
 
     .line 61
     .line 62

@@ -14,7 +14,7 @@
 # static fields
 .field private static final FORCE_RESET_WORKAROUND_TIMEOUT_MS:J = 0xc8L
 
-.field private static final MAX_LATENCY_US:J = 0x4c4b40L
+.field private static final MAX_LATENCY_US:J = 0x989680L
 
 .field private static final MAX_PLAYHEAD_OFFSET_COUNT:I = 0xa
 
@@ -863,32 +863,35 @@
 
     .line 85
     :cond_2
-    invoke-direct {p0, v5, v6}, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->maybeUpdateLatency(J)V
+    invoke-direct {p0, v5, v6}, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->maybeUpdateLatency(J)Z
 
     .line 86
     .line 87
     .line 88
-    iget-object v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->audioTimestampPoller:Landroidx/media3/exoplayer/audio/AudioTimestampPoller;
+    move-result v10
 
     .line 89
+    iget-object v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->audioTimestampPoller:Landroidx/media3/exoplayer/audio/AudioTimestampPoller;
+
     .line 90
+    .line 91
     iget v7, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->audioTrackPlaybackSpeed:F
 
-    .line 91
     .line 92
+    .line 93
     invoke-direct {p0, v5, v6}, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->getPlaybackHeadPositionEstimateUs(J)J
 
-    .line 93
     .line 94
     .line 95
+    .line 96
     move-result-wide v8
 
-    .line 96
-    invoke-virtual/range {v4 .. v9}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->maybePollTimestamp(JFJ)V
-
     .line 97
+    invoke-virtual/range {v4 .. v10}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->maybePollTimestamp(JFJZ)V
+
     .line 98
     .line 99
+    .line 100
     return-void
 .end method
 
@@ -983,180 +986,200 @@
     return-void
 .end method
 
-.method private maybeUpdateLatency(J)V
-    .locals 6
+.method private maybeUpdateLatency(J)Z
+    .locals 10
 
     .line 1
-    iget-boolean v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->isOutputPcm:Z
+    iget-wide v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
 
     .line 2
     .line 3
-    if-eqz v0, :cond_1
+    iget-boolean v2, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->isOutputPcm:Z
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->getLatencyMethod:Ljava/lang/reflect/Method;
+    const/4 v3, 0x0
 
     .line 6
+    if-eqz v2, :cond_1
+
     .line 7
-    if-eqz v0, :cond_1
-
     .line 8
+    iget-object v2, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->getLatencyMethod:Ljava/lang/reflect/Method;
+
     .line 9
-    iget-wide v1, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->lastLatencySampleTimeUs:J
-
     .line 10
+    if-eqz v2, :cond_1
+
     .line 11
-    sub-long v1, p1, v1
-
     .line 12
-    .line 13
-    const-wide/32 v3, 0x7a120
+    iget-wide v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->lastLatencySampleTimeUs:J
 
+    .line 13
     .line 14
+    sub-long v4, p1, v4
+
     .line 15
     .line 16
-    cmp-long v1, v1, v3
+    const-wide/32 v6, 0x7a120
 
     .line 17
     .line 18
-    if-ltz v1, :cond_1
-
     .line 19
+    cmp-long v4, v4, v6
+
     .line 20
-    :try_start_0
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->audioTrack:Landroid/media/AudioTrack;
-
     .line 21
-    .line 22
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-ltz v4, :cond_1
 
+    .line 22
     .line 23
+    :try_start_0
+    iget-object v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->audioTrack:Landroid/media/AudioTrack;
+
     .line 24
     .line 25
-    const/4 v2, 0x0
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 26
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 27
     .line 28
-    invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    new-array v5, v3, [Ljava/lang/Object;
 
     .line 29
     .line 30
+    invoke-virtual {v2, v4, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 31
-    move-result-object v0
-
     .line 32
-    check-cast v0, Ljava/lang/Integer;
-
     .line 33
+    move-result-object v2
+
     .line 34
-    invoke-static {v0}, Landroidx/media3/common/util/Util;->castNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v2, Ljava/lang/Integer;
 
     .line 35
     .line 36
+    invoke-static {v2}, Landroidx/media3/common/util/Util;->castNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 37
-    move-result-object v0
-
     .line 38
-    check-cast v0, Ljava/lang/Integer;
-
     .line 39
+    move-result-object v2
+
     .line 40
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    check-cast v2, Ljava/lang/Integer;
 
     .line 41
     .line 42
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
     .line 43
-    move-result v0
-
     .line 44
-    int-to-long v0, v0
-
     .line 45
-    const-wide/16 v2, 0x3e8
+    move-result v2
 
     .line 46
+    int-to-long v4, v2
+
     .line 47
-    mul-long/2addr v0, v2
+    const-wide/16 v6, 0x3e8
 
     .line 48
-    iget-wide v2, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->bufferSizeUs:J
-
     .line 49
+    mul-long/2addr v4, v6
+
     .line 50
-    sub-long/2addr v0, v2
+    iget-wide v6, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->bufferSizeUs:J
 
     .line 51
-    iput-wide v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
-
     .line 52
+    sub-long/2addr v4, v6
+
     .line 53
-    const-wide/16 v2, 0x0
+    iput-wide v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
 
     .line 54
     .line 55
-    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->max(JJ)J
+    const-wide/16 v6, 0x0
 
     .line 56
     .line 57
+    invoke-static {v4, v5, v6, v7}, Ljava/lang/Math;->max(JJ)J
+
     .line 58
-    move-result-wide v0
-
     .line 59
-    iput-wide v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
-
     .line 60
+    move-result-wide v4
+
     .line 61
-    const-wide/32 v4, 0x4c4b40
+    iput-wide v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
 
     .line 62
     .line 63
-    .line 64
-    cmp-long v4, v0, v4
+    const-wide/32 v8, 0x989680
 
+    .line 64
     .line 65
     .line 66
-    if-lez v4, :cond_0
+    cmp-long v2, v4, v8
 
     .line 67
     .line 68
-    iget-object v4, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->listener:Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker$Listener;
+    if-lez v2, :cond_0
 
     .line 69
     .line 70
-    invoke-interface {v4, v0, v1}, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker$Listener;->onInvalidLatency(J)V
+    iget-object v2, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->listener:Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker$Listener;
 
     .line 71
     .line 72
+    invoke-interface {v2, v4, v5}, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker$Listener;->onInvalidLatency(J)V
+
     .line 73
-    iput-wide v2, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
+    .line 74
+    .line 75
+    iput-wide v6, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 74
-    .line 75
+    .line 76
+    .line 77
     goto :goto_0
 
-    .line 76
-    :catch_0
-    const/4 v0, 0x0
-
-    .line 77
-    iput-object v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->getLatencyMethod:Ljava/lang/reflect/Method;
-
     .line 78
+    :catch_0
+    const/4 v2, 0x0
+
     .line 79
+    iput-object v2, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->getLatencyMethod:Ljava/lang/reflect/Method;
+
+    .line 80
+    .line 81
     :cond_0
     :goto_0
     iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->lastLatencySampleTimeUs:J
 
-    .line 80
-    .line 81
+    .line 82
+    .line 83
     :cond_1
-    return-void
+    iget-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTrackPositionTracker;->latencyUs:J
+
+    .line 84
+    .line 85
+    cmp-long p1, v0, p1
+
+    .line 86
+    .line 87
+    if-eqz p1, :cond_2
+
+    .line 88
+    .line 89
+    const/4 v3, 0x1
+
+    .line 90
+    :cond_2
+    return v3
 .end method
 
 .method private resetSyncParams()V

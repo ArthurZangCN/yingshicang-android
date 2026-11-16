@@ -9,7 +9,7 @@
         value = {
             "()",
             "Lkotlinx/coroutines/flow/c<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation

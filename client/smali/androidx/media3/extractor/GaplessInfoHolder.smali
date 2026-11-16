@@ -344,7 +344,7 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
     .line 4
     invoke-direct {v0, v1}, Landroidx/media3/datasource/j;-><init>(I)V
@@ -352,11 +352,11 @@
     .line 5
     .line 6
     .line 7
-    const-class v1, Landroidx/media3/extractor/metadata/id3/CommentFrame;
+    const-class v2, Landroidx/media3/extractor/metadata/id3/CommentFrame;
 
     .line 8
     .line 9
-    invoke-virtual {p1, v1, v0}, Landroidx/media3/common/Metadata;->getMatchingEntries(Ljava/lang/Class;Lcom/google/common/base/k;)Lcom/google/common/collect/f2;
+    invoke-virtual {p1, v2, v0}, Landroidx/media3/common/Metadata;->getMatchingEntries(Ljava/lang/Class;Lcom/google/common/base/m;)Lcom/google/common/collect/e2;
 
     .line 10
     .line 11
@@ -364,7 +364,7 @@
     move-result-object v0
 
     .line 13
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 14
     .line 15
@@ -378,124 +378,121 @@
     .line 18
     .line 19
     .line 20
-    move-result v1
+    move-result v2
 
     .line 21
-    const/4 v2, 0x1
+    if-eqz v2, :cond_1
 
     .line 22
-    if-eqz v1, :cond_1
-
     .line 23
-    .line 24
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 24
     .line 25
     .line 26
+    move-result-object v2
+
     .line 27
-    move-result-object v1
+    check-cast v2, Landroidx/media3/extractor/metadata/id3/CommentFrame;
 
     .line 28
-    check-cast v1, Landroidx/media3/extractor/metadata/id3/CommentFrame;
-
     .line 29
+    iget-object v2, v2, Landroidx/media3/extractor/metadata/id3/CommentFrame;->text:Ljava/lang/String;
+
     .line 30
-    iget-object v1, v1, Landroidx/media3/extractor/metadata/id3/CommentFrame;->text:Ljava/lang/String;
-
     .line 31
-    .line 32
-    invoke-direct {p0, v1}, Landroidx/media3/extractor/GaplessInfoHolder;->setFromComment(Ljava/lang/String;)Z
+    invoke-direct {p0, v2}, Landroidx/media3/extractor/GaplessInfoHolder;->setFromComment(Ljava/lang/String;)Z
 
+    .line 32
     .line 33
     .line 34
+    move-result v2
+
     .line 35
-    move-result v1
+    if-eqz v2, :cond_0
 
     .line 36
-    if-eqz v1, :cond_0
-
     .line 37
+    return v1
+
     .line 38
-    return v2
+    :cond_1
+    new-instance v0, Landroidx/media3/extractor/d;
 
     .line 39
-    :cond_1
-    new-instance v0, Landroidx/media3/exoplayer/hls/a;
-
     .line 40
-    .line 41
-    invoke-direct {v0, v2}, Landroidx/media3/exoplayer/hls/a;-><init>(I)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 41
     .line 42
     .line 43
+    const-class v2, Landroidx/media3/extractor/metadata/id3/InternalFrame;
+
     .line 44
-    const-class v1, Landroidx/media3/extractor/metadata/id3/InternalFrame;
-
     .line 45
-    .line 46
-    invoke-virtual {p1, v1, v0}, Landroidx/media3/common/Metadata;->getMatchingEntries(Ljava/lang/Class;Lcom/google/common/base/k;)Lcom/google/common/collect/f2;
+    invoke-virtual {p1, v2, v0}, Landroidx/media3/common/Metadata;->getMatchingEntries(Ljava/lang/Class;Lcom/google/common/base/m;)Lcom/google/common/collect/e2;
 
+    .line 46
     .line 47
     .line 48
-    .line 49
     move-result-object p1
+
+    .line 49
+    invoke-virtual {p1}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 50
-    invoke-virtual {p1}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
-
     .line 51
     .line 52
-    .line 53
     move-result-object p1
 
-    .line 54
+    .line 53
     :cond_2
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     move-result v0
 
-    .line 58
+    .line 57
     if-eqz v0, :cond_3
 
+    .line 58
     .line 59
-    .line 60
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     move-result-object v0
 
-    .line 64
+    .line 63
     check-cast v0, Landroidx/media3/extractor/metadata/id3/InternalFrame;
 
+    .line 64
     .line 65
-    .line 66
     iget-object v0, v0, Landroidx/media3/extractor/metadata/id3/InternalFrame;->text:Ljava/lang/String;
 
+    .line 66
     .line 67
-    .line 68
     invoke-direct {p0, v0}, Landroidx/media3/extractor/GaplessInfoHolder;->setFromComment(Ljava/lang/String;)Z
 
+    .line 68
     .line 69
     .line 70
-    .line 71
     move-result v0
 
-    .line 72
+    .line 71
     if-eqz v0, :cond_2
 
+    .line 72
     .line 73
-    .line 74
-    return v2
+    return v1
 
-    .line 75
+    .line 74
     :cond_3
     const/4 p1, 0x0
 
-    .line 76
+    .line 75
     return p1
 .end method

@@ -69,6 +69,16 @@
     <string name="default_notification_channel_name">Now playing</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_ok">Select</string>
+    <string name="disclaimer_agree">我已阅读并同意</string>
+    <string name="disclaimer_agree_countdown">我已阅读并同意 (%ds)</string>
+    <string name="disclaimer_highlight_tool">调试、投屏工具</string>
+    <string name="disclaimer_paragraph_1">本软件仅为视频调试、投屏工具，仅供技术测试使用，调试完成后请您立即卸载。软件不存储、不提供任何影视资源，播放内容均来自用户自行添加第三方网络链接。</string>
+    <string name="disclaimer_paragraph_2">所有影视著作权归对应版权方，软件无法审核第三方内容合法性，观看盗版、违规内容产生的法律责任、赔偿后果均由使用者自行承担，影视仓不承担任何连带责任。</string>
+    <string name="disclaimer_paragraph_3">第三方私自二次打包、捆绑付费接口、预装在电视盒子售卖、商用分发等行为均与影视仓无关，相关法律风险与损失由操作方自行承担。</string>
+    <string name="disclaimer_paragraph_4">请勿利用本软件传播、牟利、长期观影，未成年人需监护人全程陪同使用。</string>
+    <string name="disclaimer_paragraph_5">持续使用即代表您已完整阅读并同意本全部免责条款。</string>
+    <string name="disclaimer_reject_exit">不同意，退出</string>
+    <string name="disclaimer_title">免责声明</string>
     <string name="dkplayer_continue_play">继续播放</string>
     <string name="dkplayer_error_message">出了点小问题，请稍后重试</string>
     <string name="dkplayer_lock_tip">请先解锁屏幕！</string>

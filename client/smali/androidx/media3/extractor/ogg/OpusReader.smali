@@ -429,7 +429,7 @@
 
     .line 104
     .line 105
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 106
     .line 107

@@ -3,38 +3,58 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/k;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/t;->a:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
+    iput p2, p0, Landroidx/media3/exoplayer/source/preload/t;->a:I
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/t;->b:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Z
-    .locals 1
+.method public final run()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/t;->a:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
+    iget v0, p0, Landroidx/media3/exoplayer/source/preload/t;->a:I
 
-    check-cast p1, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/preload/t;->b:Ljava/lang/Object;
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->b(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)Z
+    packed-switch v0, :pswitch_data_0
 
-    move-result p1
+    check-cast v1, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
 
-    return p1
+    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->d(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
+
+    return-void
+
+    :pswitch_0
+    check-cast v1, Landroidx/media3/exoplayer/source/preload/PreCacheHelper;
+
+    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper;->a(Landroidx/media3/exoplayer/source/preload/PreCacheHelper;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr3/d;
+.implements Lv3/d;
 
 
 # annotations
@@ -13,7 +13,7 @@
         "Landroidx/lifecycle/ViewModel;",
         ">",
         "Ljava/lang/Object;",
-        "Lr3/d<",
+        "Lv3/d<",
         "TVM;>;"
     }
 .end annotation
@@ -58,10 +58,10 @@
     .end annotation
 .end field
 
-.field private final viewModelClass:Lf4/b;
+.field private final viewModelClass:Ll4/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lf4/b<",
+            "Ll4/b<",
             "TVM;>;"
         }
     .end annotation
@@ -69,12 +69,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lf4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+.method public constructor <init>(Ll4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lf4/b<",
+            "Ll4/b<",
             "TVM;>;",
             "Lkotlin/jvm/functions/Function0<",
             "+",
@@ -114,17 +114,17 @@
 
     move-object v4, p3
 
-    invoke-direct/range {v1 .. v7}, Landroidx/lifecycle/ViewModelLazy;-><init>(Lf4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILkotlin/jvm/internal/f;)V
+    invoke-direct/range {v1 .. v7}, Landroidx/lifecycle/ViewModelLazy;-><init>(Ll4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILkotlin/jvm/internal/f;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lf4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+.method public constructor <init>(Ll4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lf4/b<",
+            "Ll4/b<",
             "TVM;>;",
             "Lkotlin/jvm/functions/Function0<",
             "+",
@@ -162,7 +162,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p1, p0, Landroidx/lifecycle/ViewModelLazy;->viewModelClass:Lf4/b;
+    iput-object p1, p0, Landroidx/lifecycle/ViewModelLazy;->viewModelClass:Ll4/b;
 
     .line 5
     iput-object p2, p0, Landroidx/lifecycle/ViewModelLazy;->storeProducer:Lkotlin/jvm/functions/Function0;
@@ -176,7 +176,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lf4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILkotlin/jvm/internal/f;)V
+.method public synthetic constructor <init>(Ll4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ILkotlin/jvm/internal/f;)V
     .locals 0
 
     .line 8
@@ -189,7 +189,7 @@
 
     .line 10
     :cond_0
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/lifecycle/ViewModelLazy;-><init>(Lf4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/lifecycle/ViewModelLazy;-><init>(Ll4/b;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
 
     return-void
 .end method
@@ -243,7 +243,7 @@
     invoke-direct {v2, v1, v0, v3}, Landroidx/lifecycle/ViewModelProvider;-><init>(Landroidx/lifecycle/ViewModelStore;Landroidx/lifecycle/ViewModelProvider$Factory;Landroidx/lifecycle/viewmodel/CreationExtras;)V
 
     .line 8
-    iget-object v0, p0, Landroidx/lifecycle/ViewModelLazy;->viewModelClass:Lf4/b;
+    iget-object v0, p0, Landroidx/lifecycle/ViewModelLazy;->viewModelClass:Ll4/b;
 
     .line 9
     const-string v1, "<this>"
@@ -253,7 +253,7 @@
     .line 10
     check-cast v0, Lkotlin/jvm/internal/c;
 
-    invoke-interface {v0}, Lkotlin/jvm/internal/c;->c()Ljava/lang/Class;
+    invoke-interface {v0}, Lkotlin/jvm/internal/c;->b()Ljava/lang/Class;
 
     move-result-object v0
 

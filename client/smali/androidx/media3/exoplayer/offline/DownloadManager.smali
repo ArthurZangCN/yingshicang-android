@@ -211,9 +211,9 @@
     iput-object v1, p0, Landroidx/media3/exoplayer/offline/DownloadManager;->listeners:Ljava/util/concurrent/CopyOnWriteArraySet;
 
     .line 13
-    new-instance v1, Landroidx/media3/common/util/c;
+    new-instance v1, Landroidx/media3/exoplayer/offline/d;
 
-    invoke-direct {v1, p0, v0}, Landroidx/media3/common/util/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/offline/d;-><init>(Landroidx/media3/exoplayer/offline/DownloadManager;)V
 
     invoke-static {v1}, Landroidx/media3/common/util/Util;->createHandlerForCurrentOrMainLooper(Landroid/os/Handler$Callback;)Landroid/os/Handler;
 
@@ -252,9 +252,9 @@
     iput-object v1, p0, Landroidx/media3/exoplayer/offline/DownloadManager;->internalHandler:Landroidx/media3/exoplayer/offline/DownloadManager$InternalHandler;
 
     .line 18
-    new-instance p2, Landroidx/media3/exoplayer/offline/f;
+    new-instance p2, Landroidx/core/view/u;
 
-    invoke-direct {p2, p0}, Landroidx/media3/exoplayer/offline/f;-><init>(Landroidx/media3/exoplayer/offline/DownloadManager;)V
+    invoke-direct {p2, p0}, Landroidx/core/view/u;-><init>(Ljava/lang/Object;)V
 
     .line 19
     iput-object p2, p0, Landroidx/media3/exoplayer/offline/DownloadManager;->requirementsListener:Landroidx/media3/exoplayer/scheduler/RequirementsWatcher$Listener;
@@ -609,7 +609,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 4
     .line 5
@@ -769,7 +769,7 @@
 
     .line 3
     .line 4
-    invoke-static {p1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 5
     .line 6
@@ -1850,7 +1850,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 9
     .line 10
@@ -1930,7 +1930,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 9
     .line 10

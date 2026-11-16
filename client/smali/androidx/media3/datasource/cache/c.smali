@@ -32,28 +32,6 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, Ljava/lang/Double;
-
-    check-cast p2, Ljava/lang/Double;
-
-    invoke-virtual {p1, p2}, Ljava/lang/Double;->compareTo(Ljava/lang/Double;)I
-
-    move-result p1
-
-    return p1
-
-    :pswitch_0
-    check-cast p1, Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;
-
-    check-cast p2, Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;
-
-    invoke-static {p1, p2}, Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;->a(Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;)I
-
-    move-result p1
-
-    return p1
-
-    :pswitch_1
     check-cast p1, Landroidx/media3/exoplayer/dash/manifest/BaseUrl;
 
     check-cast p2, Landroidx/media3/exoplayer/dash/manifest/BaseUrl;
@@ -64,7 +42,7 @@
 
     return p1
 
-    :pswitch_2
+    :pswitch_0
     check-cast p1, Landroidx/media3/datasource/cache/CacheSpan;
 
     check-cast p2, Landroidx/media3/datasource/cache/CacheSpan;
@@ -79,8 +57,6 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

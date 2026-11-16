@@ -15,10 +15,10 @@
 
 
 # instance fields
-.field public final layerInfos:Lcom/google/common/collect/f2;
+.field public final layerInfos:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/container/NalUnitUtil$H265LayerInfo;",
             ">;"
         }
@@ -83,7 +83,7 @@
 
     .line 7
     .line 8
-    invoke-static {p2}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -95,7 +95,7 @@
 
     .line 13
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 14
     .line 15
@@ -104,7 +104,7 @@
 
     .line 17
     :goto_0
-    iput-object p1, p0, Landroidx/media3/container/NalUnitUtil$H265VpsData;->layerInfos:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/container/NalUnitUtil$H265VpsData;->layerInfos:Lcom/google/common/collect/e2;
 
     .line 18
     .line 19

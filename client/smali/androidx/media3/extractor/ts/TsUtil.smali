@@ -8,6 +8,10 @@
 .end annotation
 
 
+# static fields
+.field public static final SNIFF_TS_PACKET_COUNT:I = 0x5
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0
@@ -417,4 +421,86 @@
 
     .line 45
     return-wide v0
+.end method
+
+.method public static tryToFindSyncBytePosition([BIII)I
+    .locals 4
+
+    .line 1
+    move v0, p1
+
+    .line 2
+    :goto_0
+    add-int v1, p1, p3
+
+    .line 3
+    .line 4
+    if-ge v0, v1, :cond_3
+
+    .line 5
+    .line 6
+    if-ge v0, p2, :cond_3
+
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    :goto_1
+    const/4 v2, 0x5
+
+    .line 10
+    if-ge v1, v2, :cond_2
+
+    .line 11
+    .line 12
+    mul-int v2, v1, p3
+
+    .line 13
+    .line 14
+    add-int/2addr v2, v0
+
+    .line 15
+    if-ge v2, p2, :cond_1
+
+    .line 16
+    .line 17
+    aget-byte v2, p0, v2
+
+    .line 18
+    .line 19
+    const/16 v3, 0x47
+
+    .line 20
+    .line 21
+    if-eq v2, v3, :cond_0
+
+    .line 22
+    .line 23
+    goto :goto_2
+
+    .line 24
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    .line 25
+    .line 26
+    goto :goto_1
+
+    .line 27
+    :cond_1
+    :goto_2
+    add-int/lit8 v0, v0, 0x1
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_2
+    return v0
+
+    .line 31
+    :cond_3
+    return p2
 .end method

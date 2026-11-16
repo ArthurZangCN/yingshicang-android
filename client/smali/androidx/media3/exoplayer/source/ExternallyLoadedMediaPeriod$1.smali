@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/util/concurrent/m;
+.implements Lcom/google/common/util/concurrent/p;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/google/common/util/concurrent/m<",
+        "Lcom/google/common/util/concurrent/p<",
         "Ljava/lang/Object;",
         ">;"
     }

@@ -32,7 +32,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {p0, p1, p2, p3}, Landroid/support/v4/media/session/e;->k(Landroid/app/Service;ILandroid/app/Notification;I)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/appcompat/widget/b;->k(Landroid/app/Service;ILandroid/app/Notification;I)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 

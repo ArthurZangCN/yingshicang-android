@@ -41,11 +41,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$observe(Landroidx/datastore/core/MulticastFileObserver$Companion;Ljava/io/File;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/o0;
+.method public static final synthetic access$observe(Landroidx/datastore/core/MulticastFileObserver$Companion;Ljava/io/File;Lkotlin/jvm/functions/Function1;)Ln4/t0;
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/datastore/core/MulticastFileObserver$Companion;->observe(Ljava/io/File;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/o0;
+    invoke-direct {p0, p1, p2}, Landroidx/datastore/core/MulticastFileObserver$Companion;->observe(Ljava/io/File;Lkotlin/jvm/functions/Function1;)Ln4/t0;
 
     .line 2
     .line 3
@@ -64,7 +64,7 @@
     return-void
 .end method
 
-.method private final observe(Ljava/io/File;Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/o0;
+.method private final observe(Ljava/io/File;Lkotlin/jvm/functions/Function1;)Ln4/t0;
     .locals 4
     .annotation build Landroidx/annotation/CheckResult;
     .end annotation
@@ -76,9 +76,9 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Ljava/lang/String;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
-            "Lkotlinx/coroutines/o0;"
+            "Ln4/t0;"
         }
     .end annotation
 
@@ -164,7 +164,7 @@
 
     .line 16
     :cond_1
-    sget-object v1, Lr3/q;->a:Lr3/q;
+    sget-object v1, Lv3/q;->a:Lv3/q;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -301,7 +301,7 @@
     .line 55
     :cond_0
     :goto_0
-    sget-object p0, Lr3/q;->a:Lr3/q;
+    sget-object p0, Lv3/q;->a:Lv3/q;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -357,7 +357,7 @@
             "Ljava/io/File;",
             ")",
             "Lkotlinx/coroutines/flow/c<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -494,7 +494,7 @@
     .line 45
     .line 46
     .line 47
-    sget-object v1, Lr3/q;->a:Lr3/q;
+    sget-object v1, Lv3/q;->a:Lv3/q;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -2,15 +2,47 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/ExoPlayerImplInternal;
+
+.field public final synthetic b:I
+
+.field public final synthetic c:Z
+
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImplInternal;IZ)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/media/metrics/LogSessionId;->equals(Ljava/lang/Object;)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result p0
+    iput-object p1, p0, Landroidx/media3/exoplayer/i1;->a:Landroidx/media3/exoplayer/ExoPlayerImplInternal;
 
-    return p0
+    iput p2, p0, Landroidx/media3/exoplayer/i1;->b:I
+
+    iput-boolean p3, p0, Landroidx/media3/exoplayer/i1;->c:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget v0, p0, Landroidx/media3/exoplayer/i1;->b:I
+
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/i1;->c:Z
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/i1;->a:Landroidx/media3/exoplayer/ExoPlayerImplInternal;
+
+    invoke-static {v2, v0, v1}, Landroidx/media3/exoplayer/ExoPlayerImplInternal;->b(Landroidx/media3/exoplayer/ExoPlayerImplInternal;IZ)V
+
+    return-void
 .end method

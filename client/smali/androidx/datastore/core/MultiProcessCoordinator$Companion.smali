@@ -149,7 +149,7 @@
 
     .line 41
     .line 42
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 43
     .line 44
@@ -175,7 +175,7 @@
 
     .line 54
     :cond_2
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 55
     .line 56
@@ -215,176 +215,160 @@
     .line 72
     .line 73
     .line 74
-    move-result-object p2
-
-    .line 75
-    invoke-static {p2}, Lj$/nio/channels/DesugarChannels;->convertMaybeLegacyFileChannelFromLibrary(Ljava/nio/channels/FileChannel;)Ljava/nio/channels/FileChannel;
-
-    .line 76
-    .line 77
-    .line 78
     move-result-object v6
 
-    .line 79
+    .line 75
     const/4 v11, 0x0
 
-    .line 80
+    .line 76
     const-wide/16 v7, 0x0
 
-    .line 81
-    .line 82
+    .line 77
+    .line 78
     const-wide v9, 0x7fffffffffffffffL
 
+    .line 79
+    .line 80
+    .line 81
+    .line 82
     .line 83
+    invoke-virtual/range {v6 .. v11}, Ljava/nio/channels/FileChannel;->lock(JJZ)Ljava/nio/channels/FileLock;
+
     .line 84
     .line 85
     .line 86
-    .line 87
-    invoke-virtual/range {v6 .. v11}, Ljava/nio/channels/FileChannel;->lock(JJZ)Ljava/nio/channels/FileLock;
-
-    .line 88
-    .line 89
-    .line 90
     move-result-object p2
 
-    .line 91
+    .line 87
     invoke-static {p2, v2}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 92
-    .line 93
-    .line 94
+    .line 88
+    .line 89
+    .line 90
     return-object p2
 
-    .line 95
+    .line 91
     :catch_0
     move-exception p2
 
-    .line 96
+    .line 92
     invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v2
+
+    .line 96
+    if-eqz v2, :cond_4
 
     .line 97
     .line 98
-    .line 99
-    move-result-object v2
-
-    .line 100
-    if-eqz v2, :cond_4
-
-    .line 101
-    .line 102
     invoke-static {}, Landroidx/datastore/core/MultiProcessCoordinator;->access$getDEADLOCK_ERROR_MESSAGE$cp()Ljava/lang/String;
 
-    .line 103
-    .line 104
-    .line 105
+    .line 99
+    .line 100
+    .line 101
     move-result-object v6
 
-    .line 106
+    .line 102
     const/4 v7, 0x0
 
+    .line 103
+    invoke-static {v2, v6, v7}, Lkotlin/text/r;->L(Ljava/lang/CharSequence;Ljava/lang/String;Z)Z
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v2
+
     .line 107
-    invoke-static {v2, v6, v7}, Lkotlin/text/r;->h0(Ljava/lang/CharSequence;Ljava/lang/String;Z)Z
+    if-ne v2, v3, :cond_4
 
     .line 108
     .line 109
-    .line 110
-    move-result v2
+    iput-object p1, v0, Landroidx/datastore/core/MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1;->L$0:Ljava/lang/Object;
 
+    .line 110
     .line 111
-    if-ne v2, v3, :cond_4
+    iput-wide v4, v0, Landroidx/datastore/core/MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1;->J$0:J
 
     .line 112
     .line 113
-    iput-object p1, v0, Landroidx/datastore/core/MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1;->L$0:Ljava/lang/Object;
+    iput v3, v0, Landroidx/datastore/core/MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1;->label:I
 
     .line 114
     .line 115
-    iput-wide v4, v0, Landroidx/datastore/core/MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1;->J$0:J
+    invoke-static {v4, v5, v0}, Ln4/m0;->a(JLkotlin/coroutines/d;)Ljava/lang/Object;
 
     .line 116
     .line 117
-    iput v3, v0, Landroidx/datastore/core/MultiProcessCoordinator$Companion$getExclusiveFileLockWithRetryIfDeadlock$1;->label:I
-
     .line 118
+    move-result-object p2
+
     .line 119
-    invoke-static {v4, v5, v0}, Lkotlinx/coroutines/j0;->a(JLkotlin/coroutines/d;)Ljava/lang/Object;
+    if-ne p2, v1, :cond_3
 
     .line 120
     .line 121
-    .line 122
-    move-result-object p2
-
-    .line 123
-    if-ne p2, v1, :cond_3
-
-    .line 124
-    .line 125
     return-object v1
 
-    .line 126
+    .line 122
     :cond_3
     :goto_2
     const/4 p2, 0x2
 
-    .line 127
+    .line 123
     int-to-long v6, p2
 
-    .line 128
+    .line 124
     mul-long/2addr v4, v6
 
-    .line 129
+    .line 125
     goto :goto_1
 
-    .line 130
+    .line 126
     :cond_4
     throw p2
 
-    .line 131
+    .line 127
     :cond_5
     invoke-virtual {p1}, Ljava/io/FileOutputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
+    .line 128
+    .line 129
+    .line 130
+    move-result-object v6
+
+    .line 131
+    const/4 v11, 0x0
+
     .line 132
+    const-wide/16 v7, 0x0
+
     .line 133
     .line 134
-    move-result-object p1
+    const-wide v9, 0x7fffffffffffffffL
 
     .line 135
-    invoke-static {p1}, Lj$/nio/channels/DesugarChannels;->convertMaybeLegacyFileChannelFromLibrary(Ljava/nio/channels/FileChannel;)Ljava/nio/channels/FileChannel;
-
     .line 136
     .line 137
     .line 138
-    move-result-object v3
-
     .line 139
-    const/4 v8, 0x0
+    invoke-virtual/range {v6 .. v11}, Ljava/nio/channels/FileChannel;->lock(JJZ)Ljava/nio/channels/FileLock;
 
     .line 140
-    const-wide/16 v4, 0x0
-
     .line 141
     .line 142
-    const-wide v6, 0x7fffffffffffffffL
+    move-result-object p1
 
     .line 143
+    invoke-static {p1, v2}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 144
     .line 145
     .line 146
-    .line 147
-    invoke-virtual/range {v3 .. v8}, Ljava/nio/channels/FileChannel;->lock(JJZ)Ljava/nio/channels/FileLock;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object p1
-
-    .line 151
-    invoke-static {p1, v2}, Lkotlin/jvm/internal/j;->e(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 152
-    .line 153
-    .line 154
     return-object p1
 .end method

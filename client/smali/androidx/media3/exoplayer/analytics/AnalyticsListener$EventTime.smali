@@ -254,7 +254,7 @@
 
     .line 66
     .line 67
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 68
     .line 69
@@ -274,7 +274,7 @@
 
     .line 76
     .line 77
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 78
     .line 79
@@ -294,7 +294,7 @@
 
     .line 86
     .line 87
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 88
     .line 89
@@ -314,7 +314,7 @@
 
     .line 96
     .line 97
-    invoke-static {v2, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 98
     .line 99
@@ -514,7 +514,7 @@
 
     .line 80
     .line 81
-    invoke-static {v10}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v10}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 82
     .line 83

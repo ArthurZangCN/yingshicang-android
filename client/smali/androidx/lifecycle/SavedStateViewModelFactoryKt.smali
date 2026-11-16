@@ -67,7 +67,7 @@
 
     .line 13
     .line 14
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->L([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/blankj/utilcode/util/f;->n([Ljava/lang/Object;)Ljava/util/List;
 
     .line 15
     .line 16
@@ -79,7 +79,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->K(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/blankj/utilcode/util/f;->m(Ljava/lang/Object;)Ljava/util/List;
 
     .line 21
     .line 22
@@ -202,7 +202,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-static {v4}, Lkotlin/collections/i;->R([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lkotlin/collections/i;->U([Ljava/lang/Object;)Ljava/util/List;
 
     .line 36
     .line 37
@@ -439,131 +439,84 @@
 
     .line 35
     .line 36
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "An exception happened in constructor of "
 
     .line 37
     .line 38
-    const-string v1, "An exception happened in constructor of "
+    invoke-static {v0, p0}, Landroid/support/v4/media/e;->j(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/String;
 
     .line 39
     .line 40
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 41
-    .line 42
-    .line 43
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object p0
 
+    .line 42
+    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
+
+    .line 43
     .line 44
     .line 45
+    move-result-object p1
+
     .line 46
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 47
     .line 48
     .line 49
-    move-result-object p0
-
-    .line 50
-    invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object p1
-
-    .line 54
-    invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 55
-    .line 56
-    .line 57
     throw p2
 
-    .line 58
+    .line 50
     :goto_1
     new-instance p2, Ljava/lang/RuntimeException;
 
+    .line 51
+    .line 52
+    const-string v0, "A "
+
+    .line 53
+    .line 54
+    const-string v1, " cannot be instantiated."
+
+    .line 55
+    .line 56
+    invoke-static {v0, p0, v1}, Landroid/support/v4/media/e;->k(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 57
+    .line 58
     .line 59
+    move-result-object p0
+
     .line 60
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 61
     .line 62
-    const-string v1, "A "
-
     .line 63
+    throw p2
+
     .line 64
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    :goto_2
+    new-instance p2, Ljava/lang/RuntimeException;
 
     .line 65
     .line 66
-    .line 67
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v0, "Failed to access "
 
+    .line 67
     .line 68
+    invoke-static {v0, p0}, Landroid/support/v4/media/e;->j(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/String;
+
     .line 69
     .line 70
-    const-string p0, " cannot be instantiated."
-
     .line 71
+    move-result-object p0
+
     .line 72
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object p0
-
-    .line 79
-    invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 80
-    .line 81
-    .line 82
-    throw p2
-
-    .line 83
-    :goto_2
-    new-instance p2, Ljava/lang/RuntimeException;
-
-    .line 84
-    .line 85
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 86
-    .line 87
-    const-string v1, "Failed to access "
-
-    .line 88
-    .line 89
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 90
-    .line 91
-    .line 92
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object p0
-
-    .line 99
-    invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 100
-    .line 101
-    .line 102
     throw p2
 .end method

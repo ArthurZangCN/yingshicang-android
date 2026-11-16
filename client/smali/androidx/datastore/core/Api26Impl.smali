@@ -62,7 +62,7 @@
 
     .line 12
     :try_start_0
-    invoke-static {p1}, Lj$/io/FileRetargetClass;->toPath(Ljava/io/File;)Lj$/nio/file/Path;
+    invoke-virtual {p1}, Ljava/io/File;->toPath()Ljava/nio/file/Path;
 
     .line 13
     .line 14
@@ -70,7 +70,7 @@
     move-result-object p1
 
     .line 16
-    invoke-static {p2}, Lj$/io/FileRetargetClass;->toPath(Ljava/io/File;)Lj$/nio/file/Path;
+    invoke-virtual {p2}, Ljava/io/File;->toPath()Ljava/nio/file/Path;
 
     .line 17
     .line 18
@@ -81,11 +81,11 @@
     const/4 v1, 0x1
 
     .line 21
-    new-array v2, v1, [Lj$/nio/file/CopyOption;
+    new-array v2, v1, [Ljava/nio/file/CopyOption;
 
     .line 22
     .line 23
-    sget-object v3, Lj$/nio/file/StandardCopyOption;->REPLACE_EXISTING:Lj$/nio/file/StandardCopyOption;
+    sget-object v3, Ljava/nio/file/StandardCopyOption;->REPLACE_EXISTING:Ljava/nio/file/StandardCopyOption;
 
     .line 24
     .line 25
@@ -93,7 +93,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1, p2, v2}, Lj$/nio/file/Files;->move(Lj$/nio/file/Path;Lj$/nio/file/Path;[Lj$/nio/file/CopyOption;)Lj$/nio/file/Path;
+    invoke-static {p1, p2, v2}, Ljava/nio/file/Files;->move(Ljava/nio/file/Path;Ljava/nio/file/Path;[Ljava/nio/file/CopyOption;)Ljava/nio/file/Path;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 

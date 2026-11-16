@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lb4/a;
+.implements Lh4/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb4/a<",
+        "Lh4/a<",
         "Landroid/content/Context;",
         "Landroidx/datastore/core/DataStore<",
         "Landroidx/datastore/preferences/core/Preferences;",
@@ -61,11 +61,11 @@
     .end annotation
 .end field
 
-.field private final scope:Lkotlinx/coroutines/b0;
+.field private final scope:Ln4/e0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/b0;)V
+.method public constructor <init>(Ljava/lang/String;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Lkotlin/jvm/functions/Function1;Ln4/e0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -83,7 +83,7 @@
             "Landroidx/datastore/core/DataMigration<",
             "Landroidx/datastore/preferences/core/Preferences;",
             ">;>;>;",
-            "Lkotlinx/coroutines/b0;",
+            "Ln4/e0;",
             ")V"
         }
     .end annotation
@@ -133,7 +133,7 @@
 
     .line 24
     .line 25
-    iput-object p4, p0, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;->scope:Lkotlinx/coroutines/b0;
+    iput-object p4, p0, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;->scope:Ln4/e0;
 
     .line 26
     .line 27
@@ -166,13 +166,13 @@
 
 
 # virtual methods
-.method public getValue(Landroid/content/Context;Lf4/g;)Landroidx/datastore/core/DataStore;
+.method public getValue(Landroid/content/Context;Ll4/g;)Landroidx/datastore/core/DataStore;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lf4/g<",
+            "Ll4/g<",
             "*>;)",
             "Landroidx/datastore/core/DataStore<",
             "Landroidx/datastore/preferences/core/Preferences;",
@@ -229,14 +229,14 @@
     check-cast v2, Ljava/util/List;
 
     .line 8
-    iget-object v3, p0, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;->scope:Lkotlinx/coroutines/b0;
+    iget-object v3, p0, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;->scope:Ln4/e0;
 
     .line 9
     new-instance v4, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate$getValue$1$1;
 
     invoke-direct {v4, p1, p0}, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate$getValue$1$1;-><init>(Landroid/content/Context;Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;)V
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroidx/datastore/preferences/core/PreferenceDataStoreFactory;->create(Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Ljava/util/List;Lkotlinx/coroutines/b0;Lkotlin/jvm/functions/Function0;)Landroidx/datastore/core/DataStore;
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroidx/datastore/preferences/core/PreferenceDataStoreFactory;->create(Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Ljava/util/List;Ln4/e0;Lkotlin/jvm/functions/Function0;)Landroidx/datastore/core/DataStore;
 
     move-result-object p1
 
@@ -275,13 +275,13 @@
     return-object p2
 .end method
 
-.method public bridge synthetic getValue(Ljava/lang/Object;Lf4/g;)Ljava/lang/Object;
+.method public bridge synthetic getValue(Ljava/lang/Object;Ll4/g;)Ljava/lang/Object;
     .locals 0
 
     .line 12
     check-cast p1, Landroid/content/Context;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;->getValue(Landroid/content/Context;Lf4/g;)Landroidx/datastore/core/DataStore;
+    invoke-virtual {p0, p1, p2}, Landroidx/datastore/preferences/PreferenceDataStoreSingletonDelegate;->getValue(Landroid/content/Context;Ll4/g;)Landroidx/datastore/core/DataStore;
 
     move-result-object p1
 

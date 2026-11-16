@@ -23,7 +23,7 @@
     .end annotation
 
     .line 11
-    iget-object v0, p0, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     const/4 v1, 0x0
 
@@ -37,7 +37,7 @@
     iget-object v0, v0, Landroidx/media3/exoplayer/dash/manifest/BaseUrl;->url:Ljava/lang/String;
 
     .line 13
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     move-result-object v1
 
@@ -55,7 +55,7 @@
     .end annotation
 
     .line 9
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     move-result-object v0
 
@@ -371,7 +371,7 @@
     .locals 9
 
     .line 8
-    iget-object v0, p1, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 9
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -385,7 +385,7 @@
     const/4 v0, 0x0
 
     .line 10
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     move-result-object v1
 
@@ -425,7 +425,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->q(Ljava/lang/Object;)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->v(Ljava/lang/Object;)V
 
     if-eqz p4, :cond_2
 
@@ -440,7 +440,7 @@
 
     .line 3
     :cond_0
-    iget-object v1, p2, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v1, p2, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 4
     invoke-interface {v1, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -705,7 +705,7 @@
 
     .line 8
     :cond_0
-    iget-object p0, p0, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 9
     .line 10

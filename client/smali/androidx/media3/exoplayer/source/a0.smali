@@ -2,20 +2,37 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/google/common/base/e;
 
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+# direct methods
+.method public static a(Landroidx/media3/exoplayer/source/ShuffleOrder;III)Landroidx/media3/exoplayer/source/ShuffleOrder;
     .locals 0
 
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    return-object p0
+.end method
 
-    invoke-static {p1}, Landroidx/media3/common/TrackGroup;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/TrackGroup;
+.method public static b(Landroidx/media3/exoplayer/source/ShuffleOrder;II)Landroidx/media3/exoplayer/source/ShuffleOrder;
+    .locals 0
 
-    move-result-object p1
+    .line 1
+    invoke-interface {p0}, Landroidx/media3/exoplayer/source/ShuffleOrder;->cloneAndClear()Landroidx/media3/exoplayer/source/ShuffleOrder;
 
-    return-object p1
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const/4 p2, 0x0
+
+    .line 6
+    invoke-interface {p0, p2, p1}, Landroidx/media3/exoplayer/source/ShuffleOrder;->cloneAndInsert(II)Landroidx/media3/exoplayer/source/ShuffleOrder;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
 .end method

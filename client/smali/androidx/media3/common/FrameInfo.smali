@@ -53,7 +53,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, v3}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v3}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 16
     .line 17
@@ -81,7 +81,7 @@
 
     .line 26
     .line 27
-    invoke-static {v0, v4, v3}, Lcom/github/tvbox/osc/util/t;->e(ILjava/lang/String;Z)V
+    invoke-static {v0, v4, v3}, Lcom/github/tvbox/osc/util/h0;->i(ILjava/lang/String;Z)V
 
     .line 28
     .line 29
@@ -106,7 +106,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v2, v1}, Lcom/github/tvbox/osc/util/t;->e(ILjava/lang/String;Z)V
+    invoke-static {v0, v2, v1}, Lcom/github/tvbox/osc/util/h0;->i(ILjava/lang/String;Z)V
 
     .line 39
     .line 40

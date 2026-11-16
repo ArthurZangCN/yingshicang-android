@@ -40,6 +40,8 @@
 
 .field public static final DISCARD_REASON_VIDEO_COLOR_INFO_CHANGED:I = 0x800
 
+.field public static final DISCARD_REASON_VIDEO_FRAME_RATE_CHANGED:I = 0x10000
+
 .field public static final DISCARD_REASON_VIDEO_MAX_RESOLUTION_EXCEEDED:I = 0x100
 
 .field public static final DISCARD_REASON_VIDEO_RESOLUTION_CHANGED:I = 0x200
@@ -106,7 +108,7 @@
 
     .line 13
     :goto_1
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 14
     .line 15
@@ -122,7 +124,7 @@
     xor-int/2addr v0, v1
 
     .line 21
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 22
     .line 23
@@ -348,7 +350,7 @@
 
     .line 14
     .line 15
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/d;->b(Ljava/lang/String;II)I
+    invoke-static {v2, v0, v1}, Landroidx/concurrent/futures/a;->a(Ljava/lang/String;II)I
 
     .line 16
     .line 17

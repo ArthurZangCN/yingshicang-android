@@ -18,11 +18,11 @@
 .method public abstract onPlaybackError(Landroidx/media3/exoplayer/rtsp/RtspMediaSource$RtspPlaybackException;)V
 .end method
 
-.method public abstract onPlaybackStarted(JLcom/google/common/collect/f2;)V
+.method public abstract onPlaybackStarted(JLcom/google/common/collect/e2;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/rtsp/RtspTrackTiming;",
             ">;)V"
         }

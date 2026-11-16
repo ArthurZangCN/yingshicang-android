@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Lcom/google/common/base/f;
 
 
 # virtual methods

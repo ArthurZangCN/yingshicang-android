@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroidx/media3/common/util/Consumer;
 
 
 # instance fields
@@ -28,15 +28,17 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final accept(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/b0;->a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/b0;->b:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/preload/b0;->b:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
+    check-cast p1, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;
 
-    invoke-static {v0, v1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->g(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/preload/b0;->a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;
+
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->e(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;)V
 
     return-void
 .end method

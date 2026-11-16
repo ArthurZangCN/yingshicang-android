@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/video/m;->a(Landroidx/media3/exoplayer/video/VideoRendererEventListener;IJ)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/video/p;->a(Landroidx/media3/exoplayer/video/VideoRendererEventListener;IJ)V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/video/m;->b(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/Object;J)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/video/p;->b(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/Object;J)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/m;->c(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/Exception;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/p;->c(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/Exception;)V
 
     return-void
 .end method
@@ -71,7 +71,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/m;->d(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/CodecParameters;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/p;->d(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/CodecParameters;)V
 
     return-void
 .end method
@@ -80,7 +80,7 @@
     .locals 0
 
     .line 1
-    invoke-static/range {p0 .. p5}, Landroidx/media3/exoplayer/video/m;->e(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/String;JJ)V
+    invoke-static/range {p0 .. p5}, Landroidx/media3/exoplayer/video/p;->e(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/String;JJ)V
 
     return-void
 .end method
@@ -89,7 +89,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/m;->f(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/p;->f(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/m;->g(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/DecoderCounters;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/p;->g(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/DecoderCounters;)V
 
     return-void
 .end method
@@ -107,7 +107,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/m;->h(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/DecoderCounters;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/p;->h(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/DecoderCounters;)V
 
     return-void
 .end method
@@ -116,7 +116,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/video/m;->i(Landroidx/media3/exoplayer/video/VideoRendererEventListener;JI)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/video/p;->i(Landroidx/media3/exoplayer/video/VideoRendererEventListener;JI)V
 
     return-void
 .end method
@@ -125,7 +125,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/video/m;->j(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/video/p;->j(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;)V
 
     return-void
 .end method
@@ -134,7 +134,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/m;->k(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/common/VideoSize;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/video/p;->k(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/common/VideoSize;)V
 
     return-void
 .end method

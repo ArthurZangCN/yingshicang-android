@@ -848,96 +848,6 @@
 
 # virtual methods
 .method public onDownstreamFormatChanged(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/MediaLoadData;)V
-    .locals 1
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->getEventParameters(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)Landroid/util/Pair;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    iget-object p2, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
-
-    .line 8
-    .line 9
-    invoke-static {p2}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p2
-
-    .line 13
-    new-instance v0, Landroidx/media3/exoplayer/o1;
-
-    .line 14
-    .line 15
-    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/o1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/MediaLoadData;)V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_0
-    return-void
-.end method
-
-.method public final synthetic onDrmKeysLoaded(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/h;->a(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-
-    return-void
-.end method
-
-.method public onDrmKeysLoaded(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
-    .locals 1
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->getEventParameters(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)Landroid/util/Pair;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    iget-object p2, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
-
-    invoke-static {p2}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
-
-    move-result-object p2
-
-    new-instance v0, Landroidx/media3/exoplayer/t1;
-
-    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/t1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
-
-    invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
-
-    :cond_0
-    return-void
-.end method
-
-.method public onDrmKeysRemoved(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
     .locals 2
     .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
         .annotation build Landroidx/annotation/Nullable;
@@ -969,14 +879,14 @@
     move-result-object p2
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/a0;
+    new-instance v0, Landroidx/media3/exoplayer/n1;
 
     .line 14
     .line 15
     const/4 v1, 0x1
 
     .line 16
-    invoke-direct {v0, v1, p0, p1}, Landroidx/media3/exoplayer/a0;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1, p3}, Landroidx/media3/exoplayer/n1;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 17
     .line 18
@@ -986,6 +896,96 @@
     .line 20
     .line 21
     .line 22
+    :cond_0
+    return-void
+.end method
+
+.method public final synthetic onDrmKeysLoaded(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/j;->a(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+
+    return-void
+.end method
+
+.method public onDrmKeysLoaded(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
+    .locals 1
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->getEventParameters(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)Landroid/util/Pair;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    iget-object p2, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
+
+    invoke-static {p2}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
+
+    move-result-object p2
+
+    new-instance v0, Landroidx/media3/exoplayer/x1;
+
+    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/x1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
+
+    invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public onDrmKeysRemoved(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+    .locals 1
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->getEventParameters(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)Landroid/util/Pair;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    if-eqz p1, :cond_0
+
+    .line 6
+    .line 7
+    iget-object p2, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
+
+    .line 8
+    .line 9
+    invoke-static {p2}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p2
+
+    .line 13
+    new-instance v0, Landroidx/media3/exoplayer/r1;
+
+    .line 14
+    .line 15
+    invoke-direct {v0, p0, p1}, Landroidx/media3/exoplayer/r1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
+
+    .line 19
+    .line 20
+    .line 21
     :cond_0
     return-void
 .end method
@@ -1022,14 +1022,14 @@
     move-result-object p2
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/e1;
+    new-instance v0, Landroidx/media3/exoplayer/d;
 
     .line 14
     .line 15
-    const/4 v1, 0x1
+    const/4 v1, 0x2
 
     .line 16
-    invoke-direct {v0, v1, p0, p1}, Landroidx/media3/exoplayer/e1;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, v1}, Landroidx/media3/exoplayer/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 17
     .line 18
@@ -1075,11 +1075,11 @@
     move-result-object p2
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/q1;
+    new-instance v0, Landroidx/media3/exoplayer/u1;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/q1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;I)V
+    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/u1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;I)V
 
     .line 16
     .line 17
@@ -1094,7 +1094,7 @@
 .end method
 
 .method public onDrmSessionManagerError(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Ljava/lang/Exception;)V
-    .locals 2
+    .locals 1
     .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
@@ -1125,81 +1125,25 @@
     move-result-object p2
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/k1;
+    new-instance v0, Landroidx/media3/exoplayer/s1;
 
     .line 14
     .line 15
-    const/4 v1, 0x1
+    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/s1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Ljava/lang/Exception;)V
 
     .line 16
-    invoke-direct {v0, p0, v1, p1, p3}, Landroidx/media3/exoplayer/k1;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 17
     .line 18
-    .line 19
     invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     :cond_0
     return-void
 .end method
 
 .method public onDrmSessionReleased(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-    .locals 2
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->getEventParameters(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)Landroid/util/Pair;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    if-eqz p1, :cond_0
-
-    .line 6
-    .line 7
-    iget-object p2, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
-
-    .line 8
-    .line 9
-    invoke-static {p2}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object p2
-
-    .line 13
-    new-instance v0, Landroidx/media3/exoplayer/c;
-
-    .line 14
-    .line 15
-    const/4 v1, 0x2
-
-    .line 16
-    invoke-direct {v0, v1, p0, p1}, Landroidx/media3/exoplayer/c;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    :cond_0
-    return-void
-.end method
-
-.method public onLoadCanceled(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
     .locals 1
     .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
         .annotation build Landroidx/annotation/Nullable;
@@ -1231,11 +1175,11 @@
     move-result-object p2
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/n1;
+    new-instance v0, Landroidx/media3/exoplayer/t1;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0, p1, p3, p4}, Landroidx/media3/exoplayer/n1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+    invoke-direct {v0, p0, p1}, Landroidx/media3/exoplayer/t1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;)V
 
     .line 16
     .line 17
@@ -1245,12 +1189,77 @@
     .line 19
     .line 20
     .line 21
+    :cond_0
+    return-void
+.end method
+
+.method public onLoadCanceled(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+    .locals 6
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->getEventParameters(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)Landroid/util/Pair;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v2
+
+    .line 5
+    if-eqz v2, :cond_0
+
+    .line 6
+    .line 7
+    iget-object p1, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
+
+    .line 8
+    .line 9
+    invoke-static {p1}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    new-instance p2, Landroidx/media3/exoplayer/q1;
+
+    .line 14
+    .line 15
+    const/4 v5, 0x0
+
+    .line 16
+    move-object v0, p2
+
+    .line 17
+    move-object v1, p0
+
+    .line 18
+    move-object v3, p3
+
+    .line 19
+    move-object v4, p4
+
+    .line 20
+    invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/q1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-interface {p1, p2}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
+
+    .line 24
+    .line 25
+    .line 26
     :cond_0
     return-void
 .end method
 
 .method public onLoadCompleted(ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
-    .locals 1
+    .locals 6
     .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
@@ -1262,39 +1271,54 @@
     .line 2
     .line 3
     .line 4
-    move-result-object p1
+    move-result-object v2
 
     .line 5
-    if-eqz p1, :cond_0
+    if-eqz v2, :cond_0
 
     .line 6
     .line 7
-    iget-object p2, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
+    iget-object p1, p0, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->this$0:Landroidx/media3/exoplayer/MediaSourceList;
 
     .line 8
     .line 9
-    invoke-static {p2}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
+    invoke-static {p1}, Landroidx/media3/exoplayer/MediaSourceList;->access$000(Landroidx/media3/exoplayer/MediaSourceList;)Landroidx/media3/common/util/HandlerWrapper;
 
     .line 10
     .line 11
     .line 12
-    move-result-object p2
+    move-result-object p1
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/p1;
+    new-instance p2, Landroidx/media3/exoplayer/q1;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0, p1, p3, p4}, Landroidx/media3/exoplayer/p1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+    const/4 v5, 0x1
 
     .line 16
+    move-object v0, p2
+
     .line 17
+    move-object v1, p0
+
     .line 18
-    invoke-interface {p2, v0}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
+    move-object v3, p3
 
     .line 19
+    move-object v4, p4
+
     .line 20
+    invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/q1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
+
     .line 21
+    .line 22
+    .line 23
+    invoke-interface {p1, p2}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
+
+    .line 24
+    .line 25
+    .line 26
     :cond_0
     return-void
 .end method
@@ -1331,7 +1355,7 @@
     move-result-object p1
 
     .line 13
-    new-instance p2, Landroidx/media3/exoplayer/s1;
+    new-instance p2, Landroidx/media3/exoplayer/w1;
 
     .line 14
     .line 15
@@ -1353,7 +1377,7 @@
     move v6, p6
 
     .line 21
-    invoke-direct/range {v0 .. v6}, Landroidx/media3/exoplayer/s1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Ljava/io/IOException;Z)V
+    invoke-direct/range {v0 .. v6}, Landroidx/media3/exoplayer/w1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Ljava/io/IOException;Z)V
 
     .line 22
     .line 23
@@ -1399,7 +1423,7 @@
     move-result-object p1
 
     .line 13
-    new-instance p2, Landroidx/media3/exoplayer/r1;
+    new-instance p2, Landroidx/media3/exoplayer/v1;
 
     .line 14
     .line 15
@@ -1418,7 +1442,7 @@
     move v5, p5
 
     .line 20
-    invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/r1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
+    invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/v1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
 
     .line 21
     .line 22
@@ -1464,11 +1488,11 @@
     move-result-object p2
 
     .line 13
-    new-instance v0, Landroidx/media3/exoplayer/m1;
+    new-instance v0, Landroidx/media3/exoplayer/p1;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/m1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+    invoke-direct {v0, p0, p1, p3}, Landroidx/media3/exoplayer/p1;-><init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/MediaLoadData;)V
 
     .line 16
     .line 17

@@ -229,11 +229,11 @@
 
     .line 37
     :cond_3
-    new-instance p1, Lr3/g;
+    new-instance p1, Lv3/g;
 
     .line 38
     .line 39
-    invoke-direct {p1}, Lr3/g;-><init>()V
+    invoke-direct {p1}, Lv3/g;-><init>()V
 
     .line 40
     .line 41
@@ -424,7 +424,7 @@
 
     .line 13
     .line 14
-    invoke-static {}, Landroidx/core/content/pm/g;->z()I
+    invoke-static {}, Landroidx/core/content/pm/i;->C()I
 
     .line 15
     .line 16

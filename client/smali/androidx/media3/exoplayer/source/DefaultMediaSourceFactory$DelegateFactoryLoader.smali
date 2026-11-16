@@ -24,13 +24,13 @@
 
 .field private dataSourceFactory:Landroidx/media3/datasource/DataSource$Factory;
 
-.field private downloadExecutorSupplier:Lcom/google/common/base/x;
+.field private downloadExecutorSupplier:Lcom/google/common/base/z;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;"
         }
@@ -67,7 +67,7 @@
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/Integer;",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/source/MediaSource$Factory;",
             ">;>;"
         }
@@ -123,7 +123,7 @@
 
     .line 21
     .line 22
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     .line 23
     iput-boolean p1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->parseSubtitlesDuringExtraction:Z
@@ -219,7 +219,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/z;
 
     .line 3
     .line 4
@@ -227,7 +227,7 @@
     const/4 v0, 0x1
 
     .line 6
-    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/z;
 
     .line 7
     .line 8
@@ -235,7 +235,7 @@
     const/4 v0, 0x2
 
     .line 10
-    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/z;
 
     .line 11
     .line 12
@@ -243,7 +243,7 @@
     const/4 v0, 0x3
 
     .line 14
-    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/z;
 
     .line 15
     .line 16
@@ -251,7 +251,7 @@
     const/4 v0, 0x4
 
     .line 18
-    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->maybeLoadSupplier(I)Lcom/google/common/base/z;
 
     .line 19
     .line 20
@@ -351,12 +351,12 @@
     return-object p1
 .end method
 
-.method private loadSupplier(I)Lcom/google/common/base/x;
+.method private loadSupplier(I)Lcom/google/common/base/z;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/source/MediaSource$Factory;",
             ">;"
         }
@@ -383,7 +383,7 @@
     move-result-object v0
 
     .line 11
-    check-cast v0, Lcom/google/common/base/x;
+    check-cast v0, Lcom/google/common/base/z;
 
     .line 12
     .line 13
@@ -404,211 +404,216 @@
     .line 19
     .line 20
     .line 21
-    const/4 v1, 0x0
+    const-class v1, Landroidx/media3/exoplayer/source/MediaSource$Factory;
 
     .line 22
-    const-class v2, Landroidx/media3/exoplayer/source/MediaSource$Factory;
-
     .line 23
-    .line 24
     if-eqz p1, :cond_5
 
+    .line 24
     .line 25
+    const/4 v2, 0x1
+
     .line 26
-    const/4 v3, 0x1
+    if-eq p1, v2, :cond_4
 
     .line 27
-    if-eq p1, v3, :cond_4
-
     .line 28
+    const/4 v2, 0x2
+
     .line 29
-    const/4 v3, 0x2
+    if-eq p1, v2, :cond_3
 
     .line 30
-    if-eq p1, v3, :cond_3
-
     .line 31
+    const/4 v2, 0x3
+
     .line 32
-    const/4 v1, 0x3
+    if-eq p1, v2, :cond_2
 
     .line 33
-    if-eq p1, v1, :cond_2
-
     .line 34
-    .line 35
     const/4 v1, 0x4
 
-    .line 36
+    .line 35
     if-ne p1, v1, :cond_1
 
+    .line 36
     .line 37
+    new-instance v1, Landroidx/media3/exoplayer/source/h;
+
     .line 38
-    new-instance v1, Landroidx/media3/exoplayer/source/i;
-
     .line 39
-    .line 40
-    invoke-direct {v1, p0, v0}, Landroidx/media3/exoplayer/source/i;-><init>(Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;Landroidx/media3/datasource/DataSource$Factory;)V
+    invoke-direct {v1, p0, v0}, Landroidx/media3/exoplayer/source/h;-><init>(Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;Landroidx/media3/datasource/DataSource$Factory;)V
 
+    .line 40
     .line 41
     .line 42
-    .line 43
     goto :goto_1
 
-    .line 44
+    .line 43
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
+    .line 44
     .line 45
-    .line 46
     const-string v1, "Unrecognized contentType: "
 
+    .line 46
     .line 47
-    .line 48
-    invoke-static {v1, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
+    .line 48
     .line 49
     .line 50
-    .line 51
     move-result-object p1
 
-    .line 52
+    .line 51
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
+    .line 52
     .line 53
     .line 54
-    .line 55
     throw v0
 
-    .line 56
+    .line 55
     :cond_2
     const-class v0, Landroidx/media3/exoplayer/rtsp/RtspMediaSource$Factory;
 
+    .line 56
     .line 57
-    .line 58
-    invoke-virtual {v0, v2}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    invoke-virtual {v0, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
+    .line 58
     .line 59
     .line 60
-    .line 61
     move-result-object v0
 
+    .line 61
+    new-instance v1, Landroidx/media3/exoplayer/source/g;
+
     .line 62
-    new-instance v1, Landroidx/media3/exoplayer/source/h;
-
     .line 63
-    .line 64
-    invoke-direct {v1, v0}, Landroidx/media3/exoplayer/source/h;-><init>(Ljava/lang/Class;)V
+    invoke-direct {v1, v0}, Landroidx/media3/exoplayer/source/g;-><init>(Ljava/lang/Class;)V
 
+    .line 64
     .line 65
     .line 66
-    .line 67
     goto :goto_1
+
+    .line 67
+    :cond_3
+    const-class v2, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;
 
     .line 68
-    :cond_3
-    const-class v3, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;
-
     .line 69
-    .line 70
-    invoke-virtual {v3, v2}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    invoke-virtual {v2, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
+    .line 70
     .line 71
     .line 72
-    .line 73
-    move-result-object v2
-
-    .line 74
-    new-instance v3, Landroidx/media3/exoplayer/source/g;
-
-    .line 75
-    .line 76
-    invoke-direct {v3, v1, v2, v0}, Landroidx/media3/exoplayer/source/g;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
-    .line 77
-    .line 78
-    .line 79
-    :goto_0
-    move-object v1, v3
-
-    .line 80
-    goto :goto_1
-
-    .line 81
-    :cond_4
-    const-class v1, Landroidx/media3/exoplayer/smoothstreaming/SsMediaSource$Factory;
-
-    .line 82
-    .line 83
-    invoke-virtual {v1, v2}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
-
-    .line 84
-    .line 85
-    .line 86
     move-result-object v1
 
-    .line 87
+    .line 73
     new-instance v2, Landroidx/media3/exoplayer/source/f;
 
-    .line 88
-    .line 89
+    .line 74
+    .line 75
     invoke-direct {v2, v1, v0}, Landroidx/media3/exoplayer/source/f;-><init>(Ljava/lang/Class;Landroidx/media3/datasource/DataSource$Factory;)V
 
-    .line 90
-    .line 91
-    .line 92
+    .line 76
+    .line 77
+    .line 78
+    :goto_0
     move-object v1, v2
 
-    .line 93
+    .line 79
     goto :goto_1
 
-    .line 94
-    :cond_5
-    const-class v3, Landroidx/media3/exoplayer/dash/DashMediaSource$Factory;
+    .line 80
+    :cond_4
+    const-string v2, "androidx.media3.exoplayer.smoothstreaming.SsMediaSource$Factory"
 
-    .line 95
-    .line 96
-    invoke-virtual {v3, v2}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+    .line 81
+    .line 82
+    invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    .line 97
-    .line 98
-    .line 99
+    .line 83
+    .line 84
+    .line 85
     move-result-object v2
 
-    .line 100
-    new-instance v3, Landroidx/media3/exoplayer/source/e;
+    .line 86
+    invoke-virtual {v2, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
 
-    .line 101
-    .line 102
-    invoke-direct {v3, v1, v2, v0}, Landroidx/media3/exoplayer/source/e;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v1
 
-    .line 103
-    .line 104
-    .line 105
+    .line 90
+    new-instance v2, Landroidx/media3/exoplayer/source/e;
+
+    .line 91
+    .line 92
+    const/4 v3, 0x0
+
+    .line 93
+    invoke-direct {v2, v1, v0, v3}, Landroidx/media3/exoplayer/source/e;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 94
+    .line 95
+    .line 96
     goto :goto_0
 
+    .line 97
+    :cond_5
+    const-class v2, Landroidx/media3/exoplayer/dash/DashMediaSource$Factory;
+
+    .line 98
+    .line 99
+    invoke-virtual {v2, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+
+    .line 100
+    .line 101
+    .line 102
+    move-result-object v1
+
+    .line 103
+    new-instance v2, Landroidx/media3/exoplayer/source/d;
+
+    .line 104
+    .line 105
+    invoke-direct {v2, v1, v0}, Landroidx/media3/exoplayer/source/d;-><init>(Ljava/lang/Class;Landroidx/media3/datasource/DataSource$Factory;)V
+
     .line 106
+    .line 107
+    .line 108
+    goto :goto_0
+
+    .line 109
     :goto_1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->mediaSourceFactorySuppliers:Ljava/util/Map;
 
-    .line 107
-    .line 108
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 109
     .line 110
     .line 111
-    move-result-object p1
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 112
-    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 113
     .line 114
+    move-result-object p1
+
     .line 115
+    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 116
+    .line 117
+    .line 118
     return-object v1
 .end method
 
-.method private maybeLoadSupplier(I)Lcom/google/common/base/x;
+.method private maybeLoadSupplier(I)Lcom/google/common/base/z;
     .locals 0
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -616,7 +621,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/source/MediaSource$Factory;",
             ">;"
         }
@@ -624,7 +629,7 @@
 
     .line 1
     :try_start_0
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->loadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->loadSupplier(I)Lcom/google/common/base/z;
 
     .line 2
     .line 3
@@ -722,7 +727,7 @@
 
     .line 16
     :cond_0
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->loadSupplier(I)Lcom/google/common/base/x;
+    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->loadSupplier(I)Lcom/google/common/base/z;
 
     .line 17
     .line 18
@@ -730,7 +735,7 @@
     move-result-object v0
 
     .line 20
-    invoke-interface {v0}, Lcom/google/common/base/x;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Lcom/google/common/base/z;->get()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -784,7 +789,7 @@
     .line 46
     .line 47
     :cond_3
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     .line 48
     .line 49
@@ -792,7 +797,7 @@
 
     .line 50
     .line 51
-    invoke-interface {v0, v1}, Landroidx/media3/exoplayer/source/MediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+    invoke-interface {v0, v1}, Landroidx/media3/exoplayer/source/MediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
 
     .line 52
     .line 53
@@ -866,7 +871,7 @@
     move-result-object v0
 
     .line 10
-    invoke-static {v0}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {v0}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     .line 11
     .line 12
@@ -1000,19 +1005,19 @@
     return-void
 .end method
 
-.method public setDownloadExecutor(Lcom/google/common/base/x;)V
+.method public setDownloadExecutor(Lcom/google/common/base/z;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/DefaultMediaSourceFactory$DelegateFactoryLoader;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     .line 2
     .line 3
@@ -1061,7 +1066,7 @@
 
     .line 24
     .line 25
-    invoke-interface {v1, p1}, Landroidx/media3/exoplayer/source/MediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+    invoke-interface {v1, p1}, Landroidx/media3/exoplayer/source/MediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
 
     .line 26
     .line 27

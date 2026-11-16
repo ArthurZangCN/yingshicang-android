@@ -57,7 +57,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroidx/lifecycle/viewmodel/InitializerViewModelFactoryBuilder;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroidx/lifecycle/ViewModelProvider$Factory;"
         }

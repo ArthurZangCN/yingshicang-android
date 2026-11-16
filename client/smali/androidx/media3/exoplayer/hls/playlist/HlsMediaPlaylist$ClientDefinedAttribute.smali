@@ -101,7 +101,7 @@
 
     :cond_1
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 8
     iput-object p1, p0, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$ClientDefinedAttribute;->name:Ljava/lang/String;
@@ -222,7 +222,7 @@
 
     .line 32
     .line 33
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 34
     .line 35
@@ -242,7 +242,7 @@
 
     .line 42
     .line 43
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
     .line 45
@@ -291,7 +291,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -329,7 +329,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -417,7 +417,7 @@
 
     .line 31
     .line 32
-    invoke-static {v4}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v4}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 33
     .line 34

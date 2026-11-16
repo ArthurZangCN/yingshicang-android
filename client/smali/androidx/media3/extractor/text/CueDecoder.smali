@@ -96,19 +96,19 @@
 
     .line 35
     .line 36
-    new-instance v0, Landroidx/media3/common/i;
+    new-instance v0, Landroidx/media3/common/g;
 
     .line 37
     .line 38
-    const/4 v1, 0x5
+    const/4 v1, 0x3
 
     .line 39
-    invoke-direct {v0, v1}, Landroidx/media3/common/i;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/common/g;-><init>(I)V
 
     .line 40
     .line 41
     .line 42
-    invoke-static {v0, p4}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {v0, p4}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 43
     .line 44

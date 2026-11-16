@@ -11,15 +11,11 @@
 
 .field public final synthetic b:Ljava/lang/Object;
 
-.field public final synthetic c:I
-
-.field public final synthetic d:I
-
-.field public final synthetic e:Ljava/io/IOException;
+.field public final synthetic c:Landroidx/media3/common/Timeline;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;IILjava/io/IOException;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;Landroidx/media3/common/Timeline;)V
     .locals 0
 
     .line 1
@@ -29,11 +25,7 @@
 
     iput-object p2, p0, Landroidx/media3/exoplayer/hls/c;->b:Ljava/lang/Object;
 
-    iput p3, p0, Landroidx/media3/exoplayer/hls/c;->c:I
-
-    iput p4, p0, Landroidx/media3/exoplayer/hls/c;->d:I
-
-    iput-object p5, p0, Landroidx/media3/exoplayer/hls/c;->e:Ljava/io/IOException;
+    iput-object p3, p0, Landroidx/media3/exoplayer/hls/c;->c:Landroidx/media3/common/Timeline;
 
     return-void
 .end method
@@ -41,24 +33,18 @@
 
 # virtual methods
 .method public final accept(Ljava/lang/Object;)V
-    .locals 6
+    .locals 3
 
     .line 1
-    iget-object v4, p0, Landroidx/media3/exoplayer/hls/c;->e:Ljava/io/IOException;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/c;->c:Landroidx/media3/common/Timeline;
 
-    move-object v5, p1
+    check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
 
-    check-cast v5, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
+    iget-object v1, p0, Landroidx/media3/exoplayer/hls/c;->a:Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
 
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/c;->a:Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
+    iget-object v2, p0, Landroidx/media3/exoplayer/hls/c;->b:Ljava/lang/Object;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/hls/c;->b:Ljava/lang/Object;
-
-    iget v2, p0, Landroidx/media3/exoplayer/hls/c;->c:I
-
-    iget v3, p0, Landroidx/media3/exoplayer/hls/c;->d:I
-
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->e(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;IILjava/io/IOException;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->h(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;Landroidx/media3/common/Timeline;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
 
     return-void
 .end method

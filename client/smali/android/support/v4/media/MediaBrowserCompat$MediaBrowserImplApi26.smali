@@ -111,7 +111,7 @@
 
     .line 28
     .line 29
-    invoke-static {v0, p1, p2, p3}, Landroid/support/v4/media/b;->s(Landroid/media/browse/MediaBrowser;Ljava/lang/String;Landroid/os/Bundle;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V
+    invoke-static {v0, p1, p2, p3}, Landroid/support/v4/media/b;->t(Landroid/media/browse/MediaBrowser;Ljava/lang/String;Landroid/os/Bundle;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V
 
     .line 30
     .line 31
@@ -186,7 +186,7 @@
 
     .line 26
     .line 27
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/c;->o(Landroid/media/browse/MediaBrowser;Ljava/lang/String;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/c;->u(Landroid/media/browse/MediaBrowser;Ljava/lang/String;Landroid/media/browse/MediaBrowser$SubscriptionCallback;)V
 
     .line 28
     .line 29

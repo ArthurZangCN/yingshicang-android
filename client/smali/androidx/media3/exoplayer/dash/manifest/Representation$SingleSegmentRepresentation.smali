@@ -328,7 +328,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-static {v0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 41
     .line 42
@@ -340,7 +340,7 @@
 
     .line 45
     .line 46
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 47
     .line 48
@@ -348,7 +348,7 @@
     move-result-object v16
 
     .line 50
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 51
     .line 52

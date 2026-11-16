@@ -56,7 +56,7 @@
 .end method
 
 .method public static newOnBackInvokedCallback(Ljava/lang/Runnable;)Landroid/window/OnBackInvokedCallback;
-    .locals 2
+    .locals 1
     .param p0    # Ljava/lang/Runnable;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -68,7 +68,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -77,14 +77,11 @@
 
     .line 5
     .line 6
-    const/4 v1, 0x0
+    invoke-direct {v0, p0}, Landroidx/appcompat/widget/c;-><init>(Ljava/lang/Runnable;)V
 
     .line 7
-    invoke-direct {v0, p0, v1}, Landroidx/appcompat/widget/c;-><init>(Ljava/lang/Object;I)V
-
     .line 8
     .line 9
-    .line 10
     return-object v0
 .end method
 

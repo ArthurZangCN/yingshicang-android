@@ -787,7 +787,7 @@
 
     move-result v7
 
-    invoke-static {v7}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v7}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 16
     iget-object v7, v0, Landroidx/media3/exoplayer/MediaPeriodHolder;->rendererCapabilities:[Landroidx/media3/exoplayer/RendererCapabilities;
@@ -823,7 +823,7 @@
     move v7, v2
 
     :goto_3
-    invoke-static {v7}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v7}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     :cond_4
     :goto_4
@@ -929,7 +929,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -1507,7 +1507,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -1676,7 +1676,7 @@
     .line 49
     :cond_1
     :goto_1
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 50
     .line 51
@@ -1705,7 +1705,7 @@
 
     .line 61
     :goto_2
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 62
     .line 63

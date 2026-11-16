@@ -133,7 +133,7 @@
             "Lokio/BufferedSink;",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -172,7 +172,7 @@
 
     .line 16
     :cond_0
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 17
     .line 18

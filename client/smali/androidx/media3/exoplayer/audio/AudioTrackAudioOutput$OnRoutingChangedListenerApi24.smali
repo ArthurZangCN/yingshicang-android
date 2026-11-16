@@ -52,14 +52,14 @@
     iput-object p2, p0, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;->playbackThreadHandler:Landroid/os/Handler;
 
     .line 6
-    new-instance v0, Landroidx/media3/exoplayer/audio/k;
+    new-instance v0, Landroidx/media3/exoplayer/audio/n;
 
-    invoke-direct {v0, p0}, Landroidx/media3/exoplayer/audio/k;-><init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;)V
+    invoke-direct {v0, p0}, Landroidx/media3/exoplayer/audio/n;-><init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;)V
 
     iput-object v0, p0, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;->listener:Landroid/media/AudioRouting$OnRoutingChangedListener;
 
     .line 7
-    invoke-static {p1, v0, p2}, Landroidx/appcompat/app/c;->p(Landroid/media/AudioTrack;Landroidx/media3/exoplayer/audio/k;Landroid/os/Handler;)V
+    invoke-static {p1, v0, p2}, Landroid/support/v4/media/session/d;->s(Landroid/media/AudioTrack;Landroidx/media3/exoplayer/audio/n;Landroid/os/Handler;)V
 
     return-void
 .end method
@@ -141,10 +141,10 @@
 .end method
 
 .method private synthetic lambda$onRoutingChanged$1(Landroid/media/AudioRouting;)V
-    .locals 3
+    .locals 2
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/session/b;->f(Landroid/media/AudioRouting;)Landroid/media/AudioDeviceInfo;
+    invoke-static {p1}, Landroid/support/v4/media/session/e;->e(Landroid/media/AudioRouting;)Landroid/media/AudioDeviceInfo;
 
     .line 2
     .line 3
@@ -160,23 +160,20 @@
 
     .line 8
     .line 9
-    new-instance v1, Landroidx/media3/exoplayer/audio/l;
+    new-instance v1, Landroidx/media3/exoplayer/audio/o;
 
     .line 10
     .line 11
-    const/4 v2, 0x0
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/audio/o;-><init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;Landroid/media/AudioDeviceInfo;)V
 
     .line 12
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/audio/l;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 13
     .line 14
-    .line 15
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     :cond_0
     return-void
 .end method
@@ -205,14 +202,14 @@
     move-result-object v0
 
     .line 10
-    new-instance v1, Landroidx/media3/exoplayer/audio/m;
+    new-instance v1, Landroidx/media3/exoplayer/audio/p;
 
     .line 11
     .line 12
     const/4 v2, 0x0
 
     .line 13
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/audio/m;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/media3/exoplayer/audio/p;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 14
     .line 15
@@ -242,7 +239,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v1}, Landroid/support/v4/media/b;->g(Ljava/lang/Object;)Landroid/media/AudioRouting$OnRoutingChangedListener;
+    invoke-static {v1}, Landroid/support/v4/media/session/b;->e(Ljava/lang/Object;)Landroid/media/AudioRouting$OnRoutingChangedListener;
 
     .line 9
     .line 10
@@ -250,7 +247,7 @@
     move-result-object v1
 
     .line 12
-    invoke-static {v0, v1}, Landroid/support/v4/media/c;->m(Landroid/media/AudioTrack;Landroid/media/AudioRouting$OnRoutingChangedListener;)V
+    invoke-static {v0, v1}, Landroid/support/v4/media/session/c;->w(Landroid/media/AudioTrack;Landroid/media/AudioRouting$OnRoutingChangedListener;)V
 
     .line 13
     .line 14

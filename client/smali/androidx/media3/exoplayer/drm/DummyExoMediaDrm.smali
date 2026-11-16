@@ -125,7 +125,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/drm/m;->a(Landroidx/media3/exoplayer/drm/ExoMediaDrm;)Ljava/util/List;
+    invoke-static {p0}, Landroidx/media3/exoplayer/drm/o;->a(Landroidx/media3/exoplayer/drm/ExoMediaDrm;)Ljava/util/List;
 
     move-result-object v0
 
@@ -259,7 +259,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/drm/m;->b(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[B)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/drm/o;->b(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[B)V
 
     return-void
 .end method
@@ -330,7 +330,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/m;->c(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[BLandroidx/media3/exoplayer/analytics/PlayerId;)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/o;->c(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[BLandroidx/media3/exoplayer/analytics/PlayerId;)V
 
     return-void
 .end method

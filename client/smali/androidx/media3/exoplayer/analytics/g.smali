@@ -9,15 +9,13 @@
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-.field public final synthetic b:I
+.field public final synthetic b:Landroidx/media3/common/MediaItem;
 
-.field public final synthetic c:J
-
-.field public final synthetic d:J
+.field public final synthetic c:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IJJ)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/common/MediaItem;I)V
     .locals 0
 
     .line 1
@@ -25,11 +23,9 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/analytics/g;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iput p2, p0, Landroidx/media3/exoplayer/analytics/g;->b:I
+    iput-object p2, p0, Landroidx/media3/exoplayer/analytics/g;->b:Landroidx/media3/common/MediaItem;
 
-    iput-wide p3, p0, Landroidx/media3/exoplayer/analytics/g;->c:J
-
-    iput-wide p5, p0, Landroidx/media3/exoplayer/analytics/g;->d:J
+    iput p3, p0, Landroidx/media3/exoplayer/analytics/g;->c:I
 
     return-void
 .end method
@@ -37,22 +33,18 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 7
+    .locals 3
 
     .line 1
-    iget-wide v4, p0, Landroidx/media3/exoplayer/analytics/g;->d:J
+    iget v0, p0, Landroidx/media3/exoplayer/analytics/g;->c:I
 
-    move-object v6, p1
+    check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
-    check-cast v6, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
+    iget-object v1, p0, Landroidx/media3/exoplayer/analytics/g;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/g;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
+    iget-object v2, p0, Landroidx/media3/exoplayer/analytics/g;->b:Landroidx/media3/common/MediaItem;
 
-    iget v1, p0, Landroidx/media3/exoplayer/analytics/g;->b:I
-
-    iget-wide v2, p0, Landroidx/media3/exoplayer/analytics/g;->c:J
-
-    invoke-static/range {v0 .. v6}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->g0(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IJJLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->m0(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/common/MediaItem;ILandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

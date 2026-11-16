@@ -19,14 +19,18 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic b(Ljava/lang/Object;)Landroid/net/http/HttpEngine;
+.method public static bridge synthetic b(Landroid/net/http/UrlRequest$Builder;)Landroid/net/http/UrlRequest;
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/net/http/HttpEngine;
+    invoke-virtual {p0}, Landroid/net/http/UrlRequest$Builder;->build()Landroid/net/http/UrlRequest;
 
     .line 2
     .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
     return-object p0
 .end method
 
@@ -41,11 +45,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic d(Landroid/net/http/UrlRequest$Builder;Ljava/lang/String;)V
+.method public static bridge synthetic d(Landroid/net/http/UrlRequest$Builder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/net/http/UrlRequest$Builder;->setHttpMethod(Ljava/lang/String;)Landroid/net/http/UrlRequest$Builder;
+    invoke-virtual {p0, p1, p2}, Landroid/net/http/UrlRequest$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Landroid/net/http/UrlRequest$Builder;
 
     .line 2
     .line 3
@@ -62,21 +66,5 @@
     .line 2
     .line 3
     .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic f(Landroid/net/http/UrlRequest$Builder;Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    const-string v0, "Range"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0, p1}, Landroid/net/http/UrlRequest$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Landroid/net/http/UrlRequest$Builder;
-
-    .line 4
-    .line 5
-    .line 6
     return-void
 .end method

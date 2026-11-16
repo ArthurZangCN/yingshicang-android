@@ -76,7 +76,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    invoke-static {p1}, Lj$/util/DesugarCollections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
 
@@ -184,7 +184,7 @@
 
     .line 27
     .line 28
-    invoke-static {p0, v1}, Landroidx/appcompat/widget/b;->d(Landroid/media/MediaFormat;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Landroid/support/v4/media/session/f;->d(Landroid/media/MediaFormat;Ljava/lang/String;)I
 
     .line 29
     .line 30

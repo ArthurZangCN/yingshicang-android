@@ -1,11 +1,11 @@
 .class public final Landroidx/core/util/SparseLongArrayKt$keyIterator$1;
-.super Lkotlin/collections/v;
+.super Lkotlin/collections/u;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/core/util/SparseLongArrayKt;->keyIterator(Landroid/util/SparseLongArray;)Lkotlin/collections/v;
+    value = Landroidx/core/util/SparseLongArrayKt;->keyIterator(Landroid/util/SparseLongArray;)Lkotlin/collections/u;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lkotlin/collections/v;-><init>()V
+    invoke-direct {p0}, Lkotlin/collections/u;-><init>()V
 
     .line 4
     .line 5

@@ -30,7 +30,7 @@
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/h0;->a:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->c(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
+    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;->b(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;)V
 
     return-void
 .end method

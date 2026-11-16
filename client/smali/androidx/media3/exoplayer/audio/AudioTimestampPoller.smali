@@ -658,333 +658,337 @@
     return v1
 .end method
 
-.method public maybePollTimestamp(JFJ)V
+.method public maybePollTimestamp(JFJZ)V
     .locals 4
 
     .line 1
-    iget-wide v0, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->lastTimestampSampleTimeUs:J
+    if-nez p6, :cond_0
 
     .line 2
     .line 3
-    sub-long v0, p1, v0
+    iget-wide v0, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->lastTimestampSampleTimeUs:J
 
     .line 4
     .line 5
-    iget-wide v2, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->sampleIntervalUs:J
+    sub-long v0, p1, v0
 
     .line 6
     .line 7
-    cmp-long v0, v0, v2
+    iget-wide v2, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->sampleIntervalUs:J
 
     .line 8
     .line 9
-    if-gez v0, :cond_0
+    cmp-long p6, v0, v2
 
     .line 10
     .line 11
-    return-void
+    if-gez p6, :cond_0
 
     .line 12
+    .line 13
+    return-void
+
+    .line 14
     :cond_0
     iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->lastTimestampSampleTimeUs:J
 
-    .line 13
-    .line 14
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
-
     .line 15
     .line 16
-    invoke-virtual {v0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->maybeUpdateTimestamp()Z
+    iget-object p6, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
 
     .line 17
     .line 18
+    invoke-virtual {p6}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->maybeUpdateTimestamp()Z
+
     .line 19
-    move-result v0
-
     .line 20
-    if-eqz v0, :cond_1
-
     .line 21
+    move-result p6
+
     .line 22
-    invoke-direct/range {p0 .. p5}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->checkTimestampIsPlausibleAndUpdateErrorState(JFJ)V
+    if-eqz p6, :cond_1
 
     .line 23
     .line 24
+    invoke-direct/range {p0 .. p5}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->checkTimestampIsPlausibleAndUpdateErrorState(JFJ)V
+
     .line 25
+    .line 26
+    .line 27
     :cond_1
     iget p4, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->state:I
 
-    .line 26
-    .line 27
+    .line 28
+    .line 29
     const/4 p5, 0x1
 
-    .line 28
-    const/4 v1, 0x3
+    .line 30
+    const/4 v0, 0x3
 
-    .line 29
+    .line 31
     if-eqz p4, :cond_9
 
-    .line 30
-    .line 31
-    const/4 v2, 0x2
-
     .line 32
-    if-eq p4, p5, :cond_5
-
     .line 33
+    const/4 v1, 0x2
+
     .line 34
-    if-eq p4, v2, :cond_4
+    if-eq p4, p5, :cond_5
 
     .line 35
     .line 36
-    if-eq p4, v1, :cond_3
+    if-eq p4, v1, :cond_4
 
     .line 37
     .line 38
-    const/4 p1, 0x4
+    if-eq p4, v0, :cond_3
 
     .line 39
-    if-ne p4, p1, :cond_2
-
     .line 40
+    const/4 p1, 0x4
+
     .line 41
-    goto/16 :goto_0
+    if-ne p4, p1, :cond_2
 
     .line 42
     .line 43
-    :cond_2
-    new-instance p1, Ljava/lang/IllegalStateException;
+    goto/16 :goto_0
 
     .line 44
     .line 45
-    invoke-direct {p1}, Ljava/lang/IllegalStateException;-><init>()V
+    :cond_2
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 46
     .line 47
+    invoke-direct {p1}, Ljava/lang/IllegalStateException;-><init>()V
+
     .line 48
+    .line 49
+    .line 50
     throw p1
 
-    .line 49
-    :cond_3
-    if-eqz v0, :cond_b
-
-    .line 50
     .line 51
-    invoke-virtual {p0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->reset()V
+    :cond_3
+    if-eqz p6, :cond_b
 
     .line 52
     .line 53
+    invoke-virtual {p0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->reset()V
+
     .line 54
+    .line 55
+    .line 56
     goto :goto_0
 
-    .line 55
-    :cond_4
-    if-nez v0, :cond_b
-
-    .line 56
     .line 57
-    invoke-virtual {p0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->reset()V
+    :cond_4
+    if-nez p6, :cond_b
 
     .line 58
     .line 59
+    invoke-virtual {p0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->reset()V
+
     .line 60
+    .line 61
+    .line 62
     goto :goto_0
 
-    .line 61
-    :cond_5
-    if-eqz v0, :cond_8
-
-    .line 62
     .line 63
-    invoke-direct {p0, p1, p2, p3}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->isTimestampAdvancingFromInitialTimestamp(JF)Z
+    :cond_5
+    if-eqz p6, :cond_8
 
     .line 64
     .line 65
+    invoke-direct {p0, p1, p2, p3}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->isTimestampAdvancingFromInitialTimestamp(JF)Z
+
     .line 66
+    .line 67
+    .line 68
     move-result p3
 
-    .line 67
-    if-eqz p3, :cond_6
-
-    .line 68
     .line 69
-    invoke-direct {p0, v2}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+    if-eqz p3, :cond_6
 
     .line 70
     .line 71
+    invoke-direct {p0, v1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+
     .line 72
+    .line 73
+    .line 74
     goto :goto_0
 
-    .line 73
+    .line 75
     :cond_6
     iget-wide p3, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initializeSystemTimeUs:J
 
-    .line 74
-    .line 75
+    .line 76
+    .line 77
     sub-long/2addr p1, p3
 
-    .line 76
+    .line 78
     const-wide/32 p3, 0x1e8480
 
-    .line 77
-    .line 78
     .line 79
-    cmp-long p1, p1, p3
-
     .line 80
     .line 81
-    if-lez p1, :cond_7
+    cmp-long p1, p1, p3
 
     .line 82
     .line 83
-    invoke-direct {p0, v1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+    if-lez p1, :cond_7
 
     .line 84
     .line 85
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+
     .line 86
+    .line 87
+    .line 88
     goto :goto_0
 
-    .line 87
+    .line 89
     :cond_7
     iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
 
-    .line 88
-    .line 89
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampPositionFrames()J
-
     .line 90
     .line 91
+    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampPositionFrames()J
+
     .line 92
+    .line 93
+    .line 94
     move-result-wide p1
 
-    .line 93
-    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampPositionFrames:J
-
-    .line 94
     .line 95
-    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
+    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampPositionFrames:J
 
     .line 96
     .line 97
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampSystemTimeUs()J
+    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
 
     .line 98
     .line 99
+    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampSystemTimeUs()J
+
     .line 100
+    .line 101
+    .line 102
     move-result-wide p1
 
-    .line 101
+    .line 103
     iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampSystemTimeUs:J
 
-    .line 102
-    .line 103
+    .line 104
+    .line 105
     goto :goto_0
 
-    .line 104
+    .line 106
     :cond_8
     invoke-virtual {p0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->reset()V
 
-    .line 105
-    .line 106
     .line 107
+    .line 108
+    .line 109
     goto :goto_0
 
-    .line 108
-    :cond_9
-    if-eqz v0, :cond_a
-
-    .line 109
     .line 110
-    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
+    :cond_9
+    if-eqz p6, :cond_a
 
     .line 111
     .line 112
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampSystemTimeUs()J
+    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
 
     .line 113
     .line 114
+    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampSystemTimeUs()J
+
     .line 115
+    .line 116
+    .line 117
     move-result-wide p1
 
-    .line 116
-    iget-wide p3, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initializeSystemTimeUs:J
-
-    .line 117
     .line 118
-    cmp-long p1, p1, p3
+    iget-wide p3, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initializeSystemTimeUs:J
 
     .line 119
     .line 120
-    if-ltz p1, :cond_b
+    cmp-long p1, p1, p3
 
     .line 121
     .line 122
-    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
+    if-ltz p1, :cond_b
 
     .line 123
     .line 124
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampPositionFrames()J
+    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
 
     .line 125
     .line 126
+    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampPositionFrames()J
+
     .line 127
+    .line 128
+    .line 129
     move-result-wide p1
 
-    .line 128
-    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampPositionFrames:J
-
-    .line 129
     .line 130
-    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
+    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampPositionFrames:J
 
     .line 131
     .line 132
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampSystemTimeUs()J
+    iget-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->audioTimestamp:Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;
 
     .line 133
     .line 134
+    invoke-virtual {p1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller$AudioTimestampWrapper;->getTimestampSystemTimeUs()J
+
     .line 135
+    .line 136
+    .line 137
     move-result-wide p1
 
-    .line 136
-    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampSystemTimeUs:J
-
-    .line 137
     .line 138
-    invoke-direct {p0, p5}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initialTimestampSystemTimeUs:J
 
     .line 139
     .line 140
+    invoke-direct {p0, p5}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+
     .line 141
+    .line 142
+    .line 143
     goto :goto_0
 
-    .line 142
+    .line 144
     :cond_a
     iget-wide p3, p0, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->initializeSystemTimeUs:J
 
-    .line 143
-    .line 144
+    .line 145
+    .line 146
     sub-long/2addr p1, p3
 
-    .line 145
+    .line 147
     const-wide/32 p3, 0x7a120
 
-    .line 146
-    .line 147
     .line 148
-    cmp-long p1, p1, p3
-
     .line 149
     .line 150
-    if-lez p1, :cond_b
+    cmp-long p1, p1, p3
 
     .line 151
     .line 152
-    invoke-direct {p0, v1}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+    if-lez p1, :cond_b
 
     .line 153
     .line 154
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/audio/AudioTimestampPoller;->updateState(I)V
+
     .line 155
+    .line 156
+    .line 157
     :cond_b
     :goto_0
     return-void

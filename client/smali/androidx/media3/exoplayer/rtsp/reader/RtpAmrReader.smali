@@ -319,7 +319,7 @@
 
     .line 51
     .line 52
-    invoke-static {p0, v2}, Lcom/blankj/utilcode/util/h;->v(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0, v2}, Lcom/github/tvbox/osc/util/e0;->o(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 53
     .line 54
@@ -501,7 +501,7 @@
 
     .line 77
     .line 78
-    invoke-static {v3, v4}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v3, v4}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 79
     .line 80

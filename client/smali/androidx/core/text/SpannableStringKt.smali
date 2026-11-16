@@ -70,16 +70,16 @@
     return-void
 .end method
 
-.method public static final set(Landroid/text/Spannable;Le4/g;Ljava/lang/Object;)V
+.method public static final set(Landroid/text/Spannable;Lk4/d;Ljava/lang/Object;)V
     .locals 2
 
     .line 2
-    iget v0, p1, Le4/e;->a:I
+    iget v0, p1, Lk4/b;->a:I
 
     const/16 v1, 0x11
 
     .line 3
-    iget p1, p1, Le4/e;->b:I
+    iget p1, p1, Lk4/b;->b:I
 
     invoke-interface {p0, p2, v0, p1, v1}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 

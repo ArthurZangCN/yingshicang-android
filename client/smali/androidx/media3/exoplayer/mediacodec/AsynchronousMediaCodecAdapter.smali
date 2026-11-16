@@ -595,7 +595,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/core/app/b;->l(Landroid/media/MediaCodec;)Landroid/os/PersistableBundle;
+    invoke-static {v0}, Landroidx/core/app/e;->j(Landroid/media/MediaCodec;)Landroid/os/PersistableBundle;
 
     .line 4
     .line 5
@@ -1222,7 +1222,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media/session/a;->k(Landroid/media/MediaCodec;Ljava/util/List;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/a;->a(Landroid/media/MediaCodec;Ljava/util/List;)V
 
     .line 4
     .line 5
@@ -1250,7 +1250,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/a;->a(Landroid/media/MediaCodec;Ljava/util/List;)V
+    invoke-static {v0, p1}, Landroidx/media/session/b;->k(Landroid/media/MediaCodec;Ljava/util/List;)V
 
     .line 4
     .line 5
@@ -1259,7 +1259,7 @@
 .end method
 
 .method public useInputBuffer(Ljava/lang/Runnable;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/mediacodec/AsynchronousMediaCodecAdapter;->asynchronousMediaCodecCallback:Landroidx/media3/exoplayer/mediacodec/AsynchronousMediaCodecCallback;
@@ -1270,18 +1270,15 @@
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/mediacodec/b;-><init>(Landroidx/media3/exoplayer/mediacodec/AsynchronousMediaCodecAdapter;Ljava/lang/Runnable;)V
 
     .line 6
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/mediacodec/b;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 7
     .line 8
-    .line 9
     invoke-virtual {v0, v1}, Landroidx/media3/exoplayer/mediacodec/AsynchronousMediaCodecCallback;->useInputBuffer(Ljava/lang/Runnable;)V
 
+    .line 9
     .line 10
     .line 11
-    .line 12
     return-void
 .end method

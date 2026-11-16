@@ -2,47 +2,85 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
-
-.field public final synthetic b:Ljava/lang/Object;
-
-.field public final synthetic c:J
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;Ljava/lang/Object;J)V
+.method public static a(Landroidx/media3/exoplayer/video/VideoRendererEventListener;IJ)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/video/p;->a:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
-
-    iput-object p2, p0, Landroidx/media3/exoplayer/video/p;->b:Ljava/lang/Object;
-
-    iput-wide p3, p0, Landroidx/media3/exoplayer/video/p;->c:J
-
     return-void
 .end method
 
-
-# virtual methods
-.method public final run()V
-    .locals 4
+.method public static b(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/Object;J)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/video/p;->b:Ljava/lang/Object;
+    return-void
+.end method
 
-    iget-wide v1, p0, Landroidx/media3/exoplayer/video/p;->c:J
+.method public static c(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/Exception;)V
+    .locals 0
 
-    iget-object v3, p0, Landroidx/media3/exoplayer/video/p;->a:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
+    .line 1
+    return-void
+.end method
 
-    invoke-static {v3, v0, v1, v2}, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;->j(Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;Ljava/lang/Object;J)V
+.method public static d(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/CodecParameters;)V
+    .locals 0
 
+    .line 1
+    return-void
+.end method
+
+.method public static e(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/String;JJ)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static f(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static g(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/DecoderCounters;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static h(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/exoplayer/DecoderCounters;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static i(Landroidx/media3/exoplayer/video/VideoRendererEventListener;JI)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static j(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;)V
+    .locals 0
+    .param p2    # Landroidx/media3/exoplayer/DecoderReuseEvaluation;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    return-void
+.end method
+
+.method public static k(Landroidx/media3/exoplayer/video/VideoRendererEventListener;Landroidx/media3/common/VideoSize;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method

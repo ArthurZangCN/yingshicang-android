@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/owen/tvrecyclerview/widget/TvRecyclerView$e;
+.implements Lcom/owen/tvrecyclerview/widget/TvRecyclerView$f;
 
 
 # virtual methods

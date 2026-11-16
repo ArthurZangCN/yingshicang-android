@@ -2,22 +2,13 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/Comparator;
 
-
-# virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+# direct methods
+.method public static bridge synthetic a(Landroid/media/Spatializer;Landroidx/media3/common/y;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;
+    invoke-virtual {p0, p1, p2}, Landroid/media/Spatializer;->addOnSpatializerStateChangedListener(Ljava/util/concurrent/Executor;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
 
-    check-cast p2, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;
-
-    invoke-static {p1, p2}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;->a(Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;)I
-
-    move-result p1
-
-    return p1
+    return-void
 .end method

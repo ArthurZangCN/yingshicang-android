@@ -386,7 +386,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/appcompat/app/e;->g(Ljava/lang/Object;)Landroid/media/AudioFocusRequest;
+    invoke-static {v0}, Landroidx/core/app/f;->h(Ljava/lang/Object;)Landroid/media/AudioFocusRequest;
 
     .line 4
     .line 5

@@ -175,54 +175,53 @@
 
     .line 4
     .line 5
-    invoke-static {v1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    new-instance v2, Landroidx/activity/a;
+    new-instance v2, Landroidx/constraintlayout/helper/widget/a;
 
     .line 9
     .line 10
-    const/16 v3, 0x9
+    const/4 v3, 0x5
 
     .line 11
-    .line 12
-    invoke-direct {v2, v1, v3}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v1, v3}, Landroidx/constraintlayout/helper/widget/a;-><init>(Ljava/lang/Object;I)V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     :try_start_0
     iget-object v0, p0, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$Sender;->senderThread:Landroid/os/HandlerThread;
 
+    .line 18
     .line 19
-    .line 20
     invoke-virtual {v0}, Ljava/lang/Thread;->join()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 20
     .line 21
     .line 22
-    .line 23
     goto :goto_0
 
-    .line 24
+    .line 23
     :catch_0
     iget-object v0, p0, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$Sender;->senderThread:Landroid/os/HandlerThread;
 
+    .line 24
     .line 25
-    .line 26
     invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
 
+    .line 26
     .line 27
     .line 28
-    .line 29
     :goto_0
     return-void
 .end method

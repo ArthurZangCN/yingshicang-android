@@ -90,7 +90,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1}, Lr3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lv3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     .line 13

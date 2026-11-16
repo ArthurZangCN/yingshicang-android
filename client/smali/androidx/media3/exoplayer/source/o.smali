@@ -2,66 +2,43 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/media3/common/util/Consumer;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
+
+.field public final synthetic b:Landroidx/media3/exoplayer/source/MediaLoadData;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/MediaLoadData;)V
     .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/o;->a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/source/o;->b:Landroidx/media3/exoplayer/source/MediaLoadData;
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/o;->b:Landroidx/media3/exoplayer/source/MediaLoadData;
 
-.method public static c(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
+    check-cast p1, Landroidx/media3/exoplayer/source/MediaSourceEventListener;
 
-    .line 1
-    return-void
-.end method
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/o;->a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
 
-.method public static d(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Ljava/io/IOException;Z)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->e(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/MediaLoadData;Landroidx/media3/exoplayer/source/MediaSourceEventListener;)V
 
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static f(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/MediaLoadData;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

@@ -1217,7 +1217,7 @@
     float-to-long v2, v0
 
     .line 151
-    invoke-static {v8, p1, p2, v1}, Landroid/support/v4/media/g;->a(FFFF)F
+    invoke-static {v8, p1, p2, v1}, Landroid/support/v4/media/f;->b(FFFF)F
 
     .line 152
     .line 153

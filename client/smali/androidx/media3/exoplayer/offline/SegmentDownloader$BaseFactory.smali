@@ -74,14 +74,14 @@
 
     .line 7
     .line 8
-    new-instance p1, Landroidx/media3/exoplayer/offline/l;
+    new-instance p1, Landroidx/media3/exoplayer/dash/offline/b;
 
     .line 9
     .line 10
-    const/4 p2, 0x0
+    const/4 p2, 0x2
 
     .line 11
-    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/offline/l;-><init>(I)V
+    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/dash/offline/b;-><init>(I)V
 
     .line 12
     .line 13

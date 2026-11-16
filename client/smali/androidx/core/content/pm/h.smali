@@ -4,220 +4,22 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/MediaParser$SeekPoint;)J
-    .locals 2
-
-    .line 1
-    iget-wide v0, p0, Landroid/media/MediaParser$SeekPoint;->timeMicros:J
-
-    .line 2
-    .line 3
-    return-wide v0
-.end method
-
-.method public static bridge synthetic b(Landroidx/media3/exoplayer/source/mediaparser/OutputConsumerAdapterV30;[Ljava/lang/String;)Landroid/media/MediaParser;
+.method public static bridge synthetic a(Landroid/content/pm/ShortcutInfo;)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroid/media/MediaParser;->create(Landroid/media/MediaParser$OutputConsumer;[Ljava/lang/String;)Landroid/media/MediaParser;
+    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->getDisabledReason()I
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    move-result p0
 
-    .line 5
-    return-object p0
+    return p0
 .end method
 
-.method public static bridge synthetic c(Ljava/lang/String;Landroid/media/MediaParser$OutputConsumer;)Landroid/media/MediaParser;
+.method public static bridge synthetic b(Landroid/text/PrecomputedText;I)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroid/media/MediaParser;->createByName(Ljava/lang/String;Landroid/media/MediaParser$OutputConsumer;)Landroid/media/MediaParser;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic d(Ljava/lang/String;Landroidx/media3/exoplayer/source/mediaparser/OutputConsumerAdapterV30;)Landroid/media/MediaParser;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/media/MediaParser;->createByName(Ljava/lang/String;Landroid/media/MediaParser$OutputConsumer;)Landroid/media/MediaParser;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic e(Landroid/os/storage/StorageVolume;)Ljava/io/File;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/os/storage/StorageVolume;->getDirectory()Ljava/io/File;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic f()Ljava/io/FileDescriptor;
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const-string v1, "temp.arsc"
-
-    .line 3
-    .line 4
-    invoke-static {v1, v0}, Landroid/system/Os;->memfd_create(Ljava/lang/String;I)Ljava/io/FileDescriptor;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    return-object v0
-.end method
-
-.method public static bridge synthetic g(Landroid/media/DrmInitData$SchemeInitData;)Ljava/util/UUID;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroid/media/DrmInitData$SchemeInitData;->uuid:Ljava/util/UUID;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static bridge synthetic h(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutManager;->removeLongLivedShortcuts(Ljava/util/List;)V
-
-    return-void
-.end method
-
-.method public static bridge synthetic i(Landroid/content/res/Resources;[Landroid/content/res/loader/ResourcesLoader;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/content/res/Resources;->addLoaders([Landroid/content/res/loader/ResourcesLoader;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic j(Landroid/graphics/Outline;Landroid/graphics/Path;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/graphics/Outline;->setPath(Landroid/graphics/Path;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic k(Landroid/media/MediaParser;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    const-string v1, "android.media.mediaparser.eagerlyExposeTrackType"
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public static bridge synthetic l(Landroid/media/MediaParser;Ljava/util/ArrayList;)V
-    .locals 1
-
-    .line 1
-    const-string v0, "android.media.mediaParser.exposeCaptionFormats"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0, p1}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static bridge synthetic m(Landroid/util/CloseGuard;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/util/CloseGuard;->open(Ljava/lang/String;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic n(Landroid/view/Surface;FI)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/view/Surface;->setFrameRate(FI)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic o(Landroid/view/WindowManager$LayoutParams;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/WindowManager$LayoutParams;->setFitInsetsTypes(I)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic p(Landroid/media/MediaParser;Landroidx/media3/exoplayer/source/mediaparser/InputReaderAdapterV30;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/media/MediaParser;->advance(Landroid/media/MediaParser$SeekableInputReader;)Z
+    invoke-virtual {p0, p1}, Landroid/text/PrecomputedText;->getParagraphEnd(I)I
 
     .line 2
     .line 3
@@ -226,4 +28,211 @@
 
     .line 5
     return p0
+.end method
+
+.method public static bridge synthetic c(Landroid/view/DisplayCutout;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/DisplayCutout;->getSafeInsetBottom()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic d(Landroid/graphics/ImageDecoder$ImageInfo;)Landroid/graphics/ColorSpace;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/graphics/ImageDecoder$ImageInfo;->getColorSpace()Landroid/graphics/ColorSpace;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic e(Ljava/lang/Object;)Landroid/graphics/ImageDecoder$Source;
+    .locals 0
+
+    .line 1
+    check-cast p0, Landroid/graphics/ImageDecoder$Source;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static synthetic f(Ljava/lang/String;II)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Landroid/media/session/MediaSessionManager$RemoteUserInfo;-><init>(Ljava/lang/String;II)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static bridge synthetic g(Landroid/text/PrecomputedText$Params$Builder;)Landroid/text/PrecomputedText$Params;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/text/PrecomputedText$Params$Builder;->build()Landroid/text/PrecomputedText$Params;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic h(Landroid/text/PrecomputedText$Params;)Landroid/text/TextDirectionHeuristic;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/text/PrecomputedText$Params;->getTextDirection()Landroid/text/TextDirectionHeuristic;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic i(Landroid/view/WindowInsets;)Landroid/view/DisplayCutout;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->getDisplayCutout()Landroid/view/DisplayCutout;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic j()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+    .locals 1
+
+    .line 1
+    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_SHOW_TOOLTIP:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static bridge synthetic k(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getTooltipText()Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic l(Landroid/graphics/ImageDecoder;Landroid/graphics/ColorSpace;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/graphics/ImageDecoder;->setTargetColorSpace(Landroid/graphics/ColorSpace;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static bridge synthetic m()Z
+    .locals 1
+
+    .line 1
+    invoke-static {}, Landroid/os/Process;->isIsolated()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public static bridge synthetic n(Landroid/content/pm/PackageManager;Ljava/lang/String;[BI)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2, p3}, Landroid/content/pm/PackageManager;->hasSigningCertificate(Ljava/lang/String;[BI)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic o(Landroid/graphics/drawable/Drawable;)Z
+    .locals 0
+
+    .line 1
+    instance-of p0, p0, Landroid/graphics/drawable/AnimatedImageDrawable;
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public static bridge synthetic p(Landroid/text/Spannable;)Z
+    .locals 0
+
+    .line 1
+    instance-of p0, p0, Landroid/text/PrecomputedText;
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public static bridge synthetic q(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getPaneTitle()Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
 .end method

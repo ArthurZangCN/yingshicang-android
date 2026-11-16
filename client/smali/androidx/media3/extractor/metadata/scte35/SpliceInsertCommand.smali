@@ -120,7 +120,7 @@
 
     .line 25
     .line 26
-    invoke-static {p11}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p11}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 27
     .line 28
@@ -744,7 +744,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/f;->j(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/e;->m(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

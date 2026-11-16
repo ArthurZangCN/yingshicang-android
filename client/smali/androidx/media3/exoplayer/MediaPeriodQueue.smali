@@ -153,11 +153,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/exoplayer/MediaPeriodQueue;Lcom/google/common/collect/f2$a;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+.method public static synthetic a(Landroidx/media3/exoplayer/MediaPeriodQueue;Lcom/google/common/collect/e2$a;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaPeriodQueue;->lambda$notifyQueueUpdate$0(Lcom/google/common/collect/f2$a;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/MediaPeriodQueue;->lambda$notifyQueueUpdate$0(Lcom/google/common/collect/e2$a;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
 
     return-void
 .end method
@@ -2968,7 +2968,7 @@
     return v1
 .end method
 
-.method private synthetic lambda$notifyQueueUpdate$0(Lcom/google/common/collect/f2$a;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+.method private synthetic lambda$notifyQueueUpdate$0(Lcom/google/common/collect/e2$a;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
     .locals 1
 
     .line 1
@@ -2976,7 +2976,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {p1}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -2996,7 +2996,7 @@
     .locals 5
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -3021,7 +3021,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 14
     .line 15
@@ -3066,14 +3066,14 @@
 
     .line 32
     .line 33
-    new-instance v3, Landroidx/media3/exoplayer/k1;
+    new-instance v3, Landroidx/media3/exoplayer/n1;
 
     .line 34
     .line 35
     const/4 v4, 0x0
 
     .line 36
-    invoke-direct {v3, p0, v4, v0, v1}, Landroidx/media3/exoplayer/k1;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, p0, v4, v0, v1}, Landroidx/media3/exoplayer/n1;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 37
     .line 38

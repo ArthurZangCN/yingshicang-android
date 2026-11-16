@@ -110,10 +110,10 @@
 
 .field private isSampleDependedOn:Z
 
-.field private lastSniffFailures:Lcom/google/common/collect/f2;
+.field private lastSniffFailures:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/SniffFailure;",
             ">;"
         }
@@ -175,23 +175,22 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/d;
+    new-instance v0, Landroidx/constraintlayout/core/state/c;
 
     .line 2
     .line 3
-    const/16 v1, 0xa
+    const/4 v1, 0x7
 
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     sput-object v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->FACTORY:Landroidx/media3/extractor/ExtractorsFactory;
 
+    .line 8
     .line 9
-    .line 10
     return-void
 .end method
 
@@ -264,11 +263,11 @@
     iput-boolean p1, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->omitTrackSampleTable:Z
 
     .line 8
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->lastSniffFailures:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->lastSniffFailures:Lcom/google/common/collect/e2;
 
     and-int/lit8 p1, p2, 0x4
 
@@ -706,7 +705,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -756,7 +755,7 @@
 
     .line 25
     .line 26
-    invoke-static {p1, v0}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 27
     .line 28
@@ -968,7 +967,7 @@
 
     .line 43
     :goto_1
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 44
     .line 45
@@ -1105,7 +1104,7 @@
 .end method
 
 .method private getAuxiliaryTrackTypesForAuxiliaryTracks(Landroidx/media3/common/Metadata;)Ljava/util/List;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1118,172 +1117,165 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/media3/extractor/mp3/a;
+    new-instance v0, Landroidx/media3/extractor/mp4/d;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/media3/extractor/mp3/a;-><init>(I)V
-
     .line 5
     .line 6
+    const-class v1, Landroidx/media3/container/MdtaMetadataEntry;
+
     .line 7
-    const-class v2, Landroidx/media3/container/MdtaMetadataEntry;
-
     .line 8
-    .line 9
-    invoke-virtual {p1, v2, v0}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/k;)Landroidx/media3/common/Metadata$Entry;
+    invoke-virtual {p1, v1, v0}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/m;)Landroidx/media3/common/Metadata$Entry;
 
+    .line 9
     .line 10
     .line 11
-    .line 12
     move-result-object p1
 
-    .line 13
+    .line 12
     check-cast p1, Landroidx/media3/container/MdtaMetadataEntry;
 
+    .line 13
     .line 14
-    .line 15
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 15
     .line 16
     .line 17
-    .line 18
     invoke-virtual {p1}, Landroidx/media3/container/MdtaMetadataEntry;->getAuxiliaryTrackTypesFromMap()Ljava/util/List;
 
+    .line 18
     .line 19
     .line 20
-    .line 21
     move-result-object p1
 
-    .line 22
+    .line 21
     new-instance v0, Ljava/util/ArrayList;
 
+    .line 22
     .line 23
-    .line 24
     invoke-interface {p1}, Ljava/util/List;->size()I
 
+    .line 24
     .line 25
     .line 26
+    move-result v1
+
     .line 27
-    move-result v2
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 28
-    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 29
     .line 30
+    const/4 v1, 0x0
+
     .line 31
-    const/4 v2, 0x0
+    move v2, v1
 
     .line 32
-    move v3, v2
-
-    .line 33
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
+    .line 33
     .line 34
     .line 35
+    move-result v3
+
     .line 36
-    move-result v4
+    if-ge v2, v3, :cond_3
 
     .line 37
-    if-ge v3, v4, :cond_4
-
     .line 38
-    .line 39
-    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 39
     .line 40
     .line 41
+    move-result-object v3
+
     .line 42
-    move-result-object v4
+    check-cast v3, Ljava/lang/Integer;
 
     .line 43
-    check-cast v4, Ljava/lang/Integer;
-
     .line 44
-    .line 45
-    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
+    .line 45
     .line 46
     .line 47
+    move-result v3
+
     .line 48
-    move-result v4
+    const/4 v4, 0x1
 
     .line 49
-    if-eqz v4, :cond_2
+    if-eqz v3, :cond_2
 
     .line 50
     .line 51
     const/4 v5, 0x2
 
     .line 52
-    if-eq v4, v1, :cond_3
+    if-eq v3, v4, :cond_1
 
     .line 53
     .line 54
-    const/4 v6, 0x3
+    const/4 v4, 0x3
 
     .line 55
-    if-eq v4, v5, :cond_1
+    if-eq v3, v5, :cond_2
 
     .line 56
     .line 57
-    if-eq v4, v6, :cond_0
+    if-eq v3, v4, :cond_0
 
     .line 58
     .line 59
-    move v5, v2
+    move v4, v1
 
     .line 60
     goto :goto_1
 
     .line 61
     :cond_0
-    const/4 v5, 0x4
+    const/4 v4, 0x4
 
     .line 62
     goto :goto_1
 
     .line 63
     :cond_1
-    move v5, v6
+    move v4, v5
 
     .line 64
-    goto :goto_1
+    :cond_2
+    :goto_1
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 65
-    :cond_2
-    move v5, v1
-
     .line 66
-    :cond_3
-    :goto_1
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 67
+    move-result-object v3
+
     .line 68
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 69
-    move-result-object v4
-
     .line 70
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 71
+    add-int/lit8 v2, v2, 0x1
+
     .line 72
     .line 73
-    add-int/lit8 v3, v3, 0x1
-
-    .line 74
-    .line 75
     goto :goto_0
 
-    .line 76
-    :cond_4
+    .line 74
+    :cond_3
     return-object v0
 .end method
 
@@ -1764,65 +1756,68 @@
     .locals 4
 
     .line 1
-    new-instance v0, Landroidx/media3/extractor/mp4/b;
+    new-instance v0, Landroidx/media3/datasource/j;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x3
 
     .line 4
+    invoke-direct {v0, v1}, Landroidx/media3/datasource/j;-><init>(I)V
+
     .line 5
     .line 6
+    .line 7
     const-class v1, Landroidx/media3/container/MdtaMetadataEntry;
 
-    .line 7
     .line 8
-    invoke-virtual {p1, v1, v0}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/k;)Landroidx/media3/common/Metadata$Entry;
-
     .line 9
+    invoke-virtual {p1, v1, v0}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/m;)Landroidx/media3/common/Metadata$Entry;
+
     .line 10
     .line 11
+    .line 12
     move-result-object p1
 
-    .line 12
+    .line 13
     check-cast p1, Landroidx/media3/container/MdtaMetadataEntry;
 
-    .line 13
     .line 14
+    .line 15
     if-eqz p1, :cond_0
 
-    .line 15
     .line 16
+    .line 17
     iget-object p1, p1, Landroidx/media3/container/MdtaMetadataEntry;->value:[B
 
-    .line 17
     .line 18
+    .line 19
     const/4 v0, 0x0
 
-    .line 19
+    .line 20
     aget-byte p1, p1, v0
 
-    .line 20
     .line 21
+    .line 22
     if-nez p1, :cond_0
 
-    .line 22
     .line 23
+    .line 24
     iget-wide v0, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->axteAtomOffset:J
 
-    .line 24
     .line 25
+    .line 26
     const-wide/16 v2, 0x10
 
-    .line 26
     .line 27
+    .line 28
     add-long/2addr v0, v2
 
-    .line 28
+    .line 29
     iput-wide v0, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->sampleOffsetForAuxiliaryTracks:J
 
-    .line 29
     .line 30
+    .line 31
     :cond_0
     return-void
 .end method
@@ -1902,11 +1897,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/core/view/inputmethod/a;
+    new-instance v0, Landroidx/core/view/u;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Landroidx/core/view/inputmethod/a;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p0}, Landroidx/core/view/u;-><init>(Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -2603,19 +2598,19 @@
 
     .line 124
     :goto_3
-    new-instance v5, Landroidx/media3/common/i;
+    new-instance v5, Landroidx/media3/common/h;
 
     .line 125
     .line 126
-    const/4 v3, 0x4
+    const/4 v2, 0x5
 
     .line 127
-    invoke-direct {v5, v3}, Landroidx/media3/common/i;-><init>(I)V
+    invoke-direct {v5, v2}, Landroidx/media3/common/h;-><init>(I)V
 
     .line 128
     .line 129
     .line 130
-    iget-boolean v4, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->omitTrackSampleTable:Z
+    iget-boolean v3, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->omitTrackSampleTable:Z
 
     .line 131
     .line 132
@@ -2637,896 +2632,893 @@
     move-object v2, v9
 
     .line 142
-    move v12, v3
+    move/from16 v20, v3
 
     .line 143
-    move/from16 v20, v4
-
     .line 144
-    .line 145
     move-wide/from16 v3, v17
 
+    .line 145
     .line 146
-    .line 147
     move-object/from16 v17, v5
 
+    .line 147
     .line 148
-    .line 149
     move-object/from16 v5, v19
 
+    .line 149
     .line 150
-    .line 151
     move-object/from16 v18, v8
 
+    .line 151
     .line 152
-    .line 153
     move-object/from16 v8, v17
 
+    .line 153
     .line 154
-    .line 155
     move-object v12, v9
 
-    .line 156
+    .line 155
     move/from16 v9, v20
 
+    .line 156
     .line 157
-    .line 158
-    invoke-static/range {v1 .. v9}, Landroidx/media3/extractor/mp4/BoxParser;->parseTraks(Landroidx/media3/container/Mp4Box$ContainerBox;Landroidx/media3/extractor/GaplessInfoHolder;JLandroidx/media3/common/DrmInitData;ZZLcom/google/common/base/e;Z)Ljava/util/List;
+    invoke-static/range {v1 .. v9}, Landroidx/media3/extractor/mp4/BoxParser;->parseTraks(Landroidx/media3/container/Mp4Box$ContainerBox;Landroidx/media3/extractor/GaplessInfoHolder;JLandroidx/media3/common/DrmInitData;ZZLcom/google/common/base/f;Z)Ljava/util/List;
 
+    .line 158
     .line 159
     .line 160
-    .line 161
     move-result-object v1
 
-    .line 162
+    .line 161
     iget-boolean v2, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->readingAuxiliaryTracks:Z
 
+    .line 162
     .line 163
-    .line 164
     if-eqz v2, :cond_7
 
+    .line 164
     .line 165
-    .line 166
     invoke-interface {v14}, Ljava/util/List;->size()I
 
+    .line 166
     .line 167
     .line 168
-    .line 169
     move-result v2
 
-    .line 170
+    .line 169
     invoke-interface {v1}, Ljava/util/List;->size()I
 
+    .line 170
     .line 171
     .line 172
-    .line 173
     move-result v3
 
-    .line 174
+    .line 173
     if-ne v2, v3, :cond_6
 
+    .line 174
     .line 175
-    .line 176
     move v2, v11
 
-    .line 177
+    .line 176
     goto :goto_4
 
-    .line 178
+    .line 177
     :cond_6
     move v2, v10
 
-    .line 179
+    .line 178
     :goto_4
     sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
+    .line 179
     .line 180
-    .line 181
     invoke-interface {v14}, Ljava/util/List;->size()I
 
+    .line 181
     .line 182
     .line 183
-    .line 184
     move-result v3
 
-    .line 185
+    .line 184
     invoke-interface {v1}, Ljava/util/List;->size()I
 
+    .line 185
     .line 186
     .line 187
-    .line 188
     move-result v4
 
-    .line 189
+    .line 188
     new-instance v5, Ljava/lang/StringBuilder;
 
+    .line 189
     .line 190
-    .line 191
     const-string v6, "The number of auxiliary track types from metadata ("
 
+    .line 191
     .line 192
-    .line 193
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 193
     .line 194
     .line 195
-    .line 196
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 196
     .line 197
     .line 198
-    .line 199
     const-string v3, ") is not same as the number of auxiliary tracks ("
 
+    .line 199
     .line 200
-    .line 201
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 201
     .line 202
     .line 203
-    .line 204
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 204
     .line 205
     .line 206
-    .line 207
     const-string v3, ")"
 
+    .line 207
     .line 208
-    .line 209
     invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 209
     .line 210
     .line 211
-    .line 212
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 212
     .line 213
     .line 214
-    .line 215
     move-result-object v3
 
-    .line 216
-    invoke-static {v2, v3}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    .line 215
+    invoke-static {v2, v3}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
+    .line 216
     .line 217
     .line 218
-    .line 219
     :cond_7
     invoke-static {v1}, Landroidx/media3/extractor/mp4/MimeTypeResolver;->getContainerMimeType(Ljava/util/List;)Ljava/lang/String;
 
+    .line 219
     .line 220
     .line 221
-    .line 222
     move-result-object v2
 
-    .line 223
+    .line 222
     move v6, v10
 
-    .line 224
+    .line 223
     move v7, v6
 
-    .line 225
+    .line 224
     const-wide v8, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 225
     .line 226
     .line 227
     .line 228
     .line 229
-    .line 230
     const/4 v10, -0x1
 
-    .line 231
+    .line 230
     :goto_5
     invoke-interface {v1}, Ljava/util/List;->size()I
 
+    .line 231
     .line 232
     .line 233
-    .line 234
     move-result v5
 
-    .line 235
+    .line 234
     if-ge v6, v5, :cond_14
 
+    .line 235
     .line 236
-    .line 237
     invoke-interface {v1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 237
     .line 238
     .line 239
-    .line 240
     move-result-object v5
 
-    .line 241
+    .line 240
     check-cast v5, Landroidx/media3/extractor/mp4/TrackSampleTable;
 
+    .line 241
     .line 242
-    .line 243
     iget v3, v5, Landroidx/media3/extractor/mp4/TrackSampleTable;->sampleCount:I
 
+    .line 243
     .line 244
-    .line 245
     if-nez v3, :cond_8
 
+    .line 245
     .line 246
-    .line 247
     move-object/from16 v22, v1
 
+    .line 247
     .line 248
-    .line 249
     move/from16 v23, v7
 
+    .line 249
     .line 250
-    .line 251
     move-object/from16 v26, v12
 
+    .line 251
     .line 252
-    .line 253
     const/4 v1, -0x1
 
-    .line 254
+    .line 253
     const-wide v20, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 254
     .line 255
     .line 256
     .line 257
     .line 258
-    .line 259
     move-object v7, v2
 
-    .line 260
+    .line 259
     move v2, v11
 
-    .line 261
+    .line 260
     goto/16 :goto_e
 
+    .line 261
     .line 262
-    .line 263
     :cond_8
     iget-object v3, v5, Landroidx/media3/extractor/mp4/TrackSampleTable;->track:Landroidx/media3/extractor/mp4/Track;
 
+    .line 263
     .line 264
-    .line 265
     new-instance v4, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;
 
+    .line 265
     .line 266
-    .line 267
     move-object/from16 v22, v1
 
+    .line 267
     .line 268
-    .line 269
     iget-object v1, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
 
+    .line 269
     .line 270
-    .line 271
     add-int/lit8 v23, v7, 0x1
 
+    .line 271
     .line 272
-    .line 273
     iget v11, v3, Landroidx/media3/extractor/mp4/Track;->type:I
 
+    .line 273
     .line 274
-    .line 275
     invoke-interface {v1, v7, v11}, Landroidx/media3/extractor/ExtractorOutput;->track(II)Landroidx/media3/extractor/TrackOutput;
 
+    .line 275
     .line 276
     .line 277
-    .line 278
     move-result-object v1
 
-    .line 279
+    .line 278
     invoke-direct {v4, v3, v5, v1}, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;-><init>(Landroidx/media3/extractor/mp4/Track;Landroidx/media3/extractor/mp4/TrackSampleTable;Landroidx/media3/extractor/TrackOutput;)V
 
+    .line 279
     .line 280
     .line 281
-    .line 282
     move-object v7, v2
 
-    .line 283
+    .line 282
     iget-wide v1, v3, Landroidx/media3/extractor/mp4/Track;->durationUs:J
 
+    .line 283
     .line 284
-    .line 285
     const-wide v20, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 285
     .line 286
     .line 287
     .line 288
     .line 289
-    .line 290
     cmp-long v11, v1, v20
 
+    .line 290
     .line 291
-    .line 292
     if-eqz v11, :cond_9
 
+    .line 292
     .line 293
-    .line 294
     goto :goto_6
 
-    .line 295
+    .line 294
     :cond_9
     iget-wide v1, v5, Landroidx/media3/extractor/mp4/TrackSampleTable;->durationUs:J
 
+    .line 295
     .line 296
-    .line 297
     :goto_6
     iget-object v11, v4, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;->trackOutput:Landroidx/media3/extractor/TrackOutput;
 
+    .line 297
     .line 298
-    .line 299
     invoke-interface {v11, v1, v2}, Landroidx/media3/extractor/TrackOutput;->durationUs(J)V
 
+    .line 299
     .line 300
     .line 301
-    .line 302
     invoke-static {v8, v9, v1, v2}, Ljava/lang/Math;->max(JJ)J
 
+    .line 302
     .line 303
     .line 304
-    .line 305
     move-result-wide v8
 
-    .line 306
+    .line 305
     iget-object v11, v3, Landroidx/media3/extractor/mp4/Track;->format:Landroidx/media3/common/Format;
 
+    .line 306
     .line 307
-    .line 308
     iget-object v11, v11, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
 
+    .line 308
     .line 309
-    .line 310
     move-wide/from16 v24, v8
 
+    .line 310
     .line 311
-    .line 312
     const-string v8, "audio/true-hd"
 
+    .line 312
     .line 313
-    .line 314
     invoke-virtual {v8, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 314
     .line 315
     .line 316
-    .line 317
     move-result v8
 
-    .line 318
+    .line 317
     if-eqz v8, :cond_a
 
+    .line 318
     .line 319
-    .line 320
     iget v8, v5, Landroidx/media3/extractor/mp4/TrackSampleTable;->maximumSize:I
 
+    .line 320
     .line 321
-    .line 322
     mul-int/lit8 v8, v8, 0x10
 
+    .line 322
     .line 323
-    .line 324
     goto :goto_7
 
-    .line 325
+    .line 324
     :cond_a
     iget v8, v5, Landroidx/media3/extractor/mp4/TrackSampleTable;->maximumSize:I
 
+    .line 325
     .line 326
-    .line 327
     add-int/lit8 v8, v8, 0x1e
 
+    .line 327
     .line 328
-    .line 329
     :goto_7
     iget-object v9, v3, Landroidx/media3/extractor/mp4/Track;->format:Landroidx/media3/common/Format;
 
+    .line 329
     .line 330
-    .line 331
     invoke-virtual {v9}, Landroidx/media3/common/Format;->buildUpon()Landroidx/media3/common/Format$Builder;
 
+    .line 331
     .line 332
     .line 333
-    .line 334
     move-result-object v9
 
-    .line 335
+    .line 334
     invoke-virtual {v9, v8}, Landroidx/media3/common/Format$Builder;->setMaxInputSize(I)Landroidx/media3/common/Format$Builder;
 
+    .line 335
     .line 336
     .line 337
-    .line 338
     iget v8, v3, Landroidx/media3/extractor/mp4/Track;->type:I
 
+    .line 338
     .line 339
-    .line 340
     const/4 v11, 0x2
 
-    .line 341
+    .line 340
     if-ne v8, v11, :cond_e
 
+    .line 341
     .line 342
-    .line 343
     iget-object v8, v3, Landroidx/media3/extractor/mp4/Track;->format:Landroidx/media3/common/Format;
 
+    .line 343
     .line 344
-    .line 345
     iget v8, v8, Landroidx/media3/common/Format;->roleFlags:I
 
+    .line 345
     .line 346
-    .line 347
     iget v11, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->flags:I
 
+    .line 347
     .line 348
-    .line 349
     and-int/lit8 v11, v11, 0x8
 
+    .line 349
     .line 350
-    .line 351
     if-eqz v11, :cond_c
 
+    .line 351
     .line 352
-    .line 353
     const/4 v11, -0x1
 
-    .line 354
+    .line 353
     if-ne v10, v11, :cond_b
 
+    .line 354
     .line 355
-    .line 356
     const/4 v11, 0x1
 
-    .line 357
+    .line 356
     goto :goto_8
 
-    .line 358
+    .line 357
     :cond_b
     const/4 v11, 0x2
 
-    .line 359
+    .line 358
     :goto_8
     or-int/2addr v8, v11
 
-    .line 360
+    .line 359
     :cond_c
     iget-boolean v11, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->readingAuxiliaryTracks:Z
 
+    .line 360
     .line 361
-    .line 362
     if-eqz v11, :cond_d
 
+    .line 362
     .line 363
-    .line 364
     const v11, 0x8000
 
+    .line 364
     .line 365
     .line 366
-    .line 367
     or-int/2addr v8, v11
 
-    .line 368
+    .line 367
     invoke-interface {v14, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 368
     .line 369
     .line 370
-    .line 371
     move-result-object v11
 
-    .line 372
+    .line 371
     check-cast v11, Ljava/lang/Integer;
 
+    .line 372
     .line 373
-    .line 374
     invoke-virtual {v11}, Ljava/lang/Integer;->intValue()I
 
+    .line 374
     .line 375
     .line 376
-    .line 377
     move-result v11
 
-    .line 378
+    .line 377
     invoke-virtual {v9, v11}, Landroidx/media3/common/Format$Builder;->setAuxiliaryTrackType(I)Landroidx/media3/common/Format$Builder;
 
+    .line 378
     .line 379
     .line 380
-    .line 381
     :cond_d
     invoke-virtual {v9, v8}, Landroidx/media3/common/Format$Builder;->setRoleFlags(I)Landroidx/media3/common/Format$Builder;
 
+    .line 381
     .line 382
     .line 383
-    .line 384
     :cond_e
     invoke-static {v5, v1, v2}, Landroidx/media3/extractor/mp4/Mp4Extractor;->findBestThumbnailPresentationTimeUs(Landroidx/media3/extractor/mp4/TrackSampleTable;J)J
 
+    .line 384
     .line 385
     .line 386
-    .line 387
     move-result-wide v1
 
-    .line 388
+    .line 387
     const-wide v20, -0x7fffffffffffffffL    # -4.9E-324
 
+    .line 388
     .line 389
     .line 390
     .line 391
     .line 392
-    .line 393
     cmp-long v5, v1, v20
 
+    .line 393
     .line 394
-    .line 395
     if-eqz v5, :cond_f
 
+    .line 395
     .line 396
-    .line 397
     new-instance v5, Landroidx/media3/common/Metadata;
 
+    .line 397
     .line 398
-    .line 399
     new-instance v8, Landroidx/media3/extractor/metadata/ThumbnailMetadata;
 
+    .line 399
     .line 400
-    .line 401
     invoke-direct {v8, v1, v2}, Landroidx/media3/extractor/metadata/ThumbnailMetadata;-><init>(J)V
 
+    .line 401
     .line 402
     .line 403
-    .line 404
     const/4 v1, 0x1
 
-    .line 405
+    .line 404
     new-array v2, v1, [Landroidx/media3/common/Metadata$Entry;
 
+    .line 405
     .line 406
-    .line 407
     const/4 v1, 0x0
 
-    .line 408
+    .line 407
     aput-object v8, v2, v1
 
+    .line 408
     .line 409
-    .line 410
     invoke-direct {v5, v2}, Landroidx/media3/common/Metadata;-><init>([Landroidx/media3/common/Metadata$Entry;)V
 
+    .line 410
     .line 411
     .line 412
-    .line 413
     goto :goto_9
 
-    .line 414
+    .line 413
     :cond_f
     const/4 v5, 0x0
 
-    .line 415
+    .line 414
     :goto_9
     iget v1, v3, Landroidx/media3/extractor/mp4/Track;->type:I
 
+    .line 415
     .line 416
-    .line 417
     invoke-static {v1, v12, v9}, Landroidx/media3/extractor/mp4/MetadataUtil;->setFormatGaplessInfo(ILandroidx/media3/extractor/GaplessInfoHolder;Landroidx/media3/common/Format$Builder;)V
 
+    .line 417
     .line 418
     .line 419
-    .line 420
     iget v1, v3, Landroidx/media3/extractor/mp4/Track;->type:I
 
+    .line 420
     .line 421
-    .line 422
     iget-object v2, v3, Landroidx/media3/extractor/mp4/Track;->format:Landroidx/media3/common/Format;
 
+    .line 422
     .line 423
-    .line 424
     iget-object v2, v2, Landroidx/media3/common/Format;->metadata:Landroidx/media3/common/Metadata;
 
+    .line 424
     .line 425
+    const/4 v8, 0x4
+
     .line 426
-    const/4 v11, 0x4
+    new-array v8, v8, [Landroidx/media3/common/Metadata;
 
     .line 427
-    new-array v8, v11, [Landroidx/media3/common/Metadata;
-
     .line 428
-    .line 429
     iget-object v11, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->slowMotionMetadataEntries:Ljava/util/List;
 
+    .line 429
     .line 430
-    .line 431
     invoke-interface {v11}, Ljava/util/List;->isEmpty()Z
 
+    .line 431
     .line 432
     .line 433
-    .line 434
     move-result v11
 
-    .line 435
+    .line 434
     if-eqz v11, :cond_10
 
+    .line 435
     .line 436
-    .line 437
     move-object/from16 v26, v12
 
+    .line 437
     .line 438
-    .line 439
     const/4 v11, 0x0
 
-    .line 440
+    .line 439
     :goto_a
     const/4 v12, 0x0
 
-    .line 441
+    .line 440
     goto :goto_b
 
-    .line 442
+    .line 441
     :cond_10
     new-instance v11, Landroidx/media3/common/Metadata;
 
+    .line 442
     .line 443
-    .line 444
     move-object/from16 v26, v12
 
+    .line 444
     .line 445
-    .line 446
     iget-object v12, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->slowMotionMetadataEntries:Ljava/util/List;
 
+    .line 446
     .line 447
-    .line 448
     invoke-direct {v11, v12}, Landroidx/media3/common/Metadata;-><init>(Ljava/util/List;)V
 
+    .line 448
     .line 449
     .line 450
-    .line 451
     goto :goto_a
 
-    .line 452
+    .line 451
     :goto_b
     aput-object v11, v8, v12
 
+    .line 452
     .line 453
-    .line 454
     const/4 v11, 0x1
 
-    .line 455
+    .line 454
     aput-object v16, v8, v11
 
+    .line 455
     .line 456
-    .line 457
     const/4 v11, 0x2
 
-    .line 458
+    .line 457
     aput-object v18, v8, v11
 
+    .line 458
     .line 459
-    .line 460
     const/4 v11, 0x3
 
-    .line 461
+    .line 460
     aput-object v5, v8, v11
 
+    .line 461
     .line 462
-    .line 463
     invoke-static {v1, v13, v9, v2, v8}, Landroidx/media3/extractor/mp4/MetadataUtil;->setFormatMetadata(ILandroidx/media3/common/Metadata;Landroidx/media3/common/Format$Builder;Landroidx/media3/common/Metadata;[Landroidx/media3/common/Metadata;)V
 
+    .line 463
     .line 464
     .line 465
-    .line 466
     invoke-virtual {v9, v7}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
+    .line 466
     .line 467
     .line 468
-    .line 469
     iget-object v1, v3, Landroidx/media3/extractor/mp4/Track;->format:Landroidx/media3/common/Format;
 
+    .line 469
     .line 470
-    .line 471
     iget-object v1, v1, Landroidx/media3/common/Format;->sampleMimeType:Ljava/lang/String;
 
+    .line 471
     .line 472
-    .line 473
     const-string v2, "audio/mpeg"
 
+    .line 473
     .line 474
-    .line 475
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 475
     .line 476
     .line 477
-    .line 478
     move-result v1
 
-    .line 479
+    .line 478
     if-eqz v1, :cond_11
 
+    .line 479
     .line 480
-    .line 481
     invoke-virtual {v9}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
 
+    .line 481
     .line 482
     .line 483
-    .line 484
     move-result-object v1
 
-    .line 485
+    .line 484
     iput-object v1, v4, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;->pendingFormat:Landroidx/media3/common/Format;
 
+    .line 485
     .line 486
-    .line 487
     goto :goto_c
 
-    .line 488
+    .line 487
     :cond_11
     iget-object v1, v4, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;->trackOutput:Landroidx/media3/extractor/TrackOutput;
 
+    .line 488
     .line 489
-    .line 490
     invoke-virtual {v9}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
 
+    .line 490
     .line 491
     .line 492
-    .line 493
     move-result-object v2
 
-    .line 494
+    .line 493
     invoke-interface {v1, v2}, Landroidx/media3/extractor/TrackOutput;->format(Landroidx/media3/common/Format;)V
 
+    .line 494
     .line 495
     .line 496
-    .line 497
     :goto_c
     iget v1, v3, Landroidx/media3/extractor/mp4/Track;->type:I
 
+    .line 497
     .line 498
-    .line 499
     const/4 v2, 0x2
 
-    .line 500
+    .line 499
     if-ne v1, v2, :cond_12
 
+    .line 500
     .line 501
-    .line 502
     const/4 v1, -0x1
 
-    .line 503
+    .line 502
     if-ne v10, v1, :cond_13
 
+    .line 503
     .line 504
-    .line 505
     invoke-virtual {v15}, Ljava/util/ArrayList;->size()I
 
+    .line 505
     .line 506
     .line 507
-    .line 508
     move-result v10
 
-    .line 509
+    .line 508
     goto :goto_d
 
-    .line 510
+    .line 509
     :cond_12
     const/4 v1, -0x1
 
-    .line 511
+    .line 510
     :cond_13
     :goto_d
     invoke-virtual {v15, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 511
     .line 512
     .line 513
-    .line 514
     move-wide/from16 v8, v24
 
+    .line 514
     .line 515
-    .line 516
     const/4 v2, 0x1
 
-    .line 517
+    .line 516
     :goto_e
     add-int/2addr v6, v2
 
-    .line 518
+    .line 517
     move v11, v2
 
-    .line 519
+    .line 518
     move-object v2, v7
 
-    .line 520
+    .line 519
     move-object/from16 v1, v22
 
+    .line 520
     .line 521
-    .line 522
     move/from16 v7, v23
 
+    .line 522
     .line 523
-    .line 524
     move-object/from16 v12, v26
 
+    .line 524
     .line 525
-    .line 526
     goto/16 :goto_5
 
+    .line 526
     .line 527
-    .line 528
     :cond_14
     const/4 v3, 0x0
 
-    .line 529
+    .line 528
     new-array v1, v3, [Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;
 
+    .line 529
     .line 530
-    .line 531
     invoke-virtual {v15, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
+    .line 531
     .line 532
     .line 533
-    .line 534
     move-result-object v1
 
-    .line 535
+    .line 534
     check-cast v1, [Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;
 
+    .line 535
     .line 536
-    .line 537
     iput-object v1, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->tracks:[Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;
 
+    .line 537
     .line 538
-    .line 539
     iget-boolean v2, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->omitTrackSampleTable:Z
 
+    .line 539
     .line 540
-    .line 541
     if-nez v2, :cond_15
 
+    .line 541
     .line 542
-    .line 543
     invoke-static {v1}, Landroidx/media3/extractor/mp4/Mp4Extractor;->calculateAccumulatedSampleSizes([Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;)[[J
 
+    .line 543
     .line 544
     .line 545
-    .line 546
     move-result-object v12
 
-    .line 547
+    .line 546
     goto :goto_f
 
-    .line 548
+    .line 547
     :cond_15
     const/4 v12, 0x0
 
-    .line 549
+    .line 548
     :goto_f
     iput-object v12, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->accumulatedSampleSizes:[[J
 
+    .line 549
     .line 550
-    .line 551
     iget-object v1, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
 
+    .line 551
     .line 552
-    .line 553
     invoke-interface {v1}, Landroidx/media3/extractor/ExtractorOutput;->endTracks()V
 
+    .line 553
     .line 554
     .line 555
-    .line 556
     iget-object v1, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
 
+    .line 556
     .line 557
-    .line 558
     new-instance v2, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4SeekMap;
 
+    .line 558
     .line 559
-    .line 560
     iget-object v3, v0, Landroidx/media3/extractor/mp4/Mp4Extractor;->tracks:[Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;
 
+    .line 560
     .line 561
-    .line 562
     invoke-direct {v2, v8, v9, v3, v10}, Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4SeekMap;-><init>(J[Landroidx/media3/extractor/mp4/Mp4Extractor$Mp4Track;I)V
 
+    .line 562
     .line 563
     .line 564
-    .line 565
     invoke-interface {v1, v2}, Landroidx/media3/extractor/ExtractorOutput;->seekMap(Landroidx/media3/extractor/SeekMap;)V
 
+    .line 565
     .line 566
     .line 567
-    .line 568
     return-void
 .end method
 
@@ -4089,7 +4081,7 @@
 
     .line 229
     :goto_2
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 230
     .line 231
@@ -4122,7 +4114,7 @@
 
     .line 244
     :goto_3
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 245
     .line 246
@@ -5193,7 +5185,7 @@
 
     .line 323
     .line 324
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 325
     .line 326
@@ -5285,7 +5277,7 @@
 
     .line 371
     .line 372
-    invoke-static {v7, v8}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 373
     .line 374
@@ -5844,89 +5836,86 @@
 
     .line 11
     :cond_0
-    new-instance v1, Landroidx/media3/datasource/j;
+    new-instance v1, Landroidx/media3/extractor/mp4/c;
 
     .line 12
     .line 13
-    const/4 v2, 0x3
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     .line 14
-    invoke-direct {v1, v2}, Landroidx/media3/datasource/j;-><init>(I)V
-
     .line 15
     .line 16
-    .line 17
     const-class v2, Landroidx/media3/container/MdtaMetadataEntry;
 
+    .line 17
     .line 18
-    .line 19
-    invoke-virtual {p1, v2, v1}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/k;)Landroidx/media3/common/Metadata$Entry;
+    invoke-virtual {p1, v2, v1}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/m;)Landroidx/media3/common/Metadata$Entry;
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     move-result-object p1
 
-    .line 23
+    .line 22
     check-cast p1, Landroidx/media3/container/MdtaMetadataEntry;
 
+    .line 23
     .line 24
-    .line 25
     if-nez p1, :cond_1
 
+    .line 25
     .line 26
-    .line 27
     return v0
 
-    .line 28
+    .line 27
     :cond_1
     new-instance v1, Landroidx/media3/common/util/ParsableByteArray;
 
+    .line 28
     .line 29
-    .line 30
     iget-object p1, p1, Landroidx/media3/container/MdtaMetadataEntry;->value:[B
 
+    .line 30
     .line 31
-    .line 32
     invoke-direct {v1, p1}, Landroidx/media3/common/util/ParsableByteArray;-><init>([B)V
 
+    .line 32
     .line 33
     .line 34
-    .line 35
     invoke-virtual {v1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedLongToLong()J
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     move-result-wide v1
 
-    .line 39
+    .line 38
     const-wide/16 v3, 0x0
 
+    .line 39
     .line 40
-    .line 41
     cmp-long p1, v1, v3
 
+    .line 41
     .line 42
-    .line 43
     if-gtz p1, :cond_2
 
+    .line 43
     .line 44
-    .line 45
     return v0
 
-    .line 46
+    .line 45
     :cond_2
     iput-wide v1, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->axteAtomOffset:J
 
+    .line 46
     .line 47
-    .line 48
     const/4 p1, 0x1
 
-    .line 49
+    .line 48
     return p1
 
-    .line 50
+    .line 49
     :cond_3
     :goto_0
     return v0
@@ -6014,19 +6003,19 @@
     return-object p1
 .end method
 
-.method public getSniffFailureDetails()Lcom/google/common/collect/f2;
+.method public getSniffFailureDetails()Lcom/google/common/collect/e2;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/SniffFailure;",
             ">;"
         }
     .end annotation
 
     .line 2
-    iget-object v0, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->lastSniffFailures:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->lastSniffFailures:Lcom/google/common/collect/e2;
 
     return-object v0
 .end method
@@ -6035,7 +6024,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/media3/extractor/mp4/Mp4Extractor;->getSniffFailureDetails()Lcom/google/common/collect/f2;
+    invoke-virtual {p0}, Landroidx/media3/extractor/mp4/Mp4Extractor;->getSniffFailureDetails()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
@@ -6416,7 +6405,7 @@
 
     .line 17
     .line 18
-    invoke-static {p1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -6428,7 +6417,7 @@
 
     .line 23
     :cond_1
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 24
     .line 25
@@ -6437,7 +6426,7 @@
 
     .line 27
     :goto_1
-    iput-object v0, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->lastSniffFailures:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/extractor/mp4/Mp4Extractor;->lastSniffFailures:Lcom/google/common/collect/e2;
 
     .line 28
     .line 29

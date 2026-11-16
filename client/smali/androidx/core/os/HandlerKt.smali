@@ -13,7 +13,7 @@
             "J",
             "Ljava/lang/Object;",
             "Lkotlin/jvm/functions/Function0<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Runnable;"
         }
@@ -79,7 +79,7 @@
             "J",
             "Ljava/lang/Object;",
             "Lkotlin/jvm/functions/Function0<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Runnable;"
         }

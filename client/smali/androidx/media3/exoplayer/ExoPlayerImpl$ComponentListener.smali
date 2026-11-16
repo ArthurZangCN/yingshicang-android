@@ -568,32 +568,29 @@
     move-result-object v0
 
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/u0;
+    new-instance v1, Landroidx/media3/exoplayer/z0;
 
     .line 8
     .line 9
-    const/4 v2, 0x0
+    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/z0;-><init>(I)V
 
     .line 10
-    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/u0;-><init>(II)V
-
     .line 11
     .line 12
+    new-instance v2, Landroidx/media3/exoplayer/a1;
+
     .line 13
-    new-instance v2, Landroidx/media3/exoplayer/v0;
-
     .line 14
-    .line 15
-    invoke-direct {v2, p1}, Landroidx/media3/exoplayer/v0;-><init>(I)V
+    invoke-direct {v2, p1}, Landroidx/media3/exoplayer/a1;-><init>(I)V
 
+    .line 15
     .line 16
     .line 17
-    .line 18
-    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/e;Lcom/google/common/base/e;)V
+    invoke-virtual {v0, v1, v2}, Landroidx/media3/common/util/BackgroundThreadStateHandler;->updateStateAsync(Lcom/google/common/base/f;Lcom/google/common/base/f;)V
 
+    .line 18
     .line 19
     .line 20
-    .line 21
     return-void
 .end method
 
@@ -703,7 +700,7 @@
 .end method
 
 .method public onCues(Landroidx/media3/common/text/CueGroup;)V
-    .locals 2
+    .locals 3
 
     .line 2
     iget-object v0, p0, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->this$0:Landroidx/media3/exoplayer/ExoPlayerImpl;
@@ -717,9 +714,11 @@
 
     move-result-object v0
 
-    new-instance v1, Landroidx/media3/exoplayer/e0;
+    new-instance v1, Landroidx/media3/exoplayer/y0;
 
-    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/e0;-><init>(Ljava/lang/Object;)V
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/y0;-><init>(Ljava/lang/Object;I)V
 
     const/16 p1, 0x1b
 
@@ -746,11 +745,11 @@
 
     move-result-object v0
 
-    new-instance v1, Landroidx/media3/exoplayer/j0;
+    new-instance v1, Landroidx/media3/exoplayer/y0;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/j0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/y0;-><init>(Ljava/lang/Object;I)V
 
     const/16 p1, 0x1b
 
@@ -885,14 +884,14 @@
     move-result-object v0
 
     .line 51
-    new-instance v1, Landroidx/media3/exoplayer/q0;
+    new-instance v1, Landroidx/media3/exoplayer/k;
 
     .line 52
     .line 53
-    const/4 v2, 0x1
+    const/4 v2, 0x5
 
     .line 54
-    invoke-direct {v1, p0, v2}, Landroidx/media3/exoplayer/q0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, v2}, Landroidx/media3/exoplayer/k;-><init>(Ljava/lang/Object;I)V
 
     .line 55
     .line 56
@@ -919,14 +918,14 @@
     move-result-object v0
 
     .line 68
-    new-instance v1, Landroidx/media3/exoplayer/f0;
+    new-instance v1, Landroidx/media3/exoplayer/s0;
 
     .line 69
     .line 70
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     .line 71
-    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/f0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/s0;-><init>(Ljava/lang/Object;I)V
 
     .line 72
     .line 73
@@ -964,7 +963,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/h;->a(Landroidx/media3/exoplayer/ExoPlayer$AudioOffloadListener;Z)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/n;->a(Landroidx/media3/exoplayer/ExoPlayer$AudioOffloadListener;Z)V
 
     return-void
 .end method
@@ -1018,33 +1017,30 @@
     move-result-object p1
 
     .line 24
-    new-instance p2, Landroidx/constraintlayout/core/state/f;
+    new-instance p2, Landroidx/media3/exoplayer/c1;
 
     .line 25
     .line 26
-    const/4 p3, 0x2
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    invoke-direct {p2, p3}, Landroidx/constraintlayout/core/state/f;-><init>(I)V
-
     .line 28
     .line 29
-    .line 30
     const/16 p3, 0x1a
 
+    .line 30
     .line 31
-    .line 32
     invoke-virtual {p1, p3, p2}, Landroidx/media3/common/util/ListenerSet;->sendEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 32
     .line 33
     .line 34
-    .line 35
     :cond_0
     return-void
 .end method
 
 .method public onSkipSilenceEnabledChanged(Z)V
-    .locals 2
+    .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->this$0:Landroidx/media3/exoplayer/ExoPlayerImpl;
@@ -1088,24 +1084,27 @@
     move-result-object v0
 
     .line 21
-    new-instance v1, Landroidx/media3/exoplayer/w0;
+    new-instance v1, Landroidx/media3/exoplayer/i0;
 
     .line 22
     .line 23
-    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/w0;-><init>(Z)V
+    const/4 v2, 0x1
 
     .line 24
+    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/i0;-><init>(ZI)V
+
     .line 25
     .line 26
+    .line 27
     const/16 p1, 0x17
 
-    .line 27
     .line 28
+    .line 29
     invoke-virtual {v0, p1, v1}, Landroidx/media3/common/util/ListenerSet;->sendEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
-    .line 29
     .line 30
     .line 31
+    .line 32
     return-void
 .end method
 
@@ -1194,14 +1193,14 @@
     move-result-object v0
 
     .line 34
-    new-instance v1, Landroidx/media3/exoplayer/q0;
+    new-instance v1, Landroidx/media3/exoplayer/l0;
 
     .line 35
     .line 36
     const/4 v2, 0x2
 
     .line 37
-    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/q0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/l0;-><init>(Ljava/lang/Object;I)V
 
     .line 38
     .line 39
@@ -1235,11 +1234,11 @@
     move-result-object v0
 
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/x0;
+    new-instance v1, Landroidx/media3/exoplayer/b1;
 
     .line 8
     .line 9
-    invoke-direct {v1, p1, p2}, Landroidx/media3/exoplayer/x0;-><init>(IZ)V
+    invoke-direct {v1, p1, p2}, Landroidx/media3/exoplayer/b1;-><init>(IZ)V
 
     .line 10
     .line 11
@@ -1610,7 +1609,7 @@
 .end method
 
 .method public onVideoSizeChanged(Landroidx/media3/common/VideoSize;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->this$0:Landroidx/media3/exoplayer/ExoPlayerImpl;
@@ -1634,27 +1633,24 @@
     move-result-object v0
 
     .line 12
-    new-instance v1, Landroidx/media3/exoplayer/k0;
+    new-instance v1, Landroidx/media3/exoplayer/c;
 
     .line 13
     .line 14
-    const/4 v2, 0x1
+    invoke-direct {v1, p1}, Landroidx/media3/exoplayer/c;-><init>(Ljava/lang/Object;)V
 
     .line 15
-    invoke-direct {v1, p1, v2}, Landroidx/media3/exoplayer/k0;-><init>(Ljava/lang/Object;I)V
-
     .line 16
     .line 17
-    .line 18
     const/16 p1, 0x19
 
+    .line 18
     .line 19
-    .line 20
     invoke-virtual {v0, p1, v1}, Landroidx/media3/common/util/ListenerSet;->sendEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
     return-void
 .end method
 

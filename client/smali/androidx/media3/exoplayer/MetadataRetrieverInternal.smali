@@ -31,7 +31,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;>;"
         }
     .end annotation
@@ -45,14 +45,14 @@
 
 .field private final mediaSourceFactory:Landroidx/media3/exoplayer/source/MediaSource$Factory;
 
-.field private preparationFuture:Lcom/google/common/util/concurrent/x;
+.field private preparationFuture:Lcom/google/common/util/concurrent/b0;
     .annotation build Landroidx/annotation/GuardedBy;
         value = "lock"
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/util/concurrent/x<",
+            "Lcom/google/common/util/concurrent/b0<",
             "Landroidx/media3/exoplayer/MetadataRetrieverInternal$InternalResult;",
             ">;"
         }
@@ -214,7 +214,7 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v1, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 5
     .line 6
@@ -232,7 +232,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {v1, v2}, Lcom/google/common/util/concurrent/x;->set(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Lcom/google/common/util/concurrent/b0;->set(Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -267,7 +267,7 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v1, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 5
     .line 6
@@ -276,7 +276,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-virtual {v1, p1}, Lcom/google/common/util/concurrent/x;->setException(Ljava/lang/Throwable;)Z
+    invoke-virtual {v1, p1}, Lcom/google/common/util/concurrent/b0;->setException(Ljava/lang/Throwable;)Z
 
     .line 10
     .line 11
@@ -306,7 +306,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 2
     .line 3
@@ -314,16 +314,16 @@
 
     .line 4
     .line 5
-    new-instance v0, Lcom/google/common/util/concurrent/x;
+    new-instance v0, Lcom/google/common/util/concurrent/b0;
 
     .line 6
     .line 7
-    invoke-direct {v0}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 8
     .line 9
     .line 10
-    iput-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/x;
+    iput-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 11
     .line 12
@@ -343,23 +343,23 @@
 
     .line 19
     .line 20
-    new-instance v5, Landroidx/media3/exoplayer/e0;
+    new-instance v5, Landroidx/media3/exoplayer/s0;
 
     .line 21
     .line 22
-    invoke-direct {v5, p0}, Landroidx/media3/exoplayer/e0;-><init>(Ljava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    new-instance v6, Landroidx/media3/exoplayer/j0;
-
-    .line 26
-    .line 27
     const/4 v1, 0x2
 
+    .line 23
+    invoke-direct {v5, p0, v1}, Landroidx/media3/exoplayer/s0;-><init>(Ljava/lang/Object;I)V
+
+    .line 24
+    .line 25
+    .line 26
+    new-instance v6, Landroidx/media3/exoplayer/t0;
+
+    .line 27
     .line 28
-    invoke-direct {v6, p0, v1}, Landroidx/media3/exoplayer/j0;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v6, p0}, Landroidx/media3/exoplayer/t0;-><init>(Ljava/lang/Object;)V
 
     .line 29
     .line 30
@@ -388,7 +388,7 @@
 
 # virtual methods
 .method public close()V
-    .locals 4
+    .locals 6
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->lock:Ljava/lang/Object;
@@ -432,62 +432,87 @@
 
     .line 16
     .line 17
-    new-instance v2, Lcom/google/common/util/concurrent/n$b;
+    invoke-static {v1}, Lcom/google/common/collect/e2;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/e2;
 
     .line 18
     .line 19
-    invoke-static {v1}, Lcom/google/common/collect/f2;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/f2;
-
     .line 20
-    .line 21
-    .line 22
     move-result-object v1
 
+    .line 21
+    new-instance v2, Landroidx/media3/exoplayer/y1;
+
+    .line 22
     .line 23
-    invoke-direct {v2, v1}, Lcom/google/common/util/concurrent/n$b;-><init>(Lcom/google/common/collect/f2;)V
+    invoke-direct {v2, p0}, Landroidx/media3/exoplayer/y1;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;)V
 
     .line 24
     .line 25
     .line 26
-    new-instance v1, Landroidx/media3/exoplayer/u1;
+    sget-object v3, Lcom/google/common/util/concurrent/k;->INSTANCE:Lcom/google/common/util/concurrent/k;
 
     .line 27
     .line 28
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/u1;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;)V
+    new-instance v4, Lcom/google/common/util/concurrent/r;
 
     .line 29
     .line 30
-    .line 31
-    sget-object v3, Lcom/google/common/util/concurrent/i;->INSTANCE:Lcom/google/common/util/concurrent/i;
+    invoke-direct {v4, v2}, Lcom/google/common/util/concurrent/r;-><init>(Landroidx/media3/exoplayer/y1;)V
 
+    .line 31
     .line 32
     .line 33
-    invoke-virtual {v2, v1, v3}, Lcom/google/common/util/concurrent/n$b;->a(Landroidx/media3/exoplayer/u1;Lcom/google/common/util/concurrent/i;)V
+    new-instance v2, Lcom/google/common/util/concurrent/j;
 
     .line 34
     .line 35
+    const/4 v5, 0x0
+
     .line 36
-    monitor-exit v0
+    invoke-direct {v2, v1, v5, v5}, Lcom/google/common/util/concurrent/e;-><init>(Lcom/google/common/collect/e2;ZZ)V
 
     .line 37
+    .line 38
+    .line 39
+    new-instance v1, Lcom/google/common/util/concurrent/j$b;
+
+    .line 40
+    .line 41
+    invoke-direct {v1, v2, v4, v3}, Lcom/google/common/util/concurrent/j$b;-><init>(Lcom/google/common/util/concurrent/j;Ljava/util/concurrent/Callable;Ljava/util/concurrent/Executor;)V
+
+    .line 42
+    .line 43
+    .line 44
+    iput-object v1, v2, Lcom/google/common/util/concurrent/j;->i:Lcom/google/common/util/concurrent/j$c;
+
+    .line 45
+    .line 46
+    invoke-virtual {v2}, Lcom/google/common/util/concurrent/e;->f()V
+
+    .line 47
+    .line 48
+    .line 49
+    monitor-exit v0
+
+    .line 50
     return-void
 
-    .line 38
+    .line 51
     :goto_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 39
+    .line 52
     throw v1
 .end method
 
-.method public retrieveDurationUs()Lcom/google/common/util/concurrent/t;
+.method public retrieveDurationUs()Lcom/google/common/util/concurrent/x;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Ljava/lang/Long;",
             ">;"
         }
@@ -523,7 +548,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-static {v1}, Lcom/google/common/util/concurrent/n;->j(Ljava/lang/RuntimeException;)Lcom/google/common/util/concurrent/q$a;
+    invoke-static {v1}, Lcom/google/common/util/concurrent/q;->r(Ljava/lang/Exception;)Lcom/google/common/util/concurrent/u$a;
 
     .line 16
     .line 17
@@ -545,7 +570,7 @@
 
     .line 23
     :cond_0
-    invoke-virtual {p0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTimeline()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0}, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->retrieveTimeline()Lcom/google/common/util/concurrent/x;
 
     .line 24
     .line 25
@@ -553,11 +578,11 @@
     move-result-object v1
 
     .line 27
-    new-instance v2, Lcom/google/common/util/concurrent/x;
+    new-instance v2, Lcom/google/common/util/concurrent/b0;
 
     .line 28
     .line 29
-    invoke-direct {v2}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v2}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 30
     .line 31
@@ -575,16 +600,16 @@
 
     .line 38
     .line 39
-    invoke-direct {v3, p0, v2}, Landroidx/media3/exoplayer/MetadataRetrieverInternal$3;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/x;)V
+    invoke-direct {v3, p0, v2}, Landroidx/media3/exoplayer/MetadataRetrieverInternal$3;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/b0;)V
 
     .line 40
     .line 41
     .line 42
-    sget-object v4, Lcom/google/common/util/concurrent/i;->INSTANCE:Lcom/google/common/util/concurrent/i;
+    sget-object v4, Lcom/google/common/util/concurrent/k;->INSTANCE:Lcom/google/common/util/concurrent/k;
 
     .line 43
     .line 44
-    invoke-static {v1, v3, v4}, Lcom/google/common/util/concurrent/n;->g(Lcom/google/common/util/concurrent/t;Lcom/google/common/util/concurrent/m;Ljava/util/concurrent/Executor;)V
+    invoke-static {v1, v3, v4}, Lcom/google/common/util/concurrent/q;->n(Lcom/google/common/util/concurrent/x;Lcom/google/common/util/concurrent/p;Ljava/util/concurrent/Executor;)V
 
     .line 45
     .line 46
@@ -604,12 +629,12 @@
     throw v1
 .end method
 
-.method public retrieveTimeline()Lcom/google/common/util/concurrent/t;
+.method public retrieveTimeline()Lcom/google/common/util/concurrent/x;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/common/Timeline;",
             ">;"
         }
@@ -645,7 +670,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-static {v1}, Lcom/google/common/util/concurrent/n;->j(Ljava/lang/RuntimeException;)Lcom/google/common/util/concurrent/q$a;
+    invoke-static {v1}, Lcom/google/common/util/concurrent/q;->r(Ljava/lang/Exception;)Lcom/google/common/util/concurrent/u$a;
 
     .line 16
     .line 17
@@ -672,11 +697,11 @@
     .line 24
     .line 25
     .line 26
-    new-instance v1, Lcom/google/common/util/concurrent/x;
+    new-instance v1, Lcom/google/common/util/concurrent/b0;
 
     .line 27
     .line 28
-    invoke-direct {v1}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v1}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 29
     .line 30
@@ -690,7 +715,7 @@
     .line 34
     .line 35
     .line 36
-    iget-object v2, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v2, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 37
     .line 38
@@ -703,16 +728,16 @@
 
     .line 42
     .line 43
-    invoke-direct {v3, p0, v1}, Landroidx/media3/exoplayer/MetadataRetrieverInternal$2;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/x;)V
+    invoke-direct {v3, p0, v1}, Landroidx/media3/exoplayer/MetadataRetrieverInternal$2;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/b0;)V
 
     .line 44
     .line 45
     .line 46
-    sget-object v4, Lcom/google/common/util/concurrent/i;->INSTANCE:Lcom/google/common/util/concurrent/i;
+    sget-object v4, Lcom/google/common/util/concurrent/k;->INSTANCE:Lcom/google/common/util/concurrent/k;
 
     .line 47
     .line 48
-    invoke-static {v2, v3, v4}, Lcom/google/common/util/concurrent/n;->g(Lcom/google/common/util/concurrent/t;Lcom/google/common/util/concurrent/m;Ljava/util/concurrent/Executor;)V
+    invoke-static {v2, v3, v4}, Lcom/google/common/util/concurrent/q;->n(Lcom/google/common/util/concurrent/x;Lcom/google/common/util/concurrent/p;Ljava/util/concurrent/Executor;)V
 
     .line 49
     .line 50
@@ -732,12 +757,12 @@
     throw v1
 .end method
 
-.method public retrieveTrackGroups()Lcom/google/common/util/concurrent/t;
+.method public retrieveTrackGroups()Lcom/google/common/util/concurrent/x;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroidx/media3/exoplayer/source/TrackGroupArray;",
             ">;"
         }
@@ -773,7 +798,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-static {v1}, Lcom/google/common/util/concurrent/n;->j(Ljava/lang/RuntimeException;)Lcom/google/common/util/concurrent/q$a;
+    invoke-static {v1}, Lcom/google/common/util/concurrent/q;->r(Ljava/lang/Exception;)Lcom/google/common/util/concurrent/u$a;
 
     .line 16
     .line 17
@@ -800,11 +825,11 @@
     .line 24
     .line 25
     .line 26
-    new-instance v1, Lcom/google/common/util/concurrent/x;
+    new-instance v1, Lcom/google/common/util/concurrent/b0;
 
     .line 27
     .line 28
-    invoke-direct {v1}, Lcom/google/common/util/concurrent/x;-><init>()V
+    invoke-direct {v1}, Lcom/google/common/util/concurrent/b0;-><init>()V
 
     .line 29
     .line 30
@@ -818,7 +843,7 @@
     .line 34
     .line 35
     .line 36
-    iget-object v2, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/x;
+    iget-object v2, p0, Landroidx/media3/exoplayer/MetadataRetrieverInternal;->preparationFuture:Lcom/google/common/util/concurrent/b0;
 
     .line 37
     .line 38
@@ -831,16 +856,16 @@
 
     .line 42
     .line 43
-    invoke-direct {v3, p0, v1}, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/x;)V
+    invoke-direct {v3, p0, v1}, Landroidx/media3/exoplayer/MetadataRetrieverInternal$1;-><init>(Landroidx/media3/exoplayer/MetadataRetrieverInternal;Lcom/google/common/util/concurrent/b0;)V
 
     .line 44
     .line 45
     .line 46
-    sget-object v4, Lcom/google/common/util/concurrent/i;->INSTANCE:Lcom/google/common/util/concurrent/i;
+    sget-object v4, Lcom/google/common/util/concurrent/k;->INSTANCE:Lcom/google/common/util/concurrent/k;
 
     .line 47
     .line 48
-    invoke-static {v2, v3, v4}, Lcom/google/common/util/concurrent/n;->g(Lcom/google/common/util/concurrent/t;Lcom/google/common/util/concurrent/m;Ljava/util/concurrent/Executor;)V
+    invoke-static {v2, v3, v4}, Lcom/google/common/util/concurrent/q;->n(Lcom/google/common/util/concurrent/x;Lcom/google/common/util/concurrent/p;Ljava/util/concurrent/Executor;)V
 
     .line 49
     .line 50

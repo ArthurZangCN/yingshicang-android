@@ -4,35 +4,26 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/content/pm/ShortcutInfo;)J
-    .locals 2
+.method public static bridge synthetic a(Landroid/content/pm/ShortcutInfo;)I
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->getLastChangedTimestamp()J
+    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->getRank()I
 
     .line 2
     .line 3
     .line 4
-    move-result-wide v0
+    move-result p0
 
     .line 5
-    return-wide v0
+    return p0
 .end method
 
-.method public static bridge synthetic b(Ljava/lang/Object;)Landroid/content/pm/ShortcutInfo;
+.method public static bridge synthetic b(Landroid/content/pm/ShortcutManager;)Ljava/util/List;
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/content/pm/ShortcutInfo;
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic c(Landroid/content/pm/ShortcutInfo;)Ljava/lang/CharSequence;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->getLongLabel()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Landroid/content/pm/ShortcutManager;->getDynamicShortcuts()Ljava/util/List;
 
     .line 2
     .line 3
@@ -43,19 +34,24 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic d(Landroid/content/pm/ShortcutInfo;)Ljava/lang/String;
-    .locals 0
+.method public static synthetic c()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->getPackage()Ljava/lang/String;
+    new-instance v0, Landroid/content/pm/ShortcutInfo$Builder;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p0
+    return-void
+.end method
 
-    .line 5
-    return-object p0
+.method public static bridge synthetic d(Landroid/content/pm/ShortcutInfo$Builder;I)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutInfo$Builder;->setRank(I)Landroid/content/pm/ShortcutInfo$Builder;
+
+    return-void
 .end method
 
 .method public static bridge synthetic e(Landroid/content/pm/ShortcutInfo$Builder;Landroid/graphics/drawable/Icon;)V
@@ -82,11 +78,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic g(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
+.method public static bridge synthetic g(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutManager;->addDynamicShortcuts(Ljava/util/List;)Z
+    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutManager;->enableShortcuts(Ljava/util/List;)V
 
     .line 2
     .line 3
@@ -94,11 +90,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic h(Landroid/content/pm/ShortcutManager;Ljava/util/List;Ljava/lang/CharSequence;)V
+.method public static bridge synthetic h(Landroid/content/pm/ShortcutManager;Ljava/util/List;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/content/pm/ShortcutManager;->disableShortcuts(Ljava/util/List;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutManager;->removeDynamicShortcuts(Ljava/util/List;)V
 
     .line 2
     .line 3
@@ -106,41 +102,22 @@
     return-void
 .end method
 
-.method public static bridge synthetic i(Landroid/content/pm/ShortcutInfo;)Z
+.method public static bridge synthetic i(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->isImmutable()Z
+    iput-object p1, p0, Landroid/view/inputmethod/EditorInfo;->contentMimeTypes:[Ljava/lang/String;
 
     .line 2
     .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
+    return-void
 .end method
 
-.method public static bridge synthetic j(Landroid/content/pm/ShortcutManager;Ljava/util/ArrayList;)Z
+.method public static bridge synthetic j(Landroid/content/pm/ShortcutInfo;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutManager;->addDynamicShortcuts(Ljava/util/List;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic k(Landroid/os/UserManager;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/os/UserManager;->isDemoUser()Z
+    invoke-virtual {p0}, Landroid/content/pm/ShortcutInfo;->isPinned()Z
 
     .line 2
     .line 3

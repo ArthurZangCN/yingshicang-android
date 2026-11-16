@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroidx/media3/common/util/ListenerSet$Event;
-.implements Landroidx/media3/common/util/Consumer;
+.implements Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TrackInfo$Factory;
 
 
 # instance fields
@@ -33,25 +33,39 @@
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 3
+.method public final create(ILandroidx/media3/common/TrackGroup;[I)Ljava/util/List;
+    .locals 7
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/analytics/c0;->a:Ljava/lang/Object;
 
-    check-cast v0, Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
+    move-object v1, v0
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/analytics/c0;->c:Ljava/lang/Object;
+    check-cast v1, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;
 
-    check-cast v1, Landroidx/media3/common/Timeline;
+    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/c0;->b:Ljava/lang/Object;
 
-    check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
+    move-object v2, v0
 
-    iget-object v2, p0, Landroidx/media3/exoplayer/analytics/c0;->b:Ljava/lang/Object;
+    check-cast v2, Ljava/lang/String;
 
-    invoke-static {v0, v2, v1, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->h(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;Landroidx/media3/common/Timeline;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/c0;->c:Ljava/lang/Object;
 
-    return-void
+    move-object v3, v0
+
+    check-cast v3, Ljava/lang/String;
+
+    move v4, p1
+
+    move-object v5, p2
+
+    move-object v6, p3
+
+    invoke-static/range {v1 .. v6}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->f(Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$Parameters;Ljava/lang/String;Ljava/lang/String;ILandroidx/media3/common/TrackGroup;[I)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
 .method public final invoke(Ljava/lang/Object;)V
@@ -64,15 +78,15 @@
 
     iget-object v1, p0, Landroidx/media3/exoplayer/analytics/c0;->b:Ljava/lang/Object;
 
-    check-cast v1, Landroidx/media3/common/Format;
+    check-cast v1, Landroidx/media3/exoplayer/source/LoadEventInfo;
 
     iget-object v2, p0, Landroidx/media3/exoplayer/analytics/c0;->c:Ljava/lang/Object;
 
-    check-cast v2, Landroidx/media3/exoplayer/DecoderReuseEvaluation;
+    check-cast v2, Landroidx/media3/exoplayer/source/MediaLoadData;
 
     check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
-    invoke-static {v0, v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->l(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;Landroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v0, v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->Z(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Landroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

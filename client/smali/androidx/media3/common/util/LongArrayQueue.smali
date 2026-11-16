@@ -61,7 +61,7 @@
 
     .line 3
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     if-nez p1, :cond_1
 

@@ -2,92 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/media3/exoplayer/PlayerMessage$Target;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$RunnableAtPosition;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$RunnableAtPosition;)V
     .locals 0
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/h;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$RunnableAtPosition;
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
-    .locals 0
+
+# virtual methods
+.method public final handleMessage(ILjava/lang/Object;)V
+    .locals 1
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/h;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$RunnableAtPosition;
 
-.method public static c(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
-    .locals 0
+    invoke-static {v0, p1, p2}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->d(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$RunnableAtPosition;ILjava/lang/Object;)V
 
-    .line 1
-    return-void
-.end method
-
-.method public static d(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILjava/io/IOException;Z)V
-    .locals 0
-    .param p5    # Ljava/io/IOException;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static f(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static g(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;Landroidx/media3/common/Timeline;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static h(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/common/Metadata;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static i(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static j(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILjava/io/IOException;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static k(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;Landroidx/media3/common/AdViewProvider;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static l(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;Landroidx/media3/common/MediaItem;Ljava/lang/Object;Landroidx/media3/common/AdPlaybackState;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

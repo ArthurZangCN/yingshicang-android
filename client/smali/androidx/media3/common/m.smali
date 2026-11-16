@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Lcom/google/common/base/f;
 
 
 # instance fields
@@ -34,7 +34,7 @@
 
     check-cast p1, Lcom/google/common/collect/t4;
 
-    invoke-virtual {p1}, Lcom/google/common/collect/t4;->upperBound()Lcom/google/common/collect/c1;
+    invoke-virtual {p1}, Lcom/google/common/collect/t4;->lowerBound()Lcom/google/common/collect/b1;
 
     move-result-object p1
 
@@ -43,25 +43,25 @@
     :pswitch_0
     check-cast p1, Landroidx/media3/extractor/Extractor;
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/MediaExtractorCompatInternal;->a(Landroidx/media3/extractor/Extractor;)Ljava/lang/String;
+    invoke-static {p1}, Landroidx/media3/exoplayer/source/BundledExtractorsAdapter;->a(Landroidx/media3/extractor/Extractor;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
     :pswitch_1
-    check-cast p1, Landroidx/media3/common/TrackSelectionOverride;
+    check-cast p1, Landroid/os/Bundle;
 
-    invoke-virtual {p1}, Landroidx/media3/common/TrackSelectionOverride;->toBundle()Landroid/os/Bundle;
+    invoke-static {p1}, Landroidx/media3/common/Format;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/Format;
 
     move-result-object p1
 
     return-object p1
 
     :pswitch_2
-    check-cast p1, Landroidx/media3/common/MediaItem$SubtitleConfiguration;
+    check-cast p1, Landroid/os/Bundle;
 
-    invoke-virtual {p1}, Landroidx/media3/common/MediaItem$SubtitleConfiguration;->toBundle()Landroid/os/Bundle;
+    invoke-static {p1}, Landroidx/media3/common/MediaItem$SubtitleConfiguration;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/MediaItem$SubtitleConfiguration;
 
     move-result-object p1
 

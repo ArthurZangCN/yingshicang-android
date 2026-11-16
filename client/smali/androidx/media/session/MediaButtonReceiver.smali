@@ -412,7 +412,7 @@
 
     .line 60
     .line 61
-    invoke-static {v1, p1, v2}, Landroid/support/v4/media/d;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p1, v2}, Landroid/support/v4/media/e;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 62
     .line 63
@@ -571,7 +571,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {p2}, Landroidx/core/os/a;->n(Landroid/app/ForegroundServiceStartNotAllowedException;)Ljava/lang/String;
+    invoke-static {p2}, Landroidx/media/session/a;->i(Landroid/app/ForegroundServiceStartNotAllowedException;)Ljava/lang/String;
 
     .line 9
     .line 10

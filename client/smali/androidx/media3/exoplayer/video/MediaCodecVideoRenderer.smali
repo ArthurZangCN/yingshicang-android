@@ -570,37 +570,46 @@
 .end method
 
 .method public constructor <init>(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)V
-    .locals 6
+    .locals 8
 
     .line 51
-    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$000(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$000(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
     .line 52
-    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$100(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$100(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;
 
-    move-result-object v3
+    move-result-object v4
 
     .line 53
-    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$200(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Z
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$200(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
 
-    move-result v4
+    move-result-object v5
 
     .line 54
-    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$300(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)F
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$300(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Z
 
-    move-result v5
-
-    const/4 v1, 0x2
-
-    move-object v0, p0
+    move-result v6
 
     .line 55
-    invoke-direct/range {v0 .. v5}, Landroidx/media3/exoplayer/mediacodec/MediaCodecRenderer;-><init>(ILandroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;ZF)V
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$400(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)F
+
+    move-result v7
+
+    const/4 v3, 0x2
+
+    move-object v1, p0
 
     .line 56
-    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$400(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroid/content/Context;
+    invoke-direct/range {v1 .. v7}, Landroidx/media3/exoplayer/mediacodec/MediaCodecRenderer;-><init>(Landroid/content/Context;ILandroidx/media3/exoplayer/mediacodec/MediaCodecAdapter$Factory;Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;ZF)V
+
+    .line 57
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$000(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -610,21 +619,21 @@
 
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->context:Landroid/content/Context;
 
-    .line 57
+    .line 58
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$500(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)I
 
     move-result v1
 
     iput v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->maxDroppedFramesToNotify:I
 
-    .line 58
+    .line 59
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$600(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroidx/media3/exoplayer/video/VideoSink;
 
     move-result-object v1
 
     iput-object v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->videoSink:Landroidx/media3/exoplayer/video/VideoSink;
 
-    .line 59
+    .line 60
     new-instance v1, Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
 
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$700(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Landroid/os/Handler;
@@ -639,7 +648,7 @@
 
     iput-object v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->eventDispatcher:Landroidx/media3/exoplayer/video/VideoRendererEventListener$EventDispatcher;
 
-    .line 60
+    .line 61
     iget-object v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->videoSink:Landroidx/media3/exoplayer/video/VideoSink;
 
     const/4 v2, 0x1
@@ -658,10 +667,10 @@
     :goto_0
     iput-boolean v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->ownsVideoSink:Z
 
-    .line 61
+    .line 62
     new-instance v1, Landroidx/media3/exoplayer/video/VideoFrameReleaseControl;
 
-    .line 62
+    .line 63
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$900(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)J
 
     move-result-wide v4
@@ -670,58 +679,58 @@
 
     iput-object v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->videoFrameReleaseControl:Landroidx/media3/exoplayer/video/VideoFrameReleaseControl;
 
-    .line 63
+    .line 64
     new-instance v0, Landroidx/media3/exoplayer/video/VideoFrameReleaseControl$FrameReleaseInfo;
 
     invoke-direct {v0}, Landroidx/media3/exoplayer/video/VideoFrameReleaseControl$FrameReleaseInfo;-><init>()V
 
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->videoFrameReleaseInfo:Landroidx/media3/exoplayer/video/VideoFrameReleaseControl$FrameReleaseInfo;
 
-    .line 64
+    .line 65
     invoke-static {}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->deviceNeedsNoPostProcessWorkaround()Z
 
     move-result v0
 
     iput-boolean v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->deviceNeedsNoPostProcessWorkaround:Z
 
-    .line 65
+    .line 66
     sget-object v0, Landroidx/media3/common/util/Size;->UNKNOWN:Landroidx/media3/common/util/Size;
 
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->outputResolution:Landroidx/media3/common/util/Size;
 
-    .line 66
+    .line 67
     iput v2, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->scalingMode:I
 
-    .line 67
+    .line 68
     iput v3, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->changeFrameRateStrategy:I
 
-    .line 68
+    .line 69
     sget-object v0, Landroidx/media3/common/VideoSize;->UNKNOWN:Landroidx/media3/common/VideoSize;
 
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->decodedVideoSize:Landroidx/media3/common/VideoSize;
 
-    .line 69
+    .line 70
     iput v3, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->tunnelingAudioSessionId:I
 
     const/4 v0, 0x0
 
-    .line 70
+    .line 71
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->reportedVideoSize:Landroidx/media3/common/VideoSize;
 
     const/16 v1, -0x3e8
 
-    .line 71
+    .line 72
     iput v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->rendererPriority:I
 
     const-wide v1, -0x7fffffffffffffffL    # -4.9E-324
 
-    .line 72
+    .line 73
     iput-wide v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->startPositionUs:J
 
-    .line 73
+    .line 74
     iput-wide v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->periodDurationUs:J
 
-    .line 74
+    .line 75
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$1000(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Z
 
     move-result v3
@@ -740,14 +749,14 @@
     :goto_1
     iput-object v3, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->av1SampleDependencyParser:Landroidx/media3/exoplayer/video/Av1SampleDependencyParser;
 
-    .line 75
+    .line 76
     new-instance v3, Ljava/util/PriorityQueue;
 
     invoke-direct {v3}, Ljava/util/PriorityQueue;-><init>()V
 
     iput-object v3, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->droppedDecoderInputBufferTimestamps:Ljava/util/PriorityQueue;
 
-    .line 76
+    .line 77
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$1100(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)J
 
     move-result-wide v3
@@ -756,7 +765,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 77
+    .line 78
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$1100(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)J
 
     move-result-wide v1
@@ -765,7 +774,7 @@
 
     iput-wide v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->minEarlyUsToDropDecoderInput:J
 
-    .line 78
+    .line 79
     new-instance v1, Landroidx/media3/exoplayer/video/VideoFrameReleaseEarlyTimeForecaster;
 
     const/high16 v2, 0x3f800000    # 1.0f
@@ -776,14 +785,14 @@
 
     goto :goto_2
 
-    .line 79
+    .line 80
     :cond_2
     iput-wide v1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->minEarlyUsToDropDecoderInput:J
 
-    .line 80
+    .line 81
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->videoFrameReleaseEarlyTimeForecaster:Landroidx/media3/exoplayer/video/VideoFrameReleaseEarlyTimeForecaster;
 
-    .line 81
+    .line 82
     :goto_2
     invoke-static {p1}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;->access$1200(Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer$Builder;)Z
 
@@ -791,7 +800,7 @@
 
     iput-boolean p1, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->enableMediaCodecBufferDecodeOnlyFlag:Z
 
-    .line 82
+    .line 83
     iput-object v0, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->scrubbingModeParameters:Landroidx/media3/exoplayer/ScrubbingModeParameters;
 
     return-void
@@ -913,6 +922,65 @@
     return-void
 .end method
 
+.method private static cannotChangeSurfaceFrameRateMidPlayback()Z
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x1e
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_1
+
+    .line 6
+    .line 7
+    if-ne v0, v1, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    const-string v1, "MiTV"
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    .line 23
+    :goto_1
+    return v0
+.end method
+
 .method private configureVideoSink()V
     .locals 3
 
@@ -930,7 +998,7 @@
     .line 6
     .line 7
     .line 8
-    sget-object v2, Lcom/google/common/util/concurrent/i;->INSTANCE:Lcom/google/common/util/concurrent/i;
+    sget-object v2, Lcom/google/common/util/concurrent/k;->INSTANCE:Lcom/google/common/util/concurrent/k;
 
     .line 9
     .line 10
@@ -1077,7 +1145,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, p1, p2, v1}, Landroid/support/v4/media/a;->e(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, p2, v1}, Landroid/support/v4/media/e;->n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
@@ -1128,7 +1196,7 @@
 
     .line 35
     .line 36
-    invoke-static {p1, p2}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 37
     .line 38
@@ -1145,7 +1213,7 @@
 
     .line 43
     .line 44
-    invoke-static {p1, p2}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -1194,7 +1262,7 @@
 
     .line 64
     .line 65
-    invoke-static {p1, p0}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 66
     .line 67
@@ -1210,7 +1278,7 @@
 
     .line 71
     .line 72
-    invoke-static {p1, p0}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 73
     .line 74
@@ -1226,7 +1294,7 @@
 
     .line 78
     .line 79
-    invoke-static {p1, p0}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 80
     .line 81
@@ -1250,7 +1318,7 @@
 
     .line 89
     .line 90
-    invoke-static {p1, p0}, Landroid/support/v4/media/f;->l(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, p0}, Landroid/support/v4/media/a;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 91
     .line 92
@@ -1295,7 +1363,7 @@
 
     .line 112
     .line 113
-    invoke-static {p1, p0}, Landroid/support/v4/media/f;->l(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, p0}, Landroid/support/v4/media/a;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 114
     .line 115
@@ -1313,7 +1381,7 @@
 
     .line 120
     .line 121
-    invoke-static {p0, p2, p3, p1}, Landroid/support/v4/media/f;->j(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p2, p3, p1}, Landroid/support/v4/media/e;->m(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 122
     .line 123
@@ -1329,7 +1397,7 @@
 
     .line 127
     .line 128
-    invoke-static {p1, p0}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p0}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 129
     .line 130
@@ -5157,7 +5225,7 @@
     if-nez v0, :cond_0
 
     .line 5
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object p0
 
@@ -5383,7 +5451,7 @@
     move-result v0
 
     .line 27
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 28
     .line 29
@@ -6660,7 +6728,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {v1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 11
     .line 12
@@ -6739,7 +6807,7 @@
 
     .line 44
     .line 45
-    invoke-static {v2}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {v2}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 46
     .line 47
@@ -6766,7 +6834,7 @@
     const/4 p0, 0x2
 
     .line 57
-    invoke-static {p0}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p0}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 58
     .line 59
@@ -6790,7 +6858,7 @@
 
     .line 67
     .line 68
-    invoke-virtual {v4, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroidx/media3/common/Format;)Z
+    invoke-virtual {v4, p0, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroid/content/Context;Landroidx/media3/common/Format;)Z
 
     .line 69
     .line 70
@@ -6830,7 +6898,7 @@
 
     .line 86
     .line 87
-    invoke-virtual {v7, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroidx/media3/common/Format;)Z
+    invoke-virtual {v7, p0, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroid/content/Context;Landroidx/media3/common/Format;)Z
 
     .line 88
     .line 89
@@ -7001,54 +7069,54 @@
     .line 158
     .line 159
     .line 160
-    move-result-object p0
+    move-result-object p1
 
     .line 161
-    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     .line 162
     .line 163
     .line 164
-    move-result p1
+    move-result v0
 
     .line 165
-    if-nez p1, :cond_c
+    if-nez v0, :cond_c
 
     .line 166
     .line 167
-    invoke-static {p0, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->getDecoderInfosSortedByFormatSupport(Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->getDecoderInfosSortedByFormatSupport(Landroid/content/Context;Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
 
     .line 168
     .line 169
     .line 170
-    move-result-object p0
+    move-result-object p1
 
     .line 171
-    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 172
     .line 173
     .line 174
-    move-result-object p0
+    move-result-object p1
 
     .line 175
-    check-cast p0, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;
+    check-cast p1, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;
 
     .line 176
     .line 177
-    invoke-virtual {p0, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroidx/media3/common/Format;)Z
+    invoke-virtual {p1, p0, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroid/content/Context;Landroidx/media3/common/Format;)Z
 
     .line 178
     .line 179
     .line 180
-    move-result p1
+    move-result p0
 
     .line 181
-    if-eqz p1, :cond_c
+    if-eqz p0, :cond_c
 
     .line 182
     .line 183
-    invoke-virtual {p0, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isSeamlessAdaptationSupported(Landroidx/media3/common/Format;)Z
+    invoke-virtual {p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isSeamlessAdaptationSupported(Landroidx/media3/common/Format;)Z
 
     .line 184
     .line 185
@@ -7065,7 +7133,7 @@
     .line 190
     .line 191
     :cond_c
-    invoke-static {v6, v7, v1, v4, v3}, Landroidx/media3/exoplayer/w1;->f(IIIII)I
+    invoke-static {v6, v7, v1, v4, v3}, Landroidx/media3/exoplayer/a2;->f(IIIII)I
 
     .line 192
     .line 193
@@ -7401,54 +7469,137 @@
     .line 35
     .line 36
     :cond_2
-    move v7, v1
+    iget v2, p0, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->changeFrameRateStrategy:I
 
     .line 37
-    new-instance v1, Landroidx/media3/exoplayer/DecoderReuseEvaluation;
-
     .line 38
+    const/high16 v3, -0x80000000
+
     .line 39
-    iget-object v3, p1, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->name:Ljava/lang/String;
-
     .line 40
+    if-eq v2, v3, :cond_3
+
     .line 41
-    if-eqz v7, :cond_3
-
     .line 42
-    .line 43
-    const/4 p1, 0x0
+    iget v2, p2, Landroidx/media3/common/Format;->frameRate:F
 
+    .line 43
     .line 44
-    :goto_0
-    move v6, p1
+    const/high16 v3, -0x40800000    # -1.0f
 
     .line 45
-    goto :goto_1
-
     .line 46
-    :cond_3
-    iget p1, v0, Landroidx/media3/exoplayer/DecoderReuseEvaluation;->result:I
+    cmpl-float v4, v2, v3
 
     .line 47
     .line 48
-    goto :goto_0
+    if-eqz v4, :cond_3
 
     .line 49
-    :goto_1
-    move-object v2, v1
-
     .line 50
-    move-object v4, p2
+    iget v4, p3, Landroidx/media3/common/Format;->frameRate:F
 
     .line 51
-    move-object v5, p3
-
     .line 52
-    invoke-direct/range {v2 .. v7}, Landroidx/media3/exoplayer/DecoderReuseEvaluation;-><init>(Ljava/lang/String;Landroidx/media3/common/Format;Landroidx/media3/common/Format;II)V
+    cmpl-float v3, v4, v3
 
     .line 53
     .line 54
+    if-eqz v3, :cond_3
+
     .line 55
+    .line 56
+    sub-float/2addr v4, v2
+
+    .line 57
+    invoke-static {v4}, Ljava/lang/Math;->abs(F)F
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v2
+
+    .line 61
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    .line 62
+    .line 63
+    cmpl-float v2, v2, v3
+
+    .line 64
+    .line 65
+    if-lez v2, :cond_3
+
+    .line 66
+    .line 67
+    invoke-static {}, Landroidx/media3/exoplayer/video/MediaCodecVideoRenderer;->cannotChangeSurfaceFrameRateMidPlayback()Z
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v2
+
+    .line 71
+    if-eqz v2, :cond_3
+
+    .line 72
+    .line 73
+    const/high16 v2, 0x10000
+
+    .line 74
+    .line 75
+    or-int/2addr v1, v2
+
+    .line 76
+    :cond_3
+    move v7, v1
+
+    .line 77
+    new-instance v1, Landroidx/media3/exoplayer/DecoderReuseEvaluation;
+
+    .line 78
+    .line 79
+    iget-object v3, p1, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->name:Ljava/lang/String;
+
+    .line 80
+    .line 81
+    if-eqz v7, :cond_4
+
+    .line 82
+    .line 83
+    const/4 p1, 0x0
+
+    .line 84
+    :goto_0
+    move v6, p1
+
+    .line 85
+    goto :goto_1
+
+    .line 86
+    :cond_4
+    iget p1, v0, Landroidx/media3/exoplayer/DecoderReuseEvaluation;->result:I
+
+    .line 87
+    .line 88
+    goto :goto_0
+
+    .line 89
+    :goto_1
+    move-object v2, v1
+
+    .line 90
+    move-object v4, p2
+
+    .line 91
+    move-object v5, p3
+
+    .line 92
+    invoke-direct/range {v2 .. v7}, Landroidx/media3/exoplayer/DecoderReuseEvaluation;-><init>(Ljava/lang/String;Landroidx/media3/common/Format;Landroidx/media3/common/Format;II)V
+
+    .line 93
+    .line 94
+    .line 95
     return-object v1
 .end method
 
@@ -7472,7 +7623,7 @@
 
     .line 7
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -8545,7 +8696,7 @@
     move-result-object p1
 
     .line 3
-    invoke-static {p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->getDecoderInfosSortedByFormatSupport(Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
+    invoke-static {v0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->getDecoderInfosSortedByFormatSupport(Landroid/content/Context;Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
 
     move-result-object p1
 
@@ -9648,6 +9799,7 @@
     :goto_2
     return-void
 
+    .line 227
     :pswitch_data_0
     .packed-switch 0x10
         :pswitch_2
@@ -10303,7 +10455,7 @@
 
     .line 22
     :goto_1
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 23
     .line 24
@@ -12410,7 +12562,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Landroidx/media3/common/VideoFrameProcessor;->REDRAW:Lcom/google/common/collect/f2;
+    sget-object v0, Landroidx/media3/common/VideoFrameProcessor;->REDRAW:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3

@@ -2,95 +2,59 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+.field public final synthetic b:Landroid/util/Pair;
+
+.field public final synthetic c:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+.field public final synthetic d:Landroidx/media3/exoplayer/source/MediaLoadData;
+
+.field public final synthetic e:I
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/Renderer;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
     .locals 0
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/v1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/v1;->b:Landroid/util/Pair;
+
+    iput-object p3, p0, Landroidx/media3/exoplayer/v1;->c:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+    iput-object p4, p0, Landroidx/media3/exoplayer/v1;->d:Landroidx/media3/exoplayer/source/MediaLoadData;
+
+    iput p5, p0, Landroidx/media3/exoplayer/v1;->e:I
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/Renderer;JJ)J
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 5
 
     .line 1
-    invoke-interface {p0}, Landroidx/media3/exoplayer/Renderer;->getState()I
+    iget-object v0, p0, Landroidx/media3/exoplayer/v1;->d:Landroidx/media3/exoplayer/source/MediaLoadData;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
+    iget v1, p0, Landroidx/media3/exoplayer/v1;->e:I
 
-    .line 5
-    const/4 p2, 0x1
+    iget-object v2, p0, Landroidx/media3/exoplayer/v1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
 
-    .line 6
-    if-ne p1, p2, :cond_1
+    iget-object v3, p0, Landroidx/media3/exoplayer/v1;->b:Landroid/util/Pair;
 
-    .line 7
-    .line 8
-    invoke-interface {p0}, Landroidx/media3/exoplayer/Renderer;->isReady()Z
+    iget-object v4, p0, Landroidx/media3/exoplayer/v1;->c:Landroidx/media3/exoplayer/source/LoadEventInfo;
 
-    .line 9
-    .line 10
-    .line 11
-    move-result p1
+    invoke-static {v2, v3, v4, v0, v1}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->l(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
 
-    .line 12
-    if-nez p1, :cond_0
-
-    .line 13
-    .line 14
-    invoke-interface {p0}, Landroidx/media3/exoplayer/Renderer;->isEnded()Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result p0
-
-    .line 18
-    if-eqz p0, :cond_1
-
-    .line 19
-    .line 20
-    :cond_0
-    const-wide/32 p0, 0xf4240
-
-    .line 21
-    .line 22
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_1
-    const-wide/16 p0, 0x2710
-
-    .line 25
-    .line 26
-    :goto_0
-    return-wide p0
-.end method
-
-.method public static c(Landroidx/media3/exoplayer/Renderer;)V
-    .locals 0
-
-    .line 1
     return-void
-.end method
-
-.method public static d(Landroidx/media3/exoplayer/Renderer;FF)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/Renderer;J)Z
-    .locals 0
-
-    .line 1
-    const/4 p0, 0x0
-
-    return p0
 .end method

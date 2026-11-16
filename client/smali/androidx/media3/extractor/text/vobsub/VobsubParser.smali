@@ -212,7 +212,7 @@
 
     iget-object v1, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser;->scratch:Landroidx/media3/common/util/ParsableByteArray;
 
-    invoke-virtual {v0, v1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseSpu(Landroidx/media3/common/util/ParsableByteArray;)V
+    invoke-static {v0, v1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->access$000(Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;Landroidx/media3/common/util/ParsableByteArray;)V
 
     .line 16
     iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser;->cueBuilder:Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;
@@ -277,7 +277,7 @@
     if-eqz p1, :cond_0
 
     .line 6
-    invoke-static {p1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
@@ -287,7 +287,7 @@
     goto :goto_1
 
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object p1
 
@@ -312,7 +312,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/b;->a(Landroidx/media3/extractor/text/SubtitleParser;[BLandroidx/media3/extractor/text/SubtitleParser$OutputOptions;Landroidx/media3/common/util/Consumer;)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/d;->a(Landroidx/media3/extractor/text/SubtitleParser;[BLandroidx/media3/extractor/text/SubtitleParser$OutputOptions;Landroidx/media3/common/util/Consumer;)V
 
     return-void
 .end method
@@ -321,7 +321,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/b;->b(Landroidx/media3/extractor/text/SubtitleParser;[BII)Landroidx/media3/extractor/text/Subtitle;
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/extractor/text/d;->b(Landroidx/media3/extractor/text/SubtitleParser;[BII)Landroidx/media3/extractor/text/Subtitle;
 
     move-result-object p1
 
@@ -332,7 +332,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/extractor/text/b;->c(Landroidx/media3/extractor/text/SubtitleParser;)V
+    invoke-static {p0}, Landroidx/media3/extractor/text/d;->c(Landroidx/media3/extractor/text/SubtitleParser;)V
 
     return-void
 .end method

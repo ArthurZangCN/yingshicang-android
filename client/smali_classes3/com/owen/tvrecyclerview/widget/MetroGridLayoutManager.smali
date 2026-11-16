@@ -295,7 +295,7 @@
 
     .line 42
     .line 43
-    invoke-static {p2}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 44
     .line 45
@@ -1064,7 +1064,7 @@
 
     .line 85
     .line 86
-    invoke-static {v1, v10}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v10}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 87
     .line 88

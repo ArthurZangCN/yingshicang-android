@@ -1,12 +1,16 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: 影视仓_6.1.8_opt.apk
+apkFileName: 影视仓_6.2.5_64位.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
+- png
+- webp
+- res/raw/md5.txt
+- res/raw/md52
+- res/raw/token
 - imy
 - assets/dexopt/baseline.prof
 - assets/dexopt/baseline.profm
-- png
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -17,17 +21,73 @@ sdkInfo:
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
-  DebugProbesKt.bin: '8'
   androidsupportmultidexversion.txt: '8'
+  DebugProbesKt.bin: '8'
+  jetty-dir.css: '8'
   kotlin-tooling-metadata.json: '8'
+  XPP3_1.1.3.2_VERSION: '8'
+  XPP3_1.1.3.3_VERSION: '8'
   com/qq/jce/wup/wup.properties: '8'
+  javax/servlet/LocalStrings.properties: '8'
+  javax/servlet/LocalStrings_fr.properties: '8'
+  javax/servlet/LocalStrings_ja.properties: '8'
+  javax/servlet/http/LocalStrings.properties: '8'
+  javax/servlet/http/LocalStrings_es.properties: '8'
+  javax/servlet/http/LocalStrings_fr.properties: '8'
+  javax/servlet/http/LocalStrings_ja.properties: '8'
   okhttp3/internal/publicsuffix/NOTICE: '8'
   okhttp3/internal/publicsuffix/PublicSuffixDatabase.gz: '8'
+  org/bouncycastle/pqc/crypto/picnic/lowmcL1.bin.properties: '8'
+  org/bouncycastle/pqc/crypto/picnic/lowmcL3.bin.properties: '8'
+  org/bouncycastle/pqc/crypto/picnic/lowmcL5.bin.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+  org/eclipse/jetty/favicon.ico: '8'
+  org/eclipse/jetty/http/encoding.properties: '8'
+  org/eclipse/jetty/http/mime.properties: '8'
+  org/eclipse/jetty/http/useragents: '8'
+  org/eclipse/jetty/server/handler/jmx/AbstractHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/ContextHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/ContextHandlerCollection-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/HandlerCollection-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/HandlerWrapper-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/StatisticsHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/AbstractConnector-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Connector-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Handler-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/HandlerContainer-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/NCSARequestLog-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Server-mbean.properties: '8'
+  org/eclipse/jetty/server/nio/jmx/SelectChannelConnector-mbean.properties: '8'
+  org/eclipse/jetty/server/session/jmx/AbstractSessionManager-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/FilterMapping-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/Holder-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletContextHandler-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletHandler-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletHolder-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletMapping-mbean.properties: '8'
+  org/fourthline/cling/support/avtransport/metadata-1.0-avt.xsd: '8'
+  org/fourthline/cling/support/avtransport/metadata-1.01-avt.xsd: '8'
+  org/fourthline/cling/support/contentdirectory/descriptor/dc-elements-1.1.xsd: '8'
+  org/fourthline/cling/support/contentdirectory/descriptor/didl-lite-1.0.xsd: '8'
+  org/fourthline/cling/support/contentdirectory/descriptor/upnp-cds-1.0.xsd: '8'
+  org/fourthline/cling/support/renderingcontrol/metadata-1.0-rcs.xsd: '8'
+  org/seamless/schemas/xhtml1-strict.xsd: '8'
+  org/seamless/schemas/xml.xsd: '8'
+  org/seamless/swing/logging/img/configure.png: '0'
+  org/seamless/swing/logging/img/copyclipboard.png: '0'
+  org/seamless/swing/logging/img/debug.png: '0'
+  org/seamless/swing/logging/img/info.png: '0'
+  org/seamless/swing/logging/img/pause.png: '0'
+  org/seamless/swing/logging/img/removetext.png: '0'
+  org/seamless/swing/logging/img/trace.png: '0'
+  org/seamless/swing/logging/img/viewtext.png: '0'
+  org/seamless/swing/logging/img/warn.png: '0'
 usesFramework:
   ids:
   - 1
   tag: null
 version: 2.7.0-dirty
 versionInfo:
-  versionCode: '182'
-  versionName: 6.1.8
+  versionCode: '189'
+  versionName: 6.2.5

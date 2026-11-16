@@ -33,10 +33,10 @@
 
 .field public final embeddedClosedCaptionTrackGroupIndex:I
 
-.field public final embeddedClosedCaptionTrackOriginalFormats:Lcom/google/common/collect/f2;
+.field public final embeddedClosedCaptionTrackOriginalFormats:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Format;",
             ">;"
         }
@@ -55,12 +55,12 @@
 
 
 # direct methods
-.method private constructor <init>(II[IIIIILcom/google/common/collect/f2;)V
+.method private constructor <init>(II[IIIIILcom/google/common/collect/e2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II[IIIII",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Format;",
             ">;)V"
         }
@@ -100,19 +100,19 @@
 
     .line 17
     .line 18
-    iput-object p8, p0, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;->embeddedClosedCaptionTrackOriginalFormats:Lcom/google/common/collect/f2;
+    iput-object p8, p0, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;->embeddedClosedCaptionTrackOriginalFormats:Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
     return-void
 .end method
 
-.method public static embeddedClosedCaptionTrack([IILcom/google/common/collect/f2;)Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;
+.method public static embeddedClosedCaptionTrack([IILcom/google/common/collect/e2;)Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([II",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Format;",
             ">;)",
             "Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;"
@@ -151,7 +151,7 @@
     move-object v8, p2
 
     .line 12
-    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/f2;)V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/e2;)V
 
     .line 13
     .line 14
@@ -170,7 +170,7 @@
     const/4 v7, -0x1
 
     .line 4
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 5
     .line 6
@@ -199,7 +199,7 @@
     move v4, p1
 
     .line 15
-    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/f2;)V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/e2;)V
 
     .line 16
     .line 17
@@ -225,7 +225,7 @@
     const/4 v6, -0x1
 
     .line 7
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -251,7 +251,7 @@
     move v7, p0
 
     .line 17
-    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/f2;)V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/e2;)V
 
     .line 18
     .line 19
@@ -270,7 +270,7 @@
     const/4 v7, -0x1
 
     .line 4
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 5
     .line 6
@@ -299,7 +299,7 @@
     move v6, p4
 
     .line 15
-    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/f2;)V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;-><init>(II[IIIIILcom/google/common/collect/e2;)V
 
     .line 16
     .line 17

@@ -3,22 +3,25 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/exoplayer/SuitableOutputChecker$Callback;
 .implements Landroidx/media3/common/util/ListenerSet$Event;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+.field public final synthetic a:I
+
+.field public final synthetic b:Landroidx/media3/exoplayer/ExoPlayerImpl;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImpl;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImpl;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/h0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+    iput p2, p0, Landroidx/media3/exoplayer/h0;->a:I
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/h0;->b:Landroidx/media3/exoplayer/ExoPlayerImpl;
 
     return-void
 .end method
@@ -26,25 +29,30 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 1
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/h0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+    iget v0, p0, Landroidx/media3/exoplayer/h0;->a:I
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/h0;->b:Landroidx/media3/exoplayer/ExoPlayerImpl;
 
     check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->t(Landroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/common/Player$Listener;)V
+    packed-switch v0, :pswitch_data_0
+
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->t(Landroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/common/Player$Listener;)V
 
     return-void
-.end method
 
-.method public final onSelectedOutputSuitabilityChanged(Z)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/h0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
-
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->A(Landroidx/media3/exoplayer/ExoPlayerImpl;Z)V
+    :pswitch_0
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->c(Landroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/common/Player$Listener;)V
 
     return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

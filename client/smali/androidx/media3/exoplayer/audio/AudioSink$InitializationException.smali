@@ -38,7 +38,7 @@
     const-string v2, ", "
 
     .line 6
-    invoke-static {v0, p1, v1, p2, v2}, Landroid/support/v4/media/g;->f(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1, p2, v2}, Landroid/support/v4/media/d;->e(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 

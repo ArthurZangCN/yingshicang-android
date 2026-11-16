@@ -289,7 +289,7 @@
 
     .line 57
     .line 58
-    invoke-static {p3}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p3}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 59
     .line 60
@@ -565,7 +565,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -834,7 +834,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-static {v0, v1}, Landroid/support/v4/media/d;->c(Ljava/util/ArrayList;I)Ljava/lang/Object;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->b(Ljava/util/ArrayList;I)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -1742,7 +1742,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -2080,7 +2080,7 @@
     const/4 v3, 0x2
 
     .line 42
-    invoke-static {v2, v3}, Landroid/support/v4/media/d;->c(Ljava/util/ArrayList;I)Ljava/lang/Object;
+    invoke-static {v2, v3}, Landroid/support/v4/media/a;->b(Ljava/util/ArrayList;I)Ljava/lang/Object;
 
     .line 43
     .line 44
@@ -2781,7 +2781,7 @@
 
     .line 16
     :goto_2
-    invoke-static {v11}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v11}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 17
     iget-object v6, v0, Landroidx/media3/exoplayer/source/chunk/ChunkSampleStream;->mediaChunks:Ljava/util/ArrayList;
@@ -3885,7 +3885,7 @@
     xor-int/2addr p3, v1
 
     .line 19
-    invoke-static {p3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 20
     .line 21

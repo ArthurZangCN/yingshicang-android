@@ -42,7 +42,7 @@
 
 
 # instance fields
-.field private final canonicalPath$delegate:Lr3/d;
+.field private final canonicalPath$delegate:Lv3/d;
 
 .field private final coordinatorProducer:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
@@ -186,11 +186,11 @@
 
     invoke-direct {p1, p0}, Landroidx/datastore/core/okio/OkioStorage$canonicalPath$2;-><init>(Landroidx/datastore/core/okio/OkioStorage;)V
 
-    invoke-static {p1}, Lr3/e;->b(Lkotlin/jvm/functions/Function0;)Lr3/l;
+    invoke-static {p1}, Lv3/e;->b(Lkotlin/jvm/functions/Function0;)Lv3/l;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/datastore/core/okio/OkioStorage;->canonicalPath$delegate:Lr3/d;
+    iput-object p1, p0, Landroidx/datastore/core/okio/OkioStorage;->canonicalPath$delegate:Lv3/d;
 
     return-void
 .end method
@@ -264,11 +264,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/datastore/core/okio/OkioStorage;->canonicalPath$delegate:Lr3/d;
+    iget-object v0, p0, Landroidx/datastore/core/okio/OkioStorage;->canonicalPath$delegate:Lv3/d;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lr3/d;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lv3/d;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5

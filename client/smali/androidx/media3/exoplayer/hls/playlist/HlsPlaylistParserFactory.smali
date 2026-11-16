@@ -37,3 +37,6 @@
         }
     .end annotation
 .end method
+
+.method public abstract setAdblock(Z)V
+.end method

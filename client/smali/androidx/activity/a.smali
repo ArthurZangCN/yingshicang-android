@@ -29,404 +29,288 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 5
 
     .line 1
     iget v0, p0, Landroidx/activity/a;->a:I
 
     .line 2
     .line 3
-    const-string v1, "this$0"
+    const/4 v1, 0x1
 
     .line 4
-    .line 5
     iget-object v2, p0, Landroidx/activity/a;->b:Ljava/lang/Object;
 
+    .line 5
     .line 6
-    .line 7
     packed-switch v0, :pswitch_data_0
 
+    .line 7
     .line 8
     .line 9
+    check-cast v2, Lxyz/doikki/videoplayer/player/VideoView;
+
     .line 10
-    check-cast v2, Lk4/f;
-
     .line 11
+    iget-object v0, v2, Lxyz/doikki/videoplayer/player/VideoView;->y:Landroid/view/View;
+
     .line 12
-    iget-object v0, v2, Lk4/n;->i:Lk4/q$a;
-
     .line 13
+    if-eqz v0, :cond_0
+
     .line 14
-    check-cast v0, Lk4/i;
-
     .line 15
+    const/16 v1, 0x8
+
     .line 16
-    iget-object v0, v0, Lk4/i;->b:Lk4/j;
-
     .line 17
-    .line 18
-    iget-boolean v1, v0, Lk4/j;->o:Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
+    .line 18
     .line 19
     .line 20
-    if-eqz v1, :cond_0
-
-    .line 21
-    .line 22
-    iget-boolean v1, v0, Lk4/j;->j:Z
-
-    .line 23
-    .line 24
-    if-eqz v1, :cond_0
-
-    .line 25
-    .line 26
-    const/16 v1, 0xc
-
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    .line 29
-    .line 30
-    .line 31
-    const-wide/16 v2, 0x64
-
-    .line 32
-    .line 33
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
-
-    .line 34
-    .line 35
-    .line 36
     :cond_0
     return-void
 
-    .line 37
+    .line 21
     :pswitch_0
-    check-cast v2, Lcom/google/android/material/timepicker/MaterialTimePicker;
+    check-cast v2, Lu4/j;
+
+    .line 22
+    .line 23
+    const-wide/16 v3, 0x0
+
+    .line 24
+    .line 25
+    iput-wide v3, v2, Lu4/j;->u:J
+
+    .line 26
+    .line 27
+    iput-boolean v1, v2, Lu4/j;->p:Z
+
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :pswitch_1
+    check-cast v2, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;
+
+    .line 31
+    .line 32
+    sget-object v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->A:[Ljava/lang/Class;
+
+    .line 33
+    .line 34
+    invoke-virtual {v2}, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->k()V
+
+    .line 35
+    .line 36
+    .line 37
+    return-void
 
     .line 38
-    .line 39
-    invoke-static {v2}, Lcom/google/android/material/timepicker/MaterialTimePicker;->c(Lcom/google/android/material/timepicker/MaterialTimePicker;)V
+    :pswitch_2
+    check-cast v2, Lcom/google/android/material/search/SearchBar;
 
+    .line 39
     .line 40
+    invoke-static {v2}, Lcom/google/android/material/search/SearchBar;->b(Lcom/google/android/material/search/SearchBar;)V
+
     .line 41
     .line 42
-    return-void
-
     .line 43
-    :pswitch_1
-    check-cast v2, Landroid/view/View;
+    return-void
 
     .line 44
-    .line 45
-    invoke-static {v2}, Lcom/google/android/material/datepicker/d;->b(Landroid/view/View;)V
+    :pswitch_3
+    check-cast v2, Lcom/github/tvbox/osc/ui/dialog/p0;
 
+    .line 45
     .line 46
+    iget-object v0, v2, Lcom/github/tvbox/osc/ui/dialog/p0;->a:Lcom/github/tvbox/osc/ui/dialog/q0;
+
     .line 47
     .line 48
-    return-void
+    invoke-virtual {v0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
     .line 49
-    :pswitch_2
-    check-cast v2, Lcom/github/tvbox/osc/util/js/SpiderFm;
-
     .line 50
     .line 51
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/js/SpiderFm;->c(Lcom/github/tvbox/osc/util/js/SpiderFm;)V
+    move-result-object v0
 
     .line 52
+    const-string v1, "\u67e5\u8be2\u5931\u8d25\uff0c\u8bf7\u91cd\u8bd5"
+
     .line 53
     .line 54
-    return-void
+    const/4 v2, 0x0
 
     .line 55
-    :pswitch_3
-    check-cast v2, Lcom/github/tvbox/osc/ui/view/ChoosePlayPopUp;
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     .line 56
     .line 57
-    sget v0, Lcom/github/tvbox/osc/ui/view/ChoosePlayPopUp;->r:I
-
     .line 58
+    move-result-object v0
+
     .line 59
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 60
     .line 61
     .line 62
-    invoke-virtual {v2}, Lcom/github/tvbox/osc/ui/view/ChoosePlayPopUp;->b()V
+    return-void
 
     .line 63
+    :pswitch_4
+    check-cast v2, Lcom/github/tvbox/osc/parse/CustomWebView;
+
     .line 64
     .line 65
-    return-void
+    sget v0, Lcom/github/tvbox/osc/parse/CustomWebView;->i:I
 
     .line 66
-    :pswitch_4
-    check-cast v2, Lj1/k;
-
     .line 67
-    .line 68
-    iget-object v0, v2, Lj1/k;->a:Landroid/content/Context;
+    invoke-virtual {v2, v1}, Lcom/github/tvbox/osc/parse/CustomWebView;->b(Z)V
 
+    .line 68
     .line 69
     .line 70
-    const/4 v1, 0x0
-
-    .line 71
-    const/4 v2, 0x1
-
-    .line 72
-    invoke-static {v0, v1, v2}, Lw1/a$a;->a(Landroid/content/Context;ZZ)V
-
-    .line 73
-    .line 74
-    .line 75
     return-void
 
-    .line 76
+    .line 71
     :pswitch_5
-    check-cast v2, Lcom/github/tvbox/osc/bean/CastBean;
+    check-cast v2, Lg1/c;
 
+    .line 72
+    .line 73
+    const-string v0, "this$0"
+
+    .line 74
+    .line 75
+    invoke-static {v2, v0}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 76
     .line 77
     .line 78
-    invoke-static {v2}, Lj1/a;->c(Lcom/github/tvbox/osc/bean/CastBean;)V
+    iget-object v0, v2, Lg1/c;->b:Le1/j;
 
     .line 79
     .line 80
-    .line 81
-    return-void
+    if-eqz v0, :cond_1
 
+    .line 81
     .line 82
-    :pswitch_6
-    check-cast v2, Lcom/github/tvbox/osc/player/controller/VodController$t;
+    invoke-interface {v0}, Le1/j;->a()V
 
     .line 83
     .line 84
-    iget-object v0, v2, Lcom/github/tvbox/osc/player/controller/VodController$t;->b:Lcom/github/tvbox/osc/player/controller/VodController;
-
     .line 85
-    .line 86
-    iget-object v0, v0, Lcom/github/tvbox/osc/player/controller/VodController;->V:Landroid/widget/LinearLayout;
-
-    .line 87
-    .line 88
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
-
-    .line 89
-    .line 90
-    .line 91
-    return-void
-
-    .line 92
-    :pswitch_7
-    check-cast v2, Lcom/github/tvbox/osc/player/controller/VodController;
-
-    .line 93
-    .line 94
-    invoke-virtual {v2}, Lcom/github/tvbox/osc/player/controller/VodController;->t()V
-
-    .line 95
-    .line 96
-    .line 97
-    return-void
-
-    .line 98
-    :pswitch_8
-    check-cast v2, Lq0/c;
-
-    .line 99
-    .line 100
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 101
-    .line 102
-    .line 103
-    iget-object v0, v2, Lq0/c;->b:Lo0/j;
-
-    .line 104
-    .line 105
-    if-eqz v0, :cond_1
-
-    .line 106
-    .line 107
-    invoke-interface {v0}, Lo0/j;->a()V
-
-    .line 108
-    .line 109
-    .line 110
     :cond_1
     return-void
 
-    .line 111
+    .line 86
+    :pswitch_6
+    check-cast v2, Lcom/airbnb/lottie/i0;
+
+    .line 87
+    .line 88
+    sget-object v0, Lcom/airbnb/lottie/i0;->e:Ljava/util/concurrent/ExecutorService;
+
+    .line 89
+    .line 90
+    invoke-virtual {v2}, Lcom/airbnb/lottie/i0;->d()V
+
+    .line 91
+    .line 92
+    .line 93
+    return-void
+
+    .line 94
+    :pswitch_7
+    check-cast v2, Landroidx/room/RoomTrackingLiveData;
+
+    .line 95
+    .line 96
+    invoke-static {v2}, Landroidx/room/RoomTrackingLiveData;->b(Landroidx/room/RoomTrackingLiveData;)V
+
+    .line 97
+    .line 98
+    .line 99
+    return-void
+
+    .line 100
+    :pswitch_8
+    check-cast v2, Landroidx/room/QueryInterceptorDatabase;
+
+    .line 101
+    .line 102
+    invoke-static {v2}, Landroidx/room/QueryInterceptorDatabase;->i(Landroidx/room/QueryInterceptorDatabase;)V
+
+    .line 103
+    .line 104
+    .line 105
+    return-void
+
+    .line 106
     :pswitch_9
-    check-cast v2, Landroidx/room/QueryInterceptorStatement;
+    check-cast v2, Landroidx/media3/exoplayer/dash/DashMediaSource;
+
+    .line 107
+    .line 108
+    invoke-static {v2}, Landroidx/media3/exoplayer/dash/DashMediaSource;->b(Landroidx/media3/exoplayer/dash/DashMediaSource;)V
+
+    .line 109
+    .line 110
+    .line 111
+    return-void
 
     .line 112
-    .line 113
-    invoke-static {v2}, Landroidx/room/QueryInterceptorStatement;->c(Landroidx/room/QueryInterceptorStatement;)V
-
-    .line 114
-    .line 115
-    .line 116
-    return-void
-
-    .line 117
     :pswitch_a
-    check-cast v2, Landroidx/room/AutoCloser;
-
-    .line 118
-    .line 119
-    invoke-static {v2}, Landroidx/room/AutoCloser;->b(Landroidx/room/AutoCloser;)V
-
-    .line 120
-    .line 121
-    .line 122
-    return-void
-
-    .line 123
-    :pswitch_b
-    check-cast v2, Landroid/os/HandlerThread;
-
-    .line 124
-    .line 125
-    invoke-virtual {v2}, Landroid/os/HandlerThread;->quit()Z
-
-    .line 126
-    .line 127
-    .line 128
-    return-void
-
-    .line 129
-    :pswitch_c
-    check-cast v2, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;
-
-    .line 130
-    .line 131
-    invoke-static {v2}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->R(Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;)V
-
-    .line 132
-    .line 133
-    .line 134
-    return-void
-
-    .line 135
-    :pswitch_d
-    check-cast v2, Landroidx/media3/common/audio/AudioBecomingNoisyManager;
-
-    .line 136
-    .line 137
-    invoke-static {v2}, Landroidx/media3/common/audio/AudioBecomingNoisyManager;->b(Landroidx/media3/common/audio/AudioBecomingNoisyManager;)V
-
-    .line 138
-    .line 139
-    .line 140
-    return-void
-
-    .line 141
-    :pswitch_e
-    check-cast v2, Landroidx/lifecycle/ProcessLifecycleOwner;
-
-    .line 142
-    .line 143
-    invoke-static {v2}, Landroidx/lifecycle/ProcessLifecycleOwner;->a(Landroidx/lifecycle/ProcessLifecycleOwner;)V
-
-    .line 144
-    .line 145
-    .line 146
-    return-void
-
-    .line 147
-    :pswitch_f
-    check-cast v2, Landroidx/lifecycle/ComputableLiveData;
-
-    .line 148
-    .line 149
-    invoke-static {v2}, Landroidx/lifecycle/ComputableLiveData;->a(Landroidx/lifecycle/ComputableLiveData;)V
-
-    .line 150
-    .line 151
-    .line 152
-    return-void
-
-    .line 153
-    :pswitch_10
     check-cast v2, Landroidx/core/widget/ContentLoadingProgressBar;
 
-    .line 154
-    .line 155
-    invoke-static {v2}, Landroidx/core/widget/ContentLoadingProgressBar;->b(Landroidx/core/widget/ContentLoadingProgressBar;)V
+    .line 113
+    .line 114
+    invoke-static {v2}, Landroidx/core/widget/ContentLoadingProgressBar;->a(Landroidx/core/widget/ContentLoadingProgressBar;)V
 
-    .line 156
-    .line 157
-    .line 158
+    .line 115
+    .line 116
+    .line 117
     return-void
 
-    .line 159
-    :pswitch_11
-    check-cast v2, Landroid/app/Activity;
+    .line 118
+    :pswitch_b
+    check-cast v2, Landroidx/activity/ComponentDialog;
 
-    .line 160
-    .line 161
-    invoke-static {v2}, Landroidx/core/app/ActivityCompat;->a(Landroid/app/Activity;)V
+    .line 119
+    .line 120
+    invoke-static {v2}, Landroidx/activity/ComponentDialog;->a(Landroidx/activity/ComponentDialog;)V
 
-    .line 162
-    .line 163
-    .line 164
+    .line 121
+    .line 122
+    .line 123
     return-void
 
-    .line 165
-    :pswitch_12
-    check-cast v2, Landroidx/appcompat/widget/Toolbar;
-
-    .line 166
-    .line 167
-    invoke-virtual {v2}, Landroidx/appcompat/widget/Toolbar;->collapseActionView()V
-
-    .line 168
-    .line 169
-    .line 170
-    return-void
-
-    .line 171
-    :pswitch_13
-    check-cast v2, Landroid/content/Context;
-
-    .line 172
-    .line 173
-    invoke-static {v2}, Landroidx/appcompat/app/AppCompatDelegate;->b(Landroid/content/Context;)V
-
-    .line 174
-    .line 175
-    .line 176
-    return-void
-
-    .line 177
-    :pswitch_14
+    .line 124
+    :pswitch_c
     check-cast v2, Landroidx/activity/ComponentActivity;
 
-    .line 178
-    .line 179
+    .line 125
+    .line 126
     invoke-virtual {v2}, Landroidx/activity/ComponentActivity;->invalidateMenu()V
 
-    .line 180
-    .line 181
-    .line 182
+    .line 127
+    .line 128
+    .line 129
     return-void
 
-    .line 183
+    .line 130
+    nop
+
+    .line 131
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_14
-        :pswitch_13
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
         :pswitch_c
         :pswitch_b
         :pswitch_a

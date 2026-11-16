@@ -18,10 +18,10 @@
 
 
 # instance fields
-.field private final groups:Lcom/google/common/collect/f2;
+.field private final groups:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Tracks$Group;",
             ">;"
         }
@@ -38,7 +38,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -93,7 +93,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 5
     .line 6
@@ -101,7 +101,7 @@
     move-result-object p1
 
     .line 8
-    iput-object p1, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -130,7 +130,7 @@
 
     .line 8
     .line 9
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 10
     .line 11
@@ -142,19 +142,19 @@
 
     .line 14
     :cond_0
-    new-instance v0, Landroidx/media3/common/i;
+    new-instance v0, Landroidx/media3/common/k;
 
     .line 15
     .line 16
     const/4 v1, 0x2
 
     .line 17
-    invoke-direct {v0, v1}, Landroidx/media3/common/i;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/common/k;-><init>(I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-static {v0, p0}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {v0, p0}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 21
     .line 22
@@ -188,7 +188,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -204,7 +204,7 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 12
     .line 13
@@ -297,15 +297,15 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
-    iget-object p1, p1, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object p1, p1, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 21
     .line 22
-    invoke-virtual {v0, p1}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 23
     .line 24
@@ -324,19 +324,19 @@
     return p1
 .end method
 
-.method public getGroups()Lcom/google/common/collect/f2;
+.method public getGroups()Lcom/google/common/collect/e2;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Tracks$Group;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -347,11 +347,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 4
     .line 5
@@ -366,7 +366,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -392,7 +392,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -408,7 +408,7 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 12
     .line 13
@@ -488,7 +488,7 @@
 
     .line 2
     :goto_0
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     invoke-virtual {v2}, Ljava/util/AbstractCollection;->size()I
 
@@ -497,7 +497,7 @@
     if-ge v1, v2, :cond_1
 
     .line 3
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -512,7 +512,7 @@
     if-ne v2, p1, :cond_0
 
     .line 4
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -612,7 +612,7 @@
 
     .line 7
     .line 8
-    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/Tracks;->groups:Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -620,7 +620,7 @@
 
     .line 11
     .line 12
-    const/4 v4, 0x3
+    const/4 v4, 0x2
 
     .line 13
     invoke-direct {v3, v4}, Landroidx/media3/common/h;-><init>(I)V
@@ -628,7 +628,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v2, v3}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/e;)Ljava/util/ArrayList;
+    invoke-static {v2, v3}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/f;)Ljava/util/ArrayList;
 
     .line 17
     .line 18

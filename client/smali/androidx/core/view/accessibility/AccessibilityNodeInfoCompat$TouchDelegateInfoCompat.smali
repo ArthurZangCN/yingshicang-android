@@ -109,7 +109,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, p1}, Landroid/support/v4/media/session/e;->g(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;I)Landroid/graphics/Region;
+    invoke-static {v0, p1}, Landroid/support/v4/media/session/h;->f(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;I)Landroid/graphics/Region;
 
     .line 10
     .line 11
@@ -150,7 +150,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Landroidx/activity/h;->c(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;)I
+    invoke-static {v0}, Landroidx/appcompat/widget/a;->c(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;)I
 
     .line 10
     .line 11
@@ -194,7 +194,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, p1}, Landroidx/appcompat/widget/a;->i(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;Landroid/graphics/Region;)Landroid/view/accessibility/AccessibilityNodeInfo;
+    invoke-static {v0, p1}, Landroid/support/v4/media/session/a;->i(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;Landroid/graphics/Region;)Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 10
     .line 11

@@ -2,13 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/core/view/OnReceiveContentViewBehavior;
 
-# direct methods
-.method public static bridge synthetic a(Ljava/lang/Object;)Landroid/view/PointerIcon;
+
+# virtual methods
+.method public final onReceiveContent(Landroidx/core/view/ContentInfoCompat;)Landroidx/core/view/ContentInfoCompat;
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/view/PointerIcon;
+    invoke-static {p1}, Landroidx/core/view/ViewCompat;->a(Landroidx/core/view/ContentInfoCompat;)Landroidx/core/view/ContentInfoCompat;
 
-    return-object p0
+    move-result-object p1
+
+    return-object p1
 .end method

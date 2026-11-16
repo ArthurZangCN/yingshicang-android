@@ -947,7 +947,7 @@
 
     .line 18
     .line 19
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 20
     .line 21
@@ -959,7 +959,7 @@
 
     .line 24
     :cond_0
-    new-instance v2, Landroidx/media3/exoplayer/trackselection/i;
+    new-instance v2, Landroidx/media3/exoplayer/trackselection/j;
 
     .line 25
     .line 26
@@ -968,7 +968,7 @@
     .line 27
     .line 28
     .line 29
-    invoke-static {v2, v1}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {v2, v1}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 30
     .line 31
@@ -1010,7 +1010,7 @@
 
     .line 49
     :cond_1
-    new-instance v2, Landroidx/media3/exoplayer/trackselection/j;
+    new-instance v2, Landroidx/media3/exoplayer/trackselection/k;
 
     .line 50
     .line 51
@@ -1019,7 +1019,7 @@
     .line 52
     .line 53
     .line 54
-    invoke-static {v2, p1}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleSparseArray(Lcom/google/common/base/e;Landroid/util/SparseArray;)Landroid/util/SparseArray;
+    invoke-static {v2, p1}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleSparseArray(Lcom/google/common/base/f;Landroid/util/SparseArray;)Landroid/util/SparseArray;
 
     .line 55
     .line 56
@@ -2478,7 +2478,7 @@
     move-result-object p1
 
     .line 31
-    invoke-static {p1, p3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33

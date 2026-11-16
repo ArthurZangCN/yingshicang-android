@@ -789,7 +789,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-static {v0, v1}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -1064,7 +1064,7 @@
 
     .line 77
     .line 78
-    invoke-static {v1, v3}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v1, v3}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 79
     .line 80
@@ -1713,7 +1713,7 @@
     const/4 v1, 0x1
 
     .line 14
-    invoke-static {v0, v1}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 15
     .line 16

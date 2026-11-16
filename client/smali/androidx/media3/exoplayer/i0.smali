@@ -7,17 +7,21 @@
 
 
 # instance fields
-.field public final synthetic a:J
+.field public final synthetic a:I
+
+.field public final synthetic b:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(J)V
+.method public synthetic constructor <init>(ZI)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Landroidx/media3/exoplayer/i0;->a:J
+    iput p2, p0, Landroidx/media3/exoplayer/i0;->a:I
+
+    iput-boolean p1, p0, Landroidx/media3/exoplayer/i0;->b:Z
 
     return-void
 .end method
@@ -28,11 +32,27 @@
     .locals 2
 
     .line 1
-    iget-wide v0, p0, Landroidx/media3/exoplayer/i0;->a:J
+    iget v0, p0, Landroidx/media3/exoplayer/i0;->a:I
+
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/i0;->b:Z
 
     check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    invoke-static {v0, v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->q(JLandroidx/media3/common/Player$Listener;)V
+    packed-switch v0, :pswitch_data_0
+
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->i(ZLandroidx/media3/common/Player$Listener;)V
 
     return-void
+
+    :pswitch_0
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->g(ZLandroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

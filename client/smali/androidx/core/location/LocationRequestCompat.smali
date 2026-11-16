@@ -461,7 +461,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Landroidx/core/app/f;->d(Ljava/lang/Object;)Landroid/location/LocationRequest;
+    invoke-static {p1}, Landroidx/core/location/s;->d(Ljava/lang/Object;)Landroid/location/LocationRequest;
 
     move-result-object p1
 
@@ -478,7 +478,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 4
     .line 5

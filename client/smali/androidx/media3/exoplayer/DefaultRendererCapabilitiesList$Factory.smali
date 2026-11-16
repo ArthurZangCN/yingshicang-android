@@ -101,11 +101,11 @@
 
     invoke-direct {v3, p0}, Landroidx/media3/exoplayer/DefaultRendererCapabilitiesList$Factory$2;-><init>(Landroidx/media3/exoplayer/DefaultRendererCapabilitiesList$Factory;)V
 
-    new-instance v4, Landroid/support/v4/media/a;
+    new-instance v4, Landroidx/media3/exoplayer/a;
 
     invoke-direct {v4}, Ljava/lang/Object;-><init>()V
 
-    new-instance v5, Landroid/support/v4/media/f;
+    new-instance v5, Landroid/support/v4/media/e;
 
     invoke-direct {v5}, Ljava/lang/Object;-><init>()V
 

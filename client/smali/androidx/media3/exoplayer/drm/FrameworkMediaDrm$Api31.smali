@@ -31,7 +31,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/core/view/e;->w(Landroid/media/MediaDrm;Ljava/lang/String;I)Z
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/drm/t;->a(Landroid/media/MediaDrm;Ljava/lang/String;I)Z
 
     .line 2
     .line 3
@@ -54,7 +54,7 @@
     move-result-object p2
 
     .line 5
-    invoke-static {}, Landroidx/core/os/a;->e()Landroid/media/metrics/LogSessionId;
+    invoke-static {}, Landroidx/core/app/h;->b()Landroid/media/metrics/LogSessionId;
 
     .line 6
     .line 7
@@ -62,7 +62,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {p2, v0}, Landroidx/media3/exoplayer/i1;->a(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, Landroidx/core/view/c;->o(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
 
     .line 10
     .line 11
@@ -74,7 +74,7 @@
 
     .line 14
     .line 15
-    invoke-static {p0, p1}, Landroidx/core/view/a;->d(Landroid/media/MediaDrm;[B)Landroid/media/MediaDrm$PlaybackComponent;
+    invoke-static {p0, p1}, Landroidx/media/session/b;->f(Landroid/media/MediaDrm;[B)Landroid/media/MediaDrm$PlaybackComponent;
 
     .line 16
     .line 17
@@ -87,7 +87,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {p0}, Landroidx/core/os/a;->d(Ljava/lang/Object;)Landroid/media/MediaDrm$PlaybackComponent;
+    invoke-static {p0}, Landroidx/core/app/h;->a(Ljava/lang/Object;)Landroid/media/MediaDrm$PlaybackComponent;
 
     .line 23
     .line 24
@@ -95,7 +95,7 @@
     move-result-object p0
 
     .line 26
-    invoke-static {p0, p2}, Landroidx/core/app/f;->l(Landroid/media/MediaDrm$PlaybackComponent;Landroid/media/metrics/LogSessionId;)V
+    invoke-static {p0, p2}, Landroidx/core/view/c;->j(Landroid/media/MediaDrm$PlaybackComponent;Landroid/media/metrics/LogSessionId;)V
 
     .line 27
     .line 28

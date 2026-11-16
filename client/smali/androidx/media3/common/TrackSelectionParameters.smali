@@ -114,10 +114,10 @@
     .end annotation
 .end field
 
-.field public final disabledTrackTypes:Lcom/google/common/collect/s2;
+.field public final disabledTrackTypes:Lcom/google/common/collect/r2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/s2<",
+            "Lcom/google/common/collect/r2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -157,10 +157,10 @@
 
 .field public final minVideoWidth:I
 
-.field public final overrides:Lcom/google/common/collect/h2;
+.field public final overrides:Lcom/google/common/collect/g2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Landroidx/media3/common/TrackGroup;",
             "Landroidx/media3/common/TrackSelectionOverride;",
             ">;"
@@ -168,33 +168,33 @@
     .end annotation
 .end field
 
-.field public final preferredAudioLabels:Lcom/google/common/collect/f2;
+.field public final preferredAudioLabels:Lcom/google/common/collect/e2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final preferredAudioLanguages:Lcom/google/common/collect/f2;
+.field public final preferredAudioLanguages:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+.field public final preferredAudioMimeTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -203,23 +203,23 @@
 
 .field public final preferredAudioRoleFlags:I
 
-.field public final preferredTextLabels:Lcom/google/common/collect/f2;
+.field public final preferredTextLabels:Lcom/google/common/collect/e2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final preferredTextLanguages:Lcom/google/common/collect/f2;
+.field public final preferredTextLanguages:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -228,36 +228,36 @@
 
 .field public final preferredTextRoleFlags:I
 
-.field public final preferredVideoLabels:Lcom/google/common/collect/f2;
+.field public final preferredVideoLabels:Lcom/google/common/collect/e2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final preferredVideoLanguages:Lcom/google/common/collect/f2;
+.field public final preferredVideoLanguages:Lcom/google/common/collect/e2;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+.field public final preferredVideoMimeTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -1071,7 +1071,7 @@
 
     .line 75
     .line 76
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5400(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5400(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 77
     .line 78
@@ -1079,11 +1079,11 @@
     move-result-object v0
 
     .line 80
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 81
     .line 82
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5500(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5500(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 83
     .line 84
@@ -1091,11 +1091,11 @@
     move-result-object v0
 
     .line 86
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 87
     .line 88
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 89
     .line 90
@@ -1103,7 +1103,7 @@
     move-result-object v0
 
     .line 92
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 93
     .line 94
@@ -1119,7 +1119,7 @@
 
     .line 99
     .line 100
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5800(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$5800(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 101
     .line 102
@@ -1127,7 +1127,7 @@
     move-result-object v0
 
     .line 104
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 105
     .line 106
@@ -1155,7 +1155,7 @@
 
     .line 117
     .line 118
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6100(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6100(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 119
     .line 120
@@ -1163,7 +1163,7 @@
     move-result-object v0
 
     .line 122
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 123
     .line 124
@@ -1179,7 +1179,7 @@
 
     .line 129
     .line 130
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6300(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6300(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 131
     .line 132
@@ -1187,7 +1187,7 @@
     move-result-object v0
 
     .line 134
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 135
     .line 136
@@ -1215,7 +1215,7 @@
 
     .line 147
     .line 148
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 149
     .line 150
@@ -1223,7 +1223,7 @@
     move-result-object v0
 
     .line 152
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 153
     .line 154
@@ -1251,7 +1251,7 @@
 
     .line 165
     .line 166
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6900(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->access$6900(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
 
     .line 167
     .line 168
@@ -1259,7 +1259,7 @@
     move-result-object v0
 
     .line 170
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 171
     .line 172
@@ -1331,7 +1331,7 @@
     move-result-object v0
 
     .line 206
-    invoke-static {v0}, Lcom/google/common/collect/h2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/h2;
+    invoke-static {v0}, Lcom/google/common/collect/g2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/g2;
 
     .line 207
     .line 208
@@ -1339,7 +1339,7 @@
     move-result-object v0
 
     .line 210
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 211
     .line 212
@@ -1351,7 +1351,7 @@
     move-result-object p1
 
     .line 216
-    invoke-static {p1}, Lcom/google/common/collect/s2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/s2;
+    invoke-static {p1}, Lcom/google/common/collect/r2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/r2;
 
     .line 217
     .line 218
@@ -1359,7 +1359,7 @@
     move-result-object p1
 
     .line 220
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 221
     .line 222
@@ -2038,15 +2038,15 @@
 
     .line 93
     .line 94
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 95
     .line 96
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 97
     .line 98
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 99
     .line 100
@@ -2058,15 +2058,15 @@
 
     .line 103
     .line 104
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 105
     .line 106
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 107
     .line 108
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 109
     .line 110
@@ -2078,15 +2078,15 @@
 
     .line 113
     .line 114
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 115
     .line 116
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 117
     .line 118
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 119
     .line 120
@@ -2110,15 +2110,15 @@
 
     .line 129
     .line 130
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 131
     .line 132
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 133
     .line 134
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 135
     .line 136
@@ -2154,15 +2154,15 @@
 
     .line 151
     .line 152
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 153
     .line 154
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 155
     .line 156
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 157
     .line 158
@@ -2186,15 +2186,15 @@
 
     .line 167
     .line 168
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 169
     .line 170
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 171
     .line 172
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 173
     .line 174
@@ -2238,15 +2238,15 @@
 
     .line 193
     .line 194
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 195
     .line 196
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 197
     .line 198
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 199
     .line 200
@@ -2258,15 +2258,15 @@
 
     .line 203
     .line 204
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 205
     .line 206
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 207
     .line 208
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 209
     .line 210
@@ -2362,15 +2362,15 @@
 
     .line 255
     .line 256
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 257
     .line 258
-    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object v3, p1, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 259
     .line 260
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/h2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/g2;->equals(Ljava/lang/Object;)Z
 
     .line 261
     .line 262
@@ -2382,15 +2382,15 @@
 
     .line 265
     .line 266
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 267
     .line 268
-    iget-object p1, p1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object p1, p1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 269
     .line 270
-    invoke-virtual {v2, p1}, Lcom/google/common/collect/s2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p1}, Lcom/google/common/collect/r2;->equals(Ljava/lang/Object;)Z
 
     .line 271
     .line 272
@@ -2546,11 +2546,11 @@
     mul-int/2addr v0, v1
 
     .line 51
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 52
     .line 53
-    invoke-virtual {v2}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v2}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 54
     .line 55
@@ -2564,11 +2564,11 @@
     mul-int/2addr v2, v1
 
     .line 59
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 60
     .line 61
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 62
     .line 63
@@ -2582,11 +2582,11 @@
     mul-int/2addr v0, v1
 
     .line 67
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 68
     .line 69
-    invoke-virtual {v2}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v2}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 70
     .line 71
@@ -2610,11 +2610,11 @@
     mul-int/2addr v2, v1
 
     .line 79
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 80
     .line 81
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 82
     .line 83
@@ -2648,11 +2648,11 @@
     mul-int/2addr v0, v1
 
     .line 95
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 96
     .line 97
-    invoke-virtual {v2}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v2}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 98
     .line 99
@@ -2676,11 +2676,11 @@
     mul-int/2addr v2, v1
 
     .line 107
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 108
     .line 109
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 110
     .line 111
@@ -2722,11 +2722,11 @@
     mul-int/2addr v2, v1
 
     .line 127
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 128
     .line 129
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 130
     .line 131
@@ -2760,11 +2760,11 @@
     mul-int/2addr v2, v1
 
     .line 143
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 144
     .line 145
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 146
     .line 147
@@ -2828,11 +2828,11 @@
     mul-int/2addr v0, v1
 
     .line 171
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 172
     .line 173
-    invoke-virtual {v2}, Lcom/google/common/collect/h2;->hashCode()I
+    invoke-virtual {v2}, Lcom/google/common/collect/g2;->hashCode()I
 
     .line 174
     .line 175
@@ -2846,11 +2846,11 @@
     mul-int/2addr v2, v1
 
     .line 179
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 180
     .line 181
-    invoke-virtual {v0}, Lcom/google/common/collect/s2;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/common/collect/r2;->hashCode()I
 
     .line 182
     .line 183
@@ -3039,7 +3039,7 @@
 
     .line 91
     .line 92
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 93
     .line 94
@@ -3050,7 +3050,7 @@
 
     .line 96
     .line 97
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 98
     .line 99
@@ -3071,7 +3071,7 @@
 
     .line 107
     .line 108
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 109
     .line 110
@@ -3079,7 +3079,7 @@
 
     .line 111
     .line 112
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 113
     .line 114
@@ -3100,7 +3100,7 @@
 
     .line 122
     .line 123
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 124
     .line 125
@@ -3108,7 +3108,7 @@
 
     .line 126
     .line 127
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 128
     .line 129
@@ -3142,7 +3142,7 @@
 
     .line 144
     .line 145
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 146
     .line 147
@@ -3150,7 +3150,7 @@
 
     .line 148
     .line 149
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 150
     .line 151
@@ -3210,7 +3210,7 @@
 
     .line 180
     .line 181
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 182
     .line 183
@@ -3218,7 +3218,7 @@
 
     .line 184
     .line 185
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 186
     .line 187
@@ -3239,7 +3239,7 @@
 
     .line 195
     .line 196
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 197
     .line 198
@@ -3247,7 +3247,7 @@
 
     .line 199
     .line 200
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 201
     .line 202
@@ -3281,7 +3281,7 @@
 
     .line 217
     .line 218
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 219
     .line 220
@@ -3289,7 +3289,7 @@
 
     .line 221
     .line 222
-    invoke-virtual {v2, v4}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v4}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 223
     .line 224
@@ -3336,7 +3336,7 @@
 
     .line 246
     .line 247
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 248
     .line 249
@@ -3344,7 +3344,7 @@
 
     .line 250
     .line 251
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/d2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/c2;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 252
     .line 253
@@ -3502,11 +3502,11 @@
 
     .line 334
     .line 335
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 336
     .line 337
-    invoke-virtual {v2}, Lcom/google/common/collect/h2;->values()Lcom/google/common/collect/d2;
+    invoke-virtual {v2}, Lcom/google/common/collect/g2;->values()Lcom/google/common/collect/c2;
 
     .line 338
     .line 339
@@ -3514,19 +3514,19 @@
     move-result-object v2
 
     .line 341
-    new-instance v3, Landroidx/media3/common/m;
+    new-instance v3, Landroidx/media3/common/f;
 
     .line 342
     .line 343
     const/4 v4, 0x1
 
     .line 344
-    invoke-direct {v3, v4}, Landroidx/media3/common/m;-><init>(I)V
+    invoke-direct {v3, v4}, Landroidx/media3/common/f;-><init>(I)V
 
     .line 345
     .line 346
     .line 347
-    invoke-static {v2, v3}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/e;)Ljava/util/ArrayList;
+    invoke-static {v2, v3}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/f;)Ljava/util/ArrayList;
 
     .line 348
     .line 349
@@ -3543,11 +3543,11 @@
 
     .line 355
     .line 356
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 357
     .line 358
-    invoke-static {v2}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {v2}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     .line 359
     .line 360

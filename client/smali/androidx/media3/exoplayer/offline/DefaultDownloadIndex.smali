@@ -247,7 +247,7 @@
     const-string p1, "ExoPlayerDownloads"
 
     .line 6
-    invoke-static {p1, p2}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -388,7 +388,7 @@
 
     .line 40
     :goto_1
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 41
     .line 42

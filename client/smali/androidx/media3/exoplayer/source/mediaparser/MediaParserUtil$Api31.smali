@@ -39,7 +39,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {}, Landroidx/core/os/a;->e()Landroid/media/metrics/LogSessionId;
+    invoke-static {}, Landroidx/core/app/h;->b()Landroid/media/metrics/LogSessionId;
 
     .line 6
     .line 7
@@ -47,7 +47,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {p1, v0}, Landroidx/media3/exoplayer/i1;->a(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Landroidx/core/view/c;->o(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
 
     .line 10
     .line 11
@@ -59,7 +59,7 @@
 
     .line 14
     .line 15
-    invoke-static {p0, p1}, Landroidx/core/view/e;->l(Landroid/media/MediaParser;Landroid/media/metrics/LogSessionId;)V
+    invoke-static {p0, p1}, Landroidx/media/session/b;->l(Landroid/media/MediaParser;Landroid/media/metrics/LogSessionId;)V
 
     .line 16
     .line 17

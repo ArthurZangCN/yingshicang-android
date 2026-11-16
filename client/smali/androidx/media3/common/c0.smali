@@ -3,42 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Landroidx/media3/common/util/ListenerSet$IterationFinishedEvent;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer$State;
-
-.field public final synthetic b:Z
+.field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;Z)V
+.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/common/c0;->a:Landroidx/media3/common/SimpleBasePlayer$State;
-
-    iput-boolean p2, p0, Landroidx/media3/common/c0;->b:Z
+    iput-object p1, p0, Landroidx/media3/common/c0;->a:Landroidx/media3/common/SimpleBasePlayer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 2
+.method public final invoke(Ljava/lang/Object;Landroidx/media3/common/FlagSet;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/c0;->a:Landroidx/media3/common/SimpleBasePlayer$State;
+    iget-object v0, p0, Landroidx/media3/common/c0;->a:Landroidx/media3/common/SimpleBasePlayer;
 
-    iget-boolean v1, p0, Landroidx/media3/common/c0;->b:Z
+    check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    invoke-static {v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->c0(Landroidx/media3/common/SimpleBasePlayer$State;Z)Landroidx/media3/common/SimpleBasePlayer$State;
+    invoke-static {v0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->y(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/Player$Listener;Landroidx/media3/common/FlagSet;)V
 
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

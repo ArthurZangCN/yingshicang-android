@@ -57,7 +57,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroid/support/v4/media/session/c;->j(Landroid/util/FloatProperty;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, p1}, Landroid/support/v4/media/b;->h(Landroid/util/FloatProperty;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -93,7 +93,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/session/b;->t(Landroid/util/FloatProperty;Ljava/lang/Object;F)V
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/session/e;->u(Landroid/util/FloatProperty;Ljava/lang/Object;F)V
 
     .line 4
     .line 5

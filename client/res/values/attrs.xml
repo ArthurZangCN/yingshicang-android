@@ -1341,6 +1341,41 @@
         <enum name="centerInside" value="7" />
     </attr>
     <attr name="looping" format="boolean" />
+    <attr name="lottieAnimationViewStyle" format="reference" />
+    <attr name="lottie_applyOpacityToLayers" format="boolean" />
+    <attr name="lottie_applyShadowToLayers" format="boolean" />
+    <attr name="lottie_asyncUpdates">
+        <enum name="automatic" value="0" />
+        <enum name="enabled" value="1" />
+        <enum name="disabled" value="2" />
+    </attr>
+    <attr name="lottie_autoPlay" format="boolean" />
+    <attr name="lottie_cacheComposition" format="boolean" />
+    <attr name="lottie_clipTextToBoundingBox" format="boolean" />
+    <attr name="lottie_clipToCompositionBounds" format="boolean" />
+    <attr name="lottie_colorFilter" format="color" />
+    <attr name="lottie_defaultFontFileExtension" format="string" />
+    <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean" />
+    <attr name="lottie_fallbackRes" format="reference" />
+    <attr name="lottie_fileName" format="string" />
+    <attr name="lottie_ignoreDisabledSystemAnimations" format="boolean" />
+    <attr name="lottie_imageAssetsFolder" format="string" />
+    <attr name="lottie_loop" format="boolean" />
+    <attr name="lottie_progress" format="float" />
+    <attr name="lottie_rawRes" format="reference" />
+    <attr name="lottie_renderMode">
+        <enum name="automatic" value="0" />
+        <enum name="hardware" value="1" />
+        <enum name="software" value="2" />
+    </attr>
+    <attr name="lottie_repeatCount" format="integer" />
+    <attr name="lottie_repeatMode">
+        <enum name="restart" value="1" />
+        <enum name="reverse" value="2" />
+    </attr>
+    <attr name="lottie_speed" format="float" />
+    <attr name="lottie_url" format="string" />
+    <attr name="lottie_useCompositionFrameRate" format="boolean" />
     <attr name="main_title" format="string" />
     <attr name="marginHorizontal" format="dimension" />
     <attr name="marginLeftSystemWindowInsets" format="boolean" />
@@ -2261,6 +2296,7 @@
     <attr name="tv_isMenu" format="boolean" />
     <attr name="tv_laneCountsStr" format="string" />
     <attr name="tv_layoutManager" format="string" />
+    <attr name="tv_leanbackTouchMode" format="boolean" />
     <attr name="tv_loadMoreBeforehandCount" format="integer" />
     <attr name="tv_numColumns" format="integer" />
     <attr name="tv_numRows" format="integer" />

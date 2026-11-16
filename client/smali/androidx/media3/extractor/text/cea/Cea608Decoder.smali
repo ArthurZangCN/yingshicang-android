@@ -912,7 +912,7 @@
 
     .line 48
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 49
     .line 50
@@ -2373,7 +2373,6 @@
     .line 44
     .line 45
     .line 46
-    .line 47
     :pswitch_data_1
     .packed-switch 0x29
         :pswitch_1

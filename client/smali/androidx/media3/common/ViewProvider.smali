@@ -9,13 +9,13 @@
 
 
 # virtual methods
-.method public abstract getView(Landroid/view/ViewGroup;)Lcom/google/common/util/concurrent/t;
+.method public abstract getView(Landroid/view/ViewGroup;)Lcom/google/common/util/concurrent/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/view/ViewGroup;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "Landroid/view/View;",
             ">;"
         }

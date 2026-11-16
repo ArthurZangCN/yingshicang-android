@@ -239,165 +239,262 @@
         .end annotation
     .end param
 
+    .line 1
     move-object v0, p0
 
+    .line 2
     move-object/from16 v1, p17
 
-    .line 1
+    .line 3
+    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 5
+    .line 6
+    .line 7
     move-object v2, p1
 
-    .line 2
+    .line 8
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->uri:Landroid/net/Uri;
 
+    .line 9
+    .line 10
     move-object v2, p2
 
-    .line 3
+    .line 11
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->dataSource:Landroidx/media3/datasource/DataSource;
 
+    .line 12
+    .line 13
     move-object v2, p4
 
-    .line 4
+    .line 14
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->drmSessionManager:Landroidx/media3/exoplayer/drm/DrmSessionManager;
 
+    .line 15
+    .line 16
     move-object v2, p5
 
-    .line 5
+    .line 17
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->drmEventDispatcher:Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;
 
+    .line 18
+    .line 19
     move-object v2, p6
 
-    .line 6
+    .line 20
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->loadErrorHandlingPolicy:Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;
 
+    .line 21
+    .line 22
     move-object v2, p7
 
-    .line 7
+    .line 23
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->mediaSourceEventDispatcher:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
 
+    .line 24
+    .line 25
     move-object v2, p8
 
-    .line 8
+    .line 26
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->listener:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod$Listener;
 
+    .line 27
+    .line 28
     move-object v2, p9
 
-    .line 9
+    .line 29
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->allocator:Landroidx/media3/exoplayer/upstream/Allocator;
 
+    .line 30
+    .line 31
     move-object v2, p10
 
-    .line 10
+    .line 32
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->customCacheKey:Ljava/lang/String;
 
+    .line 33
+    .line 34
     move v2, p11
 
+    .line 35
     int-to-long v2, v2
 
-    .line 11
+    .line 36
     iput-wide v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->continueLoadingCheckIntervalBytes:J
 
+    .line 37
+    .line 38
     move/from16 v2, p12
 
-    .line 12
+    .line 39
+    .line 40
     iput-boolean v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->loadOnlySelectedTracks:Z
 
+    .line 41
+    .line 42
     move/from16 v2, p13
 
-    .line 13
+    .line 43
+    .line 44
     iput v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->singleTrackId:I
 
+    .line 45
+    .line 46
     move-object/from16 v2, p14
 
-    .line 14
+    .line 47
+    .line 48
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->singleTrackFormat:Landroidx/media3/common/Format;
 
+    .line 49
+    .line 50
     if-eqz v1, :cond_0
 
-    .line 15
+    .line 51
+    .line 52
     new-instance v2, Landroidx/media3/exoplayer/upstream/Loader;
 
+    .line 53
+    .line 54
     invoke-direct {v2, v1}, Landroidx/media3/exoplayer/upstream/Loader;-><init>(Landroidx/media3/exoplayer/util/ReleasableExecutor;)V
 
+    .line 55
+    .line 56
+    .line 57
     goto :goto_0
 
-    .line 16
+    .line 58
     :cond_0
     new-instance v2, Landroidx/media3/exoplayer/upstream/Loader;
 
+    .line 59
+    .line 60
     const-string v1, "ProgressiveMediaPeriod"
 
+    .line 61
+    .line 62
     invoke-direct {v2, v1}, Landroidx/media3/exoplayer/upstream/Loader;-><init>(Ljava/lang/String;)V
 
+    .line 63
+    .line 64
+    .line 65
     :goto_0
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->loader:Landroidx/media3/exoplayer/upstream/Loader;
 
+    .line 66
+    .line 67
     move-object v1, p3
 
-    .line 17
+    .line 68
     iput-object v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->progressiveMediaExtractor:Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor;
 
+    .line 69
+    .line 70
     move-wide/from16 v1, p15
 
-    .line 18
+    .line 71
+    .line 72
     iput-wide v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->singleSampleDurationUs:J
 
-    .line 19
+    .line 73
+    .line 74
     new-instance v1, Landroidx/media3/common/util/ConditionVariable;
 
+    .line 75
+    .line 76
     invoke-direct {v1}, Landroidx/media3/common/util/ConditionVariable;-><init>()V
 
+    .line 77
+    .line 78
+    .line 79
     iput-object v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->loadCondition:Landroidx/media3/common/util/ConditionVariable;
 
-    .line 20
-    new-instance v1, Landroidx/media3/exoplayer/source/u;
+    .line 80
+    .line 81
+    new-instance v1, Landroidx/media3/exoplayer/source/w;
 
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/u;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
+    .line 82
+    .line 83
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/w;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
 
+    .line 84
+    .line 85
+    .line 86
     iput-object v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->maybeFinishPrepareRunnable:Ljava/lang/Runnable;
 
-    .line 21
-    new-instance v1, Landroidx/media3/exoplayer/source/v;
+    .line 87
+    .line 88
+    new-instance v1, Landroidx/media3/exoplayer/source/x;
 
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/v;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
+    .line 89
+    .line 90
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/x;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
 
+    .line 91
+    .line 92
+    .line 93
     iput-object v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->onContinueLoadingRequestedRunnable:Ljava/lang/Runnable;
 
-    .line 22
+    .line 94
+    .line 95
     invoke-static {}, Landroidx/media3/common/util/Util;->createHandlerForCurrentLooper()Landroid/os/Handler;
 
+    .line 96
+    .line 97
+    .line 98
     move-result-object v1
 
+    .line 99
     iput-object v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->handler:Landroid/os/Handler;
 
+    .line 100
+    .line 101
     const/4 v1, 0x0
 
-    .line 23
+    .line 102
     new-array v2, v1, [Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod$TrackId;
 
+    .line 103
+    .line 104
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->sampleQueueTrackIds:[Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod$TrackId;
 
-    .line 24
+    .line 105
+    .line 106
     new-array v2, v1, [Landroidx/media3/exoplayer/source/SampleQueue;
 
+    .line 107
+    .line 108
     iput-object v2, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->sampleQueues:[Landroidx/media3/exoplayer/source/SampleQueue;
 
-    .line 25
+    .line 109
+    .line 110
     new-array v1, v1, [Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod$ControlledTrackOutput;
 
+    .line 111
+    .line 112
     iput-object v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->controlledTrackOutputs:[Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod$ControlledTrackOutput;
 
+    .line 113
+    .line 114
     const-wide v1, -0x7fffffffffffffffL    # -4.9E-324
 
-    .line 26
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    .line 119
     iput-wide v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->pendingResetPositionUs:J
 
+    .line 120
+    .line 121
     const/4 v1, 0x1
 
-    .line 27
+    .line 122
     iput v1, v0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->dataType:I
 
+    .line 123
+    .line 124
     return-void
 .end method
 
@@ -544,7 +641,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 4
     .line 5
@@ -770,7 +867,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     .line 14
     .line 15
@@ -1853,11 +1950,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/source/t;
+    new-instance v1, Landroidx/media3/exoplayer/source/v;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/t;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/source/v;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
 
     .line 6
     .line 7
@@ -2496,7 +2593,7 @@
     move-result v0
 
     .line 25
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 26
     .line 27
@@ -3248,7 +3345,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/source/l;->a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/source/k;->a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -4525,30 +4622,27 @@
 .end method
 
 .method public seekMap(Landroidx/media3/extractor/SeekMap;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->handler:Landroid/os/Handler;
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/source/w;
+    new-instance v1, Landroidx/media3/exoplayer/source/y;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/y;-><init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;Landroidx/media3/extractor/SeekMap;)V
 
     .line 6
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/source/w;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 7
     .line 8
-    .line 9
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 9
     .line 10
     .line 11
-    .line 12
     return-void
 .end method
 
@@ -4899,7 +4993,7 @@
 
     .line 37
     .line 38
-    invoke-static {v7}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v7}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 39
     .line 40
@@ -5036,7 +5130,7 @@
 
     .line 96
     :goto_4
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 97
     .line 98
@@ -5064,7 +5158,7 @@
 
     .line 108
     :goto_5
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 109
     .line 110
@@ -5092,7 +5186,7 @@
     xor-int/2addr v7, v6
 
     .line 122
-    invoke-static {v7}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v7}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 123
     .line 124

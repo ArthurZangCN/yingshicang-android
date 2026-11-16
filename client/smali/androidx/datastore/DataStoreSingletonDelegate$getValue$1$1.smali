@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/datastore/DataStoreSingletonDelegate;->getValue(Landroid/content/Context;Lf4/g;)Landroidx/datastore/core/DataStore;
+    value = Landroidx/datastore/DataStoreSingletonDelegate;->getValue(Landroid/content/Context;Ll4/g;)Landroidx/datastore/core/DataStore;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

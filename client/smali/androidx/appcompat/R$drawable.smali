@@ -187,11 +187,11 @@
 
 .field public static final btn_radio_on_to_off_mtrl_animation:I = 0x7f080085
 
-.field public static final test_level_drawable:I = 0x7f080212
+.field public static final test_level_drawable:I = 0x7f080211
 
-.field public static final tooltip_frame_dark:I = 0x7f080213
+.field public static final tooltip_frame_dark:I = 0x7f080212
 
-.field public static final tooltip_frame_light:I = 0x7f080214
+.field public static final tooltip_frame_light:I = 0x7f080213
 
 
 # direct methods

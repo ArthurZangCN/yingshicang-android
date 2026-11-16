@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/core/okio/OkioReadScope$readData$1;
-.super Lu3/c;
+.super Ly3/c;
 .source "SourceFile"
 
 
@@ -18,11 +18,11 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lu3/c;"
+        "Ly3/c;"
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.core.okio.OkioReadScope"
     f = "OkioStorage.kt"
     l = {
@@ -69,7 +69,7 @@
 
     iput-object p1, p0, Landroidx/datastore/core/okio/OkioReadScope$readData$1;->this$0:Landroidx/datastore/core/okio/OkioReadScope;
 
-    invoke-direct {p0, p2}, Lu3/c;-><init>(Lkotlin/coroutines/d;)V
+    invoke-direct {p0, p2}, Ly3/c;-><init>(Lkotlin/coroutines/d;)V
 
     return-void
 .end method

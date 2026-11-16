@@ -77,7 +77,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Landroidx/appcompat/app/e;->h(Landroidx/core/app/JobIntentService$JobServiceEngineImpl;)Landroid/os/IBinder;
+    invoke-static {p0}, Landroidx/appcompat/app/c;->i(Landroidx/core/app/JobIntentService$JobServiceEngineImpl;)Landroid/os/IBinder;
 
     .line 2
     .line 3
@@ -125,7 +125,7 @@
 
     .line 13
     :cond_0
-    invoke-static {v1}, Landroidx/core/app/b;->f(Landroid/app/job/JobParameters;)Landroid/app/job/JobWorkItem;
+    invoke-static {v1}, Landroidx/appcompat/app/d;->i(Landroid/app/job/JobParameters;)Landroid/app/job/JobWorkItem;
 
     .line 14
     .line 15
@@ -142,7 +142,7 @@
 
     .line 19
     .line 20
-    invoke-static {v1}, Landroidx/core/app/c;->h(Landroid/app/job/JobWorkItem;)Landroid/content/Intent;
+    invoke-static {v1}, Landroidx/core/app/c;->d(Landroid/app/job/JobWorkItem;)Landroid/content/Intent;
 
     .line 21
     .line 22

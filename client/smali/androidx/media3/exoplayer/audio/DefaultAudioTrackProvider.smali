@@ -119,7 +119,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1, p2}, Landroidx/appcompat/widget/a;->l(Landroid/media/AudioTrack$Builder;Z)V
+    invoke-static {p1, p2}, Landroid/support/v4/media/session/h;->m(Landroid/media/AudioTrack$Builder;Z)V
 
     .line 2
     .line 3
@@ -265,7 +265,7 @@
 
     .line 61
     .line 62
-    invoke-static {p2, p4}, Landroidx/media3/datasource/o;->g(Landroid/media/AudioTrack$Builder;Landroid/content/Context;)V
+    invoke-static {p2, p4}, Landroidx/media3/datasource/m;->l(Landroid/media/AudioTrack$Builder;Landroid/content/Context;)V
 
     .line 63
     .line 64
@@ -294,7 +294,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/audio/t;->a(Landroidx/media3/exoplayer/audio/DefaultAudioSink$AudioTrackProvider;I)I
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/audio/v;->a(Landroidx/media3/exoplayer/audio/DefaultAudioSink$AudioTrackProvider;I)I
 
     move-result p1
 

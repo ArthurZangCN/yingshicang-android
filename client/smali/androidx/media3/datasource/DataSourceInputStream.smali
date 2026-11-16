@@ -2,9 +2,6 @@
 .super Ljava/io/InputStream;
 .source "SourceFile"
 
-# interfaces
-.implements Lj$/io/InputStreamRetargetInterface;
-
 
 # annotations
 .annotation build Landroidx/media3/common/util/UnstableApi;
@@ -214,7 +211,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 5
     invoke-direct {p0}, Landroidx/media3/datasource/DataSourceInputStream;->checkOpened()V
@@ -243,15 +240,4 @@
     iput-wide p2, p0, Landroidx/media3/datasource/DataSourceInputStream;->totalBytesRead:J
 
     return p1
-.end method
-
-.method public final synthetic transferTo(Ljava/io/OutputStream;)J
-    .locals 2
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/io/DesugarInputStream;->transferTo(Ljava/io/InputStream;Ljava/io/OutputStream;)J
-
-    move-result-wide v0
-
-    return-wide v0
 .end method

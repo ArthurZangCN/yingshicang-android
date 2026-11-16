@@ -320,7 +320,7 @@
 
     .line 27
     :goto_0
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 28
     .line 29

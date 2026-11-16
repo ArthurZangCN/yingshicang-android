@@ -86,14 +86,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/e;
+    new-instance v0, Landroidx/constraintlayout/core/state/b;
 
     .line 2
     .line 3
-    const/4 v1, 0x4
+    const/4 v1, 0x6
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/e;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
 
     .line 5
     .line 6

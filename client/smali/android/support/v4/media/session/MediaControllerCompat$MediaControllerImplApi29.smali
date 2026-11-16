@@ -66,7 +66,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0}, Landroid/support/v4/media/session/a;->e(Landroid/media/session/MediaController;)Landroid/os/Bundle;
+    invoke-static {v0}, Landroid/support/v4/media/session/a;->h(Landroid/media/session/MediaController;)Landroid/os/Bundle;
 
     .line 16
     .line 17

@@ -292,7 +292,7 @@
 
     .line 6
     .line 7
-    invoke-static {p0}, Landroidx/core/app/f;->c(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    invoke-static {p0}, Landroidx/core/view/d;->d(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     .line 8
     .line 9

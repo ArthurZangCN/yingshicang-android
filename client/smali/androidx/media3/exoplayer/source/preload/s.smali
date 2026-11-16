@@ -3,21 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/k;
+.implements Lcom/google/common/base/m;
 
 
 # instance fields
-.field public final synthetic a:J
+.field public final synthetic a:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
 
 
 # direct methods
-.method public synthetic constructor <init>(J)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Landroidx/media3/exoplayer/source/preload/s;->a:J
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/s;->a:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
 
     return-void
 .end method
@@ -25,14 +25,14 @@
 
 # virtual methods
 .method public final apply(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-wide v0, p0, Landroidx/media3/exoplayer/source/preload/s;->a:J
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/s;->a:Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
 
     check-cast p1, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
 
-    invoke-static {v0, v1, p1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->e(JLandroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)Z
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadMediaSourceControl;->f(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)Z
 
     move-result p1
 

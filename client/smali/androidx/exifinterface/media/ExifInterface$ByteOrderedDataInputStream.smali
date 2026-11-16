@@ -4,7 +4,6 @@
 
 # interfaces
 .implements Ljava/io/DataInput;
-.implements Lj$/io/InputStreamRetargetInterface;
 
 
 # annotations
@@ -1588,7 +1587,7 @@
 
     .line 48
     .line 49
-    invoke-static {v1, p1, v2}, Landroid/support/v4/media/g;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Landroid/support/v4/media/a;->d(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 50
     .line 51
@@ -1625,15 +1624,4 @@
     .line 63
     .line 64
     return-void
-.end method
-
-.method public final synthetic transferTo(Ljava/io/OutputStream;)J
-    .locals 2
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/io/DesugarInputStream;->transferTo(Ljava/io/InputStream;Ljava/io/OutputStream;)J
-
-    move-result-wide v0
-
-    return-wide v0
 .end method

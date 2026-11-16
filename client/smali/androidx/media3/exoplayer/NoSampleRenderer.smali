@@ -42,7 +42,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/w1;->a(Landroidx/media3/exoplayer/RendererCapabilities;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/a2;->a(Landroidx/media3/exoplayer/RendererCapabilities;)V
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -134,7 +134,7 @@
 
     .line 12
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 13
     .line 14
@@ -196,7 +196,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/v1;->a(Landroidx/media3/exoplayer/Renderer;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/z1;->a(Landroidx/media3/exoplayer/Renderer;)V
 
     return-void
 .end method
@@ -224,7 +224,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3, p4}, Landroidx/media3/exoplayer/v1;->b(Landroidx/media3/exoplayer/Renderer;JJ)J
+    invoke-static {p0, p1, p2, p3, p4}, Landroidx/media3/exoplayer/z1;->b(Landroidx/media3/exoplayer/Renderer;JJ)J
 
     move-result-wide p1
 
@@ -400,7 +400,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/v1;->c(Landroidx/media3/exoplayer/Renderer;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/z1;->c(Landroidx/media3/exoplayer/Renderer;)V
 
     return-void
 .end method
@@ -417,7 +417,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -457,7 +457,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -507,7 +507,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/w1;->b(Landroidx/media3/exoplayer/RendererCapabilities;Landroidx/media3/exoplayer/RendererCapabilities$Listener;)V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/a2;->b(Landroidx/media3/exoplayer/RendererCapabilities;Landroidx/media3/exoplayer/RendererCapabilities$Listener;)V
 
     return-void
 .end method
@@ -516,7 +516,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/v1;->d(Landroidx/media3/exoplayer/Renderer;FF)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/z1;->d(Landroidx/media3/exoplayer/Renderer;FF)V
 
     return-void
 .end method
@@ -550,7 +550,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -599,7 +599,7 @@
 
     .line 10
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 11
     .line 12
@@ -623,7 +623,7 @@
     const/4 p1, 0x0
 
     .line 2
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 3
     .line 4
@@ -646,7 +646,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/v1;->e(Landroidx/media3/exoplayer/Renderer;J)Z
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/z1;->e(Landroidx/media3/exoplayer/Renderer;J)Z
 
     move-result p1
 

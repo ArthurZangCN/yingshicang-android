@@ -31,6 +31,8 @@
 
 .field endUs:J
 
+.field private lastReportedDiscontinuityUs:J
+
 .field public final mediaPeriod:Landroidx/media3/exoplayer/source/MediaPeriod;
 
 .field private pendingInitialDiscontinuityPositionUs:J
@@ -42,7 +44,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/media3/exoplayer/source/MediaPeriod;ZJJ)V
-    .locals 0
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,37 +67,44 @@
 
     .line 10
     .line 11
-    if-eqz p2, :cond_0
+    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
 
     .line 12
     .line 13
-    move-wide p1, p3
-
     .line 14
-    goto :goto_0
-
     .line 15
-    :cond_0
-    const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
-
     .line 16
+    if-eqz p2, :cond_0
+
     .line 17
     .line 18
+    move-wide p1, p3
+
     .line 19
+    goto :goto_0
+
     .line 20
+    :cond_0
+    move-wide p1, v0
+
+    .line 21
     :goto_0
     iput-wide p1, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->pendingInitialDiscontinuityPositionUs:J
 
-    .line 21
     .line 22
+    .line 23
+    iput-wide v0, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->lastReportedDiscontinuityUs:J
+
+    .line 24
+    .line 25
     iput-wide p3, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->startUs:J
 
-    .line 23
-    .line 24
+    .line 26
+    .line 27
     iput-wide p5, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->endUs:J
 
-    .line 25
-    .line 26
+    .line 28
+    .line 29
     return-void
 .end method
 
@@ -795,71 +804,95 @@
 
     .line 15
     .line 16
-    invoke-virtual {p0}, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->readDiscontinuity()J
+    iput-wide v3, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->lastReportedDiscontinuityUs:J
 
     .line 17
     .line 18
+    invoke-virtual {p0}, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->readDiscontinuity()J
+
     .line 19
+    .line 20
+    .line 21
     move-result-wide v5
 
-    .line 20
-    cmp-long v0, v5, v1
-
-    .line 21
     .line 22
-    if-eqz v0, :cond_0
+    cmp-long v0, v5, v1
 
     .line 23
     .line 24
-    move-wide v3, v5
+    if-eqz v0, :cond_0
 
     .line 25
+    .line 26
+    move-wide v3, v5
+
+    .line 27
     :cond_0
     return-wide v3
 
-    .line 26
+    .line 28
     :cond_1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->mediaPeriod:Landroidx/media3/exoplayer/source/MediaPeriod;
 
-    .line 27
-    .line 28
-    invoke-interface {v0}, Landroidx/media3/exoplayer/source/MediaPeriod;->readDiscontinuity()J
-
     .line 29
     .line 30
+    invoke-interface {v0}, Landroidx/media3/exoplayer/source/MediaPeriod;->readDiscontinuity()J
+
     .line 31
+    .line 32
+    .line 33
     move-result-wide v3
 
-    .line 32
-    cmp-long v0, v3, v1
-
-    .line 33
     .line 34
-    if-nez v0, :cond_2
+    cmp-long v0, v3, v1
 
     .line 35
     .line 36
-    return-wide v1
+    if-nez v0, :cond_2
 
     .line 37
+    .line 38
+    return-wide v1
+
+    .line 39
     :cond_2
     iget-wide v5, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->startUs:J
 
-    .line 38
-    .line 39
-    iget-wide v7, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->endUs:J
-
     .line 40
     .line 41
-    invoke-static/range {v3 .. v8}, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->enforceClippingRange(JJJ)J
+    iget-wide v7, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->endUs:J
 
     .line 42
     .line 43
-    .line 44
-    move-result-wide v0
+    invoke-static/range {v3 .. v8}, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->enforceClippingRange(JJJ)J
 
+    .line 44
     .line 45
-    return-wide v0
+    .line 46
+    move-result-wide v3
+
+    .line 47
+    iget-wide v5, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->lastReportedDiscontinuityUs:J
+
+    .line 48
+    .line 49
+    cmp-long v0, v3, v5
+
+    .line 50
+    .line 51
+    if-nez v0, :cond_3
+
+    .line 52
+    .line 53
+    return-wide v1
+
+    .line 54
+    :cond_3
+    iput-wide v3, p0, Landroidx/media3/exoplayer/source/ClippingMediaPeriod;->lastReportedDiscontinuityUs:J
+
+    .line 55
+    .line 56
+    return-wide v3
 .end method
 
 .method public reevaluateBuffer(J)V

@@ -11,9 +11,11 @@
 
 .field public final synthetic b:I
 
+.field public final synthetic c:Z
+
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;I)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IZ)V
     .locals 0
 
     .line 1
@@ -23,22 +25,26 @@
 
     iput p2, p0, Landroidx/media3/exoplayer/analytics/u;->b:I
 
+    iput-boolean p3, p0, Landroidx/media3/exoplayer/analytics/u;->c:Z
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 2
+    .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/analytics/u;->b:I
+    iget-boolean v0, p0, Landroidx/media3/exoplayer/analytics/u;->c:Z
 
     check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
     iget-object v1, p0, Landroidx/media3/exoplayer/analytics/u;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->e(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ILandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    iget v2, p0, Landroidx/media3/exoplayer/analytics/u;->b:I
+
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->i0(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IZLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

@@ -60,7 +60,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, Landroidx/media3/datasource/c;->e(Landroid/net/http/UrlRequest;)V
+    invoke-static {v0}, Landroidx/media3/datasource/c;->g(Landroid/net/http/UrlRequest;)V
 
     .line 9
     .line 10
@@ -101,7 +101,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v2, v3}, Landroidx/media3/datasource/n;->g(Landroid/net/http/UrlRequest;Landroid/net/http/UrlRequest$StatusListener;)V
+    invoke-static {v2, v3}, Landroidx/media3/datasource/o;->e(Landroid/net/http/UrlRequest;Landroid/net/http/UrlRequest$StatusListener;)V
 
     .line 17
     .line 18
@@ -140,7 +140,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media3/datasource/o;->h(Landroid/net/http/UrlRequest;Ljava/nio/ByteBuffer;)V
+    invoke-static {v0, p1}, Landroidx/media3/datasource/m;->h(Landroid/net/http/UrlRequest;Ljava/nio/ByteBuffer;)V
 
     .line 4
     .line 5
@@ -156,7 +156,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/media3/datasource/m;->h(Landroid/net/http/UrlRequest;)V
+    invoke-static {v0}, Landroidx/media3/datasource/n;->g(Landroid/net/http/UrlRequest;)V
 
     .line 4
     .line 5

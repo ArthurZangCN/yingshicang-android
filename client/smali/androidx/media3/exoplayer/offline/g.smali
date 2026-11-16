@@ -3,21 +3,40 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/lang/Runnable;
 
 
-# virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;
+
+.field public final synthetic b:Landroidx/media3/exoplayer/offline/DownloadService;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;Landroidx/media3/exoplayer/offline/DownloadService;)V
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/media3/exoplayer/offline/Download;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    check-cast p2, Landroidx/media3/exoplayer/offline/Download;
+    iput-object p1, p0, Landroidx/media3/exoplayer/offline/g;->a:Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;
 
-    invoke-static {p1, p2}, Landroidx/media3/exoplayer/offline/DownloadManager$InternalHandler;->a(Landroidx/media3/exoplayer/offline/Download;Landroidx/media3/exoplayer/offline/Download;)I
+    iput-object p2, p0, Landroidx/media3/exoplayer/offline/g;->b:Landroidx/media3/exoplayer/offline/DownloadService;
 
-    move-result p1
+    return-void
+.end method
 
-    return p1
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/exoplayer/offline/g;->a:Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/offline/g;->b:Landroidx/media3/exoplayer/offline/DownloadService;
+
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;->a(Landroidx/media3/exoplayer/offline/DownloadService$DownloadManagerHelper;Landroidx/media3/exoplayer/offline/DownloadService;)V
+
+    return-void
 .end method

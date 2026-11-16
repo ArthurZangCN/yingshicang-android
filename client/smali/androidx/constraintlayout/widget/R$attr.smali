@@ -349,239 +349,239 @@
 
 .field public static final limitBoundsTo:I = 0x7f04030c
 
-.field public static final maxAcceleration:I = 0x7f040358
+.field public static final maxAcceleration:I = 0x7f040370
 
-.field public static final maxHeight:I = 0x7f04035c
+.field public static final maxHeight:I = 0x7f040374
 
-.field public static final maxVelocity:I = 0x7f040361
+.field public static final maxVelocity:I = 0x7f040379
 
-.field public static final maxWidth:I = 0x7f040362
+.field public static final maxWidth:I = 0x7f04037a
 
-.field public static final methodName:I = 0x7f040367
+.field public static final methodName:I = 0x7f04037f
 
-.field public static final minHeight:I = 0x7f040368
+.field public static final minHeight:I = 0x7f040380
 
-.field public static final minWidth:I = 0x7f04036c
+.field public static final minWidth:I = 0x7f040384
 
-.field public static final mock_diagonalsColor:I = 0x7f04036d
+.field public static final mock_diagonalsColor:I = 0x7f040385
 
-.field public static final mock_label:I = 0x7f04036e
+.field public static final mock_label:I = 0x7f040386
 
-.field public static final mock_labelBackgroundColor:I = 0x7f04036f
+.field public static final mock_labelBackgroundColor:I = 0x7f040387
 
-.field public static final mock_labelColor:I = 0x7f040370
+.field public static final mock_labelColor:I = 0x7f040388
 
-.field public static final mock_showDiagonals:I = 0x7f040371
+.field public static final mock_showDiagonals:I = 0x7f040389
 
-.field public static final mock_showLabel:I = 0x7f040372
+.field public static final mock_showLabel:I = 0x7f04038a
 
-.field public static final motionDebug:I = 0x7f040373
+.field public static final motionDebug:I = 0x7f04038b
 
-.field public static final motionEffect_alpha:I = 0x7f040390
+.field public static final motionEffect_alpha:I = 0x7f0403a8
 
-.field public static final motionEffect_end:I = 0x7f040391
+.field public static final motionEffect_end:I = 0x7f0403a9
 
-.field public static final motionEffect_move:I = 0x7f040392
+.field public static final motionEffect_move:I = 0x7f0403aa
 
-.field public static final motionEffect_start:I = 0x7f040393
+.field public static final motionEffect_start:I = 0x7f0403ab
 
-.field public static final motionEffect_strict:I = 0x7f040394
+.field public static final motionEffect_strict:I = 0x7f0403ac
 
-.field public static final motionEffect_translationX:I = 0x7f040395
+.field public static final motionEffect_translationX:I = 0x7f0403ad
 
-.field public static final motionEffect_translationY:I = 0x7f040396
+.field public static final motionEffect_translationY:I = 0x7f0403ae
 
-.field public static final motionEffect_viewTransition:I = 0x7f040397
+.field public static final motionEffect_viewTransition:I = 0x7f0403af
 
-.field public static final motionInterpolator:I = 0x7f040398
+.field public static final motionInterpolator:I = 0x7f0403b0
 
-.field public static final motionPathRotate:I = 0x7f04039a
+.field public static final motionPathRotate:I = 0x7f0403b2
 
-.field public static final motionProgress:I = 0x7f04039b
+.field public static final motionProgress:I = 0x7f0403b3
 
-.field public static final motionStagger:I = 0x7f04039c
+.field public static final motionStagger:I = 0x7f0403b4
 
-.field public static final motionTarget:I = 0x7f04039d
+.field public static final motionTarget:I = 0x7f0403b5
 
-.field public static final motion_postLayoutCollision:I = 0x7f04039e
+.field public static final motion_postLayoutCollision:I = 0x7f0403b6
 
-.field public static final motion_triggerOnCollision:I = 0x7f04039f
+.field public static final motion_triggerOnCollision:I = 0x7f0403b7
 
-.field public static final moveWhenScrollAtTop:I = 0x7f0403a0
+.field public static final moveWhenScrollAtTop:I = 0x7f0403b8
 
-.field public static final nestedScrollFlags:I = 0x7f0403a8
+.field public static final nestedScrollFlags:I = 0x7f0403c0
 
-.field public static final onCross:I = 0x7f0403b1
+.field public static final onCross:I = 0x7f0403c9
 
-.field public static final onHide:I = 0x7f0403b2
+.field public static final onHide:I = 0x7f0403ca
 
-.field public static final onNegativeCross:I = 0x7f0403b3
+.field public static final onNegativeCross:I = 0x7f0403cb
 
-.field public static final onPositiveCross:I = 0x7f0403b4
+.field public static final onPositiveCross:I = 0x7f0403cc
 
-.field public static final onShow:I = 0x7f0403b5
+.field public static final onShow:I = 0x7f0403cd
 
-.field public static final onStateTransition:I = 0x7f0403b6
+.field public static final onStateTransition:I = 0x7f0403ce
 
-.field public static final onTouchUp:I = 0x7f0403b7
+.field public static final onTouchUp:I = 0x7f0403cf
 
-.field public static final overlay:I = 0x7f0403ba
+.field public static final overlay:I = 0x7f0403d2
 
-.field public static final pathMotionArc:I = 0x7f0403cc
+.field public static final pathMotionArc:I = 0x7f0403e4
 
-.field public static final path_percent:I = 0x7f0403cd
+.field public static final path_percent:I = 0x7f0403e5
 
-.field public static final percentHeight:I = 0x7f0403cf
+.field public static final percentHeight:I = 0x7f0403e7
 
-.field public static final percentWidth:I = 0x7f0403d0
+.field public static final percentWidth:I = 0x7f0403e8
 
-.field public static final percentX:I = 0x7f0403d1
+.field public static final percentX:I = 0x7f0403e9
 
-.field public static final percentY:I = 0x7f0403d2
+.field public static final percentY:I = 0x7f0403ea
 
-.field public static final perpendicularPath_percent:I = 0x7f0403d3
+.field public static final perpendicularPath_percent:I = 0x7f0403eb
 
-.field public static final pivotAnchor:I = 0x7f0403d4
+.field public static final pivotAnchor:I = 0x7f0403ec
 
-.field public static final placeholder_emptyVisibility:I = 0x7f0403d8
+.field public static final placeholder_emptyVisibility:I = 0x7f0403f0
 
-.field public static final polarRelativeTo:I = 0x7f0403de
+.field public static final polarRelativeTo:I = 0x7f0403f6
 
-.field public static final quantizeMotionInterpolator:I = 0x7f0403eb
+.field public static final quantizeMotionInterpolator:I = 0x7f040403
 
-.field public static final quantizeMotionPhase:I = 0x7f0403ec
+.field public static final quantizeMotionPhase:I = 0x7f040404
 
-.field public static final quantizeMotionSteps:I = 0x7f0403ed
+.field public static final quantizeMotionSteps:I = 0x7f040405
 
-.field public static final reactiveGuide_animateChange:I = 0x7f0403f6
+.field public static final reactiveGuide_animateChange:I = 0x7f04040e
 
-.field public static final reactiveGuide_applyToAllConstraintSets:I = 0x7f0403f7
+.field public static final reactiveGuide_applyToAllConstraintSets:I = 0x7f04040f
 
-.field public static final reactiveGuide_applyToConstraintSet:I = 0x7f0403f8
+.field public static final reactiveGuide_applyToConstraintSet:I = 0x7f040410
 
-.field public static final reactiveGuide_valueId:I = 0x7f0403f9
+.field public static final reactiveGuide_valueId:I = 0x7f040411
 
-.field public static final region_heightLessThan:I = 0x7f0403fb
+.field public static final region_heightLessThan:I = 0x7f040413
 
-.field public static final region_heightMoreThan:I = 0x7f0403fc
+.field public static final region_heightMoreThan:I = 0x7f040414
 
-.field public static final region_widthLessThan:I = 0x7f0403fd
+.field public static final region_widthLessThan:I = 0x7f040415
 
-.field public static final region_widthMoreThan:I = 0x7f0403fe
+.field public static final region_widthMoreThan:I = 0x7f040416
 
-.field public static final rotationCenterId:I = 0x7f04040a
+.field public static final rotationCenterId:I = 0x7f040422
 
-.field public static final round:I = 0x7f04040b
+.field public static final round:I = 0x7f040423
 
-.field public static final roundPercent:I = 0x7f04040c
+.field public static final roundPercent:I = 0x7f040424
 
-.field public static final saturation:I = 0x7f04040e
+.field public static final saturation:I = 0x7f040426
 
-.field public static final scaleFromTextSize:I = 0x7f04040f
+.field public static final scaleFromTextSize:I = 0x7f040427
 
-.field public static final setsTag:I = 0x7f040425
+.field public static final setsTag:I = 0x7f04043d
 
-.field public static final showPaths:I = 0x7f04047a
+.field public static final showPaths:I = 0x7f040492
 
-.field public static final sizePercent:I = 0x7f040493
+.field public static final sizePercent:I = 0x7f0404ab
 
-.field public static final springBoundary:I = 0x7f04049e
+.field public static final springBoundary:I = 0x7f0404b6
 
-.field public static final springDamping:I = 0x7f04049f
+.field public static final springDamping:I = 0x7f0404b7
 
-.field public static final springMass:I = 0x7f0404a0
+.field public static final springMass:I = 0x7f0404b8
 
-.field public static final springStiffness:I = 0x7f0404a1
+.field public static final springStiffness:I = 0x7f0404b9
 
-.field public static final springStopThreshold:I = 0x7f0404a2
+.field public static final springStopThreshold:I = 0x7f0404ba
 
-.field public static final staggered:I = 0x7f0404a5
+.field public static final staggered:I = 0x7f0404bd
 
-.field public static final stateLabels:I = 0x7f0404ae
+.field public static final stateLabels:I = 0x7f0404c6
 
-.field public static final targetId:I = 0x7f0404f1
+.field public static final targetId:I = 0x7f040509
 
-.field public static final telltales_tailColor:I = 0x7f0404f2
+.field public static final telltales_tailColor:I = 0x7f04050a
 
-.field public static final telltales_tailScale:I = 0x7f0404f3
+.field public static final telltales_tailScale:I = 0x7f04050b
 
-.field public static final telltales_velocityMode:I = 0x7f0404f4
+.field public static final telltales_velocityMode:I = 0x7f04050c
 
-.field public static final textBackground:I = 0x7f04051c
+.field public static final textBackground:I = 0x7f040534
 
-.field public static final textBackgroundPanX:I = 0x7f04051d
+.field public static final textBackgroundPanX:I = 0x7f040535
 
-.field public static final textBackgroundPanY:I = 0x7f04051e
+.field public static final textBackgroundPanY:I = 0x7f040536
 
-.field public static final textBackgroundRotate:I = 0x7f04051f
+.field public static final textBackgroundRotate:I = 0x7f040537
 
-.field public static final textBackgroundZoom:I = 0x7f040520
+.field public static final textBackgroundZoom:I = 0x7f040538
 
-.field public static final textFillColor:I = 0x7f040525
+.field public static final textFillColor:I = 0x7f04053d
 
-.field public static final textOutlineColor:I = 0x7f04052f
+.field public static final textOutlineColor:I = 0x7f040547
 
-.field public static final textOutlineThickness:I = 0x7f040530
+.field public static final textOutlineThickness:I = 0x7f040548
 
-.field public static final textPanX:I = 0x7f040531
+.field public static final textPanX:I = 0x7f040549
 
-.field public static final textPanY:I = 0x7f040532
+.field public static final textPanY:I = 0x7f04054a
 
-.field public static final textureBlurFactor:I = 0x7f040536
+.field public static final textureBlurFactor:I = 0x7f04054e
 
-.field public static final textureEffect:I = 0x7f040537
+.field public static final textureEffect:I = 0x7f04054f
 
-.field public static final textureHeight:I = 0x7f040538
+.field public static final textureHeight:I = 0x7f040550
 
-.field public static final textureWidth:I = 0x7f040539
+.field public static final textureWidth:I = 0x7f040551
 
-.field public static final touchAnchorId:I = 0x7f040576
+.field public static final touchAnchorId:I = 0x7f04058e
 
-.field public static final touchAnchorSide:I = 0x7f040577
+.field public static final touchAnchorSide:I = 0x7f04058f
 
-.field public static final touchRegionId:I = 0x7f040578
+.field public static final touchRegionId:I = 0x7f040590
 
-.field public static final transformPivotTarget:I = 0x7f040588
+.field public static final transformPivotTarget:I = 0x7f0405a0
 
-.field public static final transitionDisable:I = 0x7f040589
+.field public static final transitionDisable:I = 0x7f0405a1
 
-.field public static final transitionEasing:I = 0x7f04058a
+.field public static final transitionEasing:I = 0x7f0405a2
 
-.field public static final transitionFlags:I = 0x7f04058b
+.field public static final transitionFlags:I = 0x7f0405a3
 
-.field public static final transitionPathRotate:I = 0x7f04058c
+.field public static final transitionPathRotate:I = 0x7f0405a4
 
-.field public static final triggerId:I = 0x7f04058e
+.field public static final triggerId:I = 0x7f0405a6
 
-.field public static final triggerReceiver:I = 0x7f04058f
+.field public static final triggerReceiver:I = 0x7f0405a7
 
-.field public static final triggerSlack:I = 0x7f040590
+.field public static final triggerSlack:I = 0x7f0405a8
 
-.field public static final upDuration:I = 0x7f0405a6
+.field public static final upDuration:I = 0x7f0405bf
 
-.field public static final viewTransitionMode:I = 0x7f0405b2
+.field public static final viewTransitionMode:I = 0x7f0405cb
 
-.field public static final viewTransitionOnCross:I = 0x7f0405b3
+.field public static final viewTransitionOnCross:I = 0x7f0405cc
 
-.field public static final viewTransitionOnNegativeCross:I = 0x7f0405b4
+.field public static final viewTransitionOnNegativeCross:I = 0x7f0405cd
 
-.field public static final viewTransitionOnPositiveCross:I = 0x7f0405b5
+.field public static final viewTransitionOnPositiveCross:I = 0x7f0405ce
 
-.field public static final visibilityMode:I = 0x7f0405b6
+.field public static final visibilityMode:I = 0x7f0405cf
 
-.field public static final warmth:I = 0x7f0405b9
+.field public static final warmth:I = 0x7f0405d2
 
-.field public static final waveDecay:I = 0x7f0405ba
+.field public static final waveDecay:I = 0x7f0405d3
 
-.field public static final waveOffset:I = 0x7f0405bb
+.field public static final waveOffset:I = 0x7f0405d4
 
-.field public static final wavePeriod:I = 0x7f0405bc
+.field public static final wavePeriod:I = 0x7f0405d5
 
-.field public static final wavePhase:I = 0x7f0405bd
+.field public static final wavePhase:I = 0x7f0405d6
 
-.field public static final waveShape:I = 0x7f0405be
+.field public static final waveShape:I = 0x7f0405d7
 
-.field public static final waveVariesBy:I = 0x7f0405bf
+.field public static final waveVariesBy:I = 0x7f0405d8
 
 
 # direct methods

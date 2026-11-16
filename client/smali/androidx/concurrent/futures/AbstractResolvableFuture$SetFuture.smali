@@ -28,10 +28,10 @@
 
 
 # instance fields
-.field final future:Lcom/google/common/util/concurrent/t;
+.field final future:Lcom/google/common/util/concurrent/x;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "+TV;>;"
         }
     .end annotation
@@ -48,14 +48,14 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/concurrent/futures/AbstractResolvableFuture;Lcom/google/common/util/concurrent/t;)V
+.method public constructor <init>(Landroidx/concurrent/futures/AbstractResolvableFuture;Lcom/google/common/util/concurrent/x;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/concurrent/futures/AbstractResolvableFuture<",
             "TV;>;",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "+TV;>;)V"
         }
     .end annotation
@@ -70,7 +70,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Landroidx/concurrent/futures/AbstractResolvableFuture$SetFuture;->future:Lcom/google/common/util/concurrent/t;
+    iput-object p2, p0, Landroidx/concurrent/futures/AbstractResolvableFuture$SetFuture;->future:Lcom/google/common/util/concurrent/x;
 
     .line 7
     .line 8
@@ -99,11 +99,11 @@
 
     .line 8
     :cond_0
-    iget-object v0, p0, Landroidx/concurrent/futures/AbstractResolvableFuture$SetFuture;->future:Lcom/google/common/util/concurrent/t;
+    iget-object v0, p0, Landroidx/concurrent/futures/AbstractResolvableFuture$SetFuture;->future:Lcom/google/common/util/concurrent/x;
 
     .line 9
     .line 10
-    invoke-static {v0}, Landroidx/concurrent/futures/AbstractResolvableFuture;->getFutureValue(Lcom/google/common/util/concurrent/t;)Ljava/lang/Object;
+    invoke-static {v0}, Landroidx/concurrent/futures/AbstractResolvableFuture;->getFutureValue(Lcom/google/common/util/concurrent/x;)Ljava/lang/Object;
 
     .line 11
     .line 12

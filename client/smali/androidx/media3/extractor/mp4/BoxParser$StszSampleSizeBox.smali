@@ -76,7 +76,7 @@
     move-result v1
 
     .line 25
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_0
 
     .line 26
     .line 27
@@ -96,96 +96,91 @@
     move-result p2
 
     .line 35
-    if-eqz v0, :cond_0
+    rem-int v1, v0, p2
 
     .line 36
     .line 37
-    rem-int v1, v0, p2
+    if-eqz v1, :cond_0
 
     .line 38
     .line 39
-    if-eqz v1, :cond_1
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 40
     .line 41
-    :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v2, "Audio sample size mismatch. stsd sample size: "
 
     .line 42
     .line 43
-    const-string v2, "Audio sample size mismatch. stsd sample size: "
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 44
     .line 45
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 46
-    .line 47
-    .line 48
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 47
+    .line 48
     .line 49
+    const-string v2, ", stsz sample size: "
+
     .line 50
     .line 51
-    const-string v2, ", stsz sample size: "
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 52
     .line 53
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 54
-    .line 55
-    .line 56
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 55
+    .line 56
     .line 57
-    .line 58
-    .line 59
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 58
+    .line 59
     .line 60
-    .line 61
-    .line 62
     move-result-object v0
 
-    .line 63
+    .line 61
     const-string v1, "BoxParsers"
+
+    .line 62
+    .line 63
+    invoke-static {v1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 64
     .line 65
-    invoke-static {v1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 66
-    .line 67
-    .line 68
     move v0, p2
 
-    .line 69
-    :cond_1
-    if-nez v0, :cond_2
+    .line 67
+    :cond_0
+    if-nez v0, :cond_1
 
-    .line 70
-    .line 71
+    .line 68
+    .line 69
     const/4 v0, -0x1
 
-    .line 72
-    :cond_2
+    .line 70
+    :cond_1
     iput v0, p0, Landroidx/media3/extractor/mp4/BoxParser$StszSampleSizeBox;->fixedSampleSize:I
+
+    .line 71
+    .line 72
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedIntToInt()I
 
     .line 73
     .line 74
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedIntToInt()I
-
     .line 75
-    .line 76
-    .line 77
     move-result p1
 
-    .line 78
+    .line 76
     iput p1, p0, Landroidx/media3/extractor/mp4/BoxParser$StszSampleSizeBox;->sampleCount:I
 
-    .line 79
-    .line 80
+    .line 77
+    .line 78
     return-void
 .end method
 

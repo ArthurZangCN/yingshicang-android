@@ -37,7 +37,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/session/d;->x(Ljava/lang/Object;)Z
+    invoke-static {p1}, Landroidx/core/content/pm/a;->p(Ljava/lang/Object;)Z
 
     .line 2
     .line 3

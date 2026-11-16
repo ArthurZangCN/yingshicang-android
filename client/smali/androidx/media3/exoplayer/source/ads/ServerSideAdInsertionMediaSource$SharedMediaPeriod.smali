@@ -588,7 +588,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -2390,7 +2390,7 @@
 
     .line 159
     .line 160
-    invoke-static {v7, v6}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v6}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 161
     .line 162

@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/util/Iterator;
-.implements La4/a;
+.implements Lg4/a;
 
 
 # annotations
@@ -23,7 +23,7 @@
         "Ljava/util/Iterator<",
         "Landroid/view/MenuItem;",
         ">;",
-        "La4/a;"
+        "Lg4/a;"
     }
 .end annotation
 
@@ -175,7 +175,7 @@
     .line 20
     .line 21
     .line 22
-    sget-object v0, Lr3/q;->a:Lr3/q;
+    sget-object v0, Lv3/q;->a:Lv3/q;
 
     .line 23
     .line 24

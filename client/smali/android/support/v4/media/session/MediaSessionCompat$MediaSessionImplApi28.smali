@@ -49,7 +49,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/session/d;->g(Landroid/media/session/MediaSession;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+    invoke-static {v0}, Landroid/support/v4/media/session/g;->f(Landroid/media/session/MediaSession;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
     .line 4
     .line 5

@@ -339,7 +339,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0, v1}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 54
     .line 55
@@ -1245,7 +1245,7 @@
 
     .line 56
     .line 57
-    invoke-static {v0}, Landroid/support/v4/media/session/b;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
+    invoke-static {v0}, Landroid/support/v4/media/session/e;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
 
     .line 58
     .line 59
@@ -1319,7 +1319,7 @@
 
     .line 92
     .line 93
-    invoke-static {v0}, Landroid/support/v4/media/session/b;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
+    invoke-static {v0}, Landroid/support/v4/media/session/e;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
 
     .line 94
     .line 95
@@ -1369,7 +1369,7 @@
     .line 116
     .line 117
     :cond_3
-    invoke-static {v0}, Landroid/support/v4/media/session/b;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
+    invoke-static {v0}, Landroid/support/v4/media/session/e;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
 
     .line 118
     .line 119
@@ -1395,7 +1395,7 @@
 
     .line 129
     .line 130
-    invoke-static {v0}, Landroid/support/v4/media/session/b;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
+    invoke-static {v0}, Landroid/support/v4/media/session/e;->d(Ljava/lang/Object;)Landroid/app/Notification$MessagingStyle;
 
     .line 131
     .line 132

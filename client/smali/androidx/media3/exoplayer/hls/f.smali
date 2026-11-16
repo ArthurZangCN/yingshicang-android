@@ -7,29 +7,17 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
-
-.field public final synthetic b:Ljava/lang/Object;
-
-.field public final synthetic c:I
-
-.field public final synthetic d:I
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;II)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/f;->a:Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
-
-    iput-object p2, p0, Landroidx/media3/exoplayer/hls/f;->b:Ljava/lang/Object;
-
-    iput p3, p0, Landroidx/media3/exoplayer/hls/f;->c:I
-
-    iput p4, p0, Landroidx/media3/exoplayer/hls/f;->d:I
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/f;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
     return-void
 .end method
@@ -37,20 +25,14 @@
 
 # virtual methods
 .method public final accept(Ljava/lang/Object;)V
-    .locals 4
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/hls/f;->d:I
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/f;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
     check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/hls/f;->a:Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
-
-    iget-object v2, p0, Landroidx/media3/exoplayer/hls/f;->b:Ljava/lang/Object;
-
-    iget v3, p0, Landroidx/media3/exoplayer/hls/f;->c:I
-
-    invoke-static {v1, v2, v3, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->c(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->f(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
 
     return-void
 .end method

@@ -10,6 +10,12 @@
 
 .field public final length:I
 
+.field public final marginLeftIndex:I
+
+.field public final marginRightIndex:I
+
+.field public final marginVerticalIndex:I
+
 .field public final startTimeIndex:I
 
 .field public final styleIndex:I
@@ -18,7 +24,7 @@
 
 
 # direct methods
-.method private constructor <init>(IIIIII)V
+.method private constructor <init>(IIIIIIIII)V
     .locals 0
 
     .line 1
@@ -47,15 +53,27 @@
 
     .line 13
     .line 14
-    iput p6, p0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;->length:I
+    iput p6, p0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;->marginLeftIndex:I
 
     .line 15
     .line 16
+    iput p7, p0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;->marginRightIndex:I
+
+    .line 17
+    .line 18
+    iput p8, p0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;->marginVerticalIndex:I
+
+    .line 19
+    .line 20
+    iput p9, p0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;->length:I
+
+    .line 21
+    .line 22
     return-void
 .end method
 
 .method public static fromFormatLine(Ljava/lang/String;)Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;
-    .locals 10
+    .locals 14
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
@@ -72,7 +90,7 @@
     move-result v0
 
     .line 7
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 8
     .line 9
@@ -88,11 +106,11 @@
     move-result-object p0
 
     .line 15
-    const-string v0, ","
+    const-string v1, ","
 
     .line 16
     .line 17
-    invoke-static {p0, v0}, Landroid/text/TextUtils;->split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {p0, v1}, Landroid/text/TextUtils;->split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     .line 18
     .line 19
@@ -100,339 +118,470 @@
     move-result-object p0
 
     .line 21
-    const/4 v0, -0x1
+    const/4 v1, -0x1
 
     .line 22
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     .line 23
-    move v4, v0
+    move v5, v1
 
     .line 24
-    move v5, v4
-
-    .line 25
     move v6, v5
 
-    .line 26
+    .line 25
     move v7, v6
 
-    .line 27
+    .line 26
     move v8, v7
 
+    .line 27
+    move v9, v8
+
     .line 28
-    move v2, v1
+    move v10, v9
 
     .line 29
-    :goto_0
-    array-length v3, p0
+    move v11, v10
 
     .line 30
-    if-ge v2, v3, :cond_5
+    move v12, v11
 
     .line 31
+    move v3, v2
+
     .line 32
-    aget-object v3, p0, v2
+    :goto_0
+    array-length v4, p0
 
     .line 33
-    .line 34
-    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+    if-ge v3, v4, :cond_8
 
+    .line 34
     .line 35
+    aget-object v4, p0, v3
+
     .line 36
     .line 37
-    move-result-object v3
+    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 38
-    invoke-static {v3}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
-
     .line 39
     .line 40
+    move-result-object v4
+
     .line 41
-    move-result-object v3
+    invoke-static {v4}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 42
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 43
     .line 44
+    move-result-object v4
+
     .line 45
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 46
     .line 47
     .line 48
-    move-result v9
+    invoke-virtual {v4}, Ljava/lang/String;->hashCode()I
 
     .line 49
-    sparse-switch v9, :sswitch_data_0
-
     .line 50
     .line 51
+    move-result v13
+
     .line 52
-    :goto_1
-    move v3, v0
+    sparse-switch v13, :sswitch_data_0
 
     .line 53
-    goto :goto_2
-
     .line 54
-    :sswitch_0
-    const-string v9, "style"
-
     .line 55
+    :goto_1
+    move v4, v1
+
     .line 56
-    invoke-virtual {v3, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_2
 
     .line 57
     .line 58
-    .line 59
-    move-result v3
+    :sswitch_0
+    const-string v13, "marginv"
 
+    .line 59
     .line 60
-    if-nez v3, :cond_0
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 61
     .line 62
-    goto :goto_1
-
     .line 63
-    :cond_0
-    const/4 v3, 0x4
+    move-result v4
 
     .line 64
-    goto :goto_2
+    if-nez v4, :cond_0
 
     .line 65
-    :sswitch_1
-    const-string v9, "start"
-
     .line 66
+    goto :goto_1
+
     .line 67
-    invoke-virtual {v3, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_0
+    move v4, v0
 
     .line 68
-    .line 69
-    .line 70
-    move-result v3
+    goto :goto_2
 
+    .line 69
+    :sswitch_1
+    const-string v13, "marginr"
+
+    .line 70
     .line 71
-    if-nez v3, :cond_1
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 72
     .line 73
-    goto :goto_1
-
     .line 74
-    :cond_1
-    const/4 v3, 0x3
+    move-result v4
 
     .line 75
-    goto :goto_2
+    if-nez v4, :cond_1
 
     .line 76
-    :sswitch_2
-    const-string v9, "layer"
-
     .line 77
+    goto :goto_1
+
     .line 78
-    invoke-virtual {v3, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_1
+    const/4 v4, 0x6
 
     .line 79
-    .line 80
-    .line 81
-    move-result v3
+    goto :goto_2
 
+    .line 80
+    :sswitch_2
+    const-string v13, "marginl"
+
+    .line 81
     .line 82
-    if-nez v3, :cond_2
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 83
     .line 84
-    goto :goto_1
-
     .line 85
-    :cond_2
-    const/4 v3, 0x2
+    move-result v4
 
     .line 86
-    goto :goto_2
+    if-nez v4, :cond_2
 
     .line 87
-    :sswitch_3
-    const-string v9, "text"
-
     .line 88
+    goto :goto_1
+
     .line 89
-    invoke-virtual {v3, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_2
+    const/4 v4, 0x5
 
     .line 90
-    .line 91
-    .line 92
-    move-result v3
+    goto :goto_2
 
+    .line 91
+    :sswitch_3
+    const-string v13, "style"
+
+    .line 92
     .line 93
-    if-nez v3, :cond_3
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 94
     .line 95
-    goto :goto_1
-
     .line 96
-    :cond_3
-    const/4 v3, 0x1
+    move-result v4
 
     .line 97
-    goto :goto_2
+    if-nez v4, :cond_3
 
     .line 98
-    :sswitch_4
-    const-string v9, "end"
-
     .line 99
+    goto :goto_1
+
     .line 100
-    invoke-virtual {v3, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_3
+    const/4 v4, 0x4
 
     .line 101
-    .line 102
-    .line 103
-    move-result v3
+    goto :goto_2
 
+    .line 102
+    :sswitch_4
+    const-string v13, "start"
+
+    .line 103
     .line 104
-    if-nez v3, :cond_4
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 105
     .line 106
-    goto :goto_1
-
     .line 107
-    :cond_4
-    move v3, v1
+    move-result v4
 
     .line 108
-    :goto_2
-    packed-switch v3, :pswitch_data_0
+    if-nez v4, :cond_4
 
     .line 109
     .line 110
+    goto :goto_1
+
     .line 111
-    goto :goto_3
+    :cond_4
+    const/4 v4, 0x3
 
     .line 112
-    :pswitch_0
-    move v7, v2
+    goto :goto_2
 
     .line 113
-    goto :goto_3
+    :sswitch_5
+    const-string v13, "layer"
 
     .line 114
-    :pswitch_1
-    move v5, v2
-
     .line 115
-    goto :goto_3
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 116
-    :pswitch_2
-    move v4, v2
-
     .line 117
-    goto :goto_3
-
     .line 118
-    :pswitch_3
-    move v8, v2
+    move-result v4
 
     .line 119
-    goto :goto_3
+    if-nez v4, :cond_5
 
     .line 120
-    :pswitch_4
-    move v6, v2
-
     .line 121
-    :goto_3
-    add-int/lit8 v2, v2, 0x1
+    goto :goto_1
 
     .line 122
+    :cond_5
+    const/4 v4, 0x2
+
     .line 123
-    goto :goto_0
+    goto :goto_2
 
     .line 124
-    :cond_5
-    if-eq v5, v0, :cond_6
+    :sswitch_6
+    const-string v13, "text"
 
     .line 125
     .line 126
-    if-eq v6, v0, :cond_6
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 127
     .line 128
-    if-eq v8, v0, :cond_6
-
     .line 129
+    move-result v4
+
     .line 130
-    new-instance v0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;
+    if-nez v4, :cond_6
 
     .line 131
     .line 132
-    array-length v9, p0
+    goto :goto_1
 
     .line 133
-    move-object v3, v0
+    :cond_6
+    const/4 v4, 0x1
 
     .line 134
-    invoke-direct/range {v3 .. v9}, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;-><init>(IIIIII)V
+    goto :goto_2
 
     .line 135
+    :sswitch_7
+    const-string v13, "end"
+
     .line 136
     .line 137
-    goto :goto_4
+    invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 138
-    :cond_6
-    const/4 v0, 0x0
-
     .line 139
-    :goto_4
-    return-object v0
-
     .line 140
-    nop
+    move-result v4
 
     .line 141
-    :sswitch_data_0
-    .sparse-switch
-        0x188db -> :sswitch_4
-        0x36452d -> :sswitch_3
-        0x61fd551 -> :sswitch_2
-        0x68ac462 -> :sswitch_1
-        0x68b1db1 -> :sswitch_0
-    .end sparse-switch
+    if-nez v4, :cond_7
 
     .line 142
     .line 143
+    goto :goto_1
+
     .line 144
+    :cond_7
+    move v4, v2
+
     .line 145
+    :goto_2
+    packed-switch v4, :pswitch_data_0
+
     .line 146
     .line 147
     .line 148
+    goto :goto_3
+
     .line 149
+    :pswitch_0
+    move v12, v3
+
     .line 150
+    goto :goto_3
+
     .line 151
+    :pswitch_1
+    move v11, v3
+
     .line 152
+    goto :goto_3
+
     .line 153
+    :pswitch_2
+    move v10, v3
+
     .line 154
+    goto :goto_3
+
     .line 155
+    :pswitch_3
+    move v8, v3
+
     .line 156
+    goto :goto_3
+
     .line 157
+    :pswitch_4
+    move v6, v3
+
     .line 158
+    goto :goto_3
+
     .line 159
+    :pswitch_5
+    move v5, v3
+
     .line 160
+    goto :goto_3
+
     .line 161
+    :pswitch_6
+    move v9, v3
+
     .line 162
+    goto :goto_3
+
     .line 163
+    :pswitch_7
+    move v7, v3
+
+    .line 164
+    :goto_3
+    add-int/lit8 v3, v3, 0x1
+
+    .line 165
+    .line 166
+    goto/16 :goto_0
+
+    .line 167
+    .line 168
+    :cond_8
+    if-eq v6, v1, :cond_9
+
+    .line 169
+    .line 170
+    if-eq v7, v1, :cond_9
+
+    .line 171
+    .line 172
+    if-eq v9, v1, :cond_9
+
+    .line 173
+    .line 174
+    new-instance v0, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;
+
+    .line 175
+    .line 176
+    array-length v13, p0
+
+    .line 177
+    move-object v4, v0
+
+    .line 178
+    invoke-direct/range {v4 .. v13}, Landroidx/media3/extractor/text/ssa/SsaDialogueFormat;-><init>(IIIIIIIII)V
+
+    .line 179
+    .line 180
+    .line 181
+    goto :goto_4
+
+    .line 182
+    :cond_9
+    const/4 v0, 0x0
+
+    .line 183
+    :goto_4
+    return-object v0
+
+    .line 184
+    nop
+
+    .line 185
+    :sswitch_data_0
+    .sparse-switch
+        0x188db -> :sswitch_7
+        0x36452d -> :sswitch_6
+        0x61fd551 -> :sswitch_5
+        0x68ac462 -> :sswitch_4
+        0x68b1db1 -> :sswitch_3
+        0x3204307e -> :sswitch_2
+        0x32043084 -> :sswitch_1
+        0x32043088 -> :sswitch_0
+    .end sparse-switch
+
+    .line 186
+    .line 187
+    .line 188
+    .line 189
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
+    .line 214
+    .line 215
+    .line 216
+    .line 217
+    .line 218
+    .line 219
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
         :pswitch_4
         :pswitch_3
         :pswitch_2

@@ -314,7 +314,7 @@
 
     .line 122
     .line 123
-    invoke-static {v0, v2}, Landroid/support/v4/media/d;->c(Ljava/util/ArrayList;I)Ljava/lang/Object;
+    invoke-static {v0, v2}, Landroid/support/v4/media/a;->b(Ljava/util/ArrayList;I)Ljava/lang/Object;
 
     .line 124
     .line 125

@@ -137,7 +137,7 @@
 
 # virtual methods
 .method public onPrepareComplete(Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/ads/AdsMediaSource$AdPrepareListener;->this$0:Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
@@ -152,23 +152,20 @@
     move-result-object v0
 
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/source/ads/c;
+    new-instance v1, Landroidx/media3/exoplayer/source/ads/f;
 
     .line 8
     .line 9
-    const/4 v2, 0x1
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/ads/f;-><init>(Landroidx/media3/exoplayer/source/ads/AdsMediaSource$AdPrepareListener;Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
 
     .line 10
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/source/ads/c;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 11
     .line 12
-    .line 13
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     return-void
 .end method
 

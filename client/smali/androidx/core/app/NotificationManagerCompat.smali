@@ -1447,7 +1447,7 @@
     move-result-object v1
 
     .line 27
-    invoke-static {v1}, Landroidx/core/app/c;->c(Ljava/lang/Object;)Landroid/app/NotificationChannel;
+    invoke-static {v1}, Landroidx/appcompat/app/d;->e(Ljava/lang/Object;)Landroid/app/NotificationChannel;
 
     .line 28
     .line 29
@@ -1858,7 +1858,7 @@
     move-result-object v1
 
     .line 37
-    invoke-static {v1}, Landroidx/appcompat/app/d;->h(Ljava/lang/Object;)Landroid/app/NotificationChannelGroup;
+    invoke-static {v1}, Landroidx/core/app/c;->c(Ljava/lang/Object;)Landroid/app/NotificationChannelGroup;
 
     .line 38
     .line 39
@@ -2163,7 +2163,7 @@
     move-result-object v4
 
     .line 53
-    invoke-static {v4}, Landroidx/appcompat/app/d;->h(Ljava/lang/Object;)Landroid/app/NotificationChannelGroup;
+    invoke-static {v4}, Landroidx/core/app/c;->c(Ljava/lang/Object;)Landroid/app/NotificationChannelGroup;
 
     .line 54
     .line 55
@@ -2377,7 +2377,7 @@
     move-result-object v2
 
     .line 40
-    invoke-static {v2}, Landroidx/core/app/c;->c(Ljava/lang/Object;)Landroid/app/NotificationChannel;
+    invoke-static {v2}, Landroidx/appcompat/app/d;->e(Ljava/lang/Object;)Landroid/app/NotificationChannel;
 
     .line 41
     .line 42

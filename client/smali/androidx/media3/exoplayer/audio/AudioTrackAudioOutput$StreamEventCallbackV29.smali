@@ -28,7 +28,7 @@
 
 # direct methods
 .method private constructor <init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput;)V
-    .locals 4
+    .locals 3
 
     .line 2
     iput-object p1, p0, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$StreamEventCallbackV29;->this$0:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput;
@@ -54,15 +54,13 @@
 
     move-result-object p1
 
-    invoke-static {v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v2, Landroidx/media3/exoplayer/audio/o;
+    new-instance v2, Landroidx/media3/common/util/e;
 
-    const/4 v3, 0x0
+    invoke-direct {v2, v0}, Landroidx/media3/common/util/e;-><init>(Landroid/os/Handler;)V
 
-    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/audio/o;-><init>(Ljava/lang/Object;I)V
-
-    invoke-static {p1, v2, v1}, Landroidx/appcompat/widget/a;->n(Landroid/media/AudioTrack;Landroidx/media3/exoplayer/audio/o;Landroid/media/AudioTrack$StreamEventCallback;)V
+    invoke-static {p1, v2, v1}, Landroidx/appcompat/widget/b;->n(Landroid/media/AudioTrack;Landroidx/media3/common/util/e;Landroid/media/AudioTrack$StreamEventCallback;)V
 
     return-void
 .end method
@@ -108,7 +106,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, Landroid/support/v4/media/session/e;->m(Landroid/media/AudioTrack;Landroid/media/AudioTrack$StreamEventCallback;)V
+    invoke-static {v0, v1}, Landroidx/activity/g;->k(Landroid/media/AudioTrack;Landroid/media/AudioTrack$StreamEventCallback;)V
 
     .line 10
     .line 11

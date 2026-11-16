@@ -80,14 +80,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/c;
+    new-instance v0, Landroidx/constraintlayout/core/state/e;
 
     .line 2
     .line 3
-    const/4 v1, 0x5
+    const/4 v1, 0x4
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/e;-><init>(I)V
 
     .line 5
     .line 6
@@ -473,7 +473,7 @@
 .end method
 
 .method private readFlvHeader(Landroidx/media3/extractor/ExtractorInput;)Z
-    .locals 5
+    .locals 4
 
     .line 1
     iget-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->headerBuffer:Landroidx/media3/common/util/ParsableByteArray;
@@ -544,155 +544,114 @@
     .line 32
     .line 33
     .line 34
-    move-result p1
+    iget-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->audioReader:Landroidx/media3/extractor/flv/AudioTagPayloadReader;
 
     .line 35
-    and-int/lit8 v0, p1, 0x4
-
     .line 36
+    if-nez p1, :cond_1
+
     .line 37
-    if-eqz v0, :cond_1
-
     .line 38
-    .line 39
-    move v0, v3
+    new-instance p1, Landroidx/media3/extractor/flv/AudioTagPayloadReader;
 
+    .line 39
     .line 40
-    goto :goto_0
+    iget-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
 
     .line 41
-    :cond_1
-    move v0, v1
-
     .line 42
-    :goto_0
-    and-int/2addr p1, v3
+    const/16 v1, 0x8
 
     .line 43
-    if-eqz p1, :cond_2
-
     .line 44
+    invoke-interface {v0, v1, v3}, Landroidx/media3/extractor/ExtractorOutput;->track(II)Landroidx/media3/extractor/TrackOutput;
+
     .line 45
-    move v1, v3
-
     .line 46
-    :cond_2
-    if-eqz v0, :cond_3
-
     .line 47
+    move-result-object v0
+
     .line 48
-    iget-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->audioReader:Landroidx/media3/extractor/flv/AudioTagPayloadReader;
+    invoke-direct {p1, v0}, Landroidx/media3/extractor/flv/AudioTagPayloadReader;-><init>(Landroidx/media3/extractor/TrackOutput;)V
 
     .line 49
     .line 50
-    if-nez p1, :cond_3
-
     .line 51
+    iput-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->audioReader:Landroidx/media3/extractor/flv/AudioTagPayloadReader;
+
     .line 52
-    new-instance p1, Landroidx/media3/extractor/flv/AudioTagPayloadReader;
-
     .line 53
-    .line 54
-    iget-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
+    :cond_1
+    iget-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->videoReader:Landroidx/media3/extractor/flv/VideoTagPayloadReader;
 
+    .line 54
     .line 55
+    const/4 v0, 0x2
+
     .line 56
-    const/16 v4, 0x8
+    if-nez p1, :cond_2
 
     .line 57
     .line 58
-    invoke-interface {v0, v4, v3}, Landroidx/media3/extractor/ExtractorOutput;->track(II)Landroidx/media3/extractor/TrackOutput;
+    new-instance p1, Landroidx/media3/extractor/flv/VideoTagPayloadReader;
 
     .line 59
     .line 60
-    .line 61
-    move-result-object v0
+    iget-object v1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
 
+    .line 61
     .line 62
-    invoke-direct {p1, v0}, Landroidx/media3/extractor/flv/AudioTagPayloadReader;-><init>(Landroidx/media3/extractor/TrackOutput;)V
+    invoke-interface {v1, v2, v0}, Landroidx/media3/extractor/ExtractorOutput;->track(II)Landroidx/media3/extractor/TrackOutput;
 
     .line 63
     .line 64
     .line 65
-    iput-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->audioReader:Landroidx/media3/extractor/flv/AudioTagPayloadReader;
+    move-result-object v1
 
     .line 66
+    invoke-direct {p1, v1}, Landroidx/media3/extractor/flv/VideoTagPayloadReader;-><init>(Landroidx/media3/extractor/TrackOutput;)V
+
     .line 67
-    :cond_3
-    const/4 p1, 0x2
-
     .line 68
-    if-eqz v1, :cond_4
-
     .line 69
+    iput-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->videoReader:Landroidx/media3/extractor/flv/VideoTagPayloadReader;
+
     .line 70
-    iget-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->videoReader:Landroidx/media3/extractor/flv/VideoTagPayloadReader;
-
     .line 71
+    :cond_2
+    iget-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
+
     .line 72
-    if-nez v0, :cond_4
-
     .line 73
-    .line 74
-    new-instance v0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorOutput;->endTracks()V
 
+    .line 74
     .line 75
     .line 76
-    iget-object v1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
+    iget-object p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->headerBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 77
     .line 78
-    invoke-interface {v1, v2, p1}, Landroidx/media3/extractor/ExtractorOutput;->track(II)Landroidx/media3/extractor/TrackOutput;
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readInt()I
 
     .line 79
     .line 80
     .line 81
-    move-result-object v1
+    move-result p1
 
     .line 82
-    invoke-direct {v0, v1}, Landroidx/media3/extractor/flv/VideoTagPayloadReader;-><init>(Landroidx/media3/extractor/TrackOutput;)V
+    add-int/lit8 p1, p1, -0x5
 
     .line 83
     .line 84
+    iput p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->bytesToNextTagHeader:I
+
     .line 85
-    iput-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->videoReader:Landroidx/media3/extractor/flv/VideoTagPayloadReader;
-
     .line 86
+    iput v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->state:I
+
     .line 87
-    :cond_4
-    iget-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->extractorOutput:Landroidx/media3/extractor/ExtractorOutput;
-
     .line 88
-    .line 89
-    invoke-interface {v0}, Landroidx/media3/extractor/ExtractorOutput;->endTracks()V
-
-    .line 90
-    .line 91
-    .line 92
-    iget-object v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->headerBuffer:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 93
-    .line 94
-    invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->readInt()I
-
-    .line 95
-    .line 96
-    .line 97
-    move-result v0
-
-    .line 98
-    add-int/lit8 v0, v0, -0x5
-
-    .line 99
-    .line 100
-    iput v0, p0, Landroidx/media3/extractor/flv/FlvExtractor;->bytesToNextTagHeader:I
-
-    .line 101
-    .line 102
-    iput p1, p0, Landroidx/media3/extractor/flv/FlvExtractor;->state:I
-
-    .line 103
-    .line 104
     return v3
 .end method
 

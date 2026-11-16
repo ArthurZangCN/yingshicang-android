@@ -147,7 +147,7 @@
 .end method
 
 .method private init()V
-    .locals 3
+    .locals 4
 
     .line 1
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;
@@ -162,28 +162,28 @@
 
     .line 6
     .line 7
-    invoke-direct {v1, p0}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/FragmentActivity;)V
+    const/4 v2, 0x0
 
     .line 8
+    invoke-direct {v1, p0, v2}, Landroidx/fragment/app/a;-><init>(Ljava/lang/Object;I)V
+
     .line 9
     .line 10
-    const-string v2, "android:support:lifecycle"
-
     .line 11
-    .line 12
-    invoke-virtual {v0, v2, v1}, Landroidx/savedstate/SavedStateRegistry;->registerSavedStateProvider(Ljava/lang/String;Landroidx/savedstate/SavedStateRegistry$SavedStateProvider;)V
+    const-string v3, "android:support:lifecycle"
 
+    .line 12
     .line 13
+    invoke-virtual {v0, v3, v1}, Landroidx/savedstate/SavedStateRegistry;->registerSavedStateProvider(Ljava/lang/String;Landroidx/savedstate/SavedStateRegistry$SavedStateProvider;)V
+
     .line 14
     .line 15
+    .line 16
     new-instance v0, Landroidx/fragment/app/b;
 
-    .line 16
     .line 17
-    const/4 v1, 0x0
-
     .line 18
-    invoke-direct {v0, p0, v1}, Landroidx/fragment/app/b;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v2}, Landroidx/fragment/app/b;-><init>(Ljava/lang/Object;I)V
 
     .line 19
     .line 20
@@ -197,7 +197,7 @@
 
     .line 25
     .line 26
-    invoke-direct {v0, p0, v1}, Landroidx/fragment/app/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0}, Landroidx/fragment/app/c;-><init>(Landroidx/fragment/app/FragmentActivity;)V
 
     .line 27
     .line 28

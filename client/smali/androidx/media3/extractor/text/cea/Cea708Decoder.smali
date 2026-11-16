@@ -598,7 +598,7 @@
 
     .line 84
     :cond_2
-    invoke-static {v2}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 85
     .line 86
@@ -661,7 +661,7 @@
 
     .line 24
     .line 25
-    invoke-static {v1, p1, v2}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v1, p1, v2}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 26
     .line 27
@@ -699,7 +699,7 @@
 
     .line 43
     .line 44
-    invoke-static {v0, p1, v2}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v0, p1, v2}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 45
     .line 46
@@ -725,7 +725,7 @@
 
     .line 56
     .line 57
-    invoke-static {v0, p1, v2}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v0, p1, v2}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 58
     .line 59
@@ -831,7 +831,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 14
     .line 15
@@ -1973,7 +1973,7 @@
 
     .line 50
     .line 51
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 52
     .line 53
@@ -2512,7 +2512,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 18
     .line 19
@@ -3356,7 +3356,7 @@
 
     .line 119
     .line 120
-    invoke-static {v6, v1, v4}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v6, v1, v4}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 121
     .line 122
@@ -3572,7 +3572,7 @@
 
     .line 224
     .line 225
-    invoke-static {v6, v1, v4}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v6, v1, v4}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 226
     .line 227
@@ -3649,7 +3649,7 @@
 
     .line 260
     .line 261
-    invoke-static {v6, v1, v4}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v6, v1, v4}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 262
     .line 263
@@ -4065,7 +4065,7 @@
 
     .line 148
     :cond_7
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 149
     .line 150

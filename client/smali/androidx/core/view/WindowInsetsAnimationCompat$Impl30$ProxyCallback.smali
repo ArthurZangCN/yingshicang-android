@@ -267,7 +267,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 17
     .line 18
@@ -314,7 +314,7 @@
     move-result-object v1
 
     .line 38
-    invoke-static {v1}, Landroidx/core/view/n;->n(Ljava/lang/Object;)Landroid/view/WindowInsetsAnimation;
+    invoke-static {v1}, Landroidx/core/view/n;->l(Ljava/lang/Object;)Landroid/view/WindowInsetsAnimation;
 
     .line 39
     .line 40
@@ -330,7 +330,7 @@
     move-result-object v2
 
     .line 46
-    invoke-static {v1}, Landroidx/core/content/pm/g;->a(Landroid/view/WindowInsetsAnimation;)F
+    invoke-static {v1}, Landroidx/core/view/n;->a(Landroid/view/WindowInsetsAnimation;)F
 
     .line 47
     .line 48

@@ -583,7 +583,7 @@
 
     .line 102
     .line 103
-    invoke-static {v11}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v11}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 104
     .line 105

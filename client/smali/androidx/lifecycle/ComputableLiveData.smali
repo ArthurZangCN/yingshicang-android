@@ -65,7 +65,7 @@
 .end method
 
 .method public constructor <init>(Ljava/util/concurrent/Executor;)V
-    .locals 1
+    .locals 2
 
     const-string v0, "executor"
 
@@ -99,27 +99,25 @@
     .line 7
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+    invoke-direct {p1, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     iput-object p1, p0, Landroidx/lifecycle/ComputableLiveData;->computing:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 8
-    new-instance p1, Landroidx/activity/a;
+    new-instance p1, Landroidx/constraintlayout/helper/widget/a;
 
-    const/4 v0, 0x5
+    const/4 v1, 0x2
 
-    invoke-direct {p1, p0, v0}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, v1}, Landroidx/constraintlayout/helper/widget/a;-><init>(Ljava/lang/Object;I)V
 
     iput-object p1, p0, Landroidx/lifecycle/ComputableLiveData;->refreshRunnable:Ljava/lang/Runnable;
 
     .line 9
-    new-instance p1, Landroidx/activity/g;
+    new-instance p1, Landroidx/core/widget/a;
 
-    const/4 v0, 0x3
-
-    invoke-direct {p1, p0, v0}, Landroidx/activity/g;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {p1, p0, v0}, Landroidx/core/widget/a;-><init>(Ljava/lang/Object;I)V
 
     iput-object p1, p0, Landroidx/lifecycle/ComputableLiveData;->invalidationRunnable:Ljava/lang/Runnable;
 

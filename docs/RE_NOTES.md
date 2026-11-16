@@ -2,7 +2,7 @@
 
 ## 输入
 
-- 文件：`releases/YingShiCang-baseline.apk`（源：`D:\down\影视仓_6.1.8_opt.apk`）
+- 文件：`releases/YingShiCang-baseline.apk`（源：`D:\cursor-worker\tools\影视仓_6.2.5_64位.apk`，约 49.7MB）
 - 工具：apktool **2.7.0**（WSL，`apktool d -f`）
 - 日期：2026-11-16
 
@@ -12,17 +12,16 @@
 |----|------|
 | `AndroidManifest.xml` | 已解码为文本 |
 | `res/` | 已解码 |
-| `assets/` | 已复制（含 Chaquopy / JS 等） |
+| `assets/` | 已复制 |
 | `lib/arm64-v8a/*.so` | 已复制 |
-| DEX | **4** 个 → `smali` … `smali_classes4` |
+| DEX | **3** 个 → `smali` … `smali_classes3` |
 | `original/` + `unknown/` | 保留 |
-| 回编冒烟 | 待 CI：`apktool b client`（下一步） |
+| 回编冒烟 | WSL apktool 2.7 可能因 `$mtrl_*` 资源失败；优先 **NAS apktool 2.5** 或升级 aapt2 |
 
-## 与 Win 逆向 6.2.3 的差异
+## 与 Win 逆向 6.2.3 的关系
 
-- Win 仓库 `RE_NOTES` 基于 **6.2.3 TV 64 位**；本 Android 工程当前为 **6.1.8 opt**，`versionName` 以 `client/apktool.yml` 为准。
-- 协议类仍在 `com.github.tvbox.osc`（如 `api/ApiConfig` → smali `com/github/tvbox/osc/api/c`）。
-- 若必须与 6.2.3 字节级一致，需用户提供 `影视仓_TV端64位_6.2.3.apk` 后替换 `releases/` 并重新 `apktool d`。
+- 本 Android 基线 **6.2.5 64 位**，比 Win 参考的 6.2.3 略新，同属 `com.github.tvbox.osc` 系。
+- 协议类：`com.github.tvbox.osc.api.ApiConfig` 等仍在 smali 中可检索。
 
 ## 已知外链（改造切入点）
 
@@ -33,8 +32,6 @@ DOWNLOAD_ENC   https://api.montain.top/app/file/download
 
 NAS OTA 应替换或旁路以上逻辑，并增加影视仓专用 `getver` 字段（与 DSMTV `appver` 分离）。
 
-## 风险
+## 历史基线
 
-- **Chaquopy / 多 DEX**：回编后需真机安装测 spider、点播、播放。
-- **加固**：当前基线未见单独壳 DEX；若换发行包需重扫。
-- **签名**：与原包不同签名只能卸载后安装，除非包名变更。
+- 曾用 `影视仓_6.1.8_opt.apk`（4×DEX）；已由 6.2.5 替换。

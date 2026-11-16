@@ -2,69 +2,13 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/lang/Object;
-
-.field public final synthetic c:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public static bridge synthetic a(Landroid/content/Context;Ljava/util/function/IntConsumer;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput p1, p0, Landroidx/media3/exoplayer/e1;->a:I
-
-    iput-object p2, p0, Landroidx/media3/exoplayer/e1;->b:Ljava/lang/Object;
-
-    iput-object p3, p0, Landroidx/media3/exoplayer/e1;->c:Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroid/content/Context;->unregisterDeviceIdChangeListener(Ljava/util/function/IntConsumer;)V
 
     return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/e1;->a:I
-
-    iget-object v1, p0, Landroidx/media3/exoplayer/e1;->c:Ljava/lang/Object;
-
-    iget-object v2, p0, Landroidx/media3/exoplayer/e1;->b:Ljava/lang/Object;
-
-    packed-switch v0, :pswitch_data_0
-
-    check-cast v2, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
-
-    check-cast v1, Landroid/util/Pair;
-
-    invoke-static {v2, v1}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->h(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;)V
-
-    return-void
-
-    :pswitch_0
-    check-cast v2, Landroidx/media3/exoplayer/ExoPlayerImplInternal;
-
-    check-cast v1, Landroidx/media3/exoplayer/PlayerMessage;
-
-    invoke-static {v2, v1}, Landroidx/media3/exoplayer/ExoPlayerImplInternal;->c(Landroidx/media3/exoplayer/ExoPlayerImplInternal;Landroidx/media3/exoplayer/PlayerMessage;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

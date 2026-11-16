@@ -2,18 +2,21 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/google/common/base/x;
 
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 1
+# direct methods
+.method public static bridge synthetic a(Landroidx/media3/exoplayer/ExoPlayer;)Landroidx/media3/common/PlaybackException;
+    .locals 0
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/DefaultLoadControl;
+    invoke-interface {p0}, Landroidx/media3/exoplayer/ExoPlayer;->getPlayerError()Landroidx/media3/exoplayer/ExoPlaybackException;
 
-    invoke-direct {v0}, Landroidx/media3/exoplayer/DefaultLoadControl;-><init>()V
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
 
-    return-object v0
+    .line 5
+    return-object p0
 .end method

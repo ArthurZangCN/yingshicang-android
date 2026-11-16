@@ -4,13 +4,29 @@
 
 
 # direct methods
-.method public static synthetic a(III)Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+.method public static synthetic a(Ljava/lang/String;ZZ)Ljava/util/List;
     .locals 1
 
     .line 1
-    new-instance v0, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+    sget-object v0, Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;->DEFAULT:Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
 
-    invoke-direct {v0, p0, p1, p2}, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;-><init>(III)V
+    .line 2
+    .line 3
+    invoke-interface {v0, p0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;->getDecoderInfos(Ljava/lang/String;ZZ)Ljava/util/List;
 
-    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->getDecoderInfosSortedBySoftwareOnly(Ljava/util/List;)Ljava/util/List;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    return-object p0
 .end method

@@ -15,17 +15,17 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/core/location/j;->a:I
+    iput p3, p0, Landroidx/core/location/j;->a:I
 
-    iput-object p2, p0, Landroidx/core/location/j;->b:Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/core/location/j;->b:Ljava/lang/Object;
 
-    iput-object p3, p0, Landroidx/core/location/j;->c:Ljava/lang/Object;
+    iput-object p2, p0, Landroidx/core/location/j;->c:Ljava/lang/Object;
 
     return-void
 .end method
@@ -44,6 +44,15 @@
 
     packed-switch v0, :pswitch_data_0
 
+    check-cast v2, Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;
+
+    check-cast v1, Ljava/util/concurrent/Executor;
+
+    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;->a(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;)V
+
+    return-void
+
+    :pswitch_0
     check-cast v2, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
     check-cast v1, Ljava/util/List;
@@ -52,12 +61,12 @@
 
     return-void
 
-    :pswitch_0
+    :pswitch_1
     check-cast v2, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
 
     check-cast v1, Ljava/util/concurrent/Executor;
 
-    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;->a(Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;Ljava/util/concurrent/Executor;)V
+    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;->b(Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;Ljava/util/concurrent/Executor;)V
 
     return-void
 
@@ -65,6 +74,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

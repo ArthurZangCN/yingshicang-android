@@ -2,21 +2,48 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/lifecycle/LifecycleEventObserver;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/lifecycle/LifecycleController;
+
+.field public final synthetic b:Ln4/h1;
+
 
 # direct methods
-.method public static bridge synthetic a(Landroidx/lifecycle/LifecycleRegistryOwner;)Landroidx/lifecycle/Lifecycle;
+.method public synthetic constructor <init>(Landroidx/lifecycle/LifecycleController;Ln4/h1;)V
     .locals 0
-    .annotation build Landroidx/annotation/NonNull;
-    .end annotation
 
     .line 1
-    invoke-interface {p0}, Landroidx/lifecycle/LifecycleRegistryOwner;->getLifecycle()Landroidx/lifecycle/LifecycleRegistry;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    iput-object p1, p0, Landroidx/lifecycle/d;->a:Landroidx/lifecycle/LifecycleController;
 
     .line 5
-    return-object p0
+    .line 6
+    iput-object p2, p0, Landroidx/lifecycle/d;->b:Ln4/h1;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onStateChanged(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/lifecycle/d;->a:Landroidx/lifecycle/LifecycleController;
+
+    iget-object v1, p0, Landroidx/lifecycle/d;->b:Ln4/h1;
+
+    invoke-static {v0, v1, p1, p2}, Landroidx/lifecycle/LifecycleController;->a(Landroidx/lifecycle/LifecycleController;Ln4/h1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+
+    return-void
 .end method

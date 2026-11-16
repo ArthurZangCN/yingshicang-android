@@ -367,7 +367,7 @@
 
     .line 93
     .line 94
-    invoke-static {v3, v6}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v3, v6}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 95
     .line 96
@@ -944,7 +944,7 @@
 
     .line 15
     :goto_0
-    invoke-static {p3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 16
     .line 17

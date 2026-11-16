@@ -271,7 +271,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 24
     .line 25

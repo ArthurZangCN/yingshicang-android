@@ -244,18 +244,18 @@
     move-result-object v2
 
     .line 40
-    const/4 v3, 0x0
-
-    .line 41
     if-eqz v2, :cond_1
 
+    .line 41
     .line 42
-    .line 43
-    new-instance v2, Le/a;
+    new-instance v2, Landroidx/core/location/b;
 
+    .line 43
     .line 44
+    const/4 v3, 0x1
+
     .line 45
-    invoke-direct {v2, v3, p1, p2}, Le/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, p1, p2, v3}, Landroidx/core/location/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 46
     .line 47
@@ -290,20 +290,23 @@
 
     .line 62
     .line 63
-    new-instance p1, Le/b;
+    new-instance p1, Le/a;
 
     .line 64
     .line 65
-    invoke-direct {p1, v3, v1, p2}, Le/b;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    const/4 v2, 0x0
 
     .line 66
+    invoke-direct {p1, v1, p2, v2}, Le/a;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 67
     .line 68
+    .line 69
     invoke-direct {p0, v0, p1}, Landroidx/fragment/app/strictmode/FragmentStrictMode;->runOnHostThread(Landroidx/fragment/app/Fragment;Ljava/lang/Runnable;)V
 
-    .line 69
     .line 70
     .line 71
+    .line 72
     :cond_2
     return-void
 .end method

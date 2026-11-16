@@ -954,11 +954,11 @@
     .line 139
     .line 140
     :goto_2
-    new-instance v0, Landroidx/media3/exoplayer/source/preload/k0;
+    new-instance v0, Landroidx/media3/exoplayer/source/preload/m0;
 
     .line 141
     .line 142
-    invoke-direct {v0, p0, v2, p1, p2}, Landroidx/media3/exoplayer/source/preload/k0;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, v2, p1, p2}, Landroidx/media3/exoplayer/source/preload/m0;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     .line 143
     .line 144
@@ -1000,7 +1000,7 @@
 
 # virtual methods
 .method public onContinueLoadingRequested(Landroidx/media3/exoplayer/source/MediaPeriod;)V
-    .locals 2
+    .locals 3
 
     .line 2
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;->this$0:Landroidx/media3/exoplayer/source/preload/PreloadMediaSource;
@@ -1009,9 +1009,11 @@
 
     move-result-object v0
 
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/m0;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/y;
 
-    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/preload/m0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;Landroidx/media3/exoplayer/source/MediaPeriod;)V
+    const/4 v2, 0x1
+
+    invoke-direct {v1, p0, p1, v2}, Landroidx/media3/exoplayer/source/preload/y;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     invoke-interface {v0, v1}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
 
@@ -1052,11 +1054,11 @@
     move-result-object v0
 
     .line 10
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/l0;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/n0;
 
     .line 11
     .line 12
-    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/preload/l0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;Landroidx/media3/exoplayer/source/MediaPeriod;)V
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/preload/n0;-><init>(Landroidx/media3/exoplayer/source/preload/PreloadMediaSource$PreloadMediaPeriodCallback;Landroidx/media3/exoplayer/source/MediaPeriod;)V
 
     .line 13
     .line 14

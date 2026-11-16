@@ -68,7 +68,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Rect;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

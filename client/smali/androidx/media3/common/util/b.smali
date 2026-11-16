@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(Landroidx/media3/common/util/BitmapLoader;Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/t;
+.method public static a(Landroidx/media3/common/util/BitmapLoader;Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -18,7 +18,7 @@
 
     .line 4
     .line 5
-    invoke-interface {p0, v0}, Landroidx/media3/common/util/BitmapLoader;->decodeBitmap([B)Lcom/google/common/util/concurrent/t;
+    invoke-interface {p0, v0}, Landroidx/media3/common/util/BitmapLoader;->decodeBitmap([B)Lcom/google/common/util/concurrent/x;
 
     .line 6
     .line 7
@@ -38,7 +38,7 @@
 
     .line 13
     .line 14
-    invoke-interface {p0, p1}, Landroidx/media3/common/util/BitmapLoader;->loadBitmap(Landroid/net/Uri;)Lcom/google/common/util/concurrent/t;
+    invoke-interface {p0, p1}, Landroidx/media3/common/util/BitmapLoader;->loadBitmap(Landroid/net/Uri;)Lcom/google/common/util/concurrent/x;
 
     .line 15
     .line 16

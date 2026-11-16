@@ -374,7 +374,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p0, p2, p0}, Landroid/support/v4/media/g;->a(FFFF)F
+    invoke-static {p1, p0, p2, p0}, Landroid/support/v4/media/f;->b(FFFF)F
 
     .line 2
     .line 3

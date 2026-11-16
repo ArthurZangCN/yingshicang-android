@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->getSystemGestureInsets()Landroid/graphics/Insets;
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->getMandatorySystemGestureInsets()Landroid/graphics/Insets;
 
     .line 2
     .line 3
@@ -19,27 +19,11 @@
     return-object p0
 .end method
 
-.method public static synthetic b()Landroid/view/WindowInsets$Builder;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroid/view/WindowInsets$Builder;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Landroid/view/WindowInsets$Builder;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public static bridge synthetic c(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
+.method public static bridge synthetic b(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setSystemGestureInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
+    invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setMandatorySystemGestureInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
     return-void
 .end method

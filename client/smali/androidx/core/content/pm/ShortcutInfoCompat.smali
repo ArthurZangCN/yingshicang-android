@@ -393,7 +393,7 @@
     move-result-object v1
 
     .line 24
-    invoke-static {v1}, Landroidx/core/content/pm/d;->b(Ljava/lang/Object;)Landroid/content/pm/ShortcutInfo;
+    invoke-static {v1}, Landroidx/core/content/pm/e;->c(Ljava/lang/Object;)Landroid/content/pm/ShortcutInfo;
 
     .line 25
     .line 26
@@ -451,7 +451,7 @@
     if-lt v0, v1, :cond_1
 
     .line 3
-    invoke-static {p0}, Landroidx/appcompat/widget/a;->e(Landroid/content/pm/ShortcutInfo;)Landroid/content/LocusId;
+    invoke-static {p0}, Landroidx/appcompat/widget/a;->g(Landroid/content/pm/ShortcutInfo;)Landroid/content/LocusId;
 
     move-result-object v0
 
@@ -463,7 +463,7 @@
 
     .line 4
     :cond_0
-    invoke-static {p0}, Landroidx/appcompat/widget/a;->e(Landroid/content/pm/ShortcutInfo;)Landroid/content/LocusId;
+    invoke-static {p0}, Landroidx/appcompat/widget/a;->g(Landroid/content/pm/ShortcutInfo;)Landroid/content/LocusId;
 
     move-result-object p0
 
@@ -475,7 +475,7 @@
 
     .line 5
     :cond_1
-    invoke-static {p0}, Landroidx/core/content/pm/b;->a(Landroid/content/pm/ShortcutInfo;)Landroid/os/PersistableBundle;
+    invoke-static {p0}, Landroidx/core/content/pm/b;->d(Landroid/content/pm/ShortcutInfo;)Landroid/os/PersistableBundle;
 
     move-result-object p0
 
@@ -1277,7 +1277,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Landroidx/core/content/pm/e;->g()V
+    invoke-static {}, Landroidx/core/content/pm/d;->c()V
 
     .line 2
     .line 3
@@ -1290,7 +1290,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, v1}, Landroidx/core/content/pm/c;->c(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ShortcutInfo$Builder;
+    invoke-static {v0, v1}, Landroidx/core/content/pm/c;->b(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ShortcutInfo$Builder;
 
     .line 9
     .line 10
@@ -1302,7 +1302,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v1}, Landroidx/core/content/pm/a;->c(Landroid/content/pm/ShortcutInfo$Builder;Ljava/lang/CharSequence;)Landroid/content/pm/ShortcutInfo$Builder;
+    invoke-static {v0, v1}, Landroidx/core/content/pm/b;->a(Landroid/content/pm/ShortcutInfo$Builder;Ljava/lang/CharSequence;)Landroid/content/pm/ShortcutInfo$Builder;
 
     .line 15
     .line 16
@@ -1314,7 +1314,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, v1}, Landroidx/core/content/pm/e;->b(Landroid/content/pm/ShortcutInfo$Builder;[Landroid/content/Intent;)Landroid/content/pm/ShortcutInfo$Builder;
+    invoke-static {v0, v1}, Landroidx/core/content/pm/c;->c(Landroid/content/pm/ShortcutInfo$Builder;[Landroid/content/Intent;)Landroid/content/pm/ShortcutInfo$Builder;
 
     .line 21
     .line 22
@@ -1368,7 +1368,7 @@
 
     .line 46
     .line 47
-    invoke-static {v0, v1}, Landroidx/core/content/pm/a;->e(Landroid/content/pm/ShortcutInfo$Builder;Ljava/lang/CharSequence;)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/g;->b(Landroid/content/pm/ShortcutInfo$Builder;Ljava/lang/CharSequence;)V
 
     .line 48
     .line 49
@@ -1394,7 +1394,7 @@
 
     .line 59
     .line 60
-    invoke-static {v0, v1}, Landroidx/core/content/pm/b;->d(Landroid/content/pm/ShortcutInfo$Builder;Ljava/lang/CharSequence;)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/e;->g(Landroid/content/pm/ShortcutInfo$Builder;Ljava/lang/CharSequence;)V
 
     .line 61
     .line 62
@@ -1408,7 +1408,7 @@
 
     .line 66
     .line 67
-    invoke-static {v0, v1}, Landroidx/core/content/pm/c;->j(Landroid/content/pm/ShortcutInfo$Builder;Landroid/content/ComponentName;)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/f;->d(Landroid/content/pm/ShortcutInfo$Builder;Landroid/content/ComponentName;)V
 
     .line 68
     .line 69
@@ -1422,7 +1422,7 @@
 
     .line 73
     .line 74
-    invoke-static {v0, v1}, Landroidx/core/content/pm/b;->e(Landroid/content/pm/ShortcutInfo$Builder;Ljava/util/Set;)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/c;->g(Landroid/content/pm/ShortcutInfo$Builder;Ljava/util/Set;)V
 
     .line 75
     .line 76
@@ -1432,7 +1432,7 @@
 
     .line 78
     .line 79
-    invoke-static {v0, v1}, Landroidx/core/content/pm/c;->i(Landroid/content/pm/ShortcutInfo$Builder;I)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/d;->d(Landroid/content/pm/ShortcutInfo$Builder;I)V
 
     .line 80
     .line 81
@@ -1445,7 +1445,7 @@
 
     .line 85
     .line 86
-    invoke-static {v0, v1}, Landroidx/core/content/pm/b;->c(Landroid/content/pm/ShortcutInfo$Builder;Landroid/os/PersistableBundle;)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/f;->e(Landroid/content/pm/ShortcutInfo$Builder;Landroid/os/PersistableBundle;)V
 
     .line 87
     .line 88
@@ -1521,7 +1521,7 @@
 
     .line 121
     :cond_6
-    invoke-static {v0, v2}, Landroidx/appcompat/widget/b;->l(Landroid/content/pm/ShortcutInfo$Builder;[Landroid/app/Person;)V
+    invoke-static {v0, v2}, Landroid/support/v4/media/session/a;->n(Landroid/content/pm/ShortcutInfo$Builder;[Landroid/app/Person;)V
 
     .line 122
     .line 123
@@ -1543,7 +1543,7 @@
     move-result-object v1
 
     .line 132
-    invoke-static {v0, v1}, Landroid/support/v4/media/session/a;->l(Landroid/content/pm/ShortcutInfo$Builder;Landroid/content/LocusId;)V
+    invoke-static {v0, v1}, Landroid/support/v4/media/session/a;->m(Landroid/content/pm/ShortcutInfo$Builder;Landroid/content/LocusId;)V
 
     .line 133
     .line 134
@@ -1553,7 +1553,7 @@
 
     .line 136
     .line 137
-    invoke-static {v0, v1}, Landroidx/appcompat/widget/a;->j(Landroid/content/pm/ShortcutInfo$Builder;Z)V
+    invoke-static {v0, v1}, Landroid/support/v4/media/session/h;->k(Landroid/content/pm/ShortcutInfo$Builder;Z)V
 
     .line 138
     .line 139
@@ -1570,7 +1570,7 @@
     move-result-object v1
 
     .line 145
-    invoke-static {v0, v1}, Landroidx/core/content/pm/b;->c(Landroid/content/pm/ShortcutInfo$Builder;Landroid/os/PersistableBundle;)V
+    invoke-static {v0, v1}, Landroidx/core/content/pm/f;->e(Landroid/content/pm/ShortcutInfo$Builder;Landroid/os/PersistableBundle;)V
 
     .line 146
     .line 147
@@ -1598,7 +1598,7 @@
     .line 158
     .line 159
     :cond_a
-    invoke-static {v0}, Landroidx/core/content/pm/c;->d(Landroid/content/pm/ShortcutInfo$Builder;)Landroid/content/pm/ShortcutInfo;
+    invoke-static {v0}, Landroidx/core/content/pm/b;->b(Landroid/content/pm/ShortcutInfo$Builder;)Landroid/content/pm/ShortcutInfo;
 
     .line 160
     .line 161

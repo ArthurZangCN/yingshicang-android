@@ -90,63 +90,65 @@
 
 .field public static final layout_wrapBefore:I = 0x7f040305
 
-.field public static final maxLine:I = 0x7f04035e
+.field public static final maxLine:I = 0x7f040376
 
-.field public static final recyclerViewStyle:I = 0x7f0403fa
+.field public static final recyclerViewStyle:I = 0x7f040412
 
-.field public static final reverseLayout:I = 0x7f040405
+.field public static final reverseLayout:I = 0x7f04041d
 
-.field public static final showDivider:I = 0x7f040474
+.field public static final showDivider:I = 0x7f04048c
 
-.field public static final showDividerHorizontal:I = 0x7f040475
+.field public static final showDividerHorizontal:I = 0x7f04048d
 
-.field public static final showDividerVertical:I = 0x7f040476
+.field public static final showDividerVertical:I = 0x7f04048e
 
-.field public static final spanCount:I = 0x7f040498
+.field public static final spanCount:I = 0x7f0404b0
 
-.field public static final stackFromEnd:I = 0x7f0404a4
+.field public static final stackFromEnd:I = 0x7f0404bc
 
-.field public static final statusBarBackground:I = 0x7f0404b8
+.field public static final statusBarBackground:I = 0x7f0404d0
 
-.field public static final ttcIndex:I = 0x7f040591
+.field public static final ttcIndex:I = 0x7f0405a9
 
-.field public static final tv_colSpan:I = 0x7f040592
+.field public static final tv_colSpan:I = 0x7f0405aa
 
-.field public static final tv_horizontalDivider:I = 0x7f040593
+.field public static final tv_horizontalDivider:I = 0x7f0405ab
 
-.field public static final tv_horizontalSpacingWithMargins:I = 0x7f040594
+.field public static final tv_horizontalSpacingWithMargins:I = 0x7f0405ac
 
-.field public static final tv_isIntelligentScroll:I = 0x7f040595
+.field public static final tv_isIntelligentScroll:I = 0x7f0405ad
 
-.field public static final tv_isMemoryFocus:I = 0x7f040596
+.field public static final tv_isMemoryFocus:I = 0x7f0405ae
 
-.field public static final tv_isMenu:I = 0x7f040597
+.field public static final tv_isMenu:I = 0x7f0405af
 
-.field public static final tv_laneCountsStr:I = 0x7f040598
+.field public static final tv_laneCountsStr:I = 0x7f0405b0
 
-.field public static final tv_layoutManager:I = 0x7f040599
+.field public static final tv_layoutManager:I = 0x7f0405b1
 
-.field public static final tv_loadMoreBeforehandCount:I = 0x7f04059a
+.field public static final tv_leanbackTouchMode:I = 0x7f0405b2
 
-.field public static final tv_numColumns:I = 0x7f04059b
+.field public static final tv_loadMoreBeforehandCount:I = 0x7f0405b3
 
-.field public static final tv_numRows:I = 0x7f04059c
+.field public static final tv_numColumns:I = 0x7f0405b4
 
-.field public static final tv_optimizeLayout:I = 0x7f04059d
+.field public static final tv_numRows:I = 0x7f0405b5
 
-.field public static final tv_rowSpan:I = 0x7f04059e
+.field public static final tv_optimizeLayout:I = 0x7f0405b6
 
-.field public static final tv_selectedItemIsCentered:I = 0x7f04059f
+.field public static final tv_rowSpan:I = 0x7f0405b7
 
-.field public static final tv_selectedItemOffsetEnd:I = 0x7f0405a0
+.field public static final tv_selectedItemIsCentered:I = 0x7f0405b8
 
-.field public static final tv_selectedItemOffsetStart:I = 0x7f0405a1
+.field public static final tv_selectedItemOffsetEnd:I = 0x7f0405b9
 
-.field public static final tv_span:I = 0x7f0405a2
+.field public static final tv_selectedItemOffsetStart:I = 0x7f0405ba
 
-.field public static final tv_verticalDivider:I = 0x7f0405a3
+.field public static final tv_span:I = 0x7f0405bb
 
-.field public static final tv_verticalSpacingWithMargins:I = 0x7f0405a4
+.field public static final tv_verticalDivider:I = 0x7f0405bc
+
+.field public static final tv_verticalSpacingWithMargins:I = 0x7f0405bd
 
 
 # direct methods

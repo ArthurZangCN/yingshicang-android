@@ -311,7 +311,7 @@
     move-result-object v8
 
     .line 63
-    invoke-static {v8, v10}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v8, v10}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 64
     .line 65
@@ -999,7 +999,7 @@
 
     .line 380
     :goto_3
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 381
     .line 382

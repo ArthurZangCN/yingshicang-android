@@ -228,7 +228,7 @@
     move-result-object v1
 
     .line 20
-    invoke-static {v1}, Landroidx/core/app/c;->c(Ljava/lang/Object;)Landroid/app/NotificationChannel;
+    invoke-static {v1}, Landroidx/appcompat/app/d;->e(Ljava/lang/Object;)Landroid/app/NotificationChannel;
 
     .line 21
     .line 22

@@ -28,7 +28,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/util/List;Ljava/lang/String;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,27 +74,24 @@
 
     .line 17
     .line 18
-    new-instance p2, Landroidx/constraintlayout/core/state/a;
+    new-instance p2, Landroidx/media3/common/i;
 
     .line 19
     .line 20
-    const/4 v0, 0x5
+    invoke-direct {p2, p0}, Landroidx/media3/common/i;-><init>(Ljava/lang/Object;)V
 
     .line 21
-    invoke-direct {p2, p0, v0}, Landroidx/constraintlayout/core/state/a;-><init>(Ljava/lang/Object;I)V
-
     .line 22
     .line 23
-    .line 24
     invoke-direct {p1, p2}, Landroidx/media3/container/ReorderingBufferQueue;-><init>(Landroidx/media3/container/ReorderingBufferQueue$OutputConsumer;)V
 
+    .line 24
     .line 25
     .line 26
-    .line 27
     iput-object p1, p0, Landroidx/media3/extractor/ts/SeiReader;->reorderingBufferQueue:Landroidx/media3/container/ReorderingBufferQueue;
 
+    .line 27
     .line 28
-    .line 29
     return-void
 .end method
 
@@ -275,7 +272,7 @@
 
     .line 51
     .line 52
-    invoke-static {v4, v6, v5}, Lcom/github/tvbox/osc/util/t;->g(Ljava/lang/Object;Ljava/lang/String;Z)V
+    invoke-static {v4, v6, v5}, Lcom/github/tvbox/osc/util/h0;->k(Ljava/lang/Object;Ljava/lang/String;Z)V
 
     .line 53
     .line 54

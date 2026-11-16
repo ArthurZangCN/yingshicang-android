@@ -74,7 +74,7 @@
 
     .line 3
     :cond_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 4
     iput p2, p0, Landroidx/media3/exoplayer/source/LoopingMediaSource;->loopCount:I

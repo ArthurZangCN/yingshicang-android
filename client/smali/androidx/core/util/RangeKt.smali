@@ -127,7 +127,7 @@
     return-object v0
 .end method
 
-.method public static final toClosedRange(Landroid/util/Range;)Le4/d;
+.method public static final toClosedRange(Landroid/util/Range;)Lk4/a;
     .locals 1
     .annotation build Landroidx/annotation/RequiresApi;
         value = 0x15
@@ -140,7 +140,7 @@
             "-TT;>;>(",
             "Landroid/util/Range<",
             "TT;>;)",
-            "Le4/d<",
+            "Lk4/a<",
             "TT;>;"
         }
     .end annotation
@@ -158,7 +158,7 @@
     return-object v0
 .end method
 
-.method public static final toRange(Le4/d;)Landroid/util/Range;
+.method public static final toRange(Lk4/a;)Landroid/util/Range;
     .locals 2
     .annotation build Landroidx/annotation/RequiresApi;
         value = 0x15
@@ -169,7 +169,7 @@
             "<T::",
             "Ljava/lang/Comparable<",
             "-TT;>;>(",
-            "Le4/d<",
+            "Lk4/a<",
             "TT;>;)",
             "Landroid/util/Range<",
             "TT;>;"
@@ -181,7 +181,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p0}, Le4/d;->getStart()Ljava/lang/Comparable;
+    invoke-interface {p0}, Lk4/a;->getStart()Ljava/lang/Comparable;
 
     .line 4
     .line 5
@@ -189,7 +189,7 @@
     move-result-object v1
 
     .line 7
-    invoke-interface {p0}, Le4/d;->getEndInclusive()Ljava/lang/Comparable;
+    invoke-interface {p0}, Lk4/a;->getEndInclusive()Ljava/lang/Comparable;
 
     .line 8
     .line 9

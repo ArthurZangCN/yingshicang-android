@@ -3,56 +3,48 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Landroidx/media3/common/util/Consumer;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
+
+.field public final synthetic b:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+.field public final synthetic c:Landroidx/media3/exoplayer/source/MediaLoadData;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/media3/exoplayer/source/s;->a:I
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/s;->a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/source/s;->b:Landroidx/media3/exoplayer/source/LoadEventInfo;
+
+    iput-object p3, p0, Landroidx/media3/exoplayer/source/s;->c:Landroidx/media3/exoplayer/source/MediaLoadData;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/source/s;->a:I
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/s;->c:Landroidx/media3/exoplayer/source/MediaLoadData;
 
-    packed-switch v0, :pswitch_data_0
+    check-cast p1, Landroidx/media3/exoplayer/source/MediaSourceEventListener;
 
-    check-cast p1, Landroidx/media3/common/TrackGroup;
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/s;->a:Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/TrackGroupArray;->a(Landroidx/media3/common/TrackGroup;)Ljava/lang/Integer;
+    iget-object v2, p0, Landroidx/media3/exoplayer/source/s;->b:Landroidx/media3/exoplayer/source/LoadEventInfo;
 
-    move-result-object p1
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->g(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Landroidx/media3/exoplayer/source/MediaSourceEventListener;)V
 
-    return-object p1
-
-    :pswitch_0
-    check-cast p1, Landroidx/media3/exoplayer/source/MediaPeriod;
-
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/MergingMediaPeriod;->a(Landroidx/media3/exoplayer/source/MediaPeriod;)Ljava/util/List;
-
-    move-result-object p1
-
-    return-object p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

@@ -47,15 +47,6 @@
 
     .line 9
     .line 10
-    const-wide/16 p1, 0x0
-
-    .line 11
-    .line 12
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/exoplayer/source/SilenceMediaSource$SilenceSampleStream;->seekTo(J)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
 .end method
 

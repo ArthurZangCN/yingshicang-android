@@ -349,7 +349,7 @@
     move-result-object v3
 
     .line 63
-    invoke-static {v3}, Landroidx/core/app/g;->d(Landroid/os/Parcelable;)Landroid/app/Person;
+    invoke-static {v3}, Landroidx/core/app/i;->e(Landroid/os/Parcelable;)Landroid/app/Person;
 
     .line 64
     .line 65

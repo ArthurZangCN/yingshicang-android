@@ -54,13 +54,9 @@
         <activity android:name="com.github.tvbox.osc.ui.activity.DriveActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustPan"/>
         <activity android:name="com.github.tvbox.osc.ui.activity.BackUpActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustPan"/>
         <activity android:name="com.github.CrashActivity"/>
-        <activity android:name="com.github.tvbox.osc.ui.activity.H5Activity" android:screenOrientation="sensorLandscape"/>
-        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.pngcui.skyworth.dlna.service.MediaRenderService">
-            <intent-filter>
-                <action android:name="com.geniusgithub.start.engine"/>
-                <action android:name="com.geniusgithub.restart.engine"/>
-            </intent-filter>
-        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.github.tvbox.osc.ui.activity.H5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.github.tvbox.osc.ui.activity.NetDiscDownloadActivity" android:screenOrientation="landscape"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.android.cast.dlna.dmr.DLNARendererService"/>
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <receiver android:exported="true" android:name="com.github.tvbox.osc.receiver.SearchReceiver">
             <intent-filter>

@@ -13,7 +13,7 @@
 
 .field private final savedStateRegistry:Landroidx/savedstate/SavedStateRegistry;
 
-.field private final viewModel$delegate:Lr3/d;
+.field private final viewModel$delegate:Lv3/d;
 
 
 # direct methods
@@ -57,7 +57,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-static {p1}, Lr3/e;->b(Lkotlin/jvm/functions/Function0;)Lr3/l;
+    invoke-static {p1}, Lv3/e;->b(Lkotlin/jvm/functions/Function0;)Lv3/l;
 
     .line 22
     .line 23
@@ -65,7 +65,7 @@
     move-result-object p1
 
     .line 25
-    iput-object p1, p0, Landroidx/lifecycle/SavedStateHandlesProvider;->viewModel$delegate:Lr3/d;
+    iput-object p1, p0, Landroidx/lifecycle/SavedStateHandlesProvider;->viewModel$delegate:Lv3/d;
 
     .line 26
     .line 27
@@ -76,11 +76,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/SavedStateHandlesProvider;->viewModel$delegate:Lr3/d;
+    iget-object v0, p0, Landroidx/lifecycle/SavedStateHandlesProvider;->viewModel$delegate:Lv3/d;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lr3/d;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, Lv3/d;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5

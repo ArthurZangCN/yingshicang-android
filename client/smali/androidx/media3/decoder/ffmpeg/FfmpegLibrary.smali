@@ -137,7 +137,7 @@
     .line 23
     .line 24
     :cond_0
-    const/16 v1, 0x11
+    const/16 v1, 0x13
 
     .line 25
     .line 26
@@ -167,7 +167,7 @@
     .line 37
     .line 38
     :cond_1
-    const/16 v1, 0x10
+    const/16 v1, 0x12
 
     .line 39
     .line 40
@@ -197,7 +197,7 @@
     .line 51
     .line 52
     :cond_2
-    const/16 v1, 0xf
+    const/16 v1, 0x11
 
     .line 53
     .line 54
@@ -227,7 +227,7 @@
     .line 65
     .line 66
     :cond_3
-    const/16 v1, 0xe
+    const/16 v1, 0x10
 
     .line 67
     .line 68
@@ -257,7 +257,7 @@
     .line 79
     .line 80
     :cond_4
-    const/16 v1, 0xd
+    const/16 v1, 0xf
 
     .line 81
     .line 82
@@ -287,7 +287,7 @@
     .line 93
     .line 94
     :cond_5
-    const/16 v1, 0xc
+    const/16 v1, 0xe
 
     .line 95
     .line 96
@@ -317,7 +317,7 @@
     .line 107
     .line 108
     :cond_6
-    const/16 v1, 0xb
+    const/16 v1, 0xd
 
     .line 109
     .line 110
@@ -347,7 +347,7 @@
     .line 121
     .line 122
     :cond_7
-    const/16 v1, 0xa
+    const/16 v1, 0xc
 
     .line 123
     .line 124
@@ -377,7 +377,7 @@
     .line 135
     .line 136
     :cond_8
-    const/16 v1, 0x9
+    const/16 v1, 0xb
 
     .line 137
     .line 138
@@ -407,7 +407,7 @@
     .line 149
     .line 150
     :cond_9
-    const/16 v1, 0x8
+    const/16 v1, 0xa
 
     .line 151
     .line 152
@@ -416,7 +416,7 @@
     .line 153
     .line 154
     :sswitch_a
-    const-string v0, "audio/ac3"
+    const-string v0, "video/avc"
 
     .line 155
     .line 156
@@ -432,339 +432,417 @@
 
     .line 161
     .line 162
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 163
-    :cond_a
-    const/4 v1, 0x7
-
     .line 164
-    goto :goto_0
+    :cond_a
+    const/16 v1, 0x9
 
     .line 165
-    :sswitch_b
-    const-string v0, "audio/mp4a-latm"
-
     .line 166
-    .line 167
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    goto/16 :goto_0
 
+    .line 167
     .line 168
+    :sswitch_b
+    const-string v0, "audio/ac3"
+
     .line 169
     .line 170
-    move-result p0
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 171
-    if-nez p0, :cond_b
-
     .line 172
     .line 173
-    goto :goto_0
+    move-result p0
 
     .line 174
-    :cond_b
-    const/4 v1, 0x6
+    if-nez p0, :cond_b
 
     .line 175
-    goto :goto_0
-
     .line 176
-    :sswitch_c
-    const-string v0, "audio/mpeg-L2"
+    goto/16 :goto_0
 
     .line 177
     .line 178
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_b
+    const/16 v1, 0x8
 
     .line 179
     .line 180
-    .line 181
-    move-result p0
+    goto/16 :goto_0
 
+    .line 181
     .line 182
-    if-nez p0, :cond_c
+    :sswitch_c
+    const-string v0, "audio/mp4a-latm"
 
     .line 183
     .line 184
-    goto :goto_0
-
-    .line 185
-    :cond_c
-    const/4 v1, 0x5
-
-    .line 186
-    goto :goto_0
-
-    .line 187
-    :sswitch_d
-    const-string v0, "audio/mpeg-L1"
-
-    .line 188
-    .line 189
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 190
-    .line 191
-    .line 192
+    .line 185
+    .line 186
+    .line 187
     move-result p0
 
+    .line 188
+    if-nez p0, :cond_c
+
+    .line 189
+    .line 190
+    goto :goto_0
+
+    .line 191
+    :cond_c
+    const/4 v1, 0x7
+
+    .line 192
+    goto :goto_0
+
     .line 193
-    if-nez p0, :cond_d
+    :sswitch_d
+    const-string v0, "audio/mpeg-L2"
 
     .line 194
     .line 195
-    goto :goto_0
-
-    .line 196
-    :cond_d
-    const/4 v1, 0x4
-
-    .line 197
-    goto :goto_0
-
-    .line 198
-    :sswitch_e
-    const-string v0, "audio/vorbis"
-
-    .line 199
-    .line 200
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 201
-    .line 202
-    .line 203
+    .line 196
+    .line 197
+    .line 198
     move-result p0
 
+    .line 199
+    if-nez p0, :cond_d
+
+    .line 200
+    .line 201
+    goto :goto_0
+
+    .line 202
+    :cond_d
+    const/4 v1, 0x6
+
+    .line 203
+    goto :goto_0
+
     .line 204
-    if-nez p0, :cond_e
+    :sswitch_e
+    const-string v0, "audio/mpeg-L1"
 
     .line 205
     .line 206
-    goto :goto_0
-
-    .line 207
-    :cond_e
-    const/4 v1, 0x3
-
-    .line 208
-    goto :goto_0
-
-    .line 209
-    :sswitch_f
-    const-string v0, "audio/vnd.dts"
-
-    .line 210
-    .line 211
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 212
-    .line 213
-    .line 214
+    .line 207
+    .line 208
+    .line 209
     move-result p0
 
+    .line 210
+    if-nez p0, :cond_e
+
+    .line 211
+    .line 212
+    goto :goto_0
+
+    .line 213
+    :cond_e
+    const/4 v1, 0x5
+
+    .line 214
+    goto :goto_0
+
     .line 215
-    if-nez p0, :cond_f
+    :sswitch_f
+    const-string v0, "audio/vorbis"
 
     .line 216
     .line 217
-    goto :goto_0
-
-    .line 218
-    :cond_f
-    const/4 v1, 0x2
-
-    .line 219
-    goto :goto_0
-
-    .line 220
-    :sswitch_10
-    const-string v0, "audio/amr-wb"
-
-    .line 221
-    .line 222
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 223
-    .line 224
-    .line 225
+    .line 218
+    .line 219
+    .line 220
     move-result p0
 
+    .line 221
+    if-nez p0, :cond_f
+
+    .line 222
+    .line 223
+    goto :goto_0
+
+    .line 224
+    :cond_f
+    const/4 v1, 0x4
+
+    .line 225
+    goto :goto_0
+
     .line 226
-    if-nez p0, :cond_10
+    :sswitch_10
+    const-string v0, "audio/vnd.dts"
 
     .line 227
     .line 228
-    goto :goto_0
-
-    .line 229
-    :cond_10
-    const/4 v1, 0x1
-
-    .line 230
-    goto :goto_0
-
-    .line 231
-    :sswitch_11
-    const-string v0, "audio/eac3-joc"
-
-    .line 232
-    .line 233
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 234
-    .line 235
-    .line 236
+    .line 229
+    .line 230
+    .line 231
     move-result p0
 
+    .line 232
+    if-nez p0, :cond_10
+
+    .line 233
+    .line 234
+    goto :goto_0
+
+    .line 235
+    :cond_10
+    const/4 v1, 0x3
+
+    .line 236
+    goto :goto_0
+
     .line 237
-    if-nez p0, :cond_11
+    :sswitch_11
+    const-string v0, "audio/amr-wb"
 
     .line 238
     .line 239
-    goto :goto_0
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 240
-    :cond_11
-    const/4 v1, 0x0
-
     .line 241
-    :goto_0
-    packed-switch v1, :pswitch_data_0
-
     .line 242
-    .line 243
-    .line 244
-    const/4 p0, 0x0
+    move-result p0
 
+    .line 243
+    if-nez p0, :cond_11
+
+    .line 244
     .line 245
-    return-object p0
+    goto :goto_0
 
     .line 246
-    :pswitch_0
-    const-string p0, "pcm_mulaw"
+    :cond_11
+    const/4 v1, 0x2
 
     .line 247
+    goto :goto_0
+
     .line 248
-    return-object p0
+    :sswitch_12
+    const-string v0, "video/hevc"
 
     .line 249
-    :pswitch_1
-    const-string p0, "pcm_alaw"
-
     .line 250
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 251
-    return-object p0
-
     .line 252
-    :pswitch_2
-    const-string p0, "truehd"
-
     .line 253
+    move-result p0
+
     .line 254
-    return-object p0
+    if-nez p0, :cond_12
 
     .line 255
-    :pswitch_3
-    const-string p0, "opus"
-
     .line 256
+    goto :goto_0
+
     .line 257
-    return-object p0
+    :cond_12
+    const/4 v1, 0x1
 
     .line 258
-    :pswitch_4
-    const-string p0, "flac"
+    goto :goto_0
 
     .line 259
-    .line 260
-    return-object p0
+    :sswitch_13
+    const-string v0, "audio/eac3-joc"
 
+    .line 260
     .line 261
-    :pswitch_5
-    const-string p0, "alac"
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 262
     .line 263
+    .line 264
+    move-result p0
+
+    .line 265
+    if-nez p0, :cond_13
+
+    .line 266
+    .line 267
+    goto :goto_0
+
+    .line 268
+    :cond_13
+    const/4 v1, 0x0
+
+    .line 269
+    :goto_0
+    packed-switch v1, :pswitch_data_0
+
+    .line 270
+    .line 271
+    .line 272
+    const/4 p0, 0x0
+
+    .line 273
     return-object p0
 
-    .line 264
+    .line 274
+    :pswitch_0
+    const-string p0, "pcm_mulaw"
+
+    .line 275
+    .line 276
+    return-object p0
+
+    .line 277
+    :pswitch_1
+    const-string p0, "pcm_alaw"
+
+    .line 278
+    .line 279
+    return-object p0
+
+    .line 280
+    :pswitch_2
+    const-string p0, "truehd"
+
+    .line 281
+    .line 282
+    return-object p0
+
+    .line 283
+    :pswitch_3
+    const-string p0, "opus"
+
+    .line 284
+    .line 285
+    return-object p0
+
+    .line 286
+    :pswitch_4
+    const-string p0, "flac"
+
+    .line 287
+    .line 288
+    return-object p0
+
+    .line 289
+    :pswitch_5
+    const-string p0, "alac"
+
+    .line 290
+    .line 291
+    return-object p0
+
+    .line 292
     :pswitch_6
     const-string p0, "amrnb"
 
-    .line 265
-    .line 266
+    .line 293
+    .line 294
     return-object p0
 
-    .line 267
+    .line 295
     :pswitch_7
+    const-string p0, "h264"
+
+    .line 296
+    .line 297
+    return-object p0
+
+    .line 298
+    :pswitch_8
     const-string p0, "ac3"
 
-    .line 268
-    .line 269
+    .line 299
+    .line 300
     return-object p0
 
-    .line 270
-    :pswitch_8
+    .line 301
+    :pswitch_9
     const-string p0, "aac"
 
-    .line 271
-    .line 272
+    .line 302
+    .line 303
     return-object p0
 
-    .line 273
-    :pswitch_9
+    .line 304
+    :pswitch_a
     const-string p0, "mp3"
 
-    .line 274
-    .line 275
+    .line 305
+    .line 306
     return-object p0
 
-    .line 276
-    :pswitch_a
+    .line 307
+    :pswitch_b
     const-string p0, "vorbis"
 
-    .line 277
-    .line 278
+    .line 308
+    .line 309
     return-object p0
 
-    .line 279
-    :pswitch_b
+    .line 310
+    :pswitch_c
     const-string p0, "dca"
 
-    .line 280
-    .line 281
+    .line 311
+    .line 312
     return-object p0
 
-    .line 282
-    :pswitch_c
+    .line 313
+    :pswitch_d
     const-string p0, "amrwb"
 
-    .line 283
-    .line 284
+    .line 314
+    .line 315
     return-object p0
 
-    .line 285
-    :pswitch_d
+    .line 316
+    :pswitch_e
+    const-string p0, "hevc"
+
+    .line 317
+    .line 318
+    return-object p0
+
+    .line 319
+    :pswitch_f
     const-string p0, "eac3"
 
-    .line 286
-    .line 287
+    .line 320
+    .line 321
     return-object p0
 
-    .line 288
+    .line 322
     nop
 
-    .line 289
+    .line 323
     :sswitch_data_0
     .sparse-switch
-        -0x7e929daa -> :sswitch_11
-        -0x5fc6f775 -> :sswitch_10
-        -0x41455b98 -> :sswitch_f
-        -0x3bd43e14 -> :sswitch_e
-        -0x19cc928c -> :sswitch_d
-        -0x19cc928b -> :sswitch_c
-        -0x3313c2e -> :sswitch_b
-        0xb269698 -> :sswitch_a
+        -0x7e929daa -> :sswitch_13
+        -0x63185e82 -> :sswitch_12
+        -0x5fc6f775 -> :sswitch_11
+        -0x41455b98 -> :sswitch_10
+        -0x3bd43e14 -> :sswitch_f
+        -0x19cc928c -> :sswitch_e
+        -0x19cc928b -> :sswitch_d
+        -0x3313c2e -> :sswitch_c
+        0xb269698 -> :sswitch_b
+        0x4f62373a -> :sswitch_a
         0x59976a2d -> :sswitch_9
         0x59ac6426 -> :sswitch_8
         0x59ae0c65 -> :sswitch_7
@@ -777,40 +855,6 @@
         0x717677f9 -> :sswitch_0
     .end sparse-switch
 
-    .line 290
-    .line 291
-    .line 292
-    .line 293
-    .line 294
-    .line 295
-    .line 296
-    .line 297
-    .line 298
-    .line 299
-    .line 300
-    .line 301
-    .line 302
-    .line 303
-    .line 304
-    .line 305
-    .line 306
-    .line 307
-    .line 308
-    .line 309
-    .line 310
-    .line 311
-    .line 312
-    .line 313
-    .line 314
-    .line 315
-    .line 316
-    .line 317
-    .line 318
-    .line 319
-    .line 320
-    .line 321
-    .line 322
-    .line 323
     .line 324
     .line 325
     .line 326
@@ -851,23 +895,67 @@
     .line 361
     .line 362
     .line 363
+    .line 364
+    .line 365
+    .line 366
+    .line 367
+    .line 368
+    .line 369
+    .line 370
+    .line 371
+    .line 372
+    .line 373
+    .line 374
+    .line 375
+    .line 376
+    .line 377
+    .line 378
+    .line 379
+    .line 380
+    .line 381
+    .line 382
+    .line 383
+    .line 384
+    .line 385
+    .line 386
+    .line 387
+    .line 388
+    .line 389
+    .line 390
+    .line 391
+    .line 392
+    .line 393
+    .line 394
+    .line 395
+    .line 396
+    .line 397
+    .line 398
+    .line 399
+    .line 400
+    .line 401
+    .line 402
+    .line 403
+    .line 404
+    .line 405
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_f
+        :pswitch_e
         :pswitch_d
         :pswitch_c
         :pswitch_b
         :pswitch_a
-        :pswitch_9
+        :pswitch_a
         :pswitch_9
         :pswitch_8
         :pswitch_7
         :pswitch_6
         :pswitch_5
-        :pswitch_d
+        :pswitch_f
         :pswitch_4
-        :pswitch_9
+        :pswitch_a
         :pswitch_3
-        :pswitch_b
+        :pswitch_c
         :pswitch_2
         :pswitch_1
         :pswitch_0

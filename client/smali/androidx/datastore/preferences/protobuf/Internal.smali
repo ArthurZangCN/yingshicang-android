@@ -519,7 +519,7 @@
 .end method
 
 .method public static getDefaultInstance(Ljava/lang/Class;)Landroidx/datastore/preferences/protobuf/MessageLite;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -580,37 +580,23 @@
 
     .line 21
     .line 22
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "Failed to get default instance for "
 
     .line 23
     .line 24
-    const-string v3, "Failed to get default instance for "
+    invoke-static {v2, p0}, Landroid/support/v4/media/e;->j(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/String;
 
     .line 25
     .line 26
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
     move-result-object p0
 
-    .line 36
+    .line 28
     invoke-direct {v1, p0, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 37
-    .line 38
-    .line 39
+    .line 29
+    .line 30
+    .line 31
     throw v1
 .end method
 

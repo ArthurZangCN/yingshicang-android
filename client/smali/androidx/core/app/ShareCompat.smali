@@ -71,7 +71,7 @@
     const-string v0, " in the supplied menu"
 
     .line 12
-    invoke-static {p2, p1, v0}, Landroid/support/v4/media/g;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, v0}, Landroid/support/v4/media/a;->d(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

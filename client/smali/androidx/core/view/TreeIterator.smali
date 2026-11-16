@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/util/Iterator;
-.implements La4/a;
+.implements Lg4/a;
 
 
 # annotations
@@ -16,7 +16,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Iterator<",
         "TT;>;",
-        "La4/a;"
+        "Lg4/a;"
     }
 .end annotation
 
@@ -201,7 +201,7 @@
 
     .line 46
     .line 47
-    invoke-static {p1}, Lkotlin/collections/q;->h0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p1}, Lkotlin/collections/p;->F(Ljava/util/List;)Ljava/lang/Object;
 
     .line 48
     .line 49
@@ -242,7 +242,7 @@
 
     .line 67
     .line 68
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->B(Ljava/util/List;)I
+    invoke-static {p1}, Lcom/blankj/utilcode/util/f;->i(Ljava/util/List;)I
 
     .line 69
     .line 70

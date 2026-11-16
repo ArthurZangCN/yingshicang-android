@@ -3,38 +3,40 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Landroidx/media3/exoplayer/StreamVolumeManager;
+
+.field public final synthetic b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/StreamVolumeManager;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/media3/exoplayer/c2;->a:I
+    iput-object p1, p0, Landroidx/media3/exoplayer/c2;->a:Landroidx/media3/exoplayer/StreamVolumeManager;
+
+    iput p2, p0, Landroidx/media3/exoplayer/c2;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final run()V
+    .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/c2;->a:I
+    iget-object v0, p0, Landroidx/media3/exoplayer/c2;->a:Landroidx/media3/exoplayer/StreamVolumeManager;
 
-    check-cast p1, Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
+    iget v1, p0, Landroidx/media3/exoplayer/c2;->b:I
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/StreamVolumeManager;->b(ILandroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;)Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/StreamVolumeManager;->m(Landroidx/media3/exoplayer/StreamVolumeManager;I)V
 
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

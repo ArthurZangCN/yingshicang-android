@@ -86,7 +86,7 @@
 
     .line 6
     .line 7
-    invoke-static {v2, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -176,7 +176,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11

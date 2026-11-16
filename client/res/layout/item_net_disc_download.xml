@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/ts_24" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title" android:background="@drawable/button_dialog_main" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/vs_70" android:layout_marginTop="@dimen/vs_10"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

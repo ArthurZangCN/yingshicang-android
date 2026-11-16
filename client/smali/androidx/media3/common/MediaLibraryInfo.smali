@@ -13,11 +13,11 @@
 
 .field public static final TRACE_ENABLED:Z = true
 
-.field public static final VERSION:Ljava/lang/String; = "1.9.0"
+.field public static final VERSION:Ljava/lang/String; = "1.9.2"
 
-.field public static final VERSION_INT:I = 0x3c241f6c
+.field public static final VERSION_INT:I = 0x3c24273c
 
-.field public static final VERSION_SLASHY:Ljava/lang/String; = "AndroidXMedia3/1.9.0"
+.field public static final VERSION_SLASHY:Ljava/lang/String; = "AndroidXMedia3/1.9.2"
 
 .field private static final registeredModules:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;

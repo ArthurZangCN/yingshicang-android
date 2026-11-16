@@ -60,7 +60,7 @@
 
     .line 8
     .line 9
-    invoke-static {}, Landroidx/activity/f;->a()I
+    invoke-static {}, Landroidx/appcompat/app/f;->a()I
 
     .line 10
     .line 11

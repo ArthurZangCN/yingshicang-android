@@ -97,7 +97,7 @@
     move-exception p0
 
     .line 31
-    invoke-static {p1, p0}, Lcom/github/tvbox/osc/util/t;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {p1, p0}, Ld2/c;->e(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     .line 32
     .line 33

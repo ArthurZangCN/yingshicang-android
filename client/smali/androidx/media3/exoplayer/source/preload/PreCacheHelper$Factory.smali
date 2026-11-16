@@ -66,11 +66,9 @@
     iput-object p2, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->renderersFactory:Landroidx/media3/exoplayer/RenderersFactory;
 
     .line 7
-    new-instance p1, Landroidx/media3/exoplayer/offline/a;
+    new-instance p1, Landroidx/media3/exoplayer/offline/i;
 
-    const/4 p2, 0x1
-
-    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/offline/a;-><init>(I)V
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->downloadExecutor:Ljava/util/concurrent/Executor;
 
@@ -105,9 +103,11 @@
     iput-object p2, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->renderersFactory:Landroidx/media3/exoplayer/RenderersFactory;
 
     .line 21
-    new-instance p1, Landroidx/media3/exoplayer/offline/k;
+    new-instance p1, Landroidx/arch/core/executor/a;
 
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    const/4 p2, 0x2
+
+    invoke-direct {p1, p2}, Landroidx/arch/core/executor/a;-><init>(I)V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->downloadExecutor:Ljava/util/concurrent/Executor;
 
@@ -142,11 +142,9 @@
     iput-object p3, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->renderersFactory:Landroidx/media3/exoplayer/RenderersFactory;
 
     .line 14
-    new-instance p1, Landroidx/arch/core/executor/b;
+    new-instance p1, Landroidx/media3/exoplayer/offline/i;
 
-    const/4 p2, 0x1
-
-    invoke-direct {p1, p2}, Landroidx/arch/core/executor/b;-><init>(I)V
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->downloadExecutor:Ljava/util/concurrent/Executor;
 
@@ -177,9 +175,11 @@
     iput-object p3, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->renderersFactory:Landroidx/media3/exoplayer/RenderersFactory;
 
     .line 28
-    new-instance p1, Landroidx/media3/exoplayer/offline/k;
+    new-instance p1, Landroidx/media3/exoplayer/hls/offline/a;
 
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+    const/4 p2, 0x1
+
+    invoke-direct {p1, p2}, Landroidx/media3/exoplayer/hls/offline/a;-><init>(I)V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Factory;->downloadExecutor:Ljava/util/concurrent/Executor;
 

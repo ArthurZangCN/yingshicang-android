@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-.field public final synthetic b:F
+.field public final synthetic b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;F)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;I)V
     .locals 0
 
     .line 1
@@ -21,7 +21,7 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/analytics/f;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iput p2, p0, Landroidx/media3/exoplayer/analytics/f;->b:F
+    iput p2, p0, Landroidx/media3/exoplayer/analytics/f;->b:I
 
     return-void
 .end method
@@ -32,13 +32,13 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/analytics/f;->b:F
+    iget v0, p0, Landroidx/media3/exoplayer/analytics/f;->b:I
 
     check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
     iget-object v1, p0, Landroidx/media3/exoplayer/analytics/f;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->y(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;FLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->E(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ILandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

@@ -86,16 +86,16 @@
     .end annotation
 
     .line 1
-    invoke-static {p4}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/location/d;
+    new-instance v0, Landroidx/core/location/e;
 
     .line 5
     .line 6
-    invoke-direct {v0, p4}, Landroidx/core/location/d;-><init>(Landroidx/core/util/Consumer;)V
+    invoke-direct {v0, p4}, Landroidx/core/location/e;-><init>(Landroidx/core/util/Consumer;)V
 
     .line 7
     .line 8

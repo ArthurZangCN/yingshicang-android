@@ -33,11 +33,11 @@
     .end annotation
 
     .line 2
-    new-instance v0, Landroidx/arch/core/executor/a;
+    new-instance v0, Landroidx/media3/exoplayer/dash/offline/b;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/arch/core/executor/a;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/exoplayer/dash/offline/b;-><init>(I)V
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/media3/exoplayer/dash/offline/DashDownloader;-><init>(Landroidx/media3/common/MediaItem;Landroidx/media3/datasource/cache/CacheDataSource$Factory;Ljava/util/concurrent/Executor;)V
 
@@ -234,7 +234,7 @@
 
     .line 50
     .line 51
-    iget-object v2, v0, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v2, v0, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 52
     .line 53
@@ -654,6 +654,17 @@
     return-void
 .end method
 
+.method public static synthetic b(Landroidx/media3/exoplayer/dash/offline/DashDownloader;Landroidx/media3/datasource/DataSource;ILandroidx/media3/exoplayer/dash/manifest/Representation;)Landroidx/media3/common/util/RunnableFutureTask;
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Landroidx/media3/exoplayer/dash/offline/DashDownloader;->lambda$getSegmentIndex$0(Landroidx/media3/datasource/DataSource;ILandroidx/media3/exoplayer/dash/manifest/Representation;)Landroidx/media3/common/util/RunnableFutureTask;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method private createSegment(Landroidx/media3/exoplayer/dash/manifest/Representation;Ljava/lang/String;JLandroidx/media3/exoplayer/dash/manifest/RangedUri;)Landroidx/media3/exoplayer/offline/SegmentDownloader$Segment;
     .locals 2
 
@@ -661,7 +672,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 3
     .line 4
@@ -711,16 +722,16 @@
 
     .line 8
     :cond_0
-    new-instance v0, Landroidx/media3/exoplayer/dash/offline/DashDownloader$1;
+    new-instance v0, Landroidx/media3/exoplayer/dash/offline/a;
 
     .line 9
     .line 10
-    invoke-direct {v0, p0, p1, p2, p3}, Landroidx/media3/exoplayer/dash/offline/DashDownloader$1;-><init>(Landroidx/media3/exoplayer/dash/offline/DashDownloader;Landroidx/media3/datasource/DataSource;ILandroidx/media3/exoplayer/dash/manifest/Representation;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Landroidx/media3/exoplayer/dash/offline/a;-><init>(Landroidx/media3/exoplayer/dash/offline/DashDownloader;Landroidx/media3/datasource/DataSource;ILandroidx/media3/exoplayer/dash/manifest/Representation;)V
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0, v0, p4}, Landroidx/media3/exoplayer/offline/SegmentDownloader;->execute(Landroidx/media3/common/util/RunnableFutureTask;Z)Ljava/lang/Object;
+    invoke-virtual {p0, v0, p4}, Landroidx/media3/exoplayer/offline/SegmentDownloader;->execute(Lcom/google/common/base/z;Z)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -761,6 +772,22 @@
     .line 31
     :goto_0
     return-object p1
+.end method
+
+.method private synthetic lambda$getSegmentIndex$0(Landroidx/media3/datasource/DataSource;ILandroidx/media3/exoplayer/dash/manifest/Representation;)Landroidx/media3/common/util/RunnableFutureTask;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroidx/media3/exoplayer/dash/offline/DashDownloader$1;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2, p3}, Landroidx/media3/exoplayer/dash/offline/DashDownloader$1;-><init>(Landroidx/media3/exoplayer/dash/offline/DashDownloader;Landroidx/media3/datasource/DataSource;ILandroidx/media3/exoplayer/dash/manifest/Representation;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
 .end method
 
 

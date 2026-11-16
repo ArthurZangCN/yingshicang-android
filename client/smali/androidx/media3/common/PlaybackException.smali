@@ -1140,18 +1140,26 @@
     move-result-object p0
 
     .line 7
-    if-eqz p0, :cond_0
+    invoke-static {p0}, Landroidx/media3/common/util/Util;->convertToNullIfInvalid(Landroid/os/Bundle;)Landroid/os/Bundle;
 
     .line 8
     .line 9
+    .line 10
+    move-result-object p0
+
+    .line 11
+    if-eqz p0, :cond_0
+
+    .line 12
+    .line 13
     goto :goto_0
 
-    .line 10
+    .line 14
     :cond_0
     sget-object p0, Landroid/os/Bundle;->EMPTY:Landroid/os/Bundle;
 
-    .line 11
-    .line 12
+    .line 15
+    .line 16
     :goto_0
     return-object p0
 .end method
@@ -1250,7 +1258,7 @@
     move-result-object v5
 
     .line 39
-    invoke-static {v4, v5}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -1338,7 +1346,7 @@
     move-result-object v3
 
     .line 80
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 81
     .line 82

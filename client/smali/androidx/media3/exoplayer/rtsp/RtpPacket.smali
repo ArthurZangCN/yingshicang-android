@@ -185,7 +185,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0}, Lz1/c;->c(I)I
+    invoke-static {p0}, Lj2/c;->c(I)I
 
     .line 4
     .line 5
@@ -204,7 +204,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0}, Lz1/c;->c(I)I
+    invoke-static {p0}, Lj2/c;->c(I)I
 
     .line 4
     .line 5

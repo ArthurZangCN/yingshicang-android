@@ -20,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lt0/d;
+    new-instance v0, Lk1/d;
 
     .line 5
     .line 6
@@ -28,12 +28,12 @@
 
     .line 7
     .line 8
-    invoke-direct {v0, p1, v1}, Lt0/d;-><init>(Landroid/content/Context;Lcom/facebook/crypto/CryptoConfig;)V
+    invoke-direct {v0, p1, v1}, Lk1/d;-><init>(Landroid/content/Context;Lcom/facebook/crypto/CryptoConfig;)V
 
     .line 9
     .line 10
     .line 11
-    const-class p1, Lt0/a;
+    const-class p1, Lk1/a;
 
     .line 12
     .line 13
@@ -41,7 +41,7 @@
 
     .line 14
     :try_start_0
-    sget-object v1, Lt0/a;->a:Lt0/a;
+    sget-object v1, Lk1/a;->a:Lk1/a;
 
     .line 15
     .line 16
@@ -49,7 +49,7 @@
 
     .line 17
     .line 18
-    new-instance v1, Lt0/a;
+    new-instance v1, Lk1/a;
 
     .line 19
     .line 20
@@ -62,11 +62,11 @@
     .line 23
     .line 24
     .line 25
-    new-instance v3, Lt0/b;
+    new-instance v3, Lk1/b;
 
     .line 26
     .line 27
-    invoke-direct {v3}, Lt0/b;-><init>()V
+    invoke-direct {v3}, Lk1/b;-><init>()V
 
     .line 28
     .line 29
@@ -76,7 +76,7 @@
     .line 31
     .line 32
     .line 33
-    sput-object v1, Lt0/a;->a:Lt0/a;
+    sput-object v1, Lk1/a;->a:Lk1/a;
 
     .line 34
     .line 35
@@ -92,7 +92,7 @@
     .line 38
     :cond_0
     :goto_0
-    sget-object v1, Lt0/a;->a:Lt0/a;
+    sget-object v1, Lk1/a;->a:Lk1/a;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

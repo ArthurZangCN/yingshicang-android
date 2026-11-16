@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
@@ -38,23 +38,29 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1}, Landroidx/media3/common/SimpleBasePlayer;->U(Landroidx/media3/common/SimpleBasePlayer$State;)Landroidx/media3/common/SimpleBasePlayer$State;
+    invoke-static {v1}, Landroidx/media3/common/SimpleBasePlayer;->l(Landroidx/media3/common/SimpleBasePlayer$State;)Landroidx/media3/common/SimpleBasePlayer$State;
 
     move-result-object v0
 
     return-object v0
 
     :pswitch_0
+    invoke-static {v1}, Landroidx/media3/common/SimpleBasePlayer;->f(Landroidx/media3/common/SimpleBasePlayer$State;)Landroidx/media3/common/SimpleBasePlayer$State;
+
+    move-result-object v0
+
+    return-object v0
+
+    :pswitch_1
     invoke-static {v1}, Landroidx/media3/common/SimpleBasePlayer;->s(Landroidx/media3/common/SimpleBasePlayer$State;)Landroidx/media3/common/SimpleBasePlayer$State;
 
     move-result-object v0
 
     return-object v0
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

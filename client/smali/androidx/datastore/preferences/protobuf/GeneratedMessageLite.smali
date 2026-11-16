@@ -63,11 +63,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 4
     .line 5
@@ -2492,7 +2492,7 @@
     const-string v1, "serialized size must be non-negative, was "
 
     .line 4
-    invoke-static {v1, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2954,7 +2954,7 @@
 
     .line 19
     .line 20
-    invoke-static {v1, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 21
     .line 22

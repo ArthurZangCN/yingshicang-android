@@ -45,6 +45,11 @@
     .end annotation
 .end field
 
+.field private author:Ljava/lang/CharSequence;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
 .field private compilation:Ljava/lang/CharSequence;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -155,10 +160,10 @@
     .end annotation
 .end field
 
-.field private supportedCommands:Lcom/google/common/collect/f2;
+.field private supportedCommands:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -204,11 +209,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/e2;
 
     return-void
 .end method
@@ -345,51 +350,56 @@
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->writer:Ljava/lang/CharSequence;
 
     .line 30
+    iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->author:Ljava/lang/CharSequence;
+
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->author:Ljava/lang/CharSequence;
+
+    .line 31
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->composer:Ljava/lang/CharSequence;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->composer:Ljava/lang/CharSequence;
 
-    .line 31
+    .line 32
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->conductor:Ljava/lang/CharSequence;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->conductor:Ljava/lang/CharSequence;
 
-    .line 32
+    .line 33
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->discNumber:Ljava/lang/Integer;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->discNumber:Ljava/lang/Integer;
 
-    .line 33
+    .line 34
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->totalDiscCount:Ljava/lang/Integer;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->totalDiscCount:Ljava/lang/Integer;
 
-    .line 34
+    .line 35
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->genre:Ljava/lang/CharSequence;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->genre:Ljava/lang/CharSequence;
 
-    .line 35
+    .line 36
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->compilation:Ljava/lang/CharSequence;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->compilation:Ljava/lang/CharSequence;
 
-    .line 36
+    .line 37
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->station:Ljava/lang/CharSequence;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->station:Ljava/lang/CharSequence;
 
-    .line 37
+    .line 38
     iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->mediaType:Ljava/lang/Integer;
 
     iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->mediaType:Ljava/lang/Integer;
 
-    .line 38
-    iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
-
-    iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/f2;
-
     .line 39
+    iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
+
+    iput-object v0, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/e2;
+
+    .line 40
     iget-object p1, p1, Landroidx/media3/common/MediaMetadata;->extras:Landroid/os/Bundle;
 
     iput-object p1, p0, Landroidx/media3/common/MediaMetadata$Builder;->extras:Landroid/os/Bundle;
@@ -619,7 +629,7 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->composer:Ljava/lang/CharSequence;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->author:Ljava/lang/CharSequence;
 
     .line 2
     .line 3
@@ -630,18 +640,18 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->conductor:Ljava/lang/CharSequence;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->composer:Ljava/lang/CharSequence;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static synthetic access$2900(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/Integer;
+.method public static synthetic access$2900(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->discNumber:Ljava/lang/Integer;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->conductor:Ljava/lang/CharSequence;
 
     .line 2
     .line 3
@@ -663,18 +673,18 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->totalDiscCount:Ljava/lang/Integer;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->discNumber:Ljava/lang/Integer;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static synthetic access$3100(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
+.method public static synthetic access$3100(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/Integer;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->genre:Ljava/lang/CharSequence;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->totalDiscCount:Ljava/lang/Integer;
 
     .line 2
     .line 3
@@ -685,7 +695,7 @@
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->compilation:Ljava/lang/CharSequence;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->genre:Ljava/lang/CharSequence;
 
     .line 2
     .line 3
@@ -696,6 +706,17 @@
     .locals 0
 
     .line 1
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->compilation:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static synthetic access$3400(Landroidx/media3/common/MediaMetadata$Builder;)Ljava/lang/CharSequence;
+    .locals 0
+
+    .line 1
     iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->station:Ljava/lang/CharSequence;
 
     .line 2
@@ -703,18 +724,18 @@
     return-object p0
 .end method
 
-.method public static synthetic access$3400(Landroidx/media3/common/MediaMetadata$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$3500(Landroidx/media3/common/MediaMetadata$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static synthetic access$3500(Landroidx/media3/common/MediaMetadata$Builder;)Landroid/os/Bundle;
+.method public static synthetic access$3600(Landroidx/media3/common/MediaMetadata$Builder;)Landroid/os/Bundle;
     .locals 0
 
     .line 1
@@ -843,7 +864,7 @@
     move-result-object v0
 
     .line 14
-    invoke-static {v1, v0}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -1390,7 +1411,7 @@
     .line 245
     .line 246
     :cond_22
-    iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 247
     .line 248
@@ -1406,7 +1427,7 @@
 
     .line 253
     .line 254
-    iget-object p1, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/f2;
+    iget-object p1, p1, Landroidx/media3/common/MediaMetadata;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 255
     .line 256
@@ -1631,6 +1652,23 @@
     return-object p0
 .end method
 
+.method public setAuthor(Ljava/lang/CharSequence;)Landroidx/media3/common/MediaMetadata$Builder;
+    .locals 0
+    .param p1    # Ljava/lang/CharSequence;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/media3/common/util/UnstableApi;
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Landroidx/media3/common/MediaMetadata$Builder;->author:Ljava/lang/CharSequence;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
 .method public setCompilation(Ljava/lang/CharSequence;)Landroidx/media3/common/MediaMetadata$Builder;
     .locals 0
     .param p1    # Ljava/lang/CharSequence;
@@ -1769,7 +1807,7 @@
 
     .line 17
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 18
     .line 19
@@ -2044,7 +2082,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2052,7 +2090,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/MediaMetadata$Builder;->supportedCommands:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7

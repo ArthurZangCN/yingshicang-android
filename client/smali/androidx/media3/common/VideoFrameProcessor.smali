@@ -27,10 +27,10 @@
 
 .field public static final INPUT_TYPE_TEXTURE_ID:I = 0x3
 
-.field public static final REDRAW:Lcom/google/common/collect/f2;
+.field public static final REDRAW:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Effect;",
             ">;"
         }
@@ -59,7 +59,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -67,7 +67,7 @@
     move-result-object v0
 
     .line 10
-    sput-object v0, Landroidx/media3/common/VideoFrameProcessor;->REDRAW:Lcom/google/common/collect/f2;
+    sput-object v0, Landroidx/media3/common/VideoFrameProcessor;->REDRAW:Lcom/google/common/collect/e2;
 
     .line 11
     .line 12

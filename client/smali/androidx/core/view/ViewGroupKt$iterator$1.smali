@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/util/Iterator;
-.implements La4/a;
+.implements Lg4/a;
 
 
 # annotations
@@ -23,7 +23,7 @@
         "Ljava/util/Iterator<",
         "Landroid/view/View;",
         ">;",
-        "La4/a;"
+        "Lg4/a;"
     }
 .end annotation
 

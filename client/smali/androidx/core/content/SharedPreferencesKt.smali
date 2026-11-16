@@ -20,7 +20,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/content/SharedPreferences$Editor;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

@@ -3,42 +3,42 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/common/util/ListenerSet$IterationFinishedEvent;
+.implements Landroidx/media3/common/util/ListenerSet$Event;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;
+.field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-.field public final synthetic b:Landroidx/media3/common/Player;
+.field public final synthetic b:F
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;Landroidx/media3/common/Player;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;F)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/analytics/i;->a:Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;
+    iput-object p1, p0, Landroidx/media3/exoplayer/analytics/i;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/analytics/i;->b:Landroidx/media3/common/Player;
+    iput p2, p0, Landroidx/media3/exoplayer/analytics/i;->b:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Landroidx/media3/common/FlagSet;)V
+.method public final invoke(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/i;->b:Landroidx/media3/common/Player;
+    iget v0, p0, Landroidx/media3/exoplayer/analytics/i;->b:F
 
     check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/analytics/i;->a:Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;
+    iget-object v1, p0, Landroidx/media3/exoplayer/analytics/i;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    invoke-static {v1, v0, p1, p2}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->A(Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;Landroidx/media3/common/Player;Landroidx/media3/exoplayer/analytics/AnalyticsListener;Landroidx/media3/common/FlagSet;)V
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->y(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;FLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

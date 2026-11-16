@@ -19,7 +19,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function4<",
             "-",
@@ -30,12 +30,12 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/Editable;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/TextWatcher;"
         }
@@ -128,7 +128,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/Editable;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/TextWatcher;"
         }
@@ -167,7 +167,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/TextWatcher;"
         }
@@ -206,7 +206,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/text/TextWatcher;"
         }

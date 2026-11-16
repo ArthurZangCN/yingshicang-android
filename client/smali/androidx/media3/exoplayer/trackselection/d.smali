@@ -32,11 +32,11 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p1, Landroidx/media3/common/Format;
 
-    check-cast p2, Ljava/lang/Integer;
+    check-cast p2, Landroidx/media3/common/Format;
 
-    invoke-static {p1, p2}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;->e(Ljava/lang/Integer;Ljava/lang/Integer;)I
+    invoke-static {p1, p2}, Landroidx/media3/exoplayer/trackselection/BaseTrackSelection;->a(Landroidx/media3/common/Format;Landroidx/media3/common/Format;)I
 
     move-result p1
 
@@ -54,17 +54,6 @@
     return p1
 
     :pswitch_1
-    check-cast p1, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;
-
-    check-cast p2, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;
-
-    invoke-static {p1, p2}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;->b(Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$VideoTrackInfo;)I
-
-    move-result p1
-
-    return p1
-
-    :pswitch_2
     check-cast p1, Ljava/util/List;
 
     check-cast p2, Ljava/util/List;
@@ -75,11 +64,8 @@
 
     return p1
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

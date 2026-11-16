@@ -117,7 +117,7 @@
 
     .line 16
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 17
     .line 18

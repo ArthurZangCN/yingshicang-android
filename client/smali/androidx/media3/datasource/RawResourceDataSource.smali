@@ -455,7 +455,7 @@
 
     .line 161
     .line 162
-    invoke-static {v1, v4, v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v4, v0}, Landroid/support/v4/media/d;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 163
     .line 164
@@ -1198,230 +1198,222 @@
     move-result-object v0
 
     .line 87
-    invoke-static {v0}, Lj$/nio/channels/DesugarChannels;->convertMaybeLegacyFileChannelFromLibrary(Ljava/nio/channels/FileChannel;)Ljava/nio/channels/FileChannel;
+    invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->size()J
 
     .line 88
     .line 89
     .line 90
-    move-result-object v0
+    move-result-wide v1
 
     .line 91
-    invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->size()J
+    cmp-long v1, v1, v8
 
     .line 92
     .line 93
-    .line 94
-    move-result-wide v1
+    if-nez v1, :cond_2
 
+    .line 94
     .line 95
-    cmp-long v1, v1, v8
+    iput-wide v3, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
 
     .line 96
     .line 97
-    if-nez v1, :cond_2
-
-    .line 98
-    .line 99
-    iput-wide v3, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
-
-    .line 100
-    .line 101
     goto :goto_1
 
-    .line 102
+    .line 98
     :cond_2
     invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->size()J
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-wide v1
+
+    .line 102
+    invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->position()J
 
     .line 103
     .line 104
     .line 105
-    move-result-wide v1
-
-    .line 106
-    invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->position()J
-
-    .line 107
-    .line 108
-    .line 109
     move-result-wide v10
 
-    .line 110
+    .line 106
     sub-long/2addr v1, v10
 
-    .line 111
+    .line 107
     iput-wide v1, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
+
+    .line 108
+    .line 109
+    cmp-long v0, v1, v8
+
+    .line 110
+    .line 111
+    if-ltz v0, :cond_3
 
     .line 112
     .line 113
-    cmp-long v0, v1, v8
-
-    .line 114
-    .line 115
-    if-ltz v0, :cond_3
-
-    .line 116
-    .line 117
     goto :goto_1
 
-    .line 118
+    .line 114
     :cond_3
     new-instance p1, Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException;
 
-    .line 119
-    .line 120
+    .line 115
+    .line 116
     invoke-direct {p1, v7, v7, v6}, Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;I)V
 
-    .line 121
-    .line 122
-    .line 123
+    .line 117
+    .line 118
+    .line 119
     throw p1
 
-    .line 124
+    .line 120
     :cond_4
     sub-long/2addr v0, v10
 
-    .line 125
+    .line 121
     iput-wide v0, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
     :try_end_0
     .catch Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 126
-    .line 127
+    .line 122
+    .line 123
     cmp-long v0, v0, v8
 
-    .line 128
-    .line 129
+    .line 124
+    .line 125
     if-ltz v0, :cond_8
 
-    .line 130
-    .line 131
+    .line 126
+    .line 127
     :goto_1
     iget-wide v0, p1, Landroidx/media3/datasource/DataSpec;->length:J
 
+    .line 128
+    .line 129
+    cmp-long v2, v0, v3
+
+    .line 130
+    .line 131
+    if-eqz v2, :cond_6
+
     .line 132
     .line 133
-    cmp-long v2, v0, v3
+    iget-wide v5, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
 
     .line 134
     .line 135
-    if-eqz v2, :cond_6
+    cmp-long v2, v5, v3
 
     .line 136
     .line 137
-    iget-wide v5, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
+    if-nez v2, :cond_5
 
     .line 138
     .line 139
-    cmp-long v2, v5, v3
-
-    .line 140
-    .line 141
-    if-nez v2, :cond_5
-
-    .line 142
-    .line 143
     goto :goto_2
 
-    .line 144
+    .line 140
     :cond_5
     invoke-static {v5, v6, v0, v1}, Ljava/lang/Math;->min(JJ)J
 
-    .line 145
-    .line 146
-    .line 147
+    .line 141
+    .line 142
+    .line 143
     move-result-wide v0
 
-    .line 148
+    .line 144
     :goto_2
     iput-wide v0, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
 
-    .line 149
-    .line 150
+    .line 145
+    .line 146
     :cond_6
     const/4 v0, 0x1
 
-    .line 151
+    .line 147
     iput-boolean v0, p0, Landroidx/media3/datasource/RawResourceDataSource;->opened:Z
 
-    .line 152
-    .line 153
+    .line 148
+    .line 149
     invoke-virtual {p0, p1}, Landroidx/media3/datasource/BaseDataSource;->transferStarted(Landroidx/media3/datasource/DataSpec;)V
 
+    .line 150
+    .line 151
+    .line 152
+    iget-wide v0, p1, Landroidx/media3/datasource/DataSpec;->length:J
+
+    .line 153
     .line 154
+    cmp-long p1, v0, v3
+
     .line 155
     .line 156
-    iget-wide v0, p1, Landroidx/media3/datasource/DataSpec;->length:J
+    if-eqz p1, :cond_7
 
     .line 157
     .line 158
-    cmp-long p1, v0, v3
-
-    .line 159
-    .line 160
-    if-eqz p1, :cond_7
-
-    .line 161
-    .line 162
     goto :goto_3
 
-    .line 163
+    .line 159
     :cond_7
     iget-wide v0, p0, Landroidx/media3/datasource/RawResourceDataSource;->bytesRemaining:J
 
-    .line 164
-    .line 165
+    .line 160
+    .line 161
     :goto_3
     return-wide v0
 
-    .line 166
+    .line 162
     :cond_8
     :try_start_1
     new-instance p1, Landroidx/media3/datasource/DataSourceException;
 
-    .line 167
-    .line 168
+    .line 163
+    .line 164
     invoke-direct {p1, v6}, Landroidx/media3/datasource/DataSourceException;-><init>(I)V
 
-    .line 169
-    .line 170
-    .line 171
+    .line 165
+    .line 166
+    .line 167
     throw p1
 
-    .line 172
+    .line 168
     :cond_9
     new-instance p1, Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException;
 
-    .line 173
-    .line 174
+    .line 169
+    .line 170
     invoke-direct {p1, v7, v7, v6}, Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;I)V
 
-    .line 175
-    .line 176
-    .line 177
+    .line 171
+    .line 172
+    .line 173
     throw p1
     :try_end_1
     .catch Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 178
+    .line 174
     :goto_4
     new-instance v0, Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException;
 
-    .line 179
-    .line 180
+    .line 175
+    .line 176
     const/16 v1, 0x7d0
 
-    .line 181
-    .line 182
+    .line 177
+    .line 178
     invoke-direct {v0, v7, p1, v1}, Landroidx/media3/datasource/RawResourceDataSource$RawResourceDataSourceException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;I)V
 
-    .line 183
-    .line 184
-    .line 185
+    .line 179
+    .line 180
+    .line 181
     throw v0
 
-    .line 186
+    .line 182
     :goto_5
     throw p1
 .end method

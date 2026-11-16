@@ -15,10 +15,10 @@
 
 
 # instance fields
-.field private final trackTypes:Lcom/google/common/collect/s2;
+.field private final trackTypes:Lcom/google/common/collect/r2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/s2<",
+            "Lcom/google/common/collect/r2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -35,7 +35,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/google/common/collect/s2;->of(Ljava/lang/Object;)Lcom/google/common/collect/s2;
+    invoke-static {p2}, Lcom/google/common/collect/r2;->of(Ljava/lang/Object;)Lcom/google/common/collect/r2;
 
     move-result-object p2
 
@@ -60,11 +60,11 @@
     invoke-direct {p0, p1}, Landroidx/media3/exoplayer/source/WrappingMediaSource;-><init>(Landroidx/media3/exoplayer/source/MediaSource;)V
 
     .line 3
-    invoke-static {p2}, Lcom/google/common/collect/s2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/s2;
+    invoke-static {p2}, Lcom/google/common/collect/r2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/r2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/FilteringMediaSource;->trackTypes:Lcom/google/common/collect/s2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/FilteringMediaSource;->trackTypes:Lcom/google/common/collect/r2;
 
     return-void
 .end method
@@ -87,11 +87,11 @@
 
     .line 6
     .line 7
-    iget-object p3, p0, Landroidx/media3/exoplayer/source/FilteringMediaSource;->trackTypes:Lcom/google/common/collect/s2;
+    iget-object p3, p0, Landroidx/media3/exoplayer/source/FilteringMediaSource;->trackTypes:Lcom/google/common/collect/r2;
 
     .line 8
     .line 9
-    invoke-direct {p2, p1, p3}, Landroidx/media3/exoplayer/source/FilteringMediaSource$FilteringMediaPeriod;-><init>(Landroidx/media3/exoplayer/source/MediaPeriod;Lcom/google/common/collect/s2;)V
+    invoke-direct {p2, p1, p3}, Landroidx/media3/exoplayer/source/FilteringMediaSource$FilteringMediaPeriod;-><init>(Landroidx/media3/exoplayer/source/MediaPeriod;Lcom/google/common/collect/r2;)V
 
     .line 10
     .line 11

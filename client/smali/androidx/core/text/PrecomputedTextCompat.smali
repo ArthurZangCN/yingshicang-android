@@ -224,7 +224,7 @@
 
     .line 23
     .line 24
-    invoke-static {p0, v0}, Landroidx/core/app/g;->k(Ljava/lang/CharSequence;Landroid/text/PrecomputedText$Params;)Landroid/text/PrecomputedText;
+    invoke-static {p0, v0}, Landroidx/core/text/a;->i(Ljava/lang/CharSequence;Landroid/text/PrecomputedText$Params;)Landroid/text/PrecomputedText;
 
     .line 25
     .line 26
@@ -660,7 +660,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Landroidx/core/graphics/a;->d(Landroid/text/PrecomputedText;)I
+    invoke-static {v0}, Landroidx/core/content/pm/a;->c(Landroid/text/PrecomputedText;)I
 
     .line 10
     .line 11
@@ -730,7 +730,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0, p1}, Landroidx/core/content/pm/f;->c(Landroid/text/PrecomputedText;I)I
+    invoke-static {v0, p1}, Landroidx/core/content/pm/h;->b(Landroid/text/PrecomputedText;I)I
 
     .line 20
     .line 21
@@ -801,7 +801,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0, p1}, Landroidx/core/app/e;->c(Landroid/text/PrecomputedText;I)I
+    invoke-static {v0, p1}, Landroid/support/v4/media/session/g;->c(Landroid/text/PrecomputedText;I)I
 
     .line 20
     .line 21
@@ -870,7 +870,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/session/d;->v(Landroid/text/Spannable;)Z
+    invoke-static {v0}, Landroidx/core/content/pm/h;->p(Landroid/text/Spannable;)Z
 
     .line 4
     .line 5
@@ -886,7 +886,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, Landroidx/core/content/pm/f;->i(Landroid/text/Spannable;)Landroid/text/PrecomputedText;
+    invoke-static {v0}, Landroid/support/v4/media/session/g;->g(Landroid/text/Spannable;)Landroid/text/PrecomputedText;
 
     .line 12
     .line 13
@@ -990,7 +990,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, p1, p2, p3}, Landroidx/core/app/e;->n(Landroid/text/PrecomputedText;IILjava/lang/Class;)[Ljava/lang/Object;
+    invoke-static {v0, p1, p2, p3}, Landroidx/core/app/g;->n(Landroid/text/PrecomputedText;IILjava/lang/Class;)[Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -1083,7 +1083,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, p1}, Landroidx/core/app/g;->p(Landroid/text/PrecomputedText;Ljava/lang/Object;)V
+    invoke-static {v0, p1}, Landroidx/core/app/i;->l(Landroid/text/PrecomputedText;Ljava/lang/Object;)V
 
     .line 14
     .line 15
@@ -1150,7 +1150,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, p1, p2, p3, p4}, Landroid/support/v4/media/session/d;->q(Landroid/text/PrecomputedText;Ljava/lang/Object;III)V
+    invoke-static {v0, p1, p2, p3, p4}, Landroidx/core/text/a;->q(Landroid/text/PrecomputedText;Ljava/lang/Object;III)V
 
     .line 14
     .line 15

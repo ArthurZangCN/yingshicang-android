@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field private mFontFamilies:Lj$/util/concurrent/ConcurrentHashMap;
+.field private mFontFamilies:Ljava/util/concurrent/ConcurrentHashMap;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "BanConcurrentHashMap"
@@ -33,7 +33,7 @@
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lj$/util/concurrent/ConcurrentHashMap<",
+            "Ljava/util/concurrent/ConcurrentHashMap<",
             "Ljava/lang/Long;",
             "Landroidx/core/content/res/FontResourcesParserCompat$FontFamilyFilesResourceEntry;",
             ">;"
@@ -52,16 +52,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl;->mFontFamilies:Lj$/util/concurrent/ConcurrentHashMap;
+    iput-object v0, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl;->mFontFamilies:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 10
     .line 11
@@ -92,7 +92,7 @@
 
     .line 10
     .line 11
-    iget-object p1, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl;->mFontFamilies:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object p1, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl;->mFontFamilies:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 12
     .line 13
@@ -104,7 +104,7 @@
     move-result-object v0
 
     .line 17
-    invoke-virtual {p1, v0, p2}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0, p2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -913,7 +913,7 @@
 
     .line 13
     :cond_0
-    iget-object p1, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl;->mFontFamilies:Lj$/util/concurrent/ConcurrentHashMap;
+    iget-object p1, p0, Landroidx/core/graphics/TypefaceCompatBaseImpl;->mFontFamilies:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 14
     .line 15
@@ -925,7 +925,7 @@
     move-result-object v0
 
     .line 19
-    invoke-virtual {p1, v0}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 20
     .line 21

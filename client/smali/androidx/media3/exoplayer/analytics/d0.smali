@@ -9,15 +9,13 @@
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-.field public final synthetic b:I
+.field public final synthetic b:Landroidx/media3/common/Format;
 
-.field public final synthetic c:Landroidx/media3/common/Player$PositionInfo;
-
-.field public final synthetic d:Landroidx/media3/common/Player$PositionInfo;
+.field public final synthetic c:Landroidx/media3/exoplayer/DecoderReuseEvaluation;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;I)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;)V
     .locals 0
 
     .line 1
@@ -25,11 +23,9 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/analytics/d0;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iput p4, p0, Landroidx/media3/exoplayer/analytics/d0;->b:I
+    iput-object p2, p0, Landroidx/media3/exoplayer/analytics/d0;->b:Landroidx/media3/common/Format;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/analytics/d0;->c:Landroidx/media3/common/Player$PositionInfo;
-
-    iput-object p3, p0, Landroidx/media3/exoplayer/analytics/d0;->d:Landroidx/media3/common/Player$PositionInfo;
+    iput-object p3, p0, Landroidx/media3/exoplayer/analytics/d0;->c:Landroidx/media3/exoplayer/DecoderReuseEvaluation;
 
     return-void
 .end method
@@ -37,20 +33,18 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 4
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/d0;->d:Landroidx/media3/common/Player$PositionInfo;
+    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/d0;->c:Landroidx/media3/exoplayer/DecoderReuseEvaluation;
 
     check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
     iget-object v1, p0, Landroidx/media3/exoplayer/analytics/d0;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iget v2, p0, Landroidx/media3/exoplayer/analytics/d0;->b:I
+    iget-object v2, p0, Landroidx/media3/exoplayer/analytics/d0;->b:Landroidx/media3/common/Format;
 
-    iget-object v3, p0, Landroidx/media3/exoplayer/analytics/d0;->c:Landroidx/media3/common/Player$PositionInfo;
-
-    invoke-static {v1, v2, v3, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->O(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ILandroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->x(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/DecoderReuseEvaluation;Landroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

@@ -697,7 +697,7 @@
 
     .line 6
     .line 7
-    invoke-static {p0, p1}, Landroidx/activity/f;->g(Ljava/util/Locale;Ljava/util/Locale;)Z
+    invoke-static {p0, p1}, Landroidx/core/os/a;->c(Ljava/util/Locale;Ljava/util/Locale;)Z
 
     .line 8
     .line 9
@@ -755,7 +755,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/b;->i(Ljava/lang/Object;)Landroid/os/LocaleList;
+    invoke-static {p0}, Landroid/support/v4/media/session/b;->g(Ljava/lang/Object;)Landroid/os/LocaleList;
 
     move-result-object p0
 

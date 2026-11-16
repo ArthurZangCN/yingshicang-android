@@ -131,7 +131,7 @@
 
     .line 4
     :goto_2
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     if-eqz p9, :cond_4
 
@@ -148,7 +148,7 @@
 
     .line 5
     :goto_3
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 6
     :cond_4

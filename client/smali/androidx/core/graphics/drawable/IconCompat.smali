@@ -1851,6 +1851,7 @@
     .line 24
     return-object p0
 
+    .line 25
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_5

@@ -23,35 +23,35 @@
 
 .field public static final chronometer:I = 0x7f0a0099
 
-.field public static final end_padder:I = 0x7f0a00f6
+.field public static final end_padder:I = 0x7f0a00fc
 
-.field public static final icon:I = 0x7f0a0178
+.field public static final icon:I = 0x7f0a017f
 
-.field public static final info:I = 0x7f0a0187
+.field public static final info:I = 0x7f0a018e
 
-.field public static final line1:I = 0x7f0a01aa
+.field public static final line1:I = 0x7f0a01b1
 
-.field public static final line3:I = 0x7f0a01ab
+.field public static final line3:I = 0x7f0a01b2
 
-.field public static final media_actions:I = 0x7f0a01fe
+.field public static final media_actions:I = 0x7f0a0206
 
-.field public static final media_controller_compat_view_tag:I = 0x7f0a01ff
+.field public static final media_controller_compat_view_tag:I = 0x7f0a0207
 
-.field public static final notification_main_column:I = 0x7f0a0239
+.field public static final notification_main_column:I = 0x7f0a0241
 
-.field public static final notification_main_column_container:I = 0x7f0a023a
+.field public static final notification_main_column_container:I = 0x7f0a0242
 
-.field public static final right_side:I = 0x7f0a0293
+.field public static final right_side:I = 0x7f0a029e
 
-.field public static final status_bar_latest_event_content:I = 0x7f0a02e4
+.field public static final status_bar_latest_event_content:I = 0x7f0a02f0
 
-.field public static final text:I = 0x7f0a030b
+.field public static final text:I = 0x7f0a0317
 
-.field public static final text2:I = 0x7f0a030c
+.field public static final text2:I = 0x7f0a0318
 
-.field public static final time:I = 0x7f0a0322
+.field public static final time:I = 0x7f0a032e
 
-.field public static final title:I = 0x7f0a0327
+.field public static final title:I = 0x7f0a0333
 
 
 # direct methods

@@ -379,7 +379,7 @@
 
     .line 43
     .line 44
-    invoke-static {p0, v1, v3}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {p0, v1, v3}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 45
     .line 46
@@ -1629,7 +1629,7 @@
 
     .line 31
     .line 32
-    invoke-static {p0, v0}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {p0, v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 33
     .line 34
@@ -1690,7 +1690,7 @@
 
     .line 63
     .line 64
-    invoke-static {p0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 65
     .line 66
@@ -1884,7 +1884,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object p2
 
@@ -2286,7 +2286,7 @@
 
     .line 17
     .line 18
-    invoke-static {p0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -2378,7 +2378,7 @@
 
     .line 27
     .line 28
-    invoke-static {p0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 29
     .line 30
@@ -2537,7 +2537,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p1, v2}, Landroidx/media3/common/Metadata;->getEntriesOfType(Ljava/lang/Class;)Lcom/google/common/collect/f2;
+    invoke-virtual {p1, v2}, Landroidx/media3/common/Metadata;->getEntriesOfType(Ljava/lang/Class;)Lcom/google/common/collect/e2;
 
     .line 18
     .line 19
@@ -2545,7 +2545,7 @@
     move-result-object p1
 
     .line 21
-    invoke-virtual {p1}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {p1}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 22
     .line 23

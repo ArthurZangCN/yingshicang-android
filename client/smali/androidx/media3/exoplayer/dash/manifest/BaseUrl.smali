@@ -133,7 +133,7 @@
 
     .line 28
     .line 29
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
@@ -153,7 +153,7 @@
 
     .line 38
     .line 39
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
@@ -247,7 +247,7 @@
 
     .line 31
     .line 32
-    invoke-static {v4}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v4}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 33
     .line 34

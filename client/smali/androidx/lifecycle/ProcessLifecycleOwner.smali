@@ -111,14 +111,14 @@
 
     .line 15
     .line 16
-    new-instance v0, Landroidx/activity/a;
+    new-instance v0, Landroidx/activity/h;
 
     .line 17
     .line 18
-    const/4 v1, 0x6
+    const/4 v1, 0x3
 
     .line 19
-    invoke-direct {v0, p0, v1}, Landroidx/activity/a;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/activity/h;-><init>(Ljava/lang/Object;I)V
 
     .line 20
     .line 21

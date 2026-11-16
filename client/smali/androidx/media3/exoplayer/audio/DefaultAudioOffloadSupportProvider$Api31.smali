@@ -31,7 +31,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media/session/a;->b(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
+    invoke-static {p0, p1}, Landroidx/media/session/a;->a(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)I
 
     .line 2
     .line 3

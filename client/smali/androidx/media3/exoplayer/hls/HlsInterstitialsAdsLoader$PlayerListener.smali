@@ -347,11 +347,11 @@
 
     .line 34
     .line 35
-    new-instance v1, Landroidx/media3/exoplayer/hls/o;
+    new-instance v1, Landroidx/media3/exoplayer/hls/q;
 
     .line 36
     .line 37
-    invoke-direct {v1, p1, p2, p3, p4}, Landroidx/media3/exoplayer/hls/o;-><init>(Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
+    invoke-direct {v1, p1, p2, p3, p4}, Landroidx/media3/exoplayer/hls/q;-><init>(Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
 
     .line 38
     .line 39
@@ -631,7 +631,7 @@
 
     .line 66
     .line 67
-    new-instance v1, Landroidx/media3/exoplayer/hls/p;
+    new-instance v1, Landroidx/media3/exoplayer/hls/s;
 
     .line 68
     .line 69
@@ -641,7 +641,7 @@
     move-object v7, p1
 
     .line 71
-    invoke-direct/range {v2 .. v7}, Landroidx/media3/exoplayer/hls/p;-><init>(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/common/Metadata;)V
+    invoke-direct/range {v2 .. v7}, Landroidx/media3/exoplayer/hls/s;-><init>(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/common/Metadata;)V
 
     .line 72
     .line 73
@@ -803,11 +803,11 @@
 
     .line 62
     .line 63
-    new-instance v2, Landroidx/media3/exoplayer/hls/n;
+    new-instance v2, Landroidx/media3/exoplayer/hls/p;
 
     .line 64
     .line 65
-    invoke-direct {v2, v0, p1}, Landroidx/media3/exoplayer/hls/n;-><init>(Landroidx/media3/exoplayer/ExoPlayer;Ljava/lang/Object;)V
+    invoke-direct {v2, v0, p1}, Landroidx/media3/exoplayer/hls/p;-><init>(Landroidx/media3/exoplayer/ExoPlayer;Ljava/lang/Object;)V
 
     .line 66
     .line 67
@@ -989,9 +989,11 @@
     .line 12
     iget-object p1, p0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
 
-    new-instance p3, Landroidx/media3/exoplayer/hls/k;
+    new-instance p3, Landroidx/media3/exoplayer/hls/m;
 
-    invoke-direct {p3, p2, v0}, Landroidx/media3/exoplayer/hls/k;-><init>(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;)V
+    const/4 v1, 0x0
+
+    invoke-direct {p3, p2, v0, v1}, Landroidx/media3/exoplayer/hls/m;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     invoke-static {p1, p3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$700(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Landroidx/media3/common/util/Consumer;)V
 
@@ -1021,9 +1023,9 @@
     .line 14
     iget-object p2, p0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
 
-    new-instance p3, Landroidx/media3/exoplayer/hls/m;
+    new-instance p3, Landroidx/media3/exoplayer/hls/o;
 
-    invoke-direct {p3, p1, v0}, Landroidx/media3/exoplayer/hls/m;-><init>(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;)V
+    invoke-direct {p3, p1, v0}, Landroidx/media3/exoplayer/hls/o;-><init>(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;)V
 
     invoke-static {p2, p3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$700(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Landroidx/media3/common/util/Consumer;)V
 
@@ -1097,9 +1099,9 @@
     .line 20
     iget-object p1, p0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
 
-    new-instance p3, Landroidx/media3/exoplayer/hls/l;
+    new-instance p3, Landroidx/media3/exoplayer/hls/n;
 
-    invoke-direct {p3, p2, v0}, Landroidx/media3/exoplayer/hls/l;-><init>(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;)V
+    invoke-direct {p3, p2, v0}, Landroidx/media3/exoplayer/hls/n;-><init>(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;)V
 
     invoke-static {p1, p3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$700(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Landroidx/media3/common/util/Consumer;)V
 

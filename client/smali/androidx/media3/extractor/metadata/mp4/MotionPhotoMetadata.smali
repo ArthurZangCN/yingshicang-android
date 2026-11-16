@@ -241,7 +241,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Lcom/google/common/primitives/d;->b(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/c;->b(J)I
 
     .line 4
     .line 5
@@ -261,7 +261,7 @@
 
     .line 12
     .line 13
-    invoke-static {v1, v2}, Lcom/google/common/primitives/d;->b(J)I
+    invoke-static {v1, v2}, Lcom/google/common/primitives/c;->b(J)I
 
     .line 14
     .line 15
@@ -280,7 +280,7 @@
 
     .line 21
     .line 22
-    invoke-static {v2, v3}, Lcom/google/common/primitives/d;->b(J)I
+    invoke-static {v2, v3}, Lcom/google/common/primitives/c;->b(J)I
 
     .line 23
     .line 24
@@ -299,7 +299,7 @@
 
     .line 30
     .line 31
-    invoke-static {v1, v2}, Lcom/google/common/primitives/d;->b(J)I
+    invoke-static {v1, v2}, Lcom/google/common/primitives/c;->b(J)I
 
     .line 32
     .line 33
@@ -318,7 +318,7 @@
 
     .line 39
     .line 40
-    invoke-static {v2, v3}, Lcom/google/common/primitives/d;->b(J)I
+    invoke-static {v2, v3}, Lcom/google/common/primitives/c;->b(J)I
 
     .line 41
     .line 42

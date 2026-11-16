@@ -31,19 +31,19 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/media3/common/l;
+    new-instance v0, Landroidx/media3/common/h;
 
     .line 2
     .line 3
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/media3/common/l;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/media3/common/h;-><init>(I)V
 
     .line 5
     .line 6
     .line 7
-    invoke-static {p1, v0}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/e;)Ljava/util/ArrayList;
+    invoke-static {p1, v0}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/f;)Ljava/util/ArrayList;
 
     .line 8
     .line 9

@@ -3,38 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Landroidx/media3/common/util/ListenerSet$Event;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:F
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(F)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/media3/exoplayer/v0;->a:I
+    iput p1, p0, Landroidx/media3/exoplayer/v0;->a:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/v0;->a:I
+    iget v0, p0, Landroidx/media3/exoplayer/v0;->a:F
 
-    check-cast p1, Ljava/lang/Integer;
+    check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->f(ILjava/lang/Integer;)Ljava/lang/Integer;
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->l(FLandroidx/media3/common/Player$Listener;)V
 
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

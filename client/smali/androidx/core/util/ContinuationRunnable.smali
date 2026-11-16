@@ -11,7 +11,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -26,7 +26,7 @@
             "(",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -75,11 +75,11 @@
 
     .line 10
     .line 11
-    sget-object v1, Lr3/q;->a:Lr3/q;
+    sget-object v1, Lv3/q;->a:Lv3/q;
 
     .line 12
     .line 13
-    invoke-static {v1}, Lr3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1}, Lv3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     .line 15

@@ -58,7 +58,6 @@
     <item type="id" name="actions" />
     <item type="id" name="activity_chooser_view_content" />
     <item type="id" name="alertTitle" />
-    <item type="id" name="aliSubTitleContainer" />
     <item type="id" name="apiHistory" />
     <item type="id" name="arrow" />
     <item type="id" name="audio_track_select" />
@@ -100,6 +99,7 @@
     <item type="id" name="common_tips" />
     <item type="id" name="complete_container" />
     <item type="id" name="confirm" />
+    <item type="id" name="confirmBtn" />
     <item type="id" name="confirm_button" />
     <item type="id" name="container" />
     <item type="id" name="content" />
@@ -128,6 +128,9 @@
     <item type="id" name="design_navigation_view" />
     <item type="id" name="details_label" />
     <item type="id" name="dialog_button" />
+    <item type="id" name="disclaimerContent" />
+    <item type="id" name="disclaimerScroll" />
+    <item type="id" name="disclaimerTitle" />
     <item type="id" name="divLoadEpg" />
     <item type="id" name="divLoadEpgleft" />
     <item type="id" name="downXWalk" />
@@ -197,7 +200,6 @@
     <item type="id" name="exo_shutter" />
     <item type="id" name="exo_sub_text" />
     <item type="id" name="exo_subtitle" />
-    <item type="id" name="exo_subtitle_view" />
     <item type="id" name="exo_subtitles" />
     <item type="id" name="exo_text" />
     <item type="id" name="exo_time" />
@@ -220,6 +222,7 @@
     <item type="id" name="group_divider" />
     <item type="id" name="header_title" />
     <item type="id" name="hide_ime_id" />
+    <item type="id" name="hifi_audio" />
     <item type="id" name="history_container" />
     <item type="id" name="history_title" />
     <item type="id" name="home" />
@@ -298,6 +301,7 @@
     <item type="id" name="loading_progress" />
     <item type="id" name="loading_text" />
     <item type="id" name="lock" />
+    <item type="id" name="lottie_layer_name" />
     <item type="id" name="lv_epg" />
     <item type="id" name="m3_side_sheet" />
     <item type="id" name="mChannelGridView" />
@@ -448,6 +452,7 @@
     <item type="id" name="radio" />
     <item type="id" name="recyclerView" />
     <item type="id" name="recycler_view" />
+    <item type="id" name="rejectBtn" />
     <item type="id" name="report_drawn" />
     <item type="id" name="restore_tip" />
     <item type="id" name="rightBtn" />
@@ -595,6 +600,7 @@
     <item type="id" name="tvName" />
     <item type="id" name="tvNetSpeed" />
     <item type="id" name="tvNote" />
+    <item type="id" name="tvPageTitle" />
     <item type="id" name="tvParse" />
     <item type="id" name="tvPlay" />
     <item type="id" name="tvPlayUrl" />
@@ -646,6 +652,7 @@
     <item type="id" name="tv_speed_play" />
     <item type="id" name="tv_sys_time" />
     <item type="id" name="tv_top_l_container" />
+    <item type="id" name="tv_top_r_container" />
     <item type="id" name="tv_videosize" />
     <item type="id" name="txtItemName" />
     <item type="id" name="txtMediaName" />
@@ -660,6 +667,7 @@
     <item type="id" name="utvLeftIconView" />
     <item type="id" name="utvRightIconView" />
     <item type="id" name="utvTopIconView" />
+    <item type="id" name="video_enhance" />
     <item type="id" name="view_offset_helper" />
     <item type="id" name="view_transition" />
     <item type="id" name="view_tree_lifecycle_owner" />

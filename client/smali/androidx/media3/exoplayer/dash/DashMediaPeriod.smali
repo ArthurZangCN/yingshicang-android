@@ -59,13 +59,13 @@
 
 .field private final compositeSequenceableLoaderFactory:Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;
 
-.field private final downloadExecutorSupplier:Lcom/google/common/base/x;
+.field private final downloadExecutorSupplier:Lcom/google/common/base/z;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;"
         }
@@ -182,7 +182,7 @@
     return-void
 .end method
 
-.method public constructor <init>(ILandroidx/media3/exoplayer/dash/manifest/DashManifest;Landroidx/media3/exoplayer/dash/BaseUrlExclusionList;ILandroidx/media3/exoplayer/dash/DashChunkSource$Factory;Landroidx/media3/datasource/TransferListener;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;JLandroidx/media3/exoplayer/upstream/LoaderErrorThrower;Landroidx/media3/exoplayer/upstream/Allocator;Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;Landroidx/media3/exoplayer/dash/PlayerEmsgHandler$PlayerEmsgCallback;Landroidx/media3/exoplayer/analytics/PlayerId;Lcom/google/common/base/x;)V
+.method public constructor <init>(ILandroidx/media3/exoplayer/dash/manifest/DashManifest;Landroidx/media3/exoplayer/dash/BaseUrlExclusionList;ILandroidx/media3/exoplayer/dash/DashChunkSource$Factory;Landroidx/media3/datasource/TransferListener;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;JLandroidx/media3/exoplayer/upstream/LoaderErrorThrower;Landroidx/media3/exoplayer/upstream/Allocator;Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;Landroidx/media3/exoplayer/dash/PlayerEmsgHandler$PlayerEmsgCallback;Landroidx/media3/exoplayer/analytics/PlayerId;Lcom/google/common/base/z;)V
     .locals 9
     .param p6    # Landroidx/media3/datasource/TransferListener;
         .annotation build Landroidx/annotation/Nullable;
@@ -192,7 +192,7 @@
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
-    .param p19    # Lcom/google/common/base/x;
+    .param p19    # Lcom/google/common/base/z;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
     .end param
@@ -215,7 +215,7 @@
             "Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;",
             "Landroidx/media3/exoplayer/dash/PlayerEmsgHandler$PlayerEmsgCallback;",
             "Landroidx/media3/exoplayer/analytics/PlayerId;",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)V"
         }
@@ -309,7 +309,7 @@
     move-object/from16 v7, p19
 
     .line 18
-    iput-object v7, v0, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iput-object v7, v0, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     const/4 v7, 0x1
 
@@ -828,7 +828,7 @@
 
     .line 102
     .line 103
-    invoke-static {v9, v5}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v9, v5}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 104
     .line 105
@@ -935,7 +935,7 @@
 
     .line 150
     .line 151
-    invoke-static {v9, v3}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v3}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 152
     .line 153
@@ -1040,7 +1040,7 @@
 
     .line 201
     .line 202
-    invoke-static {v9, v3}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9, v3}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 203
     .line 204
@@ -1052,7 +1052,7 @@
 
     .line 207
     .line 208
-    invoke-static {v8}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v8}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 209
     .line 210
@@ -1060,7 +1060,7 @@
     move-result-object v8
 
     .line 212
-    invoke-static {v7, v6, v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;->embeddedClosedCaptionTrack([IILcom/google/common/collect/f2;)Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;
+    invoke-static {v7, v6, v8}, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;->embeddedClosedCaptionTrack([IILcom/google/common/collect/e2;)Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;
 
     .line 213
     .line 214
@@ -1216,7 +1216,7 @@
 
     .line 36
     .line 37
-    iget-object v4, v4, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;->embeddedClosedCaptionTrackOriginalFormats:Lcom/google/common/collect/f2;
+    iget-object v4, v4, Landroidx/media3/exoplayer/dash/DashMediaPeriod$TrackGroupInfo;->embeddedClosedCaptionTrackOriginalFormats:Lcom/google/common/collect/e2;
 
     .line 38
     .line 39
@@ -1224,7 +1224,7 @@
 
     .line 40
     :cond_2
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 41
     .line 42
@@ -1534,7 +1534,7 @@
 
     .line 186
     .line 187
-    iget-object v1, v15, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iget-object v1, v15, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     .line 188
     .line 189
@@ -1542,7 +1542,7 @@
 
     .line 190
     .line 191
-    invoke-interface {v1}, Lcom/google/common/base/x;->get()Ljava/lang/Object;
+    invoke-interface {v1}, Lcom/google/common/base/z;->get()Ljava/lang/Object;
 
     .line 192
     .line 193
@@ -1897,7 +1897,7 @@
 
     .line 58
     .line 59
-    invoke-static {p0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 60
     .line 61
@@ -2896,7 +2896,7 @@
 
     .line 240
     .line 241
-    invoke-static {v1}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {v1}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     .line 242
     .line 243
@@ -3006,7 +3006,7 @@
 .end method
 
 .method private getStreamIndexToTrackGroupIndex([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;)[I
-    .locals 4
+    .locals 7
 
     .line 1
     array-length v0, p1
@@ -3019,66 +3019,161 @@
     const/4 v1, 0x0
 
     .line 5
-    :goto_0
-    array-length v2, p1
+    move v2, v1
 
     .line 6
-    if-ge v1, v2, :cond_1
+    :goto_0
+    array-length v3, p1
 
     .line 7
+    if-ge v2, v3, :cond_3
+
     .line 8
-    aget-object v2, p1, v1
-
     .line 9
-    .line 10
-    if-eqz v2, :cond_0
+    aget-object v3, p1, v2
 
+    .line 10
     .line 11
+    const/4 v4, -0x1
+
     .line 12
-    iget-object v3, p0, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->trackGroups:Landroidx/media3/exoplayer/source/TrackGroupArray;
+    if-eqz v3, :cond_2
 
     .line 13
     .line 14
-    invoke-interface {v2}, Landroidx/media3/exoplayer/trackselection/TrackSelection;->getTrackGroup()Landroidx/media3/common/TrackGroup;
+    iget-object v5, p0, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->trackGroups:Landroidx/media3/exoplayer/source/TrackGroupArray;
 
     .line 15
     .line 16
+    invoke-interface {v3}, Landroidx/media3/exoplayer/trackselection/TrackSelection;->getTrackGroup()Landroidx/media3/common/TrackGroup;
+
     .line 17
-    move-result-object v2
-
     .line 18
-    invoke-virtual {v3, v2}, Landroidx/media3/exoplayer/source/TrackGroupArray;->indexOf(Landroidx/media3/common/TrackGroup;)I
-
     .line 19
+    move-result-object v3
+
     .line 20
+    invoke-virtual {v5, v3}, Landroidx/media3/exoplayer/source/TrackGroupArray;->indexOf(Landroidx/media3/common/TrackGroup;)I
+
     .line 21
-    move-result v2
-
     .line 22
-    aput v2, v0, v1
-
     .line 23
+    move-result v3
+
     .line 24
-    goto :goto_1
+    if-ne v3, v4, :cond_1
 
     .line 25
-    :cond_0
-    const/4 v2, -0x1
-
     .line 26
-    aput v2, v0, v1
+    move v4, v1
 
     .line 27
-    .line 28
     :goto_1
-    add-int/lit8 v1, v1, 0x1
+    iget-object v5, p0, Landroidx/media3/exoplayer/dash/DashMediaPeriod;->trackGroups:Landroidx/media3/exoplayer/source/TrackGroupArray;
 
+    .line 28
     .line 29
+    iget v6, v5, Landroidx/media3/exoplayer/source/TrackGroupArray;->length:I
+
     .line 30
+    .line 31
+    if-ge v4, v6, :cond_1
+
+    .line 32
+    .line 33
+    invoke-virtual {v5, v4}, Landroidx/media3/exoplayer/source/TrackGroupArray;->get(I)Landroidx/media3/common/TrackGroup;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v5
+
+    .line 37
+    invoke-virtual {v5, v1}, Landroidx/media3/common/TrackGroup;->getFormat(I)Landroidx/media3/common/Format;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v5
+
+    .line 41
+    iget-object v5, v5, Landroidx/media3/common/Format;->id:Ljava/lang/String;
+
+    .line 42
+    .line 43
+    aget-object v6, p1, v2
+
+    .line 44
+    .line 45
+    invoke-interface {v6}, Landroidx/media3/exoplayer/trackselection/TrackSelection;->getTrackGroup()Landroidx/media3/common/TrackGroup;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v6
+
+    .line 49
+    invoke-virtual {v6, v1}, Landroidx/media3/common/TrackGroup;->getFormat(I)Landroidx/media3/common/Format;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v6
+
+    .line 53
+    iget-object v6, v6, Landroidx/media3/common/Format;->id:Ljava/lang/String;
+
+    .line 54
+    .line 55
+    invoke-static {v5, v6}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v5
+
+    .line 59
+    if-eqz v5, :cond_0
+
+    .line 60
+    .line 61
+    move v3, v4
+
+    .line 62
+    goto :goto_2
+
+    .line 63
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
+
+    .line 64
+    .line 65
+    goto :goto_1
+
+    .line 66
+    :cond_1
+    :goto_2
+    aput v3, v0, v2
+
+    .line 67
+    .line 68
+    goto :goto_3
+
+    .line 69
+    :cond_2
+    aput v4, v0, v2
+
+    .line 70
+    .line 71
+    :goto_3
+    add-int/lit8 v2, v2, 0x1
+
+    .line 72
+    .line 73
     goto :goto_0
 
-    .line 31
-    :cond_1
+    .line 74
+    :cond_3
     return-object v0
 .end method
 
@@ -3306,7 +3401,7 @@
     move-result-object p0
 
     .line 7
-    invoke-static {p0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -5202,7 +5297,7 @@
     .line 87
     .line 88
     .line 89
-    invoke-static {p1, p3}, Lcom/google/common/collect/j3;->d(Ljava/util/List;Lcom/google/common/base/e;)Ljava/util/AbstractList;
+    invoke-static {p1, p3}, Lcom/google/common/collect/j3;->d(Ljava/util/List;Lcom/google/common/base/f;)Ljava/util/AbstractList;
 
     .line 90
     .line 91

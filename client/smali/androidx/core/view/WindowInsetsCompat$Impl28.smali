@@ -65,7 +65,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroid/support/v4/media/session/d;->k(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    invoke-static {v0}, Landroidx/core/text/a;->k(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
 
     .line 4
     .line 5
@@ -126,7 +126,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -146,7 +146,7 @@
 
     .line 26
     .line 27
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 28
     .line 29
@@ -179,7 +179,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/core/view/a0;->a(Landroid/view/WindowInsets;)Landroid/view/DisplayCutout;
+    invoke-static {v0}, Landroidx/core/app/i;->i(Landroid/view/WindowInsets;)Landroid/view/DisplayCutout;
 
     .line 4
     .line 5

@@ -55,6 +55,12 @@
 
 .field public final italic:Z
 
+.field public final marginLeft:F
+
+.field public final marginRight:F
+
+.field public final marginVertical:F
+
 .field public final name:Ljava/lang/String;
 
 .field public final outlineColor:Ljava/lang/Integer;
@@ -79,7 +85,7 @@
 
 
 # direct methods
-.method private constructor <init>(Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;FZZZZI)V
+.method private constructor <init>(Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;FZZZZIFFF)V
     .locals 0
     .param p3    # Ljava/lang/Integer;
         .annotation build Landroidx/annotation/ColorInt;
@@ -142,6 +148,18 @@
 
     .line 23
     .line 24
+    iput p11, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->marginLeft:F
+
+    .line 25
+    .line 26
+    iput p12, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->marginRight:F
+
+    .line 27
+    .line 28
+    iput p13, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->marginVertical:F
+
+    .line 29
+    .line 30
     return-void
 .end method
 
@@ -161,7 +179,7 @@
 .end method
 
 .method public static fromStyleLine(Ljava/lang/String;Landroidx/media3/extractor/text/ssa/SsaStyle$Format;)Landroidx/media3/extractor/text/ssa/SsaStyle;
-    .locals 20
+    .locals 23
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
@@ -192,7 +210,7 @@
     move-result v4
 
     .line 13
-    invoke-static {v4}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v4}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 14
     .line 15
@@ -362,7 +380,7 @@
     move-exception v0
 
     .line 92
-    goto/16 :goto_a
+    goto/16 :goto_c
 
     .line 93
     .line 94
@@ -477,297 +495,651 @@
     move-result v6
 
     .line 143
-    :goto_3
-    move v14, v6
+    goto :goto_3
 
     .line 144
-    goto :goto_4
-
-    .line 145
     :cond_4
     const v6, -0x800001
 
+    .line 145
     .line 146
     .line 147
-    .line 148
-    goto :goto_3
+    :goto_3
+    iget v15, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->boldIndex:I
 
+    .line 148
     .line 149
-    :goto_4
-    iget v6, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->boldIndex:I
+    if-eq v15, v9, :cond_5
 
     .line 150
     .line 151
-    if-eq v6, v9, :cond_5
+    aget-object v15, v4, v15
 
     .line 152
     .line 153
-    aget-object v6, v4, v6
+    invoke-virtual {v15}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 154
     .line 155
-    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
-
     .line 156
+    move-result-object v15
+
     .line 157
+    invoke-static {v15}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
+
     .line 158
-    move-result-object v6
-
     .line 159
-    invoke-static {v6}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
-
     .line 160
+    move-result v15
+
     .line 161
+    if-eqz v15, :cond_5
+
     .line 162
-    move-result v6
-
     .line 163
-    if-eqz v6, :cond_5
-
-    .line 164
-    .line 165
     move v15, v2
 
-    .line 166
-    goto :goto_5
+    .line 164
+    goto :goto_4
 
-    .line 167
+    .line 165
     :cond_5
     move v15, v3
 
+    .line 166
+    :goto_4
+    iget v2, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->italicIndex:I
+
+    .line 167
     .line 168
-    :goto_5
-    iget v6, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->italicIndex:I
+    if-eq v2, v9, :cond_6
 
     .line 169
     .line 170
-    if-eq v6, v9, :cond_6
+    aget-object v2, v4, v2
 
     .line 171
     .line 172
-    aget-object v6, v4, v6
+    invoke-virtual {v2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 173
     .line 174
-    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
-
     .line 175
+    move-result-object v2
+
     .line 176
+    invoke-static {v2}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
+
     .line 177
-    move-result-object v6
-
     .line 178
-    invoke-static {v6}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
-
     .line 179
-    .line 180
-    .line 181
-    move-result v6
+    move-result v2
 
+    .line 180
+    if-eqz v2, :cond_6
+
+    .line 181
     .line 182
-    if-eqz v6, :cond_6
+    const/4 v2, 0x1
 
     .line 183
+    goto :goto_5
+
     .line 184
-    move/from16 v16, v2
+    :cond_6
+    move v2, v3
 
     .line 185
-    .line 186
-    goto :goto_6
+    :goto_5
+    iget v3, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->underlineIndex:I
 
+    .line 186
     .line 187
-    :cond_6
-    move/from16 v16, v3
+    if-eq v3, v9, :cond_7
 
     .line 188
     .line 189
-    :goto_6
-    iget v6, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->underlineIndex:I
+    aget-object v3, v4, v3
 
     .line 190
     .line 191
-    if-eq v6, v9, :cond_7
+    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 192
     .line 193
-    aget-object v6, v4, v6
-
     .line 194
+    move-result-object v3
+
     .line 195
-    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-static {v3}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
 
     .line 196
     .line 197
     .line 198
-    move-result-object v6
+    move-result v3
 
     .line 199
-    invoke-static {v6}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
+    if-eqz v3, :cond_7
 
     .line 200
     .line 201
+    const/4 v3, 0x1
+
     .line 202
-    move-result v6
+    goto :goto_6
 
     .line 203
-    if-eqz v6, :cond_7
+    :cond_7
+    const/4 v3, 0x0
 
     .line 204
+    :goto_6
+    iget v14, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->strikeoutIndex:I
+
     .line 205
-    move/from16 v17, v2
-
     .line 206
-    .line 207
-    goto :goto_7
+    if-eq v14, v9, :cond_8
 
+    .line 207
     .line 208
-    :cond_7
-    move/from16 v17, v3
+    aget-object v14, v4, v14
 
     .line 209
     .line 210
-    :goto_7
-    iget v6, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->strikeoutIndex:I
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 211
     .line 212
-    if-eq v6, v9, :cond_8
-
     .line 213
+    move-result-object v14
+
     .line 214
-    aget-object v6, v4, v6
+    invoke-static {v14}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
 
     .line 215
     .line 216
-    invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
-
     .line 217
-    .line 218
-    .line 219
-    move-result-object v6
+    move-result v14
 
+    .line 218
+    if-eqz v14, :cond_8
+
+    .line 219
     .line 220
-    invoke-static {v6}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBooleanValue(Ljava/lang/String;)Z
+    const/16 v19, 0x1
 
     .line 221
     .line 222
+    goto :goto_7
+
     .line 223
-    move-result v6
+    :cond_8
+    const/16 v19, 0x0
 
     .line 224
-    if-eqz v6, :cond_8
-
     .line 225
+    :goto_7
+    iget v14, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->borderStyleIndex:I
+
     .line 226
-    move/from16 v18, v2
-
     .line 227
-    .line 228
-    goto :goto_8
+    if-eq v14, v9, :cond_9
 
+    .line 228
     .line 229
-    :cond_8
-    move/from16 v18, v3
+    aget-object v14, v4, v14
 
     .line 230
     .line 231
-    :goto_8
-    iget v0, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->borderStyleIndex:I
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 232
     .line 233
-    if-eq v0, v9, :cond_9
-
     .line 234
+    move-result-object v14
+
     .line 235
-    aget-object v0, v4, v0
+    invoke-static {v14}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBorderStyle(Ljava/lang/String;)I
 
     .line 236
     .line 237
-    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
-
     .line 238
-    .line 239
-    .line 240
-    move-result-object v0
+    move-result v14
 
+    .line 239
+    move/from16 v20, v14
+
+    .line 240
     .line 241
-    invoke-static {v0}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseBorderStyle(Ljava/lang/String;)I
+    goto :goto_8
 
     .line 242
+    :cond_9
+    move/from16 v20, v9
+
     .line 243
     .line 244
-    move-result v0
+    :goto_8
+    iget v14, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->marginLeftIndex:I
 
     .line 245
-    move/from16 v19, v0
-
     .line 246
-    .line 247
-    goto :goto_9
+    if-eq v14, v9, :cond_a
 
+    .line 247
     .line 248
-    :cond_9
-    move/from16 v19, v9
+    aget-object v14, v4, v14
 
     .line 249
     .line 250
-    :goto_9
-    move-object v9, v5
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 251
-    invoke-direct/range {v9 .. v19}, Landroidx/media3/extractor/text/ssa/SsaStyle;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;FZZZZI)V
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 252
     .line 253
+    move-result-object v14
+
     .line 254
-    return-object v5
+    invoke-static {v14}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseMargin(Ljava/lang/String;)F
 
     .line 255
-    :goto_a
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 256
     .line 257
-    const-string v3, "Skipping malformed \'Style:\' line: \'"
+    move-result v14
 
     .line 258
+    move/from16 v21, v14
+
     .line 259
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 260
-    .line 261
-    .line 262
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_9
 
+    .line 261
+    :cond_a
+    const v21, -0x800001
+
+    .line 262
     .line 263
     .line 264
+    :goto_9
+    iget v14, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->marginRightIndex:I
+
     .line 265
-    const-string v1, "\'"
-
     .line 266
-    .line 267
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eq v14, v9, :cond_b
 
+    .line 267
     .line 268
+    aget-object v14, v4, v14
+
     .line 269
     .line 270
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 271
     .line 272
     .line 273
-    move-result-object v1
+    move-result-object v14
 
     .line 274
-    invoke-static {v7, v1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v14}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseMargin(Ljava/lang/String;)F
 
     .line 275
     .line 276
     .line 277
+    move-result v14
+
+    .line 278
+    move/from16 v22, v14
+
+    .line 279
+    .line 280
+    goto :goto_a
+
+    .line 281
+    :cond_b
+    const v22, -0x800001
+
+    .line 282
+    .line 283
+    .line 284
+    :goto_a
+    iget v0, v0, Landroidx/media3/extractor/text/ssa/SsaStyle$Format;->marginVerticalIndex:I
+
+    .line 285
+    .line 286
+    if-eq v0, v9, :cond_c
+
+    .line 287
+    .line 288
+    aget-object v0, v4, v0
+
+    .line 289
+    .line 290
+    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    .line 291
+    .line 292
+    .line 293
+    move-result-object v0
+
+    .line 294
+    invoke-static {v0}, Landroidx/media3/extractor/text/ssa/SsaStyle;->parseMargin(Ljava/lang/String;)F
+
+    .line 295
+    .line 296
+    .line 297
+    move-result v0
+
+    .line 298
+    goto :goto_b
+
+    .line 299
+    :cond_c
+    const v0, -0x800001
+
+    .line 300
+    .line 301
+    .line 302
+    :goto_b
+    move-object v9, v5
+
+    .line 303
+    move v14, v6
+
+    .line 304
+    move/from16 v16, v2
+
+    .line 305
+    .line 306
+    move/from16 v17, v3
+
+    .line 307
+    .line 308
+    move/from16 v18, v19
+
+    .line 309
+    .line 310
+    move/from16 v19, v20
+
+    .line 311
+    .line 312
+    move/from16 v20, v21
+
+    .line 313
+    .line 314
+    move/from16 v21, v22
+
+    .line 315
+    .line 316
+    move/from16 v22, v0
+
+    .line 317
+    .line 318
+    invoke-direct/range {v9 .. v22}, Landroidx/media3/extractor/text/ssa/SsaStyle;-><init>(Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;FZZZZIFFF)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 319
+    .line 320
+    .line 321
+    return-object v5
+
+    .line 322
+    :goto_c
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 323
+    .line 324
+    const-string v3, "Skipping malformed \'Style:\' line: \'"
+
+    .line 325
+    .line 326
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 327
+    .line 328
+    .line 329
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 330
+    .line 331
+    .line 332
+    const-string v1, "\'"
+
+    .line 333
+    .line 334
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 335
+    .line 336
+    .line 337
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 338
+    .line 339
+    .line 340
+    move-result-object v1
+
+    .line 341
+    invoke-static {v7, v1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 342
+    .line 343
+    .line 344
     return-object v8
+.end method
+
+.method public static hasBottomAlignment(Landroidx/media3/extractor/text/ssa/SsaStyle;)Z
+    .locals 3
+    .param p0    # Landroidx/media3/extractor/text/ssa/SsaStyle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    iget p0, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->alignment:I
+
+    .line 6
+    .line 7
+    const/4 v1, 0x1
+
+    .line 8
+    if-lt p0, v1, :cond_1
+
+    .line 9
+    .line 10
+    const/4 v2, 0x3
+
+    .line 11
+    if-gt p0, v2, :cond_1
+
+    .line 12
+    .line 13
+    move v0, v1
+
+    .line 14
+    :cond_1
+    return v0
+.end method
+
+.method public static hasLeftAlignment(Landroidx/media3/extractor/text/ssa/SsaStyle;)Z
+    .locals 2
+    .param p0    # Landroidx/media3/extractor/text/ssa/SsaStyle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    iget p0, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->alignment:I
+
+    .line 6
+    .line 7
+    rem-int/lit8 p0, p0, 0x3
+
+    .line 8
+    .line 9
+    const/4 v1, 0x1
+
+    .line 10
+    if-ne p0, v1, :cond_1
+
+    .line 11
+    .line 12
+    move v0, v1
+
+    .line 13
+    :cond_1
+    return v0
+.end method
+
+.method public static hasMiddleAlignment(Landroidx/media3/extractor/text/ssa/SsaStyle;)Z
+    .locals 2
+    .param p0    # Landroidx/media3/extractor/text/ssa/SsaStyle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    iget p0, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->alignment:I
+
+    .line 6
+    .line 7
+    const/4 v1, 0x4
+
+    .line 8
+    if-lt p0, v1, :cond_1
+
+    .line 9
+    .line 10
+    const/4 v1, 0x6
+
+    .line 11
+    if-gt p0, v1, :cond_1
+
+    .line 12
+    .line 13
+    const/4 v0, 0x1
+
+    .line 14
+    :cond_1
+    return v0
+.end method
+
+.method public static hasRightAlignment(Landroidx/media3/extractor/text/ssa/SsaStyle;)Z
+    .locals 1
+    .param p0    # Landroidx/media3/extractor/text/ssa/SsaStyle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    iget p0, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->alignment:I
+
+    .line 6
+    .line 7
+    rem-int/lit8 p0, p0, 0x3
+
+    .line 8
+    .line 9
+    if-nez p0, :cond_1
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    :cond_1
+    return v0
+.end method
+
+.method public static hasTopAlignment(Landroidx/media3/extractor/text/ssa/SsaStyle;)Z
+    .locals 2
+    .param p0    # Landroidx/media3/extractor/text/ssa/SsaStyle;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-nez p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    iget p0, p0, Landroidx/media3/extractor/text/ssa/SsaStyle;->alignment:I
+
+    .line 6
+    .line 7
+    const/4 v1, 0x7
+
+    .line 8
+    if-lt p0, v1, :cond_1
+
+    .line 9
+    .line 10
+    const/16 v1, 0x9
+
+    .line 11
+    .line 12
+    if-gt p0, v1, :cond_1
+
+    .line 13
+    .line 14
+    const/4 v0, 0x1
+
+    .line 15
+    :cond_1
+    return v0
 .end method
 
 .method private static isValidAlignment(I)Z
@@ -867,7 +1239,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, p0, v1}, Landroid/support/v4/media/g;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Landroidx/concurrent/futures/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 21
     .line 22
@@ -1017,7 +1389,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, p0, v1}, Landroid/support/v4/media/g;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p0, v1}, Landroidx/concurrent/futures/a;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 21
     .line 22
@@ -1123,7 +1495,7 @@
 
     .line 39
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1148,7 +1520,7 @@
     xor-long/2addr v4, v6
 
     .line 50
-    invoke-static {v4, v5}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v4, v5}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 51
     .line 52
@@ -1163,7 +1535,7 @@
     and-long/2addr v0, v6
 
     .line 57
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 58
     .line 59
@@ -1182,7 +1554,7 @@
     and-long/2addr v4, v6
 
     .line 66
-    invoke-static {v4, v5}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v4, v5}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 67
     .line 68
@@ -1193,7 +1565,7 @@
     and-long/2addr v2, v6
 
     .line 71
-    invoke-static {v2, v3}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v2, v3}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 72
     .line 73
@@ -1342,5 +1714,77 @@
     .line 32
     .line 33
     .line 34
+    return p0
+.end method
+
+.method public static parseMargin(Ljava/lang/String;)F
+    .locals 3
+
+    .line 1
+    :try_start_0
+    invoke-static {p0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 5
+    return p0
+
+    .line 6
+    :catch_0
+    move-exception v0
+
+    .line 7
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 8
+    .line 9
+    const-string v2, "Failed to parse margin value: \'"
+
+    .line 10
+    .line 11
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 15
+    .line 16
+    .line 17
+    const-string p0, "\'"
+
+    .line 18
+    .line 19
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p0
+
+    .line 26
+    const-string v1, "SsaStyle"
+
+    .line 27
+    .line 28
+    invoke-static {v1, p0, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 29
+    .line 30
+    .line 31
+    const/4 p0, 0x0
+
+    .line 32
     return p0
 .end method

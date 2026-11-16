@@ -67,14 +67,14 @@
     .end annotation
 .end method
 
-.method public abstract setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public abstract setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
     .annotation build Landroidx/media3/common/util/UnstableApi;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)",
             "Landroidx/media3/exoplayer/source/MediaSource$Factory;"

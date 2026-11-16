@@ -20,26 +20,33 @@
     value = {
         "Lkotlin/jvm/internal/k;",
         "Lkotlin/jvm/functions/Function0<",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic $disposeListener:Lkotlinx/coroutines/o0;
+.field final synthetic $disposeListener:Ln4/t0;
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/o0;)V
+.method public constructor <init>(Ln4/t0;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;->$disposeListener:Lkotlinx/coroutines/o0;
+    .line 1
+    iput-object p1, p0, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;->$disposeListener:Ln4/t0;
 
+    .line 2
+    .line 3
     const/4 p1, 0x0
 
+    .line 4
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/k;-><init>(I)V
 
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -51,7 +58,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;->invoke()V
 
-    sget-object v0, Lr3/q;->a:Lr3/q;
+    sget-object v0, Lv3/q;->a:Lv3/q;
 
     return-object v0
 .end method
@@ -60,9 +67,9 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;->$disposeListener:Lkotlinx/coroutines/o0;
+    iget-object v0, p0, Landroidx/datastore/core/MulticastFileObserver$Companion$observe$1$1;->$disposeListener:Ln4/t0;
 
-    invoke-interface {v0}, Lkotlinx/coroutines/o0;->dispose()V
+    invoke-interface {v0}, Ln4/t0;->dispose()V
 
     return-void
 .end method

@@ -363,7 +363,7 @@
 
     .line 70
     .line 71
-    new-instance v0, Landroidx/core/view/t;
+    new-instance v0, Landroidx/core/view/s;
 
     .line 72
     .line 73
@@ -6969,7 +6969,7 @@
 
     .line 15
     :goto_0
-    invoke-static {p1}, Landroidx/core/view/s;->a(Ljava/lang/Object;)Landroid/view/PointerIcon;
+    invoke-static {p1}, Landroid/support/v4/media/session/d;->i(Ljava/lang/Object;)Landroid/view/PointerIcon;
 
     .line 16
     .line 17

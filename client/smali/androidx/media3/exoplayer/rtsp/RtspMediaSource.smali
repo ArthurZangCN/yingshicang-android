@@ -216,7 +216,7 @@
 
     .line 8
     .line 9
-    invoke-static {v1, v0}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 10
     .line 11

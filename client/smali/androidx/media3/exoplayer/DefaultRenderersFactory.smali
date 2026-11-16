@@ -1895,316 +1895,304 @@
     .line 190
     :goto_2
     :try_start_2
-    const-string v0, "androidx.media3.decoder.av1.Libdav1dVideoRenderer"
+    const-class v0, Landroidx/media3/decoder/av1/Libdav1dVideoRenderer;
 
     .line 191
     .line 192
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    sget v8, Landroidx/media3/decoder/av1/Libdav1dVideoRenderer;->THREAD_COUNT_DECODER_DEFAULT:I
 
     .line 193
     .line 194
-    .line 195
-    move-result-object v0
-
-    .line 196
     new-array v8, v14, [Ljava/lang/Class;
+
+    .line 195
+    .line 196
+    sget-object v16, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     .line 197
     .line 198
-    sget-object v16, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
+    aput-object v16, v8, v13
 
     .line 199
     .line 200
-    aput-object v16, v8, v13
+    aput-object v7, v8, v15
 
     .line 201
     .line 202
-    aput-object v7, v8, v15
+    const/16 v16, 0x2
 
     .line 203
     .line 204
-    const/16 v16, 0x2
+    aput-object v6, v8, v16
 
     .line 205
     .line 206
-    aput-object v6, v8, v16
+    sget-object v16, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     .line 207
     .line 208
-    sget-object v16, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    const/16 v17, 0x3
 
     .line 209
     .line 210
-    const/16 v17, 0x3
+    aput-object v16, v8, v17
 
     .line 211
     .line 212
-    aput-object v16, v8, v17
+    invoke-virtual {v0, v8}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     .line 213
     .line 214
-    invoke-virtual {v0, v8}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
     .line 215
-    .line 216
-    .line 217
     move-result-object v0
 
-    .line 218
+    .line 216
     new-array v8, v14, [Ljava/lang/Object;
+
+    .line 217
+    .line 218
+    invoke-static/range {p7 .. p8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 219
     .line 220
-    invoke-static/range {p7 .. p8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
     .line 221
-    .line 222
-    .line 223
     move-result-object v16
 
-    .line 224
+    .line 222
     aput-object v16, v8, v13
+
+    .line 223
+    .line 224
+    aput-object v2, v8, v15
 
     .line 225
     .line 226
-    aput-object v2, v8, v15
+    const/16 v16, 0x2
 
     .line 227
     .line 228
-    const/16 v16, 0x2
+    aput-object v3, v8, v16
 
     .line 229
     .line 230
-    aput-object v3, v8, v16
+    const/16 v16, 0x3
 
     .line 231
     .line 232
-    const/16 v16, 0x3
+    aput-object v12, v8, v16
 
     .line 233
     .line 234
-    aput-object v12, v8, v16
+    invoke-virtual {v0, v8}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 235
     .line 236
-    invoke-virtual {v0, v8}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 237
-    .line 238
-    .line 239
     move-result-object v0
 
-    .line 240
+    .line 238
     check-cast v0, Landroidx/media3/exoplayer/Renderer;
     :try_end_2
     .catch Ljava/lang/ClassNotFoundException; {:try_start_2 .. :try_end_2} :catch_5
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 241
-    .line 242
+    .line 239
+    .line 240
     add-int/lit8 v8, v11, 0x1
 
-    .line 243
-    .line 244
+    .line 241
+    .line 242
     :try_start_3
     invoke-virtual {v4, v11, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
+    .line 243
+    .line 244
     .line 245
-    .line 246
-    .line 247
     const-string v0, "Loaded Libdav1dVideoRenderer."
 
-    .line 248
-    .line 249
+    .line 246
+    .line 247
     invoke-static {v5, v0}, Landroidx/media3/common/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/lang/ClassNotFoundException; {:try_start_3 .. :try_end_3} :catch_4
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
+    .line 248
+    .line 249
     .line 250
-    .line 251
-    .line 252
     goto :goto_5
 
-    .line 253
+    .line 251
     :catch_3
     move-exception v0
 
-    .line 254
+    .line 252
     goto :goto_3
 
-    .line 255
+    .line 253
     :catch_4
     move v11, v8
 
-    .line 256
+    .line 254
     goto :goto_4
 
-    .line 257
+    .line 255
     :goto_3
     new-instance v2, Ljava/lang/IllegalStateException;
 
+    .line 256
+    .line 257
+    const-string v3, "Error instantiating AV1 extension"
+
     .line 258
     .line 259
-    const-string v3, "Error instantiating AV1 extension"
+    invoke-direct {v2, v3, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 260
     .line 261
-    invoke-direct {v2, v3, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
     .line 262
-    .line 263
-    .line 264
     throw v2
 
-    .line 265
+    .line 263
     :catch_5
     :goto_4
     move v8, v11
 
-    .line 266
+    .line 264
     :goto_5
     :try_start_4
-    const-string v0, "androidx.media3.decoder.ffmpeg.ExperimentalFfmpegVideoRenderer"
+    const-class v0, Landroidx/media3/decoder/ffmpeg/ExperimentalFfmpegVideoRenderer;
+
+    .line 265
+    .line 266
+    new-array v11, v14, [Ljava/lang/Class;
 
     .line 267
     .line 268
-    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    sget-object v16, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     .line 269
     .line 270
-    .line 271
-    move-result-object v0
+    aput-object v16, v11, v13
 
+    .line 271
     .line 272
-    new-array v11, v14, [Ljava/lang/Class;
+    aput-object v7, v11, v15
 
     .line 273
     .line 274
-    sget-object v16, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
-
-    .line 275
-    .line 276
-    aput-object v16, v11, v13
-
-    .line 277
-    .line 278
-    aput-object v7, v11, v15
-
-    .line 279
-    .line 280
     const/4 v7, 0x2
 
-    .line 281
+    .line 275
     aput-object v6, v11, v7
 
-    .line 282
-    .line 283
+    .line 276
+    .line 277
     sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 284
-    .line 285
+    .line 278
+    .line 279
     const/4 v7, 0x3
 
-    .line 286
+    .line 280
     aput-object v6, v11, v7
+
+    .line 281
+    .line 282
+    invoke-virtual {v0, v11}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    .line 283
+    .line 284
+    .line 285
+    move-result-object v0
+
+    .line 286
+    new-array v6, v14, [Ljava/lang/Object;
 
     .line 287
     .line 288
-    invoke-virtual {v0, v11}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    invoke-static/range {p7 .. p8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 289
     .line 290
     .line 291
-    move-result-object v0
+    move-result-object v7
 
     .line 292
-    new-array v6, v14, [Ljava/lang/Object;
+    aput-object v7, v6, v13
 
     .line 293
     .line 294
-    invoke-static/range {p7 .. p8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    aput-object v2, v6, v15
 
     .line 295
     .line 296
+    const/4 v2, 0x2
+
     .line 297
-    move-result-object v7
+    aput-object v3, v6, v2
 
     .line 298
-    aput-object v7, v6, v13
-
     .line 299
+    const/4 v2, 0x3
+
     .line 300
-    aput-object v2, v6, v15
+    aput-object v12, v6, v2
 
     .line 301
     .line 302
-    const/4 v2, 0x2
+    invoke-virtual {v0, v6}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 303
-    aput-object v3, v6, v2
-
     .line 304
     .line 305
-    const/4 v2, 0x3
+    move-result-object v0
 
     .line 306
-    aput-object v12, v6, v2
+    check-cast v0, Landroidx/media3/exoplayer/Renderer;
 
     .line 307
     .line 308
-    invoke-virtual {v0, v6}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v8, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     .line 309
     .line 310
     .line 311
-    move-result-object v0
-
-    .line 312
-    check-cast v0, Landroidx/media3/exoplayer/Renderer;
-
-    .line 313
-    .line 314
-    invoke-virtual {v4, v8, v0}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
-
-    .line 315
-    .line 316
-    .line 317
     const-string v0, "Loaded FfmpegVideoRenderer."
 
-    .line 318
-    .line 319
+    .line 312
+    .line 313
     invoke-static {v5, v0}, Landroidx/media3/common/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catch Ljava/lang/ClassNotFoundException; {:try_start_4 .. :try_end_4} :catch_7
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
 
-    .line 320
-    .line 321
-    .line 322
+    .line 314
+    .line 315
+    .line 316
     goto :goto_6
 
-    .line 323
+    .line 317
     :catch_6
     move-exception v0
 
-    .line 324
+    .line 318
     new-instance v2, Ljava/lang/IllegalStateException;
 
-    .line 325
-    .line 326
+    .line 319
+    .line 320
     const-string v3, "Error instantiating FFmpeg extension"
 
-    .line 327
-    .line 328
+    .line 321
+    .line 322
     invoke-direct {v2, v3, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 329
-    .line 330
-    .line 331
+    .line 323
+    .line 324
+    .line 325
     throw v2
 
-    .line 332
+    .line 326
     :catch_7
     :goto_6
     return-void

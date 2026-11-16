@@ -32,7 +32,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    invoke-static {p1}, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper;->a(Ljava/lang/Runnable;)V
 
     return-void
 
@@ -42,6 +42,11 @@
     return-void
 
     :pswitch_1
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    return-void
+
+    :pswitch_2
     invoke-static {p1}, Landroidx/arch/core/executor/ArchTaskExecutor;->a(Ljava/lang/Runnable;)V
 
     return-void
@@ -50,6 +55,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

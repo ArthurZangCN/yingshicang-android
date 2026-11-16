@@ -466,7 +466,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-static {v0, v1}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -892,7 +892,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -1128,7 +1128,7 @@
 
     .line 33
     .line 34
-    invoke-static {v3, v2}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v3, v2}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -1257,7 +1257,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -1668,7 +1668,7 @@
 
     .line 14
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 15
     .line 16

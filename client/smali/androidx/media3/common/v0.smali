@@ -40,31 +40,26 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->d0(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->G(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->F(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->e0(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_1
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->V(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->n(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_2
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->B(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->X(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_3
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->c(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
-
-    return-void
-
-    :pswitch_4
     invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->w(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
@@ -73,7 +68,6 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_4
         :pswitch_3
         :pswitch_2
         :pswitch_1

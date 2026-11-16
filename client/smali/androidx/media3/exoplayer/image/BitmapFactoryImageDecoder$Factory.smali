@@ -129,7 +129,7 @@
 
     .line 10
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 11
     .line 12
@@ -188,7 +188,7 @@
     const/4 p1, 0x4
 
     .line 21
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 22
     .line 23
@@ -203,7 +203,7 @@
     const/4 p1, 0x1
 
     .line 27
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 28
     .line 29
@@ -220,7 +220,7 @@
     const/4 p1, 0x0
 
     .line 33
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 34
     .line 35

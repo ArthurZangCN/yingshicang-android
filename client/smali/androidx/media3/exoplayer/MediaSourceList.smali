@@ -770,11 +770,11 @@
 
     .line 2
     .line 3
-    new-instance v1, Landroidx/media3/exoplayer/l1;
+    new-instance v1, Landroidx/media3/exoplayer/o1;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/l1;-><init>(Landroidx/media3/exoplayer/MediaSourceList;)V
+    invoke-direct {v1, p0}, Landroidx/media3/exoplayer/o1;-><init>(Landroidx/media3/exoplayer/MediaSourceList;)V
 
     .line 6
     .line 7
@@ -1585,7 +1585,7 @@
 
     .line 17
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 18
     .line 19
@@ -1763,7 +1763,7 @@
     xor-int/2addr v0, v1
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -2097,7 +2097,7 @@
 
     .line 14
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 15
     .line 16
@@ -2289,7 +2289,7 @@
 
     .line 16
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 17
     .line 18
@@ -2314,7 +2314,7 @@
 
     .line 28
     :cond_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 29
     .line 30

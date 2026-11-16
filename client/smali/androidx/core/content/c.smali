@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic b:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public synthetic constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .line 1
@@ -21,7 +21,7 @@
 
     iput p2, p0, Landroidx/core/content/c;->a:I
 
-    iput-object p1, p0, Landroidx/core/content/c;->b:Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/core/content/c;->b:Ljava/lang/String;
 
     return-void
 .end method
@@ -69,18 +69,8 @@
 
     return-object v0
 
-    :pswitch_2
-    invoke-static {p0}, Landroidx/core/util/c;->b(Landroidx/core/util/Predicate;)Landroidx/core/util/Predicate;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch
@@ -105,41 +95,28 @@
     .line 1
     iget v0, p0, Landroidx/core/content/c;->a:I
 
-    iget-object v1, p0, Landroidx/core/content/c;->b:Ljava/lang/Object;
+    iget-object v1, p0, Landroidx/core/content/c;->b:Ljava/lang/String;
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, p1}, Landroidx/core/util/c;->i(Ljava/lang/Object;Ljava/lang/Object;)Z
+    check-cast p1, Ljava/lang/String;
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 
     :pswitch_0
-    check-cast v1, Ljava/lang/String;
+    check-cast p1, Landroid/net/Uri;
 
-    check-cast p1, Ljava/lang/String;
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Landroidx/core/content/IntentSanitizer$Builder;->n(Landroid/net/Uri;Ljava/lang/String;)Z
 
     move-result p1
 
     return p1
 
     :pswitch_1
-    check-cast v1, Ljava/lang/String;
-
-    check-cast p1, Ljava/lang/String;
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-
-    :pswitch_2
-    check-cast v1, Ljava/lang/String;
-
     check-cast p1, Landroid/net/Uri;
 
     invoke-static {p1, v1}, Landroidx/core/content/IntentSanitizer$Builder;->g(Landroid/net/Uri;Ljava/lang/String;)Z
@@ -148,11 +125,8 @@
 
     return p1
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

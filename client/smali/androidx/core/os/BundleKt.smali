@@ -17,12 +17,12 @@
     return-object v0
 .end method
 
-.method public static final varargs bundleOf([Lr3/h;)Landroid/os/Bundle;
+.method public static final varargs bundleOf([Lv3/h;)Landroid/os/Bundle;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
-            "Lr3/h<",
+            "Lv3/h<",
             "Ljava/lang/String;",
             "+",
             "Ljava/lang/Object;",
@@ -48,13 +48,13 @@
 
     aget-object v3, p0, v2
 
-    invoke-virtual {v3}, Lr3/h;->component1()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h;->component1()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/lang/String;
 
-    invoke-virtual {v3}, Lr3/h;->component2()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h;->component2()Ljava/lang/Object;
 
     move-result-object v3
 

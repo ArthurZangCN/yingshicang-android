@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/Lifecycle;Landroidx/lifecycle/Lifecycle$State;Landroidx/lifecycle/DispatchQueue;Lkotlinx/coroutines/d1;)V
+.method public constructor <init>(Landroidx/lifecycle/Lifecycle;Landroidx/lifecycle/Lifecycle$State;Landroidx/lifecycle/DispatchQueue;Ln4/h1;)V
     .locals 1
 
     .line 1
@@ -76,11 +76,11 @@
 
     .line 29
     .line 30
-    new-instance p2, Landroidx/lifecycle/c;
+    new-instance p2, Landroidx/lifecycle/d;
 
     .line 31
     .line 32
-    invoke-direct {p2, p0, p4}, Landroidx/lifecycle/c;-><init>(Landroidx/lifecycle/LifecycleController;Lkotlinx/coroutines/d1;)V
+    invoke-direct {p2, p0, p4}, Landroidx/lifecycle/d;-><init>(Landroidx/lifecycle/LifecycleController;Ln4/h1;)V
 
     .line 33
     .line 34
@@ -108,7 +108,7 @@
     const/4 p1, 0x0
 
     .line 46
-    invoke-interface {p4, p1}, Lkotlinx/coroutines/d1;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p4, p1}, Ln4/h1;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 47
     .line 48
@@ -131,23 +131,26 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/lifecycle/LifecycleController;Lkotlinx/coroutines/d1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+.method public static synthetic a(Landroidx/lifecycle/LifecycleController;Ln4/h1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/lifecycle/LifecycleController;->observer$lambda$0(Landroidx/lifecycle/LifecycleController;Lkotlinx/coroutines/d1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+    invoke-static {p0, p1, p2, p3}, Landroidx/lifecycle/LifecycleController;->observer$lambda$0(Landroidx/lifecycle/LifecycleController;Ln4/h1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method private final handleDestroy(Lkotlinx/coroutines/d1;)V
+.method private final handleDestroy(Ln4/h1;)V
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    invoke-interface {p1, v0}, Lkotlinx/coroutines/d1;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p1, v0}, Ln4/h1;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 3
     .line 4
@@ -160,7 +163,7 @@
     return-void
 .end method
 
-.method private static final observer$lambda$0(Landroidx/lifecycle/LifecycleController;Lkotlinx/coroutines/d1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
+.method private static final observer$lambda$0(Landroidx/lifecycle/LifecycleController;Ln4/h1;Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Lifecycle$Event;)V
     .locals 1
 
     .line 1
@@ -227,7 +230,7 @@
     const/4 p2, 0x0
 
     .line 34
-    invoke-interface {p1, p2}, Lkotlinx/coroutines/d1;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p1, p2}, Ln4/h1;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 35
     .line 36

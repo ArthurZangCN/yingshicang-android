@@ -37,7 +37,7 @@
 
     .line 7
     .line 8
-    invoke-static {p1, p2}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {p1, p2}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 9
     .line 10
@@ -192,7 +192,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -361,7 +361,7 @@
 
     .line 6
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 7
     .line 8

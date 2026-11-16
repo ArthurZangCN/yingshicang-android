@@ -37,7 +37,7 @@
 
 .field final synthetic $initializationComplete:Lkotlin/jvm/internal/u;
 
-.field final synthetic $updateLock:Lkotlinx/coroutines/sync/a;
+.field final synthetic $updateLock:Lt4/a;
 
 .field final synthetic this$0:Landroidx/datastore/core/DataStoreImpl;
     .annotation system Ldalvik/annotation/Signature;
@@ -50,12 +50,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlinx/coroutines/sync/a;Lkotlin/jvm/internal/u;Lkotlin/jvm/internal/x;Landroidx/datastore/core/DataStoreImpl;)V
+.method public constructor <init>(Lt4/a;Lkotlin/jvm/internal/u;Lkotlin/jvm/internal/x;Landroidx/datastore/core/DataStoreImpl;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/sync/a;",
+            "Lt4/a;",
             "Lkotlin/jvm/internal/u;",
             "Lkotlin/jvm/internal/x<",
             "TT;>;",
@@ -65,7 +65,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Landroidx/datastore/core/DataStoreImpl$InitDataStore$doRun$initData$1$api$1;->$updateLock:Lkotlinx/coroutines/sync/a;
+    iput-object p1, p0, Landroidx/datastore/core/DataStoreImpl$InitDataStore$doRun$initData$1$api$1;->$updateLock:Lt4/a;
 
     .line 2
     .line 3
@@ -217,12 +217,12 @@
 
     .line 50
     .line 51
-    check-cast v0, Lkotlinx/coroutines/sync/a;
+    check-cast v0, Lt4/a;
 
     .line 52
     .line 53
     :try_start_0
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -279,12 +279,12 @@
 
     .line 78
     .line 79
-    check-cast v4, Lkotlinx/coroutines/sync/a;
+    check-cast v4, Lt4/a;
 
     .line 80
     .line 81
     :try_start_1
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -334,7 +334,7 @@
 
     .line 102
     .line 103
-    check-cast v8, Lkotlinx/coroutines/sync/a;
+    check-cast v8, Lt4/a;
 
     .line 104
     .line 105
@@ -346,7 +346,7 @@
 
     .line 108
     .line 109
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 110
     .line 111
@@ -364,12 +364,12 @@
 
     .line 116
     :cond_4
-    invoke-static {p2}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p2}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 117
     .line 118
     .line 119
-    iget-object p2, p0, Landroidx/datastore/core/DataStoreImpl$InitDataStore$doRun$initData$1$api$1;->$updateLock:Lkotlinx/coroutines/sync/a;
+    iget-object p2, p0, Landroidx/datastore/core/DataStoreImpl$InitDataStore$doRun$initData$1$api$1;->$updateLock:Lt4/a;
 
     .line 120
     .line 121
@@ -409,7 +409,7 @@
 
     .line 138
     .line 139
-    invoke-interface {p2, v0}, Lkotlinx/coroutines/sync/a;->a(Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-interface {p2, v0}, Lt4/a;->a(Lkotlin/coroutines/d;)Ljava/lang/Object;
 
     .line 140
     .line 141
@@ -580,7 +580,7 @@
 
     .line 208
     .line 209
-    invoke-interface {v0, v6}, Lkotlinx/coroutines/sync/a;->c(Ljava/lang/Object;)V
+    invoke-interface {v0, v6}, Lt4/a;->c(Ljava/lang/Object;)V
 
     .line 210
     .line 211
@@ -627,7 +627,7 @@
 
     .line 228
     :goto_5
-    invoke-interface {v0, v6}, Lkotlinx/coroutines/sync/a;->c(Ljava/lang/Object;)V
+    invoke-interface {v0, v6}, Lt4/a;->c(Ljava/lang/Object;)V
 
     .line 229
     .line 230

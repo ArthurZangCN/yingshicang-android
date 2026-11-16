@@ -13,11 +13,11 @@
 .method public abstract discardCuesBeforeTimeUs(J)V
 .end method
 
-.method public abstract getCuesAtTimeUs(J)Lcom/google/common/collect/f2;
+.method public abstract getCuesAtTimeUs(J)Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/text/Cue;",
             ">;"
         }

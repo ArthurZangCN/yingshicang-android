@@ -4463,7 +4463,7 @@
     .line 56
     const-string v2, "UTC"
 
-    invoke-static {v2}, Lj$/util/DesugarTimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+    invoke-static {v2}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
     move-result-object v2
 
@@ -4481,7 +4481,7 @@
     .line 58
     const-string v1, "UTC"
 
-    invoke-static {v1}, Lj$/util/DesugarTimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+    invoke-static {v1}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
     move-result-object v1
 
@@ -13652,21 +13652,6 @@
     .line 242
     .line 243
     .line 244
-    .line 245
-    .line 246
-    .line 247
-    .line 248
-    .line 249
-    .line 250
-    .line 251
-    .line 252
-    .line 253
-    .line 254
-    .line 255
-    .line 256
-    .line 257
-    .line 258
-    .line 259
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -14775,7 +14760,7 @@
 
     .line 71
     .line 72
-    invoke-static {v1, v0}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 73
     .line 74
@@ -14818,7 +14803,7 @@
 
     .line 10
     .line 11
-    invoke-static {v1, v0, v2}, Landroid/support/v4/media/a;->d(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v0, v2}, Landroid/support/v4/media/a;->e(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 12
     .line 13
@@ -27229,7 +27214,7 @@
 
     .line 391
     .line 392
-    invoke-static {v10, v1, v11}, Landroid/support/v4/media/d;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v10, v1, v11}, Landroid/support/v4/media/e;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 393
     .line 394
@@ -28309,7 +28294,7 @@
 
     .line 32
     .line 33
-    invoke-static {v2, v0}, Landroid/support/v4/media/d;->m(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0}, Landroid/support/v4/media/g;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 34
     .line 35

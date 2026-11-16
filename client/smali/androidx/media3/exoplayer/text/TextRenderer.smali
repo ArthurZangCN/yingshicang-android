@@ -106,7 +106,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/media3/exoplayer/text/TextOutput;Landroid/os/Looper;Landroidx/media3/exoplayer/text/SubtitleDecoderFactory;)V
-    .locals 1
+    .locals 2
     .param p2    # Landroid/os/Looper;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
@@ -164,18 +164,16 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/text/TextRenderer;->formatHolder:Landroidx/media3/exoplayer/FormatHolder;
 
-    const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
+    const-wide v0, -0x7fffffffffffffffL    # -4.9E-324
 
     .line 10
-    iput-wide p1, p0, Landroidx/media3/exoplayer/text/TextRenderer;->finalStreamEndPositionUs:J
+    iput-wide v0, p0, Landroidx/media3/exoplayer/text/TextRenderer;->finalStreamEndPositionUs:J
 
     .line 11
-    iput-wide p1, p0, Landroidx/media3/exoplayer/text/TextRenderer;->lastRendererPositionUs:J
-
-    const/4 p1, 0x0
+    iput-wide v0, p0, Landroidx/media3/exoplayer/text/TextRenderer;->lastRendererPositionUs:J
 
     .line 12
-    iput-boolean p1, p0, Landroidx/media3/exoplayer/text/TextRenderer;->legacyDecodingEnabled:Z
+    iput-boolean p2, p0, Landroidx/media3/exoplayer/text/TextRenderer;->legacyDecodingEnabled:Z
 
     return-void
 .end method
@@ -210,7 +208,7 @@
 
     .line 12
     .line 13
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -234,7 +232,7 @@
 
     .line 24
     .line 25
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -258,7 +256,7 @@
 
     .line 36
     .line 37
-    invoke-static {v2, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 38
     .line 39
@@ -329,7 +327,7 @@
 
     .line 66
     .line 67
-    invoke-static {v0, v4}, Lcom/blankj/utilcode/util/h;->v(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0, v4}, Lcom/github/tvbox/osc/util/e0;->o(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -353,7 +351,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -603,7 +601,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -803,7 +801,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p1, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/f2;
+    iget-object v1, p1, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -836,7 +834,7 @@
 
     .line 4
     .line 5
-    invoke-static {p0, v0}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -1192,7 +1190,7 @@
 
     .line 38
     .line 39
-    invoke-interface {v0, p1, p2}, Landroidx/media3/exoplayer/text/CuesResolver;->getCuesAtTimeUs(J)Lcom/google/common/collect/f2;
+    invoke-interface {v0, p1, p2}, Landroidx/media3/exoplayer/text/CuesResolver;->getCuesAtTimeUs(J)Lcom/google/common/collect/e2;
 
     .line 40
     .line 41
@@ -2575,7 +2573,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -2642,7 +2640,7 @@
     const/4 p1, 0x1
 
     .line 25
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 26
     .line 27
@@ -2657,7 +2655,7 @@
     const/4 p1, 0x0
 
     .line 31
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 32
     .line 33
@@ -2689,7 +2687,7 @@
 
     .line 43
     :goto_1
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 44
     .line 45

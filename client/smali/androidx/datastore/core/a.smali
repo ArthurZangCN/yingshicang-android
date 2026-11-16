@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlinx/coroutines/o0;
+.implements Ln4/t0;
 
 
 # instance fields

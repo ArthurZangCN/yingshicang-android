@@ -57,7 +57,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/lifecycle/f;->a(Landroidx/lifecycle/ViewModelProvider$Factory;Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
+    invoke-static {p0, p1}, Landroidx/lifecycle/g;->a(Landroidx/lifecycle/ViewModelProvider$Factory;Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
 
     move-result-object p1
 

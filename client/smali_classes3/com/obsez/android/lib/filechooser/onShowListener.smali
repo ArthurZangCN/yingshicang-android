@@ -93,101 +93,60 @@
 .method private synthetic lambda$onShow$0(Lcom/obsez/android/lib/filechooser/onShowListener$1Integer;Landroid/view/View;IIIIIIII)V
     .locals 0
 
-    .line 1
     sub-int/2addr p10, p8
+
+    .line 1
+    invoke-virtual {p2}, Landroid/view/View;->getHeight()I
+
+    move-result p3
+
+    if-eq p3, p10, :cond_1
 
     .line 2
     invoke-virtual {p2}, Landroid/view/View;->getHeight()I
 
-    .line 3
-    .line 4
-    .line 5
-    move-result p3
-
-    .line 6
-    if-eq p3, p10, :cond_1
-
-    .line 7
-    .line 8
-    invoke-virtual {p2}, Landroid/view/View;->getHeight()I
-
-    .line 9
-    .line 10
-    .line 11
     move-result p2
 
-    .line 12
     sub-int/2addr p10, p2
 
-    .line 13
+    .line 3
     iget-object p2, p0, Lcom/obsez/android/lib/filechooser/onShowListener;->_c:Ljava/lang/ref/WeakReference;
 
-    .line 14
-    .line 15
     invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    .line 16
-    .line 17
-    .line 18
     move-result-object p2
 
-    .line 19
     check-cast p2, Lcom/obsez/android/lib/filechooser/ChooserDialog;
 
-    .line 20
-    .line 21
     iget-object p2, p2, Lcom/obsez/android/lib/filechooser/ChooserDialog;->_list:Landroid/widget/ListView;
 
-    .line 22
-    .line 23
     invoke-static {p2}, Lcom/obsez/android/lib/filechooser/internals/UiUtil;->getListYScroll(Landroid/widget/ListView;)I
 
-    .line 24
-    .line 25
-    .line 26
     move-result p2
 
-    .line 27
+    .line 4
     iget p1, p1, Lcom/obsez/android/lib/filechooser/onShowListener$1Integer;->Int:I
 
-    .line 28
-    .line 29
     if-eq p1, p2, :cond_0
 
-    .line 30
-    .line 31
     sub-int/2addr p1, p2
 
-    .line 32
     add-int/2addr p10, p1
 
-    .line 33
+    .line 5
     :cond_0
     iget-object p1, p0, Lcom/obsez/android/lib/filechooser/onShowListener;->_c:Ljava/lang/ref/WeakReference;
 
-    .line 34
-    .line 35
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
-    .line 36
-    .line 37
-    .line 38
     move-result-object p1
 
-    .line 39
     check-cast p1, Lcom/obsez/android/lib/filechooser/ChooserDialog;
 
-    .line 40
-    .line 41
     iget-object p1, p1, Lcom/obsez/android/lib/filechooser/ChooserDialog;->_list:Landroid/widget/ListView;
 
-    .line 42
-    .line 43
     invoke-virtual {p1, p10}, Landroid/widget/AbsListView;->scrollListBy(I)V
 
-    .line 44
-    .line 45
-    .line 46
     :cond_1
     return-void
 .end method

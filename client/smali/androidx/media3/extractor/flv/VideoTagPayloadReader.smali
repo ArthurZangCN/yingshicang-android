@@ -10,6 +10,8 @@
 
 .field private static final VIDEO_CODEC_AVC:I = 0x7
 
+.field private static final VIDEO_CODEC_HEVC:I = 0xc
+
 .field private static final VIDEO_FRAME_KEYFRAME:I = 0x1
 
 .field private static final VIDEO_FRAME_VIDEO_INFO:I = 0x5
@@ -27,6 +29,8 @@
 .field private final nalStartCode:Landroidx/media3/common/util/ParsableByteArray;
 
 .field private nalUnitLengthFieldLength:I
+
+.field private videoCodec:I
 
 
 # direct methods
@@ -75,10 +79,276 @@
     return-void
 .end method
 
+.method private outputAvc(Landroidx/media3/common/util/ParsableByteArray;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, Landroidx/media3/extractor/AvcConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/extractor/AvcConfig;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget v0, p1, Landroidx/media3/extractor/AvcConfig;->nalUnitLengthFieldLength:I
+
+    .line 6
+    .line 7
+    iput v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
+
+    .line 8
+    .line 9
+    new-instance v0, Landroidx/media3/common/Format$Builder;
+
+    .line 10
+    .line 11
+    invoke-direct {v0}, Landroidx/media3/common/Format$Builder;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v1, "video/x-flv"
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    const-string v1, "video/avc"
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    iget-object v1, p1, Landroidx/media3/extractor/AvcConfig;->codecs:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    iget v1, p1, Landroidx/media3/extractor/AvcConfig;->width:I
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setWidth(I)Landroidx/media3/common/Format$Builder;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    iget v1, p1, Landroidx/media3/extractor/AvcConfig;->height:I
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setHeight(I)Landroidx/media3/common/Format$Builder;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    iget v1, p1, Landroidx/media3/extractor/AvcConfig;->pixelWidthHeightRatio:F
+
+    .line 45
+    .line 46
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setPixelWidthHeightRatio(F)Landroidx/media3/common/Format$Builder;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    iget-object p1, p1, Landroidx/media3/extractor/AvcConfig;->initializationData:Ljava/util/List;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, p1}, Landroidx/media3/common/Format$Builder;->setInitializationData(Ljava/util/List;)Landroidx/media3/common/Format$Builder;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p1
+
+    .line 60
+    iget-object v0, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
+
+    .line 61
+    .line 62
+    invoke-interface {v0, p1}, Landroidx/media3/extractor/TrackOutput;->format(Landroidx/media3/common/Format;)V
+
+    .line 63
+    .line 64
+    .line 65
+    return-void
+.end method
+
+.method private outputHevc(Landroidx/media3/common/util/ParsableByteArray;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, Landroidx/media3/extractor/HevcConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/extractor/HevcConfig;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget v0, p1, Landroidx/media3/extractor/HevcConfig;->nalUnitLengthFieldLength:I
+
+    .line 6
+    .line 7
+    iput v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
+
+    .line 8
+    .line 9
+    new-instance v0, Landroidx/media3/common/Format$Builder;
+
+    .line 10
+    .line 11
+    invoke-direct {v0}, Landroidx/media3/common/Format$Builder;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v1, "video/x-flv"
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    const-string v1, "video/hevc"
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    iget-object v1, p1, Landroidx/media3/extractor/HevcConfig;->codecs:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    iget v1, p1, Landroidx/media3/extractor/HevcConfig;->width:I
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setWidth(I)Landroidx/media3/common/Format$Builder;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    iget v1, p1, Landroidx/media3/extractor/HevcConfig;->height:I
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setHeight(I)Landroidx/media3/common/Format$Builder;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    iget v1, p1, Landroidx/media3/extractor/HevcConfig;->pixelWidthHeightRatio:F
+
+    .line 45
+    .line 46
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setPixelWidthHeightRatio(F)Landroidx/media3/common/Format$Builder;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    iget-object p1, p1, Landroidx/media3/extractor/HevcConfig;->initializationData:Ljava/util/List;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, p1}, Landroidx/media3/common/Format$Builder;->setInitializationData(Ljava/util/List;)Landroidx/media3/common/Format$Builder;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p1
+
+    .line 60
+    iget-object v0, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
+
+    .line 61
+    .line 62
+    invoke-interface {v0, p1}, Landroidx/media3/extractor/TrackOutput;->format(Landroidx/media3/common/Format;)V
+
+    .line 63
+    .line 64
+    .line 65
+    return-void
+.end method
+
 
 # virtual methods
 .method public parseHeader(Landroidx/media3/common/util/ParsableByteArray;)Z
-    .locals 2
+    .locals 3
 
     .line 1
     invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
@@ -101,61 +371,88 @@
 
     .line 10
     .line 11
-    const/4 v1, 0x7
+    const/16 v1, 0xc
 
     .line 12
-    if-ne p1, v1, :cond_1
-
     .line 13
+    const/4 v2, 0x7
+
     .line 14
-    iput v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->frameType:I
+    if-eq p1, v2, :cond_0
 
     .line 15
     .line 16
-    const/4 p1, 0x5
+    if-ne p1, v1, :cond_1
 
     .line 17
-    if-eq v0, p1, :cond_0
-
     .line 18
-    .line 19
-    const/4 p1, 0x1
+    :cond_0
+    iput p1, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->videoCodec:I
 
+    .line 19
     .line 20
-    goto :goto_0
+    :cond_1
+    if-eq p1, v2, :cond_3
 
     .line 21
-    :cond_0
-    const/4 p1, 0x0
-
     .line 22
-    :goto_0
-    return p1
+    if-ne p1, v1, :cond_2
 
     .line 23
-    :cond_1
-    new-instance v0, Landroidx/media3/extractor/flv/TagPayloadReader$UnsupportedFormatException;
-
     .line 24
+    goto :goto_0
+
     .line 25
-    const-string v1, "Video format not supported: "
+    :cond_2
+    new-instance v0, Landroidx/media3/extractor/flv/TagPayloadReader$UnsupportedFormatException;
 
     .line 26
     .line 27
-    invoke-static {v1, p1}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    const-string v1, "Video format not supported: "
 
     .line 28
     .line 29
+    invoke-static {v1, p1}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
+
     .line 30
+    .line 31
+    .line 32
     move-result-object p1
 
-    .line 31
+    .line 33
     invoke-direct {v0, p1}, Landroidx/media3/extractor/flv/TagPayloadReader$UnsupportedFormatException;-><init>(Ljava/lang/String;)V
 
-    .line 32
-    .line 33
     .line 34
+    .line 35
+    .line 36
     throw v0
+
+    .line 37
+    :cond_3
+    :goto_0
+    iput v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->frameType:I
+
+    .line 38
+    .line 39
+    const/4 p1, 0x5
+
+    .line 40
+    if-eq v0, p1, :cond_4
+
+    .line 41
+    .line 42
+    const/4 p1, 0x1
+
+    .line 43
+    goto :goto_1
+
+    .line 44
+    :cond_4
+    const/4 p1, 0x0
+
+    .line 45
+    :goto_1
+    return p1
 .end method
 
 .method public parsePayload(Landroidx/media3/common/util/ParsableByteArray;J)Z
@@ -198,7 +495,7 @@
     const/4 p3, 0x0
 
     .line 17
-    if-nez v0, :cond_0
+    if-nez v0, :cond_2
 
     .line 18
     .line 19
@@ -206,7 +503,7 @@
 
     .line 20
     .line 21
-    if-nez v1, :cond_0
+    if-nez v1, :cond_2
 
     .line 22
     .line 23
@@ -252,348 +549,257 @@
     .line 43
     .line 44
     .line 45
-    invoke-static {v0}, Landroidx/media3/extractor/AvcConfig;->parse(Landroidx/media3/common/util/ParsableByteArray;)Landroidx/media3/extractor/AvcConfig;
+    iget p1, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->videoCodec:I
 
     .line 46
     .line 47
+    const/4 v1, 0x7
+
     .line 48
-    move-result-object p1
+    if-ne p1, v1, :cond_0
 
     .line 49
-    iget v0, p1, Landroidx/media3/extractor/AvcConfig;->nalUnitLengthFieldLength:I
-
     .line 50
-    .line 51
-    iput v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
+    invoke-direct {p0, v0}, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->outputAvc(Landroidx/media3/common/util/ParsableByteArray;)V
 
+    .line 51
     .line 52
     .line 53
-    new-instance v0, Landroidx/media3/common/Format$Builder;
+    goto :goto_0
 
     .line 54
-    .line 55
-    invoke-direct {v0}, Landroidx/media3/common/Format$Builder;-><init>()V
+    :cond_0
+    const/16 v1, 0xc
 
+    .line 55
     .line 56
+    if-ne p1, v1, :cond_1
+
     .line 57
     .line 58
-    const-string v1, "video/x-flv"
+    invoke-direct {p0, v0}, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->outputHevc(Landroidx/media3/common/util/ParsableByteArray;)V
 
     .line 59
     .line 60
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
-
     .line 61
+    :cond_1
+    :goto_0
+    iput-boolean p2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputFormat:Z
+
     .line 62
     .line 63
-    move-result-object v0
+    return p3
 
     .line 64
-    const-string v1, "video/avc"
+    :cond_2
+    if-ne v0, p2, :cond_6
 
     .line 65
     .line 66
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    iget-boolean v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputFormat:Z
 
     .line 67
     .line 68
-    .line 69
-    move-result-object v0
+    if-eqz v0, :cond_6
 
+    .line 69
     .line 70
-    iget-object v1, p1, Landroidx/media3/extractor/AvcConfig;->codecs:Ljava/lang/String;
+    iget v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->frameType:I
 
     .line 71
     .line 72
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setCodecs(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    if-ne v0, p2, :cond_3
 
     .line 73
     .line 74
+    move v6, p2
+
     .line 75
-    move-result-object v0
+    goto :goto_1
 
     .line 76
-    iget v1, p1, Landroidx/media3/extractor/AvcConfig;->width:I
+    :cond_3
+    move v6, p3
 
     .line 77
-    .line 78
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setWidth(I)Landroidx/media3/common/Format$Builder;
+    :goto_1
+    iget-boolean v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputKeyframe:Z
 
+    .line 78
     .line 79
+    if-nez v0, :cond_4
+
     .line 80
     .line 81
-    move-result-object v0
+    if-nez v6, :cond_4
 
     .line 82
-    iget v1, p1, Landroidx/media3/extractor/AvcConfig;->height:I
-
     .line 83
+    return p3
+
     .line 84
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setHeight(I)Landroidx/media3/common/Format$Builder;
+    :cond_4
+    iget-object v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 85
     .line 86
+    invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
+
     .line 87
+    .line 88
+    .line 89
     move-result-object v0
 
-    .line 88
-    iget v1, p1, Landroidx/media3/extractor/AvcConfig;->pixelWidthHeightRatio:F
-
-    .line 89
     .line 90
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setPixelWidthHeightRatio(F)Landroidx/media3/common/Format$Builder;
+    aput-byte p3, v0, p3
 
     .line 91
     .line 92
-    .line 93
-    move-result-object v0
+    aput-byte p3, v0, p2
 
+    .line 93
     .line 94
-    iget-object p1, p1, Landroidx/media3/extractor/AvcConfig;->initializationData:Ljava/util/List;
+    const/4 v1, 0x2
 
     .line 95
-    .line 96
-    invoke-virtual {v0, p1}, Landroidx/media3/common/Format$Builder;->setInitializationData(Ljava/util/List;)Landroidx/media3/common/Format$Builder;
+    aput-byte p3, v0, v1
 
+    .line 96
     .line 97
+    iget v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
+
     .line 98
     .line 99
-    move-result-object p1
+    const/4 v1, 0x4
 
     .line 100
-    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+    rsub-int/lit8 v0, v0, 0x4
 
     .line 101
     .line 102
+    move v7, p3
+
     .line 103
-    move-result-object p1
+    :goto_2
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
 
     .line 104
-    iget-object v0, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
-
     .line 105
     .line 106
-    invoke-interface {v0, p1}, Landroidx/media3/extractor/TrackOutput;->format(Landroidx/media3/common/Format;)V
+    move-result v2
 
     .line 107
+    if-lez v2, :cond_5
+
     .line 108
     .line 109
-    iput-boolean p2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputFormat:Z
+    iget-object v2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 110
     .line 111
-    return p3
+    invoke-virtual {v2}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
 
     .line 112
-    :cond_0
-    if-ne v0, p2, :cond_4
-
     .line 113
     .line 114
-    iget-boolean v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputFormat:Z
+    move-result-object v2
 
     .line 115
+    iget v3, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
+
     .line 116
-    if-eqz v0, :cond_4
-
     .line 117
-    .line 118
-    iget v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->frameType:I
+    invoke-virtual {p1, v2, v0, v3}, Landroidx/media3/common/util/ParsableByteArray;->readBytes([BII)V
 
+    .line 118
     .line 119
     .line 120
-    if-ne v0, p2, :cond_1
+    iget-object v2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 121
     .line 122
-    move v6, p2
+    invoke-virtual {v2, p3}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
 
     .line 123
-    goto :goto_0
-
     .line 124
-    :cond_1
-    move v6, p3
-
     .line 125
-    :goto_0
-    iget-boolean v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputKeyframe:Z
+    iget-object v2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 126
     .line 127
-    if-nez v0, :cond_2
+    invoke-virtual {v2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedIntToInt()I
 
     .line 128
     .line 129
-    if-nez v6, :cond_2
-
     .line 130
+    move-result v2
+
     .line 131
-    return p3
+    iget-object v3, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalStartCode:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 132
-    :cond_2
-    iget-object v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
-
     .line 133
-    .line 134
-    invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
+    invoke-virtual {v3, p3}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
 
+    .line 134
     .line 135
     .line 136
-    .line 137
-    move-result-object v0
+    iget-object v3, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
 
+    .line 137
     .line 138
-    aput-byte p3, v0, p3
+    iget-object v8, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalStartCode:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 139
     .line 140
-    aput-byte p3, v0, p2
+    invoke-interface {v3, v8, v1}, Landroidx/media3/extractor/TrackOutput;->sampleData(Landroidx/media3/common/util/ParsableByteArray;I)V
 
     .line 141
     .line 142
-    const/4 v1, 0x2
-
     .line 143
-    aput-byte p3, v0, v1
+    add-int/lit8 v7, v7, 0x4
 
     .line 144
     .line 145
-    iget v0, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
+    iget-object v3, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
 
     .line 146
     .line 147
-    const/4 v1, 0x4
+    invoke-interface {v3, p1, v2}, Landroidx/media3/extractor/TrackOutput;->sampleData(Landroidx/media3/common/util/ParsableByteArray;I)V
 
     .line 148
-    rsub-int/lit8 v0, v0, 0x4
-
     .line 149
     .line 150
-    move v7, p3
+    add-int/2addr v7, v2
 
     .line 151
-    :goto_1
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
+    goto :goto_2
 
     .line 152
+    :cond_5
+    iget-object v3, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
+
     .line 153
     .line 154
-    move-result v2
+    const/4 v8, 0x0
 
     .line 155
-    if-lez v2, :cond_3
+    const/4 v9, 0x0
 
     .line 156
-    .line 157
-    iget-object v2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
+    invoke-interface/range {v3 .. v9}, Landroidx/media3/extractor/TrackOutput;->sampleMetadata(JIIILandroidx/media3/extractor/TrackOutput$CryptoData;)V
 
+    .line 157
     .line 158
     .line 159
-    invoke-virtual {v2}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
+    iput-boolean p2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputKeyframe:Z
 
     .line 160
     .line 161
-    .line 162
-    move-result-object v2
-
-    .line 163
-    iget v3, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalUnitLengthFieldLength:I
-
-    .line 164
-    .line 165
-    invoke-virtual {p1, v2, v0, v3}, Landroidx/media3/common/util/ParsableByteArray;->readBytes([BII)V
-
-    .line 166
-    .line 167
-    .line 168
-    iget-object v2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 169
-    .line 170
-    invoke-virtual {v2, p3}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
-
-    .line 171
-    .line 172
-    .line 173
-    iget-object v2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalLength:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 174
-    .line 175
-    invoke-virtual {v2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedIntToInt()I
-
-    .line 176
-    .line 177
-    .line 178
-    move-result v2
-
-    .line 179
-    iget-object v3, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalStartCode:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 180
-    .line 181
-    invoke-virtual {v3, p3}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
-
-    .line 182
-    .line 183
-    .line 184
-    iget-object v3, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
-
-    .line 185
-    .line 186
-    iget-object v8, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->nalStartCode:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 187
-    .line 188
-    invoke-interface {v3, v8, v1}, Landroidx/media3/extractor/TrackOutput;->sampleData(Landroidx/media3/common/util/ParsableByteArray;I)V
-
-    .line 189
-    .line 190
-    .line 191
-    add-int/lit8 v7, v7, 0x4
-
-    .line 192
-    .line 193
-    iget-object v3, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
-
-    .line 194
-    .line 195
-    invoke-interface {v3, p1, v2}, Landroidx/media3/extractor/TrackOutput;->sampleData(Landroidx/media3/common/util/ParsableByteArray;I)V
-
-    .line 196
-    .line 197
-    .line 198
-    add-int/2addr v7, v2
-
-    .line 199
-    goto :goto_1
-
-    .line 200
-    :cond_3
-    iget-object v3, p0, Landroidx/media3/extractor/flv/TagPayloadReader;->output:Landroidx/media3/extractor/TrackOutput;
-
-    .line 201
-    .line 202
-    const/4 v8, 0x0
-
-    .line 203
-    const/4 v9, 0x0
-
-    .line 204
-    invoke-interface/range {v3 .. v9}, Landroidx/media3/extractor/TrackOutput;->sampleMetadata(JIIILandroidx/media3/extractor/TrackOutput$CryptoData;)V
-
-    .line 205
-    .line 206
-    .line 207
-    iput-boolean p2, p0, Landroidx/media3/extractor/flv/VideoTagPayloadReader;->hasOutputKeyframe:Z
-
-    .line 208
-    .line 209
     return p2
 
-    .line 210
-    :cond_4
+    .line 162
+    :cond_6
     return p3
 .end method
 

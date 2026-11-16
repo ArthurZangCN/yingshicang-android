@@ -28,7 +28,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/media3/common/Player;)V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,16 +40,16 @@
 
     .line 5
     .line 6
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     .line 8
     .line 9
-    new-instance v1, Landroidx/core/view/v;
+    new-instance v1, Landroidx/media3/common/i;
 
     .line 10
     .line 11
-    invoke-direct {v1, p1}, Landroidx/core/view/v;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, p1}, Landroidx/media3/common/i;-><init>(Ljava/lang/Object;)V
 
     .line 12
     .line 13
@@ -67,11 +67,11 @@
 
     .line 20
     .line 21
-    new-instance v1, Landroidx/media3/common/j;
+    new-instance v1, Landroidx/constraintlayout/core/state/a;
 
     .line 22
     .line 23
-    invoke-direct {v1, p1}, Landroidx/media3/common/j;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, p1}, Landroidx/constraintlayout/core/state/a;-><init>(Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -89,11 +89,11 @@
 
     .line 32
     .line 33
-    new-instance v1, Landroidx/core/view/inputmethod/a;
+    new-instance v1, Landroidx/media3/common/j;
 
     .line 34
     .line 35
-    invoke-direct {v1, p1}, Landroidx/core/view/inputmethod/a;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, p1}, Landroidx/media3/common/j;-><init>(Ljava/lang/Object;)V
 
     .line 36
     .line 37
@@ -111,52 +111,46 @@
 
     .line 44
     .line 45
-    new-instance v1, Landroidx/constraintlayout/core/state/a;
+    new-instance v1, Landroidx/core/view/u;
 
     .line 46
     .line 47
-    const/4 v2, 0x1
+    invoke-direct {v1, p1}, Landroidx/core/view/u;-><init>(Ljava/lang/Object;)V
 
     .line 48
-    invoke-direct {v1, p1, v2}, Landroidx/constraintlayout/core/state/a;-><init>(Ljava/lang/Object;I)V
-
     .line 49
     .line 50
-    .line 51
     invoke-direct {v0, v1}, Landroidx/media3/common/SimpleBasePlayer$LivePositionSupplier;-><init>(Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;)V
 
+    .line 51
     .line 52
     .line 53
-    .line 54
     iput-object v0, p0, Landroidx/media3/common/ForwardingSimpleBasePlayer$LivePositionSuppliers;->contentBufferedPositionSupplier:Landroidx/media3/common/SimpleBasePlayer$LivePositionSupplier;
 
+    .line 54
     .line 55
-    .line 56
     new-instance v0, Landroidx/media3/common/SimpleBasePlayer$LivePositionSupplier;
 
+    .line 56
     .line 57
+    new-instance v1, Landroidx/core/view/v;
+
     .line 58
-    new-instance v1, Landroidx/media3/common/k;
-
     .line 59
+    invoke-direct {v1, p1}, Landroidx/core/view/v;-><init>(Ljava/lang/Object;)V
+
     .line 60
-    const/4 v2, 0x0
-
     .line 61
-    invoke-direct {v1, p1, v2}, Landroidx/media3/common/k;-><init>(Ljava/lang/Object;I)V
-
     .line 62
-    .line 63
-    .line 64
     invoke-direct {v0, v1}, Landroidx/media3/common/SimpleBasePlayer$LivePositionSupplier;-><init>(Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;)V
 
+    .line 63
+    .line 64
     .line 65
-    .line 66
-    .line 67
     iput-object v0, p0, Landroidx/media3/common/ForwardingSimpleBasePlayer$LivePositionSuppliers;->totalBufferedPositionSupplier:Landroidx/media3/common/SimpleBasePlayer$LivePositionSupplier;
 
-    .line 68
-    .line 69
+    .line 66
+    .line 67
     return-void
 .end method
 

@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/media/MediaDrm$OnKeyStatusChangeListener;
+.implements Landroid/media/MediaDrm$OnExpirationUpdateListener;
 
 
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;
 
-.field public final synthetic b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnKeyStatusChangeListener;
+.field public final synthetic b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnKeyStatusChangeListener;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;)V
     .locals 0
 
     .line 1
@@ -21,30 +21,28 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/drm/q;->a:Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/drm/q;->b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnKeyStatusChangeListener;
+    iput-object p2, p0, Landroidx/media3/exoplayer/drm/q;->b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onKeyStatusChange(Landroid/media/MediaDrm;[BLjava/util/List;Z)V
+.method public final onExpirationUpdate(Landroid/media/MediaDrm;[BJ)V
     .locals 6
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/drm/q;->a:Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/drm/q;->b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnKeyStatusChangeListener;
+    iget-object v1, p0, Landroidx/media3/exoplayer/drm/q;->b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;
 
     move-object v2, p1
 
     move-object v3, p2
 
-    move-object v4, p3
+    move-wide v4, p3
 
-    move v5, p4
-
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;->d(Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnKeyStatusChangeListener;Landroid/media/MediaDrm;[BLjava/util/List;Z)V
+    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;->a(Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;Landroid/media/MediaDrm;[BJ)V
 
     return-void
 .end method

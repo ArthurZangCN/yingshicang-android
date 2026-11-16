@@ -46,7 +46,7 @@
 
     .line 2
     .line 3
-    invoke-static {p0}, Landroidx/core/content/pm/h;->a(Landroid/media/MediaParser$SeekPoint;)J
+    invoke-static {p0}, Landroidx/core/content/pm/j;->c(Landroid/media/MediaParser$SeekPoint;)J
 
     .line 4
     .line 5
@@ -54,7 +54,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {p0}, Landroidx/core/view/accessibility/a;->b(Landroid/media/MediaParser$SeekPoint;)J
+    invoke-static {p0}, Landroidx/core/content/pm/k;->b(Landroid/media/MediaParser$SeekPoint;)J
 
     .line 8
     .line 9
@@ -80,7 +80,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/core/view/o;->h(Landroid/media/MediaParser$SeekMap;)J
+    invoke-static {v0}, Landroidx/core/content/pm/j;->b(Landroid/media/MediaParser$SeekMap;)J
 
     .line 4
     .line 5
@@ -124,7 +124,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, Landroidx/core/content/pm/g;->i(Landroid/media/MediaParser$SeekMap;J)Landroid/util/Pair;
+    invoke-static {v0, p1, p2}, Landroidx/core/view/o;->f(Landroid/media/MediaParser$SeekMap;J)Landroid/util/Pair;
 
     .line 4
     .line 5
@@ -148,7 +148,7 @@
 
     .line 14
     .line 15
-    invoke-static {p2}, Landroidx/media3/exoplayer/source/k;->a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
+    invoke-static {p2}, Landroidx/media3/exoplayer/source/j;->a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
 
     .line 16
     .line 17
@@ -177,7 +177,7 @@
 
     .line 28
     .line 29
-    invoke-static {p2}, Landroidx/media3/exoplayer/source/k;->a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
+    invoke-static {p2}, Landroidx/media3/exoplayer/source/j;->a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
 
     .line 30
     .line 31
@@ -197,7 +197,7 @@
 
     .line 38
     .line 39
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/k;->a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
+    invoke-static {p1}, Landroidx/media3/exoplayer/source/j;->a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
 
     .line 40
     .line 41
@@ -225,6 +225,17 @@
     return-object p1
 .end method
 
+.method public final synthetic isEstimated()Z
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Landroidx/media3/extractor/e;->a(Landroidx/media3/extractor/SeekMap;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public isSeekable()Z
     .locals 1
 
@@ -233,7 +244,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/core/view/accessibility/a;->l(Landroid/media/MediaParser$SeekMap;)Z
+    invoke-static {v0}, Landroidx/core/view/o;->q(Landroid/media/MediaParser$SeekMap;)Z
 
     .line 4
     .line 5

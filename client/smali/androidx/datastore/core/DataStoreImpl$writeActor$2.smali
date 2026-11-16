@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/datastore/core/DataStoreImpl;-><init>(Landroidx/datastore/core/Storage;Ljava/util/List;Landroidx/datastore/core/CorruptionHandler;Lkotlinx/coroutines/b0;)V
+    value = Landroidx/datastore/core/DataStoreImpl;-><init>(Landroidx/datastore/core/Storage;Ljava/util/List;Landroidx/datastore/core/CorruptionHandler;Ln4/e0;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,7 +23,7 @@
         "Landroidx/datastore/core/Message$Update<",
         "TT;>;",
         "Ljava/lang/Throwable;",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
@@ -68,7 +68,7 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/DataStoreImpl$writeActor$2;->invoke(Landroidx/datastore/core/Message$Update;Ljava/lang/Throwable;)V
 
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     return-object p1
 .end method
@@ -90,7 +90,7 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-virtual {p1}, Landroidx/datastore/core/Message$Update;->getAck()Lkotlinx/coroutines/n;
+    invoke-virtual {p1}, Landroidx/datastore/core/Message$Update;->getAck()Ln4/p;
 
     move-result-object p1
 
@@ -107,7 +107,7 @@
 
     .line 6
     :cond_0
-    invoke-interface {p1, p2}, Lkotlinx/coroutines/n;->n(Ljava/lang/Throwable;)Z
+    invoke-interface {p1, p2}, Ln4/p;->j(Ljava/lang/Throwable;)Z
 
     return-void
 .end method

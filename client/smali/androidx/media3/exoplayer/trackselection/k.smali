@@ -2,15 +2,20 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/google/common/base/f;
 
-# direct methods
-.method public static bridge synthetic a(Landroid/media/Spatializer;)I
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/Spatializer;->getImmersiveAudioLevel()I
+    check-cast p1, Landroid/os/Bundle;
 
-    move-result p0
+    invoke-static {p1}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SelectionOverride;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SelectionOverride;
 
-    return p0
+    move-result-object p1
+
+    return-object p1
 .end method

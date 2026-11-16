@@ -36,10 +36,10 @@
 
 
 # instance fields
-.field private final adaptationCheckpoints:Lcom/google/common/collect/f2;
+.field private final adaptationCheckpoints:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection$AdaptationCheckpoint;",
             ">;"
         }
@@ -167,11 +167,11 @@
     iput v1, v0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->bufferedFractionToLiveEdgeForQualityIncrease:F
 
     .line 13
-    invoke-static/range {p15 .. p15}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static/range {p15 .. p15}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object v1
 
-    iput-object v1, v0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/f2;
+    iput-object v1, v0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/e2;
 
     move-object/from16 v1, p16
 
@@ -213,7 +213,7 @@
     move-object/from16 v4, p3
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v15
 
@@ -241,11 +241,11 @@
     return-void
 .end method
 
-.method public static synthetic access$000([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/f2;
+.method public static synthetic access$000([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->getAdaptationCheckpoints([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->getAdaptationCheckpoints([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -262,7 +262,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/google/common/collect/f2$a<",
+            "Lcom/google/common/collect/e2$a<",
             "Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection$AdaptationCheckpoint;",
             ">;>;[J)V"
         }
@@ -323,7 +323,7 @@
     move-result-object v3
 
     .line 24
-    check-cast v3, Lcom/google/common/collect/f2$a;
+    check-cast v3, Lcom/google/common/collect/e2$a;
 
     .line 25
     .line 26
@@ -348,7 +348,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-virtual {v3, v4}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v3, v4}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 37
     .line 38
@@ -460,15 +460,15 @@
     return v1
 .end method
 
-.method private static getAdaptationCheckpoints([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/f2;
+.method private static getAdaptationCheckpoints([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/e2;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
             "Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;",
             ")",
-            "Lcom/google/common/collect/f2<",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection$AdaptationCheckpoint;",
             ">;>;"
         }
@@ -524,7 +524,7 @@
 
     .line 22
     .line 23
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 24
     .line 25
@@ -541,7 +541,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-virtual {v3, v4}, Lcom/google/common/collect/f2$a;->e(Ljava/lang/Object;)V
+    invoke-virtual {v3, v4}, Lcom/google/common/collect/e2$a;->e(Ljava/lang/Object;)V
 
     .line 33
     .line 34
@@ -645,7 +645,7 @@
     .line 75
     .line 76
     .line 77
-    invoke-static {v2}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->getSwitchOrder([[J)Lcom/google/common/collect/f2;
+    invoke-static {v2}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->getSwitchOrder([[J)Lcom/google/common/collect/e2;
 
     .line 78
     .line 79
@@ -777,7 +777,7 @@
     .line 136
     .line 137
     .line 138
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 139
     .line 140
@@ -806,7 +806,7 @@
     move-result-object v2
 
     .line 152
-    check-cast v2, Lcom/google/common/collect/f2$a;
+    check-cast v2, Lcom/google/common/collect/e2$a;
 
     .line 153
     .line 154
@@ -814,7 +814,7 @@
 
     .line 155
     .line 156
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 157
     .line 158
@@ -826,7 +826,7 @@
 
     .line 161
     :cond_7
-    invoke-virtual {v2}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v2}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 162
     .line 163
@@ -835,7 +835,7 @@
 
     .line 165
     :goto_7
-    invoke-virtual {p0, v2}, Lcom/google/common/collect/f2$a;->e(Ljava/lang/Object;)V
+    invoke-virtual {p0, v2}, Lcom/google/common/collect/e2$a;->e(Ljava/lang/Object;)V
 
     .line 166
     .line 167
@@ -848,7 +848,7 @@
 
     .line 171
     :cond_8
-    invoke-virtual {p0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {p0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 172
     .line 173
@@ -871,7 +871,7 @@
     move-result-wide p1
 
     .line 5
-    iget-object v0, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -898,7 +898,7 @@
 
     .line 16
     :goto_0
-    iget-object v2, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/e2;
 
     .line 17
     .line 18
@@ -917,7 +917,7 @@
 
     .line 24
     .line 25
-    iget-object v2, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/e2;
 
     .line 26
     .line 27
@@ -953,7 +953,7 @@
 
     .line 42
     :cond_1
-    iget-object v0, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/e2;
 
     .line 43
     .line 44
@@ -973,7 +973,7 @@
 
     .line 51
     .line 52
-    iget-object v2, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->adaptationCheckpoints:Lcom/google/common/collect/e2;
 
     .line 53
     .line 54
@@ -1074,7 +1074,7 @@
 
     .line 13
     :cond_0
-    invoke-static {p1}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -1411,12 +1411,12 @@
     return-object v0
 .end method
 
-.method private static getSwitchOrder([[J)Lcom/google/common/collect/f2;
+.method private static getSwitchOrder([[J)Lcom/google/common/collect/e2;
     .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([[J)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -1443,7 +1443,7 @@
     const/4 v2, 0x2
 
     .line 11
-    invoke-static {v2, v1}, Lcom/github/tvbox/osc/util/t;->o(ILjava/lang/String;)V
+    invoke-static {v2, v1}, Lcom/github/tvbox/osc/util/h0;->t(ILjava/lang/String;)V
 
     .line 12
     .line 13
@@ -1470,7 +1470,7 @@
 
     .line 25
     .line 26
-    invoke-direct {v2, v1, v0}, Lcom/google/common/collect/b4;-><init>(Ljava/util/Map;Lcom/google/common/base/x;)V
+    invoke-direct {v2, v1, v0}, Lcom/google/common/collect/b4;-><init>(Ljava/util/Map;Lcom/google/common/base/z;)V
 
     .line 27
     .line 28
@@ -1691,7 +1691,7 @@
     move-result-object p0
 
     .line 121
-    invoke-static {p0}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 122
     .line 123
@@ -2039,7 +2039,7 @@
 
     .line 28
     :cond_1
-    invoke-static {p3}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p3}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -2404,7 +2404,7 @@
 
     .line 24
     .line 25
-    invoke-static {p3}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p3}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -2543,7 +2543,7 @@
 
     .line 36
     :cond_1
-    invoke-static {p7}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p7}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 37
     .line 38
@@ -2572,7 +2572,7 @@
 
     .line 49
     .line 50
-    invoke-static {p7}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p7}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 51
     .line 52

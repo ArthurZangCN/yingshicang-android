@@ -31,7 +31,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->j(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
+    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/l;->b(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
 
     .line 2
     .line 3
@@ -62,7 +62,7 @@
 
     .line 15
     :cond_0
-    invoke-static {}, Landroid/support/v4/media/session/a;->k()V
+    invoke-static {}, Landroid/support/v4/media/session/f;->l()V
 
     .line 16
     .line 17
@@ -70,7 +70,7 @@
     double-to-int p3, p3
 
     .line 19
-    invoke-static {p1, p2, p3}, Landroidx/media3/exoplayer/mediacodec/n;->a(III)Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+    invoke-static {p1, p2, p3}, Landroidx/activity/g;->f(III)Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
 
     .line 20
     .line 21
@@ -279,7 +279,7 @@
 
     .line 57
     .line 58
-    invoke-static {v2}, Landroidx/media3/exoplayer/mediacodec/l;->g(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
+    invoke-static {v2}, Landroid/support/v4/media/session/h;->j(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
 
     .line 59
     .line 60
@@ -303,12 +303,12 @@
 
     .line 69
     .line 70
-    invoke-static {}, Landroid/support/v4/media/session/a;->k()V
+    invoke-static {}, Landroid/support/v4/media/session/f;->l()V
 
     .line 71
     .line 72
     .line 73
-    invoke-static {}, Landroidx/media3/exoplayer/mediacodec/l;->f()Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+    invoke-static {}, Landroidx/media3/exoplayer/mediacodec/l;->a()Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
 
     .line 74
     .line 75
@@ -388,7 +388,7 @@
     move-result-object v1
 
     .line 16
-    invoke-static {v1, p1}, Landroidx/activity/h;->q(Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;)Z
+    invoke-static {v1, p1}, Landroidx/appcompat/widget/b;->u(Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;)Z
 
     .line 17
     .line 18

@@ -19,7 +19,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7

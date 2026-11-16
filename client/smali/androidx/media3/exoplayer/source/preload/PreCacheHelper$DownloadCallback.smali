@@ -113,7 +113,7 @@
 
     .line 24
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 25
     .line 26
@@ -235,7 +235,7 @@
     move-result-object p3
 
     .line 85
-    invoke-virtual {p3, p2}, Landroidx/media3/exoplayer/offline/DownloadHelper$Factory;->setLoadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/offline/DownloadHelper$Factory;
+    invoke-virtual {p3, p2}, Landroidx/media3/exoplayer/offline/DownloadHelper$Factory;->setLoadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/offline/DownloadHelper$Factory;
 
     .line 86
     .line 87
@@ -488,7 +488,7 @@
 .end method
 
 .method private synthetic lambda$onDownloadProgress$5(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->downloaderTask:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
@@ -503,23 +503,20 @@
 
     .line 6
     :cond_0
-    new-instance v0, Landroidx/media3/exoplayer/source/preload/w;
+    new-instance v0, Landroidx/media3/exoplayer/source/preload/b0;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    invoke-direct {v0, p0, p1}, Landroidx/media3/exoplayer/source/preload/b0;-><init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
 
     .line 9
-    invoke-direct {v0, p0, p1, v1}, Landroidx/media3/exoplayer/source/preload/w;-><init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Ljava/lang/Object;I)V
-
     .line 10
     .line 11
-    .line 12
     invoke-direct {p0, v0}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->notifyListeners(Landroidx/media3/common/util/Consumer;)V
 
+    .line 12
     .line 13
     .line 14
-    .line 15
     return-void
 .end method
 
@@ -548,7 +545,7 @@
 .end method
 
 .method private synthetic lambda$onDownloadStopped$3(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
-    .locals 2
+    .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->downloaderTask:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
@@ -598,19 +595,16 @@
 
     .line 22
     .line 23
-    const/4 v1, 0x0
+    invoke-direct {p1, p0, v0}, Landroidx/media3/exoplayer/source/preload/w;-><init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Ljava/io/IOException;)V
 
     .line 24
-    invoke-direct {p1, p0, v0, v1}, Landroidx/media3/exoplayer/source/preload/w;-><init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Ljava/lang/Object;I)V
-
     .line 25
     .line 26
-    .line 27
     invoke-direct {p0, p1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->notifyListeners(Landroidx/media3/common/util/Consumer;)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     :cond_1
     return-void
 .end method
@@ -694,7 +688,7 @@
     const/4 v2, 0x0
 
     .line 10
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/source/preload/y;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/media3/exoplayer/source/preload/y;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 11
     .line 12
@@ -759,7 +753,7 @@
 
     .line 21
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 22
     .line 23
@@ -954,7 +948,7 @@
 
     .line 22
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 23
     .line 24
@@ -1105,7 +1099,7 @@
 
     .line 20
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 21
     .line 22
@@ -1243,11 +1237,11 @@
     move-result-object v0
 
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/source/preload/b0;
+    new-instance v1, Landroidx/media3/exoplayer/source/preload/c0;
 
     .line 8
     .line 9
-    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/preload/b0;-><init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
+    invoke-direct {v1, p0, p1}, Landroidx/media3/exoplayer/source/preload/c0;-><init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
 
     .line 10
     .line 11
@@ -1313,7 +1307,7 @@
 
     .line 22
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 23
     .line 24
@@ -1334,7 +1328,7 @@
 
     .line 31
     :goto_1
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 32
     .line 33
@@ -1422,7 +1416,7 @@
 
     .line 22
     :goto_0
-    invoke-static {p2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 23
     .line 24
@@ -1443,7 +1437,7 @@
 
     .line 31
     :goto_1
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 32
     .line 33

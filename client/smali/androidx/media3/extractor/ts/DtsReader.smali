@@ -333,7 +333,7 @@
     move-result-wide v0
 
     .line 51
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 52
     .line 53
@@ -729,7 +729,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 31
     .line 32
@@ -1033,7 +1033,7 @@
 
     .line 69
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 70
     .line 71

@@ -4,7 +4,6 @@
 
 # interfaces
 .implements Ljava/util/Map;
-.implements Lj$/util/Map;
 
 
 # annotations
@@ -29,8 +28,7 @@
         "Landroidx/collection/SimpleArrayMap<",
         "TK;TV;>;",
         "Ljava/util/Map<",
-        "TK;TV;>;",
-        "Lj$/util/Map;"
+        "TK;TV;>;"
     }
 .end annotation
 
@@ -196,39 +194,6 @@
 
 
 # virtual methods
-.method public final synthetic compute(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lj$/util/Map$-CC;->$default$compute(Ljava/util/Map;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final synthetic computeIfAbsent(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lj$/util/Map$-CC;->$default$computeIfAbsent(Ljava/util/Map;Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final synthetic computeIfPresent(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lj$/util/Map$-CC;->$default$computeIfPresent(Ljava/util/Map;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
 .method public containsAll(Ljava/util/Collection;)Z
     .locals 1
     .param p1    # Ljava/util/Collection;
@@ -338,15 +303,6 @@
     return-object v0
 .end method
 
-.method public final synthetic forEach(Ljava/util/function/BiConsumer;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/util/Map$-CC;->$default$forEach(Ljava/util/Map;Ljava/util/function/BiConsumer;)V
-
-    return-void
-.end method
-
 .method public keySet()Ljava/util/Set;
     .locals 1
     .annotation build Landroidx/annotation/NonNull;
@@ -384,17 +340,6 @@
     .line 12
     :cond_0
     return-object v0
-.end method
-
-.method public final synthetic merge(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Lj$/util/Map$-CC;->$default$merge(Ljava/util/Map;Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
 .end method
 
 .method public putAll(Ljava/util/Map;)V
@@ -578,15 +523,6 @@
     .line 28
     :goto_1
     return p1
-.end method
-
-.method public final synthetic replaceAll(Ljava/util/function/BiFunction;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/util/Map$-CC;->$default$replaceAll(Ljava/util/Map;Ljava/util/function/BiFunction;)V
-
-    return-void
 .end method
 
 .method public retainAll(Ljava/util/Collection;)Z

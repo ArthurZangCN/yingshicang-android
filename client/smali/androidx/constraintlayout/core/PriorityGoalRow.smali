@@ -720,7 +720,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-static {v0}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 37
     .line 38

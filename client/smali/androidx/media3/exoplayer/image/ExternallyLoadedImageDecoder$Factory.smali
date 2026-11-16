@@ -78,7 +78,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -124,7 +124,7 @@
 
     .line 24
     :goto_0
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 25
     .line 26

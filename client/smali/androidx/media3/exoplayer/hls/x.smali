@@ -2,65 +2,41 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
+
+.field public final synthetic b:Landroidx/media3/exoplayer/hls/HlsMediaChunk;
+
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/MediaParser$OutputConsumer;[Ljava/lang/String;)Landroid/media/MediaParser;
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Landroidx/media3/exoplayer/hls/HlsMediaChunk;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroid/media/MediaParser;->create(Landroid/media/MediaParser$OutputConsumer;[Ljava/lang/String;)Landroid/media/MediaParser;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/x;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-    .line 5
-    return-object p0
-.end method
+    iput-object p2, p0, Landroidx/media3/exoplayer/hls/x;->b:Landroidx/media3/exoplayer/hls/HlsMediaChunk;
 
-.method public static bridge synthetic b(Landroid/media/MediaParser;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/media/MediaParser;->getParserName()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic c(Landroid/media/MediaParser;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    const-string v1, "android.media.mediaparser.ts.ignoreSpliceInfoStream"
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v1, v0}, Landroid/media/MediaParser;->setParameter(Ljava/lang/String;Ljava/lang/Object;)Landroid/media/MediaParser;
-
-    .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
-.method public static bridge synthetic d(Landroid/media/MediaParser;)Ljava/lang/String;
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/MediaParser;->getParserName()Ljava/lang/String;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/x;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    iget-object v1, p0, Landroidx/media3/exoplayer/hls/x;->b:Landroidx/media3/exoplayer/hls/HlsMediaChunk;
 
-    .line 5
-    return-object p0
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->c(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Landroidx/media3/exoplayer/hls/HlsMediaChunk;)V
+
+    return-void
 .end method

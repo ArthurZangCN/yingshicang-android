@@ -32,11 +32,11 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, Ljava/io/File;
+    check-cast p1, Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;
 
-    check-cast p2, Ljava/io/File;
+    check-cast p2, Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;
 
-    invoke-static {p1, p2}, Lcom/obsez/android/lib/filechooser/ChooserDialog;->d(Ljava/io/File;Ljava/io/File;)I
+    invoke-static {p1, p2}, Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;->a(Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;Landroidx/media3/extractor/metadata/mp4/SlowMotionData$Segment;)I
 
     move-result p1
 

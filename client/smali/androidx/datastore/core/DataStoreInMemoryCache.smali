@@ -258,11 +258,11 @@
 
     .line 56
     :cond_5
-    new-instance p1, Lr3/g;
+    new-instance p1, Lv3/g;
 
     .line 57
     .line 58
-    invoke-direct {p1}, Lr3/g;-><init>()V
+    invoke-direct {p1}, Lv3/g;-><init>()V
 
     .line 59
     .line 60

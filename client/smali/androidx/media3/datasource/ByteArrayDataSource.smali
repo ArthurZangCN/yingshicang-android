@@ -75,7 +75,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     return-void
 .end method

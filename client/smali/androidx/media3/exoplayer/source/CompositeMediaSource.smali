@@ -508,7 +508,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 10
     .line 11

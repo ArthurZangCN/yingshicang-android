@@ -745,7 +745,7 @@
 
     .line 50
     :cond_2
-    invoke-static {p1}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -1000,7 +1000,7 @@
     const/4 v0, 0x0
 
     .line 17
-    invoke-static {p1, v0}, Lcom/google/common/collect/f3;->d(Ljava/util/Iterator;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lcom/google/common/collect/f3;->d(Ljava/util/Iterator;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
     .line 19

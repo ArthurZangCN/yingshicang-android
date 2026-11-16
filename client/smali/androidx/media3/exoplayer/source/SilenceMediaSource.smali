@@ -224,7 +224,7 @@
 
     .line 4
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 5
     iput-wide p1, p0, Landroidx/media3/exoplayer/source/SilenceMediaSource;->durationUs:J
@@ -311,39 +311,36 @@
     .locals 2
 
     .line 1
-    const-wide/32 v0, 0xac44
+    const v0, 0xac44
 
     .line 2
     .line 3
     .line 4
-    mul-long/2addr p0, v0
+    invoke-static {p0, p1, v0}, Landroidx/media3/common/util/Util;->durationUsToSampleCount(JI)J
 
     .line 5
-    const-wide/32 v0, 0xf4240
-
     .line 6
     .line 7
-    .line 8
-    div-long/2addr p0, v0
+    move-result-wide p0
 
-    .line 9
+    .line 8
     const/4 v0, 0x2
 
-    .line 10
+    .line 9
     invoke-static {v0, v0}, Landroidx/media3/common/util/Util;->getPcmFrameSize(II)I
 
+    .line 10
     .line 11
     .line 12
-    .line 13
     move-result v0
 
-    .line 14
+    .line 13
     int-to-long v0, v0
 
-    .line 15
+    .line 14
     mul-long/2addr v0, p0
 
-    .line 16
+    .line 15
     return-wide v0
 .end method
 
@@ -368,22 +365,19 @@
     div-long/2addr p0, v0
 
     .line 8
-    const-wide/32 v0, 0xf4240
+    const v0, 0xac44
 
     .line 9
     .line 10
     .line 11
-    mul-long/2addr p0, v0
+    invoke-static {p0, p1, v0}, Landroidx/media3/common/util/Util;->sampleCountToDurationUs(JI)J
 
     .line 12
-    const-wide/32 v0, 0xac44
-
     .line 13
     .line 14
-    .line 15
-    div-long/2addr p0, v0
+    move-result-wide p0
 
-    .line 16
+    .line 15
     return-wide p0
 .end method
 

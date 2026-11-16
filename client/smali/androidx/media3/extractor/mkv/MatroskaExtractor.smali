@@ -105,6 +105,8 @@
 
 .field private static final DOC_TYPE_WEBM:Ljava/lang/String; = "webm"
 
+.field private static final DTS_HD_MAX_INPUT_SIZE:I = 0x8000
+
 .field private static final ENCRYPTION_IV_SIZE:I = 0x8
 
 .field public static final FACTORY:Landroidx/media3/extractor/ExtractorsFactory;
@@ -531,14 +533,14 @@
     .locals 5
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/b;
+    new-instance v0, Landroidx/constraintlayout/core/state/c;
 
     .line 2
     .line 3
-    const/4 v1, 0x7
+    const/4 v1, 0x6
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
 
     .line 5
     .line 6
@@ -729,7 +731,7 @@
     .line 105
     .line 106
     .line 107
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     .line 108
     .line 109
@@ -1900,7 +1902,7 @@
 
     .line 15
     :goto_0
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 16
     .line 17
@@ -3560,21 +3562,18 @@
 .end method
 
 .method public static newFactory(Landroidx/media3/extractor/text/SubtitleParser$Factory;)Landroidx/media3/extractor/ExtractorsFactory;
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/a;
+    new-instance v0, Landroidx/media3/common/i;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    invoke-direct {v0, p0}, Landroidx/media3/common/i;-><init>(Ljava/lang/Object;)V
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/constraintlayout/core/state/a;-><init>(Ljava/lang/Object;I)V
-
     .line 5
     .line 6
-    .line 7
     return-object v0
 .end method
 
@@ -4061,8 +4060,6 @@
 
     .line 102
     .line 103
-    .line 104
-    .line 105
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_2
@@ -5310,7 +5307,7 @@
 
     .line 589
     :goto_7
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 590
     .line 591
@@ -12240,7 +12237,7 @@
     .line 76
     :cond_4
     :goto_0
-    invoke-static {p2, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 77
     .line 78

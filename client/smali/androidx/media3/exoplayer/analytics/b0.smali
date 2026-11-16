@@ -38,7 +38,7 @@
 
     iget-object v1, p0, Landroidx/media3/exoplayer/analytics/b0;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->T(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ILandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->s(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ILandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 .end method

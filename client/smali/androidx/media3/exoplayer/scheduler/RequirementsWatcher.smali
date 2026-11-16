@@ -250,7 +250,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1}, Landroid/support/v4/media/c;->q(Landroid/net/ConnectivityManager;Landroid/net/ConnectivityManager$NetworkCallback;)V
+    invoke-static {v0, v1}, Landroid/support/v4/media/session/b;->t(Landroid/net/ConnectivityManager;Landroid/net/ConnectivityManager$NetworkCallback;)V
 
     .line 23
     .line 24

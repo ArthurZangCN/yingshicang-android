@@ -70,7 +70,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Landroidx/appcompat/app/f;->d(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
+    invoke-static {v0, p0}, Landroidx/media3/exoplayer/video/n;->a(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
 
     .line 4
     .line 5
@@ -92,7 +92,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1, p0}, Landroidx/appcompat/app/f;->d(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
+    invoke-static {p1, p0}, Landroidx/media3/exoplayer/video/n;->a(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
 
     .line 6
     .line 7
@@ -105,7 +105,7 @@
     .locals 7
 
     .line 1
-    invoke-static {p1}, Landroidx/appcompat/app/g;->a(Landroid/view/Choreographer$FrameData;)J
+    invoke-static {p1}, Landroidx/activity/f;->b(Landroid/view/Choreographer$FrameData;)J
 
     .line 2
     .line 3
@@ -117,7 +117,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Landroidx/appcompat/app/h;->f(Landroid/view/Choreographer$FrameData;)[Landroid/view/Choreographer$FrameTimeline;
+    invoke-static {p1}, Landroidx/appcompat/app/g;->d(Landroid/view/Choreographer$FrameData;)[Landroid/view/Choreographer$FrameTimeline;
 
     .line 8
     .line 9
@@ -149,7 +149,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0}, Landroidx/media3/exoplayer/video/l;->a(Landroid/view/Choreographer$FrameTimeline;)J
+    invoke-static {v0}, Landroidx/appcompat/app/h;->a(Landroid/view/Choreographer$FrameTimeline;)J
 
     .line 24
     .line 25
@@ -164,7 +164,7 @@
 
     .line 29
     .line 30
-    invoke-static {p1}, Landroidx/media3/exoplayer/video/l;->a(Landroid/view/Choreographer$FrameTimeline;)J
+    invoke-static {p1}, Landroidx/appcompat/app/h;->a(Landroid/view/Choreographer$FrameTimeline;)J
 
     .line 31
     .line 32
@@ -212,11 +212,11 @@
 
     .line 49
     .line 50
-    new-instance v0, Landroidx/media3/exoplayer/video/d;
+    new-instance v0, Landroidx/media3/exoplayer/video/e;
 
     .line 51
     .line 52
-    invoke-direct {v0, p0, v4}, Landroidx/media3/exoplayer/video/d;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v4}, Landroidx/media3/exoplayer/video/e;-><init>(Ljava/lang/Object;I)V
 
     .line 53
     .line 54
@@ -246,7 +246,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, p0}, Landroidx/appcompat/app/f;->d(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
+    invoke-static {v0, p0}, Landroidx/media3/exoplayer/video/n;->a(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
 
     .line 7
     .line 8
@@ -279,7 +279,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, p0}, Landroidx/activity/f;->d(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
+    invoke-static {v0, p0}, Landroidx/media3/exoplayer/video/o;->a(Landroid/view/Choreographer;Landroid/view/Choreographer$VsyncCallback;)V
 
     .line 13
     .line 14

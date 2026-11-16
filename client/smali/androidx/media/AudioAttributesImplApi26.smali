@@ -57,7 +57,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/appcompat/app/d;->f(Landroid/media/AudioAttributes;)I
+    invoke-static {v0}, Landroidx/core/app/e;->b(Landroid/media/AudioAttributes;)I
 
     .line 4
     .line 5

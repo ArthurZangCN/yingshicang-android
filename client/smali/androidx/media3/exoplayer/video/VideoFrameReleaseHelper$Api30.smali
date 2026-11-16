@@ -54,7 +54,7 @@
     .line 9
     :goto_0
     :try_start_0
-    invoke-static {p0, p1, v0}, Landroidx/core/content/pm/h;->n(Landroid/view/Surface;FI)V
+    invoke-static {p0, p1, v0}, Landroidx/media3/exoplayer/video/m;->a(Landroid/view/Surface;FI)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 

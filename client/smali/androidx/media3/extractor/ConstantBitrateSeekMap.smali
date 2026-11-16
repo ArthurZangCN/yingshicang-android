@@ -26,6 +26,8 @@
 
 .field private final inputLength:J
 
+.field private final isEstimated:Z
+
 
 # direct methods
 .method public constructor <init>(JJII)V
@@ -50,15 +52,38 @@
 .end method
 
 .method public constructor <init>(JJIIZ)V
-    .locals 1
+    .locals 9
+
+    const/4 v8, 0x1
+
+    move-object v0, p0
+
+    move-wide v1, p1
+
+    move-wide v3, p3
+
+    move v5, p5
+
+    move v6, p6
+
+    move/from16 v7, p7
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/extractor/ConstantBitrateSeekMap;-><init>(JJIIZZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(JJIIZZ)V
+    .locals 1
 
     .line 3
-    iput-wide p1, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->inputLength:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
+    iput-wide p1, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->inputLength:J
+
+    .line 5
     iput-wide p3, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->firstFrameBytePosition:J
 
     const/4 v0, -0x1
@@ -67,28 +92,31 @@
 
     const/4 p6, 0x1
 
-    .line 5
+    .line 6
     :cond_0
     iput p6, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->frameSize:I
 
-    .line 6
+    .line 7
     iput p5, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->bitrate:I
 
-    .line 7
+    .line 8
     iput-boolean p7, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->allowSeeksIfLengthUnknown:Z
+
+    .line 9
+    iput-boolean p8, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->isEstimated:Z
 
     const-wide/16 p6, -0x1
 
-    cmp-long v0, p1, p6
+    cmp-long p8, p1, p6
 
-    if-nez v0, :cond_1
+    if-nez p8, :cond_1
 
-    .line 8
+    .line 10
     iput-wide p6, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->dataSize:J
 
     const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
 
-    .line 9
+    .line 11
     iput-wide p1, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->durationUs:J
 
     goto :goto_0
@@ -96,10 +124,10 @@
     :cond_1
     sub-long p6, p1, p3
 
-    .line 10
+    .line 12
     iput-wide p6, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->dataSize:J
 
-    .line 11
+    .line 13
     invoke-static {p1, p2, p3, p4, p5}, Landroidx/media3/extractor/ConstantBitrateSeekMap;->getTimeUsAtPosition(JJI)J
 
     move-result-wide p1
@@ -428,6 +456,17 @@
     move-result-wide p1
 
     return-wide p1
+.end method
+
+.method public isEstimated()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/media3/extractor/ConstantBitrateSeekMap;->isEstimated:Z
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public isSeekable()Z

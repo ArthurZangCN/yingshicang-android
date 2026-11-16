@@ -43,7 +43,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashSet<",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;>;"
         }
     .end annotation
@@ -103,9 +103,9 @@
     .line 7
     new-instance v0, Landroidx/media3/common/util/ListenerSet;
 
-    new-instance v1, Landroidx/media3/common/d0;
+    new-instance v1, Landroidx/media3/common/c0;
 
-    invoke-direct {v1, p0}, Landroidx/media3/common/d0;-><init>(Landroidx/media3/common/SimpleBasePlayer;)V
+    invoke-direct {v1, p0}, Landroidx/media3/common/c0;-><init>(Landroidx/media3/common/SimpleBasePlayer;)V
 
     invoke-direct {v0, p1, p2, v1}, Landroidx/media3/common/util/ListenerSet;-><init>(Landroid/os/Looper;Landroidx/media3/common/util/Clock;Landroidx/media3/common/util/ListenerSet$IterationFinishedEvent;)V
 
@@ -498,7 +498,7 @@
 
     .line 12
     .line 13
-    invoke-static {p0}, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->access$000(Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->access$000(Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;)Lcom/google/common/collect/e2;
 
     .line 14
     .line 15
@@ -863,7 +863,7 @@
 
     .line 128
     .line 129
-    invoke-static {v8}, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->access$000(Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;)Lcom/google/common/collect/f2;
+    invoke-static {v8}, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->access$000(Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;)Lcom/google/common/collect/e2;
 
     .line 130
     .line 131
@@ -1252,7 +1252,7 @@
 .end method
 
 .method private clearVideoOutput(Ljava/lang/Object;)V
-    .locals 2
+    .locals 3
     .param p1    # Ljava/lang/Object;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
@@ -1288,7 +1288,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleClearVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleClearVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -1296,28 +1296,31 @@
     move-result-object p1
 
     .line 19
-    new-instance v1, Landroidx/media3/common/i0;
+    new-instance v1, Landroidx/media3/common/s;
 
     .line 20
     .line 21
-    invoke-direct {v1, v0}, Landroidx/media3/common/i0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;)V
+    const/4 v2, 0x2
 
     .line 22
+    invoke-direct {v1, v0, v2}, Landroidx/media3/common/s;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+
     .line 23
     .line 24
-    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
-
     .line 25
+    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
+
     .line 26
     .line 27
+    .line 28
     return-void
 .end method
 
-.method public static synthetic d(Landroidx/media3/common/SimpleBasePlayer;Lcom/google/common/util/concurrent/t;)V
+.method public static synthetic d(Landroidx/media3/common/SimpleBasePlayer;Lcom/google/common/util/concurrent/x;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->lambda$updateStateForPendingOperation$64(Lcom/google/common/util/concurrent/t;)V
+    invoke-direct {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->lambda$updateStateForPendingOperation$64(Lcom/google/common/util/concurrent/x;)V
 
     return-void
 .end method
@@ -1402,7 +1405,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, Landroidx/media3/common/Tracks;->getGroups()Lcom/google/common/collect/f2;
+    invoke-virtual {p1}, Landroidx/media3/common/Tracks;->getGroups()Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -1429,7 +1432,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Landroidx/media3/common/Tracks;->getGroups()Lcom/google/common/collect/f2;
+    invoke-virtual {p1}, Landroidx/media3/common/Tracks;->getGroups()Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -3812,7 +3815,7 @@
     return-object p0
 .end method
 
-.method private static synthetic lambda$handleReplaceMediaItems$33(Lcom/google/common/util/concurrent/t;Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+.method private static synthetic lambda$handleReplaceMediaItems$33(Lcom/google/common/util/concurrent/x;Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
     .locals 0
 
     return-object p0
@@ -5566,7 +5569,7 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/f2;
+    iget-object v0, v0, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -5619,7 +5622,7 @@
     return-void
 .end method
 
-.method private synthetic lambda$updateStateForPendingOperation$64(Lcom/google/common/util/concurrent/t;)V
+.method private synthetic lambda$updateStateForPendingOperation$64(Lcom/google/common/util/concurrent/x;)V
     .locals 1
 
     .line 1
@@ -5734,11 +5737,11 @@
     return-void
 .end method
 
-.method public static synthetic p(Lcom/google/common/util/concurrent/t;Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+.method public static synthetic p(Lcom/google/common/util/concurrent/x;Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->lambda$handleReplaceMediaItems$33(Lcom/google/common/util/concurrent/t;Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+    invoke-static {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->lambda$handleReplaceMediaItems$33(Lcom/google/common/util/concurrent/x;Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
 
     move-result-object p0
 
@@ -5868,7 +5871,7 @@
 
     .line 11
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 12
     .line 13
@@ -5926,7 +5929,7 @@
 
     .line 39
     :cond_3
-    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/media3/common/SimpleBasePlayer;->handleSetMediaItems(Ljava/util/List;IJ)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/media3/common/SimpleBasePlayer;->handleSetMediaItems(Ljava/util/List;IJ)Lcom/google/common/util/concurrent/x;
 
     .line 40
     .line 41
@@ -5958,7 +5961,7 @@
     .line 51
     .line 52
     .line 53
-    invoke-direct {p0, v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 54
     .line 55
@@ -6033,7 +6036,7 @@
 .end method
 
 .method private updateStateAndInformListeners(Landroidx/media3/common/SimpleBasePlayer$State;ZZ)V
-    .locals 11
+    .locals 10
 
     .line 1
     iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer;->state:Landroidx/media3/common/SimpleBasePlayer$State;
@@ -6229,7 +6232,7 @@
 
     .line 89
     .line 90
-    invoke-direct {v7, p1, v5}, Landroidx/media3/common/s0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v7, p1, v5, v2}, Landroidx/media3/common/s0;-><init>(Ljava/lang/Object;II)V
 
     .line 91
     .line 92
@@ -6287,11 +6290,11 @@
 
     .line 118
     .line 119
-    new-instance v9, Landroidx/media3/common/t;
+    new-instance v9, Landroidx/media3/common/u;
 
     .line 120
     .line 121
-    invoke-direct {v9, v6, v7, p2}, Landroidx/media3/common/t;-><init>(Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;I)V
+    invoke-direct {v9, v6, v7, p2}, Landroidx/media3/common/u;-><init>(Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;I)V
 
     .line 122
     .line 123
@@ -6306,242 +6309,242 @@
     .line 128
     .line 129
     :cond_5
-    if-eq p3, v5, :cond_7
+    const/4 p2, 0x2
 
     .line 130
+    if-eq p3, v5, :cond_7
+
     .line 131
-    iget-object p2, p1, Landroidx/media3/common/SimpleBasePlayer$State;->timeline:Landroidx/media3/common/Timeline;
-
     .line 132
-    .line 133
-    invoke-virtual {p2}, Landroidx/media3/common/Timeline;->isEmpty()Z
+    iget-object v6, p1, Landroidx/media3/common/SimpleBasePlayer$State;->timeline:Landroidx/media3/common/Timeline;
 
+    .line 133
     .line 134
+    invoke-virtual {v6}, Landroidx/media3/common/Timeline;->isEmpty()Z
+
     .line 135
     .line 136
-    move-result p2
-
     .line 137
-    if-eqz p2, :cond_6
-
-    .line 138
-    .line 139
-    const/4 p2, 0x0
-
-    .line 140
-    goto :goto_2
-
-    .line 141
-    :cond_6
-    iget-object p2, p1, Landroidx/media3/common/SimpleBasePlayer$State;->timeline:Landroidx/media3/common/Timeline;
-
-    .line 142
-    .line 143
-    invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer;->getCurrentMediaItemIndexInternal(Landroidx/media3/common/SimpleBasePlayer$State;)I
-
-    .line 144
-    .line 145
-    .line 146
     move-result v6
 
+    .line 138
+    if-eqz v6, :cond_6
+
+    .line 139
+    .line 140
+    const/4 v6, 0x0
+
+    .line 141
+    goto :goto_2
+
+    .line 142
+    :cond_6
+    iget-object v6, p1, Landroidx/media3/common/SimpleBasePlayer$State;->timeline:Landroidx/media3/common/Timeline;
+
+    .line 143
+    .line 144
+    invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer;->getCurrentMediaItemIndexInternal(Landroidx/media3/common/SimpleBasePlayer$State;)I
+
+    .line 145
+    .line 146
     .line 147
-    iget-object v7, p0, Landroidx/media3/common/BasePlayer;->window:Landroidx/media3/common/Timeline$Window;
+    move-result v7
 
     .line 148
-    .line 149
-    invoke-virtual {p2, v6, v7}, Landroidx/media3/common/Timeline;->getWindow(ILandroidx/media3/common/Timeline$Window;)Landroidx/media3/common/Timeline$Window;
+    iget-object v8, p0, Landroidx/media3/common/BasePlayer;->window:Landroidx/media3/common/Timeline$Window;
 
+    .line 149
     .line 150
+    invoke-virtual {v6, v7, v8}, Landroidx/media3/common/Timeline;->getWindow(ILandroidx/media3/common/Timeline$Window;)Landroidx/media3/common/Timeline$Window;
+
     .line 151
     .line 152
-    move-result-object p2
-
     .line 153
-    iget-object p2, p2, Landroidx/media3/common/Timeline$Window;->mediaItem:Landroidx/media3/common/MediaItem;
+    move-result-object v6
 
     .line 154
+    iget-object v6, v6, Landroidx/media3/common/Timeline$Window;->mediaItem:Landroidx/media3/common/MediaItem;
+
     .line 155
-    :goto_2
-    iget-object v6, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
-
     .line 156
+    :goto_2
+    iget-object v7, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+
     .line 157
-    new-instance v7, Landroidx/media3/common/k;
-
     .line 158
-    .line 159
-    invoke-direct {v7, p2, p3}, Landroidx/media3/common/k;-><init>(Ljava/lang/Object;I)V
+    new-instance v8, Landroidx/media3/exoplayer/analytics/w;
 
+    .line 159
     .line 160
+    invoke-direct {v8, v6, p3, p2}, Landroidx/media3/exoplayer/analytics/w;-><init>(Ljava/lang/Object;II)V
+
     .line 161
     .line 162
-    invoke-virtual {v6, v4, v7}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
-
     .line 163
+    invoke-virtual {v7, v4, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+
     .line 164
     .line 165
-    :cond_7
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playerError:Landroidx/media3/common/PlaybackException;
-
     .line 166
+    :cond_7
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playerError:Landroidx/media3/common/PlaybackException;
+
     .line 167
-    iget-object p3, p1, Landroidx/media3/common/SimpleBasePlayer$State;->playerError:Landroidx/media3/common/PlaybackException;
-
     .line 168
-    .line 169
-    invoke-static {p2, p3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v6, p1, Landroidx/media3/common/SimpleBasePlayer$State;->playerError:Landroidx/media3/common/PlaybackException;
 
+    .line 169
     .line 170
+    invoke-static {p3, v6}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 171
     .line 172
-    move-result p2
-
     .line 173
-    const/4 p3, 0x4
+    move-result p3
 
     .line 174
-    if-nez p2, :cond_8
+    const/4 v6, 0x4
 
     .line 175
+    const/4 v7, 0x3
+
     .line 176
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    if-nez p3, :cond_8
 
     .line 177
     .line 178
-    new-instance v6, Landroidx/media3/common/w0;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 179
     .line 180
-    invoke-direct {v6, p1, p3}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    new-instance v8, Landroidx/media3/common/t;
 
     .line 181
     .line 182
-    .line 183
-    const/16 v7, 0xa
+    invoke-direct {v8, p1, v7}, Landroidx/media3/common/t;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 183
     .line 184
     .line 185
-    invoke-virtual {p2, v7, v6}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    const/16 v9, 0xa
 
     .line 186
     .line 187
-    .line 188
-    iget-object p2, p1, Landroidx/media3/common/SimpleBasePlayer$State;->playerError:Landroidx/media3/common/PlaybackException;
+    invoke-virtual {p3, v9, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 188
     .line 189
     .line 190
-    if-eqz p2, :cond_8
+    iget-object p3, p1, Landroidx/media3/common/SimpleBasePlayer$State;->playerError:Landroidx/media3/common/PlaybackException;
 
     .line 191
     .line 192
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    if-eqz p3, :cond_8
 
     .line 193
     .line 194
-    new-instance v6, Landroidx/media3/common/x0;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 195
     .line 196
-    invoke-direct {v6, p1, p3}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    new-instance v8, Landroidx/media3/common/t0;
 
     .line 197
     .line 198
-    .line 199
-    invoke-virtual {p2, v7, v6}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-direct {v8, p1, v6}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 199
     .line 200
     .line 201
-    .line 202
-    :cond_8
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->trackSelectionParameters:Landroidx/media3/common/TrackSelectionParameters;
+    invoke-virtual {p3, v9, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 202
     .line 203
     .line 204
-    iget-object v6, p1, Landroidx/media3/common/SimpleBasePlayer$State;->trackSelectionParameters:Landroidx/media3/common/TrackSelectionParameters;
+    :cond_8
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->trackSelectionParameters:Landroidx/media3/common/TrackSelectionParameters;
 
     .line 205
     .line 206
-    invoke-virtual {p2, v6}, Landroidx/media3/common/TrackSelectionParameters;->equals(Ljava/lang/Object;)Z
+    iget-object v8, p1, Landroidx/media3/common/SimpleBasePlayer$State;->trackSelectionParameters:Landroidx/media3/common/TrackSelectionParameters;
 
     .line 207
     .line 208
+    invoke-virtual {p3, v8}, Landroidx/media3/common/TrackSelectionParameters;->equals(Ljava/lang/Object;)Z
+
     .line 209
-    move-result p2
-
     .line 210
-    const/4 v6, 0x3
-
     .line 211
-    if-nez p2, :cond_9
+    move-result p3
 
     .line 212
+    if-nez p3, :cond_9
+
     .line 213
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
-
     .line 214
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+
     .line 215
-    new-instance v7, Landroidx/media3/common/t0;
-
     .line 216
-    .line 217
-    invoke-direct {v7, p1, v6}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    new-instance v8, Landroidx/media3/common/u0;
 
+    .line 217
     .line 218
+    invoke-direct {v8, p1, v6}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+
     .line 219
     .line 220
-    const/16 v8, 0x13
-
     .line 221
-    .line 222
-    invoke-virtual {p2, v8, v7}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    const/16 v9, 0x13
 
+    .line 222
     .line 223
+    invoke-virtual {p3, v9, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+
     .line 224
     .line 225
-    :cond_9
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->currentTracks:Landroidx/media3/common/Tracks;
-
     .line 226
+    :cond_9
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->currentTracks:Landroidx/media3/common/Tracks;
+
     .line 227
-    iget-object v7, p1, Landroidx/media3/common/SimpleBasePlayer$State;->currentTracks:Landroidx/media3/common/Tracks;
-
     .line 228
-    .line 229
-    invoke-virtual {p2, v7}, Landroidx/media3/common/Tracks;->equals(Ljava/lang/Object;)Z
+    iget-object v8, p1, Landroidx/media3/common/SimpleBasePlayer$State;->currentTracks:Landroidx/media3/common/Tracks;
 
+    .line 229
     .line 230
+    invoke-virtual {p3, v8}, Landroidx/media3/common/Tracks;->equals(Ljava/lang/Object;)Z
+
     .line 231
     .line 232
-    move-result p2
-
     .line 233
-    const/4 v7, 0x2
+    move-result p3
 
     .line 234
-    if-nez p2, :cond_a
+    if-nez p3, :cond_a
 
     .line 235
     .line 236
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 237
     .line 238
-    new-instance v8, Landroidx/media3/common/u0;
+    new-instance v8, Landroidx/media3/common/v0;
 
     .line 239
     .line 240
-    invoke-direct {v8, p1, p3}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v8, p1, v6}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 241
     .line 242
     .line 243
-    invoke-virtual {p2, v7, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, p2, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 244
     .line 245
     .line 246
     :cond_a
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->currentMetadata:Landroidx/media3/common/MediaMetadata;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->currentMetadata:Landroidx/media3/common/MediaMetadata;
 
     .line 247
     .line 248
@@ -6549,163 +6552,163 @@
 
     .line 249
     .line 250
-    invoke-virtual {p2, v8}, Landroidx/media3/common/MediaMetadata;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v8}, Landroidx/media3/common/MediaMetadata;->equals(Ljava/lang/Object;)Z
 
     .line 251
     .line 252
     .line 253
-    move-result p2
+    move-result p3
 
     .line 254
-    const/4 v8, 0x5
+    if-nez p3, :cond_b
 
     .line 255
-    if-nez p2, :cond_b
-
     .line 256
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+
     .line 257
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
-
     .line 258
+    new-instance v8, Landroidx/media3/common/w0;
+
     .line 259
-    new-instance v9, Landroidx/media3/common/v0;
-
     .line 260
-    .line 261
-    invoke-direct {v9, p1, v8}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v8, p1, p2}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 261
     .line 262
     .line 263
+    const/16 v9, 0xe
+
     .line 264
-    const/16 v10, 0xe
-
     .line 265
-    .line 266
-    invoke-virtual {p2, v10, v9}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v9, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 266
     .line 267
     .line 268
-    .line 269
     :cond_b
-    iget-boolean p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->isLoading:Z
+    iget-boolean p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->isLoading:Z
 
+    .line 269
     .line 270
+    iget-boolean v8, p1, Landroidx/media3/common/SimpleBasePlayer$State;->isLoading:Z
+
     .line 271
-    iget-boolean v9, p1, Landroidx/media3/common/SimpleBasePlayer$State;->isLoading:Z
-
     .line 272
+    if-eq p3, v8, :cond_c
+
     .line 273
-    if-eq p2, v9, :cond_c
-
     .line 274
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+
     .line 275
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
-
     .line 276
+    new-instance v8, Landroidx/media3/common/x0;
+
     .line 277
-    new-instance v9, Landroidx/media3/common/w0;
-
     .line 278
-    .line 279
-    invoke-direct {v9, p1, v8}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v8, p1, v7}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 279
     .line 280
     .line 281
-    .line 282
-    invoke-virtual {p2, v6, v9}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v7, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 282
     .line 283
     .line 284
-    .line 285
     :cond_c
     if-nez v1, :cond_d
 
+    .line 285
     .line 286
-    .line 287
     if-eqz v3, :cond_e
 
+    .line 287
     .line 288
-    .line 289
     :cond_d
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
+    .line 289
     .line 290
+    new-instance v8, Landroidx/media3/common/t;
+
     .line 291
-    new-instance v9, Landroidx/media3/common/x0;
-
     .line 292
-    .line 293
-    invoke-direct {v9, p1, v8}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v8, p1, v6}, Landroidx/media3/common/t;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 293
     .line 294
     .line 295
-    .line 296
-    invoke-virtual {p2, v5, v9}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v5, v8}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 296
     .line 297
     .line 298
-    .line 299
     :cond_e
     if-eqz v3, :cond_f
 
+    .line 299
     .line 300
-    .line 301
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
+    .line 301
     .line 302
-    .line 303
     new-instance v3, Landroidx/media3/common/t0;
 
+    .line 303
     .line 304
-    .line 305
     invoke-direct {v3, p1, v2}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 305
     .line 306
     .line 307
-    .line 308
-    invoke-virtual {p2, p3, v3}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v6, v3}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
+    .line 308
     .line 309
     .line 310
-    .line 311
     :cond_f
     if-nez v1, :cond_10
 
+    .line 311
     .line 312
-    .line 313
-    iget p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playWhenReadyChangeReason:I
+    iget p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playWhenReadyChangeReason:I
 
+    .line 313
     .line 314
-    .line 315
     iget v1, p1, Landroidx/media3/common/SimpleBasePlayer$State;->playWhenReadyChangeReason:I
 
+    .line 315
     .line 316
+    if-eq p3, v1, :cond_11
+
     .line 317
-    if-eq p2, v1, :cond_11
-
     .line 318
-    .line 319
     :cond_10
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
+    .line 319
     .line 320
-    .line 321
     new-instance v1, Landroidx/media3/common/u0;
 
+    .line 321
     .line 322
-    .line 323
     invoke-direct {v1, p1, v2}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
+    .line 323
     .line 324
     .line 325
+    const/4 v3, 0x5
+
     .line 326
-    invoke-virtual {p2, v8, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v3, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 327
     .line 328
     .line 329
     :cond_11
-    iget p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playbackSuppressionReason:I
+    iget p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playbackSuppressionReason:I
 
     .line 330
     .line 331
@@ -6713,11 +6716,11 @@
 
     .line 332
     .line 333
-    if-eq p2, v1, :cond_12
+    if-eq p3, v1, :cond_12
 
     .line 334
     .line 335
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 336
     .line 337
@@ -6733,7 +6736,7 @@
     const/4 v3, 0x6
 
     .line 343
-    invoke-virtual {p2, v3, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v3, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 344
     .line 345
@@ -6744,7 +6747,7 @@
     .line 347
     .line 348
     .line 349
-    move-result p2
+    move-result p3
 
     .line 350
     invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer;->isPlaying(Landroidx/media3/common/SimpleBasePlayer$State;)Z
@@ -6755,11 +6758,11 @@
     move-result v1
 
     .line 354
-    if-eq p2, v1, :cond_13
+    if-eq p3, v1, :cond_13
 
     .line 355
     .line 356
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 357
     .line 358
@@ -6775,13 +6778,13 @@
     const/4 v3, 0x7
 
     .line 364
-    invoke-virtual {p2, v3, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v3, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 365
     .line 366
     .line 367
     :cond_13
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playbackParameters:Landroidx/media3/common/PlaybackParameters;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playbackParameters:Landroidx/media3/common/PlaybackParameters;
 
     .line 368
     .line 369
@@ -6789,19 +6792,19 @@
 
     .line 370
     .line 371
-    invoke-virtual {p2, v1}, Landroidx/media3/common/PlaybackParameters;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/PlaybackParameters;->equals(Ljava/lang/Object;)Z
 
     .line 372
     .line 373
     .line 374
-    move-result p2
+    move-result p3
 
     .line 375
-    if-nez p2, :cond_14
+    if-nez p3, :cond_14
 
     .line 376
     .line 377
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 378
     .line 379
@@ -6814,17 +6817,17 @@
     .line 382
     .line 383
     .line 384
-    const/16 v2, 0xc
+    const/16 v3, 0xc
 
     .line 385
     .line 386
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v3, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 387
     .line 388
     .line 389
     :cond_14
-    iget p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->repeatMode:I
+    iget p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->repeatMode:I
 
     .line 390
     .line 391
@@ -6832,19 +6835,19 @@
 
     .line 392
     .line 393
-    if-eq p2, v1, :cond_15
+    if-eq p3, v1, :cond_15
 
     .line 394
     .line 395
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 396
     .line 397
-    new-instance v1, Landroidx/media3/common/t0;
+    new-instance v1, Landroidx/media3/common/t;
 
     .line 398
     .line 399
-    invoke-direct {v1, p1, v4}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v2}, Landroidx/media3/common/t;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 400
     .line 401
@@ -6853,13 +6856,13 @@
 
     .line 403
     .line 404
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 405
     .line 406
     .line 407
     :cond_15
-    iget-boolean p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->shuffleModeEnabled:Z
+    iget-boolean p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->shuffleModeEnabled:Z
 
     .line 408
     .line 409
@@ -6867,19 +6870,19 @@
 
     .line 410
     .line 411
-    if-eq p2, v1, :cond_16
+    if-eq p3, v1, :cond_16
 
     .line 412
     .line 413
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 414
     .line 415
-    new-instance v1, Landroidx/media3/common/u0;
+    new-instance v1, Landroidx/media3/common/t0;
 
     .line 416
     .line 417
-    invoke-direct {v1, p1, v4}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v4}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 418
     .line 419
@@ -6888,7 +6891,7 @@
 
     .line 421
     .line 422
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 423
     .line 424
@@ -6898,27 +6901,27 @@
 
     .line 426
     .line 427
-    iget-wide v8, p1, Landroidx/media3/common/SimpleBasePlayer$State;->seekBackIncrementMs:J
+    iget-wide v5, p1, Landroidx/media3/common/SimpleBasePlayer$State;->seekBackIncrementMs:J
 
     .line 428
     .line 429
-    cmp-long p2, v1, v8
+    cmp-long p3, v1, v5
 
     .line 430
     .line 431
-    if-eqz p2, :cond_17
+    if-eqz p3, :cond_17
 
     .line 432
     .line 433
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 434
     .line 435
-    new-instance v1, Landroidx/media3/common/v0;
+    new-instance v1, Landroidx/media3/common/u0;
 
     .line 436
     .line 437
-    invoke-direct {v1, p1, v4}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v4}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 438
     .line 439
@@ -6927,7 +6930,7 @@
 
     .line 441
     .line 442
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 443
     .line 444
@@ -6937,27 +6940,27 @@
 
     .line 446
     .line 447
-    iget-wide v8, p1, Landroidx/media3/common/SimpleBasePlayer$State;->seekForwardIncrementMs:J
+    iget-wide v5, p1, Landroidx/media3/common/SimpleBasePlayer$State;->seekForwardIncrementMs:J
 
     .line 448
     .line 449
-    cmp-long p2, v1, v8
+    cmp-long p3, v1, v5
 
     .line 450
     .line 451
-    if-eqz p2, :cond_18
+    if-eqz p3, :cond_18
 
     .line 452
     .line 453
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 454
     .line 455
-    new-instance v1, Landroidx/media3/common/w0;
+    new-instance v1, Landroidx/media3/common/v0;
 
     .line 456
     .line 457
-    invoke-direct {v1, p1, v4}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v4}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 458
     .line 459
@@ -6966,7 +6969,7 @@
 
     .line 461
     .line 462
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 463
     .line 464
@@ -6976,27 +6979,27 @@
 
     .line 466
     .line 467
-    iget-wide v8, p1, Landroidx/media3/common/SimpleBasePlayer$State;->maxSeekToPreviousPositionMs:J
+    iget-wide v5, p1, Landroidx/media3/common/SimpleBasePlayer$State;->maxSeekToPreviousPositionMs:J
 
     .line 468
     .line 469
-    cmp-long p2, v1, v8
+    cmp-long p3, v1, v5
 
     .line 470
     .line 471
-    if-eqz p2, :cond_19
+    if-eqz p3, :cond_19
 
     .line 472
     .line 473
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 474
     .line 475
-    new-instance v1, Landroidx/media3/common/x0;
+    new-instance v1, Landroidx/media3/common/w0;
 
     .line 476
     .line 477
-    invoke-direct {v1, p1, v4}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v4}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 478
     .line 479
@@ -7005,13 +7008,13 @@
 
     .line 481
     .line 482
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 483
     .line 484
     .line 485
     :cond_19
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->audioAttributes:Landroidx/media3/common/AudioAttributes;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->audioAttributes:Landroidx/media3/common/AudioAttributes;
 
     .line 486
     .line 487
@@ -7019,27 +7022,27 @@
 
     .line 488
     .line 489
-    invoke-virtual {p2, v1}, Landroidx/media3/common/AudioAttributes;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/AudioAttributes;->equals(Ljava/lang/Object;)Z
 
     .line 490
     .line 491
     .line 492
-    move-result p2
+    move-result p3
 
     .line 493
-    if-nez p2, :cond_1a
+    if-nez p3, :cond_1a
 
     .line 494
     .line 495
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 496
     .line 497
-    new-instance v1, Landroidx/media3/common/u0;
+    new-instance v1, Landroidx/media3/common/t;
 
     .line 498
     .line 499
-    invoke-direct {v1, p1, v7}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v4}, Landroidx/media3/common/t;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 500
     .line 501
@@ -7048,13 +7051,13 @@
 
     .line 503
     .line 504
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 505
     .line 506
     .line 507
     :cond_1a
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->videoSize:Landroidx/media3/common/VideoSize;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->videoSize:Landroidx/media3/common/VideoSize;
 
     .line 508
     .line 509
@@ -7062,27 +7065,27 @@
 
     .line 510
     .line 511
-    invoke-virtual {p2, v1}, Landroidx/media3/common/VideoSize;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/VideoSize;->equals(Ljava/lang/Object;)Z
 
     .line 512
     .line 513
     .line 514
-    move-result p2
+    move-result p3
 
     .line 515
-    if-nez p2, :cond_1b
+    if-nez p3, :cond_1b
 
     .line 516
     .line 517
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 518
     .line 519
-    new-instance v1, Landroidx/media3/common/v0;
+    new-instance v1, Landroidx/media3/common/t0;
 
     .line 520
     .line 521
-    invoke-direct {v1, p1, v7}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, p2}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 522
     .line 523
@@ -7091,13 +7094,13 @@
 
     .line 525
     .line 526
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 527
     .line 528
     .line 529
     :cond_1b
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->deviceInfo:Landroidx/media3/common/DeviceInfo;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->deviceInfo:Landroidx/media3/common/DeviceInfo;
 
     .line 530
     .line 531
@@ -7105,27 +7108,27 @@
 
     .line 532
     .line 533
-    invoke-virtual {p2, v1}, Landroidx/media3/common/DeviceInfo;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/DeviceInfo;->equals(Ljava/lang/Object;)Z
 
     .line 534
     .line 535
     .line 536
-    move-result p2
+    move-result p3
 
     .line 537
-    if-nez p2, :cond_1c
+    if-nez p3, :cond_1c
 
     .line 538
     .line 539
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 540
     .line 541
-    new-instance v1, Landroidx/media3/common/w0;
+    new-instance v1, Landroidx/media3/common/u0;
 
     .line 542
     .line 543
-    invoke-direct {v1, p1, v7}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, p2}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 544
     .line 545
@@ -7134,13 +7137,13 @@
 
     .line 547
     .line 548
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 549
     .line 550
     .line 551
     :cond_1c
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playlistMetadata:Landroidx/media3/common/MediaMetadata;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->playlistMetadata:Landroidx/media3/common/MediaMetadata;
 
     .line 552
     .line 553
@@ -7148,27 +7151,27 @@
 
     .line 554
     .line 555
-    invoke-virtual {p2, v1}, Landroidx/media3/common/MediaMetadata;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/MediaMetadata;->equals(Ljava/lang/Object;)Z
 
     .line 556
     .line 557
     .line 558
-    move-result p2
+    move-result p3
 
     .line 559
-    if-nez p2, :cond_1d
+    if-nez p3, :cond_1d
 
     .line 560
     .line 561
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 562
     .line 563
-    new-instance v1, Landroidx/media3/common/x0;
+    new-instance v1, Landroidx/media3/common/v0;
 
     .line 564
     .line 565
-    invoke-direct {v1, p1, v7}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, p2}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 566
     .line 567
@@ -7177,29 +7180,29 @@
 
     .line 569
     .line 570
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 571
     .line 572
     .line 573
     :cond_1d
-    iget-boolean p2, p1, Landroidx/media3/common/SimpleBasePlayer$State;->newlyRenderedFirstFrame:Z
+    iget-boolean p3, p1, Landroidx/media3/common/SimpleBasePlayer$State;->newlyRenderedFirstFrame:Z
 
     .line 574
     .line 575
-    if-eqz p2, :cond_1e
+    if-eqz p3, :cond_1e
 
     .line 576
     .line 577
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 578
     .line 579
-    new-instance v1, Landroidx/constraintlayout/core/state/b;
+    new-instance v1, Landroidx/constraintlayout/core/state/g;
 
     .line 580
     .line 581
-    invoke-direct {v1, v7}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
+    invoke-direct {v1, v4}, Landroidx/constraintlayout/core/state/g;-><init>(I)V
 
     .line 582
     .line 583
@@ -7208,13 +7211,13 @@
 
     .line 585
     .line 586
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 587
     .line 588
     .line 589
     :cond_1e
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->surfaceSize:Landroidx/media3/common/util/Size;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->surfaceSize:Landroidx/media3/common/util/Size;
 
     .line 590
     .line 591
@@ -7222,27 +7225,27 @@
 
     .line 592
     .line 593
-    invoke-virtual {p2, v1}, Landroidx/media3/common/util/Size;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/util/Size;->equals(Ljava/lang/Object;)Z
 
     .line 594
     .line 595
     .line 596
-    move-result p2
+    move-result p3
 
     .line 597
-    if-nez p2, :cond_1f
+    if-nez p3, :cond_1f
 
     .line 598
     .line 599
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 600
     .line 601
-    new-instance v1, Landroidx/media3/common/u0;
+    new-instance v1, Landroidx/media3/common/x0;
 
     .line 602
     .line 603
-    invoke-direct {v1, p1, v6}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v4}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 604
     .line 605
@@ -7251,13 +7254,13 @@
 
     .line 607
     .line 608
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 609
     .line 610
     .line 611
     :cond_1f
-    iget p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->volume:F
+    iget p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->volume:F
 
     .line 612
     .line 613
@@ -7265,23 +7268,23 @@
 
     .line 614
     .line 615
-    cmpl-float p2, p2, v1
+    cmpl-float p3, p3, v1
 
     .line 616
     .line 617
-    if-eqz p2, :cond_20
+    if-eqz p3, :cond_20
 
     .line 618
     .line 619
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 620
     .line 621
-    new-instance v1, Landroidx/media3/common/v0;
+    new-instance v1, Landroidx/media3/common/t;
 
     .line 622
     .line 623
-    invoke-direct {v1, p1, v6}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, p2}, Landroidx/media3/common/t;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 624
     .line 625
@@ -7290,13 +7293,13 @@
 
     .line 627
     .line 628
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 629
     .line 630
     .line 631
     :cond_20
-    iget p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->deviceVolume:I
+    iget p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->deviceVolume:I
 
     .line 632
     .line 633
@@ -7304,11 +7307,11 @@
 
     .line 634
     .line 635
-    if-ne p2, v1, :cond_21
+    if-ne p3, v1, :cond_21
 
     .line 636
     .line 637
-    iget-boolean p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->isDeviceMuted:Z
+    iget-boolean p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->isDeviceMuted:Z
 
     .line 638
     .line 639
@@ -7316,20 +7319,20 @@
 
     .line 640
     .line 641
-    if-eq p2, v1, :cond_22
+    if-eq p3, v1, :cond_22
 
     .line 642
     .line 643
     :cond_21
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 644
     .line 645
-    new-instance v1, Landroidx/media3/common/w0;
+    new-instance v1, Landroidx/media3/common/t0;
 
     .line 646
     .line 647
-    invoke-direct {v1, p1, v6}, Landroidx/media3/common/w0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v7}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 648
     .line 649
@@ -7338,13 +7341,13 @@
 
     .line 651
     .line 652
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 653
     .line 654
     .line 655
     :cond_22
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->currentCues:Landroidx/media3/common/text/CueGroup;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->currentCues:Landroidx/media3/common/text/CueGroup;
 
     .line 656
     .line 657
@@ -7352,27 +7355,27 @@
 
     .line 658
     .line 659
-    invoke-virtual {p2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 660
     .line 661
     .line 662
-    move-result p2
+    move-result p3
 
     .line 663
-    if-nez p2, :cond_23
+    if-nez p3, :cond_23
 
     .line 664
     .line 665
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 666
     .line 667
-    new-instance v1, Landroidx/media3/common/x0;
+    new-instance v1, Landroidx/media3/common/u0;
 
     .line 668
     .line 669
-    invoke-direct {v1, p1, v6}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v7}, Landroidx/media3/common/u0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 670
     .line 671
@@ -7381,13 +7384,13 @@
 
     .line 673
     .line 674
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 675
     .line 676
     .line 677
     :cond_23
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->timedMetadata:Landroidx/media3/common/Metadata;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->timedMetadata:Landroidx/media3/common/Metadata;
 
     .line 678
     .line 679
@@ -7395,23 +7398,23 @@
 
     .line 680
     .line 681
-    invoke-virtual {p2, v1}, Landroidx/media3/common/Metadata;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v1}, Landroidx/media3/common/Metadata;->equals(Ljava/lang/Object;)Z
 
     .line 682
     .line 683
     .line 684
-    move-result p2
+    move-result p3
 
     .line 685
-    if-nez p2, :cond_24
+    if-nez p3, :cond_24
 
     .line 686
     .line 687
-    iget-object p2, p1, Landroidx/media3/common/SimpleBasePlayer$State;->timedMetadata:Landroidx/media3/common/Metadata;
+    iget-object p3, p1, Landroidx/media3/common/SimpleBasePlayer$State;->timedMetadata:Landroidx/media3/common/Metadata;
 
     .line 688
     .line 689
-    iget-wide v1, p2, Landroidx/media3/common/Metadata;->presentationTimeUs:J
+    iget-wide v1, p3, Landroidx/media3/common/Metadata;->presentationTimeUs:J
 
     .line 690
     .line 691
@@ -7422,23 +7425,23 @@
     .line 694
     .line 695
     .line 696
-    cmp-long p2, v1, v3
+    cmp-long p3, v1, v3
 
     .line 697
     .line 698
-    if-eqz p2, :cond_24
+    if-eqz p3, :cond_24
 
     .line 699
     .line 700
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 701
     .line 702
-    new-instance v1, Landroidx/media3/common/t0;
+    new-instance v1, Landroidx/media3/common/v0;
 
     .line 703
     .line 704
-    invoke-direct {v1, p1, v7}, Landroidx/media3/common/t0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, p1, v7}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 705
     .line 706
@@ -7447,13 +7450,13 @@
 
     .line 708
     .line 709
-    invoke-virtual {p2, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, v2, v1}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 710
     .line 711
     .line 712
     :cond_24
-    iget-object p2, v0, Landroidx/media3/common/SimpleBasePlayer$State;->availableCommands:Landroidx/media3/common/Player$Commands;
+    iget-object p3, v0, Landroidx/media3/common/SimpleBasePlayer$State;->availableCommands:Landroidx/media3/common/Player$Commands;
 
     .line 713
     .line 714
@@ -7461,27 +7464,27 @@
 
     .line 715
     .line 716
-    invoke-virtual {p2, v0}, Landroidx/media3/common/Player$Commands;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p3, v0}, Landroidx/media3/common/Player$Commands;->equals(Ljava/lang/Object;)Z
 
     .line 717
     .line 718
     .line 719
-    move-result p2
+    move-result p3
 
     .line 720
-    if-nez p2, :cond_25
+    if-nez p3, :cond_25
 
     .line 721
     .line 722
-    iget-object p2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
 
     .line 723
     .line 724
-    new-instance v0, Landroidx/media3/common/v0;
+    new-instance v0, Landroidx/media3/common/x0;
 
     .line 725
     .line 726
-    invoke-direct {v0, p1, p3}, Landroidx/media3/common/v0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v0, p1, p2}, Landroidx/media3/common/x0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 727
     .line 728
@@ -7490,7 +7493,7 @@
 
     .line 730
     .line 731
-    invoke-virtual {p2, p1, v0}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
+    invoke-virtual {p3, p1, v0}, Landroidx/media3/common/util/ListenerSet;->queueEvent(ILandroidx/media3/common/util/ListenerSet$Event;)V
 
     .line 732
     .line 733
@@ -7508,14 +7511,14 @@
     return-void
 .end method
 
-.method private updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+.method private updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/common/SimpleBasePlayer$State;",
             ">;)V"
         }
@@ -7524,19 +7527,19 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, p1, p2, v0, v0}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;ZZ)V
+    invoke-direct {p0, p1, p2, v0, v0}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;ZZ)V
 
     return-void
 .end method
 
-.method private updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;ZZ)V
+.method private updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;ZZ)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/common/SimpleBasePlayer$State;",
             ">;ZZ)V"
         }
@@ -7573,7 +7576,7 @@
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 5
-    invoke-interface {p2}, Lcom/google/common/base/x;->get()Ljava/lang/Object;
+    invoke-interface {p2}, Lcom/google/common/base/z;->get()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -7588,17 +7591,19 @@
     invoke-direct {p0, p2, p3, p4}, Landroidx/media3/common/SimpleBasePlayer;->updateStateAndInformListeners(Landroidx/media3/common/SimpleBasePlayer$State;ZZ)V
 
     .line 8
-    new-instance p2, Landroidx/constraintlayout/motion/widget/a;
+    new-instance p2, Landroidx/core/location/b;
 
     const/4 p3, 0x2
 
-    invoke-direct {p2, p3, p0, p1}, Landroidx/constraintlayout/motion/widget/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p2, p0, p1, p3}, Landroidx/core/location/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     new-instance p3, Landroidx/media3/common/y;
 
-    invoke-direct {p3, p0}, Landroidx/media3/common/y;-><init>(Landroidx/media3/common/SimpleBasePlayer;)V
+    const/4 p4, 0x0
 
-    invoke-interface {p1, p2, p3}, Lcom/google/common/util/concurrent/t;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    invoke-direct {p3, p0, p4}, Landroidx/media3/common/y;-><init>(Ljava/lang/Object;I)V
+
+    invoke-interface {p1, p2, p3}, Lcom/google/common/util/concurrent/x;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
     :goto_0
     return-void
@@ -7743,7 +7748,7 @@
 
     .line 9
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 10
     .line 11
@@ -7804,7 +7809,7 @@
     move-result p1
 
     .line 39
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleAddMediaItems(ILjava/util/List;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleAddMediaItems(ILjava/util/List;)Lcom/google/common/util/concurrent/x;
 
     .line 40
     .line 41
@@ -7812,16 +7817,16 @@
     move-result-object v1
 
     .line 43
-    new-instance v2, Landroidx/media3/common/z;
+    new-instance v2, Landroidx/media3/common/a0;
 
     .line 44
     .line 45
-    invoke-direct {v2, p0, v0, p2, p1}, Landroidx/media3/common/z;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;I)V
+    invoke-direct {v2, p0, v0, p2, p1}, Landroidx/media3/common/a0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;I)V
 
     .line 46
     .line 47
     .line 48
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 49
     .line 50
@@ -7929,16 +7934,18 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-virtual {p0, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleDecreaseDeviceVolume(I)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleDecreaseDeviceVolume(I)Lcom/google/common/util/concurrent/x;
 
-    move-result-object v2
+    move-result-object v1
 
-    new-instance v3, Landroidx/media3/common/s;
+    new-instance v2, Landroidx/media3/common/b0;
 
-    invoke-direct {v3, v0, v1}, Landroidx/media3/common/s;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v0, v3}, Landroidx/media3/common/b0;-><init>(Ljava/lang/Object;I)V
 
     .line 5
-    invoke-direct {p0, v2, v3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
@@ -7965,18 +7972,18 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleDecreaseDeviceVolume(I)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleDecreaseDeviceVolume(I)Lcom/google/common/util/concurrent/x;
 
     move-result-object p1
 
-    new-instance v1, Landroidx/media3/common/x;
+    new-instance v1, Landroidx/media3/common/b0;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
-    invoke-direct {v1, v0, v2}, Landroidx/media3/common/x;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    invoke-direct {v1, v0, v2}, Landroidx/media3/common/b0;-><init>(Ljava/lang/Object;I)V
 
     .line 10
-    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
@@ -8973,7 +8980,7 @@
     return v0
 .end method
 
-.method public handleAddMediaItems(ILjava/util/List;)Lcom/google/common/util/concurrent/t;
+.method public handleAddMediaItems(ILjava/util/List;)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -8981,7 +8988,7 @@
             "Ljava/util/List<",
             "Landroidx/media3/common/MediaItem;",
             ">;)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9003,7 +9010,7 @@
     throw p1
 .end method
 
-.method public handleClearVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+.method public handleClearVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .param p1    # Ljava/lang/Object;
         .annotation build Landroidx/annotation/Nullable;
@@ -9014,7 +9021,7 @@
             "(",
             "Ljava/lang/Object;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9036,12 +9043,12 @@
     throw p1
 .end method
 
-.method public handleDecreaseDeviceVolume(I)Lcom/google/common/util/concurrent/t;
+.method public handleDecreaseDeviceVolume(I)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9063,12 +9070,12 @@
     throw p1
 .end method
 
-.method public handleIncreaseDeviceVolume(I)Lcom/google/common/util/concurrent/t;
+.method public handleIncreaseDeviceVolume(I)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9090,12 +9097,12 @@
     throw p1
 .end method
 
-.method public handleMoveMediaItems(III)Lcom/google/common/util/concurrent/t;
+.method public handleMoveMediaItems(III)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9117,12 +9124,12 @@
     throw p1
 .end method
 
-.method public handlePrepare()Lcom/google/common/util/concurrent/t;
+.method public handlePrepare()Lcom/google/common/util/concurrent/x;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9144,12 +9151,12 @@
     throw v0
 .end method
 
-.method public handleRelease()Lcom/google/common/util/concurrent/t;
+.method public handleRelease()Lcom/google/common/util/concurrent/x;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9171,12 +9178,12 @@
     throw v0
 .end method
 
-.method public handleRemoveMediaItems(II)Lcom/google/common/util/concurrent/t;
+.method public handleRemoveMediaItems(II)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9198,21 +9205,21 @@
     throw p1
 .end method
 
-.method public handleReplaceMediaItems(IILjava/util/List;)Lcom/google/common/util/concurrent/t;
-    .locals 1
+.method public handleReplaceMediaItems(IILjava/util/List;)Lcom/google/common/util/concurrent/x;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
             "Ljava/util/List<",
             "Landroidx/media3/common/MediaItem;",
             ">;)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p2, p3}, Landroidx/media3/common/SimpleBasePlayer;->handleAddMediaItems(ILjava/util/List;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p2, p3}, Landroidx/media3/common/SimpleBasePlayer;->handleAddMediaItems(ILjava/util/List;)Lcom/google/common/util/concurrent/x;
 
     .line 2
     .line 3
@@ -9228,7 +9235,7 @@
 
     .line 8
     :cond_0
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleRemoveMediaItems(II)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleRemoveMediaItems(II)Lcom/google/common/util/concurrent/x;
 
     .line 9
     .line 10
@@ -9236,35 +9243,32 @@
     move-result-object p1
 
     .line 12
-    new-instance p2, Landroidx/media3/common/k;
+    new-instance p2, Landroidx/media3/common/n0;
 
     .line 13
     .line 14
-    const/4 v0, 0x1
+    invoke-direct {p2, p1}, Landroidx/media3/common/n0;-><init>(Lcom/google/common/util/concurrent/x;)V
 
     .line 15
-    invoke-direct {p2, p1, v0}, Landroidx/media3/common/k;-><init>(Ljava/lang/Object;I)V
-
     .line 16
     .line 17
-    .line 18
-    invoke-static {p3, p2}, Landroidx/media3/common/util/Util;->transformFutureAsync(Lcom/google/common/util/concurrent/t;Lcom/google/common/util/concurrent/g;)Lcom/google/common/util/concurrent/t;
+    invoke-static {p3, p2}, Landroidx/media3/common/util/Util;->transformFutureAsync(Lcom/google/common/util/concurrent/x;Lcom/google/common/util/concurrent/h;)Lcom/google/common/util/concurrent/x;
 
+    .line 18
     .line 19
     .line 20
-    .line 21
     move-result-object p1
 
-    .line 22
+    .line 21
     return-object p1
 .end method
 
-.method public handleSeek(IJI)Lcom/google/common/util/concurrent/t;
+.method public handleSeek(IJI)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IJI)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9286,14 +9290,14 @@
     throw p1
 .end method
 
-.method public handleSetAudioAttributes(Landroidx/media3/common/AudioAttributes;Z)Lcom/google/common/util/concurrent/t;
+.method public handleSetAudioAttributes(Landroidx/media3/common/AudioAttributes;Z)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/common/AudioAttributes;",
             "Z)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9315,12 +9319,12 @@
     throw p1
 .end method
 
-.method public handleSetDeviceMuted(ZI)Lcom/google/common/util/concurrent/t;
+.method public handleSetDeviceMuted(ZI)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZI)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9342,7 +9346,7 @@
     throw p1
 .end method
 
-.method public handleSetDeviceVolume(II)Lcom/google/common/util/concurrent/t;
+.method public handleSetDeviceVolume(II)Lcom/google/common/util/concurrent/x;
     .locals 0
     .param p1    # I
         .annotation build Landroidx/annotation/IntRange;
@@ -9352,7 +9356,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9374,7 +9378,7 @@
     throw p1
 .end method
 
-.method public handleSetMediaItems(Ljava/util/List;IJ)Lcom/google/common/util/concurrent/t;
+.method public handleSetMediaItems(Ljava/util/List;IJ)Lcom/google/common/util/concurrent/x;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -9382,7 +9386,7 @@
             "Ljava/util/List<",
             "Landroidx/media3/common/MediaItem;",
             ">;IJ)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9404,12 +9408,12 @@
     throw p1
 .end method
 
-.method public handleSetPlayWhenReady(Z)Lcom/google/common/util/concurrent/t;
+.method public handleSetPlayWhenReady(Z)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9431,14 +9435,14 @@
     throw p1
 .end method
 
-.method public handleSetPlaybackParameters(Landroidx/media3/common/PlaybackParameters;)Lcom/google/common/util/concurrent/t;
+.method public handleSetPlaybackParameters(Landroidx/media3/common/PlaybackParameters;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/common/PlaybackParameters;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9460,14 +9464,14 @@
     throw p1
 .end method
 
-.method public handleSetPlaylistMetadata(Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/t;
+.method public handleSetPlaylistMetadata(Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/common/MediaMetadata;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9489,12 +9493,12 @@
     throw p1
 .end method
 
-.method public handleSetRepeatMode(I)Lcom/google/common/util/concurrent/t;
+.method public handleSetRepeatMode(I)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9516,12 +9520,12 @@
     throw p1
 .end method
 
-.method public handleSetShuffleModeEnabled(Z)Lcom/google/common/util/concurrent/t;
+.method public handleSetShuffleModeEnabled(Z)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9543,14 +9547,14 @@
     throw p1
 .end method
 
-.method public handleSetTrackSelectionParameters(Landroidx/media3/common/TrackSelectionParameters;)Lcom/google/common/util/concurrent/t;
+.method public handleSetTrackSelectionParameters(Landroidx/media3/common/TrackSelectionParameters;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/common/TrackSelectionParameters;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9572,14 +9576,14 @@
     throw p1
 .end method
 
-.method public handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+.method public handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9601,7 +9605,7 @@
     throw p1
 .end method
 
-.method public handleSetVolume(F)Lcom/google/common/util/concurrent/t;
+.method public handleSetVolume(F)Lcom/google/common/util/concurrent/x;
     .locals 1
     .param p1    # F
         .annotation build Landroidx/annotation/FloatRange;
@@ -9612,7 +9616,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9630,7 +9634,7 @@
     throw p1
 .end method
 
-.method public handleSetVolume(FI)Lcom/google/common/util/concurrent/t;
+.method public handleSetVolume(FI)Lcom/google/common/util/concurrent/x;
     .locals 0
     .param p1    # F
         .annotation build Landroidx/annotation/FloatRange;
@@ -9641,25 +9645,25 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(FI)",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
 
     .line 2
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(F)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(F)Lcom/google/common/util/concurrent/x;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public handleStop()Lcom/google/common/util/concurrent/t;
+.method public handleStop()Lcom/google/common/util/concurrent/x;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/t<",
+            "Lcom/google/common/util/concurrent/x<",
             "*>;"
         }
     .end annotation
@@ -9707,24 +9711,22 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-virtual {p0, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleIncreaseDeviceVolume(I)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleIncreaseDeviceVolume(I)Lcom/google/common/util/concurrent/x;
 
-    move-result-object v1
+    move-result-object v2
 
-    new-instance v2, Landroidx/media3/common/v;
+    new-instance v3, Landroidx/media3/common/x;
 
-    const/4 v3, 0x3
-
-    invoke-direct {v2, v0, v3}, Landroidx/media3/common/v;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v3, v0, v1}, Landroidx/media3/common/x;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 5
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v2, v3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
 
 .method public final increaseDeviceVolume(I)V
-    .locals 3
+    .locals 2
 
     .line 6
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -9745,18 +9747,16 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleIncreaseDeviceVolume(I)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleIncreaseDeviceVolume(I)Lcom/google/common/util/concurrent/x;
 
     move-result-object p1
 
-    new-instance v1, Landroidx/media3/common/v;
+    new-instance v1, Landroidx/media3/common/z;
 
-    const/4 v2, 0x1
-
-    invoke-direct {v1, v0, v2}, Landroidx/media3/common/v;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v1, v0}, Landroidx/media3/common/z;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;)V
 
     .line 10
-    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
@@ -9929,7 +9929,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 14
     .line 15
@@ -10013,7 +10013,7 @@
 
     .line 53
     :cond_2
-    invoke-virtual {p0, p1, v5, v6}, Landroidx/media3/common/SimpleBasePlayer;->handleMoveMediaItems(III)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, v5, v6}, Landroidx/media3/common/SimpleBasePlayer;->handleMoveMediaItems(III)Lcom/google/common/util/concurrent/x;
 
     .line 54
     .line 55
@@ -10021,7 +10021,7 @@
     move-result-object p2
 
     .line 57
-    new-instance p3, Landroidx/media3/common/j0;
+    new-instance p3, Landroidx/media3/common/k0;
 
     .line 58
     .line 59
@@ -10034,12 +10034,12 @@
     move v4, p1
 
     .line 62
-    invoke-direct/range {v1 .. v6}, Landroidx/media3/common/j0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;III)V
+    invoke-direct/range {v1 .. v6}, Landroidx/media3/common/k0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;III)V
 
     .line 63
     .line 64
     .line 65
-    invoke-direct {p0, p2, p3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p2, p3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 66
     .line 67
@@ -10104,37 +10104,34 @@
     const/4 v1, 0x1
 
     .line 25
-    invoke-virtual {p0, v2, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(FI)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, v2, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(FI)Lcom/google/common/util/concurrent/x;
 
     .line 26
     .line 27
     .line 28
-    move-result-object v1
+    move-result-object v2
 
     .line 29
-    new-instance v2, Landroidx/media3/common/v;
+    new-instance v3, Landroidx/media3/common/s;
 
     .line 30
     .line 31
-    const/4 v3, 0x0
+    invoke-direct {v3, v0, v1}, Landroidx/media3/common/s;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 32
-    invoke-direct {v2, v0, v3}, Landroidx/media3/common/v;-><init>(Ljava/lang/Object;I)V
-
     .line 33
     .line 34
-    .line 35
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v2, v3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
+    .line 35
     .line 36
     .line 37
-    .line 38
     :cond_1
     return-void
 .end method
 
 .method public final prepare()V
-    .locals 3
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -10154,10 +10151,10 @@
     .line 8
     .line 9
     .line 10
-    move-result v1
+    move-result v2
 
     .line 11
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
     .line 12
     .line 13
@@ -10165,24 +10162,24 @@
 
     .line 14
     :cond_0
-    invoke-virtual {p0}, Landroidx/media3/common/SimpleBasePlayer;->handlePrepare()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0}, Landroidx/media3/common/SimpleBasePlayer;->handlePrepare()Lcom/google/common/util/concurrent/x;
 
     .line 15
     .line 16
     .line 17
-    move-result-object v1
+    move-result-object v2
 
     .line 18
-    new-instance v2, Landroidx/media3/common/o0;
+    new-instance v3, Landroidx/media3/common/x;
 
     .line 19
     .line 20
-    invoke-direct {v2, v0}, Landroidx/media3/common/o0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;)V
+    invoke-direct {v3, v0, v1}, Landroidx/media3/common/x;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
 
     .line 21
     .line 22
     .line 23
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v2, v3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 24
     .line 25
@@ -10223,7 +10220,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0}, Landroidx/media3/common/SimpleBasePlayer;->handleRelease()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0}, Landroidx/media3/common/SimpleBasePlayer;->handleRelease()Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -10231,134 +10228,131 @@
     move-result-object v1
 
     .line 19
-    new-instance v2, Landroidx/media3/common/v;
+    new-instance v2, Landroidx/media3/common/b0;
 
     .line 20
     .line 21
-    const/4 v3, 0x2
+    const/4 v3, 0x1
 
     .line 22
-    invoke-direct {v2, v0, v3}, Landroidx/media3/common/v;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v0, v3}, Landroidx/media3/common/b0;-><init>(Ljava/lang/Object;I)V
 
     .line 23
     .line 24
     .line 25
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 26
     .line 27
     .line 28
-    const/4 v1, 0x1
+    iput-boolean v3, p0, Landroidx/media3/common/SimpleBasePlayer;->released:Z
 
     .line 29
-    iput-boolean v1, p0, Landroidx/media3/common/SimpleBasePlayer;->released:Z
-
     .line 30
+    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
+
     .line 31
-    iget-object v2, p0, Landroidx/media3/common/SimpleBasePlayer;->listeners:Landroidx/media3/common/util/ListenerSet;
-
     .line 32
-    .line 33
-    invoke-virtual {v2}, Landroidx/media3/common/util/ListenerSet;->release()V
+    invoke-virtual {v1}, Landroidx/media3/common/util/ListenerSet;->release()V
 
+    .line 33
     .line 34
     .line 35
+    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer;->state:Landroidx/media3/common/SimpleBasePlayer$State;
+
     .line 36
-    iget-object v2, p0, Landroidx/media3/common/SimpleBasePlayer;->state:Landroidx/media3/common/SimpleBasePlayer$State;
-
     .line 37
-    .line 38
-    invoke-virtual {v2}, Landroidx/media3/common/SimpleBasePlayer$State;->buildUpon()Landroidx/media3/common/SimpleBasePlayer$State$Builder;
+    invoke-virtual {v1}, Landroidx/media3/common/SimpleBasePlayer$State;->buildUpon()Landroidx/media3/common/SimpleBasePlayer$State$Builder;
 
+    .line 38
     .line 39
     .line 40
+    move-result-object v1
+
     .line 41
-    move-result-object v2
+    invoke-virtual {v1, v3}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->setPlaybackState(I)Landroidx/media3/common/SimpleBasePlayer$State$Builder;
 
     .line 42
-    invoke-virtual {v2, v1}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->setPlaybackState(I)Landroidx/media3/common/SimpleBasePlayer$State$Builder;
-
     .line 43
     .line 44
-    .line 45
     move-result-object v1
 
-    .line 46
+    .line 45
     sget-object v2, Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;->ZERO:Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;
 
+    .line 46
     .line 47
-    .line 48
     invoke-virtual {v1, v2}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->setTotalBufferedDurationMs(Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;)Landroidx/media3/common/SimpleBasePlayer$State$Builder;
 
+    .line 48
     .line 49
     .line 50
-    .line 51
     move-result-object v1
 
-    .line 52
+    .line 51
     iget-object v2, p0, Landroidx/media3/common/BasePlayer;->window:Landroidx/media3/common/Timeline$Window;
 
+    .line 52
     .line 53
-    .line 54
     invoke-static {v0, v2}, Landroidx/media3/common/SimpleBasePlayer;->getContentPositionMsInternal(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Timeline$Window;)J
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     move-result-wide v2
 
-    .line 58
+    .line 57
     invoke-static {v2, v3}, Landroidx/media3/common/a1;->a(J)Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;
 
+    .line 58
     .line 59
     .line 60
-    .line 61
     move-result-object v2
 
-    .line 62
+    .line 61
     invoke-virtual {v1, v2}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->setContentBufferedPositionMs(Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;)Landroidx/media3/common/SimpleBasePlayer$State$Builder;
 
+    .line 62
     .line 63
     .line 64
-    .line 65
     move-result-object v1
 
-    .line 66
+    .line 65
     iget-object v0, v0, Landroidx/media3/common/SimpleBasePlayer$State;->adPositionMsSupplier:Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;
 
+    .line 66
     .line 67
-    .line 68
     invoke-virtual {v1, v0}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->setAdBufferedPositionMs(Landroidx/media3/common/SimpleBasePlayer$PositionSupplier;)Landroidx/media3/common/SimpleBasePlayer$State$Builder;
 
+    .line 68
     .line 69
     .line 70
-    .line 71
     move-result-object v0
 
-    .line 72
+    .line 71
     const/4 v1, 0x0
 
-    .line 73
+    .line 72
     invoke-virtual {v0, v1}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->setIsLoading(Z)Landroidx/media3/common/SimpleBasePlayer$State$Builder;
 
+    .line 73
     .line 74
     .line 75
-    .line 76
     move-result-object v0
 
-    .line 77
+    .line 76
     invoke-virtual {v0}, Landroidx/media3/common/SimpleBasePlayer$State$Builder;->build()Landroidx/media3/common/SimpleBasePlayer$State;
 
+    .line 77
     .line 78
     .line 79
-    .line 80
     move-result-object v0
 
-    .line 81
+    .line 80
     iput-object v0, p0, Landroidx/media3/common/SimpleBasePlayer;->state:Landroidx/media3/common/SimpleBasePlayer$State;
 
+    .line 81
     .line 82
-    .line 83
     return-void
 .end method
 
@@ -10411,7 +10405,7 @@
 
     .line 11
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 12
     .line 13
@@ -10476,7 +10470,7 @@
 
     .line 42
     :cond_2
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleRemoveMediaItems(II)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleRemoveMediaItems(II)Lcom/google/common/util/concurrent/x;
 
     .line 43
     .line 44
@@ -10484,16 +10478,16 @@
     move-result-object v1
 
     .line 46
-    new-instance v2, Landroidx/media3/common/l0;
+    new-instance v2, Landroidx/media3/common/m0;
 
     .line 47
     .line 48
-    invoke-direct {v2, p0, v0, p1, p2}, Landroidx/media3/common/l0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;II)V
+    invoke-direct {v2, p0, v0, p1, p2}, Landroidx/media3/common/m0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;II)V
 
     .line 49
     .line 50
     .line 51
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 52
     .line 53
@@ -10539,7 +10533,7 @@
 
     .line 11
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 12
     .line 13
@@ -10592,7 +10586,7 @@
     move-result v5
 
     .line 37
-    invoke-virtual {p0, p1, v5, p3}, Landroidx/media3/common/SimpleBasePlayer;->handleReplaceMediaItems(IILjava/util/List;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, v5, p3}, Landroidx/media3/common/SimpleBasePlayer;->handleReplaceMediaItems(IILjava/util/List;)Lcom/google/common/util/concurrent/x;
 
     .line 38
     .line 39
@@ -10600,7 +10594,7 @@
     move-result-object p2
 
     .line 41
-    new-instance v0, Landroidx/media3/common/u;
+    new-instance v0, Landroidx/media3/common/v;
 
     .line 42
     .line 43
@@ -10616,12 +10610,12 @@
     move v6, p1
 
     .line 47
-    invoke-direct/range {v1 .. v6}, Landroidx/media3/common/u;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;II)V
+    invoke-direct/range {v1 .. v6}, Landroidx/media3/common/v;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;II)V
 
     .line 48
     .line 49
     .line 50
-    invoke-direct {p0, p2, v0}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p2, v0}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 51
     .line 52
@@ -10679,7 +10673,7 @@
 
     .line 17
     :goto_1
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 18
     .line 19
@@ -10772,7 +10766,7 @@
 
     .line 59
     :goto_3
-    invoke-virtual/range {p0 .. p4}, Landroidx/media3/common/SimpleBasePlayer;->handleSeek(IJI)Lcom/google/common/util/concurrent/t;
+    invoke-virtual/range {p0 .. p4}, Landroidx/media3/common/SimpleBasePlayer;->handleSeek(IJI)Lcom/google/common/util/concurrent/x;
 
     .line 60
     .line 61
@@ -10780,7 +10774,7 @@
     move-result-object v10
 
     .line 63
-    new-instance v11, Landroidx/media3/common/k0;
+    new-instance v11, Landroidx/media3/common/l0;
 
     .line 64
     .line 65
@@ -10799,7 +10793,7 @@
     move-wide v5, p2
 
     .line 70
-    invoke-direct/range {v0 .. v6}, Landroidx/media3/common/k0;-><init>(Landroidx/media3/common/SimpleBasePlayer;ZLandroidx/media3/common/SimpleBasePlayer$State;IJ)V
+    invoke-direct/range {v0 .. v6}, Landroidx/media3/common/l0;-><init>(Landroidx/media3/common/SimpleBasePlayer;ZLandroidx/media3/common/SimpleBasePlayer$State;IJ)V
 
     .line 71
     .line 72
@@ -10812,7 +10806,7 @@
 
     .line 76
     .line 77
-    invoke-direct {p0, v10, v11, v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;ZZ)V
+    invoke-direct {p0, v10, v11, v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;ZZ)V
 
     .line 78
     .line 79
@@ -10853,7 +10847,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetAudioAttributes(Landroidx/media3/common/AudioAttributes;Z)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetAudioAttributes(Landroidx/media3/common/AudioAttributes;Z)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -10861,19 +10855,19 @@
     move-result-object p2
 
     .line 19
-    new-instance v1, Landroidx/media3/common/e0;
+    new-instance v1, Landroidx/media3/common/r0;
 
     .line 20
     .line 21
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     .line 22
-    invoke-direct {v1, v0, p1, v2}, Landroidx/media3/common/e0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Ljava/lang/Object;I)V
+    invoke-direct {v1, v0, p1, v2}, Landroidx/media3/common/r0;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 23
     .line 24
     .line 25
-    invoke-direct {p0, p2, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p2, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 26
     .line 27
@@ -10907,22 +10901,24 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-virtual {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceMuted(ZI)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceMuted(ZI)Lcom/google/common/util/concurrent/x;
 
-    move-result-object v2
+    move-result-object v1
 
-    new-instance v3, Landroidx/media3/common/a0;
+    new-instance v2, Landroidx/media3/common/j0;
 
-    invoke-direct {v3, v0, p1, v1}, Landroidx/media3/common/a0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;ZI)V
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/j0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;ZI)V
 
     .line 5
-    invoke-direct {p0, v2, v3}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
 
 .method public final setDeviceMuted(ZI)V
-    .locals 2
+    .locals 3
 
     .line 6
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -10943,22 +10939,24 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceMuted(ZI)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceMuted(ZI)Lcom/google/common/util/concurrent/x;
 
     move-result-object p2
 
-    new-instance v1, Landroidx/media3/common/q0;
+    new-instance v1, Landroidx/media3/common/j0;
 
-    invoke-direct {v1, v0, p1}, Landroidx/media3/common/q0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Z)V
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v0, p1, v2}, Landroidx/media3/common/j0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;ZI)V
 
     .line 10
-    invoke-direct {p0, p2, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p2, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
 
 .method public final setDeviceVolume(I)V
-    .locals 3
+    .locals 4
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -10983,22 +10981,24 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-virtual {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceVolume(II)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceVolume(II)Lcom/google/common/util/concurrent/x;
 
     move-result-object v1
 
-    new-instance v2, Landroidx/media3/common/n0;
+    new-instance v2, Landroidx/media3/common/o0;
 
-    invoke-direct {v2, v0, p1}, Landroidx/media3/common/n0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/o0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;II)V
 
     .line 5
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
 
 .method public final setDeviceVolume(II)V
-    .locals 2
+    .locals 3
 
     .line 6
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -11019,16 +11019,18 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceVolume(II)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, p2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetDeviceVolume(II)Lcom/google/common/util/concurrent/x;
 
     move-result-object p2
 
-    new-instance v1, Landroidx/media3/common/b0;
+    new-instance v1, Landroidx/media3/common/o0;
 
-    invoke-direct {v1, v0, p1}, Landroidx/media3/common/b0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
+    const/4 v2, 0x1
+
+    invoke-direct {v1, v0, p1, v2}, Landroidx/media3/common/o0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;II)V
 
     .line 10
-    invoke-direct {p0, p2, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p2, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     return-void
 .end method
@@ -11125,7 +11127,7 @@
 .end method
 
 .method public final setPlayWhenReady(Z)V
-    .locals 3
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -11156,7 +11158,7 @@
 
     .line 14
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetPlayWhenReady(Z)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetPlayWhenReady(Z)Lcom/google/common/util/concurrent/x;
 
     .line 15
     .line 16
@@ -11164,25 +11166,28 @@
     move-result-object v1
 
     .line 18
-    new-instance v2, Landroidx/media3/common/c0;
+    new-instance v2, Landroidx/media3/common/d0;
 
     .line 19
     .line 20
-    invoke-direct {v2, v0, p1}, Landroidx/media3/common/c0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Z)V
+    const/4 v3, 0x0
 
     .line 21
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/d0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;ZI)V
+
     .line 22
     .line 23
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
-
     .line 24
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
+
     .line 25
     .line 26
+    .line 27
     return-void
 .end method
 
 .method public final setPlaybackParameters(Landroidx/media3/common/PlaybackParameters;)V
-    .locals 3
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -11214,7 +11219,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetPlaybackParameters(Landroidx/media3/common/PlaybackParameters;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetPlaybackParameters(Landroidx/media3/common/PlaybackParameters;)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -11222,25 +11227,28 @@
     move-result-object v1
 
     .line 19
-    new-instance v2, Landroidx/media3/common/p0;
+    new-instance v2, Landroidx/media3/common/i0;
 
     .line 20
     .line 21
-    invoke-direct {v2, v0, p1}, Landroidx/media3/common/p0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/PlaybackParameters;)V
+    const/4 v3, 0x1
 
     .line 22
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/i0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Ljava/lang/Object;I)V
+
     .line 23
     .line 24
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
-
     .line 25
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
+
     .line 26
     .line 27
+    .line 28
     return-void
 .end method
 
 .method public final setPlaylistMetadata(Landroidx/media3/common/MediaMetadata;)V
-    .locals 4
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Landroidx/media3/common/SimpleBasePlayer;->verifyApplicationThreadAndInitState()V
@@ -11272,7 +11280,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetPlaylistMetadata(Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetPlaylistMetadata(Landroidx/media3/common/MediaMetadata;)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -11284,19 +11292,16 @@
 
     .line 20
     .line 21
-    const/4 v3, 0x0
+    invoke-direct {v2, v0, p1}, Landroidx/media3/common/e0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/MediaMetadata;)V
 
     .line 22
-    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/e0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Ljava/lang/Object;I)V
-
     .line 23
     .line 24
-    .line 25
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     return-void
 .end method
 
@@ -11333,7 +11338,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetRepeatMode(I)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetRepeatMode(I)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -11350,7 +11355,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 25
     .line 26
@@ -11391,7 +11396,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetShuffleModeEnabled(Z)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetShuffleModeEnabled(Z)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -11399,19 +11404,19 @@
     move-result-object v1
 
     .line 19
-    new-instance v2, Landroidx/media3/common/a0;
+    new-instance v2, Landroidx/media3/common/d0;
 
     .line 20
     .line 21
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     .line 22
-    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/a0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;ZI)V
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/d0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;ZI)V
 
     .line 23
     .line 24
     .line 25
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 26
     .line 27
@@ -11452,7 +11457,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetTrackSelectionParameters(Landroidx/media3/common/TrackSelectionParameters;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetTrackSelectionParameters(Landroidx/media3/common/TrackSelectionParameters;)Lcom/google/common/util/concurrent/x;
 
     .line 16
     .line 17
@@ -11460,16 +11465,16 @@
     move-result-object v1
 
     .line 19
-    new-instance v2, Landroidx/media3/common/m0;
+    new-instance v2, Landroidx/media3/common/q0;
 
     .line 20
     .line 21
-    invoke-direct {v2, v0, p1}, Landroidx/media3/common/m0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/TrackSelectionParameters;)V
+    invoke-direct {v2, v0, p1}, Landroidx/media3/common/q0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/TrackSelectionParameters;)V
 
     .line 22
     .line 23
     .line 24
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 25
     .line 26
@@ -11527,7 +11532,7 @@
 
     .line 21
     :cond_1
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
 
     .line 22
     .line 23
@@ -11547,7 +11552,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 32
     .line 33
@@ -11605,7 +11610,7 @@
 
     .line 21
     :cond_1
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
 
     .line 22
     .line 23
@@ -11622,7 +11627,7 @@
     .line 28
     .line 29
     .line 30
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 31
     .line 32
@@ -11680,7 +11685,7 @@
 
     .line 21
     :cond_1
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
 
     .line 22
     .line 23
@@ -11688,19 +11693,19 @@
     move-result-object v1
 
     .line 25
-    new-instance v2, Landroidx/media3/common/e0;
+    new-instance v2, Landroidx/media3/common/i0;
 
     .line 26
     .line 27
-    const/4 v3, 0x1
+    const/4 v3, 0x0
 
     .line 28
-    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/e0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Ljava/lang/Object;I)V
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/common/i0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Ljava/lang/Object;I)V
 
     .line 29
     .line 30
     .line 31
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 32
     .line 33
@@ -11804,7 +11809,7 @@
     .line 42
     .line 43
     :goto_0
-    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVideoOutput(Ljava/lang/Object;)Lcom/google/common/util/concurrent/x;
 
     .line 44
     .line 45
@@ -11816,16 +11821,19 @@
 
     .line 48
     .line 49
-    invoke-direct {v2, v0, v1}, Landroidx/media3/common/r0;-><init>(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/util/Size;)V
+    const/4 v3, 0x0
 
     .line 50
+    invoke-direct {v2, v0, v1, v3}, Landroidx/media3/common/r0;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 51
     .line 52
-    invoke-direct {p0, p1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
-
     .line 53
+    invoke-direct {p0, p1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
+
     .line 54
     .line 55
+    .line 56
     return-void
 .end method
 
@@ -11865,7 +11873,7 @@
     const/4 v1, 0x0
 
     .line 16
-    invoke-virtual {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(FI)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, p1, v1}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(FI)Lcom/google/common/util/concurrent/x;
 
     .line 17
     .line 18
@@ -11882,7 +11890,7 @@
     .line 23
     .line 24
     .line 25
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 26
     .line 27
@@ -11922,7 +11930,7 @@
 
     .line 14
     :cond_0
-    invoke-virtual {p0}, Landroidx/media3/common/SimpleBasePlayer;->handleStop()Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0}, Landroidx/media3/common/SimpleBasePlayer;->handleStop()Lcom/google/common/util/concurrent/x;
 
     .line 15
     .line 16
@@ -11930,16 +11938,16 @@
     move-result-object v1
 
     .line 18
-    new-instance v2, Landroidx/media3/common/m0;
+    new-instance v2, Landroidx/media3/common/p0;
 
     .line 19
     .line 20
-    invoke-direct {v2, p0, v0}, Landroidx/media3/common/m0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;)V
+    invoke-direct {v2, p0, v0}, Landroidx/media3/common/p0;-><init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;)V
 
     .line 21
     .line 22
     .line 23
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 24
     .line 25
@@ -12006,7 +12014,7 @@
     const/4 v2, 0x2
 
     .line 27
-    invoke-virtual {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(FI)Lcom/google/common/util/concurrent/t;
+    invoke-virtual {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->handleSetVolume(FI)Lcom/google/common/util/concurrent/x;
 
     .line 28
     .line 29
@@ -12026,7 +12034,7 @@
     .line 35
     .line 36
     .line 37
-    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/t;Lcom/google/common/base/x;)V
+    invoke-direct {p0, v1, v2}, Landroidx/media3/common/SimpleBasePlayer;->updateStateForPendingOperation(Lcom/google/common/util/concurrent/x;Lcom/google/common/base/z;)V
 
     .line 38
     .line 39

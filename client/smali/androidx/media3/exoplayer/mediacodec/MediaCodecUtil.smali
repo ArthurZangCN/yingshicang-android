@@ -83,11 +83,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;Ljava/lang/Object;Ljava/lang/Object;)I
+.method public static synthetic a(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$sortByScore$4(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;Ljava/lang/Object;Ljava/lang/Object;)I
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$getDecoderInfosSortedByFullFormatSupport$1(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
 
     move-result p0
 
@@ -249,7 +249,7 @@
     .line 67
     .line 68
     :cond_0
-    new-instance p0, Landroidx/media3/exoplayer/mediacodec/t;
+    new-instance p0, Landroidx/media3/exoplayer/mediacodec/s;
 
     .line 69
     .line 70
@@ -437,22 +437,22 @@
     .end sparse-switch
 .end method
 
-.method public static synthetic b(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+.method public static synthetic b(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$getDecoderInfosSortedBySoftwareOnly$2(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$sortByScore$4(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static synthetic c(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+.method public static synthetic c(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$getDecoderInfosSortedByFormatSupport$0(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$getDecoderInfosSortedBySoftwareOnly$2(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
 
     move-result p0
 
@@ -526,22 +526,22 @@
     return-object v0
 .end method
 
-.method public static synthetic d(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+.method public static synthetic d(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$applyWorkarounds$3(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$getDecoderInfosSortedByFormatSupport$0(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static synthetic e(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+.method public static synthetic e(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$getDecoderInfosSortedByFullFormatSupport$1(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->lambda$applyWorkarounds$3(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
 
     move-result p0
 
@@ -748,7 +748,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -1407,7 +1407,7 @@
     .line 106
     .line 107
     .line 108
-    invoke-static {p2}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 109
     .line 110
@@ -2247,7 +2247,7 @@
     move-result-object p0
 
     .line 11
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 12
     .line 13
@@ -2255,17 +2255,17 @@
     move-result-object p1
 
     .line 15
-    invoke-virtual {p1, v0}, Lcom/google/common/collect/d2$a;->h(Ljava/lang/Iterable;)V
+    invoke-virtual {p1, v0}, Lcom/google/common/collect/c2$a;->g(Ljava/lang/Iterable;)V
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p1, p0}, Lcom/google/common/collect/d2$a;->h(Ljava/lang/Iterable;)V
+    invoke-virtual {p1, p0}, Lcom/google/common/collect/c2$a;->g(Ljava/lang/Iterable;)V
 
     .line 19
     .line 20
     .line 21
-    invoke-virtual {p1}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {p1}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 22
     .line 23
@@ -2276,7 +2276,7 @@
     return-object p0
 .end method
 
-.method public static getDecoderInfosSortedByFormatSupport(Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
+.method public static getDecoderInfosSortedByFormatSupport(Landroid/content/Context;Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
     .locals 1
     .annotation build Landroidx/annotation/CheckResult;
     .end annotation
@@ -2284,6 +2284,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroid/content/Context;",
             "Ljava/util/List<",
             "Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;",
             ">;",
@@ -2300,21 +2301,21 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 4
     .line 5
     .line 6
-    new-instance p0, Landroidx/media3/exoplayer/mediacodec/u;
+    new-instance p1, Landroidx/media3/exoplayer/mediacodec/r;
 
     .line 7
     .line 8
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/mediacodec/u;-><init>(Landroidx/media3/common/Format;)V
+    invoke-direct {p1, p0, p2}, Landroidx/media3/exoplayer/mediacodec/r;-><init>(Landroid/content/Context;Landroidx/media3/common/Format;)V
 
     .line 9
     .line 10
     .line 11
-    invoke-static {v0, p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->sortByScore(Ljava/util/List;Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->sortByScore(Ljava/util/List;Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
 
     .line 12
     .line 13
@@ -2322,7 +2323,7 @@
     return-object v0
 .end method
 
-.method public static getDecoderInfosSortedByFullFormatSupport(Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
+.method public static getDecoderInfosSortedByFullFormatSupport(Landroid/content/Context;Ljava/util/List;Landroidx/media3/common/Format;)Ljava/util/List;
     .locals 1
     .annotation build Landroidx/annotation/CheckResult;
     .end annotation
@@ -2330,6 +2331,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroid/content/Context;",
             "Ljava/util/List<",
             "Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;",
             ">;",
@@ -2346,21 +2348,21 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 4
     .line 5
     .line 6
-    new-instance p0, Landroidx/media3/exoplayer/mediacodec/r;
+    new-instance p1, Landroidx/media3/exoplayer/mediacodec/p;
 
     .line 7
     .line 8
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/mediacodec/r;-><init>(Landroidx/media3/common/Format;)V
+    invoke-direct {p1, p0, p2}, Landroidx/media3/exoplayer/mediacodec/p;-><init>(Landroid/content/Context;Landroidx/media3/common/Format;)V
 
     .line 9
     .line 10
     .line 11
-    invoke-static {v0, p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->sortByScore(Ljava/util/List;Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->sortByScore(Ljava/util/List;Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
 
     .line 12
     .line 13
@@ -2395,7 +2397,7 @@
     .line 4
     .line 5
     .line 6
-    new-instance p0, Landroidx/media3/exoplayer/mediacodec/q;
+    new-instance p0, Landroidx/media3/exoplayer/mediacodec/o;
 
     .line 7
     .line 8
@@ -2409,7 +2411,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 15
     .line 16
@@ -2569,7 +2571,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/activity/h;->r(Landroid/media/MediaCodecInfo;)Z
+    invoke-static {p0}, Landroid/support/v4/media/session/h;->v(Landroid/media/MediaCodecInfo;)Z
 
     .line 2
     .line 3
@@ -2931,7 +2933,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/l;->j(Landroid/media/MediaCodecInfo;)Z
+    invoke-static {p0}, Landroid/support/v4/media/session/f;->r(Landroid/media/MediaCodecInfo;)Z
 
     .line 2
     .line 3
@@ -2997,7 +2999,7 @@
     move-result-object p0
 
     .line 24
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -3192,7 +3194,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroid/support/v4/media/session/a;->r(Landroid/media/MediaCodecInfo;)Z
+    invoke-static {p0}, Landroidx/activity/g;->s(Landroid/media/MediaCodecInfo;)Z
 
     .line 2
     .line 3
@@ -3239,7 +3241,7 @@
     move-result-object p0
 
     .line 16
-    invoke-static {p0}, Lcom/blankj/utilcode/util/i;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/common/base/j;->K(Ljava/lang/String;)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -3316,7 +3318,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/m;->b(Landroid/media/MediaCodecInfo;)Z
+    invoke-static {p0}, Landroidx/media3/exoplayer/mediacodec/l;->c(Landroid/media/MediaCodecInfo;)Z
 
     .line 2
     .line 3
@@ -3420,11 +3422,11 @@
     return p0
 .end method
 
-.method private static synthetic lambda$getDecoderInfosSortedByFormatSupport$0(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+.method private static synthetic lambda$getDecoderInfosSortedByFormatSupport$0(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p1, p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatFunctionallySupported(Landroidx/media3/common/Format;)Z
+    invoke-virtual {p2, p0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatFunctionallySupported(Landroid/content/Context;Landroidx/media3/common/Format;)Z
 
     .line 2
     .line 3
@@ -3435,28 +3437,18 @@
     return p0
 .end method
 
-.method private static synthetic lambda$getDecoderInfosSortedByFullFormatSupport$1(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+.method private static synthetic lambda$getDecoderInfosSortedByFullFormatSupport$1(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
     .locals 0
 
     .line 1
-    :try_start_0
-    invoke-virtual {p1, p0}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroidx/media3/common/Format;)Z
+    invoke-virtual {p2, p0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;->isFormatSupported(Landroid/content/Context;Landroidx/media3/common/Format;)Z
 
     .line 2
     .line 3
     .line 4
     move-result p0
-    :try_end_0
-    .catch Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$DecoderQueryException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 5
-    return p0
-
-    .line 6
-    :catch_0
-    const/4 p0, -0x1
-
-    .line 7
     return p0
 .end method
 
@@ -3649,11 +3641,11 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/mediacodec/s;
+    new-instance v0, Landroidx/media3/exoplayer/mediacodec/q;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Landroidx/media3/exoplayer/mediacodec/s;-><init>(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
+    invoke-direct {v0, p1}, Landroidx/media3/exoplayer/mediacodec/q;-><init>(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
 
     .line 4
     .line 5

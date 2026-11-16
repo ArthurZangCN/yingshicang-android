@@ -3,38 +3,58 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsCollector;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/j;->a:Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
+    iput p2, p0, Landroidx/media3/exoplayer/j;->a:I
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/j;->b:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final run()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/j;->a:Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
+    iget v0, p0, Landroidx/media3/exoplayer/j;->a:I
 
-    check-cast p1, Landroidx/media3/common/util/Clock;
+    iget-object v1, p0, Landroidx/media3/exoplayer/j;->b:Ljava/lang/Object;
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->o(Landroidx/media3/exoplayer/analytics/AnalyticsCollector;Landroidx/media3/common/util/Clock;)Landroidx/media3/exoplayer/analytics/AnalyticsCollector;
+    packed-switch v0, :pswitch_data_0
 
-    move-result-object p1
+    check-cast v1, Landroidx/media3/exoplayer/StreamVolumeManager$VolumeChangeReceiver;
 
-    return-object p1
+    invoke-static {v1}, Landroidx/media3/exoplayer/StreamVolumeManager$VolumeChangeReceiver;->a(Landroidx/media3/exoplayer/StreamVolumeManager$VolumeChangeReceiver;)V
+
+    return-void
+
+    :pswitch_0
+    check-cast v1, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi35;
+
+    invoke-static {v1}, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi35;->a(Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi35;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -52,10 +52,10 @@
 
 .field private final periodPositionInWindowUs:[J
 
-.field public final periods:Lcom/google/common/collect/f2;
+.field public final periods:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/SimpleBasePlayer$PeriodData;",
             ">;"
         }
@@ -113,7 +113,7 @@
     const-string v5, "presentationStartTimeMs can only be set if liveConfiguration != null"
 
     .line 5
-    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 6
     invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;->access$5700(Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;)J
@@ -135,7 +135,7 @@
     const-string v5, "windowStartTimeMs can only be set if liveConfiguration != null"
 
     .line 7
-    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 8
     invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;->access$5800(Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;)J
@@ -157,7 +157,7 @@
     const-string v5, "elapsedRealtimeEpochOffsetMs can only be set if liveConfiguration != null"
 
     .line 9
-    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     goto :goto_4
 
@@ -204,12 +204,12 @@
     const-string v5, "windowStartTimeMs can\'t be less than presentationStartTimeMs"
 
     .line 13
-    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 14
     :cond_5
     :goto_4
-    invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;->access$5900(Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;->access$5900(Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
@@ -250,7 +250,7 @@
     const-string v2, "defaultPositionUs can\'t be greater than durationUs"
 
     .line 17
-    invoke-static {v1, v2}, Lcom/github/tvbox/osc/util/t;->i(ZLjava/lang/Object;)V
+    invoke-static {v1, v2}, Lcom/github/tvbox/osc/util/h0;->m(ZLjava/lang/Object;)V
 
     .line 18
     :cond_7
@@ -359,11 +359,11 @@
     iput-boolean v5, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->isPlaceholder:Z
 
     .line 33
-    invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;->access$5900(Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;->access$5900(Landroidx/media3/common/SimpleBasePlayer$MediaItemData$Builder;)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 34
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
@@ -398,7 +398,7 @@
 
     aget-wide v5, p1, v4
 
-    iget-object v2, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -528,7 +528,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 17
     .line 18
@@ -620,7 +620,7 @@
     move-result-object v3
 
     .line 63
-    invoke-virtual {p1, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {p1, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 64
     .line 65
@@ -778,7 +778,7 @@
     move-result-object p2
 
     .line 140
-    invoke-virtual {p1}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {p1}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 141
     .line 142
@@ -870,7 +870,7 @@
     .locals 11
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -931,7 +931,7 @@
 
     .line 29
     :cond_0
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 30
     .line 31
@@ -1002,7 +1002,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1026,7 +1026,7 @@
 
     .line 12
     :cond_0
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 13
     .line 14
@@ -1073,7 +1073,7 @@
 
     .line 4
     .line 5
-    iget-object v2, v0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v2, v0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -1101,7 +1101,7 @@
 
     .line 18
     :cond_0
-    iget-object v2, v0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v2, v0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -1349,7 +1349,7 @@
 
     .line 46
     .line 47
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 48
     .line 49
@@ -1369,7 +1369,7 @@
 
     .line 56
     .line 57
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 58
     .line 59
@@ -1389,7 +1389,7 @@
 
     .line 66
     .line 67
-    invoke-static {v1, v3}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 68
     .line 69
@@ -1533,15 +1533,15 @@
 
     .line 138
     .line 139
-    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 140
     .line 141
-    iget-object p1, p1, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object p1, p1, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 142
     .line 143
-    invoke-virtual {v1, p1}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 144
     .line 145
@@ -1882,11 +1882,11 @@
 
     .line 138
     .line 139
-    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 140
     .line 141
-    invoke-virtual {v1}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v1}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 142
     .line 143

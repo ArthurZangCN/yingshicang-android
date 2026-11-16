@@ -126,11 +126,11 @@
     move-result-object v0
 
     .line 14
-    new-instance v1, Landroidx/media3/exoplayer/t0;
+    new-instance v1, Landroidx/media3/exoplayer/x0;
 
     .line 15
     .line 16
-    invoke-direct {v1, p0, p2, p1, p3}, Landroidx/media3/exoplayer/t0;-><init>(Landroid/content/Context;ZLandroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/exoplayer/analytics/PlayerId;)V
+    invoke-direct {v1, p0, p2, p1, p3}, Landroidx/media3/exoplayer/x0;-><init>(Landroid/content/Context;ZLandroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/exoplayer/analytics/PlayerId;)V
 
     .line 17
     .line 18

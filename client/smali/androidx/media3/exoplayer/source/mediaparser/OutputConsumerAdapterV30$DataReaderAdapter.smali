@@ -60,7 +60,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Landroidx/core/view/n;->h(Ljava/lang/Object;)Landroid/media/MediaParser$InputReader;
+    invoke-static {v0}, Landroidx/core/content/pm/i;->g(Ljava/lang/Object;)Landroid/media/MediaParser$InputReader;
 
     .line 8
     .line 9
@@ -68,7 +68,7 @@
     move-result-object v0
 
     .line 11
-    invoke-static {v0, p1, p2, p3}, Landroidx/core/view/o;->c(Landroid/media/MediaParser$InputReader;[BII)I
+    invoke-static {v0, p1, p2, p3}, Landroidx/core/view/n;->d(Landroid/media/MediaParser$InputReader;[BII)I
 
     .line 12
     .line 13

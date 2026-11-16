@@ -67,14 +67,12 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     const/4 v0, 0x0
 
-    const/4 v1, 0x1
-
     .line 1
-    invoke-direct {p0, v0, v1}, Landroidx/media3/exoplayer/hls/DefaultHlsExtractorFactory;-><init>(IZ)V
+    invoke-direct {p0, v0, v0}, Landroidx/media3/exoplayer/hls/DefaultHlsExtractorFactory;-><init>(IZ)V
 
     return-void
 .end method
@@ -134,7 +132,7 @@
     const/4 v2, 0x0
 
     .line 5
-    invoke-static {v0, p0, v2, v1}, Lcom/google/common/primitives/b;->m([IIII)I
+    invoke-static {p0, v2, v1, v0}, Lcom/google/common/primitives/b;->r(III[I)I
 
     .line 6
     .line 7
@@ -517,7 +515,7 @@
 
     .line 29
     :cond_2
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 30
     .line 31
@@ -652,7 +650,7 @@
     move-result p1
 
     .line 40
-    if-nez p1, :cond_3
+    if-nez p1, :cond_2
 
     .line 41
     .line 42
@@ -665,105 +663,82 @@
     .line 45
     .line 46
     .line 47
-    move-result p1
+    const-string p1, "video/avc"
 
     .line 48
-    if-nez p1, :cond_2
-
     .line 49
-    .line 50
-    or-int/lit8 v0, v0, 0x2
+    invoke-static {p0, p1}, Landroidx/media3/common/MimeTypes;->containsCodecsCorrespondingToMimeType(Ljava/lang/String;Ljava/lang/String;)Z
 
+    .line 50
     .line 51
     .line 52
     :cond_2
-    const-string p1, "video/avc"
+    if-nez p6, :cond_3
 
     .line 53
     .line 54
-    invoke-static {p0, p1}, Landroidx/media3/common/MimeTypes;->containsCodecsCorrespondingToMimeType(Ljava/lang/String;Ljava/lang/String;)Z
+    sget-object p5, Landroidx/media3/extractor/text/SubtitleParser$Factory;->UNSUPPORTED:Landroidx/media3/extractor/text/SubtitleParser$Factory;
 
     .line 55
     .line 56
-    .line 57
-    move-result p0
-
-    .line 58
-    if-nez p0, :cond_3
-
-    .line 59
-    .line 60
-    or-int/lit8 v0, v0, 0x4
-
-    .line 61
-    .line 62
-    :cond_3
-    if-nez p6, :cond_4
-
-    .line 63
-    .line 64
-    sget-object p5, Landroidx/media3/extractor/text/SubtitleParser$Factory;->UNSUPPORTED:Landroidx/media3/extractor/text/SubtitleParser$Factory;
-
-    .line 65
-    .line 66
     const/4 p0, 0x1
 
-    .line 67
+    .line 57
     :goto_1
     move v3, p0
 
-    .line 68
+    .line 58
     move-object v4, p5
 
-    .line 69
+    .line 59
     goto :goto_2
 
-    .line 70
-    :cond_4
+    .line 60
+    :cond_3
     const/4 p0, 0x0
 
-    .line 71
+    .line 61
     goto :goto_1
 
-    .line 72
+    .line 62
     :goto_2
     new-instance p0, Landroidx/media3/extractor/ts/TsExtractor;
 
-    .line 73
-    .line 74
+    .line 63
+    .line 64
     new-instance v6, Landroidx/media3/extractor/ts/DefaultTsPayloadReaderFactory;
 
-    .line 75
-    .line 76
+    .line 65
+    .line 66
     invoke-direct {v6, v0, p3}, Landroidx/media3/extractor/ts/DefaultTsPayloadReaderFactory;-><init>(ILjava/util/List;)V
 
-    .line 77
-    .line 78
-    .line 79
+    .line 67
+    .line 68
+    .line 69
     const v7, 0x1b8a0
 
-    .line 80
-    .line 81
-    .line 82
+    .line 70
+    .line 71
+    .line 72
     const/4 v2, 0x2
 
-    .line 83
+    .line 73
     move-object v1, p0
 
-    .line 84
+    .line 74
     move-object v5, p4
 
-    .line 85
+    .line 75
     invoke-direct/range {v1 .. v7}, Landroidx/media3/extractor/ts/TsExtractor;-><init>(IILandroidx/media3/extractor/text/SubtitleParser$Factory;Landroidx/media3/common/util/TimestampAdjuster;Landroidx/media3/extractor/ts/TsPayloadReader$Factory;I)V
 
-    .line 86
-    .line 87
-    .line 88
+    .line 76
+    .line 77
+    .line 78
     return-object p0
 .end method
 
 .method private static isFmp4Variant(Landroidx/media3/common/Format;)Z
-    .locals 3
+    .locals 4
 
     .line 1
     iget-object p0, p0, Landroidx/media3/common/Format;->metadata:Landroidx/media3/common/Metadata;
@@ -781,34 +756,37 @@
 
     .line 7
     :cond_0
-    new-instance v1, Landroidx/media3/exoplayer/hls/a;
+    new-instance v1, Landroidx/media3/exoplayer/hls/t;
 
     .line 8
     .line 9
-    invoke-direct {v1, v0}, Landroidx/media3/exoplayer/hls/a;-><init>(I)V
+    const/4 v2, 0x1
 
     .line 10
+    invoke-direct {v1, v2}, Landroidx/media3/exoplayer/hls/t;-><init>(I)V
+
     .line 11
     .line 12
-    const-class v2, Landroidx/media3/exoplayer/hls/HlsTrackMetadataEntry;
-
     .line 13
-    .line 14
-    invoke-virtual {p0, v2, v1}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/k;)Landroidx/media3/common/Metadata$Entry;
+    const-class v3, Landroidx/media3/exoplayer/hls/HlsTrackMetadataEntry;
 
+    .line 14
     .line 15
+    invoke-virtual {p0, v3, v1}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/m;)Landroidx/media3/common/Metadata$Entry;
+
     .line 16
     .line 17
+    .line 18
     move-result-object p0
 
-    .line 18
+    .line 19
     if-eqz p0, :cond_1
 
-    .line 19
     .line 20
-    const/4 v0, 0x1
-
     .line 21
+    move v0, v2
+
+    .line 22
     :cond_1
     return v0
 .end method

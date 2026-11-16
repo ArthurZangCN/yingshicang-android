@@ -21,8 +21,10 @@
         "Ljava/lang/Object;",
         "Landroidx/media3/exoplayer/upstream/Loader$Callback<",
         "Landroidx/media3/exoplayer/upstream/ParsingLoadable<",
+        "Landroid/util/Pair<",
         "Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;",
-        ">;>;"
+        "Lorg/json/JSONObject;",
+        ">;>;>;"
     }
 .end annotation
 
@@ -69,16 +71,7 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->lambda$onLoadCompleted$1(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
-
-    return-void
-.end method
-
-.method public static synthetic b(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+.method public static synthetic a(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
     .locals 0
 
     .line 1
@@ -87,11 +80,20 @@
     return-void
 .end method
 
-.method public static synthetic c(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Ljava/io/IOException;ZLandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+.method public static synthetic b(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Ljava/io/IOException;ZLandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
     .locals 0
 
     .line 1
     invoke-direct {p0, p1, p2, p3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->lambda$handleAssetResolutionFailed$2(Ljava/io/IOException;ZLandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+
+    return-void
+.end method
+
+.method public static synthetic c(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroid/util/Pair;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->lambda$onLoadCompleted$1(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroid/util/Pair;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
 
     return-void
 .end method
@@ -153,11 +155,11 @@
 
     .line 25
     .line 26
-    new-instance v1, Landroidx/media3/exoplayer/hls/i;
+    new-instance v1, Landroidx/media3/exoplayer/hls/j;
 
     .line 27
     .line 28
-    invoke-direct {v1, p0, p1, p2}, Landroidx/media3/exoplayer/hls/i;-><init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Ljava/io/IOException;Z)V
+    invoke-direct {v1, p0, p1, p2}, Landroidx/media3/exoplayer/hls/j;-><init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Ljava/io/IOException;Z)V
 
     .line 29
     .line 30
@@ -313,8 +315,8 @@
     return-void
 .end method
 
-.method private synthetic lambda$onLoadCompleted$1(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
-    .locals 7
+.method private synthetic lambda$onLoadCompleted$1(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroid/util/Pair;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    .locals 8
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
@@ -365,17 +367,28 @@
     move-result v5
 
     .line 25
-    move-object v1, p2
+    iget-object p2, p2, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     .line 26
-    move-object v6, p1
-
     .line 27
-    invoke-interface/range {v1 .. v6}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;->onAssetListLoadCompleted(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;)V
+    move-object v7, p2
 
     .line 28
+    check-cast v7, Lorg/json/JSONObject;
+
     .line 29
     .line 30
+    move-object v1, p3
+
+    .line 31
+    move-object v6, p1
+
+    .line 32
+    invoke-interface/range {v1 .. v7}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;->onAssetListLoadCompleted(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Lorg/json/JSONObject;)V
+
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method
 
@@ -543,8 +556,10 @@
         value = {
             "(",
             "Landroidx/media3/exoplayer/upstream/ParsingLoadable<",
+            "Landroid/util/Pair<",
             "Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;",
-            ">;JJZ)V"
+            "Lorg/json/JSONObject;",
+            ">;>;JJZ)V"
         }
     .end annotation
 
@@ -575,8 +590,10 @@
         value = {
             "(",
             "Landroidx/media3/exoplayer/upstream/ParsingLoadable<",
+            "Landroid/util/Pair<",
             "Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;",
-            ">;JJ)V"
+            "Lorg/json/JSONObject;",
+            ">;>;JJ)V"
         }
     .end annotation
 
@@ -587,39 +604,44 @@
 
     move-result-object v1
 
-    check-cast v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;
+    check-cast v1, Landroid/util/Pair;
+
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->v(Ljava/lang/Object;)V
 
     .line 3
-    iget-object v2, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
+    iget-object v2, v1, Landroid/util/Pair;->first:Ljava/lang/Object;
+
+    check-cast v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;
 
     .line 4
-    invoke-static {v2}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$600(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;)Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$ContentMediaSourceAdDataHolder;
+    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
 
-    move-result-object v2
-
-    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
-
-    invoke-static {v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1200(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)Ljava/lang/Object;
+    .line 5
+    invoke-static {v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$600(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;)Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$ContentMediaSourceAdDataHolder;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$ContentMediaSourceAdDataHolder;->getAdPlaybackState(Ljava/lang/Object;)Landroidx/media3/common/AdPlaybackState;
-
-    move-result-object v2
-
-    const/4 v3, 0x1
-
-    if-eqz v2, :cond_9
-
-    .line 5
     iget-object v4, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
+    invoke-static {v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1200(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$ContentMediaSourceAdDataHolder;->getAdPlaybackState(Ljava/lang/Object;)Landroidx/media3/common/AdPlaybackState;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_9
+
     .line 6
+    iget-object v4, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+
+    .line 7
     invoke-static {v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
+    invoke-virtual {v3, v4}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
 
     move-result-object v4
 
@@ -627,7 +649,7 @@
 
     iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
-    .line 7
+    .line 8
     invoke-static {v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1400(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
 
     move-result v5
@@ -639,25 +661,24 @@
     goto/16 :goto_3
 
     :cond_0
-    if-eqz v1, :cond_1
+    const/4 v4, 0x0
 
-    .line 8
-    iget-object v5, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/f2;
+    if-eqz v2, :cond_8
+
+    .line 9
+    iget-object v5, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/e2;
 
     invoke-virtual {v5}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v5
 
-    if-eqz v5, :cond_2
-
-    :cond_1
-    const/4 v4, 0x0
+    if-eqz v5, :cond_1
 
     goto/16 :goto_2
 
-    .line 9
-    :cond_2
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->q(Ljava/lang/Object;)V
+    .line 10
+    :cond_1
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->v(Ljava/lang/Object;)V
 
     iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
@@ -665,11 +686,11 @@
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
+    invoke-virtual {v3, v5}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
 
     move-result-object v5
 
-    .line 10
+    .line 11
     iget-object v6, v5, Landroidx/media3/common/AdPlaybackState$AdGroup;->durationsUs:[J
 
     iget-object v7, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
@@ -686,9 +707,9 @@
 
     const-wide/16 v7, 0x0
 
-    if-eqz v6, :cond_3
+    if-eqz v6, :cond_2
 
-    .line 11
+    .line 12
     iget-object v6, v5, Landroidx/media3/common/AdPlaybackState$AdGroup;->durationsUs:[J
 
     iget-object v11, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
@@ -701,31 +722,33 @@
 
     goto :goto_0
 
-    :cond_3
+    :cond_2
     move-wide v11, v7
 
-    .line 12
+    .line 13
     :goto_0
     iget v6, v5, Landroidx/media3/common/AdPlaybackState$AdGroup;->count:I
 
-    .line 13
-    iget-object v13, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/f2;
+    .line 14
+    iget-object v13, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/e2;
 
     invoke-virtual {v13}, Ljava/util/AbstractCollection;->size()I
 
     move-result v13
 
-    if-le v13, v3, :cond_4
+    const/4 v14, 0x1
 
-    .line 14
-    iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+    if-le v13, v14, :cond_3
 
     .line 15
+    iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+
+    .line 16
     invoke-static {v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
 
     move-result v5
 
-    iget-object v13, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/f2;
+    iget-object v13, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/e2;
 
     invoke-virtual {v13}, Ljava/util/AbstractCollection;->size()I
 
@@ -733,33 +756,33 @@
 
     add-int/2addr v13, v6
 
-    sub-int/2addr v13, v3
-
-    .line 16
-    invoke-virtual {v2, v5, v13}, Landroidx/media3/common/AdPlaybackState;->withAdCount(II)Landroidx/media3/common/AdPlaybackState;
-
-    move-result-object v2
+    sub-int/2addr v13, v14
 
     .line 17
+    invoke-virtual {v3, v5, v13}, Landroidx/media3/common/AdPlaybackState;->withAdCount(II)Landroidx/media3/common/AdPlaybackState;
+
+    move-result-object v3
+
+    .line 18
     iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
     invoke-static {v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
+    invoke-virtual {v3, v5}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
 
     move-result-object v5
 
-    .line 18
-    :cond_4
+    .line 19
+    :cond_3
     iget-object v13, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
     invoke-static {v13}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1400(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
 
     move-result v13
 
-    .line 19
+    .line 20
     iget-object v5, v5, Landroidx/media3/common/AdPlaybackState$AdGroup;->durationsUs:[J
 
     invoke-virtual {v5}, [J->clone()Ljava/lang/Object;
@@ -768,191 +791,190 @@
 
     check-cast v5, [J
 
-    const/4 v14, 0x0
-
-    .line 20
+    .line 21
     :goto_1
-    iget-object v15, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/f2;
+    iget-object v15, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/e2;
 
     invoke-virtual {v15}, Ljava/util/AbstractCollection;->size()I
 
     move-result v15
 
-    if-ge v14, v15, :cond_7
+    if-ge v4, v15, :cond_6
 
-    .line 21
-    iget-object v15, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/f2;
+    .line 22
+    iget-object v15, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->assets:Lcom/google/common/collect/e2;
 
-    invoke-interface {v15, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v15, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v15
 
     check-cast v15, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Asset;
 
-    if-lez v14, :cond_5
+    if-lez v4, :cond_4
 
-    add-int v13, v6, v14
+    add-int v13, v6, v4
 
-    sub-int/2addr v13, v3
-
-    .line 22
-    :cond_5
-    iget-wide v3, v15, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Asset;->durationUs:J
-
-    aput-wide v3, v5, v13
-
-    add-long/2addr v7, v3
+    sub-int/2addr v13, v14
 
     .line 23
-    new-instance v3, Landroidx/media3/common/MediaItem$Builder;
+    :cond_4
+    iget-wide v9, v15, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Asset;->durationUs:J
 
-    invoke-direct {v3}, Landroidx/media3/common/MediaItem$Builder;-><init>()V
+    aput-wide v9, v5, v13
 
-    iget-object v4, v15, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Asset;->uri:Landroid/net/Uri;
+    add-long/2addr v7, v9
 
     .line 24
-    invoke-virtual {v3, v4}, Landroidx/media3/common/MediaItem$Builder;->setUri(Landroid/net/Uri;)Landroidx/media3/common/MediaItem$Builder;
+    new-instance v9, Landroidx/media3/common/MediaItem$Builder;
 
-    move-result-object v3
+    invoke-direct {v9}, Landroidx/media3/common/MediaItem$Builder;-><init>()V
 
-    const-string v4, "application/x-mpegURL"
+    iget-object v10, v15, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Asset;->uri:Landroid/net/Uri;
 
     .line 25
-    invoke-virtual {v3, v4}, Landroidx/media3/common/MediaItem$Builder;->setMimeType(Ljava/lang/String;)Landroidx/media3/common/MediaItem$Builder;
+    invoke-virtual {v9, v10}, Landroidx/media3/common/MediaItem$Builder;->setUri(Landroid/net/Uri;)Landroidx/media3/common/MediaItem$Builder;
 
-    move-result-object v3
+    move-result-object v9
+
+    const-string v10, "application/x-mpegURL"
 
     .line 26
-    invoke-virtual {v3}, Landroidx/media3/common/MediaItem$Builder;->build()Landroidx/media3/common/MediaItem;
+    invoke-virtual {v9, v10}, Landroidx/media3/common/MediaItem$Builder;->setMimeType(Ljava/lang/String;)Landroidx/media3/common/MediaItem$Builder;
+
+    move-result-object v9
+
+    .line 27
+    invoke-virtual {v9}, Landroidx/media3/common/MediaItem$Builder;->build()Landroidx/media3/common/MediaItem;
+
+    move-result-object v9
+
+    .line 28
+    iget-object v10, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+
+    .line 29
+    invoke-static {v10}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
+
+    move-result v10
+
+    .line 30
+    invoke-virtual {v3, v10, v13, v9}, Landroidx/media3/common/AdPlaybackState;->withAvailableAdMediaItem(IILandroidx/media3/common/MediaItem;)Landroidx/media3/common/AdPlaybackState;
 
     move-result-object v3
 
-    .line 27
+    .line 31
+    iget-object v9, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->skipInfo:Landroidx/media3/common/AdPlaybackState$SkipInfo;
+
+    if-eqz v9, :cond_5
+
+    .line 32
+    iget-object v9, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+
+    .line 33
+    invoke-static {v9}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
+
+    move-result v9
+
+    iget-object v10, v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->skipInfo:Landroidx/media3/common/AdPlaybackState$SkipInfo;
+
+    .line 34
+    invoke-virtual {v3, v9, v13, v10}, Landroidx/media3/common/AdPlaybackState;->withAdSkipInfo(IILandroidx/media3/common/AdPlaybackState$SkipInfo;)Landroidx/media3/common/AdPlaybackState;
+
+    move-result-object v3
+
+    :cond_5
+    add-int/lit8 v4, v4, 0x1
+
+    const-wide v9, -0x7fffffffffffffffL    # -4.9E-324
+
+    goto :goto_1
+
+    .line 35
+    :cond_6
     iget-object v4, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
-    .line 28
+    .line 36
     invoke-static {v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
 
     move-result v4
 
-    .line 29
-    invoke-virtual {v2, v4, v13, v3}, Landroidx/media3/common/AdPlaybackState;->withAvailableAdMediaItem(IILandroidx/media3/common/MediaItem;)Landroidx/media3/common/AdPlaybackState;
-
-    move-result-object v2
-
-    .line 30
-    iget-object v3, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->skipInfo:Landroidx/media3/common/AdPlaybackState$SkipInfo;
-
-    if-eqz v3, :cond_6
-
-    .line 31
-    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
-
-    .line 32
-    invoke-static {v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
-
-    move-result v3
-
-    iget-object v4, v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;->skipInfo:Landroidx/media3/common/AdPlaybackState$SkipInfo;
-
-    .line 33
-    invoke-virtual {v2, v3, v13, v4}, Landroidx/media3/common/AdPlaybackState;->withAdSkipInfo(IILandroidx/media3/common/AdPlaybackState$SkipInfo;)Landroidx/media3/common/AdPlaybackState;
-
-    move-result-object v2
-
-    :cond_6
-    add-int/lit8 v14, v14, 0x1
-
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    .line 34
-    :cond_7
-    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
-
-    .line 35
-    invoke-static {v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3, v5}, Landroidx/media3/common/AdPlaybackState;->withAdDurationsUs(I[J)Landroidx/media3/common/AdPlaybackState;
-
-    move-result-object v2
-
-    .line 36
-    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
-
-    invoke-static {v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$200(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$Interstitial;
+    invoke-virtual {v3, v4, v5}, Landroidx/media3/common/AdPlaybackState;->withAdDurationsUs(I[J)Landroidx/media3/common/AdPlaybackState;
 
     move-result-object v3
-
-    iget-wide v3, v3, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$Interstitial;->resumeOffsetUs:J
-
-    cmp-long v3, v3, v9
-
-    if-nez v3, :cond_8
 
     .line 37
-    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
-
-    invoke-static {v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
-
-    move-result-object v3
-
-    .line 38
-    iget-wide v3, v3, Landroidx/media3/common/AdPlaybackState$AdGroup;->contentResumeOffsetUs:J
-
-    sub-long/2addr v3, v11
-
-    add-long/2addr v3, v7
-
-    .line 39
-    iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
-
-    .line 40
-    invoke-static {v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
-
-    move-result v5
-
-    .line 41
-    invoke-virtual {v2, v5, v3, v4}, Landroidx/media3/common/AdPlaybackState;->withContentResumeOffsetUs(IJ)Landroidx/media3/common/AdPlaybackState;
-
-    move-result-object v2
-
-    .line 42
-    :cond_8
-    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
-
     iget-object v4, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
-    invoke-static {v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1200(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)Ljava/lang/Object;
+    invoke-static {v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$200(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$Interstitial;
 
     move-result-object v4
 
-    invoke-static {v3, v4, v2}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$1100(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Ljava/lang/Object;Landroidx/media3/common/AdPlaybackState;)Z
+    iget-wide v4, v4, Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist$Interstitial;->resumeOffsetUs:J
+
+    const-wide v9, -0x7fffffffffffffffL    # -4.9E-324
+
+    cmp-long v4, v4, v9
+
+    if-nez v4, :cond_7
+
+    .line 38
+    iget-object v4, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+
+    invoke-static {v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Landroidx/media3/common/AdPlaybackState;->getAdGroup(I)Landroidx/media3/common/AdPlaybackState$AdGroup;
+
+    move-result-object v4
+
+    .line 39
+    iget-wide v4, v4, Landroidx/media3/common/AdPlaybackState$AdGroup;->contentResumeOffsetUs:J
+
+    sub-long/2addr v4, v11
+
+    add-long/2addr v4, v7
+
+    .line 40
+    iget-object v6, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
+
+    .line 41
+    invoke-static {v6}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1300(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)I
+
+    move-result v6
+
+    .line 42
+    invoke-virtual {v3, v6, v4, v5}, Landroidx/media3/common/AdPlaybackState;->withContentResumeOffsetUs(IJ)Landroidx/media3/common/AdPlaybackState;
+
+    move-result-object v3
 
     .line 43
-    iget-object v2, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
+    :cond_7
+    iget-object v4, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
 
-    new-instance v3, Landroidx/media3/exoplayer/hls/j;
+    iget-object v5, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->assetListData:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;
 
-    const/4 v4, 0x0
+    invoke-static {v5}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;->access$1200(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetListData;)Ljava/lang/Object;
 
-    invoke-direct {v3, v4, v0, v1}, Landroidx/media3/exoplayer/hls/j;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    move-result-object v5
 
-    invoke-static {v2, v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$700(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Landroidx/media3/common/util/Consumer;)V
+    invoke-static {v4, v5, v3}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$1100(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Ljava/lang/Object;Landroidx/media3/common/AdPlaybackState;)Z
 
     .line 44
+    iget-object v3, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
+
+    new-instance v4, Landroidx/media3/exoplayer/hls/l;
+
+    invoke-direct {v4, v0, v2, v1}, Landroidx/media3/exoplayer/hls/l;-><init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroid/util/Pair;)V
+
+    invoke-static {v3, v4}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$700(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Landroidx/media3/common/util/Consumer;)V
+
+    .line 45
     invoke-direct/range {p0 .. p0}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->maybeContinueAssetResolution()V
 
     return-void
 
-    .line 45
+    .line 46
+    :cond_8
     :goto_2
     new-instance v1, Ljava/io/IOException;
 
@@ -964,19 +986,17 @@
 
     return-void
 
-    .line 46
+    .line 47
     :cond_9
     :goto_3
     invoke-direct/range {p0 .. p0}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->maybeContinueAssetResolution()V
 
-    .line 47
+    .line 48
     iget-object v1, v0, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->this$0:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;
 
-    new-instance v2, Landroidx/media3/exoplayer/hls/e;
+    new-instance v2, Landroidx/media3/exoplayer/hls/k;
 
-    const/4 v3, 0x1
-
-    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/hls/e;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v0}, Landroidx/media3/exoplayer/hls/k;-><init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;)V
 
     invoke-static {v1, v2}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->access$700(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;Landroidx/media3/common/util/Consumer;)V
 
@@ -1002,8 +1022,10 @@
         value = {
             "(",
             "Landroidx/media3/exoplayer/upstream/ParsingLoadable<",
+            "Landroid/util/Pair<",
             "Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;",
-            ">;JJ",
+            "Lorg/json/JSONObject;",
+            ">;>;JJ",
             "Ljava/io/IOException;",
             "I)",
             "Landroidx/media3/exoplayer/upstream/Loader$LoadErrorAction;"

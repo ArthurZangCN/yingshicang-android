@@ -4,18 +4,7 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Ljava/lang/Object;)Landroid/media/Spatializer;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/media/Spatializer;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static bridge synthetic b()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+.method public static bridge synthetic a()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
     .locals 1
 
     .line 1
@@ -24,11 +13,11 @@
     return-object v0
 .end method
 
-.method public static bridge synthetic c(Landroid/media/Spatializer;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
+.method public static bridge synthetic b(Landroid/media/AudioAttributes$Builder;I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/media/Spatializer;->removeOnSpatializerStateChangedListener(Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
+    invoke-virtual {p0, p1}, Landroid/media/AudioAttributes$Builder;->setSpatializationBehavior(I)Landroid/media/AudioAttributes$Builder;
 
     .line 2
     .line 3

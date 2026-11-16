@@ -242,11 +242,11 @@
 
     .line 6
     :cond_0
-    new-instance v1, Landroidx/core/location/p;
+    new-instance v1, Landroidx/core/location/q;
 
     .line 7
     .line 8
-    invoke-direct {v1, p0, v0, p1}, Landroidx/core/location/p;-><init>(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;I)V
+    invoke-direct {v1, p0, v0, p1}, Landroidx/core/location/q;-><init>(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;I)V
 
     .line 9
     .line 10
@@ -275,11 +275,11 @@
 
     .line 6
     :cond_0
-    new-instance v1, Landroidx/core/location/q;
+    new-instance v1, Landroidx/core/location/r;
 
     .line 7
     .line 8
-    invoke-direct {v1, p0, v0, p1}, Landroidx/core/location/q;-><init>(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;Landroid/location/GnssStatus;)V
+    invoke-direct {v1, p0, v0, p1}, Landroidx/core/location/r;-><init>(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;Landroid/location/GnssStatus;)V
 
     .line 9
     .line 10
@@ -293,7 +293,7 @@
 .end method
 
 .method public onStarted()V
-    .locals 2
+    .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;->mExecutor:Ljava/util/concurrent/Executor;
@@ -308,20 +308,23 @@
 
     .line 6
     :cond_0
-    new-instance v1, Landroidx/core/location/r;
+    new-instance v1, Landroidx/core/location/g;
 
     .line 7
     .line 8
-    invoke-direct {v1, p0, v0}, Landroidx/core/location/r;-><init>(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;)V
+    const/4 v2, 0x3
 
     .line 9
+    invoke-direct {v1, p0, v0, v2}, Landroidx/core/location/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 10
     .line 11
+    .line 12
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 12
     .line 13
     .line 14
+    .line 15
     return-void
 .end method
 
@@ -341,14 +344,14 @@
 
     .line 6
     :cond_0
-    new-instance v1, Landroidx/core/location/m;
+    new-instance v1, Landroidx/core/location/j;
 
     .line 7
     .line 8
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
     .line 9
-    invoke-direct {v1, v2, p0, v0}, Landroidx/core/location/m;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, v0, v2}, Landroidx/core/location/j;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 10
     .line 11

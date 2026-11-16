@@ -2,47 +2,15 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;
-
-.field public final synthetic b:Landroidx/media3/exoplayer/video/VideoSink$Listener;
-
-.field public final synthetic c:Landroidx/media3/common/VideoFrameProcessingException;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoFrameProcessingException;)V
+.method public static bridge synthetic a(Landroid/view/Display;)Landroid/view/Display$HdrCapabilities;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0}, Landroid/view/Display;->getHdrCapabilities()Landroid/view/Display$HdrCapabilities;
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/video/h;->a:Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;
+    move-result-object p0
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/video/h;->b:Landroidx/media3/exoplayer/video/VideoSink$Listener;
-
-    iput-object p3, p0, Landroidx/media3/exoplayer/video/h;->c:Landroidx/media3/common/VideoFrameProcessingException;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/video/h;->b:Landroidx/media3/exoplayer/video/VideoSink$Listener;
-
-    iget-object v1, p0, Landroidx/media3/exoplayer/video/h;->c:Landroidx/media3/common/VideoFrameProcessingException;
-
-    iget-object v2, p0, Landroidx/media3/exoplayer/video/h;->a:Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;
-
-    invoke-static {v2, v0, v1}, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->b(Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoFrameProcessingException;)V
-
-    return-void
+    return-object p0
 .end method

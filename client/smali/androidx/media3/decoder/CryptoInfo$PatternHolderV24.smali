@@ -35,7 +35,7 @@
     iput-object p1, p0, Landroidx/media3/decoder/CryptoInfo$PatternHolderV24;->frameworkCryptoInfo:Landroid/media/MediaCodec$CryptoInfo;
 
     .line 4
-    invoke-static {}, Landroidx/appcompat/app/c;->g()Landroid/media/MediaCodec$CryptoInfo$Pattern;
+    invoke-static {}, Landroid/support/v4/media/session/d;->f()Landroid/media/MediaCodec$CryptoInfo$Pattern;
 
     move-result-object p1
 
@@ -73,7 +73,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/b;->r(Landroid/media/MediaCodec$CryptoInfo$Pattern;II)V
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/session/b;->r(Landroid/media/MediaCodec$CryptoInfo$Pattern;II)V
 
     .line 4
     .line 5
@@ -86,7 +86,7 @@
 
     .line 9
     .line 10
-    invoke-static {p1, p2}, Landroid/support/v4/media/c;->n(Landroid/media/MediaCodec$CryptoInfo;Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
+    invoke-static {p1, p2}, Landroid/support/v4/media/session/c;->x(Landroid/media/MediaCodec$CryptoInfo;Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
 
     .line 11
     .line 12

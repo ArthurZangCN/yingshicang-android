@@ -40,19 +40,18 @@
     .line 5
     .line 6
     .line 7
-    new-instance v1, Landroidx/emoji2/text/flatbuffer/b;
+    invoke-static {v0}, Landroidx/core/app/f;->n(Landroidx/emoji2/text/flatbuffer/a;)Ljava/lang/ThreadLocal;
 
     .line 8
     .line 9
-    invoke-direct {v1, v0}, Landroidx/emoji2/text/flatbuffer/b;-><init>(Landroidx/emoji2/text/flatbuffer/a;)V
-
     .line 10
-    .line 11
-    .line 12
-    sput-object v1, Landroidx/emoji2/text/flatbuffer/Utf8Old;->CACHE:Ljava/lang/ThreadLocal;
+    move-result-object v0
 
+    .line 11
+    sput-object v0, Landroidx/emoji2/text/flatbuffer/Utf8Old;->CACHE:Ljava/lang/ThreadLocal;
+
+    .line 12
     .line 13
-    .line 14
     return-void
 .end method
 

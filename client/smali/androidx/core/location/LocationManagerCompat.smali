@@ -198,11 +198,11 @@
     if-gez v1, :cond_2
 
     .line 8
-    new-instance p0, Landroidx/core/location/f;
+    new-instance p0, Landroidx/core/location/b;
 
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
-    invoke-direct {p0, p4, v0, p1}, Landroidx/core/location/f;-><init>(Landroidx/core/util/Consumer;Landroid/location/Location;I)V
+    invoke-direct {p0, p4, v0, p1}, Landroidx/core/location/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     invoke-interface {p3, p0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -235,9 +235,9 @@
     if-eqz p2, :cond_3
 
     .line 12
-    new-instance p0, Landroidx/core/location/b;
+    new-instance p0, Landroidx/core/location/c;
 
-    invoke-direct {p0, v0}, Landroidx/core/location/b;-><init>(Landroidx/core/location/LocationManagerCompat$CancellableLocationListener;)V
+    invoke-direct {p0, v0}, Landroidx/core/location/c;-><init>(Landroidx/core/location/LocationManagerCompat$CancellableLocationListener;)V
 
     invoke-virtual {p2, p0}, Landroid/os/CancellationSignal;->setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
 
@@ -959,7 +959,7 @@
 
     .line 63
     .line 64
-    invoke-static {}, Landroid/support/v4/media/c;->g()Ljava/lang/Class;
+    invoke-static {}, Landroid/support/v4/media/session/d;->j()Ljava/lang/Class;
 
     .line 65
     .line 66
@@ -1196,9 +1196,9 @@
     .line 18
     new-instance p2, Ljava/util/concurrent/FutureTask;
 
-    new-instance v4, Landroidx/core/location/c;
+    new-instance v4, Landroidx/core/location/d;
 
-    invoke-direct {v4, p0, v3}, Landroidx/core/location/c;-><init>(Landroid/location/LocationManager;Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;)V
+    invoke-direct {v4, p0, v3}, Landroidx/core/location/d;-><init>(Landroid/location/LocationManager;Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;)V
 
     invoke-direct {p2, v4}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -2193,7 +2193,7 @@
     move-result-object p1
 
     .line 18
-    invoke-static {p1}, Landroid/support/v4/media/b;->f(Ljava/lang/Object;)Landroid/location/GnssMeasurementsEvent$Callback;
+    invoke-static {p1}, Landroid/support/v4/media/session/c;->i(Ljava/lang/Object;)Landroid/location/GnssMeasurementsEvent$Callback;
 
     .line 19
     .line 20

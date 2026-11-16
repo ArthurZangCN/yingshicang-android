@@ -2,9 +2,6 @@
 .super Ljava/io/InputStream;
 .source "SourceFile"
 
-# interfaces
-.implements Lj$/io/InputStreamRetargetInterface;
-
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -590,15 +587,4 @@
     .line 28
     .line 29
     throw p1
-.end method
-
-.method public final synthetic transferTo(Ljava/io/OutputStream;)J
-    .locals 2
-
-    .line 1
-    invoke-static {p0, p1}, Lj$/io/DesugarInputStream;->transferTo(Ljava/io/InputStream;Ljava/io/OutputStream;)J
-
-    move-result-wide v0
-
-    return-wide v0
 .end method

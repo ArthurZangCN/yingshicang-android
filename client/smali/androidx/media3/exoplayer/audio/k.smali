@@ -2,35 +2,67 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/media/AudioRouting$OnRoutingChangedListener;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;)V
+.method public static a(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/audio/k;->a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
-
     return-void
 .end method
 
-
-# virtual methods
-.method public final onRoutingChanged(Landroid/media/AudioRouting;)V
-    .locals 1
+.method public static b(Landroidx/media3/exoplayer/audio/AudioSink$Listener;I)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/k;->a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
+    return-void
+.end method
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;->a(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;Landroid/media/AudioRouting;)V
+.method public static c(Landroidx/media3/exoplayer/audio/AudioSink$Listener;Ljava/lang/Exception;)V
+    .locals 0
 
+    .line 1
+    return-void
+.end method
+
+.method public static d(Landroidx/media3/exoplayer/audio/AudioSink$Listener;Landroidx/media3/exoplayer/audio/AudioSink$AudioTrackConfig;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static e(Landroidx/media3/exoplayer/audio/AudioSink$Listener;Landroidx/media3/exoplayer/audio/AudioSink$AudioTrackConfig;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static f(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static g(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static h(Landroidx/media3/exoplayer/audio/AudioSink$Listener;J)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static i(Landroidx/media3/exoplayer/audio/AudioSink$Listener;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method

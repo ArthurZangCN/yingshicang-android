@@ -3,19 +3,54 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/k;
+.implements Landroidx/media3/common/util/Consumer;
 
 
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Z
+# instance fields
+.field public final synthetic a:Landroidx/media3/common/MediaItem;
+
+.field public final synthetic b:Ljava/lang/Object;
+
+.field public final synthetic c:I
+
+.field public final synthetic d:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/media3/common/MediaItem;Ljava/lang/Object;II)V
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/media3/extractor/metadata/id3/PrivFrame;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->a(Landroidx/media3/extractor/metadata/id3/PrivFrame;)Z
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/q;->a:Landroidx/media3/common/MediaItem;
 
-    move-result p1
+    iput-object p2, p0, Landroidx/media3/exoplayer/hls/q;->b:Ljava/lang/Object;
 
-    return p1
+    iput p3, p0, Landroidx/media3/exoplayer/hls/q;->c:I
+
+    iput p4, p0, Landroidx/media3/exoplayer/hls/q;->d:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 4
+
+    .line 1
+    iget v0, p0, Landroidx/media3/exoplayer/hls/q;->d:I
+
+    check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/hls/q;->a:Landroidx/media3/common/MediaItem;
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/hls/q;->b:Ljava/lang/Object;
+
+    iget v3, p0, Landroidx/media3/exoplayer/hls/q;->c:I
+
+    invoke-static {v1, v2, v3, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->b(Landroidx/media3/common/MediaItem;Ljava/lang/Object;IILandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+
+    return-void
 .end method

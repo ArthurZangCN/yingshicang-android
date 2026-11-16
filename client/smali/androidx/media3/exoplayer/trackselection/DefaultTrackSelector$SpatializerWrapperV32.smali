@@ -105,7 +105,7 @@
 
     .line 25
     :cond_1
-    invoke-static {p1}, Landroidx/media3/common/b;->b(Landroid/media/AudioManager;)Landroid/media/Spatializer;
+    invoke-static {p1}, Landroidx/media3/exoplayer/trackselection/m;->a(Landroid/media/AudioManager;)Landroid/media/Spatializer;
 
     .line 26
     .line 27
@@ -117,7 +117,7 @@
 
     .line 30
     .line 31
-    invoke-static {p1}, Landroidx/media3/exoplayer/trackselection/k;->a(Landroid/media/Spatializer;)I
+    invoke-static {p1}, Landroidx/media3/common/b;->a(Landroid/media/Spatializer;)I
 
     .line 32
     .line 33
@@ -125,92 +125,95 @@
     move-result p3
 
     .line 35
-    if-eqz p3, :cond_2
+    const/4 v0, 0x1
 
     .line 36
-    .line 37
-    const/4 v1, 0x1
+    if-eqz p3, :cond_2
 
+    .line 37
     .line 38
+    move v1, v0
+
+    .line 39
     :cond_2
     iput-boolean v1, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->spatializationSupported:Z
 
-    .line 39
     .line 40
+    .line 41
     new-instance p3, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32$1;
 
-    .line 41
     .line 42
+    .line 43
     invoke-direct {p3, p0, p2}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32$1;-><init>(Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector;)V
 
-    .line 43
     .line 44
     .line 45
+    .line 46
     iput-object p3, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->listener:Landroid/media/Spatializer$OnSpatializerStateChangedListener;
 
-    .line 46
     .line 47
+    .line 48
     new-instance p2, Landroid/os/Handler;
 
-    .line 48
     .line 49
+    .line 50
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
-    .line 50
     .line 51
     .line 52
-    move-result-object v0
-
     .line 53
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v1
 
     .line 54
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 55
     .line 56
-    invoke-direct {p2, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
     .line 57
+    invoke-direct {p2, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
     .line 58
     .line 59
+    .line 60
     iput-object p2, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->handler:Landroid/os/Handler;
 
-    .line 60
     .line 61
-    new-instance v0, Landroidx/media3/common/util/e;
-
     .line 62
-    .line 63
-    invoke-direct {v0, p2}, Landroidx/media3/common/util/e;-><init>(Landroid/os/Handler;)V
+    new-instance v1, Landroidx/media3/common/y;
 
+    .line 63
     .line 64
+    invoke-direct {v1, p2, v0}, Landroidx/media3/common/y;-><init>(Ljava/lang/Object;I)V
+
     .line 65
     .line 66
-    invoke-static {p1, v0, p3}, Landroidx/media3/exoplayer/trackselection/l;->a(Landroid/media/Spatializer;Landroidx/media3/common/util/e;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
-
     .line 67
+    invoke-static {p1, v1, p3}, Landroidx/media3/exoplayer/trackselection/n;->a(Landroid/media/Spatializer;Landroidx/media3/common/y;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
+
     .line 68
     .line 69
+    .line 70
     return-void
 
-    .line 70
+    .line 71
     :cond_3
     :goto_1
     iput-object v0, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->spatializer:Landroid/media/Spatializer;
 
-    .line 71
     .line 72
+    .line 73
     iput-boolean v1, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->spatializationSupported:Z
 
-    .line 73
     .line 74
+    .line 75
     iput-object v0, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->handler:Landroid/os/Handler;
 
-    .line 75
     .line 76
+    .line 77
     iput-object v0, p0, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$SpatializerWrapperV32;->listener:Landroid/media/Spatializer$OnSpatializerStateChangedListener;
 
-    .line 77
     .line 78
+    .line 79
     return-void
 .end method
 
@@ -228,7 +231,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -271,7 +274,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -306,7 +309,7 @@
 
     .line 40
     .line 41
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 42
     .line 43
@@ -423,7 +426,7 @@
     .line 94
     .line 95
     .line 96
-    invoke-static {p2}, Landroidx/core/view/accessibility/c;->a(Ljava/lang/Object;)Landroid/media/Spatializer;
+    invoke-static {p2}, Landroidx/core/view/accessibility/b;->a(Ljava/lang/Object;)Landroid/media/Spatializer;
 
     .line 97
     .line 98
@@ -447,7 +450,7 @@
     move-result-object v0
 
     .line 108
-    invoke-static {p2, p1, v0}, Landroidx/media3/common/b;->d(Landroid/media/Spatializer;Landroid/media/AudioAttributes;Landroid/media/AudioFormat;)Z
+    invoke-static {p2, p1, v0}, Landroidx/media3/exoplayer/trackselection/l;->b(Landroid/media/Spatializer;Landroid/media/AudioAttributes;Landroid/media/AudioFormat;)Z
 
     .line 109
     .line 110
@@ -471,7 +474,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Landroidx/core/view/accessibility/c;->a(Ljava/lang/Object;)Landroid/media/Spatializer;
+    invoke-static {v0}, Landroidx/core/view/accessibility/b;->a(Ljava/lang/Object;)Landroid/media/Spatializer;
 
     .line 7
     .line 8
@@ -479,7 +482,7 @@
     move-result-object v0
 
     .line 10
-    invoke-static {v0}, Landroidx/core/view/accessibility/d;->c(Landroid/media/Spatializer;)Z
+    invoke-static {v0}, Landroidx/media3/exoplayer/trackselection/l;->a(Landroid/media/Spatializer;)Z
 
     .line 11
     .line 12
@@ -503,7 +506,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Landroidx/core/view/accessibility/c;->a(Ljava/lang/Object;)Landroid/media/Spatializer;
+    invoke-static {v0}, Landroidx/core/view/accessibility/b;->a(Ljava/lang/Object;)Landroid/media/Spatializer;
 
     .line 7
     .line 8
@@ -511,7 +514,7 @@
     move-result-object v0
 
     .line 10
-    invoke-static {v0}, Landroidx/core/view/accessibility/d;->d(Landroid/media/Spatializer;)Z
+    invoke-static {v0}, Landroidx/core/view/accessibility/b;->d(Landroid/media/Spatializer;)Z
 
     .line 11
     .line 12
@@ -565,7 +568,7 @@
 
     .line 14
     :cond_0
-    invoke-static {v0, v1}, Landroidx/core/view/accessibility/c;->c(Landroid/media/Spatializer;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/trackselection/o;->a(Landroid/media/Spatializer;Landroid/media/Spatializer$OnSpatializerStateChangedListener;)V
 
     .line 15
     .line 16

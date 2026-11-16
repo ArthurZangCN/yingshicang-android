@@ -9,19 +9,23 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Z
+.field public final synthetic b:Landroidx/media3/common/Player$PositionInfo;
+
+.field public final synthetic c:Landroidx/media3/common/Player$PositionInfo;
 
 
 # direct methods
-.method public synthetic constructor <init>(ZI)V
+.method public synthetic constructor <init>(Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Landroidx/media3/exoplayer/r0;->a:I
+    iput p3, p0, Landroidx/media3/exoplayer/r0;->a:I
 
-    iput-boolean p1, p0, Landroidx/media3/exoplayer/r0;->b:Z
+    iput-object p1, p0, Landroidx/media3/exoplayer/r0;->b:Landroidx/media3/common/Player$PositionInfo;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/r0;->c:Landroidx/media3/common/Player$PositionInfo;
 
     return-void
 .end method
@@ -29,30 +33,18 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 2
+    .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/r0;->a:I
-
-    iget-boolean v1, p0, Landroidx/media3/exoplayer/r0;->b:Z
+    iget-object v0, p0, Landroidx/media3/exoplayer/r0;->c:Landroidx/media3/common/Player$PositionInfo;
 
     check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    packed-switch v0, :pswitch_data_0
+    iget v1, p0, Landroidx/media3/exoplayer/r0;->a:I
 
-    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->g(ZLandroidx/media3/common/Player$Listener;)V
+    iget-object v2, p0, Landroidx/media3/exoplayer/r0;->b:Landroidx/media3/common/Player$PositionInfo;
 
-    return-void
-
-    :pswitch_0
-    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->o(ZLandroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->f(ILandroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$Listener;)V
 
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

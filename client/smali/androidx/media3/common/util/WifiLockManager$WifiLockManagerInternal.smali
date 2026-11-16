@@ -37,11 +37,20 @@
     return-void
 .end method
 
-.method public static synthetic access$100(Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;)V
+.method public static synthetic a(Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;->forceReleaseWifiLock()V
+    invoke-direct {p0, p1}, Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;->lambda$forceReleaseWifiLock$0(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+
+    return-void
+.end method
+
+.method public static synthetic access$100(Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;Ljava/util/concurrent/atomic/AtomicBoolean;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;->forceReleaseWifiLock(Ljava/util/concurrent/atomic/AtomicBoolean;)V
 
     .line 2
     .line 3
@@ -49,52 +58,126 @@
     return-void
 .end method
 
-.method private declared-synchronized forceReleaseWifiLock()V
-    .locals 1
+.method private forceReleaseWifiLock(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, Ljava/lang/Thread;
+
+    .line 8
+    .line 9
+    new-instance v1, Landroidx/media3/common/util/r;
+
+    .line 10
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    invoke-direct {v1, p0, p1, v2}, Landroidx/media3/common/util/r;-><init>(Ljava/lang/Object;Ljava/util/concurrent/atomic/AtomicBoolean;I)V
+
+    .line 13
+    .line 14
+    .line 15
+    const-string p1, "ExoPlayer:WifiLockManager"
+
+    .line 16
+    .line 17
+    invoke-direct {v0, v1, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_0
+    return-void
+.end method
+
+.method private declared-synchronized forceReleaseWifiLockInternal(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+    .locals 0
 
     .line 1
     monitor-enter p0
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;->wifiLock:Landroid/net/wifi/WifiManager$WifiLock;
+    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     .line 3
     .line 4
-    if-eqz v0, :cond_0
-
     .line 5
+    move-result p1
+
     .line 6
-    invoke-virtual {v0}, Landroid/net/wifi/WifiManager$WifiLock;->release()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-eqz p1, :cond_0
 
     .line 7
     .line 8
-    .line 9
-    goto :goto_0
+    iget-object p1, p0, Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;->wifiLock:Landroid/net/wifi/WifiManager$WifiLock;
 
+    .line 9
     .line 10
-    :catchall_0
-    move-exception v0
+    if-eqz p1, :cond_0
 
     .line 11
+    .line 12
+    invoke-virtual {p1}, Landroid/net/wifi/WifiManager$WifiLock;->release()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :catchall_0
+    move-exception p1
+
+    .line 17
     goto :goto_1
 
-    .line 12
+    .line 18
     :cond_0
     :goto_0
     monitor-exit p0
 
-    .line 13
+    .line 19
     return-void
 
-    .line 14
+    .line 20
     :goto_1
     monitor-exit p0
 
-    .line 15
-    throw v0
+    .line 21
+    throw p1
+.end method
+
+.method private synthetic lambda$forceReleaseWifiLock$0(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Landroidx/media3/common/util/WifiLockManager$WifiLockManagerInternal;->forceReleaseWifiLockInternal(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
 .end method
 
 

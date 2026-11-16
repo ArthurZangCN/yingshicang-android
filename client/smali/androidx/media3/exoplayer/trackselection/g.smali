@@ -3,19 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/e;
+.implements Ljava/util/Comparator;
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/media3/exoplayer/source/TrackGroupArray;
+    check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/source/TrackGroupArray;->toBundle()Landroid/os/Bundle;
+    check-cast p2, Ljava/util/List;
 
-    move-result-object p1
+    invoke-static {p1, p2}, Landroidx/media3/exoplayer/trackselection/DefaultTrackSelector$TextTrackInfo;->compareSelections(Ljava/util/List;Ljava/util/List;)I
 
-    return-object p1
+    move-result p1
+
+    return p1
 .end method

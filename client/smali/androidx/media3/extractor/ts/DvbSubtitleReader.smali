@@ -509,7 +509,7 @@
 
     .line 20
     :goto_0
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 21
     .line 22
@@ -575,43 +575,31 @@
     .locals 0
 
     .line 1
-    and-int/lit8 p3, p3, 0x4
-
-    .line 2
-    .line 3
-    if-nez p3, :cond_0
-
-    .line 4
-    .line 5
-    return-void
-
-    .line 6
-    :cond_0
     const/4 p3, 0x1
 
-    .line 7
+    .line 2
     iput-boolean p3, p0, Landroidx/media3/extractor/ts/DvbSubtitleReader;->writingSample:Z
+
+    .line 3
+    .line 4
+    iput-wide p1, p0, Landroidx/media3/extractor/ts/DvbSubtitleReader;->sampleTimeUs:J
+
+    .line 5
+    .line 6
+    const/4 p1, 0x0
+
+    .line 7
+    iput p1, p0, Landroidx/media3/extractor/ts/DvbSubtitleReader;->sampleBytesWritten:I
 
     .line 8
     .line 9
-    iput-wide p1, p0, Landroidx/media3/extractor/ts/DvbSubtitleReader;->sampleTimeUs:J
-
-    .line 10
-    .line 11
-    const/4 p1, 0x0
-
-    .line 12
-    iput p1, p0, Landroidx/media3/extractor/ts/DvbSubtitleReader;->sampleBytesWritten:I
-
-    .line 13
-    .line 14
     const/4 p1, 0x2
 
-    .line 15
+    .line 10
     iput p1, p0, Landroidx/media3/extractor/ts/DvbSubtitleReader;->bytesToCheck:I
 
-    .line 16
-    .line 17
+    .line 11
+    .line 12
     return-void
 .end method
 

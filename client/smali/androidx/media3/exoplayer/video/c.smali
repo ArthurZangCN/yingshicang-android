@@ -40,7 +40,7 @@
 
     check-cast v1, Landroidx/media3/exoplayer/video/VideoSink$Listener;
 
-    invoke-interface {v1}, Landroidx/media3/exoplayer/video/VideoSink$Listener;->onFrameAvailableForRendering()V
+    invoke-interface {v1}, Landroidx/media3/exoplayer/video/VideoSink$Listener;->onFrameDropped()V
 
     return-void
 

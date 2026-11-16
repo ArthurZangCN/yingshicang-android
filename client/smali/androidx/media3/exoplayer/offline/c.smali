@@ -3,36 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/exoplayer/drm/DrmSessionManagerProvider;
+.implements Landroid/os/Handler$Callback;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/drm/DrmSessionManager;
+.field public final synthetic a:Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/drm/DrmSessionManager;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/offline/c;->a:Landroidx/media3/exoplayer/drm/DrmSessionManager;
+    iput-object p1, p0, Landroidx/media3/exoplayer/offline/c;->a:Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get(Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/drm/DrmSessionManager;
+.method public final handleMessage(Landroid/os/Message;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/offline/c;->a:Landroidx/media3/exoplayer/drm/DrmSessionManager;
+    iget-object v0, p0, Landroidx/media3/exoplayer/offline/c;->a:Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/offline/DownloadHelper;->c(Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/drm/DrmSessionManager;
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;->a(Landroidx/media3/exoplayer/offline/DownloadHelper$MediaPreparer;Landroid/os/Message;)Z
 
-    move-result-object p1
+    move-result p1
 
-    return-object p1
+    return p1
 .end method

@@ -20,7 +20,7 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroidx/activity/OnBackPressedCallback;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroidx/activity/OnBackPressedCallback;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

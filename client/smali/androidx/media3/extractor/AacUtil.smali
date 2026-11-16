@@ -272,7 +272,7 @@
 
     .line 47
     .line 48
-    invoke-static {v1, p0, v2, p1}, Landroid/support/v4/media/f;->h(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p0, v2, p1}, Landroidx/concurrent/futures/a;->c(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     .line 49
     .line 50
@@ -532,7 +532,7 @@
     const-string v4, "mp4a.40."
 
     .line 6
-    invoke-static {v4, v0}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v4, v0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v4
 

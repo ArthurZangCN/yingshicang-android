@@ -1,0 +1,63 @@
+.class public final Lz1/g1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lz1/h1;
+
+
+# direct methods
+.method public constructor <init>(Lz1/h1;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lz1/g1;->a:Lz1/h1;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lz1/g1;->a:Lz1/h1;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Lz1/h1;->a:Lcom/github/tvbox/osc/ui/activity/HomeActivity;
+
+    .line 4
+    .line 5
+    sget-object v2, Lcom/github/tvbox/osc/ui/activity/HomeActivity;->E:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    invoke-virtual {v1}, Lcom/github/tvbox/osc/ui/activity/HomeActivity;->s()V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v0, v0, Lz1/h1;->a:Lcom/github/tvbox/osc/ui/activity/HomeActivity;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method

@@ -77,7 +77,7 @@
     move-result-object p1
 
     .line 11
-    invoke-static {p0, p1}, Landroidx/appcompat/app/e;->c(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)I
+    invoke-static {p0, p1}, Landroidx/core/app/c;->a(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)I
 
     .line 12
     .line 13
@@ -218,14 +218,14 @@
     move-result-object v2
 
     .line 46
-    new-instance v3, Le/b;
+    new-instance v3, Landroidx/lifecycle/b;
 
     .line 47
     .line 48
     const/4 v4, 0x1
 
     .line 49
-    invoke-direct {v3, v4, p0, v1}, Le/b;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, p0, v1, v4}, Landroidx/lifecycle/b;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 50
     .line 51
@@ -337,7 +337,7 @@
 
     .line 6
     .line 7
-    invoke-static {p0, p1}, Landroidx/core/graphics/a;->b(Landroid/media/AudioManager;I)I
+    invoke-static {p0, p1}, Landroid/support/v4/media/session/g;->a(Landroid/media/AudioManager;I)I
 
     .line 8
     .line 9
@@ -495,7 +495,7 @@
     move-result-object p1
 
     .line 11
-    invoke-static {p0, p1}, Landroidx/core/app/b;->b(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)I
+    invoke-static {p0, p1}, Landroidx/core/app/d;->b(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)I
 
     .line 12
     .line 13

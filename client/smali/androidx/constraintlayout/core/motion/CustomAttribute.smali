@@ -157,7 +157,7 @@
 
     .line 13
     .line 14
-    invoke-static {v1, p1, p2, v2}, Landroid/support/v4/media/g;->a(FFFF)F
+    invoke-static {v1, p1, p2, v2}, Landroid/support/v4/media/f;->b(FFFF)F
 
     .line 15
     .line 16

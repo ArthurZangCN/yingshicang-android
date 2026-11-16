@@ -7,25 +7,17 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/extractor/text/SubtitleTranscodingTrackOutput;
-
-.field public final synthetic b:J
-
-.field public final synthetic c:I
+.field public final synthetic a:Lcom/google/common/collect/e2$a;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/extractor/text/SubtitleTranscodingTrackOutput;JI)V
+.method public synthetic constructor <init>(Lcom/google/common/collect/e2$a;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/extractor/text/c;->a:Landroidx/media3/extractor/text/SubtitleTranscodingTrackOutput;
-
-    iput-wide p2, p0, Landroidx/media3/extractor/text/c;->b:J
-
-    iput p4, p0, Landroidx/media3/extractor/text/c;->c:I
+    iput-object p1, p0, Landroidx/media3/extractor/text/c;->a:Lcom/google/common/collect/e2$a;
 
     return-void
 .end method
@@ -33,18 +25,21 @@
 
 # virtual methods
 .method public final accept(Ljava/lang/Object;)V
-    .locals 4
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/media3/extractor/text/c;->c:I
-
     check-cast p1, Landroidx/media3/extractor/text/CuesWithTiming;
 
-    iget-object v1, p0, Landroidx/media3/extractor/text/c;->a:Landroidx/media3/extractor/text/SubtitleTranscodingTrackOutput;
+    .line 2
+    .line 3
+    iget-object v0, p0, Landroidx/media3/extractor/text/c;->a:Lcom/google/common/collect/e2$a;
 
-    iget-wide v2, p0, Landroidx/media3/extractor/text/c;->b:J
+    .line 4
+    .line 5
+    invoke-virtual {v0, p1}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
-    invoke-static {v1, v2, v3, v0, p1}, Landroidx/media3/extractor/text/SubtitleTranscodingTrackOutput;->a(Landroidx/media3/extractor/text/SubtitleTranscodingTrackOutput;JILandroidx/media3/extractor/text/CuesWithTiming;)V
-
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method

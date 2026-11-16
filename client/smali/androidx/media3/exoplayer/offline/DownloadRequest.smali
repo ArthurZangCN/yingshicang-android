@@ -175,7 +175,7 @@
 
     .line 25
     :cond_0
-    invoke-static {v1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
@@ -328,7 +328,7 @@
     :goto_1
     const-string p8, "customCacheKey must be null for type: %s"
 
-    invoke-static {v0, p8, v1}, Lcom/github/tvbox/osc/util/t;->e(ILjava/lang/String;Z)V
+    invoke-static {v0, p8, v1}, Lcom/github/tvbox/osc/util/h0;->i(ILjava/lang/String;Z)V
 
     .line 7
     iput-object v2, p0, Landroidx/media3/exoplayer/offline/DownloadRequest;->byteRange:Landroidx/media3/exoplayer/offline/DownloadRequest$ByteRange;
@@ -355,7 +355,7 @@
     invoke-static {p1}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 14
-    invoke-static {p1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -539,7 +539,7 @@
     move-result v0
 
     .line 9
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 10
     .line 11
@@ -806,7 +806,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 34
     .line 35
@@ -866,7 +866,7 @@
 
     .line 62
     .line 63
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 64
     .line 65
@@ -906,7 +906,7 @@
 
     .line 82
     .line 83
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 84
     .line 85
@@ -926,7 +926,7 @@
 
     .line 92
     .line 93
-    invoke-static {v0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 94
     .line 95

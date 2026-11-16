@@ -11,6 +11,10 @@
 .end annotation
 
 
+# instance fields
+.field private adblock:Z
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 0
@@ -23,7 +27,7 @@
 
 # virtual methods
 .method public createPlaylistParser()Landroidx/media3/exoplayer/upstream/ParsingLoadable$Parser;
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -36,13 +40,15 @@
     .line 1
     new-instance v0, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParser;
 
-    invoke-direct {v0}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParser;-><init>()V
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/hls/playlist/DefaultHlsPlaylistParserFactory;->adblock:Z
+
+    invoke-direct {v0, v1}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParser;-><init>(Z)V
 
     return-object v0
 .end method
 
 .method public createPlaylistParser(Landroidx/media3/exoplayer/hls/playlist/HlsMultivariantPlaylist;Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;)Landroidx/media3/exoplayer/upstream/ParsingLoadable$Parser;
-    .locals 1
+    .locals 2
     .param p2    # Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
@@ -62,7 +68,20 @@
     .line 2
     new-instance v0, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParser;
 
-    invoke-direct {v0, p1, p2}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParser;-><init>(Landroidx/media3/exoplayer/hls/playlist/HlsMultivariantPlaylist;Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;)V
+    iget-boolean v1, p0, Landroidx/media3/exoplayer/hls/playlist/DefaultHlsPlaylistParserFactory;->adblock:Z
+
+    invoke-direct {v0, p1, p2, v1}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParser;-><init>(Landroidx/media3/exoplayer/hls/playlist/HlsMultivariantPlaylist;Landroidx/media3/exoplayer/hls/playlist/HlsMediaPlaylist;Z)V
 
     return-object v0
+.end method
+
+.method public setAdblock(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Landroidx/media3/exoplayer/hls/playlist/DefaultHlsPlaylistParserFactory;->adblock:Z
+
+    .line 2
+    .line 3
+    return-void
 .end method

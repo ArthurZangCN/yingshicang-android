@@ -4,55 +4,28 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/AudioAttributes;)I
+.method public static bridge synthetic a(Landroid/media/Spatializer;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/AudioAttributes;->getSpatializationBehavior()I
+    invoke-virtual {p0}, Landroid/media/Spatializer;->getImmersiveAudioLevel()I
 
+    .line 2
+    .line 3
+    .line 4
     move-result p0
 
+    .line 5
     return p0
 .end method
 
-.method public static bridge synthetic b(Landroid/media/AudioManager;)Landroid/media/Spatializer;
+.method public static bridge synthetic b(Landroid/media/AudioAttributes;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/AudioManager;->getSpatializer()Landroid/media/Spatializer;
+    invoke-virtual {p0}, Landroid/media/AudioAttributes;->isContentSpatialized()Z
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic c(Landroid/media/AudioAttributes$Builder;I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/media/AudioAttributes$Builder;->setSpatializationBehavior(I)Landroid/media/AudioAttributes$Builder;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic d(Landroid/media/Spatializer;Landroid/media/AudioAttributes;Landroid/media/AudioFormat;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/media/Spatializer;->canBeSpatialized(Landroid/media/AudioAttributes;Landroid/media/AudioFormat;)Z
-
-    .line 2
-    .line 3
-    .line 4
     move-result p0
 
-    .line 5
     return p0
 .end method

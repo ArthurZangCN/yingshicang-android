@@ -1737,7 +1737,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/drm/g;->b(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/DrmSession;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/drm/i;->b(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/DrmSession;)V
 
     .line 4
     .line 5
@@ -1815,7 +1815,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/drm/g;->b(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/DrmSession;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/drm/i;->b(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/DrmSession;)V
 
     .line 4
     .line 5
@@ -2777,11 +2777,32 @@
 
     .line 35
     .line 36
-    invoke-virtual {p1}, Landroidx/media3/common/util/TimedValueQueue;->clear()V
+    invoke-virtual {p1}, Landroidx/media3/common/util/TimedValueQueue;->size()I
 
     .line 37
     .line 38
     .line 39
+    move-result p1
+
+    .line 40
+    if-lez p1, :cond_2
+
+    .line 41
+    .line 42
+    iput-boolean p2, p0, Landroidx/media3/exoplayer/video/DecoderVideoRenderer;->waitingForFirstSampleInFormat:Z
+
+    .line 43
+    .line 44
+    :cond_2
+    iget-object p1, p0, Landroidx/media3/exoplayer/video/DecoderVideoRenderer;->formatQueue:Landroidx/media3/common/util/TimedValueQueue;
+
+    .line 45
+    .line 46
+    invoke-virtual {p1}, Landroidx/media3/common/util/TimedValueQueue;->clear()V
+
+    .line 47
+    .line 48
+    .line 49
     return-void
 .end method
 
@@ -3079,7 +3100,7 @@
     move-result p1
 
     .line 42
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 43
     .line 44

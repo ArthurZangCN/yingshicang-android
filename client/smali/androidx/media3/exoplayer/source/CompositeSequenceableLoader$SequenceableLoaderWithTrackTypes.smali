@@ -20,10 +20,10 @@
 # instance fields
 .field private final loader:Landroidx/media3/exoplayer/source/SequenceableLoader;
 
-.field private final trackTypes:Lcom/google/common/collect/f2;
+.field private final trackTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -54,7 +54,7 @@
 
     .line 5
     .line 6
-    invoke-static {p2}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -62,7 +62,7 @@
     move-result-object p1
 
     .line 10
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/CompositeSequenceableLoader$SequenceableLoaderWithTrackTypes;->trackTypes:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/CompositeSequenceableLoader$SequenceableLoaderWithTrackTypes;->trackTypes:Lcom/google/common/collect/e2;
 
     .line 11
     .line 12
@@ -128,19 +128,19 @@
     return-wide v0
 .end method
 
-.method public getTrackTypes()Lcom/google/common/collect/f2;
+.method public getTrackTypes()Lcom/google/common/collect/e2;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/CompositeSequenceableLoader$SequenceableLoaderWithTrackTypes;->trackTypes:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/CompositeSequenceableLoader$SequenceableLoaderWithTrackTypes;->trackTypes:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3

@@ -221,93 +221,21 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/HashSet;
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v2
-
-    .line 8
-    const/4 v3, 0x2
-
-    .line 9
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v4
-
-    .line 13
-    const/4 v5, 0x5
-
-    .line 14
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v5
-
-    .line 18
-    const/4 v6, 0x3
-
-    .line 19
-    new-array v6, v6, [Ljava/lang/Integer;
-
-    .line 20
-    .line 21
-    const/4 v7, 0x0
-
-    .line 22
-    aput-object v2, v6, v7
-
-    .line 23
-    .line 24
-    aput-object v4, v6, v1
-
-    .line 25
-    .line 26
-    aput-object v5, v6, v3
-
-    .line 27
-    .line 28
-    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v1
-
-    .line 32
-    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    .line 36
-    .line 37
-    .line 38
     move-result-object v0
 
-    .line 39
+    .line 5
     sput-object v0, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->MAPPABLE_TYPES:Ljava/util/Set;
 
-    .line 40
-    .line 41
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -541,7 +469,7 @@
 
     .line 99
     .line 100
-    invoke-static {p1}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 101
     .line 102
@@ -566,11 +494,11 @@
 
     .line 112
     .line 113
-    new-instance p1, Landroidx/media3/exoplayer/hls/t;
+    new-instance p1, Landroidx/media3/exoplayer/hls/v;
 
     .line 114
     .line 115
-    invoke-direct {p1, p0}, Landroidx/media3/exoplayer/hls/t;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
+    invoke-direct {p1, p0}, Landroidx/media3/exoplayer/hls/v;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
 
     .line 116
     .line 117
@@ -579,11 +507,11 @@
 
     .line 119
     .line 120
-    new-instance p1, Landroidx/media3/exoplayer/hls/u;
+    new-instance p1, Landroidx/media3/exoplayer/hls/w;
 
     .line 121
     .line 122
-    invoke-direct {p1, p0}, Landroidx/media3/exoplayer/hls/u;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
+    invoke-direct {p1, p0}, Landroidx/media3/exoplayer/hls/w;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
 
     .line 123
     .line 124
@@ -632,7 +560,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 4
     .line 5
@@ -1183,7 +1111,7 @@
 
     .line 229
     :goto_a
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 230
     .line 231
@@ -2171,7 +2099,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 10
     .line 11
@@ -2284,7 +2212,7 @@
 
     .line 59
     .line 60
-    invoke-static {v0}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 61
     .line 62
@@ -2549,7 +2477,7 @@
 
     .line 22
     :cond_1
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 23
     .line 24
@@ -2636,7 +2564,7 @@
     const/4 v1, 0x1
 
     .line 4
-    invoke-static {v0, v1}, Landroid/support/v4/media/d;->c(Ljava/util/ArrayList;I)Ljava/lang/Object;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->b(Ljava/util/ArrayList;I)Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -2677,7 +2605,7 @@
     move-result v0
 
     .line 11
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 12
     .line 13
@@ -2842,7 +2770,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 20
     .line 21
@@ -2888,7 +2816,7 @@
     move-result-object v5
 
     .line 40
-    invoke-virtual {v0, v5}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v5}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 41
     .line 42
@@ -2901,7 +2829,7 @@
 
     .line 46
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 47
     .line 48
@@ -2909,7 +2837,7 @@
     move-result-object v0
 
     .line 50
-    invoke-virtual {p1, p0, v0}, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->init(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Lcom/google/common/collect/f2;)V
+    invoke-virtual {p1, p0, v0}, Landroidx/media3/exoplayer/hls/HlsMediaChunk;->init(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Lcom/google/common/collect/e2;)V
 
     .line 51
     .line 52
@@ -4636,7 +4564,7 @@
     const/4 v3, 0x2
 
     .line 42
-    invoke-static {v2, v3}, Landroid/support/v4/media/d;->c(Ljava/util/ArrayList;I)Ljava/lang/Object;
+    invoke-static {v2, v3}, Landroid/support/v4/media/a;->b(Ljava/util/ArrayList;I)Ljava/lang/Object;
 
     .line 43
     .line 44
@@ -5448,7 +5376,7 @@
 
     .line 22
     :cond_3
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 23
     iget-object v2, v0, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->mediaChunks:Ljava/util/ArrayList;
@@ -5470,7 +5398,7 @@
     :cond_4
     iget-object v2, v0, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->mediaChunks:Ljava/util/ArrayList;
 
-    invoke-static {v2}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -5926,7 +5854,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0}, Lcom/blankj/utilcode/util/i;->k(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/r;->b(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -5998,11 +5926,11 @@
 
     .line 46
     .line 47
-    new-instance v2, Landroidx/media3/exoplayer/hls/v;
+    new-instance v2, Landroidx/media3/exoplayer/hls/x;
 
     .line 48
     .line 49
-    invoke-direct {v2, p0, v0}, Landroidx/media3/exoplayer/hls/v;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Landroidx/media3/exoplayer/hls/HlsMediaChunk;)V
+    invoke-direct {v2, p0, v0}, Landroidx/media3/exoplayer/hls/x;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;Landroidx/media3/exoplayer/hls/HlsMediaChunk;)V
 
     .line 50
     .line 51
@@ -6166,16 +6094,16 @@
 
     .line 39
     .line 40
-    invoke-static {p2}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
     .line 42
     .line 43
-    new-instance p3, Landroidx/media3/exoplayer/hls/w;
+    new-instance p3, Landroidx/media3/exoplayer/hls/y;
 
     .line 44
     .line 45
-    invoke-direct {p3, p2}, Landroidx/media3/exoplayer/hls/w;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;)V
+    invoke-direct {p3, p2}, Landroidx/media3/exoplayer/hls/y;-><init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;)V
 
     .line 46
     .line 47
@@ -6482,7 +6410,7 @@
     move-result-wide v0
 
     .line 138
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 139
     .line 140
@@ -7673,7 +7601,7 @@
 
     .line 221
     .line 222
-    invoke-static {v11, v4}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v11, v4}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 223
     .line 224
@@ -7883,7 +7811,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -8065,7 +7993,7 @@
 
     .line 20
     .line 21
-    invoke-static {p3}, Lcom/blankj/utilcode/util/i;->l(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p3}, Lcom/github/tvbox/osc/util/r;->c(Ljava/util/List;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -8327,7 +8255,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 18
     .line 19

@@ -9,23 +9,19 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Landroidx/media3/common/Player$PositionInfo;
-
-.field public final synthetic c:Landroidx/media3/common/Player$PositionInfo;
+.field public final synthetic b:Landroidx/media3/common/SimpleBasePlayer$State;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;I)V
+.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p3, p0, Landroidx/media3/common/t;->a:I
+    iput p2, p0, Landroidx/media3/common/t;->a:I
 
-    iput-object p1, p0, Landroidx/media3/common/t;->b:Landroidx/media3/common/Player$PositionInfo;
-
-    iput-object p2, p0, Landroidx/media3/common/t;->c:Landroidx/media3/common/Player$PositionInfo;
+    iput-object p1, p0, Landroidx/media3/common/t;->b:Landroidx/media3/common/SimpleBasePlayer$State;
 
     return-void
 .end method
@@ -33,18 +29,48 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 3
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/t;->c:Landroidx/media3/common/Player$PositionInfo;
+    iget v0, p0, Landroidx/media3/common/t;->a:I
+
+    iget-object v1, p0, Landroidx/media3/common/t;->b:Landroidx/media3/common/SimpleBasePlayer$State;
 
     check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    iget v1, p0, Landroidx/media3/common/t;->a:I
+    packed-switch v0, :pswitch_data_0
 
-    iget-object v2, p0, Landroidx/media3/common/t;->b:Landroidx/media3/common/Player$PositionInfo;
-
-    invoke-static {v1, v2, v0, p1}, Landroidx/media3/common/SimpleBasePlayer;->D(ILandroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$PositionInfo;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->S(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
+
+    :pswitch_0
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->H(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    :pswitch_1
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->V(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    :pswitch_2
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->R(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    :pswitch_3
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->J(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

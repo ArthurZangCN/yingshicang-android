@@ -23,7 +23,7 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroid/text/Editable;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -37,7 +37,7 @@
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -51,7 +51,7 @@
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -67,7 +67,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/text/Editable;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function4<",
             "-",
@@ -78,7 +78,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function4<",
             "-",
@@ -89,7 +89,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Integer;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

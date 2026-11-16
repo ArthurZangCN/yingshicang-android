@@ -2,47 +2,43 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/media/MediaDrm$OnExpirationUpdateListener;
-
-
-# instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;
-
-.field public final synthetic b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;)V
+.method public static a(Landroidx/media3/exoplayer/drm/ExoMediaDrm;)Ljava/util/List;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/drm/o;->a:Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/drm/o;->b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;
-
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    throw p0
 .end method
 
-
-# virtual methods
-.method public final onExpirationUpdate(Landroid/media/MediaDrm;[BJ)V
-    .locals 6
+.method public static b(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[B)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/drm/o;->a:Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/drm/o;->b:Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    move-object v2, p1
+    .line 4
+    .line 5
+    .line 6
+    throw p0
+.end method
 
-    move-object v3, p2
+.method public static c(Landroidx/media3/exoplayer/drm/ExoMediaDrm;[BLandroidx/media3/exoplayer/analytics/PlayerId;)V
+    .locals 0
 
-    move-wide v4, p3
-
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;->a(Landroidx/media3/exoplayer/drm/FrameworkMediaDrm;Landroidx/media3/exoplayer/drm/ExoMediaDrm$OnExpirationUpdateListener;Landroid/media/MediaDrm;[BJ)V
-
+    .line 1
     return-void
 .end method

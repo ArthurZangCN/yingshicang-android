@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/w;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/w;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
     return-void
 .end method
@@ -28,9 +28,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/w;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/w;->a:Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;
 
-    invoke-interface {v0}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper$Callback;->onPrepared()V
+    invoke-static {v0}, Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;->a(Landroidx/media3/exoplayer/hls/HlsSampleStreamWrapper;)V
 
     return-void
 .end method

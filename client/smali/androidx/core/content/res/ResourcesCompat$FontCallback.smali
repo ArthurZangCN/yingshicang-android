@@ -181,7 +181,7 @@
     const/4 v1, 0x0
 
     .line 8
-    invoke-direct {v0, v1, p0, p1}, Landroidx/core/content/res/a;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, v1}, Landroidx/core/content/res/a;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 9
     .line 10

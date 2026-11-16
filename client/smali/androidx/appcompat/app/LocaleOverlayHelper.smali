@@ -162,7 +162,7 @@
     if-eqz p0, :cond_1
 
     .line 4
-    invoke-static {p0}, Landroid/support/v4/media/b;->x(Landroid/os/LocaleList;)Z
+    invoke-static {p0}, Landroid/support/v4/media/session/c;->B(Landroid/os/LocaleList;)Z
 
     move-result v0
 

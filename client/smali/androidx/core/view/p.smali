@@ -8,7 +8,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Landroid/view/WindowInsets$Type;->mandatorySystemGestures()I
+    invoke-static {}, Landroid/view/WindowInsets$Type;->tappableElement()I
 
     .line 2
     .line 3
@@ -19,26 +19,11 @@
     return v0
 .end method
 
-.method public static bridge synthetic b(Landroid/view/WindowInsetsController;)I
+.method public static bridge synthetic b(Landroid/view/WindowInsetsAnimation$Bounds;)Landroid/graphics/Insets;
     .locals 0
 
     .line 1
-    invoke-interface {p0}, Landroid/view/WindowInsetsController;->getSystemBarsAppearance()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic c(Landroid/view/WindowInsetsAnimation$Bounds;)Landroid/graphics/Insets;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsetsAnimation$Bounds;->getLowerBound()Landroid/graphics/Insets;
+    invoke-virtual {p0}, Landroid/view/WindowInsetsAnimation$Bounds;->getUpperBound()Landroid/graphics/Insets;
 
     .line 2
     .line 3
@@ -49,7 +34,7 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic d(Landroid/view/WindowInsetsAnimationController;)Landroid/graphics/Insets;
+.method public static bridge synthetic c(Landroid/view/WindowInsetsAnimationController;)Landroid/graphics/Insets;
     .locals 0
 
     .line 1
@@ -64,26 +49,22 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic e(Landroid/view/WindowInsetsAnimation;)Landroid/view/animation/Interpolator;
-    .locals 0
+.method public static synthetic d()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsetsAnimation;->getInterpolator()Landroid/view/animation/Interpolator;
+    new-instance v0, Landroid/view/WindowInsetsAnimation$Bounds;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
+    return-void
 .end method
 
-.method public static bridge synthetic f(Landroid/view/WindowInsets$Builder;ILandroid/graphics/Insets;)V
+.method public static bridge synthetic e(Landroid/view/WindowInsets$Builder;ILandroid/graphics/Insets;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/view/WindowInsets$Builder;->setInsetsIgnoringVisibility(ILandroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
+    invoke-virtual {p0, p1, p2}, Landroid/view/WindowInsets$Builder;->setInsets(ILandroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
 
     .line 2
     .line 3
@@ -91,47 +72,44 @@
     return-void
 .end method
 
-.method public static bridge synthetic g(Landroid/view/WindowInsetsController;)V
-    .locals 2
+.method public static bridge synthetic f(Landroid/view/WindowInsetsController;)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    const/16 v0, 0x10
 
     .line 2
-    const/16 v1, 0x8
-
     .line 3
-    .line 4
-    invoke-interface {p0, v0, v1}, Landroid/view/WindowInsetsController;->setSystemBarsAppearance(II)V
+    invoke-interface {p0, v0, v0}, Landroid/view/WindowInsetsController;->setSystemBarsAppearance(II)V
 
+    .line 4
     .line 5
     .line 6
-    .line 7
     return-void
 .end method
 
-.method public static bridge synthetic h(Landroid/view/WindowInsetsController;I)V
+.method public static bridge synthetic g(Landroid/view/WindowInsetsController;I)V
     .locals 0
 
     .line 1
-    invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->show(I)V
+    invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->setSystemBarsBehavior(I)V
 
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
-.method public static bridge synthetic i(Landroid/view/WindowInsetsController;Landroid/view/WindowInsetsController$OnControllableInsetsChangedListener;)V
+.method public static bridge synthetic h(Landroid/view/WindowInsetsController;Landroidx/core/view/r;)V
     .locals 0
 
     .line 1
     invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->removeOnControllableInsetsChangedListener(Landroid/view/WindowInsetsController$OnControllableInsetsChangedListener;)V
 
-    .line 2
-    .line 3
-    .line 4
     return-void
 .end method
 
-.method public static bridge synthetic j(Landroid/view/WindowInsets;I)Z
+.method public static bridge synthetic i(Landroid/view/WindowInsets;I)Z
     .locals 0
 
     .line 1
@@ -146,17 +124,17 @@
     return p0
 .end method
 
-.method public static bridge synthetic k(Landroid/view/WindowInsetsAnimationController;)Landroid/graphics/Insets;
+.method public static bridge synthetic j(Landroid/view/WindowInsetsAnimationController;)Z
     .locals 0
 
     .line 1
-    invoke-interface {p0}, Landroid/view/WindowInsetsAnimationController;->getCurrentInsets()Landroid/graphics/Insets;
+    invoke-interface {p0}, Landroid/view/WindowInsetsAnimationController;->isCancelled()Z
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    move-result p0
 
     .line 5
-    return-object p0
+    return p0
 .end method

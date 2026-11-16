@@ -96,6 +96,18 @@
     return-void
 .end method
 
+.method public static synthetic access$000(Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;Landroidx/media3/common/util/ParsableByteArray;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseSpuControlSequenceTable(Landroidx/media3/common/util/ParsableByteArray;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
 .method private static getColor([II)I
     .locals 1
 
@@ -131,7 +143,7 @@
 .end method
 
 .method private static parseColor(Ljava/lang/String;)I
-    .locals 1
+    .locals 2
 
     .line 1
     const/16 v0, 0x10
@@ -153,19 +165,33 @@
 
     .line 8
     :catch_0
-    const/4 p0, 0x0
+    move-exception p0
 
     .line 9
+    const-string v0, "VobsubParser"
+
+    .line 10
+    .line 11
+    const-string v1, "Parsing color failed"
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1, p0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const/4 p0, 0x0
+
+    .line 17
     return p0
 .end method
 
-.method private parseControl([ILandroidx/media3/common/util/ParsableByteArray;I)V
-    .locals 1
+.method private parseCommand(Landroidx/media3/common/util/ParsableByteArray;)Z
+    .locals 3
 
     .line 1
-    :cond_0
-    :pswitch_0
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->getPosition()I
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
     .line 2
     .line 3
@@ -173,112 +199,109 @@
     move-result v0
 
     .line 5
-    if-ge v0, p3, :cond_1
+    const/16 v1, 0xff
 
     .line 6
     .line 7
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
+    const/4 v2, 0x0
 
     .line 8
+    if-eq v0, v1, :cond_0
+
     .line 9
     .line 10
-    move-result v0
+    packed-switch v0, :pswitch_data_0
 
     .line 11
-    if-lez v0, :cond_1
-
     .line 12
     .line 13
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+    const-string p1, "Unrecognized command: "
 
     .line 14
     .line 15
-    .line 16
-    move-result v0
+    const-string v1, "VobsubParser"
 
+    .line 16
     .line 17
-    packed-switch v0, :pswitch_data_0
+    invoke-static {p1, v0, v1}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    return-void
+    return v2
 
     .line 21
-    :pswitch_1
-    invoke-direct {p0, p2}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlOffsets(Landroidx/media3/common/util/ParsableByteArray;)Z
+    :pswitch_0
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlOffsets(Landroidx/media3/common/util/ParsableByteArray;)Z
 
     .line 22
     .line 23
     .line 24
-    move-result v0
+    move-result p1
 
     .line 25
-    if-nez v0, :cond_0
+    return p1
 
     .line 26
+    :pswitch_1
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlArea(Landroidx/media3/common/util/ParsableByteArray;)Z
+
     .line 27
-    return-void
-
     .line 28
-    :pswitch_2
-    invoke-direct {p0, p2}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlArea(Landroidx/media3/common/util/ParsableByteArray;)Z
-
     .line 29
+    move-result p1
+
     .line 30
+    return p1
+
     .line 31
-    move-result v0
+    :pswitch_2
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlAlpha(Landroidx/media3/common/util/ParsableByteArray;)Z
 
     .line 32
-    if-nez v0, :cond_0
-
     .line 33
     .line 34
-    return-void
+    move-result p1
 
     .line 35
-    :pswitch_3
-    invoke-direct {p0, p2}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlAlpha(Landroidx/media3/common/util/ParsableByteArray;)Z
+    return p1
 
     .line 36
+    :pswitch_3
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlColors(Landroidx/media3/common/util/ParsableByteArray;)Z
+
     .line 37
     .line 38
-    move-result v0
-
     .line 39
-    if-nez v0, :cond_0
+    move-result p1
 
     .line 40
+    return p1
+
     .line 41
-    return-void
+    :pswitch_4
+    const/4 p1, 0x1
 
     .line 42
-    :pswitch_4
-    invoke-direct {p0, p1, p2}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlColors([ILandroidx/media3/common/util/ParsableByteArray;)Z
+    return p1
 
     .line 43
+    :cond_0
+    return v2
+
     .line 44
+    nop
+
     .line 45
-    move-result v0
-
-    .line 46
-    if-nez v0, :cond_0
-
-    .line 47
-    .line 48
-    :cond_1
-    return-void
-
-    .line 49
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
+        :pswitch_4
+        :pswitch_4
         :pswitch_4
         :pswitch_3
         :pswitch_2
         :pswitch_1
+        :pswitch_0
     .end packed-switch
 .end method
 
@@ -294,119 +317,118 @@
     move-result v0
 
     .line 5
-    const/4 v1, 0x0
+    const-string v1, "VobsubParser"
 
     .line 6
-    const/4 v2, 0x2
-
     .line 7
-    if-lt v0, v2, :cond_1
+    const/4 v2, 0x0
 
     .line 8
+    const/4 v3, 0x2
+
     .line 9
-    iget-boolean v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasColors:Z
+    if-ge v0, v3, :cond_0
 
     .line 10
     .line 11
-    if-nez v0, :cond_0
+    const-string p1, "Incomplete alpha command"
 
     .line 12
     .line 13
-    goto :goto_0
+    invoke-static {v1, p1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
-    :cond_0
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 15
     .line 16
+    return v2
+
     .line 17
-    move-result v0
+    :cond_0
+    iget-boolean v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasColors:Z
 
     .line 18
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 19
+    if-nez v0, :cond_1
+
     .line 20
     .line 21
-    move-result p1
+    const-string p1, "Ignoring alpha command before color command"
 
     .line 22
-    iget-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
-
     .line 23
+    invoke-static {v1, p1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 24
-    const/4 v4, 0x3
-
     .line 25
-    aget v5, v3, v4
-
     .line 26
+    return v2
+
     .line 27
-    shr-int/lit8 v6, v0, 0x4
+    :cond_1
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
     .line 28
     .line 29
-    invoke-static {v5, v6}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
-
     .line 30
+    move-result v0
+
     .line 31
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+
     .line 32
-    move-result v5
-
     .line 33
-    aput v5, v3, v4
-
     .line 34
+    move-result p1
+
     .line 35
-    iget-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
+    iget-object v1, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
 
     .line 36
     .line 37
-    aget v4, v3, v2
+    const/4 v4, 0x3
 
     .line 38
+    aget v5, v1, v4
+
     .line 39
-    and-int/lit8 v0, v0, 0xf
-
     .line 40
-    .line 41
-    invoke-static {v4, v0}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
+    shr-int/lit8 v6, v0, 0x4
 
+    .line 41
     .line 42
+    invoke-static {v5, v6}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
+
     .line 43
     .line 44
-    move-result v0
-
     .line 45
-    aput v0, v3, v2
+    move-result v5
 
     .line 46
+    aput v5, v1, v4
+
     .line 47
-    iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
-
     .line 48
-    .line 49
-    const/4 v2, 0x1
+    iget-object v1, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
 
+    .line 49
     .line 50
-    aget v3, v0, v2
+    aget v4, v1, v3
 
     .line 51
     .line 52
-    shr-int/lit8 v4, p1, 0x4
+    and-int/lit8 v0, v0, 0xf
 
     .line 53
     .line 54
-    invoke-static {v3, v4}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
+    invoke-static {v4, v0}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
 
     .line 55
     .line 56
     .line 57
-    move-result v3
+    move-result v0
 
     .line 58
-    aput v3, v0, v2
+    aput v0, v1, v3
 
     .line 59
     .line 60
@@ -414,31 +436,53 @@
 
     .line 61
     .line 62
-    aget v3, v0, v1
+    const/4 v1, 0x1
 
     .line 63
+    aget v3, v0, v1
+
     .line 64
-    and-int/lit8 p1, p1, 0xf
-
     .line 65
-    .line 66
-    invoke-static {v3, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
+    shr-int/lit8 v4, p1, 0x4
 
+    .line 66
     .line 67
+    invoke-static {v3, v4}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
+
     .line 68
     .line 69
-    move-result p1
-
     .line 70
-    aput p1, v0, v1
+    move-result v3
 
     .line 71
-    .line 72
-    return v2
+    aput v3, v0, v1
 
+    .line 72
     .line 73
-    :cond_1
-    :goto_0
+    iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
+
+    .line 74
+    .line 75
+    aget v3, v0, v2
+
+    .line 76
+    .line 77
+    and-int/lit8 p1, p1, 0xf
+
+    .line 78
+    .line 79
+    invoke-static {v3, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->setAlpha(II)I
+
+    .line 80
+    .line 81
+    .line 82
+    move-result p1
+
+    .line 83
+    aput p1, v0, v2
+
+    .line 84
+    .line 85
     return v1
 .end method
 
@@ -461,135 +505,148 @@
 
     .line 7
     .line 8
-    const/4 p1, 0x0
+    const-string p1, "VobsubParser"
 
     .line 9
-    return p1
-
     .line 10
-    :cond_0
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+    const-string v0, "Incomplete area command"
 
     .line 11
     .line 12
+    invoke-static {p1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 13
-    move-result v0
-
     .line 14
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 15
+    const/4 p1, 0x0
+
     .line 16
+    return p1
+
     .line 17
-    move-result v1
+    :cond_0
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
     .line 18
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 19
     .line 20
+    move-result v0
+
     .line 21
-    move-result v2
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
     .line 22
-    shl-int/lit8 v0, v0, 0x4
-
     .line 23
     .line 24
-    shr-int/lit8 v3, v1, 0x4
+    move-result v1
 
     .line 25
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+
     .line 26
-    or-int/2addr v0, v3
-
     .line 27
-    and-int/lit8 v1, v1, 0xf
-
     .line 28
+    move-result v2
+
     .line 29
-    shl-int/lit8 v1, v1, 0x8
+    shl-int/lit8 v0, v0, 0x4
 
     .line 30
     .line 31
-    or-int/2addr v1, v2
+    shr-int/lit8 v3, v1, 0x4
 
     .line 32
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 33
-    .line 34
-    .line 35
-    move-result v2
+    or-int/2addr v0, v3
 
+    .line 34
+    and-int/lit8 v1, v1, 0xf
+
+    .line 35
     .line 36
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+    shl-int/lit8 v1, v1, 0x8
 
     .line 37
     .line 38
-    .line 39
-    move-result v3
+    or-int/2addr v1, v2
 
-    .line 40
+    .line 39
     invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
+    .line 40
     .line 41
     .line 42
+    move-result v2
+
     .line 43
-    move-result p1
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
     .line 44
-    shl-int/lit8 v2, v2, 0x4
-
     .line 45
     .line 46
-    shr-int/lit8 v4, v3, 0x4
+    move-result v3
 
     .line 47
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+
     .line 48
-    or-int/2addr v2, v4
-
     .line 49
-    and-int/lit8 v3, v3, 0xf
-
     .line 50
+    move-result p1
+
     .line 51
-    shl-int/lit8 v3, v3, 0x8
+    shl-int/lit8 v2, v2, 0x4
 
     .line 52
     .line 53
-    or-int/2addr p1, v3
+    shr-int/lit8 v4, v3, 0x4
 
     .line 54
-    new-instance v3, Landroid/graphics/Rect;
-
     .line 55
+    or-int/2addr v2, v4
+
     .line 56
-    const/4 v4, 0x1
+    and-int/lit8 v3, v3, 0xf
 
     .line 57
-    add-int/2addr v1, v4
-
     .line 58
-    add-int/2addr p1, v4
+    shl-int/lit8 v3, v3, 0x8
 
     .line 59
+    .line 60
+    or-int/2addr p1, v3
+
+    .line 61
+    new-instance v3, Landroid/graphics/Rect;
+
+    .line 62
+    .line 63
+    const/4 v4, 0x1
+
+    .line 64
+    add-int/2addr v1, v4
+
+    .line 65
+    add-int/2addr p1, v4
+
+    .line 66
     invoke-direct {v3, v0, v2, v1, p1}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 60
-    .line 61
-    .line 62
+    .line 67
+    .line 68
+    .line 69
     iput-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->boundingBox:Landroid/graphics/Rect;
 
-    .line 63
-    .line 64
+    .line 70
+    .line 71
     return v4
 .end method
 
-.method private parseControlColors([ILandroidx/media3/common/util/ParsableByteArray;)Z
+.method private parseControlColors(Landroidx/media3/common/util/ParsableByteArray;)Z
     .locals 6
 
     .line 1
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
 
     .line 2
     .line 3
@@ -607,89 +664,87 @@
 
     .line 8
     .line 9
-    return v1
+    const-string p1, "VobsubParser"
 
     .line 10
-    :cond_0
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 11
+    const-string v0, "Incomplete color command"
+
     .line 12
     .line 13
-    move-result v0
+    invoke-static {p1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 14
-    invoke-virtual {p2}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
-
     .line 15
     .line 16
+    return v1
+
     .line 17
-    move-result p2
+    :cond_0
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
     .line 18
-    iget-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
-
     .line 19
     .line 20
-    shr-int/lit8 v4, v0, 0x4
+    move-result v0
 
     .line 21
-    .line 22
-    invoke-static {p1, v4}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
 
+    .line 22
     .line 23
     .line 24
+    move-result p1
+
     .line 25
-    move-result v4
+    iget-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
 
     .line 26
-    const/4 v5, 0x3
-
     .line 27
-    aput v4, v3, v5
+    iget-object v4, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->palette:[I
 
     .line 28
     .line 29
-    iget-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
+    shr-int/lit8 v5, v0, 0x4
 
     .line 30
     .line 31
-    and-int/lit8 v0, v0, 0xf
+    invoke-static {v4, v5}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
 
     .line 32
     .line 33
-    invoke-static {p1, v0}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
-
     .line 34
+    move-result v4
+
     .line 35
+    const/4 v5, 0x3
+
     .line 36
-    move-result v0
+    aput v4, v3, v5
 
     .line 37
-    aput v0, v3, v2
-
     .line 38
+    iget-object v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
+
     .line 39
-    iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
-
     .line 40
+    iget-object v4, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->palette:[I
+
     .line 41
-    shr-int/lit8 v2, p2, 0x4
-
     .line 42
-    .line 43
-    invoke-static {p1, v2}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
+    and-int/lit8 v0, v0, 0xf
 
+    .line 43
     .line 44
+    invoke-static {v4, v0}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
+
     .line 45
     .line 46
-    move-result v2
-
     .line 47
-    const/4 v3, 0x1
+    move-result v0
 
     .line 48
-    aput v2, v0, v3
+    aput v0, v3, v2
 
     .line 49
     .line 50
@@ -697,26 +752,57 @@
 
     .line 51
     .line 52
-    and-int/lit8 p2, p2, 0xf
+    iget-object v2, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->palette:[I
 
     .line 53
     .line 54
-    invoke-static {p1, p2}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
+    shr-int/lit8 v3, p1, 0x4
 
     .line 55
     .line 56
+    invoke-static {v2, v3}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
+
     .line 57
-    move-result p1
-
     .line 58
-    aput p1, v0, v1
-
     .line 59
+    move-result v2
+
     .line 60
-    iput-boolean v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasColors:Z
+    const/4 v3, 0x1
 
     .line 61
+    aput v2, v0, v3
+
     .line 62
+    .line 63
+    iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->colors:[I
+
+    .line 64
+    .line 65
+    iget-object v2, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->palette:[I
+
+    .line 66
+    .line 67
+    and-int/lit8 p1, p1, 0xf
+
+    .line 68
+    .line 69
+    invoke-static {v2, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->getColor([II)I
+
+    .line 70
+    .line 71
+    .line 72
+    move-result p1
+
+    .line 73
+    aput p1, v0, v1
+
+    .line 74
+    .line 75
+    iput-boolean v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasColors:Z
+
+    .line 76
+    .line 77
     return v3
 .end method
 
@@ -739,14 +825,83 @@
 
     .line 7
     .line 8
-    const/4 p1, 0x0
+    const-string p1, "VobsubParser"
 
     .line 9
+    .line 10
+    const-string v0, "Incomplete offsets command"
+
+    .line 11
+    .line 12
+    invoke-static {p1, v0}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 p1, 0x0
+
+    .line 16
     return p1
+
+    .line 17
+    :cond_0
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    iput v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->dataOffset0:I
+
+    .line 22
+    .line 23
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result p1
+
+    .line 27
+    iput p1, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->dataOffset1:I
+
+    .line 28
+    .line 29
+    const/4 p1, 0x1
+
+    .line 30
+    return p1
+.end method
+
+.method private parseControlSequence(Landroidx/media3/common/util/ParsableByteArray;I)Z
+    .locals 4
+
+    .line 1
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x4
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    if-ge v0, v1, :cond_0
+
+    .line 8
+    .line 9
+    return v2
 
     .line 10
     :cond_0
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->getPosition()I
 
     .line 11
     .line 12
@@ -754,26 +909,107 @@
     move-result v0
 
     .line 14
-    iput v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->dataOffset0:I
+    const/4 v1, 0x2
 
     .line 15
-    .line 16
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
+    invoke-virtual {p1, v1}, Landroidx/media3/common/util/ParsableByteArray;->skipBytes(I)V
 
+    .line 16
     .line 17
     .line 18
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
+
     .line 19
-    move-result p1
-
     .line 20
-    iput p1, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->dataOffset1:I
-
     .line 21
+    move-result v1
+
     .line 22
-    const/4 p1, 0x1
+    add-int/2addr v1, p2
 
     .line 23
-    return p1
+    const/4 p2, 0x1
+
+    .line 24
+    if-eq v1, v0, :cond_1
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->limit()I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v0
+
+    .line 30
+    if-ge v1, v0, :cond_1
+
+    .line 31
+    .line 32
+    move v2, p2
+
+    .line 33
+    :cond_1
+    if-eqz v2, :cond_2
+
+    .line 34
+    .line 35
+    move v0, v1
+
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :cond_2
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->limit()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v0
+
+    .line 41
+    :goto_0
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->getPosition()I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v3
+
+    .line 45
+    if-ge v3, v0, :cond_3
+
+    .line 46
+    .line 47
+    if-eqz p2, :cond_3
+
+    .line 48
+    .line 49
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseCommand(Landroidx/media3/common/util/ParsableByteArray;)Z
+
+    .line 50
+    .line 51
+    .line 52
+    move-result p2
+
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :cond_3
+    if-eqz v2, :cond_4
+
+    .line 55
+    .line 56
+    invoke-virtual {p1, v1}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+
+    .line 57
+    .line 58
+    .line 59
+    :cond_4
+    return v2
 .end method
 
 .method private parseRleData(Landroidx/media3/common/util/ParsableBitArray;ZLandroid/graphics/Rect;[I)V
@@ -1009,6 +1245,100 @@
 
     .line 43
     .line 44
+    return-void
+.end method
+
+.method private parseSpuControlSequenceTable(Landroidx/media3/common/util/ParsableByteArray;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->palette:[I
+
+    .line 2
+    .line 3
+    const-string v1, "VobsubParser"
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    const-string p1, "Skipping SPU (no palette)"
+
+    .line 8
+    .line 9
+    invoke-static {v1, p1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_0
+    iget-boolean v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasPlane:Z
+
+    .line 14
+    .line 15
+    if-nez v0, :cond_1
+
+    .line 16
+    .line 17
+    const-string p1, "Skipping SPU (no plane)"
+
+    .line 18
+    .line 19
+    invoke-static {v1, p1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+
+    .line 23
+    :cond_1
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->getPosition()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    add-int/lit8 v0, v0, -0x2
+
+    .line 28
+    .line 29
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    add-int/2addr v1, v0
+
+    .line 34
+    invoke-virtual {p1, v1}, Landroidx/media3/common/util/ParsableByteArray;->setPosition(I)V
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_2
+    invoke-direct {p0, p1, v0}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControlSequence(Landroidx/media3/common/util/ParsableByteArray;I)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    if-nez v1, :cond_2
+
+    .line 42
+    .line 43
     return-void
 .end method
 
@@ -1392,7 +1722,7 @@
 .end method
 
 .method public parseIdx(Ljava/lang/String;)V
-    .locals 7
+    .locals 8
 
     .line 1
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -1425,7 +1755,7 @@
 
     .line 14
     :goto_0
-    if-ge v2, v0, :cond_2
+    if-ge v2, v0, :cond_3
 
     .line 15
     .line 16
@@ -1491,7 +1821,7 @@
     array-length v5, v3
 
     .line 45
-    if-ge v4, v5, :cond_1
+    if-ge v4, v5, :cond_2
 
     .line 46
     .line 47
@@ -1543,7 +1873,7 @@
     move-result v4
 
     .line 70
-    if-eqz v4, :cond_1
+    if-eqz v4, :cond_2
 
     .line 71
     .line 72
@@ -1555,170 +1885,156 @@
     .line 74
     .line 75
     .line 76
-    move-result-object v3
+    move-result-object v4
 
     .line 77
-    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 78
     .line 79
     .line 80
-    move-result-object v3
+    move-result-object v4
 
     .line 81
-    const-string v4, "x"
+    const-string v5, "x"
 
     .line 82
     .line 83
-    invoke-static {v3, v4}, Landroidx/media3/common/util/Util;->split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+    invoke-static {v4, v5}, Landroidx/media3/common/util/Util;->split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     .line 84
     .line 85
     .line 86
-    move-result-object v3
+    move-result-object v4
 
     .line 87
-    array-length v4, v3
+    array-length v5, v4
 
     .line 88
-    const/4 v5, 0x2
+    const/4 v6, 0x2
 
     .line 89
-    if-ne v4, v5, :cond_1
+    const-string v7, "VobsubParser"
 
     .line 90
     .line 91
-    :try_start_0
-    aget-object v4, v3, v1
+    if-eq v5, v6, :cond_1
 
     .line 92
     .line 93
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 94
     .line 95
-    .line 96
-    move-result v4
+    const-string v5, "Ignoring malformed IDX size line: \'"
 
+    .line 96
     .line 97
-    iput v4, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->planeWidth:I
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 98
     .line 99
-    const/4 v4, 0x1
-
     .line 100
-    aget-object v3, v3, v4
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 101
     .line 102
-    invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
     .line 103
+    const-string v3, "\'"
+
     .line 104
     .line 105
-    move-result v3
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 106
-    iput v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->planeHeight:I
-
     .line 107
     .line 108
-    iput-boolean v4, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasPlane:Z
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 109
     .line 110
-    goto :goto_2
-
     .line 111
-    :catch_0
-    move-exception v3
+    move-result-object v3
 
     .line 112
-    const-string v4, "VobsubParser"
+    invoke-static {v7, v3}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 113
     .line 114
-    const-string v5, "Parsing IDX failed"
-
     .line 115
+    goto :goto_2
+
     .line 116
-    invoke-static {v4, v5, v3}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    :cond_1
+    :try_start_0
+    aget-object v3, v4, v1
 
     .line 117
     .line 118
+    invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
     .line 119
-    :cond_1
+    .line 120
+    .line 121
+    move-result v3
+
+    .line 122
+    iput v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->planeWidth:I
+
+    .line 123
+    .line 124
+    const/4 v3, 0x1
+
+    .line 125
+    aget-object v4, v4, v3
+
+    .line 126
+    .line 127
+    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    .line 128
+    .line 129
+    .line 130
+    move-result v4
+
+    .line 131
+    iput v4, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->planeHeight:I
+
+    .line 132
+    .line 133
+    iput-boolean v3, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasPlane:Z
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 134
+    .line 135
+    goto :goto_2
+
+    .line 136
+    :catch_0
+    move-exception v3
+
+    .line 137
+    const-string v4, "Parsing IDX failed"
+
+    .line 138
+    .line 139
+    invoke-static {v7, v4, v3}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 140
+    .line 141
+    .line 142
+    :cond_2
     :goto_2
     add-int/lit8 v2, v2, 0x1
 
-    .line 120
-    .line 121
-    goto :goto_0
+    .line 143
+    .line 144
+    goto/16 :goto_0
 
-    .line 122
-    :cond_2
-    return-void
-.end method
-
-.method public parseSpu(Landroidx/media3/common/util/ParsableByteArray;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->palette:[I
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_1
-
-    .line 4
-    .line 5
-    iget-boolean v1, p0, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->hasPlane:Z
-
-    .line 6
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    add-int/lit8 v1, v1, -0x2
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v1}, Landroidx/media3/common/util/ParsableByteArray;->skipBytes(I)V
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedShort()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    invoke-direct {p0, v0, p1, v1}, Landroidx/media3/extractor/text/vobsub/VobsubParser$CueBuilder;->parseControl([ILandroidx/media3/common/util/ParsableByteArray;I)V
-
-    .line 24
-    .line 25
-    .line 26
-    :cond_1
-    :goto_0
+    .line 145
+    .line 146
+    :cond_3
     return-void
 .end method
 

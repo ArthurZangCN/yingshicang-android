@@ -2,19 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/media3/exoplayer/audio/AudioCapabilitiesReceiver$Listener;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/audio/DefaultAudioSink$AudioTrackProvider;I)I
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;)V
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/common/util/Util;->getAudioTrackChannelConfig(I)I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/t;->a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;
 
-    .line 5
-    return p0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAudioCapabilitiesChanged(Landroidx/media3/exoplayer/audio/AudioCapabilities;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/t;->a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;
+
+    invoke-virtual {v0, p1}, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;->onAudioCapabilitiesChanged(Landroidx/media3/exoplayer/audio/AudioCapabilities;)V
+
+    return-void
 .end method

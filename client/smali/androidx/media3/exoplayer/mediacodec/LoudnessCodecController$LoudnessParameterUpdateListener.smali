@@ -20,22 +20,25 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/mediacodec/q;
+    new-instance v0, Landroidx/constraintlayout/core/state/c;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x4
 
     .line 4
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
+
     .line 5
     .line 6
+    .line 7
     sput-object v0, Landroidx/media3/exoplayer/mediacodec/LoudnessCodecController$LoudnessParameterUpdateListener;->DEFAULT:Landroidx/media3/exoplayer/mediacodec/LoudnessCodecController$LoudnessParameterUpdateListener;
 
-    .line 7
     .line 8
+    .line 9
     return-void
 .end method
 

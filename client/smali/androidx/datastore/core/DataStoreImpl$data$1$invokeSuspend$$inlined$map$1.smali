@@ -85,7 +85,7 @@
 
     .line 17
     :cond_0
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 18
     .line 19

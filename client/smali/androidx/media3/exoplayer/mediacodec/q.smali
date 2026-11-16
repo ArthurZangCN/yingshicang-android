@@ -3,47 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;
-.implements Landroidx/media3/exoplayer/mediacodec/LoudnessCodecController$LoudnessParameterUpdateListener;
-.implements Landroidx/media3/exoplayer/mediacodec/MediaCodecSelector;
+.implements Ljava/util/Comparator;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/mediacodec/q;->a:Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public getDecoderInfos(Ljava/lang/String;ZZ)Ljava/util/List;
-    .locals 0
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 1
 
     .line 1
-    invoke-static {p1, p2, p3}, Landroidx/media3/exoplayer/mediacodec/p;->a(Ljava/lang/String;ZZ)Ljava/util/List;
+    iget-object v0, p0, Landroidx/media3/exoplayer/mediacodec/q;->a:Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public getScore(Ljava/lang/Object;)I
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;
-
-    invoke-static {p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->b(Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+    invoke-static {v0, p1, p2}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->b(Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil$ScoreProvider;Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
 
     return p1
-.end method
-
-.method public onLoudnessParameterUpdate(Landroid/os/Bundle;)Landroid/os/Bundle;
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, Landroidx/media3/exoplayer/mediacodec/h;->a(Landroid/os/Bundle;)Landroid/os/Bundle;
-
-    move-result-object p1
-
-    return-object p1
 .end method

@@ -7,25 +7,25 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic b:Ljava/io/IOException;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final synthetic c:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Ljava/io/IOException;Z)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/media3/exoplayer/hls/j;->a:I
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/j;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/hls/j;->b:Ljava/lang/Object;
+    iput-object p2, p0, Landroidx/media3/exoplayer/hls/j;->b:Ljava/io/IOException;
 
-    iput-object p3, p0, Landroidx/media3/exoplayer/hls/j;->c:Ljava/lang/Object;
+    iput-boolean p3, p0, Landroidx/media3/exoplayer/hls/j;->c:Z
 
     return-void
 .end method
@@ -36,39 +36,15 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/hls/j;->a:I
-
-    iget-object v1, p0, Landroidx/media3/exoplayer/hls/j;->c:Ljava/lang/Object;
-
-    iget-object v2, p0, Landroidx/media3/exoplayer/hls/j;->b:Ljava/lang/Object;
-
-    packed-switch v0, :pswitch_data_0
-
-    check-cast v2, Landroidx/media3/exoplayer/source/ads/AdsMediaSource;
-
-    check-cast v1, Landroidx/media3/common/AdPlaybackState;
+    iget-boolean v0, p0, Landroidx/media3/exoplayer/hls/j;->c:Z
 
     check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
 
-    invoke-static {v2, v1, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader;->b(Landroidx/media3/exoplayer/source/ads/AdsMediaSource;Landroidx/media3/common/AdPlaybackState;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    iget-object v1, p0, Landroidx/media3/exoplayer/hls/j;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/hls/j;->b:Ljava/io/IOException;
+
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->b(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Ljava/io/IOException;ZLandroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
 
     return-void
-
-    :pswitch_0
-    check-cast v2, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
-
-    check-cast v1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;
-
-    check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
-
-    invoke-static {v2, v1, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->a(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

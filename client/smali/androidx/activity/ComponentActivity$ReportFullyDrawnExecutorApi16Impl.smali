@@ -258,19 +258,16 @@
 
     .line 36
     .line 37
-    const/4 v1, 0x0
+    invoke-direct {v0, p0}, Landroidx/activity/e;-><init>(Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;)V
 
     .line 38
-    invoke-direct {v0, p0, v1}, Landroidx/activity/e;-><init>(Ljava/lang/Object;I)V
-
     .line 39
     .line 40
-    .line 41
     invoke-virtual {p1, v0}, Landroid/view/View;->postOnAnimation(Ljava/lang/Runnable;)V
 
+    .line 41
     .line 42
     .line 43
-    .line 44
     :goto_0
     return-void
 .end method

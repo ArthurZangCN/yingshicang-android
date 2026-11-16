@@ -96,7 +96,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0, v1}, Lcom/blankj/utilcode/util/i;->i(Ljava/lang/CharSequence;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lcom/google/common/base/j;->r(Ljava/lang/CharSequence;Ljava/lang/String;)Z
 
     .line 31
     .line 32
@@ -125,7 +125,7 @@
     move-result-object v1
 
     .line 44
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 45
     .line 46

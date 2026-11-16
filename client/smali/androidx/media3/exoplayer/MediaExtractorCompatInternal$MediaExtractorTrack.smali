@@ -155,7 +155,7 @@
 
     .line 18
     .line 19
-    invoke-static {p2}, Landroidx/media3/exoplayer/j1;->a(Landroid/media/MediaFormat;)V
+    invoke-static {p2}, Landroidx/activity/g;->l(Landroid/media/MediaFormat;)V
 
     .line 20
     .line 21

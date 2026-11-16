@@ -50,7 +50,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/extractor/d;->a(Landroidx/media3/extractor/TrackOutput;J)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/extractor/f;->a(Landroidx/media3/extractor/TrackOutput;J)V
 
     return-void
 .end method
@@ -79,7 +79,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {v0, p1, p2, p3}, Landroidx/media3/extractor/d;->b(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/DataReader;IZ)I
+    invoke-static {v0, p1, p2, p3}, Landroidx/media3/extractor/f;->b(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/DataReader;IZ)I
 
     move-result p1
 
@@ -107,7 +107,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {v0, p1, p2}, Landroidx/media3/extractor/d;->c(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/util/ParsableByteArray;I)V
+    invoke-static {v0, p1, p2}, Landroidx/media3/extractor/f;->c(Landroidx/media3/extractor/TrackOutput;Landroidx/media3/common/util/ParsableByteArray;I)V
 
     return-void
 .end method

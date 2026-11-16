@@ -2,40 +2,79 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
+.field public final synthetic c:Ljava/lang/Object;
+
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/MediaRouter2$RoutingController;)Ljava/util/List;
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/MediaRouter2$RoutingController;->getSelectedRoutes()Ljava/util/List;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    iput p3, p0, Landroidx/media3/exoplayer/d;->a:I
 
-    .line 5
-    return-object p0
-.end method
+    iput-object p1, p0, Landroidx/media3/exoplayer/d;->b:Ljava/lang/Object;
 
-.method public static bridge synthetic b(Landroid/media/MediaRouter2;Landroid/media/MediaRouter2$ControllerCallback;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/media/MediaRouter2;->unregisterControllerCallback(Landroid/media/MediaRouter2$ControllerCallback;)V
+    iput-object p2, p0, Landroidx/media3/exoplayer/d;->c:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static bridge synthetic c(Landroid/media/MediaRouter2;Landroidx/media3/exoplayer/f;Landroid/media/MediaRouter2$RouteCallback;Landroid/media/RouteDiscoveryPreference;)V
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 3
 
     .line 1
-    invoke-virtual {p0, p1, p2, p3}, Landroid/media/MediaRouter2;->registerRouteCallback(Ljava/util/concurrent/Executor;Landroid/media/MediaRouter2$RouteCallback;Landroid/media/RouteDiscoveryPreference;)V
+    iget v0, p0, Landroidx/media3/exoplayer/d;->a:I
 
-    .line 2
-    .line 3
-    .line 4
+    iget-object v1, p0, Landroidx/media3/exoplayer/d;->c:Ljava/lang/Object;
+
+    iget-object v2, p0, Landroidx/media3/exoplayer/d;->b:Ljava/lang/Object;
+
+    packed-switch v0, :pswitch_data_0
+
+    check-cast v2, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+
+    check-cast v1, Landroid/util/Pair;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->h(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;)V
+
     return-void
+
+    :pswitch_0
+    check-cast v2, Landroidx/media3/exoplayer/ExoPlayerImpl;
+
+    check-cast v1, Landroidx/media3/exoplayer/ExoPlayerImplInternal$PlaybackInfoUpdate;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->C(Landroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/exoplayer/ExoPlayerImplInternal$PlaybackInfoUpdate;)V
+
+    return-void
+
+    :pswitch_1
+    check-cast v2, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi23;
+
+    check-cast v1, Landroid/content/Context;
+
+    invoke-static {v2, v1}, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi23;->b(Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi23;Landroid/content/Context;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

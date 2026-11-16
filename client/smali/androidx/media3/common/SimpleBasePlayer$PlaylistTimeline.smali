@@ -28,10 +28,10 @@
     .end annotation
 .end field
 
-.field private final playlist:Lcom/google/common/collect/f2;
+.field private final playlist:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/SimpleBasePlayer$MediaItemData;",
             ">;"
         }
@@ -67,7 +67,7 @@
     move-result v0
 
     .line 8
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -75,7 +75,7 @@
     move-result-object v1
 
     .line 12
-    iput-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/f2;
+    iput-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/e2;
 
     .line 13
     .line 14
@@ -256,11 +256,11 @@
     return-void
 .end method
 
-.method public static synthetic access$000(Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;)Lcom/google/common/collect/f2;
+.method public static synthetic access$000(Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -271,7 +271,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -294,7 +294,7 @@
 
     .line 11
     :cond_0
-    iget-object p0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/SimpleBasePlayer$MediaItemData;->periods:Lcom/google/common/collect/e2;
 
     .line 12
     .line 13
@@ -423,7 +423,7 @@
     sub-int/2addr p1, v0
 
     .line 10
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/e2;
 
     .line 11
     .line 12
@@ -549,7 +549,7 @@
     sub-int/2addr p1, v1
 
     .line 10
-    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/e2;
 
     .line 11
     .line 12
@@ -580,7 +580,7 @@
     .locals 0
 
     .line 1
-    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/f2;
+    iget-object p3, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -619,7 +619,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/SimpleBasePlayer$PlaylistTimeline;->playlist:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3

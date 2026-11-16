@@ -159,49 +159,49 @@
 
 .field public static final abc_vector_test:I = 0x7f080076
 
-.field public static final ic_add_24dp:I = 0x7f08010e
+.field public static final ic_add_24dp:I = 0x7f08010d
 
-.field public static final ic_chooser:I = 0x7f080118
+.field public static final ic_chooser:I = 0x7f080117
 
-.field public static final ic_delete_24dp:I = 0x7f08011b
+.field public static final ic_delete_24dp:I = 0x7f08011a
 
-.field public static final ic_file:I = 0x7f08011c
+.field public static final ic_file:I = 0x7f08011b
 
-.field public static final ic_folder:I = 0x7f08011d
+.field public static final ic_folder:I = 0x7f08011c
 
-.field public static final ic_menu_24dp:I = 0x7f080122
+.field public static final ic_menu_24dp:I = 0x7f080121
 
-.field public static final ic_provider:I = 0x7f080127
+.field public static final ic_provider:I = 0x7f080126
 
-.field public static final listview_item_selector:I = 0x7f080154
+.field public static final listview_item_selector:I = 0x7f080153
 
-.field public static final notification_action_background:I = 0x7f0801dc
+.field public static final notification_action_background:I = 0x7f0801db
 
-.field public static final notification_bg:I = 0x7f0801dd
+.field public static final notification_bg:I = 0x7f0801dc
 
-.field public static final notification_bg_low:I = 0x7f0801de
+.field public static final notification_bg_low:I = 0x7f0801dd
 
-.field public static final notification_bg_low_normal:I = 0x7f0801df
+.field public static final notification_bg_low_normal:I = 0x7f0801de
 
-.field public static final notification_bg_low_pressed:I = 0x7f0801e0
+.field public static final notification_bg_low_pressed:I = 0x7f0801df
 
-.field public static final notification_bg_normal:I = 0x7f0801e1
+.field public static final notification_bg_normal:I = 0x7f0801e0
 
-.field public static final notification_bg_normal_pressed:I = 0x7f0801e2
+.field public static final notification_bg_normal_pressed:I = 0x7f0801e1
 
-.field public static final notification_icon_background:I = 0x7f0801e3
+.field public static final notification_icon_background:I = 0x7f0801e2
 
-.field public static final notification_template_icon_bg:I = 0x7f0801e5
+.field public static final notification_template_icon_bg:I = 0x7f0801e4
 
-.field public static final notification_template_icon_low_bg:I = 0x7f0801e6
+.field public static final notification_template_icon_low_bg:I = 0x7f0801e5
 
-.field public static final notification_tile_bg:I = 0x7f0801e7
+.field public static final notification_tile_bg:I = 0x7f0801e6
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f0801e8
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0801e7
 
-.field public static final tooltip_frame_dark:I = 0x7f080213
+.field public static final tooltip_frame_dark:I = 0x7f080212
 
-.field public static final tooltip_frame_light:I = 0x7f080214
+.field public static final tooltip_frame_light:I = 0x7f080213
 
 
 # direct methods

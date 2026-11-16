@@ -3,7 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Landroidx/media3/common/util/BackgroundThreadStateHandler$StateChangeListener;
+.implements Landroidx/media3/common/util/ListenerSet$Event;
 
 
 # instance fields
@@ -28,7 +29,7 @@
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
@@ -38,35 +39,96 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v1, Landroidx/media3/exoplayer/LoadControl;
-
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->v(Landroidx/media3/exoplayer/LoadControl;)Landroidx/media3/exoplayer/LoadControl;
-
-    move-result-object v0
-
-    return-object v0
-
     :pswitch_0
-    check-cast v1, Landroidx/media3/exoplayer/RenderersFactory;
+    check-cast v1, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->q(Landroidx/media3/exoplayer/RenderersFactory;)Landroidx/media3/exoplayer/RenderersFactory;
+    check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    move-result-object v0
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;->g(Landroidx/media3/exoplayer/ExoPlayerImpl$ComponentListener;Landroidx/media3/common/Player$Listener;)V
 
-    return-object v0
+    return-void
 
     :pswitch_1
-    check-cast v1, Landroidx/media3/exoplayer/upstream/BandwidthMeter;
+    check-cast v1, Landroidx/media3/common/TrackSelectionParameters;
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->t(Landroidx/media3/exoplayer/upstream/BandwidthMeter;)Landroidx/media3/exoplayer/upstream/BandwidthMeter;
+    check-cast p1, Landroidx/media3/common/Player$Listener;
 
-    move-result-object v0
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->B(Landroidx/media3/common/TrackSelectionParameters;Landroidx/media3/common/Player$Listener;)V
 
-    return-object v0
+    return-void
+
+    :pswitch_2
+    check-cast v1, Landroidx/media3/common/MediaMetadata;
+
+    check-cast p1, Landroidx/media3/common/Player$Listener;
+
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->F(Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    :pswitch_3
+    check-cast v1, Landroidx/media3/exoplayer/PlaybackInfo;
+
+    check-cast p1, Landroidx/media3/common/Player$Listener;
+
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->w(Landroidx/media3/exoplayer/PlaybackInfo;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_3
+        :pswitch_2
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final onStateChanged(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Landroidx/media3/exoplayer/k;->a:I
+
+    iget-object v1, p0, Landroidx/media3/exoplayer/k;->b:Ljava/lang/Object;
+
+    packed-switch v0, :pswitch_data_0
+
+    check-cast v1, Landroidx/media3/exoplayer/ExoPlayerImpl;
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    invoke-static {v1, p1, p2}, Landroidx/media3/exoplayer/ExoPlayerImpl;->I(Landroidx/media3/exoplayer/ExoPlayerImpl;II)V
+
+    return-void
+
+    :pswitch_0
+    check-cast v1, Landroidx/media3/exoplayer/SuitableOutputChecker$Callback;
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-static {v1, p1, p2}, Landroidx/media3/exoplayer/DefaultSuitableOutputChecker$ImplApi35;->b(Landroidx/media3/exoplayer/SuitableOutputChecker$Callback;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+
+    return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

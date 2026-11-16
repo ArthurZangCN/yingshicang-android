@@ -28,7 +28,7 @@
     .end param
 
     .line 1
-    invoke-static {p0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 2
     .line 3
@@ -47,7 +47,7 @@
     .end param
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {p0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 2
     .line 3

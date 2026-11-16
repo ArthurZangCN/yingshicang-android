@@ -7,25 +7,29 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;
+.field public final synthetic a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-.field public final synthetic b:Ljava/util/concurrent/Executor;
+.field public final synthetic b:Ljava/lang/String;
 
 .field public final synthetic c:I
 
+.field public final synthetic d:Landroid/os/Bundle;
+
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;I)V
+.method public synthetic constructor <init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/core/location/p;->a:Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;
+    iput-object p1, p0, Landroidx/core/location/p;->a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-    iput-object p2, p0, Landroidx/core/location/p;->b:Ljava/util/concurrent/Executor;
+    iput-object p2, p0, Landroidx/core/location/p;->b:Ljava/lang/String;
 
     iput p3, p0, Landroidx/core/location/p;->c:I
+
+    iput-object p4, p0, Landroidx/core/location/p;->d:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -33,16 +37,18 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/core/location/p;->b:Ljava/util/concurrent/Executor;
+    iget v0, p0, Landroidx/core/location/p;->c:I
 
-    iget v1, p0, Landroidx/core/location/p;->c:I
+    iget-object v1, p0, Landroidx/core/location/p;->d:Landroid/os/Bundle;
 
-    iget-object v2, p0, Landroidx/core/location/p;->a:Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;
+    iget-object v2, p0, Landroidx/core/location/p;->a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-    invoke-static {v2, v0, v1}, Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;->b(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;I)V
+    iget-object v3, p0, Landroidx/core/location/p;->b:Ljava/lang/String;
+
+    invoke-static {v2, v3, v0, v1}, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;->b(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;ILandroid/os/Bundle;)V
 
     return-void
 .end method

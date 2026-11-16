@@ -45,12 +45,12 @@
     return-void
 
     :pswitch_0
-    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->d(Landroidx/media3/exoplayer/PlaybackInfo;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->J(Landroidx/media3/exoplayer/PlaybackInfo;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_1
-    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->n(Landroidx/media3/exoplayer/PlaybackInfo;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->b(Landroidx/media3/exoplayer/PlaybackInfo;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 

@@ -142,7 +142,7 @@
 
     const v0, 0x7f0402ac
 
-    const v1, 0x7f0404b8
+    const v1, 0x7f0404d0
 
     filled-new-array {v0, v1}, [I
 
@@ -223,7 +223,7 @@
         0x7f040235
         0x7f040236
         0x7f040237
-        0x7f040591
+        0x7f0405a9
     .end array-data
 
     :array_3

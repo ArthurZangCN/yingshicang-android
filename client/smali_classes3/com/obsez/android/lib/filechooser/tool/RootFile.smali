@@ -2,9 +2,6 @@
 .super Ljava/io/File;
 .source "SourceFile"
 
-# interfaces
-.implements Lj$/io/FileRetargetInterface;
-
 
 # instance fields
 .field private name:Ljava/lang/String;
@@ -62,30 +59,4 @@
     const-wide/16 v0, 0x0
 
     return-wide v0
-.end method
-
-.method public final synthetic toPath()Lj$/nio/file/Path;
-    .locals 1
-
-    .line 2
-    invoke-static {p0}, Lj$/io/DesugarFile;->toPath(Ljava/io/File;)Lj$/nio/file/Path;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final synthetic toPath()Ljava/nio/file/Path;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/obsez/android/lib/filechooser/tool/RootFile;->toPath()Lj$/nio/file/Path;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lj$/nio/file/Path$Wrapper;->convert(Lj$/nio/file/Path;)Ljava/nio/file/Path;
-
-    move-result-object v0
-
-    return-object v0
 .end method

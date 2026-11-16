@@ -9,10 +9,10 @@
 
 
 # instance fields
-.field public final sniffFailures:Lcom/google/common/collect/f2;
+.field public final sniffFailures:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/SniffFailure;",
             ">;"
         }
@@ -29,7 +29,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
@@ -65,11 +65,11 @@
     iput-object p2, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->uri:Landroid/net/Uri;
 
     .line 4
-    invoke-static {p3}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p3}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->sniffFailures:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->sniffFailures:Lcom/google/common/collect/e2;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->sniffFailures:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->sniffFailures:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -112,7 +112,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0, v1}, Landroid/support/v4/media/f;->l(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Landroid/support/v4/media/a;->f(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 17
     .line 18
@@ -120,7 +120,7 @@
     move-result-object v0
 
     .line 20
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->sniffFailures:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/UnrecognizedInputFormatException;->sniffFailures:Lcom/google/common/collect/e2;
 
     .line 21
     .line 22

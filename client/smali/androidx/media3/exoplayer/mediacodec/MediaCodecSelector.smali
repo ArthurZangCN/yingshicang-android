@@ -19,7 +19,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/f;
+    new-instance v0, Landroidx/media3/exoplayer/mediacodec/o;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
 
     .line 7
     .line 8
-    new-instance v0, Landroidx/media3/exoplayer/mediacodec/q;
+    new-instance v0, Landroid/support/v4/media/f;
 
     .line 9
     .line 10

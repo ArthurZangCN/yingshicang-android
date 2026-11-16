@@ -861,7 +861,7 @@
 
     .line 163
     :goto_5
-    invoke-static {v12}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v12}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 164
     .line 165

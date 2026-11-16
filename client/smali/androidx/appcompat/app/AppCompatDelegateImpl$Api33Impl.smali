@@ -37,7 +37,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/appcompat/app/i;->b(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
+    invoke-static {p0}, Landroidx/appcompat/app/g;->b(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
 
     .line 2
     .line 3
@@ -54,21 +54,21 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/appcompat/app/j;
+    new-instance v0, Landroidx/appcompat/app/i;
 
     .line 5
     .line 6
-    invoke-direct {v0, p1}, Landroidx/appcompat/app/j;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+    invoke-direct {v0, p1}, Landroidx/appcompat/app/i;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
 
     .line 7
     .line 8
     .line 9
-    invoke-static {p0}, Landroidx/appcompat/app/g;->c(Ljava/lang/Object;)Landroid/window/OnBackInvokedDispatcher;
+    invoke-static {p0}, Landroidx/appcompat/app/f;->c(Ljava/lang/Object;)Landroid/window/OnBackInvokedDispatcher;
 
     .line 10
     .line 11
@@ -76,7 +76,7 @@
     move-result-object p0
 
     .line 13
-    invoke-static {p0, v0}, Landroidx/activity/f;->f(Landroid/window/OnBackInvokedDispatcher;Landroidx/appcompat/app/j;)V
+    invoke-static {p0, v0}, Landroidx/appcompat/app/h;->e(Landroid/window/OnBackInvokedDispatcher;Landroidx/appcompat/app/i;)V
 
     .line 14
     .line 15
@@ -90,7 +90,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Landroidx/appcompat/app/f;->b(Ljava/lang/Object;)Landroid/window/OnBackInvokedCallback;
+    invoke-static {p1}, Landroidx/appcompat/app/e;->b(Ljava/lang/Object;)Landroid/window/OnBackInvokedCallback;
 
     .line 2
     .line 3
@@ -98,7 +98,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p0}, Landroidx/appcompat/app/g;->c(Ljava/lang/Object;)Landroid/window/OnBackInvokedDispatcher;
+    invoke-static {p0}, Landroidx/appcompat/app/f;->c(Ljava/lang/Object;)Landroid/window/OnBackInvokedDispatcher;
 
     .line 6
     .line 7
@@ -106,7 +106,7 @@
     move-result-object p0
 
     .line 9
-    invoke-static {p0, p1}, Landroidx/appcompat/app/h;->e(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
+    invoke-static {p0, p1}, Landroidx/activity/f;->e(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
 
     .line 10
     .line 11

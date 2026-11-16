@@ -25,8 +25,6 @@
 
 .field private static final AC4_FORMAT_IDENTIFIER:J = 0x41432d34L
 
-.field private static final AV3A_FORMAT_IDENTIFIER:J = 0x61763361L
-
 .field private static final BUFFER_SIZE:I = 0x24b8
 
 .field public static final DEFAULT_TIMESTAMP_SEARCH_BYTES:I = 0x1b8a0
@@ -50,8 +48,6 @@
 
 .field public static final MODE_SINGLE_PMT:I = 0x1
 
-.field private static final SNIFF_TS_PACKET_COUNT:I = 0x5
-
 .field public static final TS_PACKET_SIZE:I = 0xbc
 
 .field private static final TS_PAT_PID:I = 0x0
@@ -65,6 +61,8 @@
 .field public static final TS_STREAM_TYPE_AC4:I = 0xac
 
 .field public static final TS_STREAM_TYPE_AIT:I = 0x101
+
+.field public static final TS_STREAM_TYPE_AV3A:I = 0xd5
 
 .field public static final TS_STREAM_TYPE_DC2_H262:I = 0x80
 
@@ -95,6 +93,8 @@
 .field public static final TS_STREAM_TYPE_MPA:I = 0x3
 
 .field public static final TS_STREAM_TYPE_MPA_LSF:I = 0x4
+
+.field public static final TS_STREAM_TYPE_PGS:I = 0x90
 
 .field public static final TS_STREAM_TYPE_SPLICE_INFO:I = 0x86
 
@@ -169,15 +169,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/c;
+    new-instance v0, Landroidx/constraintlayout/core/state/d;
 
     .line 2
     .line 3
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
 
     .line 6
     .line 7
@@ -952,53 +952,17 @@
 
     .line 37
     .line 38
-    iget v0, p0, Landroidx/media3/extractor/ts/TsExtractor;->mode:I
-
-    .line 39
-    .line 40
-    const/4 v1, 0x2
-
-    .line 41
-    if-ne v0, v1, :cond_1
-
-    .line 42
-    .line 43
-    const/16 v0, 0x178
-
-    .line 44
-    .line 45
-    if-le v2, v0, :cond_1
-
-    .line 46
-    .line 47
-    const-string v0, "Cannot find sync byte. Most likely not a Transport Stream."
-
-    .line 48
-    .line 49
-    const/4 v1, 0x0
-
-    .line 50
-    const-string v2, ""
-
-    .line 51
-    .line 52
-    invoke-static {v2, v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    .line 53
-    .line 54
-    .line 55
     goto :goto_0
 
-    .line 56
+    .line 39
     :cond_0
     const/4 v0, 0x0
 
-    .line 57
+    .line 40
     iput v0, p0, Landroidx/media3/extractor/ts/TsExtractor;->bytesSinceLastSync:I
 
-    .line 58
-    .line 59
-    :cond_1
+    .line 41
+    .line 42
     :goto_0
     return v3
 .end method
@@ -1224,14 +1188,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/media3/common/k;
+    new-instance v0, Landroidx/media3/extractor/mp4/b;
 
     .line 2
     .line 3
-    const/4 v1, 0x5
+    const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/media3/common/k;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/media3/extractor/mp4/b;-><init>(Landroidx/media3/extractor/text/SubtitleParser$Factory;I)V
 
     .line 5
     .line 6
@@ -1414,88 +1378,6 @@
     .line 20
     :cond_1
     return v1
-.end method
-
-.method private skip(Landroidx/media3/extractor/ExtractorInput;)V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Landroidx/media3/extractor/ts/TsExtractor;->tsPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    const/4 v1, 0x0
-
-    .line 8
-    const/16 v2, 0x3ac
-
-    .line 9
-    .line 10
-    invoke-interface {p1, v0, v1, v2}, Landroidx/media3/extractor/ExtractorInput;->peekFully([BII)V
-
-    .line 11
-    .line 12
-    .line 13
-    :goto_0
-    if-ge v1, v2, :cond_2
-
-    .line 14
-    .line 15
-    aget-byte v3, v0, v1
-
-    .line 16
-    .line 17
-    const/16 v4, 0x47
-
-    .line 18
-    .line 19
-    if-ne v3, v4, :cond_1
-
-    .line 20
-    .line 21
-    add-int/lit16 v3, v1, 0xbc
-
-    .line 22
-    .line 23
-    aget-byte v3, v0, v3
-
-    .line 24
-    .line 25
-    if-ne v3, v4, :cond_1
-
-    .line 26
-    .line 27
-    if-lez v1, :cond_0
-
-    .line 28
-    .line 29
-    invoke-interface {p1, v1}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
-
-    .line 30
-    .line 31
-    .line 32
-    :cond_0
-    return-void
-
-    .line 33
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    .line 34
-    .line 35
-    goto :goto_0
-
-    .line 36
-    :cond_2
-    return-void
 .end method
 
 
@@ -2290,7 +2172,7 @@
 
     .line 11
     :goto_0
-    invoke-static {p1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 12
     .line 13
@@ -2525,174 +2407,60 @@
 .end method
 
 .method public sniff(Landroidx/media3/extractor/ExtractorInput;)Z
-    .locals 7
+    .locals 4
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/media3/extractor/ts/TsExtractor;->skip(Landroidx/media3/extractor/ExtractorInput;)V
+    iget-object v0, p0, Landroidx/media3/extractor/ts/TsExtractor;->tsPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
 
     .line 2
     .line 3
-    .line 4
-    iget-object v0, p0, Landroidx/media3/extractor/ts/TsExtractor;->tsPacketBuffer:Landroidx/media3/common/util/ParsableByteArray;
-
-    .line 5
-    .line 6
     invoke-virtual {v0}, Landroidx/media3/common/util/ParsableByteArray;->getData()[B
 
-    .line 7
-    .line 8
-    .line 9
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 10
+    .line 7
     const/4 v1, 0x0
 
-    .line 11
+    .line 8
     const/16 v2, 0x3ac
 
+    .line 9
+    .line 10
+    invoke-interface {p1, v0, v1, v2}, Landroidx/media3/extractor/ExtractorInput;->peekFully([BII)V
+
+    .line 11
     .line 12
     .line 13
-    invoke-interface {p1, v0, v1, v2}, Landroidx/media3/extractor/ExtractorInput;->peekFully([BII)V
+    const/16 v3, 0xbc
 
     .line 14
     .line 15
+    invoke-static {v0, v1, v2, v3}, Landroidx/media3/extractor/ts/TsUtil;->tryToFindSyncBytePosition([BIII)I
+
     .line 16
-    move v3, v1
-
     .line 17
-    :goto_0
-    const/16 v4, 0x47
-
     .line 18
+    move-result v0
+
     .line 19
-    if-ge v3, v2, :cond_1
+    if-ge v0, v2, :cond_0
 
     .line 20
     .line 21
-    :try_start_0
-    aget-byte v5, v0, v3
+    invoke-interface {p1, v0}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
 
     .line 22
     .line 23
-    if-ne v5, v4, :cond_0
-
     .line 24
-    .line 25
-    add-int/lit8 v5, v3, 0x1
-
-    .line 26
-    .line 27
-    aget-byte v5, v0, v5
-
-    .line 28
-    .line 29
-    const/16 v6, 0x40
-
-    .line 30
-    .line 31
-    if-ne v5, v6, :cond_0
-
-    .line 32
-    .line 33
-    if-lez v3, :cond_2
-
-    .line 34
-    .line 35
-    invoke-interface {p1, v3}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 36
-    .line 37
-    .line 38
-    goto :goto_1
-
-    .line 39
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
-
-    .line 40
-    .line 41
-    goto :goto_0
-
-    .line 42
-    :catch_0
-    :cond_1
-    move v3, v1
-
-    .line 43
-    :cond_2
-    :goto_1
-    invoke-interface {p1, v0, v3, v2}, Landroidx/media3/extractor/ExtractorInput;->peekFully([BII)V
-
-    .line 44
-    .line 45
-    .line 46
-    move v2, v1
-
-    .line 47
-    :goto_2
-    const/16 v3, 0xbc
-
-    .line 48
-    .line 49
-    if-ge v2, v3, :cond_5
-
-    .line 50
-    .line 51
-    move v3, v1
-
-    .line 52
-    :goto_3
-    const/4 v5, 0x5
-
-    .line 53
-    if-ge v3, v5, :cond_4
-
-    .line 54
-    .line 55
-    mul-int/lit16 v5, v3, 0xbc
-
-    .line 56
-    .line 57
-    add-int/2addr v5, v2
-
-    .line 58
-    aget-byte v5, v0, v5
-
-    .line 59
-    .line 60
-    if-eq v5, v4, :cond_3
-
-    .line 61
-    .line 62
-    add-int/lit8 v2, v2, 0x1
-
-    .line 63
-    .line 64
-    goto :goto_2
-
-    .line 65
-    :cond_3
-    add-int/lit8 v3, v3, 0x1
-
-    .line 66
-    .line 67
-    goto :goto_3
-
-    .line 68
-    :cond_4
-    invoke-interface {p1, v2}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
-
-    .line 69
-    .line 70
-    .line 71
     const/4 p1, 0x1
 
-    .line 72
+    .line 25
     return p1
 
-    .line 73
-    :cond_5
+    .line 26
+    :cond_0
     return v1
 .end method

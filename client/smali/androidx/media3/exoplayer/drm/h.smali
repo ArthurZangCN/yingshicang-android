@@ -2,83 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/drm/DefaultDrmSession;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/drm/DefaultDrmSession;)V
     .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/drm/h;->a:Landroidx/media3/exoplayer/drm/DefaultDrmSession;
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
+
+# virtual methods
+.method public final run()V
+    .locals 1
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Landroidx/media3/exoplayer/drm/h;->a:Landroidx/media3/exoplayer/drm/DefaultDrmSession;
 
-.method public static c(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
+    invoke-static {v0}, Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$ReferenceCountListenerImpl;->a(Landroidx/media3/exoplayer/drm/DefaultDrmSession;)V
 
-    .line 1
-    return-void
-.end method
-
-.method public static d(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;I)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static f(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Ljava/lang/Exception;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
-    return-void
-.end method
-
-.method public static g(Landroidx/media3/exoplayer/drm/DrmSessionEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;)V
-    .locals 0
-    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-
-    .line 1
     return-void
 .end method

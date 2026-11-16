@@ -2,65 +2,32 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/google/common/base/k;
-
-
-# instance fields
-.field public final synthetic a:I
-
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public static a(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Z)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput p1, p0, Landroidx/media3/exoplayer/hls/a;->a:I
-
-    return-void
+    return-object p0
 .end method
 
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Z
-    .locals 1
+.method public static b(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;I)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/hls/a;->a:I
+    return-object p0
+.end method
 
-    packed-switch v0, :pswitch_data_0
+.method public static c(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Landroidx/media3/common/Format;)Landroidx/media3/common/Format;
+    .locals 0
 
-    check-cast p1, Ljava/lang/Class;
+    .line 1
+    return-object p1
+.end method
 
-    invoke-virtual {p1}, Ljava/lang/Class;->isInterface()Z
+.method public static d(Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Landroidx/media3/extractor/text/SubtitleParser$Factory;)Landroidx/media3/exoplayer/hls/HlsExtractorFactory;
+    .locals 0
 
-    move-result p1
-
-    return p1
-
-    :pswitch_0
-    check-cast p1, Landroidx/media3/extractor/metadata/id3/InternalFrame;
-
-    invoke-static {p1}, Landroidx/media3/extractor/GaplessInfoHolder;->b(Landroidx/media3/extractor/metadata/id3/InternalFrame;)Z
-
-    move-result p1
-
-    return p1
-
-    :pswitch_1
-    check-cast p1, Landroidx/media3/exoplayer/hls/HlsTrackMetadataEntry;
-
-    invoke-static {p1}, Landroidx/media3/exoplayer/hls/DefaultHlsExtractorFactory;->a(Landroidx/media3/exoplayer/hls/HlsTrackMetadataEntry;)Z
-
-    move-result p1
-
-    return p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    return-object p0
 .end method

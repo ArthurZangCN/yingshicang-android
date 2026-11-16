@@ -1,5 +1,5 @@
 .class Landroidx/media3/datasource/DefaultHttpDataSource$NullFilteringHeadersMap;
-.super Lcom/google/common/collect/r1;
+.super Lcom/google/common/collect/q1;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lcom/google/common/collect/r1<",
+        "Lcom/google/common/collect/q1<",
         "Ljava/lang/String;",
         "Ljava/util/List<",
         "Ljava/lang/String;",
@@ -53,7 +53,7 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Lcom/google/common/collect/r1;-><init>()V
+    invoke-direct {p0}, Lcom/google/common/collect/q1;-><init>()V
 
     .line 2
     .line 3
@@ -147,7 +147,7 @@
 
     .line 2
     .line 3
-    invoke-super {p0, p1}, Lcom/google/common/collect/r1;->containsKey(Ljava/lang/Object;)Z
+    invoke-super {p0, p1}, Lcom/google/common/collect/q1;->containsKey(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -181,7 +181,7 @@
     .end param
 
     .line 1
-    invoke-super {p0, p1}, Lcom/google/common/collect/r1;->standardContainsValue(Ljava/lang/Object;)Z
+    invoke-super {p0, p1}, Lcom/google/common/collect/q1;->standardContainsValue(Ljava/lang/Object;)Z
 
     .line 2
     .line 3
@@ -237,7 +237,7 @@
     .end annotation
 
     .line 1
-    invoke-super {p0}, Lcom/google/common/collect/r1;->entrySet()Ljava/util/Set;
+    invoke-super {p0}, Lcom/google/common/collect/q1;->entrySet()Ljava/util/Set;
 
     .line 2
     .line 3
@@ -254,7 +254,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v0, v1}, Lcom/google/common/collect/n5;->b(Ljava/util/Set;Lcom/google/common/base/k;)Lcom/google/common/collect/n5$a;
+    invoke-static {v0, v1}, Lcom/google/common/collect/n5;->b(Ljava/util/Set;Lcom/google/common/base/m;)Lcom/google/common/collect/n5$a;
 
     .line 11
     .line 12
@@ -277,7 +277,7 @@
 
     .line 2
     .line 3
-    invoke-super {p0, p1}, Lcom/google/common/collect/r1;->standardEquals(Ljava/lang/Object;)Z
+    invoke-super {p0, p1}, Lcom/google/common/collect/q1;->standardEquals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -348,7 +348,7 @@
 
     .line 2
     :cond_0
-    invoke-super {p0, p1}, Lcom/google/common/collect/r1;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1}, Lcom/google/common/collect/q1;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -362,7 +362,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/google/common/collect/r1;->standardHashCode()I
+    invoke-super {p0}, Lcom/google/common/collect/q1;->standardHashCode()I
 
     .line 2
     .line 3
@@ -377,7 +377,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/google/common/collect/r1;->isEmpty()Z
+    invoke-super {p0}, Lcom/google/common/collect/q1;->isEmpty()Z
 
     .line 2
     .line 3
@@ -392,7 +392,7 @@
 
     .line 7
     .line 8
-    invoke-super {p0}, Lcom/google/common/collect/r1;->size()I
+    invoke-super {p0}, Lcom/google/common/collect/q1;->size()I
 
     .line 9
     .line 10
@@ -407,7 +407,7 @@
     const/4 v0, 0x0
 
     .line 15
-    invoke-super {p0, v0}, Lcom/google/common/collect/r1;->containsKey(Ljava/lang/Object;)Z
+    invoke-super {p0, v0}, Lcom/google/common/collect/q1;->containsKey(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
@@ -443,7 +443,7 @@
     .end annotation
 
     .line 1
-    invoke-super {p0}, Lcom/google/common/collect/r1;->keySet()Ljava/util/Set;
+    invoke-super {p0}, Lcom/google/common/collect/q1;->keySet()Ljava/util/Set;
 
     .line 2
     .line 3
@@ -460,7 +460,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v0, v1}, Lcom/google/common/collect/n5;->b(Ljava/util/Set;Lcom/google/common/base/k;)Lcom/google/common/collect/n5$a;
+    invoke-static {v0, v1}, Lcom/google/common/collect/n5;->b(Ljava/util/Set;Lcom/google/common/base/m;)Lcom/google/common/collect/n5$a;
 
     .line 11
     .line 12
@@ -475,7 +475,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/google/common/collect/r1;->size()I
+    invoke-super {p0}, Lcom/google/common/collect/q1;->size()I
 
     .line 2
     .line 3
@@ -486,7 +486,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-super {p0, v1}, Lcom/google/common/collect/r1;->containsKey(Ljava/lang/Object;)Z
+    invoke-super {p0, v1}, Lcom/google/common/collect/q1;->containsKey(Ljava/lang/Object;)Z
 
     .line 7
     .line 8

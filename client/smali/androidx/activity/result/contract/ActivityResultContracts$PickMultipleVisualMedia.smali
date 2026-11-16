@@ -175,7 +175,7 @@
     .line 5
     iget p2, p0, Landroidx/activity/result/contract/ActivityResultContracts$PickMultipleVisualMedia;->maxItems:I
 
-    invoke-static {}, Landroidx/activity/f;->a()I
+    invoke-static {}, Landroidx/appcompat/app/f;->a()I
 
     move-result v0
 
@@ -487,7 +487,7 @@
 
     .line 3
     :cond_1
-    sget-object p1, Lkotlin/collections/s;->INSTANCE:Lkotlin/collections/s;
+    sget-object p1, Lkotlin/collections/r;->INSTANCE:Lkotlin/collections/r;
 
     :goto_1
     return-object p1

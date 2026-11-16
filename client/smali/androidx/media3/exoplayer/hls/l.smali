@@ -7,21 +7,25 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/Player$PositionInfo;
+.field public final synthetic a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic b:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;
+
+.field public final synthetic c:Landroid/util/Pair;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroid/util/Pair;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/l;->a:Landroidx/media3/common/Player$PositionInfo;
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/l;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/hls/l;->b:Ljava/lang/Object;
+    iput-object p2, p0, Landroidx/media3/exoplayer/hls/l;->b:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;
+
+    iput-object p3, p0, Landroidx/media3/exoplayer/hls/l;->c:Landroid/util/Pair;
 
     return-void
 .end method
@@ -29,16 +33,18 @@
 
 # virtual methods
 .method public final accept(Ljava/lang/Object;)V
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/hls/l;->b:Ljava/lang/Object;
+    iget-object v0, p0, Landroidx/media3/exoplayer/hls/l;->c:Landroid/util/Pair;
 
     check-cast p1, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/hls/l;->a:Landroidx/media3/common/Player$PositionInfo;
+    iget-object v1, p0, Landroidx/media3/exoplayer/hls/l;->a:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;
 
-    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$PlayerListener;->e(Landroidx/media3/common/Player$PositionInfo;Ljava/lang/Object;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
+    iget-object v2, p0, Landroidx/media3/exoplayer/hls/l;->b:Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;
+
+    invoke-static {v1, v2, v0, p1}, Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;->c(Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$LoaderCallback;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$AssetList;Landroid/util/Pair;Landroidx/media3/exoplayer/hls/HlsInterstitialsAdsLoader$Listener;)V
 
     return-void
 .end method

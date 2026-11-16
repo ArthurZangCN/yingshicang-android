@@ -19,10 +19,10 @@
 
 .field private final currentPosition:J
 
-.field private final mediaItems:Lcom/google/common/collect/f2;
+.field private final mediaItems:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/MediaItem;",
             ">;"
         }
@@ -83,11 +83,11 @@
     iput-wide v0, p0, Landroidx/media3/common/PlayerTransferState;->currentPosition:J
 
     .line 8
-    invoke-static {p1}, Landroidx/media3/common/PlayerTransferState$Builder;->access$1400(Landroidx/media3/common/PlayerTransferState$Builder;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/PlayerTransferState$Builder;->access$1400(Landroidx/media3/common/PlayerTransferState$Builder;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 9
     invoke-static {p1}, Landroidx/media3/common/PlayerTransferState$Builder;->access$1500(Landroidx/media3/common/PlayerTransferState$Builder;)Landroidx/media3/common/PlaybackParameters;
@@ -170,11 +170,11 @@
     return-wide v0
 .end method
 
-.method public static synthetic access$500(Landroidx/media3/common/PlayerTransferState;)Lcom/google/common/collect/f2;
+.method public static synthetic access$500(Landroidx/media3/common/PlayerTransferState;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -207,7 +207,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -537,15 +537,15 @@
 
     .line 46
     .line 47
-    iget-object v1, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 48
     .line 49
-    iget-object v2, p1, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iget-object v2, p1, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 50
     .line 51
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 52
     .line 53
@@ -565,7 +565,7 @@
 
     .line 60
     .line 61
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 62
     .line 63
@@ -585,7 +585,7 @@
 
     .line 70
     .line 71
-    invoke-static {v1, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 72
     .line 73
@@ -627,19 +627,19 @@
     return-wide v0
 .end method
 
-.method public getMediaItems()Lcom/google/common/collect/f2;
+.method public getMediaItems()Lcom/google/common/collect/e2;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/MediaItem;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -765,7 +765,7 @@
     move-result-object v4
 
     .line 31
-    iget-object v5, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iget-object v5, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 32
     .line 33
@@ -841,7 +841,7 @@
 
     .line 64
     .line 65
-    invoke-static {v8}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v8}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 66
     .line 67
@@ -856,7 +856,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -986,7 +986,7 @@
 
     .line 65
     .line 66
-    iget-object v0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/PlayerTransferState;->mediaItems:Lcom/google/common/collect/e2;
 
     .line 67
     .line 68

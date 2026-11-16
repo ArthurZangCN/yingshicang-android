@@ -7,25 +7,25 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic b:Ljava/util/concurrent/Executor;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final synthetic c:I
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;Ljava/util/concurrent/Executor;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Landroidx/core/location/i;->a:I
+    iput-object p1, p0, Landroidx/core/location/i;->a:Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;
 
-    iput-object p2, p0, Landroidx/core/location/i;->b:Ljava/lang/Object;
+    iput-object p2, p0, Landroidx/core/location/i;->b:Ljava/util/concurrent/Executor;
 
-    iput-object p3, p0, Landroidx/core/location/i;->c:Ljava/lang/Object;
+    iput p3, p0, Landroidx/core/location/i;->c:I
 
     return-void
 .end method
@@ -36,35 +36,13 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/core/location/i;->a:I
+    iget-object v0, p0, Landroidx/core/location/i;->b:Ljava/util/concurrent/Executor;
 
-    iget-object v1, p0, Landroidx/core/location/i;->c:Ljava/lang/Object;
+    iget v1, p0, Landroidx/core/location/i;->c:I
 
-    iget-object v2, p0, Landroidx/core/location/i;->b:Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/core/location/i;->a:Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;
 
-    packed-switch v0, :pswitch_data_0
-
-    check-cast v2, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;->e(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;)V
+    invoke-static {v2, v0, v1}, Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;->b(Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;Ljava/util/concurrent/Executor;I)V
 
     return-void
-
-    :pswitch_0
-    check-cast v2, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
-
-    check-cast v1, Ljava/util/concurrent/Executor;
-
-    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;->b(Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;Ljava/util/concurrent/Executor;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

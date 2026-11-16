@@ -15,11 +15,11 @@
 
 
 # virtual methods
-.method public abstract getCustomData()Lcom/google/common/collect/g2;
+.method public abstract getCustomData()Lcom/google/common/collect/f2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/g2<",
+            "Lcom/google/common/collect/f2<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"

@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/upstream/CmcdConfiguration$RequestConfig;)Lcom/google/common/collect/g2;
+.method public static a(Landroidx/media3/exoplayer/upstream/CmcdConfiguration$RequestConfig;)Lcom/google/common/collect/f2;
     .locals 0
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
+    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
 
     .line 2
     .line 3

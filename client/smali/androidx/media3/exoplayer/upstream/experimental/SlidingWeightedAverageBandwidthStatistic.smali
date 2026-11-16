@@ -134,9 +134,9 @@
     .end annotation
 
     .line 2
-    new-instance v0, Landroidx/media3/exoplayer/analytics/k0;
+    new-instance v0, Landroidx/media3/exoplayer/analytics/p0;
 
-    invoke-direct {v0, p0, p1, p2}, Landroidx/media3/exoplayer/analytics/k0;-><init>(JLandroidx/media3/common/util/Clock;)V
+    invoke-direct {v0, p0, p1, p2}, Landroidx/media3/exoplayer/analytics/p0;-><init>(JLandroidx/media3/common/util/Clock;)V
 
     return-object v0
 .end method

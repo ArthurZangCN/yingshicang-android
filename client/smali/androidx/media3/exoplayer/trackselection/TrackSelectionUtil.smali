@@ -45,14 +45,14 @@
     if-eqz v2, :cond_0
 
     .line 4
-    invoke-static {v2}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v2}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v2
 
     goto :goto_1
 
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v2
 
@@ -90,9 +90,9 @@
     move-object/from16 v0, p0
 
     .line 6
-    new-instance v1, Lcom/google/common/collect/f2$a;
+    new-instance v1, Lcom/google/common/collect/e2$a;
 
-    invoke-direct {v1}, Lcom/google/common/collect/f2$a;-><init>()V
+    invoke-direct {v1}, Lcom/google/common/collect/e2$a;-><init>()V
 
     const/4 v2, 0x0
 
@@ -231,7 +231,7 @@
     invoke-direct {v9, v7, v8, v11, v10}, Landroidx/media3/common/Tracks$Group;-><init>(Landroidx/media3/common/TrackGroup;Z[I[Z)V
 
     .line 23
-    invoke-virtual {v1, v9}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v1, v9}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     add-int/lit8 v6, v6, 0x1
 
@@ -280,7 +280,7 @@
     invoke-direct {v7, v4, v2, v5, v6}, Landroidx/media3/common/Tracks$Group;-><init>(Landroidx/media3/common/TrackGroup;Z[I[Z)V
 
     .line 31
-    invoke-virtual {v1, v7}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v1, v7}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     add-int/lit8 v3, v3, 0x1
 
@@ -290,7 +290,7 @@
     :cond_6
     new-instance v0, Landroidx/media3/common/Tracks;
 
-    invoke-virtual {v1}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v1}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     move-result-object v1
 

@@ -9,27 +9,23 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Ljava/util/concurrent/Executor;
+.field public final synthetic b:Ljava/lang/Object;
 
 .field public final synthetic c:Ljava/lang/Object;
 
-.field public final synthetic d:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;Ljava/lang/Object;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p4, p0, Landroidx/core/location/g;->a:I
+    iput p3, p0, Landroidx/core/location/g;->a:I
 
-    iput-object p1, p0, Landroidx/core/location/g;->c:Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/core/location/g;->b:Ljava/lang/Object;
 
-    iput-object p2, p0, Landroidx/core/location/g;->b:Ljava/util/concurrent/Executor;
-
-    iput-object p3, p0, Landroidx/core/location/g;->d:Ljava/lang/Object;
+    iput-object p2, p0, Landroidx/core/location/g;->c:Ljava/lang/Object;
 
     return-void
 .end method
@@ -37,33 +33,49 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 3
 
     .line 1
     iget v0, p0, Landroidx/core/location/g;->a:I
 
-    iget-object v1, p0, Landroidx/core/location/g;->b:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Landroidx/core/location/g;->c:Ljava/lang/Object;
 
-    iget-object v2, p0, Landroidx/core/location/g;->d:Ljava/lang/Object;
-
-    iget-object v3, p0, Landroidx/core/location/g;->c:Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/core/location/g;->b:Ljava/lang/Object;
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v3, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
+    check-cast v2, Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;
 
-    check-cast v2, Landroidx/core/location/GnssStatusCompat;
+    check-cast v1, Ljava/util/concurrent/Executor;
 
-    invoke-static {v3, v1, v2}, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;->d(Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;Ljava/util/concurrent/Executor;Landroidx/core/location/GnssStatusCompat;)V
+    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;->c(Landroidx/core/location/LocationManagerCompat$PreRGnssStatusTransport;Ljava/util/concurrent/Executor;)V
 
     return-void
 
     :pswitch_0
-    check-cast v3, Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;
+    check-cast v2, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-    check-cast v2, Landroid/location/GnssMeasurementsEvent;
+    check-cast v1, Landroid/location/Location;
 
-    invoke-static {v3, v1, v2}, Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;->a(Landroidx/core/location/LocationManagerCompat$GnssMeasurementsTransport;Ljava/util/concurrent/Executor;Landroid/location/GnssMeasurementsEvent;)V
+    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;->c(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Landroid/location/Location;)V
+
+    return-void
+
+    :pswitch_1
+    check-cast v2, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;
+
+    check-cast v1, Ljava/util/concurrent/Executor;
+
+    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;->a(Landroidx/core/location/LocationManagerCompat$GpsStatusTransport;Ljava/util/concurrent/Executor;)V
+
+    return-void
+
+    :pswitch_2
+    check-cast v2, Landroidx/core/util/Consumer;
+
+    check-cast v1, Landroid/location/Location;
+
+    invoke-static {v2, v1}, Landroidx/core/location/LocationManagerCompat$CancellableLocationListener;->b(Landroidx/core/util/Consumer;Landroid/location/Location;)V
 
     return-void
 
@@ -71,6 +83,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

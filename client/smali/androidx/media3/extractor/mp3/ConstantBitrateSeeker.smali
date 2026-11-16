@@ -20,21 +20,44 @@
 
 # direct methods
 .method public constructor <init>(JJIIZ)V
-    .locals 0
+    .locals 9
+
+    const/4 v8, 0x1
+
+    move-object v0, p0
+
+    move-wide v1, p1
+
+    move-wide v3, p3
+
+    move v5, p5
+
+    move v6, p6
+
+    move/from16 v7, p7
 
     .line 2
-    invoke-direct/range {p0 .. p7}, Landroidx/media3/extractor/ConstantBitrateSeekMap;-><init>(JJIIZ)V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;-><init>(JJIIZZ)V
+
+    return-void
+.end method
+
+.method private constructor <init>(JJIIZZ)V
+    .locals 0
 
     .line 3
-    iput-wide p3, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->firstFramePosition:J
+    invoke-direct/range {p0 .. p8}, Landroidx/media3/extractor/ConstantBitrateSeekMap;-><init>(JJIIZZ)V
 
     .line 4
-    iput p5, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->bitrate:I
+    iput-wide p3, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->firstFramePosition:J
 
     .line 5
-    iput p6, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->frameSize:I
+    iput p5, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->bitrate:I
 
     .line 6
+    iput p6, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->frameSize:I
+
+    .line 7
     iput-boolean p7, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->allowSeeksIfLengthUnknown:Z
 
     const-wide/16 p3, -0x1
@@ -48,7 +71,7 @@
     :cond_0
     move-wide p1, p3
 
-    .line 7
+    .line 8
     :goto_0
     iput-wide p1, p0, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;->dataEndPosition:J
 
@@ -56,12 +79,14 @@
 .end method
 
 .method public constructor <init>(JJLandroidx/media3/extractor/MpegAudioUtil$Header;Z)V
-    .locals 8
+    .locals 9
 
     .line 1
     iget v5, p5, Landroidx/media3/extractor/MpegAudioUtil$Header;->bitrate:I
 
     iget v6, p5, Landroidx/media3/extractor/MpegAudioUtil$Header;->frameSize:I
+
+    const/4 v8, 0x1
 
     move-object v0, p0
 
@@ -71,7 +96,7 @@
 
     move v7, p6
 
-    invoke-direct/range {v0 .. v7}, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;-><init>(JJIIZ)V
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;-><init>(JJIIZZ)V
 
     return-void
 .end method
@@ -79,10 +104,10 @@
 
 # virtual methods
 .method public copyWithNewDataEndPosition(J)Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;
-    .locals 9
+    .locals 10
 
     .line 1
-    new-instance v8, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;
+    new-instance v9, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;
 
     .line 2
     .line 3
@@ -102,18 +127,21 @@
 
     .line 10
     .line 11
-    move-object v0, v8
+    const/4 v8, 0x0
 
     .line 12
-    move-wide v1, p1
+    move-object v0, v9
 
     .line 13
-    invoke-direct/range {v0 .. v7}, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;-><init>(JJIIZ)V
+    move-wide v1, p1
 
     .line 14
+    invoke-direct/range {v0 .. v8}, Landroidx/media3/extractor/mp3/ConstantBitrateSeeker;-><init>(JJIIZZ)V
+
     .line 15
     .line 16
-    return-object v8
+    .line 17
+    return-object v9
 .end method
 
 .method public getAverageBitrate()I

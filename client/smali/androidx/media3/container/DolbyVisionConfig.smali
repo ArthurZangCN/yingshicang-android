@@ -171,7 +171,7 @@
     .line 54
     .line 55
     :goto_1
-    invoke-static {v0}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 56
     .line 57

@@ -361,7 +361,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lc4/c;->Default:Lc4/c$a;
+    sget-object v0, Li4/c;->Default:Li4/c$a;
 
     .line 2
     .line 3
@@ -369,7 +369,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Lc4/c$a;->nextInt(I)I
+    invoke-virtual {v0, v1}, Li4/c$a;->nextInt(I)I
 
     .line 6
     .line 7
@@ -409,11 +409,11 @@
 
     .line 23
     .line 24
-    sget-object v0, Lc4/c;->Default:Lc4/c$a;
+    sget-object v0, Li4/c;->Default:Li4/c$a;
 
     .line 25
     .line 26
-    invoke-virtual {v0, v1}, Lc4/c$a;->nextInt(I)I
+    invoke-virtual {v0, v1}, Li4/c$a;->nextInt(I)I
 
     .line 27
     .line 28
@@ -1326,7 +1326,7 @@
 
     .line 42
     .line 43
-    invoke-static {v2, p1, v1}, Landroid/support/v4/media/d;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, p1, v1}, Landroid/support/v4/media/e;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
@@ -1390,7 +1390,7 @@
 
     .line 75
     .line 76
-    invoke-static {v2, p1, v1}, Landroid/support/v4/media/d;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, p1, v1}, Landroid/support/v4/media/e;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 77
     .line 78

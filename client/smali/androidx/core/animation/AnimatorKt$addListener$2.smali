@@ -21,7 +21,7 @@
         "Lkotlin/jvm/internal/k;",
         "Lkotlin/jvm/functions/Function1<",
         "Landroid/animation/Animator;",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
@@ -64,7 +64,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/core/animation/AnimatorKt$addListener$2;->invoke(Landroid/animation/Animator;)V
 
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     return-object p1
 .end method

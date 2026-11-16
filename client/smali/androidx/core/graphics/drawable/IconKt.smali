@@ -19,7 +19,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/appcompat/app/e;->e(Landroid/graphics/Bitmap;)Landroid/graphics/drawable/Icon;
+    invoke-static {p0}, Landroidx/core/app/c;->g(Landroid/graphics/Bitmap;)Landroid/graphics/drawable/Icon;
 
     .line 2
     .line 3

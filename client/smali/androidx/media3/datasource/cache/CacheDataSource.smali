@@ -1210,7 +1210,7 @@
     move-result v8
 
     .line 229
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 230
     .line 231

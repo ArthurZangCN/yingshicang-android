@@ -108,7 +108,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, Landroidx/media3/exoplayer/DefaultLoadControl;->access$200(Landroidx/media3/exoplayer/DefaultLoadControl;)Lj$/util/concurrent/ConcurrentHashMap;
+    invoke-static {v0}, Landroidx/media3/exoplayer/DefaultLoadControl;->access$200(Landroidx/media3/exoplayer/DefaultLoadControl;)Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 15
     .line 16
@@ -116,7 +116,7 @@
     move-result-object v0
 
     .line 18
-    invoke-virtual {v0, p1}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -188,7 +188,7 @@
 
     .line 20
     .line 21
-    invoke-static {v1}, Landroidx/media3/exoplayer/DefaultLoadControl;->access$200(Landroidx/media3/exoplayer/DefaultLoadControl;)Lj$/util/concurrent/ConcurrentHashMap;
+    invoke-static {v1}, Landroidx/media3/exoplayer/DefaultLoadControl;->access$200(Landroidx/media3/exoplayer/DefaultLoadControl;)Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 22
     .line 23
@@ -200,7 +200,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v1, v2}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
     .line 29

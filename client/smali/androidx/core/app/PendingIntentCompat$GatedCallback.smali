@@ -260,11 +260,11 @@
 
     .line 7
     :cond_0
-    new-instance v0, Landroidx/core/app/h;
+    new-instance v0, Landroidx/core/app/j;
 
     .line 8
     .line 9
-    invoke-direct {v0, p0}, Landroidx/core/app/h;-><init>(Landroidx/core/app/PendingIntentCompat$GatedCallback;)V
+    invoke-direct {v0, p0}, Landroidx/core/app/j;-><init>(Landroidx/core/app/PendingIntentCompat$GatedCallback;)V
 
     .line 10
     .line 11

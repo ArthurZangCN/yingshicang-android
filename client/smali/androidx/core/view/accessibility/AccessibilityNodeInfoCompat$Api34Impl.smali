@@ -81,7 +81,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/core/view/accessibility/f;->a(Landroid/view/accessibility/AccessibilityNodeInfo;)Lj$/time/Duration;
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getMinDurationBetweenContentChanges()Ljava/time/Duration;
 
     .line 2
     .line 3
@@ -89,7 +89,7 @@
     move-result-object p0
 
     .line 5
-    invoke-virtual {p0}, Lj$/time/Duration;->toMillis()J
+    invoke-virtual {p0}, Ljava/time/Duration;->toMillis()J
 
     .line 6
     .line 7
@@ -182,7 +182,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1, p2}, Lj$/time/Duration;->ofMillis(J)Lj$/time/Duration;
+    invoke-static {p1, p2}, Ljava/time/Duration;->ofMillis(J)Ljava/time/Duration;
 
     .line 2
     .line 3
@@ -190,7 +190,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p0, p1}, Landroidx/core/view/accessibility/e;->a(Landroid/view/accessibility/AccessibilityNodeInfo;Lj$/time/Duration;)V
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setMinDurationBetweenContentChanges(Ljava/time/Duration;)V
 
     .line 6
     .line 7

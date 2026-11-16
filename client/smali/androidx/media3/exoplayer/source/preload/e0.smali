@@ -38,16 +38,16 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v1, Landroidx/media3/exoplayer/source/preload/PreCacheHelper;
+    check-cast v1, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper;->a(Landroidx/media3/exoplayer/source/preload/PreCacheHelper;)V
+    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;->m(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;)V
 
     return-void
 
     :pswitch_0
     check-cast v1, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;->a(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;)V
+    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;->b(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$ReleasableExecutorSupplier;)V
 
     return-void
 

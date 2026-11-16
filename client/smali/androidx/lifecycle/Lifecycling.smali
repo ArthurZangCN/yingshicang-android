@@ -509,7 +509,7 @@
 
     .line 9
     .line 10
-    invoke-static {p0, v0, v1}, Lkotlin/text/n;->e0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0, v1}, Lkotlin/text/n;->I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 11
     .line 12
@@ -959,7 +959,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->K(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/blankj/utilcode/util/f;->m(Ljava/lang/Object;)Ljava/util/List;
 
     .line 19
     .line 20

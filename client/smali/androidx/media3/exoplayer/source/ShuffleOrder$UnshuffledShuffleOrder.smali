@@ -86,7 +86,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/source/y;->a(Landroidx/media3/exoplayer/source/ShuffleOrder;III)Landroidx/media3/exoplayer/source/ShuffleOrder;
+    invoke-static {p0, p1, p2, p3}, Landroidx/media3/exoplayer/source/a0;->a(Landroidx/media3/exoplayer/source/ShuffleOrder;III)Landroidx/media3/exoplayer/source/ShuffleOrder;
 
     move-result-object p1
 
@@ -123,7 +123,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/source/y;->b(Landroidx/media3/exoplayer/source/ShuffleOrder;II)Landroidx/media3/exoplayer/source/ShuffleOrder;
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/source/a0;->b(Landroidx/media3/exoplayer/source/ShuffleOrder;II)Landroidx/media3/exoplayer/source/ShuffleOrder;
 
     move-result-object p1
 

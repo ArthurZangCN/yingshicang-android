@@ -2,57 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Landroidx/media3/exoplayer/offline/Download;Ljava/lang/Exception;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;)V
     .locals 0
-    .param p3    # Ljava/lang/Exception;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/offline/h;->a:Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Landroidx/media3/exoplayer/offline/Download;)V
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 1
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Landroidx/media3/exoplayer/offline/h;->a:Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;
 
-.method public static c(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Z)V
-    .locals 0
+    invoke-static {v0}, Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;->a(Landroidx/media3/exoplayer/offline/DownloadService$ForegroundNotificationUpdater;)V
 
-    .line 1
-    return-void
-.end method
-
-.method public static d(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static e(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static f(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Landroidx/media3/exoplayer/scheduler/Requirements;I)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static g(Landroidx/media3/exoplayer/offline/DownloadManager$Listener;Landroidx/media3/exoplayer/offline/DownloadManager;Z)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

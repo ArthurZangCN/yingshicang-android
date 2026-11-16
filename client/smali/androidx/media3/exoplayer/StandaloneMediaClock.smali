@@ -152,7 +152,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/h1;->a(Landroidx/media3/exoplayer/MediaClock;)Z
+    invoke-static {p0}, Landroidx/media3/exoplayer/m1;->a(Landroidx/media3/exoplayer/MediaClock;)Z
 
     move-result v0
 

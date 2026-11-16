@@ -130,7 +130,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -138,14 +138,14 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/content/e;
+    new-instance v0, Landroidx/core/content/g;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, v1}, Landroidx/core/content/e;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/g;-><init>(I)V
 
     .line 8
     .line 9
@@ -154,11 +154,11 @@
 
     .line 11
     .line 12
-    new-instance v0, Landroidx/core/content/f;
+    new-instance v0, Landroidx/core/content/h;
 
     .line 13
     .line 14
-    invoke-direct {v0, v1}, Landroidx/core/content/f;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/h;-><init>(I)V
 
     .line 15
     .line 16
@@ -167,11 +167,11 @@
 
     .line 18
     .line 19
-    new-instance v0, Landroidx/core/content/g;
+    new-instance v0, Landroidx/core/content/i;
 
     .line 20
     .line 21
-    invoke-direct {v0, v1}, Landroidx/core/content/g;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/i;-><init>(I)V
 
     .line 22
     .line 23
@@ -180,11 +180,11 @@
 
     .line 25
     .line 26
-    new-instance v0, Landroidx/core/content/h;
+    new-instance v0, Landroidx/core/content/j;
 
     .line 27
     .line 28
-    invoke-direct {v0, v1}, Landroidx/core/content/h;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/j;-><init>(I)V
 
     .line 29
     .line 30
@@ -193,11 +193,11 @@
 
     .line 32
     .line 33
-    new-instance v0, Landroidx/core/content/i;
+    new-instance v0, Landroidx/core/content/k;
 
     .line 34
     .line 35
-    invoke-direct {v0, v1}, Landroidx/core/content/i;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/k;-><init>(I)V
 
     .line 36
     .line 37
@@ -206,44 +206,44 @@
 
     .line 39
     .line 40
-    new-instance v0, Landroidx/core/content/e;
+    new-instance v0, Landroidx/core/content/l;
 
     .line 41
     .line 42
-    const/4 v2, 0x1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 43
-    invoke-direct {v0, v2}, Landroidx/core/content/e;-><init>(I)V
-
     .line 44
     .line 45
-    .line 46
     iput-object v0, p0, Landroidx/core/content/IntentSanitizer$Builder;->mAllowedComponents:Landroidx/core/util/Predicate;
 
+    .line 46
     .line 47
-    .line 48
     new-instance v0, Ljava/util/HashMap;
 
+    .line 48
     .line 49
-    .line 50
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 50
     .line 51
     .line 52
-    .line 53
     iput-object v0, p0, Landroidx/core/content/IntentSanitizer$Builder;->mAllowedExtras:Ljava/util/Map;
 
+    .line 53
     .line 54
-    .line 55
     iput-boolean v1, p0, Landroidx/core/content/IntentSanitizer$Builder;->mAllowClipDataText:Z
 
+    .line 55
     .line 56
-    .line 57
-    new-instance v0, Landroidx/core/content/f;
+    new-instance v0, Landroidx/core/content/g;
 
+    .line 57
     .line 58
+    const/4 v1, 0x1
+
     .line 59
-    invoke-direct {v0, v2}, Landroidx/core/content/f;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/g;-><init>(I)V
 
     .line 60
     .line 61
@@ -252,11 +252,11 @@
 
     .line 63
     .line 64
-    new-instance v0, Landroidx/core/content/g;
+    new-instance v0, Landroidx/core/content/h;
 
     .line 65
     .line 66
-    invoke-direct {v0, v2}, Landroidx/core/content/g;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/h;-><init>(I)V
 
     .line 67
     .line 68
@@ -769,13 +769,13 @@
     invoke-static {p1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v0, Landroidx/core/content/c;
+    new-instance v0, Landroidx/core/content/d;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/d;-><init>(Ljava/lang/Comparable;I)V
 
     invoke-virtual {p0, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowAction(Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
@@ -801,19 +801,22 @@
 
     .line 3
     .line 4
-    new-instance v1, Landroidx/core/content/i;
+    new-instance v0, Landroidx/core/content/i;
 
     .line 5
     .line 6
-    invoke-direct {v1, v0}, Landroidx/core/content/i;-><init>(I)V
+    const/4 v1, 0x2
 
     .line 7
+    invoke-direct {v0, v1}, Landroidx/core/content/i;-><init>(I)V
+
     .line 8
     .line 9
-    iput-object v1, p0, Landroidx/core/content/IntentSanitizer$Builder;->mAllowedComponents:Landroidx/core/util/Predicate;
-
     .line 10
+    iput-object v0, p0, Landroidx/core/content/IntentSanitizer$Builder;->mAllowedComponents:Landroidx/core/util/Predicate;
+
     .line 11
+    .line 12
     return-object p0
 .end method
 
@@ -876,13 +879,13 @@
     invoke-static {p1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v0, Landroidx/core/content/d;
+    new-instance v0, Landroidx/core/content/c;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/d;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/String;I)V
 
     invoke-virtual {p0, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowCategory(Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
@@ -1034,14 +1037,14 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/content/j;
+    new-instance v0, Landroidx/core/content/m;
 
     .line 5
     .line 6
     const/4 v1, 0x1
 
     .line 7
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/j;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/m;-><init>(Ljava/lang/String;I)V
 
     .line 8
     .line 9
@@ -1076,13 +1079,13 @@
     invoke-static {p1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v0, Landroidx/core/content/m;
+    new-instance v0, Landroidx/core/content/d;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/m;-><init>(Ljava/lang/Comparable;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/d;-><init>(Ljava/lang/Comparable;I)V
 
     invoke-virtual {p0, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowComponent(Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
@@ -1157,14 +1160,14 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/content/j;
+    new-instance v0, Landroidx/core/content/n;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/j;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/n;-><init>(Ljava/lang/Object;I)V
 
     .line 8
     .line 9
@@ -1231,7 +1234,7 @@
 .end method
 
 .method public allowDataWithAuthority(Ljava/lang/String;)Landroidx/core/content/IntentSanitizer$Builder;
-    .locals 1
+    .locals 2
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -1251,20 +1254,23 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/content/k;
+    new-instance v0, Landroidx/core/content/c;
 
     .line 5
     .line 6
-    invoke-direct {v0, p1}, Landroidx/core/content/k;-><init>(Ljava/lang/String;)V
+    const/4 v1, 0x1
 
     .line 7
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/String;I)V
+
     .line 8
     .line 9
+    .line 10
     invoke-virtual {p0, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowData(Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
-    .line 10
     .line 11
     .line 12
+    .line 13
     return-object p0
 .end method
 
@@ -1316,11 +1322,11 @@
     if-nez v0, :cond_0
 
     .line 9
-    new-instance v0, Landroidx/core/content/f;
+    new-instance v0, Landroidx/core/content/k;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
-    invoke-direct {v0, v1}, Landroidx/core/content/f;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/k;-><init>(I)V
 
     .line 10
     :cond_0
@@ -1366,11 +1372,11 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/core/content/h;
+    new-instance v0, Landroidx/core/content/i;
 
     const/4 v1, 0x1
 
-    invoke-direct {v0, v1}, Landroidx/core/content/h;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/core/content/i;-><init>(I)V
 
     invoke-virtual {p0, p1, p2, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowExtra(Ljava/lang/String;Ljava/lang/Class;Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
@@ -1426,9 +1432,9 @@
     invoke-static {p3}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    new-instance v0, Landroidx/core/content/l;
+    new-instance v0, Landroidx/core/content/o;
 
-    invoke-direct {v0, p2, p3}, Landroidx/core/content/l;-><init>(Ljava/lang/Class;Landroidx/core/util/Predicate;)V
+    invoke-direct {v0, p2, p3}, Landroidx/core/content/o;-><init>(Ljava/lang/Class;Landroidx/core/util/Predicate;)V
 
     invoke-virtual {p0, p1, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowExtra(Ljava/lang/String;Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
@@ -1492,7 +1498,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/String;I)V
 
     const-string p1, "output"
 
@@ -1566,31 +1572,28 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/content/j;
+    new-instance v0, Landroidx/core/content/f;
 
     .line 5
     .line 6
-    const/4 v1, 0x2
+    invoke-direct {v0, p1}, Landroidx/core/content/f;-><init>(Ljava/lang/String;)V
 
     .line 7
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/j;-><init>(Ljava/lang/String;I)V
-
     .line 8
     .line 9
-    .line 10
     const-string p1, "android.intent.extra.STREAM"
 
+    .line 10
     .line 11
-    .line 12
     const-class v1, Landroid/net/Uri;
 
+    .line 12
     .line 13
-    .line 14
     invoke-virtual {p0, p1, v1, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowExtra(Ljava/lang/String;Ljava/lang/Class;Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
+    .line 14
     .line 15
     .line 16
-    .line 17
     return-object p0
 .end method
 
@@ -1732,13 +1735,13 @@
     invoke-static {p1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v0, Landroidx/core/content/m;
+    new-instance v0, Landroidx/core/content/e;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/m;-><init>(Ljava/lang/Comparable;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/e;-><init>(Ljava/lang/Object;I)V
 
     invoke-virtual {p0, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowPackage(Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 
@@ -1880,13 +1883,13 @@
     invoke-static {p1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    new-instance v0, Landroidx/core/content/c;
+    new-instance v0, Landroidx/core/content/m;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p1, v1}, Landroidx/core/content/m;-><init>(Ljava/lang/String;I)V
 
     invoke-virtual {p0, v0}, Landroidx/core/content/IntentSanitizer$Builder;->allowType(Landroidx/core/util/Predicate;)Landroidx/core/content/IntentSanitizer$Builder;
 

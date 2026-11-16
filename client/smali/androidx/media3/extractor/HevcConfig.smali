@@ -855,7 +855,7 @@
 
     .line 310
     .line 311
-    iget-object v5, v12, Landroidx/media3/container/NalUnitUtil$H265VpsData;->layerInfos:Lcom/google/common/collect/f2;
+    iget-object v5, v12, Landroidx/media3/container/NalUnitUtil$H265VpsData;->layerInfos:Lcom/google/common/collect/e2;
 
     .line 312
     .line 313
@@ -875,7 +875,7 @@
 
     .line 320
     .line 321
-    iget-object v5, v12, Landroidx/media3/container/NalUnitUtil$H265VpsData;->layerInfos:Lcom/google/common/collect/f2;
+    iget-object v5, v12, Landroidx/media3/container/NalUnitUtil$H265VpsData;->layerInfos:Lcom/google/common/collect/e2;
 
     .line 322
     .line 323

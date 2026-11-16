@@ -28,11 +28,11 @@
 
 
 # virtual methods
-.method public final synthetic getCustomData()Lcom/google/common/collect/g2;
+.method public final synthetic getCustomData()Lcom/google/common/collect/f2;
     .locals 1
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/upstream/d;->a(Landroidx/media3/exoplayer/upstream/CmcdConfiguration$RequestConfig;)Lcom/google/common/collect/g2;
+    invoke-static {p0}, Landroidx/media3/exoplayer/upstream/d;->a(Landroidx/media3/exoplayer/upstream/CmcdConfiguration$RequestConfig;)Lcom/google/common/collect/f2;
 
     move-result-object v0
 

@@ -53,21 +53,21 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 14
-    invoke-static {p1}, Landroidx/core/content/pm/f;->j(Landroid/text/PrecomputedText$Params;)Landroid/text/TextPaint;
+    invoke-static {p1}, Landroidx/core/text/a;->j(Landroid/text/PrecomputedText$Params;)Landroid/text/TextPaint;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/core/text/PrecomputedTextCompat$Params;->mPaint:Landroid/text/TextPaint;
 
     .line 15
-    invoke-static {p1}, Landroidx/core/app/e;->k(Landroid/text/PrecomputedText$Params;)Landroid/text/TextDirectionHeuristic;
+    invoke-static {p1}, Landroidx/core/content/pm/h;->h(Landroid/text/PrecomputedText$Params;)Landroid/text/TextDirectionHeuristic;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/core/text/PrecomputedTextCompat$Params;->mTextDir:Landroid/text/TextDirectionHeuristic;
 
     .line 16
-    invoke-static {p1}, Landroidx/core/graphics/a;->c(Landroid/text/PrecomputedText$Params;)I
+    invoke-static {p1}, Landroid/support/v4/media/session/g;->b(Landroid/text/PrecomputedText$Params;)I
 
     move-result v0
 
@@ -120,27 +120,27 @@
     if-lt v0, v1, :cond_0
 
     .line 3
-    invoke-static {p1}, Landroidx/core/app/g;->j(Landroid/text/TextPaint;)Landroid/text/PrecomputedText$Params$Builder;
+    invoke-static {p1}, Landroidx/core/content/pm/a;->j(Landroid/text/TextPaint;)Landroid/text/PrecomputedText$Params$Builder;
 
     move-result-object v0
 
     .line 4
-    invoke-static {v0, p3}, Landroid/support/v4/media/session/d;->i(Landroid/text/PrecomputedText$Params$Builder;I)Landroid/text/PrecomputedText$Params$Builder;
+    invoke-static {v0, p3}, Landroidx/core/content/pm/a;->i(Landroid/text/PrecomputedText$Params$Builder;I)Landroid/text/PrecomputedText$Params$Builder;
 
     move-result-object v0
 
     .line 5
-    invoke-static {v0, p4}, Landroidx/core/content/pm/f;->h(Landroid/text/PrecomputedText$Params$Builder;I)Landroid/text/PrecomputedText$Params$Builder;
+    invoke-static {v0, p4}, Landroidx/core/app/i;->g(Landroid/text/PrecomputedText$Params$Builder;I)Landroid/text/PrecomputedText$Params$Builder;
 
     move-result-object v0
 
     .line 6
-    invoke-static {v0, p2}, Landroidx/core/app/e;->j(Landroid/text/PrecomputedText$Params$Builder;Landroid/text/TextDirectionHeuristic;)Landroid/text/PrecomputedText$Params$Builder;
+    invoke-static {v0, p2}, Landroidx/core/text/a;->h(Landroid/text/PrecomputedText$Params$Builder;Landroid/text/TextDirectionHeuristic;)Landroid/text/PrecomputedText$Params$Builder;
 
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Landroidx/core/graphics/a;->i(Landroid/text/PrecomputedText$Params$Builder;)Landroid/text/PrecomputedText$Params;
+    invoke-static {v0}, Landroidx/core/content/pm/h;->g(Landroid/text/PrecomputedText$Params$Builder;)Landroid/text/PrecomputedText$Params;
 
     move-result-object v0
 
@@ -565,7 +565,7 @@
 
     .line 141
     .line 142
-    invoke-static {v0}, Landroid/support/v4/media/c;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
+    invoke-static {v0}, Landroid/support/v4/media/session/b;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
 
     .line 143
     .line 144
@@ -581,7 +581,7 @@
     move-result-object v1
 
     .line 150
-    invoke-static {v1}, Landroid/support/v4/media/c;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
+    invoke-static {v1}, Landroid/support/v4/media/session/b;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
 
     .line 151
     .line 152
@@ -589,7 +589,7 @@
     move-result-object v1
 
     .line 154
-    invoke-static {v1, v0}, Landroid/support/v4/media/c;->y(Ljava/lang/Object;Landroid/os/LocaleList;)Z
+    invoke-static {v1, v0}, Landroid/support/v4/media/c;->A(Ljava/lang/Object;Landroid/os/LocaleList;)Z
 
     .line 155
     .line 156
@@ -930,7 +930,7 @@
 
     .line 65
     .line 66
-    invoke-static {v3}, Landroid/support/v4/media/c;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
+    invoke-static {v3}, Landroid/support/v4/media/session/b;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
 
     .line 67
     .line 68
@@ -1604,7 +1604,7 @@
 
     .line 137
     .line 138
-    invoke-static {v3}, Landroid/support/v4/media/c;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
+    invoke-static {v3}, Landroid/support/v4/media/session/b;->f(Landroid/text/TextPaint;)Landroid/os/LocaleList;
 
     .line 139
     .line 140
@@ -1742,7 +1742,7 @@
 
     .line 209
     .line 210
-    invoke-static {v2}, Landroidx/core/app/b;->p(Landroid/text/TextPaint;)Ljava/lang/String;
+    invoke-static {v2}, Landroidx/core/app/e;->m(Landroid/text/TextPaint;)Ljava/lang/String;
 
     .line 211
     .line 212

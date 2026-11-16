@@ -39,7 +39,7 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p0, p1}, Landroidx/appcompat/app/g;->d(Landroid/media/AudioManager;Landroid/media/AudioAttributes;)Ljava/util/List;
+    invoke-static {p0, p1}, Landroidx/appcompat/app/h;->d(Landroid/media/AudioManager;Landroid/media/AudioAttributes;)Ljava/util/List;
 
     .line 6
     .line 7
@@ -51,7 +51,7 @@
 
     .line 10
     .line 11
-    invoke-static {p0}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->access$000(Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {p0}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->access$000(Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 12
     .line 13
@@ -89,7 +89,7 @@
     move-result-object p1
 
     .line 8
-    invoke-static {p0, p1}, Landroidx/appcompat/app/f;->c(Landroid/media/AudioManager;Landroid/media/AudioAttributes;)Ljava/util/List;
+    invoke-static {p0, p1}, Landroidx/appcompat/app/g;->c(Landroid/media/AudioManager;Landroid/media/AudioAttributes;)Ljava/util/List;
 
     .line 9
     .line 10

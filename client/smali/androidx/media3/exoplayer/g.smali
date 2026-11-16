@@ -4,19 +4,15 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroidx/media3/exoplayer/ExoPlayer;)Landroidx/media3/common/PlaybackException;
-    .locals 0
-    .annotation build Landroidx/annotation/Nullable;
-    .end annotation
+.method public static synthetic a(Lcom/google/common/collect/e2;)Landroid/media/RouteDiscoveryPreference$Builder;
+    .locals 2
 
     .line 1
-    invoke-interface {p0}, Landroidx/media3/exoplayer/ExoPlayer;->getPlayerError()Landroidx/media3/exoplayer/ExoPlaybackException;
+    new-instance v0, Landroid/media/RouteDiscoveryPreference$Builder;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    const/4 v1, 0x0
 
-    .line 5
-    return-object p0
+    invoke-direct {v0, p0, v1}, Landroid/media/RouteDiscoveryPreference$Builder;-><init>(Ljava/util/List;Z)V
+
+    return-object v0
 .end method

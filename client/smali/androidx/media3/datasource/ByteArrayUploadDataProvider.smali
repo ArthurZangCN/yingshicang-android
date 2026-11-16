@@ -129,7 +129,7 @@
 
     .line 3
     .line 4
-    invoke-static {p1}, Landroidx/media3/datasource/c;->c(Landroid/net/http/UploadDataSink;)V
+    invoke-static {p1}, Landroidx/media3/datasource/c;->e(Landroid/net/http/UploadDataSink;)V
 
     .line 5
     .line 6

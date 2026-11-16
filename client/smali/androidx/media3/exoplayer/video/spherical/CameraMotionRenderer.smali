@@ -584,7 +584,7 @@
     const/4 p1, 0x4
 
     .line 12
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 13
     .line 14
@@ -599,7 +599,7 @@
     const/4 p1, 0x0
 
     .line 18
-    invoke-static {p1}, Landroidx/media3/exoplayer/w1;->c(I)I
+    invoke-static {p1}, Landroidx/media3/exoplayer/a2;->c(I)I
 
     .line 19
     .line 20

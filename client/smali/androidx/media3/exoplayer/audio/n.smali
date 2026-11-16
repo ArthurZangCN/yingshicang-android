@@ -3,36 +3,34 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/common/util/ListenerSet$Event;
+.implements Landroid/media/AudioRouting$OnRoutingChangedListener;
 
 
 # instance fields
-.field public final synthetic a:J
+.field public final synthetic a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
 
 
 # direct methods
-.method public synthetic constructor <init>(J)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-wide p1, p0, Landroidx/media3/exoplayer/audio/n;->a:J
+    iput-object p1, p0, Landroidx/media3/exoplayer/audio/n;->a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)V
-    .locals 2
+.method public final onRoutingChanged(Landroid/media/AudioRouting;)V
+    .locals 1
 
     .line 1
-    iget-wide v0, p0, Landroidx/media3/exoplayer/audio/n;->a:J
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/n;->a:Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;
 
-    check-cast p1, Landroidx/media3/exoplayer/audio/AudioOutput$Listener;
-
-    invoke-static {v0, v1, p1}, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$PositionTrackerListener;->a(JLandroidx/media3/exoplayer/audio/AudioOutput$Listener;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;->a(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutput$OnRoutingChangedListenerApi24;Landroid/media/AudioRouting;)V
 
     return-void
 .end method

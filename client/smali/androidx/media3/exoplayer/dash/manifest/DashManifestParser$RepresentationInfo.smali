@@ -15,10 +15,10 @@
 
 
 # instance fields
-.field public final baseUrls:Lcom/google/common/collect/f2;
+.field public final baseUrls:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/dash/manifest/BaseUrl;",
             ">;"
         }
@@ -118,7 +118,7 @@
 
     .line 5
     .line 6
-    invoke-static {p2}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -126,7 +126,7 @@
     move-result-object p1
 
     .line 10
-    iput-object p1, p0, Landroidx/media3/exoplayer/dash/manifest/DashManifestParser$RepresentationInfo;->baseUrls:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/dash/manifest/DashManifestParser$RepresentationInfo;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 11
     .line 12

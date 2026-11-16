@@ -11,21 +11,21 @@
 
 .field public final synthetic b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-.field public final synthetic c:Z
+.field public final synthetic c:Landroidx/media3/exoplayer/DecoderCounters;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IZ)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/exoplayer/DecoderCounters;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Landroidx/media3/exoplayer/analytics/c;->a:I
+    iput p3, p0, Landroidx/media3/exoplayer/analytics/c;->a:I
 
     iput-object p1, p0, Landroidx/media3/exoplayer/analytics/c;->b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iput-boolean p3, p0, Landroidx/media3/exoplayer/analytics/c;->c:Z
+    iput-object p2, p0, Landroidx/media3/exoplayer/analytics/c;->c:Landroidx/media3/exoplayer/DecoderCounters;
 
     return-void
 .end method
@@ -40,23 +40,18 @@
 
     iget-object v1, p0, Landroidx/media3/exoplayer/analytics/c;->b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iget-boolean v2, p0, Landroidx/media3/exoplayer/analytics/c;->c:Z
+    iget-object v2, p0, Landroidx/media3/exoplayer/analytics/c;->c:Landroidx/media3/exoplayer/DecoderCounters;
 
     check-cast p1, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->t0(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ZLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->i(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/exoplayer/DecoderCounters;Landroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->M(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ZLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
-
-    return-void
-
-    :pswitch_1
-    invoke-static {v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->F(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;ZLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static {v1, v2, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->v(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Landroidx/media3/exoplayer/DecoderCounters;Landroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
 
@@ -64,7 +59,6 @@
 
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

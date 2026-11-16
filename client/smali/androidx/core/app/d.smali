@@ -4,11 +4,55 @@
 
 
 # direct methods
+.method public static bridge synthetic A()Ljava/lang/Class;
+    .locals 1
+
+    .line 1
+    const-class v0, Ljava/time/LocalDateTime;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static bridge synthetic B()Ljava/lang/Class;
+    .locals 1
+
+    .line 1
+    const-class v0, Ljava/time/chrono/MinguoDate;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static bridge synthetic C()Ljava/lang/Class;
+    .locals 1
+
+    .line 1
+    const-class v0, Ljava/time/DayOfWeek;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static bridge synthetic D()Ljava/lang/Class;
+    .locals 1
+
+    .line 1
+    const-class v0, Ljava/time/Year;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public static bridge synthetic a(J)F
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroid/graphics/Color;->alpha(J)F
+    invoke-static {p0, p1}, Landroid/graphics/Color;->green(J)F
 
     .line 2
     .line 3
@@ -19,60 +63,22 @@
     return p0
 .end method
 
-.method public static bridge synthetic b(JLandroid/graphics/ColorSpace;)J
+.method public static bridge synthetic b(Landroid/media/AudioManager;Landroid/media/AudioFocusRequest;)I
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroid/graphics/Color;->convert(JLandroid/graphics/ColorSpace;)J
+    invoke-virtual {p0, p1}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioFocusRequest;)I
 
     .line 2
     .line 3
     .line 4
-    move-result-wide p0
+    move-result p0
 
     .line 5
-    return-wide p0
+    return p0
 .end method
 
-.method public static bridge synthetic c(Landroid/app/Notification$Builder;J)Landroid/app/Notification$Builder;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/app/Notification$Builder;->setTimeoutAfter(J)Landroid/app/Notification$Builder;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static synthetic d(Ljava/lang/String;)Landroid/app/NotificationChannel;
-    .locals 3
-
-    .line 1
-    new-instance v0, Landroid/app/NotificationChannel;
-
-    .line 2
-    .line 3
-    const-string v1, "DLAN\u6295\u5c4f"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x4
-
-    .line 6
-    invoke-direct {v0, p0, v1, v2}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public static synthetic e(Ljava/lang/String;Ljava/lang/String;I)Landroid/app/NotificationChannel;
+.method public static synthetic c(Ljava/lang/String;Ljava/lang/String;I)Landroid/app/NotificationChannel;
     .locals 1
 
     .line 1
@@ -88,7 +94,7 @@
     return-object v0
 .end method
 
-.method public static bridge synthetic f(Landroid/app/job/JobWorkItem;)Landroid/content/Intent;
+.method public static bridge synthetic d(Landroid/app/job/JobWorkItem;)Landroid/content/Intent;
     .locals 0
 
     .line 1
@@ -99,141 +105,205 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic g()Landroid/graphics/Bitmap$Config;
+.method public static bridge synthetic e(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2, p3, p4}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic f(Landroid/media/AudioFocusRequest$Builder;)Landroid/media/AudioFocusRequest;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/media/AudioFocusRequest$Builder;->build()Landroid/media/AudioFocusRequest;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic g(F)Landroid/util/Half;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Landroid/util/Half;->valueOf(F)Landroid/util/Half;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic h()Ljava/lang/Class;
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/graphics/Bitmap$Config;->RGBA_F16:Landroid/graphics/Bitmap$Config;
+    const-class v0, Ljava/time/Instant;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public static bridge synthetic h()Landroid/graphics/ColorSpace$Named;
+.method public static bridge synthetic i(Ljava/time/format/DateTimeFormatter;Ljava/time/ZonedDateTime;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Ljava/time/format/DateTimeFormatter;->format(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic j(Ljava/nio/file/Path;)Ljava/net/URI;
+    .locals 0
+
+    .line 1
+    invoke-interface {p0}, Ljava/nio/file/Path;->toUri()Ljava/net/URI;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic k(Ljava/time/temporal/TemporalAccessor;)Ljava/time/LocalDate;
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Ljava/time/LocalDate;->from(Ljava/time/temporal/TemporalAccessor;)Ljava/time/LocalDate;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic l(Ljava/lang/Object;)Ljava/time/OffsetTime;
+    .locals 0
+
+    .line 1
+    check-cast p0, Ljava/time/OffsetTime;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static bridge synthetic m(Ljava/time/Clock;)Ljava/time/ZoneId;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Ljava/time/Clock;->getZone()Ljava/time/ZoneId;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic n(Ljava/lang/Object;)Ljava/time/chrono/HijrahEra;
+    .locals 0
+
+    .line 1
+    check-cast p0, Ljava/time/chrono/HijrahEra;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static bridge synthetic o(Ljava/lang/Object;)Ljava/time/chrono/ThaiBuddhistEra;
+    .locals 0
+
+    .line 1
+    check-cast p0, Ljava/time/chrono/ThaiBuddhistEra;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static bridge synthetic p(Ljava/time/format/DateTimeFormatterBuilder;)Ljava/time/format/DateTimeFormatterBuilder;
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/graphics/ColorSpace$Named;->DISPLAY_P3:Landroid/graphics/ColorSpace$Named;
+    const-string v0, "HH:mm:ss"
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    invoke-virtual {p0, v0}, Ljava/time/format/DateTimeFormatterBuilder;->appendPattern(Ljava/lang/String;)Ljava/time/format/DateTimeFormatterBuilder;
 
-.method public static bridge synthetic i(J)Landroid/graphics/ColorSpace;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroid/graphics/Color;->colorSpace(J)Landroid/graphics/ColorSpace;
-
-    .line 2
-    .line 3
     .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
-    .line 5
+    .line 7
     return-object p0
 .end method
 
-.method public static bridge synthetic j(Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/ColorSpace;
+.method public static bridge synthetic q(Ljava/lang/Object;)Ljava/time/temporal/ValueRange;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroid/graphics/BitmapFactory$Options;->outColorSpace:Landroid/graphics/ColorSpace;
+    check-cast p0, Ljava/time/temporal/ValueRange;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static bridge synthetic k(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Landroid/graphics/ColorSpace;->get(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic l(Landroid/media/AudioFocusRequest$Builder;Z)Landroid/media/AudioFocusRequest$Builder;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/media/AudioFocusRequest$Builder;->setWillPauseWhenDucked(Z)Landroid/media/AudioFocusRequest$Builder;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic m(Ljava/lang/String;)Landroid/util/Half;
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Landroid/util/Half;->valueOf(Ljava/lang/String;)Landroid/util/Half;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic n()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+.method public static bridge synthetic r()Ljava/util/Base64$Encoder;
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_MOVE_WINDOW:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public static bridge synthetic o()Ljava/lang/Class;
-    .locals 1
-
-    .line 1
-    const-class v0, Landroid/view/autofill/AutofillManager;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public static bridge synthetic p(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/util/List;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getAvailableExtraData()Ljava/util/List;
+    invoke-static {}, Ljava/util/Base64;->getEncoder()Ljava/util/Base64$Encoder;
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
+    move-result-object v0
 
     .line 5
-    return-object p0
+    return-object v0
 .end method
 
-.method public static bridge synthetic q(Landroid/app/ActivityOptions;I)V
+.method public static bridge synthetic s(Landroid/view/accessibility/AccessibilityNodeInfo;Z)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/app/ActivityOptions;->setLaunchDisplayId(I)Landroid/app/ActivityOptions;
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setShowingHintText(Z)V
 
     .line 2
     .line 3
@@ -241,46 +311,52 @@
     return-void
 .end method
 
-.method public static bridge synthetic r(Landroid/app/job/JobInfo$Builder;)V
+.method public static bridge synthetic t(Ljava/nio/channels/AsynchronousSocketChannel;Ljava/nio/ByteBuffer;JLjava/util/concurrent/TimeUnit;Ljava/nio/channels/CompletionHandler;)V
+    .locals 7
+
+    .line 1
+    const/4 v5, 0x0
+
+    .line 2
+    move-object v0, p0
+
+    .line 3
+    move-object v1, p1
+
+    .line 4
+    move-wide v2, p2
+
+    .line 5
+    move-object v4, p4
+
+    .line 6
+    move-object v6, p5
+
+    .line 7
+    invoke-virtual/range {v0 .. v6}, Ljava/nio/channels/AsynchronousSocketChannel;->write(Ljava/nio/ByteBuffer;JLjava/util/concurrent/TimeUnit;Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public static bridge synthetic u()Z
     .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    invoke-static {}, Landroid/animation/ValueAnimator;->areAnimatorsEnabled()Z
 
     .line 2
-    invoke-virtual {p0, v0}, Landroid/app/job/JobInfo$Builder;->setRequiresStorageNotLow(Z)Landroid/app/job/JobInfo$Builder;
-
     .line 3
     .line 4
+    move-result v0
+
     .line 5
-    return-void
+    return v0
 .end method
 
-.method public static bridge synthetic s(Landroid/graphics/Canvas;Landroid/graphics/RectF;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/graphics/Canvas;->clipOutRect(Landroid/graphics/RectF;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic t(Landroid/net/ConnectivityManager;Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/net/ConnectivityManager;->registerDefaultNetworkCallback(Landroid/net/ConnectivityManager$NetworkCallback;Landroid/os/Handler;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic u(J)Z
+.method public static bridge synthetic v(J)Z
     .locals 0
 
     .line 1
@@ -295,13 +371,62 @@
     return p0
 .end method
 
-.method public static bridge synthetic v(Landroid/content/pm/ApplicationInfo;)[Ljava/lang/String;
+.method public static bridge synthetic w(Landroid/content/pm/ShortcutManager;)Z
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->splitNames:[Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/pm/ShortcutManager;->isRequestPinShortcutSupported()Z
 
     .line 2
     .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic x(Landroid/content/pm/ShortcutManager;Landroid/content/pm/ShortcutInfo;Landroid/content/IntentSender;)Z
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/content/pm/ShortcutManager;->requestPinShortcut(Landroid/content/pm/ShortcutInfo;Landroid/content/IntentSender;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic y()Ljava/lang/Class;
+    .locals 1
+
+    .line 1
+    const-class v0, Ljava/time/chrono/JapaneseEra;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static bridge synthetic z(Ljava/time/format/DateTimeFormatterBuilder;)Ljava/time/format/DateTimeFormatterBuilder;
+    .locals 1
+
+    .line 1
+    const-string v0, "yyyy-MM-dd\'T\'HH"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Ljava/time/format/DateTimeFormatterBuilder;->appendPattern(Ljava/lang/String;)Ljava/time/format/DateTimeFormatterBuilder;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
     return-object p0
 .end method

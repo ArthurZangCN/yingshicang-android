@@ -21,7 +21,7 @@
     double-to-float p0, p0
 
     .line 4
-    invoke-static {p0}, Landroidx/core/app/c;->o(F)Landroid/util/Half;
+    invoke-static {p0}, Landroidx/core/app/d;->g(F)Landroid/util/Half;
 
     move-result-object p0
 
@@ -35,7 +35,7 @@
     .end annotation
 
     .line 2
-    invoke-static {p0}, Landroidx/core/app/c;->o(F)Landroid/util/Half;
+    invoke-static {p0}, Landroidx/core/app/d;->g(F)Landroid/util/Half;
 
     move-result-object p0
 
@@ -49,7 +49,7 @@
     .end annotation
 
     .line 3
-    invoke-static {p0}, Landroidx/core/app/d;->m(Ljava/lang/String;)Landroid/util/Half;
+    invoke-static {p0}, Landroidx/core/app/e;->k(Ljava/lang/String;)Landroid/util/Half;
 
     move-result-object p0
 
@@ -63,7 +63,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/appcompat/app/d;->n(S)Landroid/util/Half;
+    invoke-static {p0}, Landroidx/core/app/f;->j(S)Landroid/util/Half;
 
     move-result-object p0
 

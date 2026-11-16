@@ -65,90 +65,74 @@
 .end method
 
 .method public static buildRangeRequestHeader(JJ)Ljava/lang/String;
-    .locals 4
+    .locals 1
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
+    const/4 v0, 0x0
+
     .line 1
-    const-wide/16 v0, 0x0
+    invoke-static {p0, p1, p2, p3, v0}, Landroidx/media3/datasource/HttpUtil;->buildRangeRequestHeader(JJZ)Ljava/lang/String;
 
-    .line 2
-    .line 3
-    cmp-long v0, p0, v0
-
-    .line 4
-    .line 5
-    const-wide/16 v1, -0x1
-
-    .line 6
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    cmp-long v0, p2, v1
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_0
-
-    .line 12
-    .line 13
-    const/4 p0, 0x0
-
-    .line 14
-    return-object p0
-
-    .line 15
-    :cond_0
-    const-string v0, "bytes="
-
-    .line 16
-    .line 17
-    const-string v3, "-"
-
-    .line 18
-    .line 19
-    invoke-static {v0, p0, p1, v3}, Landroid/support/v4/media/a;->e(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
-
-    .line 23
-    cmp-long v1, p2, v1
-
-    .line 24
-    .line 25
-    if-eqz v1, :cond_1
-
-    .line 26
-    .line 27
-    add-long/2addr p0, p2
-
-    .line 28
-    const-wide/16 p2, 0x1
-
-    .line 29
-    .line 30
-    sub-long/2addr p0, p2
-
-    .line 31
-    invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 32
-    .line 33
-    .line 34
-    :cond_1
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 35
-    .line 36
-    .line 37
     move-result-object p0
 
-    .line 38
+    return-object p0
+.end method
+
+.method public static buildRangeRequestHeader(JJZ)Ljava/lang/String;
+    .locals 3
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+
+    const-wide/16 v0, 0x0
+
+    cmp-long v0, p0, v0
+
+    const-wide/16 v1, -0x1
+
+    if-nez v0, :cond_0
+
+    cmp-long v0, p2, v1
+
+    if-nez v0, :cond_0
+
+    if-nez p4, :cond_0
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 2
+    :cond_0
+    const-string p4, "bytes="
+
+    .line 3
+    const-string v0, "-"
+
+    .line 4
+    invoke-static {p4, p0, p1, v0}, Landroid/support/v4/media/e;->n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p4
+
+    cmp-long v0, p2, v1
+
+    if-eqz v0, :cond_1
+
+    add-long/2addr p0, p2
+
+    const-wide/16 p2, 0x1
+
+    sub-long/2addr p0, p2
+
+    .line 5
+    invoke-virtual {p4, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 6
+    :cond_1
+    invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
     return-object p0
 .end method
 
@@ -502,7 +486,7 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 7
     .line 8

@@ -41,7 +41,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/source/z;
+    new-instance v0, Landroidx/media3/exoplayer/source/b0;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
@@ -151,7 +151,7 @@
 
     .line 19
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 20
     .line 21
@@ -208,7 +208,7 @@
 
     .line 46
     :cond_2
-    invoke-static {v2}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v2}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 47
     .line 48

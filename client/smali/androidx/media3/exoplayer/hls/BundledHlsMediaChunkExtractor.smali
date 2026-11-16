@@ -308,7 +308,7 @@
     xor-int/2addr v0, v1
 
     .line 7
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 8
     .line 9
@@ -353,7 +353,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0, v2, v1}, Lcom/github/tvbox/osc/util/t;->w(Ljava/lang/Object;Ljava/lang/String;Z)V
+    invoke-static {v0, v2, v1}, Lcom/github/tvbox/osc/util/h0;->C(Ljava/lang/Object;Ljava/lang/String;Z)V
 
     .line 29
     .line 30

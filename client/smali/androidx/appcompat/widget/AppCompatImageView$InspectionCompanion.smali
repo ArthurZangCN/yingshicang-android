@@ -71,7 +71,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Landroidx/activity/h;->e(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/a;->e(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 4
     .line 5
@@ -87,7 +87,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->f(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->g(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 12
     .line 13
@@ -103,7 +103,7 @@
 
     .line 18
     .line 19
-    invoke-static {p1, v0}, Landroidx/activity/h;->v(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroid/support/v4/media/session/f;->w(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 20
     .line 21
@@ -119,7 +119,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1, v0}, Landroidx/appcompat/widget/b;->w(Landroid/view/inspector/PropertyMapper;I)I
+    invoke-static {p1, v0}, Landroid/support/v4/media/session/a;->d(Landroid/view/inspector/PropertyMapper;I)I
 
     .line 28
     .line 29
@@ -164,7 +164,7 @@
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->q(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
+    invoke-static {p2, v0, v1}, Landroid/support/v4/media/session/a;->q(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
 
     .line 4
     iget v0, p0, Landroidx/appcompat/widget/AppCompatImageView$InspectionCompanion;->mBackgroundTintModeId:I
@@ -173,7 +173,7 @@
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroid/support/v4/media/session/e;->q(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
+    invoke-static {p2, v0, v1}, Landroid/support/v4/media/session/h;->q(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
 
     .line 5
     iget v0, p0, Landroidx/appcompat/widget/AppCompatImageView$InspectionCompanion;->mTintId:I
@@ -182,7 +182,7 @@
 
     move-result-object v1
 
-    invoke-static {p2, v0, v1}, Landroidx/appcompat/widget/a;->q(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
+    invoke-static {p2, v0, v1}, Landroid/support/v4/media/session/a;->q(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
 
     .line 6
     iget v0, p0, Landroidx/appcompat/widget/AppCompatImageView$InspectionCompanion;->mTintModeId:I
@@ -191,13 +191,13 @@
 
     move-result-object p1
 
-    invoke-static {p2, v0, p1}, Landroid/support/v4/media/session/e;->q(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
+    invoke-static {p2, v0, p1}, Landroid/support/v4/media/session/h;->q(Landroid/view/inspector/PropertyReader;ILandroid/graphics/PorterDuff$Mode;)V
 
     return-void
 
     .line 7
     :cond_0
-    invoke-static {}, Landroid/support/v4/media/session/e;->i()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
+    invoke-static {}, Landroid/support/v4/media/session/a;->j()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
 
     move-result-object p1
 

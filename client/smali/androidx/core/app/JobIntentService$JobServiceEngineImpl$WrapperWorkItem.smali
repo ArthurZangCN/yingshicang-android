@@ -78,7 +78,7 @@
 
     .line 13
     .line 14
-    invoke-static {v1, v2}, Landroidx/appcompat/app/d;->r(Landroid/app/job/JobParameters;Landroid/app/job/JobWorkItem;)V
+    invoke-static {v1, v2}, Landroidx/core/app/e;->w(Landroid/app/job/JobParameters;Landroid/app/job/JobWorkItem;)V
 
     .line 15
     .line 16
@@ -118,7 +118,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Landroidx/core/app/d;->f(Landroid/app/job/JobWorkItem;)Landroid/content/Intent;
+    invoke-static {v0}, Landroidx/core/app/d;->d(Landroid/app/job/JobWorkItem;)Landroid/content/Intent;
 
     .line 4
     .line 5

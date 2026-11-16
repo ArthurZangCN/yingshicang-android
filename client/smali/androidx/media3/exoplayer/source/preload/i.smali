@@ -3,21 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/RenderersFactory;
+.field public final synthetic a:Landroid/content/Context;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/RenderersFactory;)V
+.method public synthetic constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/i;->a:Landroidx/media3/exoplayer/RenderersFactory;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/i;->a:Landroid/content/Context;
 
     return-void
 .end method
@@ -28,9 +28,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/i;->a:Landroidx/media3/exoplayer/RenderersFactory;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/i;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$Builder;->e(Landroidx/media3/exoplayer/RenderersFactory;)Landroidx/media3/exoplayer/RenderersFactory;
+    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$Builder;->a(Landroid/content/Context;)Landroidx/media3/exoplayer/upstream/BandwidthMeter;
 
     move-result-object v0
 

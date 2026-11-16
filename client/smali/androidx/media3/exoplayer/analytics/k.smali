@@ -7,33 +7,29 @@
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-.field public final synthetic b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
+.field public final synthetic b:I
 
-.field public final synthetic c:Ljava/lang/String;
+.field public final synthetic c:J
 
 .field public final synthetic d:J
 
-.field public final synthetic e:J
-
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Ljava/lang/String;JJI)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IJJ)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p7, p0, Landroidx/media3/exoplayer/analytics/k;->a:I
+    iput-object p1, p0, Landroidx/media3/exoplayer/analytics/k;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/analytics/k;->b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
+    iput p2, p0, Landroidx/media3/exoplayer/analytics/k;->b:I
 
-    iput-object p2, p0, Landroidx/media3/exoplayer/analytics/k;->c:Ljava/lang/String;
+    iput-wide p3, p0, Landroidx/media3/exoplayer/analytics/k;->c:J
 
-    iput-wide p3, p0, Landroidx/media3/exoplayer/analytics/k;->d:J
-
-    iput-wide p5, p0, Landroidx/media3/exoplayer/analytics/k;->e:J
+    iput-wide p5, p0, Landroidx/media3/exoplayer/analytics/k;->d:J
 
     return-void
 .end method
@@ -41,52 +37,22 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 16
+    .locals 7
 
     .line 1
-    move-object/from16 v0, p0
+    iget-wide v4, p0, Landroidx/media3/exoplayer/analytics/k;->d:J
 
-    iget v1, v0, Landroidx/media3/exoplayer/analytics/k;->a:I
+    move-object v6, p1
 
-    packed-switch v1, :pswitch_data_0
+    check-cast v6, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
 
-    move-object/from16 v8, p1
+    iget-object v0, p0, Landroidx/media3/exoplayer/analytics/k;->a:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
 
-    check-cast v8, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
+    iget v1, p0, Landroidx/media3/exoplayer/analytics/k;->b:I
 
-    iget-object v2, v0, Landroidx/media3/exoplayer/analytics/k;->b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
+    iget-wide v2, p0, Landroidx/media3/exoplayer/analytics/k;->c:J
 
-    iget-wide v6, v0, Landroidx/media3/exoplayer/analytics/k;->e:J
-
-    iget-object v3, v0, Landroidx/media3/exoplayer/analytics/k;->c:Ljava/lang/String;
-
-    iget-wide v4, v0, Landroidx/media3/exoplayer/analytics/k;->d:J
-
-    invoke-static/range {v2 .. v8}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->d(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Ljava/lang/String;JJLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
+    invoke-static/range {v0 .. v6}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->g0(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;IJJLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
 
     return-void
-
-    :pswitch_0
-    move-object/from16 v15, p1
-
-    check-cast v15, Landroidx/media3/exoplayer/analytics/AnalyticsListener;
-
-    iget-object v9, v0, Landroidx/media3/exoplayer/analytics/k;->b:Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;
-
-    iget-wide v13, v0, Landroidx/media3/exoplayer/analytics/k;->e:J
-
-    iget-object v10, v0, Landroidx/media3/exoplayer/analytics/k;->c:Ljava/lang/String;
-
-    iget-wide v11, v0, Landroidx/media3/exoplayer/analytics/k;->d:J
-
-    invoke-static/range {v9 .. v15}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;->a0(Landroidx/media3/exoplayer/analytics/AnalyticsListener$EventTime;Ljava/lang/String;JJLandroidx/media3/exoplayer/analytics/AnalyticsListener;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

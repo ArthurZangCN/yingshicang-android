@@ -96,10 +96,10 @@
 
 .field private auxEffectInfo:Landroidx/media3/common/AuxEffectInfo;
 
-.field private final availableAudioProcessors:Lcom/google/common/collect/f2;
+.field private final availableAudioProcessors:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/audio/AudioProcessor;",
             ">;"
         }
@@ -357,11 +357,11 @@
     iput-object v3, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->toFloatPcmAudioProcessor:Landroidx/media3/exoplayer/audio/ToFloatPcmAudioProcessor;
 
     .line 14
-    invoke-static {v2, v1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v2, v1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v1
 
-    iput-object v1, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->availableAudioProcessors:Lcom/google/common/collect/f2;
+    iput-object v1, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->availableAudioProcessors:Lcom/google/common/collect/e2;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -1529,7 +1529,7 @@
 
     .line 118
     :goto_0
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 119
     .line 120
@@ -1814,7 +1814,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/datasource/m;->a(Landroid/content/Context;)I
+    invoke-static {p0}, Landroidx/media3/exoplayer/audio/r;->a(Landroid/content/Context;)I
 
     .line 2
     .line 3
@@ -1978,7 +1978,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, p0}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, p0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     .line 23
     .line 24
@@ -2225,7 +2225,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -2407,24 +2407,27 @@
 
     .line 28
     .line 29
-    new-instance p2, Landroidx/media3/exoplayer/audio/s;
+    new-instance p2, Landroidx/core/widget/b;
 
     .line 30
     .line 31
-    invoke-direct {p2, p0}, Landroidx/media3/exoplayer/audio/s;-><init>(Landroidx/media3/exoplayer/audio/DefaultAudioSink;)V
+    const/4 v0, 0x1
 
     .line 32
+    invoke-direct {p2, p0, v0}, Landroidx/core/widget/b;-><init>(Ljava/lang/Object;I)V
+
     .line 33
     .line 34
+    .line 35
     const-wide/16 v0, 0x64
 
-    .line 35
     .line 36
+    .line 37
     invoke-virtual {p1, p2, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 37
     .line 38
     .line 39
+    .line 40
     return-void
 .end method
 
@@ -3046,11 +3049,11 @@
 
     .line 8
     .line 9
-    new-instance v0, Landroidx/media3/exoplayer/audio/r;
+    new-instance v0, Landroidx/media3/exoplayer/audio/u;
 
     .line 10
     .line 11
-    invoke-direct {v0, p0}, Landroidx/media3/exoplayer/audio/r;-><init>(Landroidx/media3/exoplayer/audio/DefaultAudioSink;)V
+    invoke-direct {v0, p0}, Landroidx/media3/exoplayer/audio/u;-><init>(Landroidx/media3/exoplayer/audio/DefaultAudioSink;)V
 
     .line 12
     .line 13
@@ -3982,7 +3985,7 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 9
     .line 10
@@ -4279,7 +4282,7 @@
     move-result v0
 
     .line 21
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 22
     .line 23
@@ -4300,20 +4303,20 @@
     move-result v0
 
     .line 32
-    new-instance v2, Lcom/google/common/collect/f2$a;
+    new-instance v2, Lcom/google/common/collect/e2$a;
 
     .line 33
     .line 34
-    invoke-direct {v2}, Lcom/google/common/collect/f2$a;-><init>()V
+    invoke-direct {v2}, Lcom/google/common/collect/e2$a;-><init>()V
 
     .line 35
     .line 36
     .line 37
-    iget-object v3, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->availableAudioProcessors:Lcom/google/common/collect/f2;
+    iget-object v3, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->availableAudioProcessors:Lcom/google/common/collect/e2;
 
     .line 38
     .line 39
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/d2$a;->h(Ljava/lang/Iterable;)V
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/c2$a;->g(Ljava/lang/Iterable;)V
 
     .line 40
     .line 41
@@ -4338,7 +4341,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 53
     .line 54
@@ -4351,7 +4354,7 @@
 
     .line 57
     .line 58
-    invoke-virtual {v2, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v2, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 59
     .line 60
@@ -4371,7 +4374,7 @@
     array-length v4, v3
 
     .line 68
-    invoke-virtual {v2, v4, v3}, Lcom/google/common/collect/d2$a;->f(I[Ljava/lang/Object;)V
+    invoke-virtual {v2, v4, v3}, Lcom/google/common/collect/c2$a;->f(I[Ljava/lang/Object;)V
 
     .line 69
     .line 70
@@ -4381,7 +4384,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v2}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v2}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 74
     .line 75
@@ -4389,7 +4392,7 @@
     move-result-object v2
 
     .line 77
-    invoke-direct {v3, v2}, Landroidx/media3/common/audio/AudioProcessingPipeline;-><init>(Lcom/google/common/collect/f2;)V
+    invoke-direct {v3, v2}, Landroidx/media3/common/audio/AudioProcessingPipeline;-><init>(Lcom/google/common/collect/e2;)V
 
     .line 78
     .line 79
@@ -4566,7 +4569,7 @@
 
     .line 160
     .line 161
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 162
     .line 163
@@ -4574,7 +4577,7 @@
     move-result-object p3
 
     .line 165
-    invoke-direct {v3, p3}, Landroidx/media3/common/audio/AudioProcessingPipeline;-><init>(Lcom/google/common/collect/f2;)V
+    invoke-direct {v3, p3}, Landroidx/media3/common/audio/AudioProcessingPipeline;-><init>(Lcom/google/common/collect/e2;)V
 
     .line 166
     .line 167
@@ -4856,7 +4859,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 4
     .line 5
@@ -5340,55 +5343,193 @@
 .end method
 
 .method public getFormatSupport(Landroidx/media3/common/Format;)I
-    .locals 1
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->audioOutputProvider:Landroidx/media3/exoplayer/audio/AudioOutputProvider;
+    iget v0, p1, Landroidx/media3/common/Format;->pcmEncoding:I
 
     .line 2
     .line 3
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->getFormatConfig(Landroidx/media3/common/Format;)Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;
+    invoke-static {v0}, Landroidx/media3/common/util/Util;->isEncodingLinearPcm(I)Z
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result v0
 
     .line 7
-    invoke-interface {v0, p1}, Landroidx/media3/exoplayer/audio/AudioOutputProvider;->getFormatSupport(Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;)Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatSupport;
+    const/4 v1, 0x2
 
     .line 8
+    const/4 v2, 0x1
+
     .line 9
+    const/4 v3, 0x0
+
     .line 10
-    move-result-object p1
+    if-eqz v0, :cond_1
 
     .line 11
-    iget p1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatSupport;->supportLevel:I
-
     .line 12
-    .line 13
-    const/4 v0, 0x1
+    iget v0, p1, Landroidx/media3/common/Format;->pcmEncoding:I
 
+    .line 13
     .line 14
-    if-eq p1, v0, :cond_0
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->shouldUseFloatOutput(I)Z
 
     .line 15
     .line 16
-    const/4 v0, 0x2
-
     .line 17
-    if-eq p1, v0, :cond_0
+    move-result v0
 
     .line 18
-    .line 19
-    const/4 p1, 0x0
+    if-eqz v0, :cond_0
 
+    .line 19
     .line 20
-    return p1
+    iget v4, p1, Landroidx/media3/common/Format;->pcmEncoding:I
 
     .line 21
+    .line 22
+    const/4 v5, 0x4
+
+    .line 23
+    if-eq v4, v5, :cond_0
+
+    .line 24
+    .line 25
+    invoke-virtual {p1}, Landroidx/media3/common/Format;->buildUpon()Landroidx/media3/common/Format$Builder;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    invoke-virtual {p1, v5}, Landroidx/media3/common/Format$Builder;->setPcmEncoding(I)Landroidx/media3/common/Format$Builder;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
+
+    .line 37
+    move v4, v2
+
+    .line 38
+    goto :goto_0
+
+    .line 39
     :cond_0
-    return v0
+    move v4, v3
+
+    .line 40
+    :goto_0
+    if-nez v0, :cond_2
+
+    .line 41
+    .line 42
+    iget v0, p1, Landroidx/media3/common/Format;->pcmEncoding:I
+
+    .line 43
+    .line 44
+    if-eq v0, v1, :cond_2
+
+    .line 45
+    .line 46
+    invoke-virtual {p1}, Landroidx/media3/common/Format;->buildUpon()Landroidx/media3/common/Format$Builder;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
+
+    .line 50
+    invoke-virtual {p1, v1}, Landroidx/media3/common/Format$Builder;->setPcmEncoding(I)Landroidx/media3/common/Format$Builder;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    invoke-virtual {p1}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p1
+
+    .line 58
+    move v4, v2
+
+    .line 59
+    goto :goto_1
+
+    .line 60
+    :cond_1
+    move v4, v3
+
+    .line 61
+    :cond_2
+    :goto_1
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->audioOutputProvider:Landroidx/media3/exoplayer/audio/AudioOutputProvider;
+
+    .line 62
+    .line 63
+    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->getFormatConfig(Landroidx/media3/common/Format;)Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    invoke-interface {v0, p1}, Landroidx/media3/exoplayer/audio/AudioOutputProvider;->getFormatSupport(Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;)Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatSupport;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    iget p1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatSupport;->supportLevel:I
+
+    .line 72
+    .line 73
+    if-eq p1, v2, :cond_5
+
+    .line 74
+    .line 75
+    if-eq p1, v1, :cond_3
+
+    .line 76
+    .line 77
+    return v3
+
+    .line 78
+    :cond_3
+    if-eqz v4, :cond_4
+
+    .line 79
+    .line 80
+    move v1, v2
+
+    .line 81
+    :cond_4
+    return v1
+
+    .line 82
+    :cond_5
+    return v2
 .end method
 
 .method public getPlaybackParameters()Landroidx/media3/common/PlaybackParameters;
@@ -5467,7 +5608,7 @@
 
     .line 21
     :goto_1
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 22
     .line 23
@@ -5838,7 +5979,7 @@
 
     .line 198
     :goto_3
-    invoke-static {v5}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v5}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 199
     .line 200
@@ -6581,11 +6722,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->availableAudioProcessors:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/audio/DefaultAudioSink;->availableAudioProcessors:Lcom/google/common/collect/e2;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lcom/google/common/collect/f2;->iterator()Lcom/google/common/collect/o6;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2;->iterator()Lcom/google/common/collect/o6;
 
     .line 7
     .line 8
@@ -7049,7 +7190,7 @@
 
     .line 10
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 11
     .line 12
@@ -7065,7 +7206,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/audio/i;->g(Landroidx/media3/exoplayer/audio/AudioSink;J)V
+    invoke-static {p0, p1, p2}, Landroidx/media3/exoplayer/audio/j;->g(Landroidx/media3/exoplayer/audio/AudioSink;J)V
 
     return-void
 .end method

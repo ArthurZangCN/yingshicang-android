@@ -306,7 +306,7 @@
 
     .line 28
     .line 29
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 30
     .line 31
@@ -367,7 +367,7 @@
     move-result-wide v3
 
     .line 60
-    invoke-static {v0}, Landroidx/media3/extractor/jpeg/XmpMotionPhotoDescriptionParser;->parseMicroVideoOffsetFromDescription(Lorg/xmlpull/v1/XmlPullParser;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Landroidx/media3/extractor/jpeg/XmpMotionPhotoDescriptionParser;->parseMicroVideoOffsetFromDescription(Lorg/xmlpull/v1/XmlPullParser;)Lcom/google/common/collect/e2;
 
     .line 61
     .line 62
@@ -403,7 +403,7 @@
 
     .line 76
     .line 77
-    invoke-static {v0, v1, v5}, Landroidx/media3/extractor/jpeg/XmpMotionPhotoDescriptionParser;->parseMotionPhotoV1Directory(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {v0, v1, v5}, Landroidx/media3/extractor/jpeg/XmpMotionPhotoDescriptionParser;->parseMotionPhotoV1Directory(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     .line 78
     .line 79
@@ -439,7 +439,7 @@
 
     .line 93
     .line 94
-    invoke-static {v0, v1, v5}, Landroidx/media3/extractor/jpeg/XmpMotionPhotoDescriptionParser;->parseMotionPhotoV1Directory(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {v0, v1, v5}, Landroidx/media3/extractor/jpeg/XmpMotionPhotoDescriptionParser;->parseMotionPhotoV1Directory(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     .line 95
     .line 96
@@ -505,14 +505,14 @@
     throw p0
 .end method
 
-.method private static parseMicroVideoOffsetFromDescription(Lorg/xmlpull/v1/XmlPullParser;)Lcom/google/common/collect/f2;
+.method private static parseMicroVideoOffsetFromDescription(Lorg/xmlpull/v1/XmlPullParser;)Lcom/google/common/collect/e2;
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lorg/xmlpull/v1/XmlPullParser;",
             ")",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/jpeg/MotionPhotoDescription$ContainerItem;",
             ">;"
         }
@@ -610,7 +610,7 @@
     .line 43
     .line 44
     .line 45
-    invoke-static {p0, v0}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p0, v0}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 46
     .line 47
@@ -630,7 +630,7 @@
 
     .line 53
     :cond_1
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 54
     .line 55
@@ -798,7 +798,7 @@
     return-wide v3
 .end method
 
-.method private static parseMotionPhotoV1Directory(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/f2;
+.method private static parseMotionPhotoV1Directory(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;)Lcom/google/common/collect/e2;
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -807,14 +807,14 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/jpeg/MotionPhotoDescription$ContainerItem;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -826,7 +826,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1, v1}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -838,7 +838,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1, v2}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v2}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 14
     .line 15
@@ -868,7 +868,7 @@
 
     .line 27
     .line 28
-    invoke-static {p2, v2}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v2}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 29
     .line 30
@@ -880,7 +880,7 @@
 
     .line 33
     .line 34
-    invoke-static {p2, v3}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v3}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -892,7 +892,7 @@
 
     .line 39
     .line 40
-    invoke-static {p2, v4}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v4}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 41
     .line 42
@@ -904,7 +904,7 @@
 
     .line 45
     .line 46
-    invoke-static {p2, v5}, Landroid/support/v4/media/d;->g(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v5}, Landroidx/concurrent/futures/a;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 47
     .line 48
@@ -1015,7 +1015,7 @@
     .line 94
     .line 95
     .line 96
-    invoke-virtual {v0, v4}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v4}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 97
     .line 98
@@ -1025,7 +1025,7 @@
     .line 100
     :cond_4
     :goto_2
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 101
     .line 102
@@ -1050,7 +1050,7 @@
 
     .line 110
     .line 111
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 112
     .line 113

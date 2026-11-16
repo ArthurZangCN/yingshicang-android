@@ -3,60 +3,62 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/common/util/ListenerSet$Event;
-.implements Landroidx/media3/common/util/BackgroundThreadStateHandler$StateChangeListener;
+.implements Lcom/google/common/base/f;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+.field public final synthetic a:I
+
+.field public final synthetic b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImpl;)V
+.method public synthetic constructor <init>(II)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/c0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+    iput p2, p0, Landroidx/media3/exoplayer/c0;->a:I
+
+    iput p1, p0, Landroidx/media3/exoplayer/c0;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)V
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/c0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+    iget v0, p0, Landroidx/media3/exoplayer/c0;->a:I
 
-    check-cast p1, Landroidx/media3/common/Player$Listener;
+    iget v1, p0, Landroidx/media3/exoplayer/c0;->b:I
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->c(Landroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/common/Player$Listener;)V
+    packed-switch v0, :pswitch_data_0
 
-    return-void
-.end method
+    check-cast p1, Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
 
-.method public final onStateChanged(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 1
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/StreamVolumeManager;->d(ILandroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;)Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
 
-    .line 1
+    move-result-object p1
+
+    return-object p1
+
+    :pswitch_0
     check-cast p1, Ljava/lang/Integer;
 
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    invoke-static {v1, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->a(ILjava/lang/Integer;)Ljava/lang/Integer;
 
-    move-result p1
+    move-result-object p1
 
-    check-cast p2, Ljava/lang/Integer;
+    return-object p1
 
-    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+    nop
 
-    move-result p2
-
-    iget-object v0, p0, Landroidx/media3/exoplayer/c0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
-
-    invoke-static {v0, p1, p2}, Landroidx/media3/exoplayer/ExoPlayerImpl;->I(Landroidx/media3/exoplayer/ExoPlayerImpl;II)V
-
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

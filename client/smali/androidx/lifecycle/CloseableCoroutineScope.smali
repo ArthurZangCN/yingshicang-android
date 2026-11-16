@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/io/Closeable;
-.implements Lkotlinx/coroutines/b0;
+.implements Ln4/e0;
 
 
 # instance fields
@@ -51,7 +51,7 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, Lkotlinx/coroutines/d1$a;->a:Lkotlinx/coroutines/d1$a;
+    sget-object v1, Ln4/h1$a;->a:Ln4/h1$a;
 
     .line 6
     .line 7
@@ -63,7 +63,7 @@
     move-result-object v0
 
     .line 11
-    check-cast v0, Lkotlinx/coroutines/d1;
+    check-cast v0, Ln4/h1;
 
     .line 12
     .line 13
@@ -74,7 +74,7 @@
     const/4 v1, 0x0
 
     .line 16
-    invoke-interface {v0, v1}, Lkotlinx/coroutines/d1;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {v0, v1}, Ln4/h1;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 17
     .line 18

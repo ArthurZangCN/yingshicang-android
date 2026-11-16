@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/AudioAttributes;)Z
+.method public static synthetic a(II)Landroid/view/SurfaceView;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/AudioAttributes;->isContentSpatialized()Z
+    const/4 p0, 0x0
 
-    move-result p0
-
-    return p0
+    return-object p0
 .end method

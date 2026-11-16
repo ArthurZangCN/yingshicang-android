@@ -48,10 +48,10 @@
 
 .field final synthetic this$0:Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper;
 
-.field private videoEffects:Lcom/google/common/collect/f2;
+.field private videoEffects:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/Effect;",
             ">;"
         }
@@ -91,7 +91,7 @@
 
     .line 13
     .line 14
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 15
     .line 16
@@ -99,7 +99,7 @@
     move-result-object p1
 
     .line 18
-    iput-object p1, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/e2;
 
     .line 19
     .line 20
@@ -287,7 +287,7 @@
 
     .line 40
     .line 41
-    iget-object v4, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/f2;
+    iget-object v4, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/e2;
 
     .line 42
     .line 43
@@ -602,7 +602,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -651,7 +651,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -759,7 +759,7 @@
 
     .line 58
     :cond_2
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 59
     .line 60
@@ -783,7 +783,7 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
@@ -1040,7 +1040,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 8
     .line 9
@@ -1216,11 +1216,11 @@
 
     .line 4
     .line 5
-    new-instance v2, Landroidx/media3/exoplayer/video/h;
+    new-instance v2, Landroidx/media3/exoplayer/video/i;
 
     .line 6
     .line 7
-    invoke-direct {v2, p0, v0, p1}, Landroidx/media3/exoplayer/video/h;-><init>(Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoFrameProcessingException;)V
+    invoke-direct {v2, p0, v0, p1}, Landroidx/media3/exoplayer/video/i;-><init>(Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoFrameProcessingException;)V
 
     .line 8
     .line 9
@@ -1245,19 +1245,19 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    new-instance v2, Landroidx/core/widget/b;
+    new-instance v2, Landroidx/media3/exoplayer/video/d;
 
     .line 9
     .line 10
     const/4 v3, 0x2
 
     .line 11
-    invoke-direct {v2, v0, v3}, Landroidx/core/widget/b;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/video/d;-><init>(Ljava/lang/Object;I)V
 
     .line 12
     .line 13
@@ -1282,19 +1282,19 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    new-instance v2, Landroidx/media3/exoplayer/video/c;
+    new-instance v2, Landroidx/core/widget/b;
 
     .line 9
     .line 10
-    const/4 v3, 0x1
+    const/4 v3, 0x3
 
     .line 11
-    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/video/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v0, v3}, Landroidx/core/widget/b;-><init>(Ljava/lang/Object;I)V
 
     .line 12
     .line 13
@@ -1319,19 +1319,19 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    new-instance v2, Landroidx/media3/exoplayer/video/e;
+    new-instance v2, Landroidx/media3/exoplayer/video/c;
 
     .line 9
     .line 10
-    const/4 v3, 0x2
+    const/4 v3, 0x1
 
     .line 11
-    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/video/e;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v2, v0, v3}, Landroidx/media3/exoplayer/video/c;-><init>(Ljava/lang/Object;I)V
 
     .line 12
     .line 13
@@ -1366,12 +1366,12 @@
     move-result v0
 
     .line 5
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 6
     .line 7
     .line 8
-    invoke-static {p6}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p6}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -1379,7 +1379,7 @@
     move-result-object p6
 
     .line 12
-    iput-object p6, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/f2;
+    iput-object p6, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/e2;
 
     .line 13
     .line 14
@@ -1541,7 +1541,7 @@
 .end method
 
 .method public onVideoSizeChanged(Landroidx/media3/common/VideoSize;)V
-    .locals 3
+    .locals 4
 
     .line 1
     iget-object v0, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->listener:Landroidx/media3/exoplayer/video/VideoSink$Listener;
@@ -1552,20 +1552,23 @@
 
     .line 4
     .line 5
-    new-instance v2, Landroidx/media3/exoplayer/video/i;
+    new-instance v2, Landroidx/media3/exoplayer/video/j;
 
     .line 6
     .line 7
-    invoke-direct {v2, v0, p1}, Landroidx/media3/exoplayer/video/i;-><init>(Landroidx/media3/exoplayer/video/VideoSink$Listener;Landroidx/media3/common/VideoSize;)V
+    const/4 v3, 0x0
 
     .line 8
+    invoke-direct {v2, v0, p1, v3}, Landroidx/media3/exoplayer/video/j;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 9
     .line 10
+    .line 11
     invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 11
     .line 12
     .line 13
+    .line 14
     return-void
 .end method
 
@@ -1810,11 +1813,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -1830,7 +1833,7 @@
 
     .line 10
     :cond_0
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 11
     .line 12
@@ -1838,7 +1841,7 @@
     move-result-object p1
 
     .line 14
-    iput-object p1, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/video/PlaybackVideoGraphWrapper$InputVideoSink;->videoEffects:Lcom/google/common/collect/e2;
 
     .line 15
     .line 16

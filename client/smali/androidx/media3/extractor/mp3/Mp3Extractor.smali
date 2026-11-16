@@ -67,14 +67,14 @@
 
 .field private final gaplessInfoHolder:Landroidx/media3/extractor/GaplessInfoHolder;
 
-.field private final id3Peeker:Landroidx/media3/extractor/Id3Peeker;
-
-.field private isSeekInProgress:Z
-
-.field private metadata:Landroidx/media3/common/Metadata;
+.field private id3Metadata:Landroidx/media3/common/Metadata;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 .end field
+
+.field private final id3Peeker:Landroidx/media3/extractor/Id3Peeker;
+
+.field private isSeekInProgress:Z
 
 .field private realTrackOutput:Landroidx/media3/extractor/TrackOutput;
 
@@ -94,20 +94,25 @@
 
 .field private synchronizedHeaderData:I
 
+.field private xingMetadata:Landroidx/media3/common/Metadata;
+    .annotation build Landroidx/annotation/Nullable;
+    .end annotation
+.end field
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/c;
+    new-instance v0, Landroidx/constraintlayout/core/state/d;
 
     .line 2
     .line 3
-    const/4 v1, 0x6
+    const/4 v1, 0x7
 
     .line 4
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/c;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
 
     .line 5
     .line 6
@@ -116,23 +121,22 @@
 
     .line 8
     .line 9
-    new-instance v0, Landroidx/constraintlayout/core/state/d;
+    new-instance v0, Landroidx/constraintlayout/core/state/e;
 
     .line 10
     .line 11
-    const/16 v1, 0x9
+    const/4 v1, 0x5
 
     .line 12
-    .line 13
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/e;-><init>(I)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     sput-object v0, Landroidx/media3/extractor/mp3/Mp3Extractor;->REQUIRED_ID3_FRAME_PREDICATE:Landroidx/media3/extractor/metadata/id3/Id3Decoder$FramePredicate;
 
+    .line 16
     .line 17
-    .line 18
     return-void
 .end method
 
@@ -308,7 +312,7 @@
     move-result-object v2
 
     .line 9
-    iget-object v3, v0, Landroidx/media3/extractor/mp3/Mp3Extractor;->metadata:Landroidx/media3/common/Metadata;
+    iget-object v3, v0, Landroidx/media3/extractor/mp3/Mp3Extractor;->id3Metadata:Landroidx/media3/common/Metadata;
 
     .line 10
     .line 11
@@ -663,7 +667,7 @@
     move-result-wide v1
 
     .line 173
-    invoke-static {v1, v2}, Lcom/google/common/primitives/b;->n(J)I
+    invoke-static {v1, v2}, Lcom/google/common/primitives/b;->s(J)I
 
     .line 174
     .line 175
@@ -874,7 +878,7 @@
     move-result-wide v1
 
     .line 12
-    invoke-static {v1, v2}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v1, v2}, Lcom/google/common/primitives/b;->o(J)I
 
     move-result v1
 
@@ -882,11 +886,11 @@
     iget-wide v2, v0, Landroidx/media3/extractor/mp3/XingFrame;->frameCount:J
 
     .line 14
-    invoke-static {v10, v11, v2, v3, v12}, Lz1/d;->b(JJLjava/math/RoundingMode;)J
+    invoke-static {v10, v11, v2, v3, v12}, Lj2/d;->b(JJLjava/math/RoundingMode;)J
 
     move-result-wide v2
 
-    invoke-static {v2, v3}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v2, v3}, Lcom/google/common/primitives/b;->o(J)I
 
     move-result v13
 
@@ -969,7 +973,7 @@
 .end method
 
 .method private static getId3TlenUs(Landroidx/media3/common/Metadata;)J
-    .locals 5
+    .locals 4
     .param p0    # Landroidx/media3/common/Metadata;
         .annotation build Landroidx/annotation/Nullable;
         .end annotation
@@ -991,23 +995,23 @@
 
     .line 9
     :cond_0
-    new-instance v2, Landroidx/media3/extractor/mp3/a;
+    new-instance v2, Landroidx/media3/datasource/j;
 
     .line 10
     .line 11
-    const/4 v3, 0x0
+    const/4 v3, 0x2
 
     .line 12
-    invoke-direct {v2, v3}, Landroidx/media3/extractor/mp3/a;-><init>(I)V
+    invoke-direct {v2, v3}, Landroidx/media3/datasource/j;-><init>(I)V
 
     .line 13
     .line 14
     .line 15
-    const-class v4, Landroidx/media3/extractor/metadata/id3/TextInformationFrame;
+    const-class v3, Landroidx/media3/extractor/metadata/id3/TextInformationFrame;
 
     .line 16
     .line 17
-    invoke-virtual {p0, v4, v2}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/k;)Landroidx/media3/common/Metadata$Entry;
+    invoke-virtual {p0, v3, v2}, Landroidx/media3/common/Metadata;->getFirstMatchingEntry(Ljava/lang/Class;Lcom/google/common/base/m;)Landroidx/media3/common/Metadata$Entry;
 
     .line 18
     .line 19
@@ -1027,38 +1031,41 @@
 
     .line 26
     :cond_1
-    iget-object p0, p0, Landroidx/media3/extractor/metadata/id3/TextInformationFrame;->values:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/extractor/metadata/id3/TextInformationFrame;->values:Lcom/google/common/collect/e2;
 
     .line 27
     .line 28
-    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const/4 v0, 0x0
 
     .line 29
+    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
     .line 30
     .line 31
+    .line 32
     move-result-object p0
 
-    .line 32
+    .line 33
     check-cast p0, Ljava/lang/String;
 
-    .line 33
     .line 34
+    .line 35
     invoke-static {p0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
-    .line 35
     .line 36
     .line 37
-    move-result-wide v0
-
     .line 38
-    invoke-static {v0, v1}, Landroidx/media3/common/util/Util;->msToUs(J)J
+    move-result-wide v0
 
     .line 39
+    invoke-static {v0, v1}, Landroidx/media3/common/util/Util;->msToUs(J)J
+
     .line 40
     .line 41
+    .line 42
     move-result-wide v0
 
-    .line 42
+    .line 43
     return-wide v0
 .end method
 
@@ -1623,35 +1630,35 @@
     .line 123
     .line 124
     :cond_5
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
+    invoke-virtual {v9}, Landroidx/media3/extractor/mp3/XingFrame;->getMetadata()Landroidx/media3/common/Metadata;
 
     .line 125
     .line 126
     .line 127
-    move-result-wide v7
+    move-result-object v1
 
     .line 128
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
+    iput-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->xingMetadata:Landroidx/media3/common/Metadata;
 
     .line 129
     .line 130
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
+
     .line 131
-    move-result-wide v3
-
     .line 132
-    const-wide/16 v5, -0x1
-
     .line 133
+    move-result-wide v7
+
     .line 134
-    cmp-long v1, v3, v5
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
 
     .line 135
     .line 136
-    if-eqz v1, :cond_6
-
     .line 137
+    move-result-wide v3
+
     .line 138
-    iget-wide v3, v9, Landroidx/media3/extractor/mp3/XingFrame;->dataSize:J
+    const-wide/16 v5, -0x1
 
     .line 139
     .line 140
@@ -1663,151 +1670,163 @@
 
     .line 143
     .line 144
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
+    iget-wide v3, v9, Landroidx/media3/extractor/mp3/XingFrame;->dataSize:J
 
     .line 145
     .line 146
-    .line 147
-    move-result-wide v3
+    cmp-long v1, v3, v5
 
+    .line 147
     .line 148
-    iget-wide v5, v9, Landroidx/media3/extractor/mp3/XingFrame;->dataSize:J
+    if-eqz v1, :cond_6
 
     .line 149
     .line 150
-    add-long/2addr v5, v7
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
 
     .line 151
-    cmp-long v1, v3, v5
-
     .line 152
     .line 153
-    if-eqz v1, :cond_6
+    move-result-wide v3
 
     .line 154
-    .line 155
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-wide v5, v9, Landroidx/media3/extractor/mp3/XingFrame;->dataSize:J
 
+    .line 155
     .line 156
+    add-long/2addr v5, v7
+
     .line 157
-    const-string v3, "Data size mismatch between stream ("
+    cmp-long v1, v3, v5
 
     .line 158
     .line 159
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    if-eqz v1, :cond_6
 
     .line 160
     .line 161
-    .line 162
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
+    new-instance v1, Ljava/lang/StringBuilder;
 
+    .line 162
     .line 163
+    const-string v3, "Data size mismatch between stream ("
+
     .line 164
     .line 165
-    move-result-wide v3
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 166
-    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
     .line 167
     .line 168
-    .line 169
-    const-string v3, ") and Xing frame ("
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
 
+    .line 169
     .line 170
     .line 171
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-wide v3
 
     .line 172
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 173
     .line 174
-    iget-wide v3, v9, Landroidx/media3/extractor/mp3/XingFrame;->dataSize:J
-
     .line 175
-    .line 176
-    add-long/2addr v3, v7
+    const-string v3, ") and Xing frame ("
 
+    .line 176
     .line 177
-    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 178
     .line 179
     .line 180
-    const-string v3, "), using Xing value."
+    iget-wide v3, v9, Landroidx/media3/extractor/mp3/XingFrame;->dataSize:J
 
     .line 181
     .line 182
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    add-long/2addr v3, v7
 
     .line 183
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 184
     .line 185
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 186
+    const-string v3, "), using Xing value."
+
     .line 187
     .line 188
-    move-result-object v1
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 189
-    const-string v3, "Mp3Extractor"
-
     .line 190
     .line 191
-    invoke-static {v3, v1}, Landroidx/media3/common/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 192
     .line 193
     .line 194
+    move-result-object v1
+
+    .line 195
+    const-string v3, "Mp3Extractor"
+
+    .line 196
+    .line 197
+    invoke-static {v3, v1}, Landroidx/media3/common/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 198
+    .line 199
+    .line 200
     :cond_6
     iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
 
-    .line 195
-    .line 196
+    .line 201
+    .line 202
     iget v1, v1, Landroidx/media3/extractor/MpegAudioUtil$Header;->frameSize:I
 
-    .line 197
-    .line 198
+    .line 203
+    .line 204
     invoke-interface {p1, v1}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
 
-    .line 199
-    .line 200
-    .line 201
-    if-ne v0, v2, :cond_7
-
-    .line 202
-    .line 203
-    invoke-static {v9, v7, v8}, Landroidx/media3/extractor/mp3/XingSeeker;->create(Landroidx/media3/extractor/mp3/XingFrame;J)Landroidx/media3/extractor/mp3/XingSeeker;
-
-    .line 204
     .line 205
     .line 206
-    move-result-object p1
-
     .line 207
-    goto :goto_1
+    if-ne v0, v2, :cond_7
 
     .line 208
+    .line 209
+    invoke-static {v9, v7, v8}, Landroidx/media3/extractor/mp3/XingSeeker;->create(Landroidx/media3/extractor/mp3/XingFrame;J)Landroidx/media3/extractor/mp3/XingSeeker;
+
+    .line 210
+    .line 211
+    .line 212
+    move-result-object p1
+
+    .line 213
+    goto :goto_1
+
+    .line 214
     :cond_7
     invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getLength()J
 
-    .line 209
-    .line 210
-    .line 211
-    move-result-wide v10
-
-    .line 212
-    move-object v6, p0
-
-    .line 213
-    invoke-direct/range {v6 .. v11}, Landroidx/media3/extractor/mp3/Mp3Extractor;->getConstantBitrateSeeker(JLandroidx/media3/extractor/mp3/XingFrame;J)Landroidx/media3/extractor/mp3/Seeker;
-
-    .line 214
     .line 215
     .line 216
+    .line 217
+    move-result-wide v10
+
+    .line 218
+    move-object v6, p0
+
+    .line 219
+    invoke-direct/range {v6 .. v11}, Landroidx/media3/extractor/mp3/Mp3Extractor;->getConstantBitrateSeeker(JLandroidx/media3/extractor/mp3/XingFrame;J)Landroidx/media3/extractor/mp3/Seeker;
+
+    .line 220
+    .line 221
+    .line 222
     move-result-object p1
 
-    .line 217
+    .line 223
     :goto_1
     return-object p1
 .end method
@@ -2088,7 +2107,7 @@
 
     .line 13
     .line 14
-    if-nez v0, :cond_3
+    if-nez v0, :cond_4
 
     .line 15
     .line 16
@@ -2113,171 +2132,172 @@
     .line 25
     .line 26
     .line 27
-    new-instance v0, Landroidx/media3/common/Format$Builder;
+    iget-object v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->id3Metadata:Landroidx/media3/common/Metadata;
 
     .line 28
     .line 29
-    invoke-direct {v0}, Landroidx/media3/common/Format$Builder;-><init>()V
+    if-eqz v0, :cond_1
 
     .line 30
     .line 31
+    iget v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->flags:I
+
     .line 32
-    const-string v1, "audio/mpeg"
-
     .line 33
-    .line 34
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    and-int/lit8 v1, v1, 0x8
 
+    .line 34
     .line 35
+    if-nez v1, :cond_1
+
     .line 36
     .line 37
-    move-result-object v0
+    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->xingMetadata:Landroidx/media3/common/Metadata;
 
     .line 38
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
-
     .line 39
+    if-eqz v1, :cond_2
+
     .line 40
-    iget-object v1, v1, Landroidx/media3/extractor/MpegAudioUtil$Header;->mimeType:Ljava/lang/String;
-
     .line 41
-    .line 42
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Metadata;->copyWithAppendedEntriesFrom(Landroidx/media3/common/Metadata;)Landroidx/media3/common/Metadata;
 
+    .line 42
     .line 43
     .line 44
-    .line 45
     move-result-object v0
 
+    .line 45
+    goto :goto_1
+
     .line 46
-    const/16 v1, 0x1000
+    :cond_1
+    iget-object v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->xingMetadata:Landroidx/media3/common/Metadata;
 
     .line 47
     .line 48
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setMaxInputSize(I)Landroidx/media3/common/Format$Builder;
+    :cond_2
+    :goto_1
+    new-instance v1, Landroidx/media3/common/Format$Builder;
 
     .line 49
     .line 50
+    invoke-direct {v1}, Landroidx/media3/common/Format$Builder;-><init>()V
+
     .line 51
-    move-result-object v0
-
     .line 52
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
-
     .line 53
+    const-string v2, "audio/mpeg"
+
     .line 54
-    iget v1, v1, Landroidx/media3/extractor/MpegAudioUtil$Header;->channels:I
-
     .line 55
-    .line 56
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setChannelCount(I)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setContainerMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
+    .line 56
     .line 57
     .line 58
+    move-result-object v1
+
     .line 59
-    move-result-object v0
+    iget-object v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
 
     .line 60
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
-
     .line 61
+    iget-object v2, v2, Landroidx/media3/extractor/MpegAudioUtil$Header;->mimeType:Ljava/lang/String;
+
     .line 62
-    iget v1, v1, Landroidx/media3/extractor/MpegAudioUtil$Header;->sampleRate:I
-
     .line 63
-    .line 64
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleRate(I)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
+    .line 64
     .line 65
     .line 66
+    move-result-object v1
+
     .line 67
-    move-result-object v0
+    const/16 v2, 0x1000
 
     .line 68
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->gaplessInfoHolder:Landroidx/media3/extractor/GaplessInfoHolder;
-
     .line 69
-    .line 70
-    iget v1, v1, Landroidx/media3/extractor/GaplessInfoHolder;->encoderDelay:I
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setMaxInputSize(I)Landroidx/media3/common/Format$Builder;
 
+    .line 70
     .line 71
     .line 72
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setEncoderDelay(I)Landroidx/media3/common/Format$Builder;
+    move-result-object v1
 
     .line 73
+    iget-object v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
+
     .line 74
     .line 75
-    move-result-object v0
+    iget v2, v2, Landroidx/media3/extractor/MpegAudioUtil$Header;->channels:I
 
     .line 76
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->gaplessInfoHolder:Landroidx/media3/extractor/GaplessInfoHolder;
-
     .line 77
-    .line 78
-    iget v1, v1, Landroidx/media3/extractor/GaplessInfoHolder;->encoderPadding:I
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setChannelCount(I)Landroidx/media3/common/Format$Builder;
 
+    .line 78
     .line 79
     .line 80
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setEncoderPadding(I)Landroidx/media3/common/Format$Builder;
+    move-result-object v1
 
     .line 81
+    iget-object v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->synchronizedHeader:Landroidx/media3/extractor/MpegAudioUtil$Header;
+
     .line 82
     .line 83
-    move-result-object v0
+    iget v2, v2, Landroidx/media3/extractor/MpegAudioUtil$Header;->sampleRate:I
 
     .line 84
-    iget v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->flags:I
-
     .line 85
-    .line 86
-    and-int/lit8 v1, v1, 0x8
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setSampleRate(I)Landroidx/media3/common/Format$Builder;
 
+    .line 86
     .line 87
     .line 88
-    if-eqz v1, :cond_1
+    move-result-object v1
 
     .line 89
-    .line 90
-    const/4 v1, 0x0
+    iget-object v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->gaplessInfoHolder:Landroidx/media3/extractor/GaplessInfoHolder;
 
+    .line 90
     .line 91
-    goto :goto_1
+    iget v2, v2, Landroidx/media3/extractor/GaplessInfoHolder;->encoderDelay:I
 
     .line 92
-    :cond_1
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->metadata:Landroidx/media3/common/Metadata;
-
     .line 93
-    .line 94
-    :goto_1
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setMetadata(Landroidx/media3/common/Metadata;)Landroidx/media3/common/Format$Builder;
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setEncoderDelay(I)Landroidx/media3/common/Format$Builder;
 
+    .line 94
     .line 95
     .line 96
+    move-result-object v1
+
     .line 97
-    move-result-object v0
+    iget-object v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->gaplessInfoHolder:Landroidx/media3/extractor/GaplessInfoHolder;
 
     .line 98
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->seeker:Landroidx/media3/extractor/mp3/Seeker;
-
     .line 99
-    .line 100
-    invoke-interface {v1}, Landroidx/media3/extractor/mp3/Seeker;->getAverageBitrate()I
+    iget v2, v2, Landroidx/media3/extractor/GaplessInfoHolder;->encoderPadding:I
 
+    .line 100
     .line 101
+    invoke-virtual {v1, v2}, Landroidx/media3/common/Format$Builder;->setEncoderPadding(I)Landroidx/media3/common/Format$Builder;
+
     .line 102
     .line 103
-    move-result v1
-
     .line 104
-    const v2, -0x7fffffff
+    move-result-object v1
 
     .line 105
+    invoke-virtual {v1, v0}, Landroidx/media3/common/Format$Builder;->setMetadata(Landroidx/media3/common/Metadata;)Landroidx/media3/common/Format$Builder;
+
     .line 106
     .line 107
-    if-eq v1, v2, :cond_2
-
     .line 108
+    move-result-object v0
+
     .line 109
     iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->seeker:Landroidx/media3/extractor/mp3/Seeker;
 
@@ -2291,102 +2311,123 @@
     move-result v1
 
     .line 115
-    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setAverageBitrate(I)Landroidx/media3/common/Format$Builder;
+    const v2, -0x7fffffff
 
     .line 116
     .line 117
     .line 118
-    :cond_2
-    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->currentTrackOutput:Landroidx/media3/extractor/TrackOutput;
+    if-eq v1, v2, :cond_3
 
     .line 119
     .line 120
-    invoke-virtual {v0}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
+    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->seeker:Landroidx/media3/extractor/mp3/Seeker;
 
     .line 121
     .line 122
+    invoke-interface {v1}, Landroidx/media3/extractor/mp3/Seeker;->getAverageBitrate()I
+
     .line 123
-    move-result-object v0
-
     .line 124
-    invoke-interface {v1, v0}, Landroidx/media3/extractor/TrackOutput;->format(Landroidx/media3/common/Format;)V
-
     .line 125
-    .line 126
-    .line 127
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
+    move-result v1
 
+    .line 126
+    invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setAverageBitrate(I)Landroidx/media3/common/Format$Builder;
+
+    .line 127
     .line 128
     .line 129
-    .line 130
-    move-result-wide v0
+    :cond_3
+    iget-object v1, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->currentTrackOutput:Landroidx/media3/extractor/TrackOutput;
 
+    .line 130
     .line 131
-    iput-wide v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->firstSamplePosition:J
+    invoke-virtual {v0}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
 
     .line 132
     .line 133
-    goto :goto_2
-
     .line 134
-    :cond_3
-    iget-wide v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->firstSamplePosition:J
+    move-result-object v0
 
     .line 135
-    .line 136
-    const-wide/16 v2, 0x0
+    invoke-interface {v1, v0}, Landroidx/media3/extractor/TrackOutput;->format(Landroidx/media3/common/Format;)V
 
+    .line 136
     .line 137
     .line 138
-    cmp-long v0, v0, v2
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
 
     .line 139
     .line 140
-    if-eqz v0, :cond_4
-
     .line 141
+    move-result-wide v0
+
     .line 142
-    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
+    iput-wide v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->firstSamplePosition:J
 
     .line 143
     .line 144
+    goto :goto_2
+
     .line 145
-    move-result-wide v0
+    :cond_4
+    iget-wide v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->firstSamplePosition:J
 
     .line 146
-    iget-wide v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->firstSamplePosition:J
-
     .line 147
+    const-wide/16 v2, 0x0
+
     .line 148
-    cmp-long v4, v0, v2
-
     .line 149
+    cmp-long v0, v0, v2
+
     .line 150
-    if-gez v4, :cond_4
-
     .line 151
-    .line 152
-    sub-long/2addr v2, v0
+    if-eqz v0, :cond_5
 
+    .line 152
     .line 153
-    long-to-int v0, v2
+    invoke-interface {p1}, Landroidx/media3/extractor/ExtractorInput;->getPosition()J
 
     .line 154
-    invoke-interface {p1, v0}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
-
     .line 155
     .line 156
+    move-result-wide v0
+
     .line 157
-    :cond_4
-    :goto_2
-    invoke-direct {p0, p1}, Landroidx/media3/extractor/mp3/Mp3Extractor;->readSample(Landroidx/media3/extractor/ExtractorInput;)I
+    iget-wide v2, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->firstSamplePosition:J
 
     .line 158
     .line 159
+    cmp-long v4, v0, v2
+
     .line 160
+    .line 161
+    if-gez v4, :cond_5
+
+    .line 162
+    .line 163
+    sub-long/2addr v2, v0
+
+    .line 164
+    long-to-int v0, v2
+
+    .line 165
+    invoke-interface {p1, v0}, Landroidx/media3/extractor/ExtractorInput;->skipFully(I)V
+
+    .line 166
+    .line 167
+    .line 168
+    :cond_5
+    :goto_2
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/mp3/Mp3Extractor;->readSample(Landroidx/media3/extractor/ExtractorInput;)I
+
+    .line 169
+    .line 170
+    .line 171
     move-result p1
 
-    .line 161
+    .line 172
     return p1
 .end method
 
@@ -2958,7 +2999,7 @@
     move-result-object v0
 
     .line 33
-    iput-object v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->metadata:Landroidx/media3/common/Metadata;
+    iput-object v0, p0, Landroidx/media3/extractor/mp3/Mp3Extractor;->id3Metadata:Landroidx/media3/common/Metadata;
 
     .line 34
     .line 35

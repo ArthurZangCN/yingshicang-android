@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroid/support/v4/media/a;
+    new-instance v0, Landroid/support/v4/media/e;
 
     .line 2
     .line 3

@@ -110,7 +110,7 @@
 
     .line 2
     :goto_0
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     if-lt v1, v10, :cond_1
 
@@ -123,7 +123,7 @@
 
     .line 3
     :goto_1
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     if-lt v2, v10, :cond_2
 
@@ -136,7 +136,7 @@
 
     .line 4
     :goto_2
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     cmpl-float v8, v3, v7
 
@@ -157,7 +157,7 @@
 
     .line 5
     :goto_3
-    invoke-static {v8}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v8}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     cmpl-float v7, v4, v7
 
@@ -178,7 +178,7 @@
 
     .line 6
     :goto_4
-    invoke-static {v7}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v7}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     float-to-double v7, v3
 

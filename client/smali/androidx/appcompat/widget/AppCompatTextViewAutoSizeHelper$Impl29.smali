@@ -37,7 +37,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p2}, Landroid/support/v4/media/session/a;->f(Landroid/widget/TextView;)Landroid/text/TextDirectionHeuristic;
+    invoke-static {p2}, Landroid/support/v4/media/session/h;->h(Landroid/widget/TextView;)Landroid/text/TextDirectionHeuristic;
 
     .line 2
     .line 3
@@ -57,7 +57,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/appcompat/widget/a;->r(Landroid/widget/TextView;)Z
+    invoke-static {p1}, Landroidx/appcompat/widget/a;->t(Landroid/widget/TextView;)Z
 
     .line 2
     .line 3

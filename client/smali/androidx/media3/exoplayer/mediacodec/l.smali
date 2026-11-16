@@ -4,93 +4,7 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Landroid/media/MediaFormat;)F
-    .locals 2
-
-    .line 1
-    const-string v0, "frame-rate"
-
-    .line 2
-    .line 3
-    const/high16 v1, -0x40800000    # -1.0f
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getFloat(Ljava/lang/String;F)F
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p0
-
-    .line 9
-    return p0
-.end method
-
-.method public static bridge synthetic b(Landroid/hardware/biometrics/BiometricManager;)I
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/hardware/biometrics/BiometricManager;->canAuthenticate()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
-
-    .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic c(Landroid/media/MediaFormat;)I
-    .locals 2
-
-    .line 1
-    const-string v0, "sample-rate"
-
-    .line 2
-    .line 3
-    const/4 v1, -0x1
-
-    .line 4
-    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;I)I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result p0
-
-    .line 8
-    return p0
-.end method
-
-.method public static bridge synthetic d(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->getMandatorySystemGestureInsets()Landroid/graphics/Insets;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic e(Ljava/lang/Object;)Landroid/hardware/biometrics/BiometricManager;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/hardware/biometrics/BiometricManager;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static synthetic f()Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
+.method public static synthetic a()Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
     .locals 4
 
     .line 1
@@ -118,7 +32,7 @@
     return-object v0
 .end method
 
-.method public static bridge synthetic g(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
+.method public static bridge synthetic b(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
     .locals 0
 
     .line 1
@@ -129,38 +43,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic h(Landroid/app/Activity;Li2/n;)V
+.method public static bridge synthetic c(Landroid/media/MediaCodecInfo;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/app/Activity;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic i()Z
-    .locals 1
-
-    .line 1
-    invoke-static {}, Landroid/os/Environment;->isExternalStorageLegacy()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public static bridge synthetic j(Landroid/media/MediaCodecInfo;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isHardwareAccelerated()Z
+    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isVendor()Z
 
     .line 2
     .line 3
@@ -168,27 +55,5 @@
     move-result p0
 
     .line 5
-    return p0
-.end method
-
-.method public static bridge synthetic k(Landroid/media/MediaFormat;)I
-    .locals 2
-
-    .line 1
-    const-string v0, "caption-service-number"
-
-    .line 2
-    .line 3
-    const/4 v1, -0x1
-
-    .line 4
-    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;I)I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result p0
-
-    .line 8
     return p0
 .end method

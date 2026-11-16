@@ -2,32 +2,41 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;
+
+.field public final synthetic b:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;Ljava/io/IOException;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
     .locals 0
 
     .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/c0;->a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/source/preload/c0;->b:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
+
     return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;JJF)V
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 2
 
     .line 1
-    return-void
-.end method
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/c0;->a:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;
 
-.method public static c(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;Ljava/io/IOException;)V
-    .locals 0
+    iget-object v1, p0, Landroidx/media3/exoplayer/source/preload/c0;->b:Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;
 
-    .line 1
-    return-void
-.end method
+    invoke-static {v0, v1}, Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;->g(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$DownloadCallback;Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Task;)V
 
-.method public static d(Landroidx/media3/exoplayer/source/preload/PreCacheHelper$Listener;Landroidx/media3/common/MediaItem;Landroidx/media3/common/MediaItem;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

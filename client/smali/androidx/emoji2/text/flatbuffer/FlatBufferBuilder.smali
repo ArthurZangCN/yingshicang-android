@@ -2499,7 +2499,7 @@
 
     .line 30
     .line 31
-    invoke-static {v0, p2, v1}, Landroid/support/v4/media/g;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p2, v1}, Landroid/support/v4/media/a;->d(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     .line 32
     .line 33

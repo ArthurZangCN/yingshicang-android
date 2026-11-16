@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/functions/Function0<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -90,7 +90,7 @@
         value = {
             "()",
             "Lkotlin/jvm/functions/Function0<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -266,7 +266,7 @@
         value = {
             "(",
             "Lkotlin/jvm/functions/Function0<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

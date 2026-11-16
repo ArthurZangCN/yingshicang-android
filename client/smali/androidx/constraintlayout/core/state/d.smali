@@ -6,15 +6,10 @@
 .implements Landroidx/constraintlayout/core/state/Interpolator;
 .implements Landroidx/media3/common/DebugViewProvider;
 .implements Landroidx/media3/common/audio/DefaultGainProvider$FadeProvider;
-.implements Landroidx/media3/datasource/cache/CacheKeyFactory;
-.implements Landroidx/media3/common/util/ListenerSet$Event;
-.implements Landroidx/media3/common/util/Consumer;
-.implements Landroidx/media3/exoplayer/drm/DrmSessionManager$DrmSessionReference;
-.implements Landroidx/media3/extractor/metadata/id3/Id3Decoder$FramePredicate;
+.implements Landroidx/media3/effect/GlShaderProgram$ErrorListener;
+.implements Landroidx/media3/exoplayer/trackselection/TrackSelector$InvalidationListener;
+.implements Landroidx/media3/extractor/DefaultExtractorsFactory$ExtensionLoader$ConstructorSupplier;
 .implements Landroidx/media3/extractor/ExtractorsFactory;
-.implements Lcom/obsez/android/lib/filechooser/ChooserDialog$CanNavigateTo;
-.implements Lcom/obsez/android/lib/filechooser/ChooserDialog$OnBackPressedListener;
-.implements Lcom/whl/quickjs/wrapper/MapCreator;
 
 
 # instance fields
@@ -35,39 +30,6 @@
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;
-
-    invoke-virtual {p1}, Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;->drmKeysRestored()V
-
-    return-void
-.end method
-
-.method public final buildCacheKey(Landroidx/media3/datasource/DataSpec;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, Landroidx/media3/datasource/cache/a;->a(Landroidx/media3/datasource/DataSpec;)Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final canNavigate(Ljava/io/File;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, Lcom/obsez/android/lib/filechooser/ChooserDialog;->f(Ljava/io/File;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
 .method public final createExtractors()[Landroidx/media3/extractor/Extractor;
     .locals 1
 
@@ -76,14 +38,28 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {}, Landroidx/media3/extractor/ts/AdtsExtractor;->a()[Landroidx/media3/extractor/Extractor;
+    invoke-static {}, Landroidx/media3/extractor/ts/TsExtractor;->a()[Landroidx/media3/extractor/Extractor;
 
     move-result-object v0
 
     return-object v0
 
     :pswitch_0
-    invoke-static {}, Landroidx/media3/extractor/mp4/Mp4Extractor;->d()[Landroidx/media3/extractor/Extractor;
+    invoke-static {}, Landroidx/media3/extractor/ts/Ac3Extractor;->a()[Landroidx/media3/extractor/Extractor;
+
+    move-result-object v0
+
+    return-object v0
+
+    :pswitch_1
+    invoke-static {}, Landroidx/media3/extractor/mp3/Mp3Extractor;->b()[Landroidx/media3/extractor/Extractor;
+
+    move-result-object v0
+
+    return-object v0
+
+    :pswitch_2
+    invoke-static {}, Landroidx/media3/extractor/flac/FlacExtractor;->a()[Landroidx/media3/extractor/Extractor;
 
     move-result-object v0
 
@@ -92,7 +68,9 @@
     nop
 
     :pswitch_data_0
-    .packed-switch 0xa
+    .packed-switch 0x6
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method
@@ -108,35 +86,6 @@
     move-result-object p1
 
     return-object p1
-.end method
-
-.method public final evaluate(IIIII)Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/constraintlayout/core/state/d;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-static {p1, p2, p3, p4, p5}, Landroidx/media3/extractor/mp3/Mp3Extractor;->c(IIIII)Z
-
-    move-result p1
-
-    return p1
-
-    :pswitch_0
-    invoke-static {p1, p2, p3, p4, p5}, Landroidx/media3/extractor/metadata/id3/Id3Decoder;->a(IIIII)Z
-
-    move-result p1
-
-    return p1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x8
-        :pswitch_0
-    .end packed-switch
 .end method
 
 .method public final synthetic experimentalSetCodecsToParseWithinGopSampleDependencies(I)Landroidx/media3/extractor/ExtractorsFactory;
@@ -165,13 +114,13 @@
     return-object p1
 .end method
 
-.method public final get()Ljava/util/Map;
+.method public final getConstructor()Ljava/lang/reflect/Constructor;
     .locals 1
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-static {}, Landroidx/media3/extractor/DefaultExtractorsFactory;->b()Ljava/lang/reflect/Constructor;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    move-result-object v0
 
     return-object v0
 .end method
@@ -180,7 +129,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p2}, Landroidx/media3/common/e;->a(II)Landroid/view/SurfaceView;
+    invoke-static {p1, p2}, Landroidx/media3/common/d;->a(II)Landroid/view/SurfaceView;
 
     move-result-object p1
 
@@ -191,7 +140,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p2, p3, p4}, Landroidx/media3/common/audio/DefaultGainProvider;->d(JJ)F
+    invoke-static {p1, p2, p3, p4}, Landroidx/media3/common/audio/DefaultGainProvider;->a(JJ)F
 
     move-result p1
 
@@ -209,47 +158,29 @@
     return p1
 .end method
 
-.method public final invoke(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/constraintlayout/core/state/d;->a:I
-
-    check-cast p1, Landroidx/media3/exoplayer/audio/AudioOutput$Listener;
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-interface {p1}, Landroidx/media3/exoplayer/audio/AudioOutput$Listener;->onOffloadDataRequest()V
-
-    return-void
-
-    :pswitch_0
-    invoke-interface {p1}, Landroidx/media3/exoplayer/audio/AudioOutput$Listener;->onReleased()V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x4
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onBackPressed(Landroidx/appcompat/app/AlertDialog;)V
+.method public final onError(Landroidx/media3/common/VideoFrameProcessingException;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/app/Dialog;->cancel()V
+    invoke-static {p1}, Landroidx/media3/effect/SeparableConvolutionShaderProgram;->b(Landroidx/media3/common/VideoFrameProcessingException;)V
 
     return-void
 .end method
 
-.method public final release()V
+.method public final synthetic onRendererCapabilitiesChanged(Landroidx/media3/exoplayer/Renderer;)V
     .locals 0
 
     .line 1
-    invoke-static {}, Landroidx/media3/exoplayer/drm/l;->a()V
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/trackselection/s;->a(Landroidx/media3/exoplayer/trackselection/TrackSelector$InvalidationListener;Landroidx/media3/exoplayer/Renderer;)V
+
+    return-void
+.end method
+
+.method public final onTrackSelectionsInvalidated()V
+    .locals 0
+
+    .line 1
+    invoke-static {}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;->l()V
 
     return-void
 .end method

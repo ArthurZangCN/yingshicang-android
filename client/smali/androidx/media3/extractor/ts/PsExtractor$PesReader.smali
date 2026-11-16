@@ -15,6 +15,10 @@
 
 
 # static fields
+.field private static final DVD_AC3_SUBSTREAM_ID_MAX:I = 0x87
+
+.field private static final DVD_AC3_SUBSTREAM_ID_MIN:I = 0x80
+
 .field private static final PES_SCRATCH_SIZE:I = 0x40
 
 
@@ -31,13 +35,15 @@
 
 .field private seenFirstDts:Z
 
+.field private final skipDvdHeader:Z
+
 .field private timeUs:J
 
 .field private final timestampAdjuster:Landroidx/media3/common/util/TimestampAdjuster;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/media3/extractor/ts/ElementaryStreamReader;Landroidx/media3/common/util/TimestampAdjuster;)V
+.method public constructor <init>(Landroidx/media3/extractor/ts/ElementaryStreamReader;Landroidx/media3/common/util/TimestampAdjuster;Z)V
     .locals 0
 
     .line 1
@@ -54,27 +60,31 @@
 
     .line 7
     .line 8
-    new-instance p1, Landroidx/media3/common/util/ParsableBitArray;
+    iput-boolean p3, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->skipDvdHeader:Z
 
     .line 9
     .line 10
-    const/16 p2, 0x40
+    new-instance p1, Landroidx/media3/common/util/ParsableBitArray;
 
     .line 11
     .line 12
-    new-array p2, p2, [B
+    const/16 p2, 0x40
 
     .line 13
     .line 14
-    invoke-direct {p1, p2}, Landroidx/media3/common/util/ParsableBitArray;-><init>([B)V
+    new-array p2, p2, [B
 
     .line 15
     .line 16
-    .line 17
-    iput-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesScratch:Landroidx/media3/common/util/ParsableBitArray;
+    invoke-direct {p1, p2}, Landroidx/media3/common/util/ParsableBitArray;-><init>([B)V
 
+    .line 17
     .line 18
     .line 19
+    iput-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesScratch:Landroidx/media3/common/util/ParsableBitArray;
+
+    .line 20
+    .line 21
     return-void
 .end method
 
@@ -432,6 +442,71 @@
     return-void
 .end method
 
+.method private skipDvdSubstreamHeader(Landroidx/media3/common/util/ParsableByteArray;)Z
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->bytesLeft()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x4
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    if-ge v0, v1, :cond_0
+
+    .line 8
+    .line 9
+    return v2
+
+    .line 10
+    :cond_0
+    invoke-virtual {p1}, Landroidx/media3/common/util/ParsableByteArray;->readUnsignedByte()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    const/4 v1, 0x3
+
+    .line 15
+    invoke-virtual {p1, v1}, Landroidx/media3/common/util/ParsableByteArray;->skipBytes(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/16 p1, 0x80
+
+    .line 19
+    .line 20
+    if-lt v0, p1, :cond_1
+
+    .line 21
+    .line 22
+    const/16 p1, 0x87
+
+    .line 23
+    .line 24
+    if-gt v0, p1, :cond_1
+
+    .line 25
+    .line 26
+    const/4 v2, 0x1
+
+    .line 27
+    :cond_1
+    return v2
+.end method
+
 
 # virtual methods
 .method public consume(Landroidx/media3/common/util/ParsableByteArray;)V
@@ -502,40 +577,64 @@
     .line 33
     .line 34
     .line 35
-    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesPayloadReader:Landroidx/media3/extractor/ts/ElementaryStreamReader;
+    iget-boolean v0, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->skipDvdHeader:Z
 
     .line 36
     .line 37
-    iget-wide v3, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->timeUs:J
+    if-eqz v0, :cond_0
 
     .line 38
     .line 39
-    const/4 v1, 0x4
+    invoke-direct {p0, p1}, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->skipDvdSubstreamHeader(Landroidx/media3/common/util/ParsableByteArray;)Z
 
     .line 40
-    invoke-interface {v0, v3, v4, v1}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->packetStarted(JI)V
-
     .line 41
     .line 42
+    move-result v0
+
     .line 43
-    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesPayloadReader:Landroidx/media3/extractor/ts/ElementaryStreamReader;
+    if-nez v0, :cond_0
 
     .line 44
     .line 45
-    invoke-interface {v0, p1}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->consume(Landroidx/media3/common/util/ParsableByteArray;)V
+    return-void
 
     .line 46
+    :cond_0
+    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesPayloadReader:Landroidx/media3/extractor/ts/ElementaryStreamReader;
+
     .line 47
     .line 48
-    iget-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesPayloadReader:Landroidx/media3/extractor/ts/ElementaryStreamReader;
+    iget-wide v3, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->timeUs:J
 
     .line 49
     .line 50
-    invoke-interface {p1, v2}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->packetFinished(Z)V
+    const/4 v1, 0x4
 
     .line 51
+    invoke-interface {v0, v3, v4, v1}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->packetStarted(JI)V
+
     .line 52
     .line 53
+    .line 54
+    iget-object v0, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesPayloadReader:Landroidx/media3/extractor/ts/ElementaryStreamReader;
+
+    .line 55
+    .line 56
+    invoke-interface {v0, p1}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->consume(Landroidx/media3/common/util/ParsableByteArray;)V
+
+    .line 57
+    .line 58
+    .line 59
+    iget-object p1, p0, Landroidx/media3/extractor/ts/PsExtractor$PesReader;->pesPayloadReader:Landroidx/media3/extractor/ts/ElementaryStreamReader;
+
+    .line 60
+    .line 61
+    invoke-interface {p1, v2}, Landroidx/media3/extractor/ts/ElementaryStreamReader;->packetFinished(Z)V
+
+    .line 62
+    .line 63
+    .line 64
     return-void
 .end method
 

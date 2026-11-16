@@ -48,14 +48,14 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/core/content/d;
+    new-instance v0, Landroidx/core/content/n;
 
     .line 2
     .line 3
     const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, p0, v1}, Landroidx/core/content/d;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/core/content/n;-><init>(Ljava/lang/Object;I)V
 
     .line 5
     .line 6

@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/core/DataStoreImpl$transformAndWrite$2$newData$1;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,9 +18,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function2<",
-        "Lkotlinx/coroutines/b0;",
+        "Ln4/e0;",
         "Lkotlin/coroutines/d<",
         "-TT;>;",
         "Ljava/lang/Object;",
@@ -28,7 +28,7 @@
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.core.DataStoreImpl$transformAndWrite$2$newData$1"
     f = "DataStoreImpl.kt"
     l = {
@@ -91,7 +91,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p3}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, p1, p3}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -107,7 +107,7 @@
             "Lkotlin/coroutines/d<",
             "*>;)",
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -127,23 +127,23 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/b0;
+    check-cast p1, Ln4/e0;
 
     check-cast p2, Lkotlin/coroutines/d;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/DataStoreImpl$transformAndWrite$2$newData$1;->invoke(Lkotlinx/coroutines/b0;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/datastore/core/DataStoreImpl$transformAndWrite$2$newData$1;->invoke(Ln4/e0;Lkotlin/coroutines/d;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/b0;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public final invoke(Ln4/e0;Lkotlin/coroutines/d;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/b0;",
+            "Ln4/e0;",
             "Lkotlin/coroutines/d<",
             "-TT;>;)",
             "Ljava/lang/Object;"
@@ -157,7 +157,7 @@
 
     check-cast p1, Landroidx/datastore/core/DataStoreImpl$transformAndWrite$2$newData$1;
 
-    sget-object p2, Lr3/q;->a:Lr3/q;
+    sget-object p2, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/core/DataStoreImpl$transformAndWrite$2$newData$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -189,7 +189,7 @@
 
     .line 9
     .line 10
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 11
     .line 12
@@ -215,7 +215,7 @@
 
     .line 22
     :cond_1
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 23
     .line 24

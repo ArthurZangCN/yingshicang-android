@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/preferences/core/PreferencesKt$edit$2;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function2<",
         "Landroidx/datastore/preferences/core/Preferences;",
         "Lkotlin/coroutines/d<",
@@ -30,7 +30,7 @@
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.preferences.core.PreferencesKt$edit$2"
     f = "Preferences.kt"
     l = {
@@ -48,7 +48,7 @@
             "Landroidx/datastore/preferences/core/MutablePreferences;",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Ljava/lang/Object;",
             ">;"
@@ -73,7 +73,7 @@
             "-",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;+",
             "Ljava/lang/Object;",
             ">;",
@@ -88,7 +88,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p2}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, p1, p2}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -104,7 +104,7 @@
             "Lkotlin/coroutines/d<",
             "*>;)",
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -141,7 +141,7 @@
 
     check-cast p1, Landroidx/datastore/preferences/core/PreferencesKt$edit$2;
 
-    sget-object p2, Lr3/q;->a:Lr3/q;
+    sget-object p2, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {p1, p2}, Landroidx/datastore/preferences/core/PreferencesKt$edit$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -196,7 +196,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 15
     .line 16
@@ -222,7 +222,7 @@
 
     .line 26
     :cond_1
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 27
     .line 28

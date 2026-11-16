@@ -22,12 +22,12 @@
     .end param
 .end method
 
-.method public abstract onSessionTimelineUpdated(Landroidx/media3/exoplayer/rtsp/RtspSessionTiming;Lcom/google/common/collect/f2;)V
+.method public abstract onSessionTimelineUpdated(Landroidx/media3/exoplayer/rtsp/RtspSessionTiming;Lcom/google/common/collect/e2;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/media3/exoplayer/rtsp/RtspSessionTiming;",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/rtsp/RtspMediaTrack;",
             ">;)V"
         }

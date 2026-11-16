@@ -3,21 +3,29 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer$State;
+.field public final synthetic a:I
+
+.field public final synthetic b:Landroidx/media3/common/SimpleBasePlayer$State;
+
+.field public final synthetic c:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;)V
+.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;II)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/common/o0;->a:Landroidx/media3/common/SimpleBasePlayer$State;
+    iput p3, p0, Landroidx/media3/common/o0;->a:I
+
+    iput-object p1, p0, Landroidx/media3/common/o0;->b:Landroidx/media3/common/SimpleBasePlayer$State;
+
+    iput p2, p0, Landroidx/media3/common/o0;->c:I
 
     return-void
 .end method
@@ -25,14 +33,34 @@
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 1
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/o0;->a:Landroidx/media3/common/SimpleBasePlayer$State;
+    iget v0, p0, Landroidx/media3/common/o0;->a:I
 
-    invoke-static {v0}, Landroidx/media3/common/SimpleBasePlayer;->u(Landroidx/media3/common/SimpleBasePlayer$State;)Landroidx/media3/common/SimpleBasePlayer$State;
+    iget v1, p0, Landroidx/media3/common/o0;->c:I
+
+    iget-object v2, p0, Landroidx/media3/common/o0;->b:Landroidx/media3/common/SimpleBasePlayer$State;
+
+    packed-switch v0, :pswitch_data_0
+
+    invoke-static {v2, v1}, Landroidx/media3/common/SimpleBasePlayer;->K(Landroidx/media3/common/SimpleBasePlayer$State;I)Landroidx/media3/common/SimpleBasePlayer$State;
 
     move-result-object v0
 
     return-object v0
+
+    :pswitch_0
+    invoke-static {v2, v1}, Landroidx/media3/common/SimpleBasePlayer;->Q(Landroidx/media3/common/SimpleBasePlayer$State;I)Landroidx/media3/common/SimpleBasePlayer$State;
+
+    move-result-object v0
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -193,7 +193,7 @@
     const-string v1, "Unknown visibility "
 
     .line 6
-    invoke-static {v1, p0}, Landroid/support/v4/media/d;->f(Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, p0}, Landroid/support/v4/media/d;->a(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

@@ -62,23 +62,22 @@
     .locals 2
 
     .line 1
-    new-instance v0, Landroidx/constraintlayout/core/state/d;
+    new-instance v0, Landroidx/constraintlayout/core/state/f;
 
     .line 2
     .line 3
-    const/16 v1, 0xb
+    const/4 v1, 0x5
 
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/d;-><init>(I)V
+    invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/f;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     sput-object v0, Landroidx/media3/extractor/ts/AdtsExtractor;->FACTORY:Landroidx/media3/extractor/ExtractorsFactory;
 
+    .line 8
     .line 9
-    .line 10
     return-void
 .end method
 

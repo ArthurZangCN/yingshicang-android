@@ -95,198 +95,335 @@
         }
     .end annotation
 
+    .line 1
     move-object/from16 v0, p0
 
+    .line 2
+    .line 3
     move-object/from16 v1, p3
 
+    .line 4
+    .line 5
     move-object/from16 v2, p4
 
+    .line 6
+    .line 7
     move/from16 v3, p5
 
+    .line 8
+    .line 9
     move-object/from16 v4, p7
 
-    .line 1
+    .line 10
+    .line 11
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
+    .line 12
+    .line 13
+    .line 14
     move-object/from16 v5, p2
 
-    .line 2
+    .line 15
+    .line 16
     iput-object v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->manifestLoaderErrorThrower:Landroidx/media3/exoplayer/upstream/LoaderErrorThrower;
 
-    .line 3
+    .line 17
+    .line 18
     iput-object v1, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->manifest:Landroidx/media3/exoplayer/dash/manifest/DashManifest;
 
-    .line 4
+    .line 19
+    .line 20
     iput-object v2, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->baseUrlExclusionList:Landroidx/media3/exoplayer/dash/BaseUrlExclusionList;
 
+    .line 21
+    .line 22
     move-object/from16 v5, p6
 
-    .line 5
+    .line 23
+    .line 24
     iput-object v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->adaptationSetIndices:[I
 
-    .line 6
+    .line 25
+    .line 26
     iput-object v4, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->trackSelection:Landroidx/media3/exoplayer/trackselection/ExoTrackSelection;
 
+    .line 27
+    .line 28
     move/from16 v12, p8
 
-    .line 7
+    .line 29
+    .line 30
     iput v12, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->trackType:I
 
+    .line 31
+    .line 32
     move-object/from16 v5, p9
 
-    .line 8
+    .line 33
+    .line 34
     iput-object v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->dataSource:Landroidx/media3/datasource/DataSource;
 
-    .line 9
+    .line 35
+    .line 36
     iput v3, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->periodIndex:I
 
+    .line 37
+    .line 38
     move-wide/from16 v5, p10
 
-    .line 10
+    .line 39
+    .line 40
     iput-wide v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->elapsedRealtimeOffsetMs:J
 
+    .line 41
+    .line 42
     move/from16 v5, p12
 
-    .line 11
+    .line 43
+    .line 44
     iput v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->maxSegmentsPerLoad:I
 
+    .line 45
+    .line 46
     move-object/from16 v13, p15
 
-    .line 12
+    .line 47
+    .line 48
     iput-object v13, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->playerTrackEmsgHandler:Landroidx/media3/exoplayer/dash/PlayerEmsgHandler$PlayerTrackEmsgHandler;
 
+    .line 49
+    .line 50
     move-object/from16 v5, p17
 
-    .line 13
+    .line 51
+    .line 52
     iput-object v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->cmcdConfiguration:Landroidx/media3/exoplayer/upstream/CmcdConfiguration;
 
+    .line 53
+    .line 54
     const-wide v5, -0x7fffffffffffffffL    # -4.9E-324
 
-    .line 14
+    .line 55
+    .line 56
+    .line 57
+    .line 58
+    .line 59
     iput-wide v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->lastChunkRequestRealtimeMs:J
 
-    .line 15
+    .line 60
+    .line 61
     invoke-virtual {v1, v3}, Landroidx/media3/exoplayer/dash/manifest/DashManifest;->getPeriodDurationUs(I)J
 
+    .line 62
+    .line 63
+    .line 64
     move-result-wide v23
 
-    .line 16
+    .line 65
     invoke-direct/range {p0 .. p0}, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->getRepresentations()Ljava/util/ArrayList;
 
+    .line 66
+    .line 67
+    .line 68
     move-result-object v1
 
-    .line 17
+    .line 69
     invoke-interface/range {p7 .. p7}, Landroidx/media3/exoplayer/trackselection/TrackSelection;->length()I
 
+    .line 70
+    .line 71
+    .line 72
     move-result v3
 
+    .line 73
     new-array v3, v3, [Landroidx/media3/exoplayer/dash/DefaultDashChunkSource$RepresentationHolder;
 
+    .line 74
+    .line 75
     iput-object v3, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->representationHolders:[Landroidx/media3/exoplayer/dash/DefaultDashChunkSource$RepresentationHolder;
 
+    .line 76
+    .line 77
     const/4 v3, 0x0
 
+    .line 78
     move v15, v3
 
-    .line 18
+    .line 79
     :goto_0
     iget-object v5, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->representationHolders:[Landroidx/media3/exoplayer/dash/DefaultDashChunkSource$RepresentationHolder;
 
+    .line 80
+    .line 81
     array-length v5, v5
 
+    .line 82
     if-ge v15, v5, :cond_1
 
-    .line 19
+    .line 83
+    .line 84
     invoke-interface {v4, v15}, Landroidx/media3/exoplayer/trackselection/TrackSelection;->getIndexInTrackGroup(I)I
 
+    .line 85
+    .line 86
+    .line 87
     move-result v5
 
+    .line 88
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 89
+    .line 90
+    .line 91
     move-result-object v5
 
+    .line 92
     move-object v14, v5
 
+    .line 93
     check-cast v14, Landroidx/media3/exoplayer/dash/manifest/Representation;
 
-    .line 20
-    iget-object v5, v14, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    .line 94
+    .line 95
+    iget-object v5, v14, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
+    .line 96
+    .line 97
     invoke-virtual {v2, v5}, Landroidx/media3/exoplayer/dash/BaseUrlExclusionList;->selectBaseUrl(Ljava/util/List;)Landroidx/media3/exoplayer/dash/manifest/BaseUrl;
 
+    .line 98
+    .line 99
+    .line 100
     move-result-object v5
 
-    .line 21
+    .line 101
     iget-object v11, v0, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource;->representationHolders:[Landroidx/media3/exoplayer/dash/DefaultDashChunkSource$RepresentationHolder;
 
+    .line 102
+    .line 103
     new-instance v25, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource$RepresentationHolder;
 
+    .line 104
+    .line 105
     if-eqz v5, :cond_0
 
+    .line 106
+    .line 107
     :goto_1
     move-object/from16 v18, v5
 
+    .line 108
+    .line 109
     goto :goto_2
 
-    .line 22
+    .line 110
     :cond_0
-    iget-object v5, v14, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v5, v14, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
+    .line 111
+    .line 112
     invoke-interface {v5, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 113
+    .line 114
+    .line 115
     move-result-object v5
 
+    .line 116
     check-cast v5, Landroidx/media3/exoplayer/dash/manifest/BaseUrl;
 
+    .line 117
+    .line 118
     goto :goto_1
 
+    .line 119
     :goto_2
     iget-object v7, v14, Landroidx/media3/exoplayer/dash/manifest/Representation;->format:Landroidx/media3/common/Format;
 
+    .line 120
+    .line 121
     move-object/from16 v5, p1
 
+    .line 122
+    .line 123
     move/from16 v6, p8
 
+    .line 124
+    .line 125
     move/from16 v8, p13
 
+    .line 126
+    .line 127
     move-object/from16 v9, p14
 
+    .line 128
+    .line 129
     move-object/from16 v10, p15
 
+    .line 130
+    .line 131
     move-object/from16 v26, v11
 
+    .line 132
+    .line 133
     move-object/from16 v11, p16
 
-    .line 23
+    .line 134
+    .line 135
     invoke-interface/range {v5 .. v11}, Landroidx/media3/exoplayer/source/chunk/ChunkExtractor$Factory;->createProgressiveMediaExtractor(ILandroidx/media3/common/Format;ZLjava/util/List;Landroidx/media3/extractor/TrackOutput;Landroidx/media3/exoplayer/analytics/PlayerId;)Landroidx/media3/exoplayer/source/chunk/ChunkExtractor;
 
+    .line 136
+    .line 137
+    .line 138
     move-result-object v19
 
+    .line 139
     const-wide/16 v20, 0x0
 
-    .line 24
+    .line 140
+    .line 141
     invoke-virtual {v14}, Landroidx/media3/exoplayer/dash/manifest/Representation;->getIndex()Landroidx/media3/exoplayer/dash/DashSegmentIndex;
 
+    .line 142
+    .line 143
+    .line 144
     move-result-object v22
 
+    .line 145
     move-object v5, v14
 
+    .line 146
     move-object/from16 v14, v25
 
+    .line 147
+    .line 148
     move v6, v15
 
+    .line 149
     move-wide/from16 v15, v23
 
+    .line 150
+    .line 151
     move-object/from16 v17, v5
 
+    .line 152
+    .line 153
     invoke-direct/range {v14 .. v22}, Landroidx/media3/exoplayer/dash/DefaultDashChunkSource$RepresentationHolder;-><init>(JLandroidx/media3/exoplayer/dash/manifest/Representation;Landroidx/media3/exoplayer/dash/manifest/BaseUrl;Landroidx/media3/exoplayer/source/chunk/ChunkExtractor;JLandroidx/media3/exoplayer/dash/DashSegmentIndex;)V
 
+    .line 154
+    .line 155
+    .line 156
     aput-object v25, v26, v6
 
+    .line 157
+    .line 158
     add-int/lit8 v15, v6, 0x1
 
+    .line 159
+    .line 160
     goto :goto_0
 
+    .line 161
     :cond_1
     return-void
 .end method
@@ -632,7 +769,7 @@
 
     .line 46
     .line 47
-    invoke-static {p3, v0, v1, p4}, Landroid/support/v4/media/f;->j(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, v0, v1, p4}, Landroid/support/v4/media/e;->m(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 48
     .line 49
@@ -656,7 +793,7 @@
 
     .line 58
     .line 59
-    invoke-static {p3}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p3}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 60
     .line 61
@@ -929,7 +1066,7 @@
 
     .line 8
     .line 9
-    iget-object v2, v2, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v2, v2, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 10
     .line 11
@@ -1353,7 +1490,7 @@
 
     .line 81
     .line 82
-    invoke-static {v6, v5}, Landroid/support/v4/media/d;->d(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v6, v5}, Landroid/support/v4/media/a;->c(Ljava/util/List;I)Ljava/lang/Object;
 
     .line 83
     .line 84
@@ -2642,7 +2779,7 @@
     const/4 v1, 0x0
 
     .line 27
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 28
     .line 29
@@ -2825,7 +2962,7 @@
 
     .line 42
     .line 43
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 44
     .line 45
@@ -3133,7 +3270,7 @@
 
     .line 185
     .line 186
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 187
     .line 188
@@ -3676,7 +3813,7 @@
 
     .line 106
     .line 107
-    iget-object v3, v3, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v3, v3, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 108
     .line 109
@@ -3720,7 +3857,7 @@
 
     .line 127
     .line 128
-    iget-object v3, v3, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/f2;
+    iget-object v3, v3, Landroidx/media3/exoplayer/dash/manifest/Representation;->baseUrls:Lcom/google/common/collect/e2;
 
     .line 129
     .line 130

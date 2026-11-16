@@ -20,16 +20,16 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/util/a;
+    new-instance v0, Landroidx/core/util/b;
 
     .line 5
     .line 6
-    invoke-direct {v0, p0, p1}, Landroidx/core/util/a;-><init>(Landroidx/core/util/Predicate;Landroidx/core/util/Predicate;)V
+    invoke-direct {v0, p0, p1}, Landroidx/core/util/b;-><init>(Landroidx/core/util/Predicate;Landroidx/core/util/Predicate;)V
 
     .line 7
     .line 8
@@ -38,7 +38,7 @@
 .end method
 
 .method public static b(Landroidx/core/util/Predicate;)Landroidx/core/util/Predicate;
-    .locals 1
+    .locals 2
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "MissingNullability"
@@ -46,15 +46,18 @@
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/core/util/b;
+    new-instance v0, Landroidx/core/content/e;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Landroidx/core/util/b;-><init>(Landroidx/core/util/Predicate;)V
+    const/4 v1, 0x1
 
     .line 4
+    invoke-direct {v0, p0, v1}, Landroidx/core/content/e;-><init>(Ljava/lang/Object;I)V
+
     .line 5
     .line 6
+    .line 7
     return-object v0
 .end method
 
@@ -74,16 +77,16 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Landroidx/core/content/l;
+    new-instance v0, Landroidx/core/util/a;
 
     .line 5
     .line 6
-    invoke-direct {v0, p0, p1}, Landroidx/core/content/l;-><init>(Landroidx/core/util/Predicate;Landroidx/core/util/Predicate;)V
+    invoke-direct {v0, p0, p1}, Landroidx/core/util/a;-><init>(Landroidx/core/util/Predicate;Landroidx/core/util/Predicate;)V
 
     .line 7
     .line 8
@@ -231,14 +234,14 @@
 
     .line 2
     .line 3
-    new-instance p0, Landroidx/core/content/h;
+    new-instance p0, Landroidx/core/content/j;
 
     .line 4
     .line 5
-    const/4 v0, 0x2
+    const/4 v0, 0x1
 
     .line 6
-    invoke-direct {p0, v0}, Landroidx/core/content/h;-><init>(I)V
+    invoke-direct {p0, v0}, Landroidx/core/content/j;-><init>(I)V
 
     .line 7
     .line 8
@@ -247,14 +250,14 @@
 
     .line 10
     :cond_0
-    new-instance v0, Landroidx/core/content/c;
+    new-instance v0, Landroidx/core/content/n;
 
     .line 11
     .line 12
-    const/4 v1, 0x3
+    const/4 v1, 0x2
 
     .line 13
-    invoke-direct {v0, p0, v1}, Landroidx/core/content/c;-><init>(Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, v1}, Landroidx/core/content/n;-><init>(Ljava/lang/Object;I)V
 
     .line 14
     .line 15
@@ -270,14 +273,16 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->isNull(Ljava/lang/Object;)Z
+    if-nez p0, :cond_0
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p0
+    const/4 p0, 0x1
 
-    .line 5
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method
 
@@ -324,7 +329,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     .line 3

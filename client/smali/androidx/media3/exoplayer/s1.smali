@@ -11,17 +11,11 @@
 
 .field public final synthetic b:Landroid/util/Pair;
 
-.field public final synthetic c:Landroidx/media3/exoplayer/source/LoadEventInfo;
-
-.field public final synthetic d:Landroidx/media3/exoplayer/source/MediaLoadData;
-
-.field public final synthetic e:Ljava/io/IOException;
-
-.field public final synthetic f:Z
+.field public final synthetic c:Ljava/lang/Exception;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Ljava/io/IOException;Z)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Ljava/lang/Exception;)V
     .locals 0
 
     .line 1
@@ -31,13 +25,7 @@
 
     iput-object p2, p0, Landroidx/media3/exoplayer/s1;->b:Landroid/util/Pair;
 
-    iput-object p3, p0, Landroidx/media3/exoplayer/s1;->c:Landroidx/media3/exoplayer/source/LoadEventInfo;
-
-    iput-object p4, p0, Landroidx/media3/exoplayer/s1;->d:Landroidx/media3/exoplayer/source/MediaLoadData;
-
-    iput-object p5, p0, Landroidx/media3/exoplayer/s1;->e:Ljava/io/IOException;
-
-    iput-boolean p6, p0, Landroidx/media3/exoplayer/s1;->f:Z
+    iput-object p3, p0, Landroidx/media3/exoplayer/s1;->c:Ljava/lang/Exception;
 
     return-void
 .end method
@@ -45,22 +33,16 @@
 
 # virtual methods
 .method public final run()V
-    .locals 6
+    .locals 3
 
     .line 1
-    iget-object v4, p0, Landroidx/media3/exoplayer/s1;->e:Ljava/io/IOException;
+    iget-object v0, p0, Landroidx/media3/exoplayer/s1;->b:Landroid/util/Pair;
 
-    iget-boolean v5, p0, Landroidx/media3/exoplayer/s1;->f:Z
+    iget-object v1, p0, Landroidx/media3/exoplayer/s1;->c:Ljava/lang/Exception;
 
-    iget-object v0, p0, Landroidx/media3/exoplayer/s1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
+    iget-object v2, p0, Landroidx/media3/exoplayer/s1;->a:Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/s1;->b:Landroid/util/Pair;
-
-    iget-object v2, p0, Landroidx/media3/exoplayer/s1;->c:Landroidx/media3/exoplayer/source/LoadEventInfo;
-
-    iget-object v3, p0, Landroidx/media3/exoplayer/s1;->d:Landroidx/media3/exoplayer/source/MediaLoadData;
-
-    invoke-static/range {v0 .. v5}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->g(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Ljava/io/IOException;Z)V
+    invoke-static {v2, v0, v1}, Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;->i(Landroidx/media3/exoplayer/MediaSourceList$ForwardingEventListener;Landroid/util/Pair;Ljava/lang/Exception;)V
 
     return-void
 .end method

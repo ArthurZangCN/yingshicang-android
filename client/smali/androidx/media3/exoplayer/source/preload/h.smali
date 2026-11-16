@@ -3,25 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic a:Landroidx/media3/exoplayer/RenderersFactory;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/RenderersFactory;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p2, p0, Landroidx/media3/exoplayer/source/preload/h;->a:I
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/h;->b:Ljava/lang/Object;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/h;->a:Landroidx/media3/exoplayer/RenderersFactory;
 
     return-void
 .end method
@@ -29,36 +25,14 @@
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/source/preload/h;->a:I
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/h;->a:Landroidx/media3/exoplayer/RenderersFactory;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/preload/h;->b:Ljava/lang/Object;
-
-    packed-switch v0, :pswitch_data_0
-
-    check-cast v1, Landroid/content/Context;
-
-    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$Builder;->d(Landroid/content/Context;)Landroidx/media3/exoplayer/RenderersFactory;
+    invoke-static {v0}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$Builder;->e(Landroidx/media3/exoplayer/RenderersFactory;)Landroidx/media3/exoplayer/RenderersFactory;
 
     move-result-object v0
 
     return-object v0
-
-    :pswitch_0
-    check-cast v1, Landroidx/media3/exoplayer/LoadControl;
-
-    invoke-static {v1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$Builder;->c(Landroidx/media3/exoplayer/LoadControl;)Landroidx/media3/exoplayer/LoadControl;
-
-    move-result-object v0
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

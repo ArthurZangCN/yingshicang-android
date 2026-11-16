@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/k;
+.implements Lcom/google/common/base/m;
 
 
 # instance fields
@@ -34,25 +34,25 @@
 
     check-cast p1, Landroidx/media3/container/MdtaMetadataEntry;
 
-    invoke-static {p1}, Landroidx/media3/extractor/mp4/Mp4Extractor;->b(Landroidx/media3/container/MdtaMetadataEntry;)Z
+    invoke-static {p1}, Landroidx/media3/extractor/mp4/Mp4Extractor;->f(Landroidx/media3/container/MdtaMetadataEntry;)Z
 
     move-result p1
 
     return p1
 
     :pswitch_0
-    check-cast p1, Landroidx/media3/extractor/metadata/id3/CommentFrame;
+    check-cast p1, Landroidx/media3/extractor/metadata/id3/TextInformationFrame;
 
-    invoke-static {p1}, Landroidx/media3/extractor/GaplessInfoHolder;->a(Landroidx/media3/extractor/metadata/id3/CommentFrame;)Z
+    invoke-static {p1}, Landroidx/media3/extractor/mp3/Mp3Extractor;->a(Landroidx/media3/extractor/metadata/id3/TextInformationFrame;)Z
 
     move-result p1
 
     return p1
 
     :pswitch_1
-    check-cast p1, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;
+    check-cast p1, Landroidx/media3/extractor/metadata/id3/CommentFrame;
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager;->k(Landroidx/media3/exoplayer/source/preload/DefaultPreloadManager$PreloadStatus;)Z
+    invoke-static {p1}, Landroidx/media3/extractor/GaplessInfoHolder;->a(Landroidx/media3/extractor/metadata/id3/CommentFrame;)Z
 
     move-result p1
 

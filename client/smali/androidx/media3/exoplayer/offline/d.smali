@@ -3,40 +3,36 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/os/Handler$Callback;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/offline/DownloadHelper;
-
-.field public final synthetic b:Z
+.field public final synthetic a:Landroidx/media3/exoplayer/offline/DownloadManager;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/offline/DownloadHelper;Z)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/offline/DownloadManager;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/offline/d;->a:Landroidx/media3/exoplayer/offline/DownloadHelper;
-
-    iput-boolean p2, p0, Landroidx/media3/exoplayer/offline/d;->b:Z
+    iput-object p1, p0, Landroidx/media3/exoplayer/offline/d;->a:Landroidx/media3/exoplayer/offline/DownloadManager;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final handleMessage(Landroid/os/Message;)Z
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/offline/d;->a:Landroidx/media3/exoplayer/offline/DownloadHelper;
+    iget-object v0, p0, Landroidx/media3/exoplayer/offline/d;->a:Landroidx/media3/exoplayer/offline/DownloadManager;
 
-    iget-boolean v1, p0, Landroidx/media3/exoplayer/offline/d;->b:Z
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/offline/DownloadManager;->b(Landroidx/media3/exoplayer/offline/DownloadManager;Landroid/os/Message;)Z
 
-    invoke-static {v0, v1}, Landroidx/media3/exoplayer/offline/DownloadHelper;->d(Landroidx/media3/exoplayer/offline/DownloadHelper;Z)V
+    move-result p1
 
-    return-void
+    return p1
 .end method

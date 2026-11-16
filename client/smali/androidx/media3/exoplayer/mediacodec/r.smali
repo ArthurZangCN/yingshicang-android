@@ -7,17 +7,21 @@
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/Format;
+.field public final synthetic a:Landroid/content/Context;
+
+.field public final synthetic b:Landroidx/media3/common/Format;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/Format;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroidx/media3/common/Format;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/mediacodec/r;->a:Landroidx/media3/common/Format;
+    iput-object p1, p0, Landroidx/media3/exoplayer/mediacodec/r;->a:Landroid/content/Context;
+
+    iput-object p2, p0, Landroidx/media3/exoplayer/mediacodec/r;->b:Landroidx/media3/common/Format;
 
     return-void
 .end method
@@ -25,14 +29,16 @@
 
 # virtual methods
 .method public final getScore(Ljava/lang/Object;)I
-    .locals 1
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/mediacodec/r;->a:Landroidx/media3/common/Format;
+    iget-object v0, p0, Landroidx/media3/exoplayer/mediacodec/r;->b:Landroidx/media3/common/Format;
 
     check-cast p1, Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;
 
-    invoke-static {v0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->e(Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
+    iget-object v1, p0, Landroidx/media3/exoplayer/mediacodec/r;->a:Landroid/content/Context;
+
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/mediacodec/MediaCodecUtil;->d(Landroid/content/Context;Landroidx/media3/common/Format;Landroidx/media3/exoplayer/mediacodec/MediaCodecInfo;)I
 
     move-result p1
 

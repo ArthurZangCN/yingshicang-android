@@ -52,13 +52,13 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;->getFunctionDelegate()Lr3/a;
+    invoke-virtual {p0}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;->getFunctionDelegate()Lv3/a;
 
     move-result-object v0
 
     check-cast p1, Lkotlin/jvm/internal/g;
 
-    invoke-interface {p1}, Lkotlin/jvm/internal/g;->getFunctionDelegate()Lr3/a;
+    invoke-interface {p1}, Lkotlin/jvm/internal/g;->getFunctionDelegate()Lv3/a;
 
     move-result-object p1
 
@@ -70,12 +70,12 @@
     return v1
 .end method
 
-.method public final getFunctionDelegate()Lr3/a;
+.method public final getFunctionDelegate()Lv3/a;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lr3/a<",
+            "Lv3/a<",
             "*>;"
         }
     .end annotation
@@ -91,7 +91,7 @@
 .method public final hashCode()I
     .locals 1
 
-    invoke-virtual {p0}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;->getFunctionDelegate()Lr3/a;
+    invoke-virtual {p0}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;->getFunctionDelegate()Lv3/a;
 
     move-result-object v0
 

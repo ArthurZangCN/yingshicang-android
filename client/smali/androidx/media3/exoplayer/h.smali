@@ -4,16 +4,13 @@
 
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/ExoPlayer$AudioOffloadListener;Z)V
+.method public static bridge synthetic a(Landroid/media/MediaRouter2$RoutingController;)Landroid/media/RoutingSessionInfo;
     .locals 0
 
     .line 1
-    return-void
-.end method
+    invoke-virtual {p0}, Landroid/media/MediaRouter2$RoutingController;->getRoutingSessionInfo()Landroid/media/RoutingSessionInfo;
 
-.method public static b(Landroidx/media3/exoplayer/ExoPlayer$AudioOffloadListener;Z)V
-    .locals 0
+    move-result-object p0
 
-    .line 1
-    return-void
+    return-object p0
 .end method

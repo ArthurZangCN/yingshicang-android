@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final notification_action:I = 0x7f0d00d8
+.field public static final notification_action:I = 0x7f0d00db
 
-.field public static final notification_action_tombstone:I = 0x7f0d00d9
+.field public static final notification_action_tombstone:I = 0x7f0d00dc
 
-.field public static final notification_template_custom_big:I = 0x7f0d00e0
+.field public static final notification_template_custom_big:I = 0x7f0d00e3
 
-.field public static final notification_template_icon_group:I = 0x7f0d00e1
+.field public static final notification_template_icon_group:I = 0x7f0d00e4
 
-.field public static final notification_template_part_chronometer:I = 0x7f0d00e5
+.field public static final notification_template_part_chronometer:I = 0x7f0d00e8
 
-.field public static final notification_template_part_time:I = 0x7f0d00e6
+.field public static final notification_template_part_time:I = 0x7f0d00e9
 
 
 # direct methods

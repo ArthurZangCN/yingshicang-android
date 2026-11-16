@@ -454,7 +454,7 @@
 
     .line 173
     .line 174
-    invoke-static {v3, v0, v1, v6}, Landroid/support/v4/media/a;->e(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v0, v1, v6}, Landroid/support/v4/media/e;->n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 175
     .line 176
@@ -493,7 +493,7 @@
 
     .line 193
     .line 194
-    invoke-static {v0, v4, v5, v6}, Landroid/support/v4/media/a;->e(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v4, v5, v6}, Landroid/support/v4/media/e;->n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 195
     .line 196
@@ -788,6 +788,17 @@
     .line 11
     .line 12
     return-wide p1
+.end method
+
+.method public final synthetic isEstimated()Z
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Landroidx/media3/extractor/e;->a(Landroidx/media3/extractor/SeekMap;)Z
+
+    move-result v0
+
+    return v0
 .end method
 
 .method public isSeekable()Z

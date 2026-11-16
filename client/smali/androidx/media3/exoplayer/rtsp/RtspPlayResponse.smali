@@ -8,10 +8,10 @@
 
 .field public final status:I
 
-.field public final trackTimingList:Lcom/google/common/collect/f2;
+.field public final trackTimingList:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/rtsp/RtspTrackTiming;",
             ">;"
         }
@@ -46,7 +46,7 @@
 
     .line 7
     .line 8
-    invoke-static {p3}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p3}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -54,7 +54,7 @@
     move-result-object p1
 
     .line 12
-    iput-object p1, p0, Landroidx/media3/exoplayer/rtsp/RtspPlayResponse;->trackTimingList:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/exoplayer/rtsp/RtspPlayResponse;->trackTimingList:Lcom/google/common/collect/e2;
 
     .line 13
     .line 14

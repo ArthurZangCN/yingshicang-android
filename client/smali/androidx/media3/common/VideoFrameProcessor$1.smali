@@ -32,7 +32,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1, p2}, Landroidx/media3/common/f;->a(Landroidx/media3/common/Effect;J)J
+    invoke-static {p0, p1, p2}, Landroidx/media3/common/e;->a(Landroidx/media3/common/Effect;J)J
 
     move-result-wide p1
 

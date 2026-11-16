@@ -20,7 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/k;",
         "Lkotlin/jvm/functions/Function0<",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
@@ -51,7 +51,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/datastore/core/FileStorage$createConnection$2;->invoke()V
 
-    sget-object v0, Lr3/q;->a:Lr3/q;
+    sget-object v0, Lv3/q;->a:Lv3/q;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
     invoke-interface {v0, v2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     .line 4
-    sget-object v0, Lr3/q;->a:Lr3/q;
+    sget-object v0, Lv3/q;->a:Lv3/q;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

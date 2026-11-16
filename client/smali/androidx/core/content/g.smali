@@ -87,9 +87,9 @@
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast p1, Landroid/content/ClipData;
+    check-cast p1, Landroid/net/Uri;
 
-    invoke-static {p1}, Landroidx/core/content/IntentSanitizer$Builder;->q(Landroid/content/ClipData;)Z
+    invoke-static {p1}, Landroidx/core/content/IntentSanitizer$Builder;->m(Landroid/net/Uri;)Z
 
     move-result p1
 
@@ -98,7 +98,7 @@
     :pswitch_0
     check-cast p1, Ljava/lang/String;
 
-    invoke-static {p1}, Landroidx/core/content/IntentSanitizer$Builder;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, Landroidx/core/content/IntentSanitizer$Builder;->p(Ljava/lang/String;)Z
 
     move-result p1
 

@@ -345,7 +345,7 @@
 .end method
 
 .method public dispatchEvent(Landroidx/media3/common/util/Consumer;)V
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -401,26 +401,23 @@
 
     .line 22
     .line 23
-    new-instance v3, Landroidx/media3/exoplayer/source/w;
+    new-instance v3, Landroidx/media3/exoplayer/source/t;
 
     .line 24
     .line 25
-    const/4 v4, 0x1
+    invoke-direct {v3, p1, v2}, Landroidx/media3/exoplayer/source/t;-><init>(Landroidx/media3/common/util/Consumer;Landroidx/media3/exoplayer/source/MediaSourceEventListener;)V
 
     .line 26
-    invoke-direct {v3, v4, p1, v2}, Landroidx/media3/exoplayer/source/w;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 27
     .line 28
-    .line 29
     invoke-static {v1, v3}, Landroidx/media3/common/util/Util;->postOrRun(Landroid/os/Handler;Ljava/lang/Runnable;)Z
 
+    .line 29
     .line 30
     .line 31
-    .line 32
     goto :goto_0
 
-    .line 33
+    .line 32
     :cond_0
     return-void
 .end method
@@ -472,9 +469,9 @@
     .locals 1
 
     .line 4
-    new-instance v0, Landroidx/media3/exoplayer/source/p;
+    new-instance v0, Landroidx/media3/exoplayer/source/o;
 
-    invoke-direct {v0, p0, p1}, Landroidx/media3/exoplayer/source/p;-><init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+    invoke-direct {v0, p0, p1}, Landroidx/media3/exoplayer/source/o;-><init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/MediaLoadData;)V
 
     invoke-virtual {p0, v0}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->dispatchEvent(Landroidx/media3/common/util/Consumer;)V
 
@@ -560,9 +557,9 @@
     .locals 1
 
     .line 6
-    new-instance v0, Landroidx/media3/exoplayer/analytics/z;
+    new-instance v0, Landroidx/media3/exoplayer/source/s;
 
-    invoke-direct {v0, p0, p1, p2}, Landroidx/media3/exoplayer/analytics/z;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, p2}, Landroidx/media3/exoplayer/source/s;-><init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
 
     invoke-virtual {p0, v0}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->dispatchEvent(Landroidx/media3/common/util/Consumer;)V
 
@@ -924,9 +921,9 @@
     .locals 1
 
     .line 12
-    new-instance v0, Landroidx/media3/exoplayer/analytics/l0;
+    new-instance v0, Landroidx/media3/exoplayer/source/p;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Landroidx/media3/exoplayer/analytics/l0;-><init>(Ljava/lang/Object;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
+    invoke-direct {v0, p0, p1, p2, p3}, Landroidx/media3/exoplayer/source/p;-><init>(Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
 
     invoke-virtual {p0, v0}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->dispatchEvent(Landroidx/media3/common/util/Consumer;)V
 
@@ -1038,7 +1035,7 @@
 .end method
 
 .method public upstreamDiscarded(Landroidx/media3/exoplayer/source/MediaLoadData;)V
-    .locals 2
+    .locals 3
 
     .line 5
     iget-object v0, p0, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->mediaPeriodId:Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
@@ -1047,9 +1044,11 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/analytics/t;
+    new-instance v1, Landroidx/media3/exoplayer/hls/e;
 
-    invoke-direct {v1, p0, v0, p1}, Landroidx/media3/exoplayer/analytics/t;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    const/4 v2, 0x1
+
+    invoke-direct {v1, p0, v2, v0, p1}, Landroidx/media3/exoplayer/hls/e;-><init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {p0, v1}, Landroidx/media3/exoplayer/source/MediaSourceEventListener$EventDispatcher;->dispatchEvent(Landroidx/media3/common/util/Consumer;)V
 

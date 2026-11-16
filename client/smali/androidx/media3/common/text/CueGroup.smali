@@ -25,10 +25,10 @@
 
 
 # instance fields
-.field public final cues:Lcom/google/common/collect/f2;
+.field public final cues:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/text/Cue;",
             ">;"
         }
@@ -54,19 +54,19 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, Landroidx/media3/common/g;
+    new-instance v1, Landroidx/media3/common/h;
 
     .line 6
     .line 7
     const/4 v2, 0x3
 
     .line 8
-    invoke-direct {v1, v2}, Landroidx/media3/common/g;-><init>(I)V
+    invoke-direct {v1, v2}, Landroidx/media3/common/h;-><init>(I)V
 
     .line 9
     .line 10
     .line 11
-    invoke-virtual {v0, v1}, Lcom/google/common/collect/r4;->onResultOf(Lcom/google/common/base/e;)Lcom/google/common/collect/r4;
+    invoke-virtual {v0, v1}, Lcom/google/common/collect/r4;->onResultOf(Lcom/google/common/base/f;)Lcom/google/common/collect/r4;
 
     .line 12
     .line 13
@@ -82,7 +82,7 @@
 
     .line 18
     .line 19
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 20
     .line 21
@@ -160,7 +160,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, p1}, Lcom/google/common/collect/f2;->sortedCopyOf(Ljava/util/Comparator;Ljava/lang/Iterable;)Lcom/google/common/collect/f2;
+    invoke-static {v0, p1}, Lcom/google/common/collect/e2;->sortedCopyOf(Ljava/util/Comparator;Ljava/lang/Iterable;)Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -168,7 +168,7 @@
     move-result-object p1
 
     .line 10
-    iput-object p1, p0, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/e2;
 
     .line 11
     .line 12
@@ -190,7 +190,7 @@
     return-object p0
 .end method
 
-.method private static filterOutBitmapCues(Ljava/util/List;)Lcom/google/common/collect/f2;
+.method private static filterOutBitmapCues(Ljava/util/List;)Lcom/google/common/collect/e2;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -198,14 +198,14 @@
             "Ljava/util/List<",
             "Landroidx/media3/common/text/Cue;",
             ">;)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/text/Cue;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -265,7 +265,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 30
     .line 31
@@ -279,7 +279,7 @@
 
     .line 35
     :cond_1
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 36
     .line 37
@@ -312,7 +312,7 @@
 
     .line 8
     .line 9
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 10
     .line 11
@@ -324,19 +324,19 @@
 
     .line 14
     :cond_0
-    new-instance v1, Landroidx/media3/common/h;
+    new-instance v1, Landroidx/media3/common/k;
 
     .line 15
     .line 16
-    const/4 v2, 0x4
+    const/4 v2, 0x3
 
     .line 17
-    invoke-direct {v1, v2}, Landroidx/media3/common/h;-><init>(I)V
+    invoke-direct {v1, v2}, Landroidx/media3/common/k;-><init>(I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-static {v1, v0}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {v1, v0}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 21
     .line 22
@@ -409,11 +409,11 @@
 
     .line 7
     .line 8
-    iget-object v2, p0, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/text/CueGroup;->cues:Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
-    invoke-static {v2}, Landroidx/media3/common/text/CueGroup;->filterOutBitmapCues(Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {v2}, Landroidx/media3/common/text/CueGroup;->filterOutBitmapCues(Ljava/util/List;)Lcom/google/common/collect/e2;
 
     .line 11
     .line 12
@@ -421,19 +421,19 @@
     move-result-object v2
 
     .line 14
-    new-instance v3, Landroidx/media3/common/i;
+    new-instance v3, Landroidx/media3/common/l;
 
     .line 15
     .line 16
-    const/4 v4, 0x3
+    const/4 v4, 0x2
 
     .line 17
-    invoke-direct {v3, v4}, Landroidx/media3/common/i;-><init>(I)V
+    invoke-direct {v3, v4}, Landroidx/media3/common/l;-><init>(I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-static {v2, v3}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/e;)Ljava/util/ArrayList;
+    invoke-static {v2, v3}, Landroidx/media3/common/util/BundleCollectionUtil;->toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/f;)Ljava/util/ArrayList;
 
     .line 21
     .line 22

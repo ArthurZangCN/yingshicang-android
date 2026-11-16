@@ -68,30 +68,30 @@
     .end annotation
 .end field
 
-.field private preferredAudioLabels:Lcom/google/common/collect/f2;
+.field private preferredAudioLabels:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private preferredAudioLanguages:Lcom/google/common/collect/f2;
+.field private preferredAudioLanguages:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+.field private preferredAudioMimeTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -100,20 +100,20 @@
 
 .field private preferredAudioRoleFlags:I
 
-.field private preferredTextLabels:Lcom/google/common/collect/f2;
+.field private preferredTextLabels:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private preferredTextLanguages:Lcom/google/common/collect/f2;
+.field private preferredTextLanguages:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -122,30 +122,30 @@
 
 .field private preferredTextRoleFlags:I
 
-.field private preferredVideoLabels:Lcom/google/common/collect/f2;
+.field private preferredVideoLabels:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private preferredVideoLanguages:Lcom/google/common/collect/f2;
+.field private preferredVideoLanguages:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+.field private preferredVideoMimeTypes:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -203,25 +203,25 @@
     iput-boolean v1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->viewportOrientationMayChange:Z
 
     .line 10
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v2
 
-    iput-object v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 11
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v2
 
-    iput-object v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iput-object v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 12
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v2
 
-    iput-object v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iput-object v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     const/4 v2, 0x0
 
@@ -229,18 +229,18 @@
     iput v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoRoleFlags:I
 
     .line 14
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v3
 
-    iput-object v3, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iput-object v3, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 15
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v3
 
-    iput-object v3, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iput-object v3, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 16
     iput v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioRoleFlags:I
@@ -252,11 +252,11 @@
     iput v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->maxAudioBitrate:I
 
     .line 19
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 20
     sget-object v0, Landroidx/media3/common/TrackSelectionParameters$AudioOffloadPreferences;->DEFAULT:Landroidx/media3/common/TrackSelectionParameters$AudioOffloadPreferences;
@@ -267,11 +267,11 @@
     iput-boolean v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->selectTextByDefault:Z
 
     .line 22
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 23
     iput v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextRoleFlags:I
@@ -280,11 +280,11 @@
     iput-boolean v1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->usePreferredTextLanguagesAndRoleFlagsFromCaptioningManager:Z
 
     .line 25
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 26
     iput v2, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->ignoredTextSelectionFlags:I
@@ -531,18 +531,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 53
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 54
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$1300()Ljava/lang/String;
@@ -555,18 +555,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 55
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 56
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$1400()Ljava/lang/String;
@@ -579,18 +579,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 57
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 58
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$1500()Ljava/lang/String;
@@ -616,18 +616,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 60
-    invoke-static {v0}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 61
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$1700()Ljava/lang/String;
@@ -640,18 +640,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 62
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 63
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$1800()Ljava/lang/String;
@@ -703,18 +703,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 67
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 68
     invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->getAudioOffloadPreferencesFromBundle(Landroid/os/Bundle;)Landroidx/media3/common/TrackSelectionParameters$AudioOffloadPreferences;
@@ -747,18 +747,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 71
-    invoke-static {v0}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 72
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$2400()Ljava/lang/String;
@@ -774,7 +774,7 @@
     iput v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextRoleFlags:I
 
     .line 73
-    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 74
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
@@ -801,13 +801,15 @@
 
     if-eqz v0, :cond_1
 
+    move v0, v3
+
     goto :goto_1
 
     :cond_1
-    move v3, v4
+    move v0, v4
 
     :goto_1
-    iput-boolean v3, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->usePreferredTextLanguagesAndRoleFlagsFromCaptioningManager:Z
+    iput-boolean v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->usePreferredTextLanguagesAndRoleFlagsFromCaptioningManager:Z
 
     .line 77
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$2600()Ljava/lang/String;
@@ -833,18 +835,18 @@
 
     new-array v2, v4, [Ljava/lang/String;
 
-    invoke-static {v0, v2}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v2}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/String;
 
     .line 79
-    invoke-static {v0}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {v0}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 80
     invoke-static {}, Landroidx/media3/common/TrackSelectionParameters;->access$2800()Ljava/lang/String;
@@ -913,7 +915,7 @@
     if-nez v0, :cond_2
 
     .line 88
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
@@ -923,11 +925,9 @@
     :cond_2
     new-instance v1, Landroidx/media3/common/g;
 
-    const/4 v2, 0x2
+    invoke-direct {v1, v3}, Landroidx/media3/common/g;-><init>(I)V
 
-    invoke-direct {v1, v2}, Landroidx/media3/common/g;-><init>(I)V
-
-    invoke-static {v1, v0}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+    invoke-static {v1, v0}, Landroidx/media3/common/util/BundleCollectionUtil;->fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
 
     move-result-object v0
 
@@ -979,7 +979,7 @@
 
     new-array v0, v4, [I
 
-    invoke-static {p1, v0}, Lcom/google/common/base/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v0}, Lcom/google/common/base/i;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1163,33 +1163,33 @@
     return p0
 .end method
 
-.method public static synthetic access$5400(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$5400(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static synthetic access$5500(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$5500(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static synthetic access$5600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$5600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1207,11 +1207,11 @@
     return p0
 .end method
 
-.method public static synthetic access$5800(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$5800(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1240,11 +1240,11 @@
     return p0
 .end method
 
-.method public static synthetic access$6100(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$6100(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1262,11 +1262,11 @@
     return p0
 .end method
 
-.method public static synthetic access$6300(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$6300(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1295,11 +1295,11 @@
     return p0
 .end method
 
-.method public static synthetic access$6600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$6600(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1328,11 +1328,11 @@
     return p0
 .end method
 
-.method public static synthetic access$6900(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/f2;
+.method public static synthetic access$6900(Landroidx/media3/common/TrackSelectionParameters$Builder;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iget-object p0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1661,27 +1661,27 @@
 
     .line 48
     .line 49
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 50
     .line 51
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 52
     .line 53
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 54
     .line 55
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 56
     .line 57
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 58
     .line 59
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 60
     .line 61
@@ -1693,11 +1693,11 @@
 
     .line 64
     .line 65
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 66
     .line 67
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 68
     .line 69
@@ -1709,11 +1709,11 @@
 
     .line 72
     .line 73
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 74
     .line 75
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 76
     .line 77
@@ -1733,11 +1733,11 @@
 
     .line 84
     .line 85
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 86
     .line 87
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 88
     .line 89
@@ -1757,11 +1757,11 @@
 
     .line 96
     .line 97
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 98
     .line 99
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 100
     .line 101
@@ -1781,11 +1781,11 @@
 
     .line 108
     .line 109
-    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iget-object v0, p1, Landroidx/media3/common/TrackSelectionParameters;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 110
     .line 111
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 112
     .line 113
@@ -1833,7 +1833,7 @@
 
     .line 134
     .line 135
-    iget-object v1, p1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/s2;
+    iget-object v1, p1, Landroidx/media3/common/TrackSelectionParameters;->disabledTrackTypes:Lcom/google/common/collect/r2;
 
     .line 136
     .line 137
@@ -1850,7 +1850,7 @@
 
     .line 143
     .line 144
-    iget-object p1, p1, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/h2;
+    iget-object p1, p1, Landroidx/media3/common/TrackSelectionParameters;->overrides:Lcom/google/common/collect/g2;
 
     .line 145
     .line 146
@@ -1866,21 +1866,21 @@
     return-void
 .end method
 
-.method private static normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/f2;
+.method private static normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/e2;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
             "Ljava/lang/String;",
             ")",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -1921,7 +1921,7 @@
     move-result-object v3
 
     .line 21
-    invoke-virtual {v0, v3}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 22
     .line 23
@@ -1934,7 +1934,7 @@
 
     .line 27
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 28
     .line 29
@@ -2387,7 +2387,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2395,7 +2395,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLabels:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2457,7 +2457,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2465,7 +2465,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioLanguages:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2527,7 +2527,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2535,7 +2535,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredAudioMimeTypes:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2559,7 +2559,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2567,7 +2567,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLabels:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2634,11 +2634,11 @@
     iput-boolean v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->usePreferredTextLanguagesAndRoleFlagsFromCaptioningManager:Z
 
     .line 2
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     const/4 v0, 0x0
 
@@ -2665,7 +2665,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2673,7 +2673,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredTextLanguages:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2711,7 +2711,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2719,7 +2719,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLabels:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2785,7 +2785,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/common/TrackSelectionParameters$Builder;->normalizeLanguageCodes([Ljava/lang/String;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2793,7 +2793,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoLanguages:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -2855,7 +2855,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -2863,7 +2863,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionParameters$Builder;->preferredVideoMimeTypes:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7

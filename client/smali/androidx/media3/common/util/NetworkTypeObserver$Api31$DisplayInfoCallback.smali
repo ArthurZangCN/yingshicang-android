@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Landroidx/core/view/o;->d(Landroid/telephony/TelephonyDisplayInfo;)I
+    invoke-static {p1}, Landroidx/core/content/pm/i;->c(Landroid/telephony/TelephonyDisplayInfo;)I
 
     .line 2
     .line 3

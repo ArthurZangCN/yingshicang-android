@@ -38,47 +38,65 @@
     .line 1
     iget v0, p0, Landroidx/media3/datasource/f;->a:I
 
+    .line 2
+    .line 3
     iget-object v1, p0, Landroidx/media3/datasource/f;->c:Ljava/io/Serializable;
 
+    .line 4
+    .line 5
     iget-object v2, p0, Landroidx/media3/datasource/f;->b:Ljava/lang/Object;
 
+    .line 6
+    .line 7
     packed-switch v0, :pswitch_data_0
 
-    check-cast v2, Lcom/github/tvbox/osc/util/js/SpiderFm;
+    .line 8
+    .line 9
+    .line 10
+    check-cast v2, Ljava/io/InputStream;
 
-    check-cast v1, Ljava/util/HashMap;
-
-    invoke-static {v2, v1}, Lcom/github/tvbox/osc/util/js/SpiderFm;->b(Lcom/github/tvbox/osc/util/js/SpiderFm;Ljava/util/HashMap;)Lcom/whl/quickjs/wrapper/JSObject;
-
-    move-result-object v0
-
-    return-object v0
-
-    :pswitch_0
-    check-cast v2, Lcom/github/tvbox/osc/util/js/SpiderFm;
-
+    .line 11
+    .line 12
     check-cast v1, Ljava/lang/String;
 
-    invoke-static {v2, v1}, Lcom/github/tvbox/osc/util/js/SpiderFm;->g(Lcom/github/tvbox/osc/util/js/SpiderFm;Ljava/lang/String;)Lcom/whl/quickjs/wrapper/JSObject;
+    .line 13
+    .line 14
+    invoke-static {v2, v1}, Lcom/airbnb/lottie/m;->d(Ljava/io/InputStream;Ljava/lang/String;)Lcom/airbnb/lottie/h0;
 
+    .line 15
+    .line 16
+    .line 17
     move-result-object v0
 
+    .line 18
     return-object v0
 
-    :pswitch_1
+    .line 19
+    :pswitch_0
     check-cast v2, Landroidx/media3/datasource/DataSourceBitmapLoader;
 
+    .line 20
+    .line 21
     check-cast v1, [B
 
+    .line 22
+    .line 23
     invoke-static {v2, v1}, Landroidx/media3/datasource/DataSourceBitmapLoader;->a(Landroidx/media3/datasource/DataSourceBitmapLoader;[B)Landroid/graphics/Bitmap;
 
+    .line 24
+    .line 25
+    .line 26
     move-result-object v0
 
+    .line 27
     return-object v0
 
+    .line 28
+    nop
+
+    .line 29
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

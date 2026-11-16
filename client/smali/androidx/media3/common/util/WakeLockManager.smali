@@ -103,11 +103,11 @@
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/media3/common/util/WakeLockManager;Ljava/lang/Runnable;ZZ)V
+.method public static synthetic a(Landroidx/media3/common/util/WakeLockManager;Ljava/util/concurrent/atomic/AtomicBoolean;ZZ)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Landroidx/media3/common/util/WakeLockManager;->lambda$postUpdateWakeLock$2(Ljava/lang/Runnable;ZZ)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/media3/common/util/WakeLockManager;->lambda$postUpdateWakeLock$2(Ljava/util/concurrent/atomic/AtomicBoolean;ZZ)V
 
     return-void
 .end method
@@ -127,20 +127,20 @@
     return p0
 .end method
 
-.method public static synthetic b(Landroidx/media3/common/util/WakeLockManager;ZZ)V
+.method public static synthetic b(Landroidx/media3/common/util/WakeLockManager;Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/media3/common/util/WakeLockManager;->lambda$postUpdateWakeLock$0(ZZ)V
+    invoke-direct {p0, p1}, Landroidx/media3/common/util/WakeLockManager;->lambda$postUpdateWakeLock$1(Ljava/util/concurrent/atomic/AtomicBoolean;)V
 
     return-void
 .end method
 
-.method public static synthetic c(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;)V
+.method public static synthetic c(Landroidx/media3/common/util/WakeLockManager;ZZ)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/common/util/WakeLockManager;->lambda$postUpdateWakeLock$1(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;)V
+    invoke-direct {p0, p1, p2}, Landroidx/media3/common/util/WakeLockManager;->lambda$postUpdateWakeLock$0(ZZ)V
 
     return-void
 .end method
@@ -161,45 +161,48 @@
     return-void
 .end method
 
-.method private static synthetic lambda$postUpdateWakeLock$1(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;->access$200(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method private synthetic lambda$postUpdateWakeLock$2(Ljava/lang/Runnable;ZZ)V
+.method private synthetic lambda$postUpdateWakeLock$1(Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/util/WakeLockManager;->mainHandler:Landroidx/media3/common/util/HandlerWrapper;
+    iget-object v0, p0, Landroidx/media3/common/util/WakeLockManager;->wakeLockManagerInternal:Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, Landroidx/media3/common/util/HandlerWrapper;->removeCallbacks(Ljava/lang/Runnable;)V
+    invoke-static {v0, p1}, Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;->access$200(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;Ljava/util/concurrent/atomic/AtomicBoolean;)V
 
     .line 4
     .line 5
     .line 6
+    return-void
+.end method
+
+.method private synthetic lambda$postUpdateWakeLock$2(Ljava/util/concurrent/atomic/AtomicBoolean;ZZ)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
+    .line 3
+    .line 4
+    .line 5
     iget-object p1, p0, Landroidx/media3/common/util/WakeLockManager;->wakeLockManagerInternal:Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;
 
+    .line 6
     .line 7
-    .line 8
     invoke-static {p1, p2, p3}, Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;->access$100(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;ZZ)V
 
+    .line 8
     .line 9
     .line 10
-    .line 11
     return-void
 .end method
 
 .method private postUpdateWakeLock(ZZ)V
-    .locals 4
+    .locals 6
 
     .line 1
     invoke-static {p1, p2}, Landroidx/media3/common/util/WakeLockManager;->shouldAcquireWakelock(ZZ)Z
@@ -218,11 +221,11 @@
 
     .line 8
     .line 9
-    new-instance v1, Landroidx/media3/common/util/n;
+    new-instance v1, Landroidx/media3/common/util/m;
 
     .line 10
     .line 11
-    invoke-direct {v1, p0, p1, p2}, Landroidx/media3/common/util/n;-><init>(Landroidx/media3/common/util/WakeLockManager;ZZ)V
+    invoke-direct {v1, p0, p1, p2}, Landroidx/media3/common/util/m;-><init>(Landroidx/media3/common/util/WakeLockManager;ZZ)V
 
     .line 12
     .line 13
@@ -236,55 +239,58 @@
 
     .line 18
     :cond_0
-    iget-object v0, p0, Landroidx/media3/common/util/WakeLockManager;->wakeLockManagerInternal:Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 19
     .line 20
-    invoke-static {v0}, Lj$/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v1, 0x1
 
     .line 21
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
     .line 22
     .line 23
-    new-instance v1, Landroidx/media3/common/util/o;
-
     .line 24
-    .line 25
-    invoke-direct {v1, v0}, Landroidx/media3/common/util/o;-><init>(Landroidx/media3/common/util/WakeLockManager$WakeLockManagerInternal;)V
+    iget-object v2, p0, Landroidx/media3/common/util/WakeLockManager;->mainHandler:Landroidx/media3/common/util/HandlerWrapper;
 
+    .line 25
     .line 26
+    new-instance v3, Landroidx/media3/common/util/r;
+
     .line 27
     .line 28
-    iget-object v0, p0, Landroidx/media3/common/util/WakeLockManager;->mainHandler:Landroidx/media3/common/util/HandlerWrapper;
+    invoke-direct {v3, p0, v0, v1}, Landroidx/media3/common/util/r;-><init>(Ljava/lang/Object;Ljava/util/concurrent/atomic/AtomicBoolean;I)V
 
     .line 29
     .line 30
-    const-wide/16 v2, 0x3e8
-
     .line 31
-    .line 32
-    invoke-interface {v0, v1, v2, v3}, Landroidx/media3/common/util/HandlerWrapper;->postDelayed(Ljava/lang/Runnable;J)Z
+    const-wide/16 v4, 0x3e8
 
+    .line 32
     .line 33
+    invoke-interface {v2, v3, v4, v5}, Landroidx/media3/common/util/HandlerWrapper;->postDelayed(Ljava/lang/Runnable;J)Z
+
     .line 34
     .line 35
-    iget-object v0, p0, Landroidx/media3/common/util/WakeLockManager;->wakeLockHandler:Landroidx/media3/common/util/HandlerWrapper;
-
     .line 36
+    iget-object v1, p0, Landroidx/media3/common/util/WakeLockManager;->wakeLockHandler:Landroidx/media3/common/util/HandlerWrapper;
+
     .line 37
-    new-instance v2, Landroidx/media3/common/util/p;
-
     .line 38
-    .line 39
-    invoke-direct {v2, p0, v1, p1, p2}, Landroidx/media3/common/util/p;-><init>(Landroidx/media3/common/util/WakeLockManager;Landroidx/media3/common/util/o;ZZ)V
+    new-instance v2, Landroidx/media3/common/util/n;
 
+    .line 39
     .line 40
+    invoke-direct {v2, p0, v0, p1, p2}, Landroidx/media3/common/util/n;-><init>(Landroidx/media3/common/util/WakeLockManager;Ljava/util/concurrent/atomic/AtomicBoolean;ZZ)V
+
     .line 41
     .line 42
-    invoke-interface {v0, v2}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
-
     .line 43
+    invoke-interface {v1, v2}, Landroidx/media3/common/util/HandlerWrapper;->post(Ljava/lang/Runnable;)Z
+
     .line 44
     .line 45
+    .line 46
     :goto_0
     return-void
 .end method

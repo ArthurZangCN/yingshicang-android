@@ -222,21 +222,23 @@
 
 .field public static final TvRecyclerView_tv_layoutManager:I = 0x6
 
-.field public static final TvRecyclerView_tv_loadMoreBeforehandCount:I = 0x7
+.field public static final TvRecyclerView_tv_leanbackTouchMode:I = 0x7
 
-.field public static final TvRecyclerView_tv_numColumns:I = 0x8
+.field public static final TvRecyclerView_tv_loadMoreBeforehandCount:I = 0x8
 
-.field public static final TvRecyclerView_tv_numRows:I = 0x9
+.field public static final TvRecyclerView_tv_numColumns:I = 0x9
 
-.field public static final TvRecyclerView_tv_optimizeLayout:I = 0xa
+.field public static final TvRecyclerView_tv_numRows:I = 0xa
 
-.field public static final TvRecyclerView_tv_selectedItemIsCentered:I = 0xb
+.field public static final TvRecyclerView_tv_optimizeLayout:I = 0xb
 
-.field public static final TvRecyclerView_tv_selectedItemOffsetEnd:I = 0xc
+.field public static final TvRecyclerView_tv_selectedItemIsCentered:I = 0xc
 
-.field public static final TvRecyclerView_tv_selectedItemOffsetStart:I = 0xd
+.field public static final TvRecyclerView_tv_selectedItemOffsetEnd:I = 0xd
 
-.field public static final TvRecyclerView_tv_verticalSpacingWithMargins:I = 0xe
+.field public static final TvRecyclerView_tv_selectedItemOffsetStart:I = 0xe
+
+.field public static final TvRecyclerView_tv_verticalSpacingWithMargins:I = 0xf
 
 
 # direct methods
@@ -261,7 +263,7 @@
 
     const v0, 0x7f0402ac
 
-    const v1, 0x7f0404b8
+    const v1, 0x7f0404d0
 
     filled-new-array {v0, v1}, [I
 
@@ -325,7 +327,7 @@
 
     sput-object v0, Lcom/owen/tvrecyclerview/R$styleable;->RecyclerView:[I
 
-    const/16 v0, 0xf
+    const/16 v0, 0x10
 
     new-array v0, v0, [I
 
@@ -333,9 +335,9 @@
 
     sput-object v0, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView:[I
 
-    const v0, 0x7f040593
+    const v0, 0x7f0405ab
 
-    const v1, 0x7f0405a3
+    const v1, 0x7f0405bc
 
     const v2, 0x1010129
 
@@ -355,9 +357,9 @@
 
     sput-object v0, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_SpacingItemDecoration:[I
 
-    const v0, 0x7f040592
+    const v0, 0x7f0405aa
 
-    const v1, 0x7f04059e
+    const v1, 0x7f0405b7
 
     filled-new-array {v0, v1}, [I
 
@@ -365,7 +367,7 @@
 
     sput-object v0, Lcom/owen/tvrecyclerview/R$styleable;->TvRecyclerView_SpannableGridViewChild:[I
 
-    const v0, 0x7f0405a2
+    const v0, 0x7f0405bb
 
     filled-new-array {v0}, [I
 
@@ -396,10 +398,10 @@
         0x7f040203
         0x7f040204
         0x7f0402a8
-        0x7f04035e
-        0x7f040474
-        0x7f040475
-        0x7f040476
+        0x7f040376
+        0x7f04048c
+        0x7f04048d
+        0x7f04048e
     .end array-data
 
     :array_2
@@ -438,7 +440,7 @@
         0x7f040235
         0x7f040236
         0x7f040237
-        0x7f040591
+        0x7f0405a9
     .end array-data
 
     :array_5
@@ -468,28 +470,29 @@
         0x7f0401eb
         0x7f0401ec
         0x7f0402b7
-        0x7f040405
-        0x7f040498
-        0x7f0404a4
+        0x7f04041d
+        0x7f0404b0
+        0x7f0404bc
     .end array-data
 
     :array_7
     .array-data 4
         0x10100c4
-        0x7f040594
-        0x7f040595
-        0x7f040596
-        0x7f040597
-        0x7f040598
-        0x7f040599
-        0x7f04059a
-        0x7f04059b
-        0x7f04059c
-        0x7f04059d
-        0x7f04059f
-        0x7f0405a0
-        0x7f0405a1
-        0x7f0405a4
+        0x7f0405ac
+        0x7f0405ad
+        0x7f0405ae
+        0x7f0405af
+        0x7f0405b0
+        0x7f0405b1
+        0x7f0405b2
+        0x7f0405b3
+        0x7f0405b4
+        0x7f0405b5
+        0x7f0405b6
+        0x7f0405b8
+        0x7f0405b9
+        0x7f0405ba
+        0x7f0405bd
     .end array-data
 .end method
 

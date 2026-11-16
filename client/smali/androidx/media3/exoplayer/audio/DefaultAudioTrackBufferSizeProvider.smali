@@ -173,7 +173,7 @@
     div-long/2addr v0, p0
 
     .line 10
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 11
     .line 12
@@ -216,7 +216,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 14
     .line 15
@@ -374,7 +374,7 @@
     div-long/2addr v0, v2
 
     .line 14
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 15
     .line 16
@@ -440,7 +440,7 @@
 
     .line 21
     .line 22
-    invoke-static {p2, v2, p1}, Lz1/c;->a(IILjava/math/RoundingMode;)I
+    invoke-static {p2, v2, p1}, Lj2/c;->a(IILjava/math/RoundingMode;)I
 
     .line 23
     .line 24
@@ -478,7 +478,7 @@
     div-long/2addr v0, p1
 
     .line 38
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 39
     .line 40

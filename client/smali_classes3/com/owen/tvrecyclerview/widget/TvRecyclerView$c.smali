@@ -48,7 +48,7 @@
     const/4 v1, 0x1
 
     .line 4
-    iput-boolean v1, v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->s:Z
+    iput-boolean v1, v0, Lcom/owen/tvrecyclerview/widget/TvRecyclerView;->x:Z
 
     .line 5
     .line 6

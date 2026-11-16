@@ -178,7 +178,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/media3/exoplayer/video/r;->c(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
+    invoke-static {p0}, Landroidx/media3/exoplayer/video/v;->c(Landroidx/media3/exoplayer/video/VideoSink$Listener;)V
 
     return-void
 .end method

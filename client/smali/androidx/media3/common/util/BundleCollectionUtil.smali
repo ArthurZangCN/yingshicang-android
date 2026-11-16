@@ -119,14 +119,14 @@
     return-object v0
 .end method
 
-.method public static bundleToStringImmutableMap(Landroid/os/Bundle;)Lcom/google/common/collect/h2;
+.method public static bundleToStringImmutableMap(Landroid/os/Bundle;)Lcom/google/common/collect/g2;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/os/Bundle;",
             ")",
-            "Lcom/google/common/collect/h2<",
+            "Lcom/google/common/collect/g2<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;"
@@ -142,7 +142,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 6
     .line 7
@@ -162,7 +162,7 @@
     move-result-object p0
 
     .line 14
-    invoke-static {p0}, Lcom/google/common/collect/h2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/h2;
+    invoke-static {p0}, Lcom/google/common/collect/g2;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/g2;
 
     .line 15
     .line 16
@@ -218,26 +218,26 @@
     return-void
 .end method
 
-.method public static fromBundleList(Lcom/google/common/base/e;Ljava/util/List;)Lcom/google/common/collect/f2;
+.method public static fromBundleList(Lcom/google/common/base/f;Ljava/util/List;)Lcom/google/common/collect/e2;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "Landroid/os/Bundle;",
             "TT;>;",
             "Ljava/util/List<",
             "Landroid/os/Bundle;",
             ">;)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "TT;>;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -278,7 +278,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-interface {p0, v2}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v2}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -286,7 +286,7 @@
     move-result-object v2
 
     .line 25
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -299,7 +299,7 @@
 
     .line 31
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 32
     .line 33
@@ -310,14 +310,14 @@
     return-object p0
 .end method
 
-.method public static fromBundleSparseArray(Lcom/google/common/base/e;Landroid/util/SparseArray;)Landroid/util/SparseArray;
+.method public static fromBundleSparseArray(Lcom/google/common/base/f;Landroid/util/SparseArray;)Landroid/util/SparseArray;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "Landroid/os/Bundle;",
             "TT;>;",
             "Landroid/util/SparseArray<",
@@ -382,7 +382,7 @@
 
     .line 26
     .line 27
-    invoke-interface {p0, v3}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v3}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -565,7 +565,7 @@
     return-object v0
 .end method
 
-.method public static toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/e;)Ljava/util/ArrayList;
+.method public static toBundleArrayList(Ljava/util/Collection;Lcom/google/common/base/f;)Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -574,7 +574,7 @@
             ">(",
             "Ljava/util/Collection<",
             "TT;>;",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "TT;",
             "Landroid/os/Bundle;",
             ">;)",
@@ -631,7 +631,7 @@
     move-result-object v1
 
     .line 24
-    invoke-interface {p1, v1}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v1}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -655,7 +655,7 @@
     return-object v0
 .end method
 
-.method public static toBundleList(Ljava/util/List;Lcom/google/common/base/e;)Lcom/google/common/collect/f2;
+.method public static toBundleList(Ljava/util/List;Lcom/google/common/base/f;)Lcom/google/common/collect/e2;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -664,18 +664,18 @@
             ">(",
             "Ljava/util/List<",
             "TT;>;",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "TT;",
             "Landroid/os/Bundle;",
             ">;)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroid/os/Bundle;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/f2;->builder()Lcom/google/common/collect/f2$a;
+    invoke-static {}, Lcom/google/common/collect/e2;->builder()Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
@@ -707,7 +707,7 @@
     move-result-object v2
 
     .line 16
-    invoke-interface {p1, v2}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v2}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -719,7 +719,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/d2$a;->d(Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/c2$a;->d(Ljava/lang/Object;)V
 
     .line 23
     .line 24
@@ -732,7 +732,7 @@
 
     .line 28
     :cond_0
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 29
     .line 30
@@ -743,7 +743,7 @@
     return-object p0
 .end method
 
-.method public static toBundleSparseArray(Landroid/util/SparseArray;Lcom/google/common/base/e;)Landroid/util/SparseArray;
+.method public static toBundleSparseArray(Landroid/util/SparseArray;Lcom/google/common/base/f;)Landroid/util/SparseArray;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -752,7 +752,7 @@
             ">(",
             "Landroid/util/SparseArray<",
             "TT;>;",
-            "Lcom/google/common/base/e<",
+            "Lcom/google/common/base/f<",
             "TT;",
             "Landroid/os/Bundle;",
             ">;)",
@@ -812,7 +812,7 @@
     move-result-object v3
 
     .line 25
-    invoke-interface {p1, v3}, Lcom/google/common/base/e;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v3}, Lcom/google/common/base/f;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
     .line 27

@@ -35,7 +35,7 @@
 
     .line 7
     .line 8
-    new-instance v0, Landroidx/media3/datasource/p;
+    new-instance v0, Landroidx/media3/datasource/q;
 
     .line 9
     .line 10

@@ -13,7 +13,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/graphics/Bitmap;"
         }
@@ -145,7 +145,7 @@
     .end annotation
 
     .line 2
-    invoke-static {p0, p1, p2, p3, p4}, Landroidx/core/app/b;->i(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
+    invoke-static {p0, p1, p2, p3, p4}, Landroidx/core/app/d;->e(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
 
     move-result-object p0
 
@@ -194,17 +194,17 @@
     if-eqz p5, :cond_2
 
     .line 4
-    invoke-static {}, Landroidx/core/app/c;->l()Landroid/graphics/ColorSpace$Named;
+    invoke-static {}, Landroidx/core/app/e;->h()Landroid/graphics/ColorSpace$Named;
 
     move-result-object p4
 
-    invoke-static {p4}, Landroidx/core/app/d;->k(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
+    invoke-static {p4}, Landroidx/core/app/f;->f(Landroid/graphics/ColorSpace$Named;)Landroid/graphics/ColorSpace;
 
     move-result-object p4
 
     .line 5
     :cond_2
-    invoke-static {p0, p1, p2, p3, p4}, Landroidx/core/app/b;->i(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
+    invoke-static {p0, p1, p2, p3, p4}, Landroidx/core/app/d;->e(IILandroid/graphics/Bitmap$Config;ZLandroid/graphics/ColorSpace;)Landroid/graphics/Bitmap;
 
     move-result-object p0
 

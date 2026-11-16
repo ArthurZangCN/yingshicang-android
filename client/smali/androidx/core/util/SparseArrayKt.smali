@@ -134,7 +134,7 @@
             "-",
             "Ljava/lang/Integer;",
             "-TT;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -373,7 +373,7 @@
     return p0
 .end method
 
-.method public static final keyIterator(Landroid/util/SparseArray;)Lkotlin/collections/v;
+.method public static final keyIterator(Landroid/util/SparseArray;)Lkotlin/collections/u;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -382,7 +382,7 @@
             ">(",
             "Landroid/util/SparseArray<",
             "TT;>;)",
-            "Lkotlin/collections/v;"
+            "Lkotlin/collections/u;"
         }
     .end annotation
 

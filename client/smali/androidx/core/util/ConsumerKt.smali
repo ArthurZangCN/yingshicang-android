@@ -38,5 +38,13 @@
     .line 4
     .line 5
     .line 6
-    return-object v0
+    invoke-static {v0}, Landroid/support/v4/media/session/b;->k(Ljava/lang/Object;)Ljava/util/function/Consumer;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
 .end method

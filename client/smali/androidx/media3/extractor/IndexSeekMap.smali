@@ -56,7 +56,7 @@
 
     .line 13
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 14
     .line 15
@@ -505,6 +505,17 @@
 
     .line 28
     return-wide p1
+.end method
+
+.method public final synthetic isEstimated()Z
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Landroidx/media3/extractor/e;->a(Landroidx/media3/extractor/SeekMap;)Z
+
+    move-result v0
+
+    return v0
 .end method
 
 .method public isSeekable()Z

@@ -3,15 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/common/util/ListenerSet$IterationFinishedEvent;
+.implements Lcom/google/common/base/f;
 
 
 # instance fields
 .field public final synthetic a:Landroidx/media3/exoplayer/ExoPlayerImpl;
 
+.field public final synthetic b:I
+
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImpl;)V
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/ExoPlayerImpl;I)V
     .locals 0
 
     .line 1
@@ -19,20 +21,26 @@
 
     iput-object p1, p0, Landroidx/media3/exoplayer/d0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
 
+    iput p2, p0, Landroidx/media3/exoplayer/d0;->b:I
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Landroidx/media3/common/FlagSet;)V
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/d0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
+    iget v0, p0, Landroidx/media3/exoplayer/d0;->b:I
 
-    check-cast p1, Landroidx/media3/common/Player$Listener;
+    check-cast p1, Ljava/lang/Integer;
 
-    invoke-static {v0, p1, p2}, Landroidx/media3/exoplayer/ExoPlayerImpl;->p(Landroidx/media3/exoplayer/ExoPlayerImpl;Landroidx/media3/common/Player$Listener;Landroidx/media3/common/FlagSet;)V
+    iget-object v1, p0, Landroidx/media3/exoplayer/d0;->a:Landroidx/media3/exoplayer/ExoPlayerImpl;
 
-    return-void
+    invoke-static {v1, v0, p1}, Landroidx/media3/exoplayer/ExoPlayerImpl;->y(Landroidx/media3/exoplayer/ExoPlayerImpl;ILjava/lang/Integer;)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    return-object p1
 .end method

@@ -12,3 +12,14 @@
     accessFlags = 0x609
     name = "f"
 .end annotation
+
+
+# virtual methods
+.method public abstract a(Landroid/view/View;I)V
+.end method
+
+.method public abstract b(Landroid/view/View;I)V
+.end method
+
+.method public abstract c(Landroid/view/View;I)V
+.end method

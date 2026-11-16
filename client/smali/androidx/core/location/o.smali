@@ -9,15 +9,11 @@
 # instance fields
 .field public final synthetic a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:I
-
-.field public final synthetic d:Landroid/os/Bundle;
+.field public final synthetic b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;ILandroid/os/Bundle;)V
+.method public synthetic constructor <init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;I)V
     .locals 0
 
     .line 1
@@ -25,11 +21,7 @@
 
     iput-object p1, p0, Landroidx/core/location/o;->a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-    iput-object p2, p0, Landroidx/core/location/o;->b:Ljava/lang/String;
-
-    iput p3, p0, Landroidx/core/location/o;->c:I
-
-    iput-object p4, p0, Landroidx/core/location/o;->d:Landroid/os/Bundle;
+    iput p2, p0, Landroidx/core/location/o;->b:I
 
     return-void
 .end method
@@ -37,18 +29,14 @@
 
 # virtual methods
 .method public final run()V
-    .locals 4
+    .locals 2
 
     .line 1
-    iget v0, p0, Landroidx/core/location/o;->c:I
+    iget-object v0, p0, Landroidx/core/location/o;->a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
 
-    iget-object v1, p0, Landroidx/core/location/o;->d:Landroid/os/Bundle;
+    iget v1, p0, Landroidx/core/location/o;->b:I
 
-    iget-object v2, p0, Landroidx/core/location/o;->a:Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;
-
-    iget-object v3, p0, Landroidx/core/location/o;->b:Ljava/lang/String;
-
-    invoke-static {v2, v3, v0, v1}, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;->b(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;ILandroid/os/Bundle;)V
+    invoke-static {v0, v1}, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;->f(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;I)V
 
     return-void
 .end method

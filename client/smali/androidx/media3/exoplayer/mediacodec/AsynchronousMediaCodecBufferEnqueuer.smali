@@ -273,18 +273,18 @@
     if-lt v0, v1, :cond_0
 
     .line 14
-    invoke-static {}, Landroid/support/v4/media/b;->p()V
+    invoke-static {}, Landroid/support/v4/media/session/e;->q()V
 
     iget v0, p0, Landroidx/media3/decoder/CryptoInfo;->encryptedBlocks:I
 
     iget p0, p0, Landroidx/media3/decoder/CryptoInfo;->clearBlocks:I
 
-    invoke-static {v0, p0}, Landroidx/media3/exoplayer/mediacodec/f;->a(II)Landroid/media/MediaCodec$CryptoInfo$Pattern;
+    invoke-static {v0, p0}, Landroid/support/v4/media/session/d;->g(II)Landroid/media/MediaCodec$CryptoInfo$Pattern;
 
     move-result-object p0
 
     .line 15
-    invoke-static {p1, p0}, Landroid/support/v4/media/session/b;->r(Landroid/media/MediaCodec$CryptoInfo;Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
+    invoke-static {p1, p0}, Landroidx/media3/exoplayer/mediacodec/f;->a(Landroid/media/MediaCodec$CryptoInfo;Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
 
     :cond_0
     return-void

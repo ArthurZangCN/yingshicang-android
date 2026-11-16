@@ -4,11 +4,26 @@
 
 
 # direct methods
-.method public static bridge synthetic a(ILandroid/content/Context;)Landroid/content/Context;
+.method public static bridge synthetic a(Landroid/graphics/Gainmap;)F
     .locals 0
 
     .line 1
-    invoke-virtual {p1, p0}, Landroid/content/Context;->createDeviceContext(I)Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/graphics/Gainmap;->getDisplayRatioForFullHdr()F
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static bridge synthetic b(Landroid/net/http/UrlResponseInfo;)Landroid/net/http/HeaderBlock;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/net/http/UrlResponseInfo;->getHeaders()Landroid/net/http/HeaderBlock;
 
     .line 2
     .line 3
@@ -19,37 +34,22 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic b(Ljava/lang/Object;)Landroid/net/http/UrlResponseInfo;
+.method public static bridge synthetic c(Ljava/lang/Object;)Landroid/net/http/NetworkException;
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/net/http/UrlResponseInfo;
+    check-cast p0, Landroid/net/http/NetworkException;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static bridge synthetic c(Landroid/net/http/UrlResponseInfo;)Ljava/lang/String;
+.method public static bridge synthetic d(Landroid/net/http/HttpEngine;Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/net/http/UrlRequest$Callback;)Landroid/net/http/UrlRequest$Builder;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/net/http/UrlResponseInfo;->getHttpStatusText()Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic d(Landroid/net/http/HeaderBlock;)Ljava/util/List;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/net/http/HeaderBlock;->getAsList()Ljava/util/List;
+    invoke-virtual {p0, p1, p2, p3}, Landroid/net/http/HttpEngine;->newUrlRequestBuilder(Ljava/lang/String;Ljava/util/concurrent/Executor;Landroid/net/http/UrlRequest$Callback;)Landroid/net/http/UrlRequest$Builder;
 
     .line 2
     .line 3
@@ -60,7 +60,19 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic e(Landroid/net/http/UrlRequest$Builder;Ljava/lang/String;)V
+.method public static bridge synthetic e(Landroid/app/UiModeManager;Ljava/util/concurrent/Executor;Landroid/app/UiModeManager$ContrastChangeListener;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/app/UiModeManager;->addContrastChangeListener(Ljava/util/concurrent/Executor;Landroid/app/UiModeManager$ContrastChangeListener;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static bridge synthetic f(Landroid/net/http/UrlRequest$Builder;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -71,23 +83,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic f(Landroid/net/http/UrlRequest$Builder;Ljava/lang/String;Ljava/lang/String;)V
+.method public static bridge synthetic g(Landroid/net/http/UrlRequest;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Landroid/net/http/UrlRequest$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Landroid/net/http/UrlRequest$Builder;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static bridge synthetic g(Landroid/net/http/UrlRequest;Landroid/net/http/UrlRequest$StatusListener;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/net/http/UrlRequest;->getStatus(Landroid/net/http/UrlRequest$StatusListener;)V
+    invoke-virtual {p0}, Landroid/net/http/UrlRequest;->start()V
 
     .line 2
     .line 3

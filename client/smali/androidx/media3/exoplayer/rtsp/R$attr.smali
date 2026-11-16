@@ -41,13 +41,13 @@
 
 .field public static final lStar:I = 0x7f0402ad
 
-.field public static final nestedScrollViewStyle:I = 0x7f0403a9
+.field public static final nestedScrollViewStyle:I = 0x7f0403c1
 
-.field public static final queryPatterns:I = 0x7f0403f0
+.field public static final queryPatterns:I = 0x7f040408
 
-.field public static final shortcutMatchRequired:I = 0x7f04046f
+.field public static final shortcutMatchRequired:I = 0x7f040487
 
-.field public static final ttcIndex:I = 0x7f040591
+.field public static final ttcIndex:I = 0x7f0405a9
 
 
 # direct methods

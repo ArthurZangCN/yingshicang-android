@@ -11,7 +11,9 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/SpannedData;->a(Ljava/lang/Object;)V
+    check-cast p1, Landroidx/media3/exoplayer/source/SampleQueue$SharedSampleMetadata;
+
+    invoke-static {p1}, Landroidx/media3/exoplayer/source/SampleQueue;->a(Landroidx/media3/exoplayer/source/SampleQueue$SharedSampleMetadata;)V
 
     return-void
 .end method

@@ -3,66 +3,52 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroidx/media3/exoplayer/source/preload/RankingDataComparator$InvalidationListener;
+.implements Landroidx/media3/common/util/ListenerSet$Event;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Landroidx/media3/exoplayer/source/preload/BasePreloadManager;
-
-.field public final synthetic c:Landroidx/media3/exoplayer/source/MediaSource;
-
-.field public final synthetic d:Lcom/google/common/base/k;
+.field public final synthetic a:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/preload/BasePreloadManager;Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p4, p0, Landroidx/media3/exoplayer/source/preload/a;->a:I
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/a;->b:Landroidx/media3/exoplayer/source/preload/BasePreloadManager;
-
-    iput-object p2, p0, Landroidx/media3/exoplayer/source/preload/a;->c:Landroidx/media3/exoplayer/source/MediaSource;
-
-    iput-object p3, p0, Landroidx/media3/exoplayer/source/preload/a;->d:Lcom/google/common/base/k;
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/preload/a;->a:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final invoke(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/source/preload/a;->a:I
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/a;->a:Ljava/lang/Object;
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/source/preload/a;->b:Landroidx/media3/exoplayer/source/preload/BasePreloadManager;
+    check-cast v0, Landroidx/media3/exoplayer/source/preload/BasePreloadManager$MediaSourceHolder;
 
-    iget-object v2, p0, Landroidx/media3/exoplayer/source/preload/a;->d:Lcom/google/common/base/k;
+    check-cast p1, Landroidx/media3/exoplayer/source/preload/PreloadManagerListener;
 
-    iget-object v3, p0, Landroidx/media3/exoplayer/source/preload/a;->c:Landroidx/media3/exoplayer/source/MediaSource;
-
-    packed-switch v0, :pswitch_data_0
-
-    invoke-static {v1, v3, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->h(Landroidx/media3/exoplayer/source/preload/BasePreloadManager;Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;)V
+    invoke-static {v0, p1}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->d(Landroidx/media3/exoplayer/source/preload/BasePreloadManager$MediaSourceHolder;Landroidx/media3/exoplayer/source/preload/PreloadManagerListener;)V
 
     return-void
+.end method
 
-    :pswitch_0
-    invoke-static {v1, v3, v2}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->a(Landroidx/media3/exoplayer/source/preload/BasePreloadManager;Landroidx/media3/exoplayer/source/MediaSource;Lcom/google/common/base/k;)V
+.method public final onRankingDataComparatorInvalidated()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/preload/a;->a:Ljava/lang/Object;
+
+    check-cast v0, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;
+
+    invoke-virtual {v0}, Landroidx/media3/exoplayer/source/preload/BasePreloadManager;->invalidate()V
 
     return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

@@ -77,12 +77,12 @@
     return-void
 .end method
 
-.method private addMessageBody([B)Lcom/google/common/collect/f2;
+.method private addMessageBody([B)Lcom/google/common/collect/e2;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -117,7 +117,7 @@
 
     .line 11
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 12
     .line 13
@@ -230,7 +230,7 @@
 
     .line 63
     .line 64
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 65
     .line 66
@@ -263,7 +263,7 @@
     throw p1
 .end method
 
-.method private addMessageLine([B)Lcom/google/common/collect/f2;
+.method private addMessageLine([B)Lcom/google/common/collect/e2;
     .locals 6
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -271,7 +271,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -341,7 +341,7 @@
 
     .line 26
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 27
     .line 28
@@ -454,7 +454,7 @@
 
     .line 80
     .line 81
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 82
     .line 83
@@ -658,14 +658,14 @@
 
 
 # virtual methods
-.method public parseNext(BLjava/io/DataInputStream;)Lcom/google/common/collect/f2;
+.method public parseNext(BLjava/io/DataInputStream;)Lcom/google/common/collect/e2;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(B",
             "Ljava/io/DataInputStream;",
             ")",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -680,7 +680,7 @@
     move-result-object p1
 
     .line 5
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->addMessageLine([B)Lcom/google/common/collect/f2;
+    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->addMessageLine([B)Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -720,7 +720,7 @@
 
     .line 23
     .line 24
-    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->h(J)I
+    invoke-static {v0, v1}, Lcom/google/common/primitives/b;->o(J)I
 
     .line 25
     .line 26
@@ -749,7 +749,7 @@
 
     .line 35
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 36
     .line 37
@@ -763,7 +763,7 @@
     .line 41
     .line 42
     .line 43
-    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->addMessageBody([B)Lcom/google/common/collect/f2;
+    invoke-direct {p0, v0}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->addMessageBody([B)Lcom/google/common/collect/e2;
 
     .line 44
     .line 45
@@ -808,7 +808,7 @@
     move-result-object p1
 
     .line 64
-    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->addMessageLine([B)Lcom/google/common/collect/f2;
+    invoke-direct {p0, p1}, Landroidx/media3/exoplayer/rtsp/RtspMessageChannel$MessageParser;->addMessageLine([B)Lcom/google/common/collect/e2;
 
     .line 65
     .line 66

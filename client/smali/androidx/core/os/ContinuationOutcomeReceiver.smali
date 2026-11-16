@@ -95,7 +95,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1}, Lr3/j;->a(Ljava/lang/Throwable;)Lr3/i$b;
+    invoke-static {p1}, Lv3/j;->a(Ljava/lang/Throwable;)Lv3/i$b;
 
     .line 12
     .line 13
@@ -103,7 +103,7 @@
     move-result-object p1
 
     .line 15
-    invoke-static {p1}, Lr3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lv3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -151,7 +151,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1}, Lr3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Lv3/i;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     .line 13

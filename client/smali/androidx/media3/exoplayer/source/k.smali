@@ -4,23 +4,17 @@
 
 
 # direct methods
-.method public static bridge synthetic a(Ljava/lang/Object;)Landroid/media/MediaParser$SeekPoint;
+.method public static a(Landroidx/media3/exoplayer/source/MediaPeriod;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/media/MediaParser$SeekPoint;
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic b(Landroid/media/MediaParser;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/media/MediaParser;->release()V
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     .line 2
     .line 3
     .line 4
-    return-void
+    move-result-object p0
+
+    .line 5
+    return-object p0
 .end method

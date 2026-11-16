@@ -20,7 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/i;",
         "Lkotlin/jvm/functions/Function0<",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;"
     }
 .end annotation
@@ -57,7 +57,7 @@
     .line 1
     invoke-virtual {p0}, Landroidx/activity/OnBackPressedDispatcher$addCancellableCallback$1;->invoke()V
 
-    sget-object v0, Lr3/q;->a:Lr3/q;
+    sget-object v0, Lv3/q;->a:Lv3/q;
 
     return-object v0
 .end method

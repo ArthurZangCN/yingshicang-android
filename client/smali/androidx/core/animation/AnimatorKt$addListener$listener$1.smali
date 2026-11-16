@@ -23,7 +23,7 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -34,7 +34,7 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -45,7 +45,7 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -56,7 +56,7 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -72,22 +72,22 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;",
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/animation/Animator;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

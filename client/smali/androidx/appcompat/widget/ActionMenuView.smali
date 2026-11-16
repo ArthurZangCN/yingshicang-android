@@ -3218,27 +3218,26 @@
 
     .line 302
     .line 303
-    add-int/2addr v8, v4
+    invoke-static {v8, v4, v3, v5}, Landroid/support/v4/media/g;->a(IIII)I
 
     .line 304
-    add-int/2addr v8, v3
-
     .line 305
-    add-int/2addr v8, v5
-
     .line 306
-    move v5, v8
+    move-result v4
 
     .line 307
+    move v5, v4
+
+    .line 308
     :cond_c
     :goto_8
     add-int/lit8 v7, v7, 0x1
 
-    .line 308
     .line 309
+    .line 310
     goto :goto_7
 
-    .line 310
+    .line 311
     :cond_d
     return-void
 .end method

@@ -25,10 +25,10 @@
 
 
 # instance fields
-.field private final ack:Lkotlinx/coroutines/n;
+.field private final ack:Ln4/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkotlinx/coroutines/n<",
+            "Ln4/p<",
             "TT;>;"
         }
     .end annotation
@@ -60,7 +60,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlinx/coroutines/n;Landroidx/datastore/core/State;Lkotlin/coroutines/f;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function2;Ln4/p;Landroidx/datastore/core/State;Lkotlin/coroutines/f;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -71,7 +71,7 @@
             "-TT;>;+",
             "Ljava/lang/Object;",
             ">;",
-            "Lkotlinx/coroutines/n<",
+            "Ln4/p<",
             "TT;>;",
             "Landroidx/datastore/core/State<",
             "TT;>;",
@@ -120,7 +120,7 @@
 
     .line 21
     .line 22
-    iput-object p2, p0, Landroidx/datastore/core/Message$Update;->ack:Lkotlinx/coroutines/n;
+    iput-object p2, p0, Landroidx/datastore/core/Message$Update;->ack:Ln4/p;
 
     .line 23
     .line 24
@@ -137,18 +137,18 @@
 
 
 # virtual methods
-.method public final getAck()Lkotlinx/coroutines/n;
+.method public final getAck()Ln4/p;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lkotlinx/coroutines/n<",
+            "Ln4/p<",
             "TT;>;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/datastore/core/Message$Update;->ack:Lkotlinx/coroutines/n;
+    iget-object v0, p0, Landroidx/datastore/core/Message$Update;->ack:Ln4/p;
 
     .line 2
     .line 3

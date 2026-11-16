@@ -2,67 +2,95 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/google/common/base/e;
-
-
-# instance fields
-.field public final synthetic a:I
-
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public static a(Landroidx/media3/exoplayer/Renderer;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput p1, p0, Landroidx/media3/exoplayer/z1;->a:I
-
     return-void
 .end method
 
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public static b(Landroidx/media3/exoplayer/Renderer;JJ)J
+    .locals 0
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/z1;->a:I
+    invoke-interface {p0}, Landroidx/media3/exoplayer/Renderer;->getState()I
 
-    packed-switch v0, :pswitch_data_0
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
 
-    new-instance v0, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;
+    .line 5
+    const/4 p2, 0x1
 
-    check-cast p1, Landroidx/media3/common/util/Clock;
+    .line 6
+    if-ne p1, p2, :cond_1
 
-    invoke-direct {v0, p1}, Landroidx/media3/exoplayer/analytics/DefaultAnalyticsCollector;-><init>(Landroidx/media3/common/util/Clock;)V
+    .line 7
+    .line 8
+    invoke-interface {p0}, Landroidx/media3/exoplayer/Renderer;->isReady()Z
 
-    return-object v0
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
 
-    :pswitch_0
-    check-cast p1, Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
+    .line 12
+    if-nez p1, :cond_0
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/StreamVolumeManager;->n(Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;)Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
+    .line 13
+    .line 14
+    invoke-interface {p0}, Landroidx/media3/exoplayer/Renderer;->isEnded()Z
 
-    move-result-object p1
+    .line 15
+    .line 16
+    .line 17
+    move-result p0
 
-    return-object p1
+    .line 18
+    if-eqz p0, :cond_1
 
-    :pswitch_1
-    check-cast p1, Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
+    .line 19
+    .line 20
+    :cond_0
+    const-wide/32 p0, 0xf4240
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/StreamVolumeManager;->e(Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;)Landroidx/media3/exoplayer/StreamVolumeManager$StreamVolumeState;
+    .line 21
+    .line 22
+    .line 23
+    goto :goto_0
 
-    move-result-object p1
+    .line 24
+    :cond_1
+    const-wide/16 p0, 0x2710
 
-    return-object p1
+    .line 25
+    .line 26
+    :goto_0
+    return-wide p0
+.end method
 
-    nop
+.method public static c(Landroidx/media3/exoplayer/Renderer;)V
+    .locals 0
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    return-void
+.end method
+
+.method public static d(Landroidx/media3/exoplayer/Renderer;FF)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static e(Landroidx/media3/exoplayer/Renderer;J)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    return p0
 .end method

@@ -69,7 +69,7 @@
 
     iget-object v1, p0, Landroidx/core/util/a;->b:Landroidx/core/util/Predicate;
 
-    invoke-static {v0, v1, p1}, Landroidx/core/util/c;->d(Landroidx/core/util/Predicate;Landroidx/core/util/Predicate;Ljava/lang/Object;)Z
+    invoke-static {v0, v1, p1}, Landroidx/core/util/c;->f(Landroidx/core/util/Predicate;Landroidx/core/util/Predicate;Ljava/lang/Object;)Z
 
     move-result p1
 

@@ -3,34 +3,56 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/google/common/base/f;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/source/u;->a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
+    iput p1, p0, Landroidx/media3/exoplayer/source/u;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/exoplayer/source/u;->a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
+    iget v0, p0, Landroidx/media3/exoplayer/source/u;->a:I
 
-    invoke-static {v0}, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->b(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
+    packed-switch v0, :pswitch_data_0
 
-    return-void
+    check-cast p1, Landroid/os/Bundle;
+
+    invoke-static {p1}, Landroidx/media3/common/TrackGroup;->fromBundle(Landroid/os/Bundle;)Landroidx/media3/common/TrackGroup;
+
+    move-result-object p1
+
+    return-object p1
+
+    :pswitch_0
+    check-cast p1, Landroidx/media3/exoplayer/source/MediaPeriod;
+
+    invoke-static {p1}, Landroidx/media3/exoplayer/source/MergingMediaPeriod;->a(Landroidx/media3/exoplayer/source/MediaPeriod;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -387,11 +387,11 @@
     return p0
 .end method
 
-.method public static synthetic access$1700(Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;Landroid/net/Uri;)Lcom/google/common/collect/f2;
+.method public static synthetic access$1700(Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;Landroid/net/Uri;)Lcom/google/common/collect/e2;
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/media3/exoplayer/rtsp/RtspClient;->buildTrackList(Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;Landroid/net/Uri;)Lcom/google/common/collect/f2;
+    invoke-static {p0, p1}, Landroidx/media3/exoplayer/rtsp/RtspClient;->buildTrackList(Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;Landroid/net/Uri;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -603,7 +603,7 @@
     return-void
 .end method
 
-.method private static buildTrackList(Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;Landroid/net/Uri;)Lcom/google/common/collect/f2;
+.method private static buildTrackList(Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;Landroid/net/Uri;)Lcom/google/common/collect/e2;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -611,18 +611,18 @@
             "Landroidx/media3/exoplayer/rtsp/RtspDescribeResponse;",
             "Landroid/net/Uri;",
             ")",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/rtsp/RtspMediaTrack;",
             ">;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Lcom/google/common/collect/f2$a;
+    new-instance v0, Lcom/google/common/collect/e2$a;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lcom/google/common/collect/f2$a;-><init>()V
+    invoke-direct {v0}, Lcom/google/common/collect/e2$a;-><init>()V
 
     .line 4
     .line 5
@@ -635,7 +635,7 @@
 
     .line 8
     .line 9
-    iget-object v2, v2, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/f2;
+    iget-object v2, v2, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/e2;
 
     .line 10
     .line 11
@@ -655,7 +655,7 @@
 
     .line 18
     .line 19
-    iget-object v2, v2, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/f2;
+    iget-object v2, v2, Landroidx/media3/exoplayer/rtsp/SessionDescription;->mediaDescriptionList:Lcom/google/common/collect/e2;
 
     .line 20
     .line 21
@@ -696,7 +696,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-virtual {v0, v3}, Lcom/google/common/collect/f2$a;->e(Ljava/lang/Object;)V
+    invoke-virtual {v0, v3}, Lcom/google/common/collect/e2$a;->e(Ljava/lang/Object;)V
 
     .line 41
     .line 42
@@ -710,7 +710,7 @@
 
     .line 46
     :cond_1
-    invoke-virtual {v0}, Lcom/google/common/collect/f2$a;->j()Lcom/google/common/collect/f2;
+    invoke-virtual {v0}, Lcom/google/common/collect/e2$a;->j()Lcom/google/common/collect/e2;
 
     .line 47
     .line 48
@@ -878,88 +878,104 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result-object p1
 
     .line 5
-    if-eqz v0, :cond_0
+    invoke-static {p1}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
 
     .line 6
     .line 7
-    const/4 v0, 0x1
-
     .line 8
-    goto :goto_0
+    move-result-object p1
 
     .line 9
-    :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {p1}, Ljava/net/URI;->getHost()Ljava/lang/String;
 
     .line 10
-    :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
-
     .line 11
     .line 12
+    move-result-object v0
+
     .line 13
-    invoke-virtual {p1}, Landroid/net/Uri;->getPort()I
+    if-eqz v0, :cond_0
 
     .line 14
     .line 15
+    const/4 v0, 0x1
+
     .line 16
-    move-result v0
+    goto :goto_0
 
     .line 17
-    if-lez v0, :cond_1
+    :cond_0
+    const/4 v0, 0x0
 
     .line 18
-    .line 19
-    invoke-virtual {p1}, Landroid/net/Uri;->getPort()I
+    :goto_0
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
+    .line 19
     .line 20
     .line 21
+    invoke-virtual {p1}, Ljava/net/URI;->getPort()I
+
     .line 22
+    .line 23
+    .line 24
     move-result v0
 
-    .line 23
+    .line 25
+    if-lez v0, :cond_1
+
+    .line 26
+    .line 27
+    invoke-virtual {p1}, Ljava/net/URI;->getPort()I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
     goto :goto_1
 
-    .line 24
+    .line 32
     :cond_1
     const/16 v0, 0x22a
 
-    .line 25
-    .line 26
+    .line 33
+    .line 34
     :goto_1
     iget-object v1, p0, Landroidx/media3/exoplayer/rtsp/RtspClient;->socketFactory:Ljavax/net/SocketFactory;
 
-    .line 27
-    .line 28
-    invoke-virtual {p1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object p1
-
-    .line 32
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 33
-    .line 34
     .line 35
-    invoke-virtual {v1, p1, v0}, Ljavax/net/SocketFactory;->createSocket(Ljava/lang/String;I)Ljava/net/Socket;
-
     .line 36
+    invoke-virtual {p1}, Ljava/net/URI;->getHost()Ljava/lang/String;
+
     .line 37
     .line 38
+    .line 39
     move-result-object p1
 
-    .line 39
+    .line 40
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {v1, p1, v0}, Ljavax/net/SocketFactory;->createSocket(Ljava/lang/String;I)Ljava/net/Socket;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
     return-object p1
 .end method
 
@@ -983,7 +999,7 @@
 
     .line 4
     .line 5
-    new-instance v0, Lcom/google/common/base/g;
+    new-instance v0, Lcom/google/common/base/h;
 
     .line 6
     .line 7
@@ -991,12 +1007,12 @@
 
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Lcom/google/common/base/g;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/google/common/base/h;-><init>(Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    invoke-virtual {v0, p1}, Lcom/google/common/base/g;->b(Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/google/common/base/h;->b(Ljava/lang/Iterable;)Ljava/lang/String;
 
     .line 13
     .line 14

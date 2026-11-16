@@ -56,7 +56,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {p1, v0}, Landroid/support/v4/media/session/e;->j(Landroid/app/Activity;Landroidx/lifecycle/ReportFragment$LifecycleCallbacks;)V
+    invoke-static {p1, v0}, Landroid/support/v4/media/session/a;->l(Landroid/app/Activity;Landroidx/lifecycle/ReportFragment$LifecycleCallbacks;)V
 
     .line 12
     .line 13

@@ -105,7 +105,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Long;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -327,7 +327,7 @@
     return p0
 .end method
 
-.method public static final keyIterator(Landroid/util/SparseLongArray;)Lkotlin/collections/v;
+.method public static final keyIterator(Landroid/util/SparseLongArray;)Lkotlin/collections/u;
     .locals 1
 
     .line 1
@@ -502,7 +502,7 @@
     return-void
 .end method
 
-.method public static final valueIterator(Landroid/util/SparseLongArray;)Lkotlin/collections/w;
+.method public static final valueIterator(Landroid/util/SparseLongArray;)Lkotlin/collections/v;
     .locals 1
 
     .line 1

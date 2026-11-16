@@ -39,7 +39,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Landroidx/core/os/a;->k(Ljava/lang/Object;)Landroid/os/OutcomeReceiver;
+    invoke-static {v0}, Landroidx/core/app/h;->h(Ljava/lang/Object;)Landroid/os/OutcomeReceiver;
 
     .line 7
     .line 8

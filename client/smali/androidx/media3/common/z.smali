@@ -3,33 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
-.field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer;
-
-.field public final synthetic b:Landroidx/media3/common/SimpleBasePlayer$State;
-
-.field public final synthetic c:Ljava/util/List;
-
-.field public final synthetic d:I
+.field public final synthetic a:Landroidx/media3/common/SimpleBasePlayer$State;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;I)V
+.method public synthetic constructor <init>(Landroidx/media3/common/SimpleBasePlayer$State;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/media3/common/z;->a:Landroidx/media3/common/SimpleBasePlayer;
-
-    iput-object p2, p0, Landroidx/media3/common/z;->b:Landroidx/media3/common/SimpleBasePlayer$State;
-
-    iput-object p3, p0, Landroidx/media3/common/z;->c:Ljava/util/List;
-
-    iput p4, p0, Landroidx/media3/common/z;->d:I
+    iput-object p1, p0, Landroidx/media3/common/z;->a:Landroidx/media3/common/SimpleBasePlayer$State;
 
     return-void
 .end method
@@ -37,18 +25,12 @@
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 4
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/media3/common/z;->c:Ljava/util/List;
+    iget-object v0, p0, Landroidx/media3/common/z;->a:Landroidx/media3/common/SimpleBasePlayer$State;
 
-    iget v1, p0, Landroidx/media3/common/z;->d:I
-
-    iget-object v2, p0, Landroidx/media3/common/z;->a:Landroidx/media3/common/SimpleBasePlayer;
-
-    iget-object v3, p0, Landroidx/media3/common/z;->b:Landroidx/media3/common/SimpleBasePlayer$State;
-
-    invoke-static {v2, v3, v0, v1}, Landroidx/media3/common/SimpleBasePlayer;->I(Landroidx/media3/common/SimpleBasePlayer;Landroidx/media3/common/SimpleBasePlayer$State;Ljava/util/List;I)Landroidx/media3/common/SimpleBasePlayer$State;
+    invoke-static {v0}, Landroidx/media3/common/SimpleBasePlayer;->j0(Landroidx/media3/common/SimpleBasePlayer$State;)Landroidx/media3/common/SimpleBasePlayer$State;
 
     move-result-object v0
 

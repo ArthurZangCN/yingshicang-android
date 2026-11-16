@@ -99,7 +99,7 @@
     move-result v9
 
     .line 26
-    invoke-static {v9}, Landroidx/media3/exoplayer/w1;->k(I)I
+    invoke-static {v9}, Landroidx/media3/exoplayer/a2;->k(I)I
 
     .line 27
     .line 28

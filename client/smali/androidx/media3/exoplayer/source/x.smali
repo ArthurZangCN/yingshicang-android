@@ -3,29 +3,34 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/media3/common/util/Consumer;
-.implements Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor$Factory;
+.implements Ljava/lang/Runnable;
 
 
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
     .locals 0
 
     .line 1
-    check-cast p1, Landroidx/media3/exoplayer/source/SampleQueue$SharedSampleMetadata;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/SampleQueue;->a(Landroidx/media3/exoplayer/source/SampleQueue$SharedSampleMetadata;)V
+    iput-object p1, p0, Landroidx/media3/exoplayer/source/x;->a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
 
     return-void
 .end method
 
-.method public final createProgressiveMediaExtractor(Landroidx/media3/exoplayer/analytics/PlayerId;)Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor;
-    .locals 0
+
+# virtual methods
+.method public final run()V
+    .locals 1
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/exoplayer/source/MediaParserExtractorAdapter;->a(Landroidx/media3/exoplayer/analytics/PlayerId;)Landroidx/media3/exoplayer/source/ProgressiveMediaExtractor;
+    iget-object v0, p0, Landroidx/media3/exoplayer/source/x;->a:Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;
 
-    move-result-object p1
+    invoke-static {v0}, Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;->c(Landroidx/media3/exoplayer/source/ProgressiveMediaPeriod;)V
 
-    return-object p1
+    return-void
 .end method

@@ -844,7 +844,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 5
     iget v1, p0, Landroidx/media3/decoder/SimpleDecoder;->availableInputBufferCount:I
@@ -1233,7 +1233,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 5
     iget-object v1, p0, Landroidx/media3/decoder/SimpleDecoder;->queuedInputBuffers:Ljava/util/ArrayDeque;
@@ -1436,7 +1436,7 @@
 
     .line 12
     :goto_0
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 13
     .line 14
@@ -1531,7 +1531,7 @@
 
     .line 21
     :goto_1
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 22
     .line 23

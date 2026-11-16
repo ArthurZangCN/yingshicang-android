@@ -175,7 +175,7 @@
 
     .line 7
     :goto_0
-    invoke-static {v12}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v12}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     cmp-long v12, v4, v10
 
@@ -190,7 +190,7 @@
 
     .line 8
     :goto_1
-    invoke-static {v12}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v12}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     cmp-long v10, v6, v10
 
@@ -210,7 +210,7 @@
     .line 9
     :cond_3
     :goto_2
-    invoke-static {v13}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v13}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 10
     invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -252,7 +252,7 @@
 
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    invoke-static {v1}, Lj$/util/DesugarCollections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -670,7 +670,7 @@
 
     .line 57
     .line 58
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/e;->c(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/e;->l(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 59
     .line 60

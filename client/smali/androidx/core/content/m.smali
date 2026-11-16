@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Ljava/lang/Comparable;
+.field public final synthetic b:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Comparable;I)V
+.method public synthetic constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .line 1
@@ -21,7 +21,7 @@
 
     iput p2, p0, Landroidx/core/content/m;->a:I
 
-    iput-object p1, p0, Landroidx/core/content/m;->b:Ljava/lang/Comparable;
+    iput-object p1, p0, Landroidx/core/content/m;->b:Ljava/lang/String;
 
     return-void
 .end method
@@ -89,26 +89,22 @@
     .line 1
     iget v0, p0, Landroidx/core/content/m;->a:I
 
-    iget-object v1, p0, Landroidx/core/content/m;->b:Ljava/lang/Comparable;
+    iget-object v1, p0, Landroidx/core/content/m;->b:Ljava/lang/String;
 
     packed-switch v0, :pswitch_data_0
 
-    check-cast v1, Ljava/lang/String;
+    check-cast p1, Landroid/net/Uri;
 
-    check-cast p1, Ljava/lang/String;
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Landroidx/core/content/IntentSanitizer$Builder;->d(Landroid/net/Uri;Ljava/lang/String;)Z
 
     move-result p1
 
     return p1
 
     :pswitch_0
-    check-cast v1, Landroid/content/ComponentName;
+    check-cast p1, Ljava/lang/String;
 
-    check-cast p1, Landroid/content/ComponentName;
-
-    invoke-virtual {v1, p1}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 

@@ -2,91 +2,59 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljava/lang/Object;
-
-.field public final synthetic c:Ljava/lang/Object;
-
-.field public final synthetic d:Ljava/lang/Object;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)V
+.method public static a(Landroidx/media3/exoplayer/drm/DrmSession;)Z
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p0, 0x0
 
-    iput p2, p0, Landroidx/media3/exoplayer/drm/i;->a:I
-
-    iput-object p1, p0, Landroidx/media3/exoplayer/drm/i;->b:Ljava/lang/Object;
-
-    iput-object p3, p0, Landroidx/media3/exoplayer/drm/i;->c:Ljava/lang/Object;
-
-    iput-object p4, p0, Landroidx/media3/exoplayer/drm/i;->d:Ljava/lang/Object;
-
-    return-void
+    return p0
 .end method
 
-
-# virtual methods
-.method public final run()V
-    .locals 4
+.method public static b(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/DrmSession;)V
+    .locals 1
+    .param p0    # Landroidx/media3/exoplayer/drm/DrmSession;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .param p1    # Landroidx/media3/exoplayer/drm/DrmSession;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    iget v0, p0, Landroidx/media3/exoplayer/drm/i;->a:I
+    if-ne p0, p1, :cond_0
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/drm/i;->d:Ljava/lang/Object;
-
-    iget-object v2, p0, Landroidx/media3/exoplayer/drm/i;->c:Ljava/lang/Object;
-
-    iget-object v3, p0, Landroidx/media3/exoplayer/drm/i;->b:Ljava/lang/Object;
-
-    packed-switch v0, :pswitch_data_0
-
-    check-cast v3, Landroidx/room/QueryInterceptorDatabase;
-
-    check-cast v2, Landroidx/sqlite/db/SupportSQLiteQuery;
-
-    check-cast v1, Landroidx/room/QueryInterceptorProgram;
-
-    invoke-static {v3, v2, v1}, Landroidx/room/QueryInterceptorDatabase;->o(Landroidx/room/QueryInterceptorDatabase;Landroidx/sqlite/db/SupportSQLiteQuery;Landroidx/room/QueryInterceptorProgram;)V
-
+    .line 2
+    .line 3
     return-void
 
-    :pswitch_0
-    check-cast v3, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;
+    .line 4
+    :cond_0
+    const/4 v0, 0x0
 
-    check-cast v2, Landroidx/media3/exoplayer/drm/DrmSession;
+    .line 5
+    if-eqz p1, :cond_1
 
-    check-cast v1, Lcom/google/common/util/concurrent/x;
+    .line 6
+    .line 7
+    invoke-interface {p1, v0}, Landroidx/media3/exoplayer/drm/DrmSession;->acquire(Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;)V
 
-    invoke-static {v2, v3, v1}, Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;->a(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/OfflineLicenseHelper;Lcom/google/common/util/concurrent/x;)V
+    .line 8
+    .line 9
+    .line 10
+    :cond_1
+    if-eqz p0, :cond_2
 
+    .line 11
+    .line 12
+    invoke-interface {p0, v0}, Landroidx/media3/exoplayer/drm/DrmSession;->release(Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;)V
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_2
     return-void
-
-    :pswitch_1
-    check-cast v3, Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;
-
-    check-cast v2, Landroidx/media3/exoplayer/drm/DrmSessionEventListener;
-
-    check-cast v1, Landroidx/media3/exoplayer/drm/KeyRequestInfo;
-
-    invoke-static {v3, v2, v1}, Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;->f(Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;Landroidx/media3/exoplayer/drm/DrmSessionEventListener;Landroidx/media3/exoplayer/drm/KeyRequestInfo;)V
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

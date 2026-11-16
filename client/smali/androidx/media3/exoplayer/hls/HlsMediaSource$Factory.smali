@@ -29,13 +29,13 @@
 
 .field private compositeSequenceableLoaderFactory:Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;
 
-.field private downloadExecutorSupplier:Lcom/google/common/base/x;
+.field private downloadExecutorSupplier:Lcom/google/common/base/z;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;"
         }
@@ -135,7 +135,7 @@
     const/4 p1, 0x0
 
     .line 10
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     const/4 p1, 0x1
 
@@ -262,6 +262,11 @@
 
     .line 17
     :goto_2
+    iget-boolean v1, v2, Landroidx/media3/common/MediaItem;->adblock:Z
+
+    invoke-interface {v12, v1}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParserFactory;->setAdblock(Z)V
+
+    .line 18
     new-instance v19, Landroidx/media3/exoplayer/hls/HlsMediaSource;
 
     move-object/from16 v1, v19
@@ -272,7 +277,7 @@
 
     iget-object v7, v0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->drmSessionManagerProvider:Landroidx/media3/exoplayer/drm/DrmSessionManagerProvider;
 
-    .line 18
+    .line 19
     invoke-interface {v7, v2}, Landroidx/media3/exoplayer/drm/DrmSessionManagerProvider;->get(Landroidx/media3/common/MediaItem;)Landroidx/media3/exoplayer/drm/DrmSessionManager;
 
     move-result-object v7
@@ -285,12 +290,12 @@
 
     iget-object v10, v0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->hlsDataSourceFactory:Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;
 
-    iget-object v14, v0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iget-object v14, v0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     move-object v13, v6
 
-    .line 19
-    invoke-interface/range {v9 .. v14}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker$Factory;->createTracker(Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParserFactory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker;
+    .line 20
+    invoke-interface/range {v9 .. v14}, Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker$Factory;->createTracker(Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistParserFactory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Lcom/google/common/base/z;)Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker;
 
     move-result-object v9
 
@@ -308,7 +313,7 @@
 
     move-wide v15, v1
 
-    iget-object v1, v0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iget-object v1, v0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     move-object/from16 v17, v1
 
@@ -318,7 +323,7 @@
 
     move-object/from16 v1, v20
 
-    invoke-direct/range {v1 .. v18}, Landroidx/media3/exoplayer/hls/HlsMediaSource;-><init>(Landroidx/media3/common/MediaItem;Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker;JZIZJLcom/google/common/base/x;Landroidx/media3/exoplayer/hls/HlsMediaSource$1;)V
+    invoke-direct/range {v1 .. v18}, Landroidx/media3/exoplayer/hls/HlsMediaSource;-><init>(Landroidx/media3/common/MediaItem;Landroidx/media3/exoplayer/hls/HlsDataSourceFactory;Landroidx/media3/exoplayer/hls/HlsExtractorFactory;Landroidx/media3/exoplayer/source/CompositeSequenceableLoaderFactory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration;Landroidx/media3/exoplayer/drm/DrmSessionManager;Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;Landroidx/media3/exoplayer/hls/playlist/HlsPlaylistTracker;JZIZJLcom/google/common/base/z;Landroidx/media3/exoplayer/hls/HlsMediaSource$1;)V
 
     return-object v19
 .end method
@@ -438,7 +443,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -450,12 +455,12 @@
     return-object p0
 .end method
 
-.method public setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;
+.method public setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/google/common/base/x<",
+            "Lcom/google/common/base/z<",
             "Landroidx/media3/exoplayer/util/ReleasableExecutor;",
             ">;)",
             "Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;"
@@ -463,16 +468,16 @@
     .end annotation
 
     .line 2
-    iput-object p1, p0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/x;
+    iput-object p1, p0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->downloadExecutorSupplier:Lcom/google/common/base/z;
 
     return-object p0
 .end method
 
-.method public bridge synthetic setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public bridge synthetic setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/x;)Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;
+    invoke-virtual {p0, p1}, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->setDownloadExecutor(Lcom/google/common/base/z;)Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;
 
     move-result-object p1
 
@@ -486,7 +491,7 @@
     const-string v0, "MediaSource.Factory#setDrmSessionManagerProvider no longer handles null by instantiating a new DefaultDrmSessionManagerProvider. Explicitly construct and pass an instance in order to retain the old behavior."
 
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->drmSessionManagerProvider:Landroidx/media3/exoplayer/drm/DrmSessionManagerProvider;
 
@@ -539,7 +544,7 @@
     const-string v0, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior."
 
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iput-object p1, p0, Landroidx/media3/exoplayer/hls/HlsMediaSource$Factory;->loadErrorHandlingPolicy:Landroidx/media3/exoplayer/upstream/LoadErrorHandlingPolicy;
 
@@ -576,7 +581,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -596,7 +601,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     .line 5

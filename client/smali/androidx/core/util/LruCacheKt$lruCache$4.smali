@@ -37,7 +37,7 @@
             "Lkotlin/jvm/functions/Function4<",
             "Ljava/lang/Boolean;",
             "TK;TV;TV;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -71,7 +71,7 @@
             "-",
             "Ljava/lang/Boolean;",
             "-TK;-TV;-TV;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

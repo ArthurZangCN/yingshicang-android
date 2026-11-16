@@ -290,7 +290,7 @@
     const/4 v2, 0x0
 
     .line 39
-    invoke-direct {v1, v2, p0, p1}, Landroidx/media3/exoplayer/video/f;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/media3/exoplayer/video/f;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 40
     .line 41

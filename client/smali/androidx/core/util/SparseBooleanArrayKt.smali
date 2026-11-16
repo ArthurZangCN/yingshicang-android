@@ -105,7 +105,7 @@
             "Ljava/lang/Integer;",
             "-",
             "Ljava/lang/Boolean;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation
@@ -327,7 +327,7 @@
     return p0
 .end method
 
-.method public static final keyIterator(Landroid/util/SparseBooleanArray;)Lkotlin/collections/v;
+.method public static final keyIterator(Landroid/util/SparseBooleanArray;)Lkotlin/collections/u;
     .locals 1
 
     .line 1

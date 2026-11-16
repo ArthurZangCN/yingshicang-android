@@ -28,7 +28,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p1}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -66,7 +66,7 @@
     .locals 1
 
     .line 7
-    invoke-static {p1}, Landroid/support/v4/media/f;->k(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1}, Landroid/support/v4/media/f;->i(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -182,7 +182,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, p0, p1}, Landroid/support/v4/media/f;->i(Ljava/lang/String;J)Ljava/lang/String;
+    invoke-static {v0, p0, p1}, Landroid/support/v4/media/d;->b(Ljava/lang/String;J)Ljava/lang/String;
 
     .line 16
     .line 17

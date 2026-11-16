@@ -128,10 +128,10 @@
 
 .field private isSampleDependedOn:Z
 
-.field private lastSniffFailures:Lcom/google/common/collect/f2;
+.field private lastSniffFailures:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/SniffFailure;",
             ">;"
         }
@@ -210,70 +210,72 @@
 
     .line 2
     .line 3
-    const/16 v1, 0x8
+    const/4 v1, 0x7
 
     .line 4
-    .line 5
     invoke-direct {v0, v1}, Landroidx/constraintlayout/core/state/b;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     sput-object v0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->FACTORY:Landroidx/media3/extractor/ExtractorsFactory;
 
+    .line 8
     .line 9
-    .line 10
     const/16 v0, 0x10
 
+    .line 10
     .line 11
-    .line 12
     new-array v0, v0, [B
 
+    .line 12
     .line 13
-    .line 14
     fill-array-data v0, :array_0
 
+    .line 14
     .line 15
     .line 16
-    .line 17
     sput-object v0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->PIFF_SAMPLE_ENCRYPTION_BOX_EXTENDED_TYPE:[B
 
+    .line 17
     .line 18
-    .line 19
     new-instance v0, Landroidx/media3/common/Format$Builder;
 
+    .line 19
     .line 20
-    .line 21
     invoke-direct {v0}, Landroidx/media3/common/Format$Builder;-><init>()V
 
+    .line 21
     .line 22
     .line 23
-    .line 24
     const-string v1, "application/x-emsg"
 
+    .line 24
     .line 25
-    .line 26
     invoke-virtual {v0, v1}, Landroidx/media3/common/Format$Builder;->setSampleMimeType(Ljava/lang/String;)Landroidx/media3/common/Format$Builder;
 
+    .line 26
     .line 27
     .line 28
-    .line 29
     move-result-object v0
 
-    .line 30
+    .line 29
     invoke-virtual {v0}, Landroidx/media3/common/Format$Builder;->build()Landroidx/media3/common/Format;
 
+    .line 30
     .line 31
     .line 32
-    .line 33
     move-result-object v0
 
-    .line 34
+    .line 33
     sput-object v0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->EMSG_FORMAT:Landroidx/media3/common/Format;
 
+    .line 34
     .line 35
-    .line 36
     return-void
+
+    .line 36
+    nop
 
     .line 37
     :array_0
@@ -306,7 +308,7 @@
     sget-object v1, Landroidx/media3/extractor/text/SubtitleParser$Factory;->UNSUPPORTED:Landroidx/media3/extractor/text/SubtitleParser$Factory;
 
     .line 2
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v5
 
@@ -337,7 +339,7 @@
     or-int/lit8 v2, p1, 0x20
 
     .line 7
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v5
 
@@ -370,7 +372,7 @@
     or-int/lit8 v2, p1, 0x20
 
     .line 12
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v5
 
@@ -407,7 +409,7 @@
     or-int/lit8 v2, p1, 0x20
 
     .line 15
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v5
 
@@ -523,7 +525,7 @@
     .locals 7
 
     .line 4
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v5
 
@@ -549,7 +551,7 @@
     .locals 7
 
     .line 9
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v5
 
@@ -616,7 +618,7 @@
     iput-object p4, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->sideloadedTrack:Landroidx/media3/extractor/mp4/Track;
 
     .line 24
-    invoke-static {p5}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p5}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
@@ -700,11 +702,11 @@
     iput-object p1, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->trackBundles:Landroid/util/SparseArray;
 
     .line 36
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->lastSniffFailures:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->lastSniffFailures:Lcom/google/common/collect/e2;
 
     const-wide p1, -0x7fffffffffffffffL    # -4.9E-324
 
@@ -803,7 +805,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
     .line 7
@@ -853,7 +855,7 @@
 
     .line 25
     .line 26
-    invoke-static {p1, v0}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 27
     .line 28
@@ -1883,18 +1885,21 @@
 .end method
 
 .method public static newFactory(Landroidx/media3/extractor/text/SubtitleParser$Factory;)Landroidx/media3/extractor/ExtractorsFactory;
-    .locals 1
+    .locals 2
 
     .line 1
-    new-instance v0, Landroidx/core/view/v;
+    new-instance v0, Landroidx/media3/extractor/mp4/b;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Landroidx/core/view/v;-><init>(Ljava/lang/Object;)V
+    const/4 v1, 0x0
 
     .line 4
+    invoke-direct {v0, p0, v1}, Landroidx/media3/extractor/mp4/b;-><init>(Landroidx/media3/extractor/text/SubtitleParser$Factory;I)V
+
     .line 5
     .line 6
+    .line 7
     return-object v0
 .end method
 
@@ -2062,7 +2067,7 @@
 
     .line 37
     .line 38
-    invoke-static {v1, v2, v3}, Landroid/support/v4/media/e;->e(Ljava/lang/String;ILjava/lang/String;)V
+    invoke-static {v1, v2, v3}, Landroid/support/v4/media/a;->g(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 39
     .line 40
@@ -3094,7 +3099,7 @@
 
     .line 15
     .line 16
-    invoke-static {v2, v3}, Lcom/github/tvbox/osc/util/t;->y(ZLjava/lang/Object;)V
+    invoke-static {v2, v3}, Lcom/github/tvbox/osc/util/h0;->E(ZLjava/lang/Object;)V
 
     .line 17
     .line 18
@@ -3471,7 +3476,7 @@
 
     .line 200
     .line 201
-    invoke-static/range {v1 .. v9}, Landroidx/media3/extractor/mp4/BoxParser;->parseTraks(Landroidx/media3/container/Mp4Box$ContainerBox;Landroidx/media3/extractor/GaplessInfoHolder;JLandroidx/media3/common/DrmInitData;ZZLcom/google/common/base/e;Z)Ljava/util/List;
+    invoke-static/range {v1 .. v9}, Landroidx/media3/extractor/mp4/BoxParser;->parseTraks(Landroidx/media3/container/Mp4Box$ContainerBox;Landroidx/media3/extractor/GaplessInfoHolder;JLandroidx/media3/common/DrmInitData;ZZLcom/google/common/base/f;Z)Ljava/util/List;
 
     .line 202
     .line 203
@@ -3745,7 +3750,7 @@
 
     .line 334
     :goto_6
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 335
     .line 336
@@ -4437,7 +4442,7 @@
 
     .line 86
     .line 87
-    invoke-static {p0, v1, p1}, Landroid/support/v4/media/a;->d(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0, v1, p1}, Landroid/support/v4/media/a;->e(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 88
     .line 89
@@ -5053,7 +5058,7 @@
     const-string p1, " is different from fragment sample count"
 
     .line 12
-    invoke-static {p0, v1, p1}, Landroid/support/v4/media/a;->d(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0, v1, p1}, Landroid/support/v4/media/a;->e(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -9948,19 +9953,19 @@
 
 
 # virtual methods
-.method public getSniffFailureDetails()Lcom/google/common/collect/f2;
+.method public getSniffFailureDetails()Lcom/google/common/collect/e2;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/extractor/SniffFailure;",
             ">;"
         }
     .end annotation
 
     .line 2
-    iget-object v0, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->lastSniffFailures:Lcom/google/common/collect/f2;
+    iget-object v0, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->lastSniffFailures:Lcom/google/common/collect/e2;
 
     return-object v0
 .end method
@@ -9969,7 +9974,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->getSniffFailureDetails()Lcom/google/common/collect/f2;
+    invoke-virtual {p0}, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->getSniffFailureDetails()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
@@ -10490,7 +10495,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
@@ -10502,7 +10507,7 @@
 
     .line 12
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 13
     .line 14
@@ -10511,7 +10516,7 @@
 
     .line 16
     :goto_0
-    iput-object v0, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->lastSniffFailures:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/extractor/mp4/FragmentedMp4Extractor;->lastSniffFailures:Lcom/google/common/collect/e2;
 
     .line 17
     .line 18

@@ -108,7 +108,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lkotlin/collections/s;->INSTANCE:Lkotlin/collections/s;
+    sget-object v0, Lkotlin/collections/r;->INSTANCE:Lkotlin/collections/r;
 
     .line 2
     .line 3

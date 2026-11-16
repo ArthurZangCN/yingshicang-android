@@ -85,7 +85,7 @@
     move-result v0
 
     .line 10
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 11
     .line 12
@@ -215,7 +215,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 14
     .line 15
@@ -235,7 +235,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0, p1}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 24
     .line 25
@@ -287,7 +287,7 @@
 
     .line 13
     .line 14
-    invoke-static {v2}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v2}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 15
     .line 16

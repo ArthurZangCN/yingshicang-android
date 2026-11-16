@@ -318,11 +318,11 @@
 
     .line 7
     .line 8
-    new-instance v1, Landroidx/core/location/n;
+    new-instance v1, Landroidx/core/location/o;
 
     .line 9
     .line 10
-    invoke-direct {v1, p0, p1}, Landroidx/core/location/n;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;I)V
+    invoke-direct {v1, p0, p1}, Landroidx/core/location/o;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;I)V
 
     .line 11
     .line 12
@@ -353,11 +353,11 @@
     :cond_0
     iget-object v0, p0, Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;->mExecutor:Ljava/util/concurrent/Executor;
 
-    new-instance v1, Landroidx/core/location/m;
+    new-instance v1, Landroidx/core/location/g;
 
-    const/4 v2, 0x0
+    const/4 v2, 0x2
 
-    invoke-direct {v1, v2, p0, p1}, Landroidx/core/location/m;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/core/location/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -394,7 +394,7 @@
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, v2, p0, p1}, Landroidx/core/location/j;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/core/location/j;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
@@ -402,7 +402,7 @@
 .end method
 
 .method public onProviderDisabled(Ljava/lang/String;)V
-    .locals 3
+    .locals 2
     .param p1    # Ljava/lang/String;
         .annotation build Landroidx/annotation/NonNull;
         .end annotation
@@ -425,23 +425,20 @@
 
     .line 7
     .line 8
-    new-instance v1, Landroidx/core/location/i;
+    new-instance v1, Landroidx/core/location/n;
 
     .line 9
     .line 10
-    const/4 v2, 0x1
+    invoke-direct {v1, p0, p1}, Landroidx/core/location/n;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;)V
 
     .line 11
-    invoke-direct {v1, v2, p0, p1}, Landroidx/core/location/i;-><init>(ILjava/lang/Object;Ljava/lang/Object;)V
-
     .line 12
     .line 13
-    .line 14
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
+    .line 14
     .line 15
     .line 16
-    .line 17
     return-void
 .end method
 
@@ -469,11 +466,11 @@
 
     .line 7
     .line 8
-    new-instance v1, Landroidx/core/location/l;
+    new-instance v1, Landroidx/core/location/m;
 
     .line 9
     .line 10
-    invoke-direct {v1, p0, p1}, Landroidx/core/location/l;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1}, Landroidx/core/location/m;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;)V
 
     .line 11
     .line 12
@@ -506,11 +503,11 @@
 
     .line 7
     .line 8
-    new-instance v1, Landroidx/core/location/o;
+    new-instance v1, Landroidx/core/location/p;
 
     .line 9
     .line 10
-    invoke-direct {v1, p0, p1, p2, p3}, Landroidx/core/location/o;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;ILandroid/os/Bundle;)V
+    invoke-direct {v1, p0, p1, p2, p3}, Landroidx/core/location/p;-><init>(Landroidx/core/location/LocationManagerCompat$LocationListenerTransport;Ljava/lang/String;ILandroid/os/Bundle;)V
 
     .line 11
     .line 12

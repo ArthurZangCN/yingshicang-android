@@ -15,6 +15,8 @@
 
 
 # instance fields
+.field private adblock:Z
+
 .field private adsConfiguration:Landroidx/media3/common/MediaItem$AdsConfiguration;
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
@@ -26,6 +28,8 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 .end field
+
+.field private decode:I
 
 .field private drmConfiguration:Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;
 
@@ -60,10 +64,10 @@
     .end annotation
 .end field
 
-.field private subtitleConfigurations:Lcom/google/common/collect/f2;
+.field private subtitleConfigurations:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/MediaItem$SubtitleConfiguration;",
             ">;"
         }
@@ -112,11 +116,11 @@
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->streamKeys:Ljava/util/List;
 
     .line 6
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
     .line 7
     new-instance v0, Landroidx/media3/common/MediaItem$LiveConfiguration$Builder;
@@ -178,53 +182,63 @@
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->requestMetadata:Landroidx/media3/common/MediaItem$RequestMetadata;
 
     .line 16
+    iget v0, p1, Landroidx/media3/common/MediaItem;->decode:I
+
+    iput v0, p0, Landroidx/media3/common/MediaItem$Builder;->decode:I
+
+    .line 17
+    iget-boolean v0, p1, Landroidx/media3/common/MediaItem;->adblock:Z
+
+    iput-boolean v0, p0, Landroidx/media3/common/MediaItem$Builder;->adblock:Z
+
+    .line 18
     iget-object p1, p1, Landroidx/media3/common/MediaItem;->localConfiguration:Landroidx/media3/common/MediaItem$LocalConfiguration;
 
     if-eqz p1, :cond_1
 
-    .line 17
+    .line 19
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->customCacheKey:Ljava/lang/String;
 
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->customCacheKey:Ljava/lang/String;
 
-    .line 18
+    .line 20
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->mimeType:Ljava/lang/String;
 
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->mimeType:Ljava/lang/String;
 
-    .line 19
+    .line 21
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->uri:Landroid/net/Uri;
 
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->uri:Landroid/net/Uri;
 
-    .line 20
+    .line 22
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->streamKeys:Ljava/util/List;
 
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->streamKeys:Ljava/util/List;
 
-    .line 21
-    iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    .line 23
+    iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
-    iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
-    .line 22
+    .line 24
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->tag:Ljava/lang/Object;
 
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->tag:Ljava/lang/Object;
 
-    .line 23
+    .line 25
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->drmConfiguration:Landroidx/media3/common/MediaItem$DrmConfiguration;
 
     if-eqz v0, :cond_0
 
-    .line 24
+    .line 26
     invoke-virtual {v0}, Landroidx/media3/common/MediaItem$DrmConfiguration;->buildUpon()Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 25
+    .line 27
     :cond_0
     new-instance v0, Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;
 
@@ -235,12 +249,12 @@
     :goto_0
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->drmConfiguration:Landroidx/media3/common/MediaItem$DrmConfiguration$Builder;
 
-    .line 26
+    .line 28
     iget-object v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->adsConfiguration:Landroidx/media3/common/MediaItem$AdsConfiguration;
 
     iput-object v0, p0, Landroidx/media3/common/MediaItem$Builder;->adsConfiguration:Landroidx/media3/common/MediaItem$AdsConfiguration;
 
-    .line 27
+    .line 29
     iget-wide v0, p1, Landroidx/media3/common/MediaItem$LocalConfiguration;->imageDurationMs:J
 
     iput-wide v0, p0, Landroidx/media3/common/MediaItem$Builder;->imageDurationMs:J
@@ -261,7 +275,7 @@
 
 # virtual methods
 .method public build()Landroidx/media3/common/MediaItem;
-    .locals 23
+    .locals 25
 
     .line 1
     move-object/from16 v0, p0
@@ -316,7 +330,7 @@
 
     .line 23
     :goto_1
-    invoke-static {v1}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v1}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 24
     .line 25
@@ -384,7 +398,7 @@
 
     .line 55
     .line 56
-    iget-object v9, v0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    iget-object v9, v0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
     .line 57
     .line 58
@@ -402,7 +416,7 @@
     move-object v2, v14
 
     .line 64
-    invoke-direct/range {v2 .. v13}, Landroidx/media3/common/MediaItem$LocalConfiguration;-><init>(Landroid/net/Uri;Ljava/lang/String;Landroidx/media3/common/MediaItem$DrmConfiguration;Landroidx/media3/common/MediaItem$AdsConfiguration;Ljava/util/List;Ljava/lang/String;Lcom/google/common/collect/f2;Ljava/lang/Object;JLandroidx/media3/common/MediaItem$1;)V
+    invoke-direct/range {v2 .. v13}, Landroidx/media3/common/MediaItem$LocalConfiguration;-><init>(Landroid/net/Uri;Ljava/lang/String;Landroidx/media3/common/MediaItem$DrmConfiguration;Landroidx/media3/common/MediaItem$AdsConfiguration;Ljava/util/List;Ljava/lang/String;Lcom/google/common/collect/e2;Ljava/lang/Object;JLandroidx/media3/common/MediaItem$1;)V
 
     .line 65
     .line 66
@@ -502,22 +516,38 @@
 
     .line 107
     .line 108
-    const/16 v22, 0x0
+    iget v3, v0, Landroidx/media3/common/MediaItem$Builder;->decode:I
 
     .line 109
     .line 110
-    move-object v15, v1
+    iget-boolean v4, v0, Landroidx/media3/common/MediaItem$Builder;->adblock:Z
 
     .line 111
+    .line 112
+    const/16 v24, 0x0
+
+    .line 113
+    .line 114
+    move-object v15, v1
+
+    .line 115
     move-object/from16 v21, v2
 
-    .line 112
-    .line 113
-    invoke-direct/range {v15 .. v22}, Landroidx/media3/common/MediaItem;-><init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;Landroidx/media3/common/MediaItem$1;)V
-
-    .line 114
-    .line 115
     .line 116
+    .line 117
+    move/from16 v22, v3
+
+    .line 118
+    .line 119
+    move/from16 v23, v4
+
+    .line 120
+    .line 121
+    invoke-direct/range {v15 .. v24}, Landroidx/media3/common/MediaItem;-><init>(Ljava/lang/String;Landroidx/media3/common/MediaItem$ClippingProperties;Landroidx/media3/common/MediaItem$LocalConfiguration;Landroidx/media3/common/MediaItem$LiveConfiguration;Landroidx/media3/common/MediaMetadata;Landroidx/media3/common/MediaItem$RequestMetadata;IZLandroidx/media3/common/MediaItem$1;)V
+
+    .line 122
+    .line 123
+    .line 124
     return-object v1
 .end method
 
@@ -615,6 +645,17 @@
     move-result-object p1
 
     return-object p1
+.end method
+
+.method public setAdblock(Z)Landroidx/media3/common/MediaItem$Builder;
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Landroidx/media3/common/MediaItem$Builder;->adblock:Z
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public setAdsConfiguration(Landroidx/media3/common/MediaItem$AdsConfiguration;)Landroidx/media3/common/MediaItem$Builder;
@@ -778,6 +819,17 @@
     return-object p0
 .end method
 
+.method public setDecode(I)Landroidx/media3/common/MediaItem$Builder;
+    .locals 0
+
+    .line 1
+    iput p1, p0, Landroidx/media3/common/MediaItem$Builder;->decode:I
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
 .method public setDrmConfiguration(Landroidx/media3/common/MediaItem$DrmConfiguration;)Landroidx/media3/common/MediaItem$Builder;
     .locals 1
     .param p1    # Landroidx/media3/common/MediaItem$DrmConfiguration;
@@ -904,7 +956,7 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/h2;->of()Lcom/google/common/collect/h2;
+    invoke-static {}, Lcom/google/common/collect/g2;->of()Lcom/google/common/collect/g2;
 
     .line 7
     .line 8
@@ -1059,7 +1111,7 @@
 
     .line 6
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 7
     .line 8
@@ -1150,7 +1202,7 @@
 
     .line 20
     :goto_1
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 21
     .line 22
@@ -1384,7 +1436,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, Lj$/util/DesugarCollections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     .line 15
     .line 16
@@ -1425,7 +1477,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -1433,7 +1485,7 @@
     move-result-object p1
 
     .line 5
-    iput-object p1, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
     .line 6
     .line 7
@@ -1467,7 +1519,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 4
     .line 5
@@ -1479,7 +1531,7 @@
 
     .line 8
     :cond_0
-    invoke-static {}, Lcom/google/common/collect/f2;->of()Lcom/google/common/collect/f2;
+    invoke-static {}, Lcom/google/common/collect/e2;->of()Lcom/google/common/collect/e2;
 
     .line 9
     .line 10
@@ -1488,7 +1540,7 @@
 
     .line 12
     :goto_0
-    iput-object p1, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/MediaItem$Builder;->subtitleConfigurations:Lcom/google/common/collect/e2;
 
     .line 13
     .line 14

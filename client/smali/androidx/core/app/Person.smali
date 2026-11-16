@@ -419,7 +419,7 @@
     move-result-object v1
 
     .line 29
-    invoke-static {v1}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 30
     .line 31
@@ -435,7 +435,7 @@
     move-result-object v2
 
     .line 37
-    invoke-static {v2}, Lj$/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 38
     .line 39
@@ -443,7 +443,7 @@
     move-result-object v2
 
     .line 41
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 42
     .line 43
@@ -471,7 +471,7 @@
     move-result-object v2
 
     .line 55
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 56
     .line 57
@@ -580,7 +580,7 @@
     .line 107
     :cond_4
     :goto_0
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 108
     .line 109
@@ -754,7 +754,7 @@
 
     .line 50
     .line 51
-    invoke-static {v4}, Lj$/util/Objects;->hash([Ljava/lang/Object;)I
+    invoke-static {v4}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 52
     .line 53

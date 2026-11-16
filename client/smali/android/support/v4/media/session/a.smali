@@ -8,7 +8,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "titleMarginEnd"
+    const-string v0, "contentInsetRight"
 
     .line 2
     .line 3
@@ -27,11 +27,11 @@
     .locals 1
 
     .line 1
-    const-string v0, "contentInsetEndWithActions"
+    const-string v0, "collapseContentDescription"
 
     .line 2
     .line 3
-    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapInt(Ljava/lang/String;I)I
+    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapObject(Ljava/lang/String;I)I
 
     .line 4
     .line 5
@@ -46,7 +46,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "navigationContentDescription"
+    const-string v0, "title"
 
     .line 2
     .line 3
@@ -65,7 +65,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "titleMarginBottom"
+    const-string v0, "iconPadding"
 
     .line 2
     .line 3
@@ -80,7 +80,30 @@
     return p0
 .end method
 
-.method public static bridge synthetic a(Landroid/graphics/Insets;)I
+.method public static bridge synthetic a(Landroid/media/MediaFormat;)F
+    .locals 2
+
+    .line 1
+    const-string v0, "frame-rate"
+
+    .line 2
+    .line 3
+    const/high16 v1, -0x40800000    # -1.0f
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getFloat(Ljava/lang/String;F)F
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
+
+    .line 9
+    return p0
+.end method
+
+.method public static bridge synthetic b(Landroid/graphics/Insets;)I
     .locals 0
 
     .line 1
@@ -91,42 +114,20 @@
     return p0
 .end method
 
-.method public static bridge synthetic b(Landroid/media/MediaFormat;)I
-    .locals 2
-
-    .line 1
-    const-string v0, "channel-count"
-
-    .line 2
-    .line 3
-    const/4 v1, -0x1
-
-    .line 4
-    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;I)I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result p0
-
-    .line 8
-    return p0
-.end method
-
 .method public static bridge synthetic c(Landroid/view/inspector/PropertyMapper;)I
     .locals 2
 
     .line 1
-    const-string v0, "textOff"
+    const-string v0, "baselineAlignedChildIndex"
 
     .line 2
     .line 3
-    const v1, 0x1010125
+    const v1, 0x1010127
 
     .line 4
     .line 5
     .line 6
-    invoke-interface {p0, v0, v1}, Landroid/view/inspector/PropertyMapper;->mapObject(Ljava/lang/String;I)I
+    invoke-interface {p0, v0, v1}, Landroid/view/inspector/PropertyMapper;->mapInt(Ljava/lang/String;I)I
 
     .line 7
     .line 8
@@ -141,7 +142,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "drawableTint"
+    const-string v0, "tintMode"
 
     .line 2
     .line 3
@@ -156,7 +157,56 @@
     return p0
 .end method
 
-.method public static bridge synthetic e(Landroid/media/session/MediaController;)Landroid/os/Bundle;
+.method public static bridge synthetic e(Landroid/view/inspector/PropertyMapper;ILjava/util/function/IntFunction;)I
+    .locals 1
+
+    .line 1
+    const-string v0, "autoSizeTextType"
+
+    .line 2
+    .line 3
+    invoke-interface {p0, v0, p1, p2}, Landroid/view/inspector/PropertyMapper;->mapIntEnum(Ljava/lang/String;ILjava/util/function/IntFunction;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public static bridge synthetic f(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->getMandatorySystemGestureInsets()Landroid/graphics/Insets;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic g(Landroid/net/NetworkCapabilities;)Landroid/net/TransportInfo;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/net/NetworkCapabilities;->getTransportInfo()Landroid/net/TransportInfo;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static bridge synthetic h(Landroid/media/session/MediaController;)Landroid/os/Bundle;
     .locals 0
 
     .line 1
@@ -167,11 +217,11 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic f(Landroid/widget/TextView;)Landroid/text/TextDirectionHeuristic;
+.method public static bridge synthetic i(Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;Landroid/graphics/Region;)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/TextView;->getTextDirectionHeuristic()Landroid/text/TextDirectionHeuristic;
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;->getTargetForRegion(Landroid/graphics/Region;)Landroid/view/accessibility/AccessibilityNodeInfo;
 
     .line 2
     .line 3
@@ -182,70 +232,47 @@
     return-object p0
 .end method
 
-.method public static bridge synthetic g()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+.method public static synthetic j()Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_PAGE_UP:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+    new-instance v0, Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Landroid/view/inspector/InspectionCompanion$UninitializedPropertyMapException;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
     return-object v0
 .end method
 
-.method public static bridge synthetic h(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;
+.method public static bridge synthetic k(ILandroid/view/View;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getTouchDelegateInfo()Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;
+    invoke-virtual {p1, p0}, Landroid/view/View;->setTransitionVisibility(I)V
 
     .line 2
     .line 3
     .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static bridge synthetic i(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureSession;
-    .locals 0
-
-    .line 1
-    check-cast p0, Landroid/view/contentcapture/ContentCaptureSession;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public static bridge synthetic j(Landroid/media/MediaCodecInfo$VideoCapabilities;)Ljava/util/List;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/media/MediaCodecInfo$VideoCapabilities;->getSupportedPerformancePoints()Ljava/util/List;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static synthetic k()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroid/media/MediaCodecInfo$VideoCapabilities$PerformancePoint;
-
-    .line 2
-    .line 3
     return-void
 .end method
 
-.method public static bridge synthetic l(Landroid/content/pm/ShortcutInfo$Builder;Landroid/content/LocusId;)V
+.method public static bridge synthetic l(Landroid/app/Activity;Landroidx/lifecycle/ReportFragment$LifecycleCallbacks;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Activity;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static bridge synthetic m(Landroid/content/pm/ShortcutInfo$Builder;Landroid/content/LocusId;)V
     .locals 0
 
     .line 1
@@ -257,11 +284,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic m(Landroid/media/AudioAttributes$Builder;Z)V
+.method public static bridge synthetic n(Landroid/content/pm/ShortcutInfo$Builder;[Landroid/app/Person;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/media/AudioAttributes$Builder;->setHapticChannelsMuted(Z)Landroid/media/AudioAttributes$Builder;
+    invoke-virtual {p0, p1}, Landroid/content/pm/ShortcutInfo$Builder;->setPersons([Landroid/app/Person;)Landroid/content/pm/ShortcutInfo$Builder;
 
     .line 2
     .line 3
@@ -269,11 +296,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic n(Landroid/media/session/MediaController$TransportControls;F)V
+.method public static bridge synthetic o(Landroid/os/PowerManager;Landroid/os/PowerManager$OnThermalStatusChangedListener;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/media/session/MediaController$TransportControls;->setPlaybackSpeed(F)V
+    invoke-virtual {p0, p1}, Landroid/os/PowerManager;->addThermalStatusListener(Landroid/os/PowerManager$OnThermalStatusChangedListener;)V
 
     .line 2
     .line 3
@@ -281,11 +308,11 @@
     return-void
 .end method
 
-.method public static bridge synthetic o(Landroid/view/inspector/PropertyReader;II)V
+.method public static bridge synthetic p(Landroid/view/View;F)V
     .locals 0
 
     .line 1
-    invoke-interface {p0, p1, p2}, Landroid/view/inspector/PropertyReader;->readIntFlag(II)V
+    invoke-virtual {p0, p1}, Landroid/view/View;->setTransitionAlpha(F)V
 
     .line 2
     .line 3
@@ -293,7 +320,7 @@
     return-void
 .end method
 
-.method public static bridge synthetic p(Landroid/view/inspector/PropertyReader;ILjava/lang/CharSequence;)V
+.method public static bridge synthetic q(Landroid/view/inspector/PropertyReader;ILandroid/content/res/ColorStateList;)V
     .locals 0
 
     .line 1
@@ -305,11 +332,26 @@
     return-void
 .end method
 
-.method public static bridge synthetic q(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+.method public static bridge synthetic r()Z
+    .locals 1
+
+    .line 1
+    invoke-static {}, Landroid/os/Environment;->isExternalStorageLegacy()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    return v0
+.end method
+
+.method public static bridge synthetic s(Landroid/view/accessibility/AccessibilityNodeInfo;)Z
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroid/media/AudioTrack;->isDirectPlaybackSupported(Landroid/media/AudioFormat;Landroid/media/AudioAttributes;)Z
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isTextEntryKey()Z
 
     .line 2
     .line 3
@@ -320,52 +362,49 @@
     return p0
 .end method
 
-.method public static bridge synthetic r(Landroid/media/MediaCodecInfo;)Z
+.method public static bridge synthetic t(Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/media/MediaCodecInfo;->isSoftwareOnly()Z
+    instance-of p0, p0, Landroid/graphics/drawable/ColorStateListDrawable;
 
     .line 2
     .line 3
-    .line 4
-    move-result p0
-
-    .line 5
     return p0
 .end method
 
-.method public static bridge synthetic s(Landroid/media/MediaFormat;)I
+.method public static bridge synthetic u(Landroid/media/MediaFormat;)F
     .locals 2
 
     .line 1
-    const-string v0, "exo-pcm-encoding"
+    const-string v0, "pixel-width-height-ratio-float"
 
     .line 2
     .line 3
-    const/4 v1, -0x1
+    const/high16 v1, 0x3f800000    # 1.0f
 
     .line 4
-    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getInteger(Ljava/lang/String;I)I
-
     .line 5
+    invoke-virtual {p0, v0, v1}, Landroid/media/MediaFormat;->getFloat(Ljava/lang/String;F)F
+
     .line 6
     .line 7
-    move-result p0
-
     .line 8
+    move-result p0
+
+    .line 9
     return p0
 .end method
 
-.method public static bridge synthetic t(Landroid/view/inspector/PropertyMapper;I)I
+.method public static bridge synthetic v(Landroid/view/inspector/PropertyMapper;I)I
     .locals 1
 
     .line 1
-    const-string v0, "autoSizeMaxTextSize"
+    const-string v0, "measureWithLargestChild"
 
     .line 2
     .line 3
-    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapInt(Ljava/lang/String;I)I
+    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapBoolean(Ljava/lang/String;I)I
 
     .line 4
     .line 5
@@ -374,40 +413,17 @@
 
     .line 7
     return p0
-.end method
-
-.method public static bridge synthetic u()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_PAGE_LEFT:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public static bridge synthetic v(Landroid/view/inspector/PropertyReader;II)V
-    .locals 0
-
-    .line 1
-    invoke-interface {p0, p1, p2}, Landroid/view/inspector/PropertyReader;->readResourceId(II)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
 .end method
 
 .method public static bridge synthetic w(Landroid/view/inspector/PropertyMapper;I)I
     .locals 1
 
     .line 1
-    const-string v0, "buttonTintMode"
+    const-string v0, "iconifiedByDefault"
 
     .line 2
     .line 3
-    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapObject(Ljava/lang/String;I)I
+    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapBoolean(Ljava/lang/String;I)I
 
     .line 4
     .line 5
@@ -422,7 +438,7 @@
     .locals 1
 
     .line 1
-    const-string v0, "divider"
+    const-string v0, "track"
 
     .line 2
     .line 3
@@ -441,11 +457,11 @@
     .locals 1
 
     .line 1
-    const-string v0, "trackTint"
+    const-string v0, "splitTrack"
 
     .line 2
     .line 3
-    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapObject(Ljava/lang/String;I)I
+    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapBoolean(Ljava/lang/String;I)I
 
     .line 4
     .line 5
@@ -460,11 +476,11 @@
     .locals 1
 
     .line 1
-    const-string v0, "splitTrack"
+    const-string v0, "titleMarginStart"
 
     .line 2
     .line 3
-    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapBoolean(Ljava/lang/String;I)I
+    invoke-interface {p0, v0, p1}, Landroid/view/inspector/PropertyMapper;->mapInt(Ljava/lang/String;I)I
 
     .line 4
     .line 5

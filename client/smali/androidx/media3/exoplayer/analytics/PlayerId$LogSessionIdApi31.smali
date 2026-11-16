@@ -32,7 +32,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Landroidx/core/os/a;->e()Landroid/media/metrics/LogSessionId;
+    invoke-static {}, Landroidx/core/app/h;->b()Landroid/media/metrics/LogSessionId;
 
     .line 5
     .line 6
@@ -57,7 +57,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Landroidx/core/os/a;->e()Landroid/media/metrics/LogSessionId;
+    invoke-static {}, Landroidx/core/app/h;->b()Landroid/media/metrics/LogSessionId;
 
     .line 4
     .line 5
@@ -65,7 +65,7 @@
     move-result-object v1
 
     .line 7
-    invoke-static {v0, v1}, Landroidx/media3/exoplayer/i1;->a(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Landroidx/core/view/c;->o(Landroid/media/metrics/LogSessionId;Ljava/lang/Object;)Z
 
     .line 8
     .line 9
@@ -73,7 +73,7 @@
     move-result v0
 
     .line 11
-    invoke-static {v0}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {v0}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 12
     .line 13

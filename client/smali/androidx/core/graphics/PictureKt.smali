@@ -14,7 +14,7 @@
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Landroid/graphics/Canvas;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/graphics/Picture;"
         }

@@ -75,29 +75,29 @@
 
 .field public static final dialog_ok:I = 0x7f110044
 
-.field public static final empty_directory:I = 0x7f11004d
+.field public static final empty_directory:I = 0x7f110057
 
-.field public static final error_selecting_file:I = 0x7f110061
+.field public static final error_selecting_file:I = 0x7f11006b
 
-.field public static final internal_storage:I = 0x7f11009b
+.field public static final internal_storage:I = 0x7f1100a5
 
-.field public static final new_folder_cancel:I = 0x7f110107
+.field public static final new_folder_cancel:I = 0x7f110111
 
-.field public static final new_folder_ok:I = 0x7f110108
+.field public static final new_folder_ok:I = 0x7f110112
 
-.field public static final option_create_folder:I = 0x7f110109
+.field public static final option_create_folder:I = 0x7f110113
 
-.field public static final options_delete:I = 0x7f11010a
+.field public static final options_delete:I = 0x7f110114
 
-.field public static final search_menu_title:I = 0x7f110110
+.field public static final search_menu_title:I = 0x7f11011a
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f110116
+.field public static final status_bar_notification_info_overflow:I = 0x7f110120
 
-.field public static final storage_removed:I = 0x7f110117
+.field public static final storage_removed:I = 0x7f110121
 
-.field public static final title_choose:I = 0x7f110118
+.field public static final title_choose:I = 0x7f110122
 
-.field public static final title_choose_dict_file:I = 0x7f110119
+.field public static final title_choose_dict_file:I = 0x7f110123
 
 
 # direct methods

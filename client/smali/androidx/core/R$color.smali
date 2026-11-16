@@ -23,9 +23,9 @@
 
 .field public static final call_notification_decline_color:I = 0x7f06002b
 
-.field public static final notification_action_color_filter:I = 0x7f06032c
+.field public static final notification_action_color_filter:I = 0x7f06032e
 
-.field public static final notification_icon_bg_color:I = 0x7f06032d
+.field public static final notification_icon_bg_color:I = 0x7f06032f
 
 
 # direct methods

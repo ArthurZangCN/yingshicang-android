@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/base/x;
+.implements Lcom/google/common/base/z;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Landroid/content/Context;
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/content/Context;I)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
     .line 1
@@ -21,7 +21,7 @@
 
     iput p2, p0, Landroidx/media3/exoplayer/o;->a:I
 
-    iput-object p1, p0, Landroidx/media3/exoplayer/o;->b:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/media3/exoplayer/o;->b:Ljava/lang/Object;
 
     return-void
 .end method
@@ -34,18 +34,22 @@
     .line 1
     iget v0, p0, Landroidx/media3/exoplayer/o;->a:I
 
-    iget-object v1, p0, Landroidx/media3/exoplayer/o;->b:Landroid/content/Context;
+    iget-object v1, p0, Landroidx/media3/exoplayer/o;->b:Ljava/lang/Object;
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->b(Landroid/content/Context;)Landroidx/media3/exoplayer/RenderersFactory;
+    check-cast v1, Landroidx/media3/exoplayer/RenderersFactory;
+
+    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->n(Landroidx/media3/exoplayer/RenderersFactory;)Landroidx/media3/exoplayer/RenderersFactory;
 
     move-result-object v0
 
     return-object v0
 
     :pswitch_0
-    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->k(Landroid/content/Context;)Landroidx/media3/exoplayer/RenderersFactory;
+    check-cast v1, Landroidx/media3/exoplayer/LoadControl;
+
+    invoke-static {v1}, Landroidx/media3/exoplayer/ExoPlayer$Builder;->g(Landroidx/media3/exoplayer/LoadControl;)Landroidx/media3/exoplayer/LoadControl;
 
     move-result-object v0
 

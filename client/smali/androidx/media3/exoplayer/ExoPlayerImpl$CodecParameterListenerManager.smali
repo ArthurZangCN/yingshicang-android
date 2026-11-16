@@ -422,7 +422,7 @@
     .locals 4
 
     .line 1
-    invoke-static {}, Lcom/google/common/collect/s2;->builder()Lcom/google/common/collect/s2$a;
+    invoke-static {}, Lcom/google/common/collect/r2;->builder()Lcom/google/common/collect/r2$a;
 
     .line 2
     .line 3
@@ -475,7 +475,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v0, v2}, Lcom/google/common/collect/s2$a;->l(Ljava/util/List;)V
+    invoke-virtual {v0, v2}, Lcom/google/common/collect/r2$a;->l(Ljava/util/List;)V
 
     .line 28
     .line 29
@@ -496,7 +496,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v0}, Lcom/google/common/collect/s2$a;->m()Lcom/google/common/collect/s2;
+    invoke-virtual {v0}, Lcom/google/common/collect/r2$a;->m()Lcom/google/common/collect/r2;
 
     .line 38
     .line 39

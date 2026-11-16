@@ -9,10 +9,10 @@
 
 
 # instance fields
-.field public final cues:Lcom/google/common/collect/f2;
+.field public final cues:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/common/text/Cue;",
             ">;"
         }
@@ -44,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     .line 5
     .line 6
@@ -52,7 +52,7 @@
     move-result-object p1
 
     .line 8
-    iput-object p1, p0, Landroidx/media3/extractor/text/CuesWithTiming;->cues:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/extractor/text/CuesWithTiming;->cues:Lcom/google/common/collect/e2;
 
     .line 9
     .line 10

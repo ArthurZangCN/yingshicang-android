@@ -337,7 +337,7 @@
 
     .line 11
     :goto_0
-    invoke-static {p2}, Lcom/github/tvbox/osc/util/t;->x(Z)V
+    invoke-static {p2}, Lcom/github/tvbox/osc/util/h0;->D(Z)V
 
     .line 12
     .line 13
@@ -419,7 +419,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1, v2}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 8
     .line 9
@@ -433,7 +433,7 @@
     const/4 v3, 0x2
 
     .line 13
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
     .line 14
     .line 15
@@ -441,124 +441,133 @@
 
     .line 16
     .line 17
-    invoke-static {v1}, Landroidx/media3/common/util/Util;->isEncodingLinearPcm(I)Z
+    if-ne v1, v3, :cond_0
 
     .line 18
     .line 19
+    return v3
+
     .line 20
-    move-result v1
+    :cond_0
+    iget-boolean p1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;->enableHighResolutionPcmOutput:Z
 
     .line 21
-    if-nez v1, :cond_0
-
     .line 22
-    .line 23
-    new-instance p1, Ljava/lang/StringBuilder;
+    if-nez p1, :cond_1
 
+    .line 23
     .line 24
+    return v2
+
     .line 25
-    const-string v1, "Invalid PCM encoding: "
+    :cond_1
+    invoke-static {v1}, Landroidx/media3/common/util/Util;->isEncodingLinearPcm(I)Z
 
     .line 26
     .line 27
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 28
+    move-result p1
+
     .line 29
+    if-nez p1, :cond_2
+
     .line 30
-    iget v0, v0, Landroidx/media3/common/Format;->pcmEncoding:I
-
     .line 31
-    .line 32
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance p1, Ljava/lang/StringBuilder;
 
+    .line 32
     .line 33
+    const-string v1, "Invalid PCM encoding: "
+
     .line 34
     .line 35
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 36
     .line 37
     .line 38
-    move-result-object p1
-
-    .line 39
-    const-string v0, "ATAudioOutputProvider"
-
-    .line 40
-    .line 41
-    invoke-static {v0, p1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 42
-    .line 43
-    .line 44
-    return v2
-
-    .line 45
-    :cond_0
     iget v0, v0, Landroidx/media3/common/Format;->pcmEncoding:I
 
+    .line 39
+    .line 40
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 44
+    .line 45
     .line 46
+    move-result-object p1
+
     .line 47
-    if-eq v0, v3, :cond_2
+    const-string v0, "ATAudioOutputProvider"
 
     .line 48
     .line 49
-    iget-boolean p1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;->enableHighResolutionPcmOutput:Z
+    invoke-static {v0, p1}, Landroidx/media3/common/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 50
     .line 51
-    if-eqz p1, :cond_1
-
     .line 52
+    return v2
+
     .line 53
-    const/4 p1, 0x4
+    :cond_2
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 54
-    if-ne v0, p1, :cond_1
-
     .line 55
-    .line 56
-    goto :goto_0
+    iget v0, v0, Landroidx/media3/common/Format;->pcmEncoding:I
 
+    .line 56
     .line 57
-    :cond_1
-    const/4 p1, 0x1
+    invoke-static {v0}, Landroidx/media3/common/util/Util;->getApiLevelThatAudioFormatIntroducedAudioEncoding(I)I
 
     .line 58
-    return p1
-
     .line 59
-    :cond_2
-    :goto_0
-    return v3
-
     .line 60
-    :cond_3
-    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;->audioCapabilities:Landroidx/media3/exoplayer/audio/AudioCapabilities;
+    move-result v0
 
     .line 61
+    if-ge p1, v0, :cond_3
+
     .line 62
-    iget-object p1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;->audioAttributes:Landroidx/media3/common/AudioAttributes;
-
     .line 63
+    return v2
+
     .line 64
-    invoke-virtual {v1, v0, p1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->isPassthroughPlaybackSupported(Landroidx/media3/common/Format;Landroidx/media3/common/AudioAttributes;)Z
-
-    .line 65
-    .line 66
-    .line 67
-    move-result p1
-
-    .line 68
-    if-eqz p1, :cond_4
-
-    .line 69
-    .line 70
+    :cond_3
     return v3
 
-    .line 71
+    .line 65
     :cond_4
+    iget-object v1, p0, Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;->audioCapabilities:Landroidx/media3/exoplayer/audio/AudioCapabilities;
+
+    .line 66
+    .line 67
+    iget-object p1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$FormatConfig;->audioAttributes:Landroidx/media3/common/AudioAttributes;
+
+    .line 68
+    .line 69
+    invoke-virtual {v1, v0, p1}, Landroidx/media3/exoplayer/audio/AudioCapabilities;->isPassthroughPlaybackSupported(Landroidx/media3/common/Format;Landroidx/media3/common/AudioAttributes;)Z
+
+    .line 70
+    .line 71
+    .line 72
+    move-result p1
+
+    .line 73
+    if-eqz p1, :cond_5
+
+    .line 74
+    .line 75
+    return v3
+
+    .line 76
+    :cond_5
     return v2
 .end method
 
@@ -631,11 +640,11 @@
 
     .line 13
     .line 14
-    new-instance v2, Landroidx/media3/exoplayer/audio/q;
+    new-instance v2, Landroidx/media3/exoplayer/audio/t;
 
     .line 15
     .line 16
-    invoke-direct {v2, p0}, Landroidx/media3/exoplayer/audio/q;-><init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;)V
+    invoke-direct {v2, p0}, Landroidx/media3/exoplayer/audio/t;-><init>(Landroidx/media3/exoplayer/audio/AudioTrackAudioOutputProvider;)V
 
     .line 17
     .line 18
@@ -827,7 +836,7 @@
 
     .line 45
     .line 46
-    invoke-static {v0, v4}, Lcom/blankj/utilcode/util/h;->v(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v0, v4}, Lcom/github/tvbox/osc/util/e0;->o(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 47
     .line 48
@@ -945,7 +954,7 @@
     if-eqz v0, :cond_0
 
     .line 5
-    invoke-static {v0}, Landroidx/media3/datasource/m;->a(Landroid/content/Context;)I
+    invoke-static {v0}, Landroidx/media3/exoplayer/audio/r;->a(Landroid/content/Context;)I
 
     move-result v0
 
@@ -972,7 +981,7 @@
 
     iget v1, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$OutputConfig;->virtualDeviceId:I
 
-    invoke-static {v1, v0}, Landroidx/media3/datasource/n;->a(ILandroid/content/Context;)Landroid/content/Context;
+    invoke-static {v1, v0}, Landroidx/media3/exoplayer/audio/s;->a(ILandroid/content/Context;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -1104,7 +1113,7 @@
     .line 26
     iget-boolean v5, p1, Landroidx/media3/exoplayer/audio/AudioOutputProvider$OutputConfig;->isOffload:Z
 
-    invoke-static {v0, v5}, Landroidx/appcompat/widget/a;->l(Landroid/media/AudioTrack$Builder;Z)V
+    invoke-static {v0, v5}, Landroid/support/v4/media/session/h;->m(Landroid/media/AudioTrack$Builder;Z)V
 
     :cond_4
     if-lt v2, v3, :cond_5
@@ -1112,7 +1121,7 @@
     if-eqz v1, :cond_5
 
     .line 27
-    invoke-static {v0, v1}, Landroidx/media3/exoplayer/audio/p;->b(Landroid/media/AudioTrack$Builder;Landroid/content/Context;)V
+    invoke-static {v0, v1}, Landroidx/media3/datasource/m;->g(Landroid/media/AudioTrack$Builder;Landroid/content/Context;)V
 
     .line 28
     :cond_5
@@ -1125,7 +1134,7 @@
     if-lt v2, v3, :cond_6
 
     .line 29
-    invoke-interface {v1, v0, p1}, Ljava/util/function/BiConsumer;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v1, v0, p1}, Landroid/support/v4/media/session/d;->x(Ljava/util/function/BiConsumer;Landroid/media/AudioTrack$Builder;Ljava/lang/Object;)V
 
     .line 30
     :cond_6
@@ -1309,7 +1318,7 @@
 
     .line 13
     .line 14
-    invoke-static {v3, v4}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -1342,7 +1351,7 @@
     move-result v3
 
     .line 29
-    invoke-static {v3}, Lcom/github/tvbox/osc/util/t;->h(Z)V
+    invoke-static {v3}, Lcom/github/tvbox/osc/util/h0;->l(Z)V
 
     .line 30
     .line 31
@@ -1615,7 +1624,7 @@
 
     .line 152
     .line 153
-    invoke-static {v2, v13}, Lj$/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v13}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 154
     .line 155

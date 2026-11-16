@@ -25,7 +25,7 @@
             "Landroid/graphics/ImageDecoder;",
             "Landroid/graphics/ImageDecoder$ImageInfo;",
             "Landroid/graphics/ImageDecoder$Source;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -45,7 +45,7 @@
             "Landroid/graphics/ImageDecoder$ImageInfo;",
             "-",
             "Landroid/graphics/ImageDecoder$Source;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)V"
         }
     .end annotation

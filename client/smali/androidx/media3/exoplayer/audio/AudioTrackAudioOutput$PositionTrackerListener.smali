@@ -123,11 +123,11 @@
     move-result-object v0
 
     .line 7
-    new-instance v1, Landroidx/media3/exoplayer/audio/n;
+    new-instance v1, Landroidx/media3/exoplayer/audio/q;
 
     .line 8
     .line 9
-    invoke-direct {v1, p1, p2}, Landroidx/media3/exoplayer/audio/n;-><init>(J)V
+    invoke-direct {v1, p1, p2}, Landroidx/media3/exoplayer/audio/q;-><init>(J)V
 
     .line 10
     .line 11
@@ -152,7 +152,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1, p2, v1}, Landroid/support/v4/media/a;->e(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, p2, v1}, Landroid/support/v4/media/e;->n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 6
     .line 7
@@ -263,7 +263,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1, p2, v1}, Landroid/support/v4/media/a;->e(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, p2, v1}, Landroid/support/v4/media/e;->n(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 6
     .line 7

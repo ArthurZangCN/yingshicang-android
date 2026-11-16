@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/datastore/preferences/PreferenceDataStoreDelegateKt;->preferencesDataStore$default(Ljava/lang/String;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Lkotlin/jvm/functions/Function1;Lkotlinx/coroutines/b0;ILjava/lang/Object;)Lb4/a;
+    value = Landroidx/datastore/preferences/PreferenceDataStoreDelegateKt;->preferencesDataStore$default(Ljava/lang/String;Landroidx/datastore/core/handlers/ReplaceFileCorruptionHandler;Lkotlin/jvm/functions/Function1;Ln4/e0;ILjava/lang/Object;)Lh4/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -91,7 +91,7 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/j;->f(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    sget-object p1, Lkotlin/collections/s;->INSTANCE:Lkotlin/collections/s;
+    sget-object p1, Lkotlin/collections/r;->INSTANCE:Lkotlin/collections/r;
 
     return-object p1
 .end method

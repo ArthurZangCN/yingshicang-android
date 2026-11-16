@@ -23,7 +23,7 @@
             "-",
             "Ljava/lang/Boolean;",
             "-TK;-TV;-TV;",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Landroid/util/LruCache<",
             "TK;TV;>;"

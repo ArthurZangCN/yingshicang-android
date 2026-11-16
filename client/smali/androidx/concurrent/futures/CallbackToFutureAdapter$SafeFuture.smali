@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/google/common/util/concurrent/t;
+.implements Lcom/google/common/util/concurrent/x;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lcom/google/common/util/concurrent/t<",
+        "Lcom/google/common/util/concurrent/x<",
         "TT;>;"
     }
 .end annotation

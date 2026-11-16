@@ -12,10 +12,10 @@
 # instance fields
 .field public final mediaTrackGroup:Landroidx/media3/common/TrackGroup;
 
-.field public final trackIndices:Lcom/google/common/collect/f2;
+.field public final trackIndices:Lcom/google/common/collect/e2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Ljava/lang/Integer;",
             ">;"
         }
@@ -69,7 +69,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lcom/google/common/collect/f2;->of(Ljava/lang/Object;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->of(Ljava/lang/Object;)Lcom/google/common/collect/e2;
 
     move-result-object p2
 
@@ -143,11 +143,11 @@
     iput-object p1, p0, Landroidx/media3/common/TrackSelectionOverride;->mediaTrackGroup:Landroidx/media3/common/TrackGroup;
 
     .line 7
-    invoke-static {p2}, Lcom/google/common/collect/f2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/f2;
+    invoke-static {p2}, Lcom/google/common/collect/e2;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/e2;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iput-object p1, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     return-void
 .end method
@@ -204,7 +204,7 @@
 
     .line 24
     .line 25
-    invoke-static {p0}, Lcom/google/common/primitives/b;->g([I)Ljava/util/List;
+    invoke-static {p0}, Lcom/google/common/primitives/b;->n([I)Ljava/util/List;
 
     .line 26
     .line 27
@@ -292,15 +292,15 @@
 
     .line 28
     .line 29
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 30
     .line 31
-    iget-object p1, p1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object p1, p1, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 32
     .line 33
-    invoke-virtual {v2, p1}, Lcom/google/common/collect/f2;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p1}, Lcom/google/common/collect/e2;->equals(Ljava/lang/Object;)Z
 
     .line 34
     .line 35
@@ -359,11 +359,11 @@
     move-result v0
 
     .line 7
-    iget-object v1, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object v1, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 8
     .line 9
-    invoke-virtual {v1}, Lcom/google/common/collect/f2;->hashCode()I
+    invoke-virtual {v1}, Lcom/google/common/collect/e2;->hashCode()I
 
     .line 10
     .line 11
@@ -421,11 +421,11 @@
 
     .line 18
     .line 19
-    iget-object v2, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/f2;
+    iget-object v2, p0, Landroidx/media3/common/TrackSelectionOverride;->trackIndices:Lcom/google/common/collect/e2;
 
     .line 20
     .line 21
-    invoke-static {v2}, Lcom/google/common/primitives/b;->o(Ljava/util/Collection;)[I
+    invoke-static {v2}, Lcom/google/common/primitives/b;->t(Ljava/util/Collection;)[I
 
     .line 22
     .line 23

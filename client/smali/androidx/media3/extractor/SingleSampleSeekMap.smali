@@ -86,6 +86,17 @@
     return-object v0
 .end method
 
+.method public final synthetic isEstimated()Z
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, Landroidx/media3/extractor/e;->a(Landroidx/media3/extractor/SeekMap;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public isSeekable()Z
     .locals 1
 

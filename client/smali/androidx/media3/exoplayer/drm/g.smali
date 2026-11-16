@@ -2,59 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;
+
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/drm/DrmSession;)Z
+.method public synthetic constructor <init>(Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;)V
     .locals 0
 
     .line 1
-    const/4 p0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return p0
+    iput-object p1, p0, Landroidx/media3/exoplayer/drm/g;->a:Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;
+
+    return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/drm/DrmSession;Landroidx/media3/exoplayer/drm/DrmSession;)V
+
+# virtual methods
+.method public final run()V
     .locals 1
-    .param p0    # Landroidx/media3/exoplayer/drm/DrmSession;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
-    .param p1    # Landroidx/media3/exoplayer/drm/DrmSession;
-        .annotation build Landroidx/annotation/Nullable;
-        .end annotation
-    .end param
 
     .line 1
-    if-ne p0, p1, :cond_0
+    iget-object v0, p0, Landroidx/media3/exoplayer/drm/g;->a:Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;
 
-    .line 2
-    .line 3
-    return-void
+    invoke-static {v0}, Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;->b(Landroidx/media3/exoplayer/drm/DefaultDrmSessionManager$PreacquiredSessionReference;)V
 
-    .line 4
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 5
-    if-eqz p1, :cond_1
-
-    .line 6
-    .line 7
-    invoke-interface {p1, v0}, Landroidx/media3/exoplayer/drm/DrmSession;->acquire(Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;)V
-
-    .line 8
-    .line 9
-    .line 10
-    :cond_1
-    if-eqz p0, :cond_2
-
-    .line 11
-    .line 12
-    invoke-interface {p0, v0}, Landroidx/media3/exoplayer/drm/DrmSession;->release(Landroidx/media3/exoplayer/drm/DrmSessionEventListener$EventDispatcher;)V
-
-    .line 13
-    .line 14
-    .line 15
-    :cond_2
     return-void
 .end method

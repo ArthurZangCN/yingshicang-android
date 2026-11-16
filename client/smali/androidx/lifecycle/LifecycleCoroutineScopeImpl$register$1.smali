@@ -1,5 +1,5 @@
 .class final Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,19 +18,19 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function2<",
-        "Lkotlinx/coroutines/b0;",
+        "Ln4/e0;",
         "Lkotlin/coroutines/d<",
         "-",
-        "Lr3/q;",
+        "Lv3/q;",
         ">;",
         "Ljava/lang/Object;",
         ">;"
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.lifecycle.LifecycleCoroutineScopeImpl$register$1"
     f = "Lifecycle.kt"
     l = {}
@@ -64,7 +64,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p2}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, p1, p2}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -80,7 +80,7 @@
             "Lkotlin/coroutines/d<",
             "*>;)",
             "Lkotlin/coroutines/d<",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;"
         }
     .end annotation
@@ -100,26 +100,26 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lkotlinx/coroutines/b0;
+    check-cast p1, Ln4/e0;
 
     check-cast p2, Lkotlin/coroutines/d;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;->invoke(Lkotlinx/coroutines/b0;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;->invoke(Ln4/e0;Lkotlin/coroutines/d;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/b0;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public final invoke(Ln4/e0;Lkotlin/coroutines/d;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlinx/coroutines/b0;",
+            "Ln4/e0;",
             "Lkotlin/coroutines/d<",
             "-",
-            "Lr3/q;",
+            "Lv3/q;",
             ">;)",
             "Ljava/lang/Object;"
         }
@@ -132,7 +132,7 @@
 
     check-cast p1, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;
 
-    sget-object p2, Lr3/q;->a:Lr3/q;
+    sget-object p2, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {p1, p2}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -157,7 +157,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 8
     .line 9
@@ -166,7 +166,7 @@
 
     .line 11
     .line 12
-    check-cast p1, Lkotlinx/coroutines/b0;
+    check-cast p1, Ln4/e0;
 
     .line 13
     .line 14
@@ -231,7 +231,7 @@
 
     .line 44
     :cond_0
-    invoke-interface {p1}, Lkotlinx/coroutines/b0;->getCoroutineContext()Lkotlin/coroutines/f;
+    invoke-interface {p1}, Ln4/e0;->getCoroutineContext()Lkotlin/coroutines/f;
 
     .line 45
     .line 46
@@ -239,7 +239,7 @@
     move-result-object p1
 
     .line 48
-    sget-object v0, Lkotlinx/coroutines/d1$a;->a:Lkotlinx/coroutines/d1$a;
+    sget-object v0, Ln4/h1$a;->a:Ln4/h1$a;
 
     .line 49
     .line 50
@@ -251,7 +251,7 @@
     move-result-object p1
 
     .line 54
-    check-cast p1, Lkotlinx/coroutines/d1;
+    check-cast p1, Ln4/h1;
 
     .line 55
     .line 56
@@ -262,14 +262,14 @@
     const/4 v0, 0x0
 
     .line 59
-    invoke-interface {p1, v0}, Lkotlinx/coroutines/d1;->a(Ljava/util/concurrent/CancellationException;)V
+    invoke-interface {p1, v0}, Ln4/h1;->a(Ljava/util/concurrent/CancellationException;)V
 
     .line 60
     .line 61
     .line 62
     :cond_1
     :goto_0
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     .line 63
     .line 64

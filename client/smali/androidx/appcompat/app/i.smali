@@ -2,38 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/window/OnBackInvokedCallback;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
 
 # direct methods
-.method public static bridge synthetic a()Landroid/icu/text/DateFormat$HourCycle;
+.method public synthetic constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/appcompat/app/i;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onBackInvoked()V
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/icu/text/DateFormat$HourCycle;->HOUR_CYCLE_12:Landroid/icu/text/DateFormat$HourCycle;
+    iget-object v0, p0, Landroidx/appcompat/app/i;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->onBackPressed()Z
 
-.method public static bridge synthetic b(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->getOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static bridge synthetic c(Landroid/window/OnBackInvokedDispatcher;Landroid/window/OnBackInvokedCallback;)V
-    .locals 0
-
-    .line 1
-    invoke-interface {p0, p1}, Landroid/window/OnBackInvokedDispatcher;->unregisterOnBackInvokedCallback(Landroid/window/OnBackInvokedCallback;)V
-
-    .line 2
-    .line 3
-    .line 4
     return-void
 .end method

@@ -167,7 +167,7 @@
 
 
 # virtual methods
-.method public createAdaptiveTrackSelection(Landroidx/media3/common/TrackGroup;[IILandroidx/media3/exoplayer/upstream/BandwidthMeter;Lcom/google/common/collect/f2;)Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;
+.method public createAdaptiveTrackSelection(Landroidx/media3/common/TrackGroup;[IILandroidx/media3/exoplayer/upstream/BandwidthMeter;Lcom/google/common/collect/e2;)Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;
     .locals 19
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -175,7 +175,7 @@
             "Landroidx/media3/common/TrackGroup;",
             "[II",
             "Landroidx/media3/exoplayer/upstream/BandwidthMeter;",
-            "Lcom/google/common/collect/f2<",
+            "Lcom/google/common/collect/e2<",
             "Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection$AdaptationCheckpoint;",
             ">;)",
             "Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;"
@@ -280,7 +280,7 @@
     .locals 9
 
     .line 1
-    invoke-static {p1}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->access$000([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/f2;
+    invoke-static {p1}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;->access$000([Landroidx/media3/exoplayer/trackselection/ExoTrackSelection$Definition;)Lcom/google/common/collect/e2;
 
     .line 2
     .line 3
@@ -386,7 +386,7 @@
     move-object v8, v2
 
     .line 48
-    check-cast v8, Lcom/google/common/collect/f2;
+    check-cast v8, Lcom/google/common/collect/e2;
 
     .line 49
     .line 50
@@ -396,7 +396,7 @@
     move-object v7, p2
 
     .line 52
-    invoke-virtual/range {v3 .. v8}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection$Factory;->createAdaptiveTrackSelection(Landroidx/media3/common/TrackGroup;[IILandroidx/media3/exoplayer/upstream/BandwidthMeter;Lcom/google/common/collect/f2;)Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;
+    invoke-virtual/range {v3 .. v8}, Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection$Factory;->createAdaptiveTrackSelection(Landroidx/media3/common/TrackGroup;[IILandroidx/media3/exoplayer/upstream/BandwidthMeter;Lcom/google/common/collect/e2;)Landroidx/media3/exoplayer/trackselection/AdaptiveTrackSelection;
 
     .line 53
     .line 54

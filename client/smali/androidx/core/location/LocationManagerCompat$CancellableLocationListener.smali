@@ -330,14 +330,14 @@
 
     .line 17
     .line 18
-    new-instance v2, Landroidx/core/location/f;
+    new-instance v2, Landroidx/core/location/g;
 
     .line 19
     .line 20
     const/4 v3, 0x0
 
     .line 21
-    invoke-direct {v2, v0, p1, v3}, Landroidx/core/location/f;-><init>(Landroidx/core/util/Consumer;Landroid/location/Location;I)V
+    invoke-direct {v2, v0, p1, v3}, Landroidx/core/location/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 22
     .line 23
@@ -441,11 +441,11 @@
 
     .line 10
     :cond_0
-    new-instance v0, Landroidx/core/location/e;
+    new-instance v0, Landroidx/core/location/f;
 
     .line 11
     .line 12
-    invoke-direct {v0, p0}, Landroidx/core/location/e;-><init>(Landroidx/core/location/LocationManagerCompat$CancellableLocationListener;)V
+    invoke-direct {v0, p0}, Landroidx/core/location/f;-><init>(Landroidx/core/location/LocationManagerCompat$CancellableLocationListener;)V
 
     .line 13
     .line 14

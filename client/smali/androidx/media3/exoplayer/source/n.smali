@@ -4,50 +4,64 @@
 
 
 # direct methods
-.method public static a(Landroidx/media3/exoplayer/source/MediaSource$Factory;Z)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public static a(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/MediaLoadData;)V
     .locals 0
-    .annotation build Landroidx/media3/common/util/UnstableApi;
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    return-object p0
+    return-void
 .end method
 
-.method public static b(Landroidx/media3/exoplayer/source/MediaSource$Factory;I)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public static b(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
     .locals 0
-    .annotation build Landroidx/media3/common/util/UnstableApi;
-    .end annotation
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    return-object p0
+    return-void
 .end method
 
-.method public static c(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/exoplayer/upstream/CmcdConfiguration$Factory;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public static c(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;)V
     .locals 0
-    .annotation build Landroidx/media3/common/util/UnstableApi;
-    .end annotation
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    return-object p0
+    return-void
 .end method
 
-.method public static d(Landroidx/media3/exoplayer/source/MediaSource$Factory;Lcom/google/common/base/x;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public static d(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;Ljava/io/IOException;Z)V
     .locals 0
-    .annotation build Landroidx/media3/common/util/UnstableApi;
-    .end annotation
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    return-object p0
+    return-void
 .end method
 
-.method public static e(Landroidx/media3/exoplayer/source/MediaSource$Factory;Landroidx/media3/extractor/text/SubtitleParser$Factory;)Landroidx/media3/exoplayer/source/MediaSource$Factory;
+.method public static e(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/LoadEventInfo;Landroidx/media3/exoplayer/source/MediaLoadData;I)V
     .locals 0
-    .annotation build Landroidx/media3/common/util/UnstableApi;
-    .end annotation
+    .param p2    # Landroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
 
     .line 1
-    return-object p0
+    return-void
+.end method
+
+.method public static f(Landroidx/media3/exoplayer/source/MediaSourceEventListener;ILandroidx/media3/exoplayer/source/MediaSource$MediaPeriodId;Landroidx/media3/exoplayer/source/MediaLoadData;)V
+    .locals 0
+
+    .line 1
+    return-void
 .end method

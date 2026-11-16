@@ -40,21 +40,26 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->W(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->h0(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_0
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->e0(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->g0(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_1
-    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->J(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->B(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
 
     :pswitch_2
+    invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->o(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
+
+    return-void
+
+    :pswitch_3
     invoke-static {v1, p1}, Landroidx/media3/common/SimpleBasePlayer;->k(Landroidx/media3/common/SimpleBasePlayer$State;Landroidx/media3/common/Player$Listener;)V
 
     return-void
@@ -63,6 +68,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_3
         :pswitch_2
         :pswitch_1
         :pswitch_0

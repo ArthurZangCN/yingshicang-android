@@ -99,7 +99,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/t;->r(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0, v5}, Lcom/github/tvbox/osc/util/h0;->w(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 16
     .line 17

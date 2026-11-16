@@ -40,9 +40,9 @@
 
     check-cast v1, Landroidx/fragment/app/FragmentManager;
 
-    check-cast p1, Landroidx/core/app/MultiWindowModeChangedInfo;
+    check-cast p1, Landroidx/core/app/PictureInPictureModeChangedInfo;
 
-    invoke-static {v1, p1}, Landroidx/fragment/app/FragmentManager;->d(Landroidx/fragment/app/FragmentManager;Landroidx/core/app/MultiWindowModeChangedInfo;)V
+    invoke-static {v1, p1}, Landroidx/fragment/app/FragmentManager;->c(Landroidx/fragment/app/FragmentManager;Landroidx/core/app/PictureInPictureModeChangedInfo;)V
 
     return-void
 

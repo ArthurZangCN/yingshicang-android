@@ -53,7 +53,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Landroidx/media3/exoplayer/offline/k;
+    new-instance v0, Landroidx/media3/exoplayer/offline/i;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
@@ -66,11 +66,9 @@
     .locals 8
 
     .line 2
-    new-instance v3, Landroidx/media3/exoplayer/offline/a;
+    new-instance v3, Landroidx/media3/exoplayer/offline/i;
 
-    const/4 v0, 0x1
-
-    invoke-direct {v3, v0}, Landroidx/media3/exoplayer/offline/a;-><init>(I)V
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
 
     move-object v0, p0
 
@@ -181,9 +179,9 @@
     iput-object p3, p0, Landroidx/media3/exoplayer/offline/ProgressiveDownloader;->dataSource:Landroidx/media3/datasource/cache/CacheDataSource;
 
     .line 17
-    new-instance p4, Landroidx/media3/common/j;
+    new-instance p4, Landroidx/core/view/u;
 
-    invoke-direct {p4, p0}, Landroidx/media3/common/j;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p4, p0}, Landroidx/core/view/u;-><init>(Ljava/lang/Object;)V
 
     .line 18
     new-instance p5, Landroidx/media3/datasource/cache/CacheWriter;

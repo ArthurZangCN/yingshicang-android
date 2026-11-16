@@ -1,5 +1,5 @@
 .class final Landroidx/datastore/preferences/SharedPreferencesMigrationKt$getMigrationFunction$1;
-.super Lu3/i;
+.super Ly3/i;
 .source "SourceFile"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lu3/i;",
+        "Ly3/i;",
         "Lkotlin/jvm/functions/Function3<",
         "Landroidx/datastore/migrations/SharedPreferencesView;",
         "Landroidx/datastore/preferences/core/Preferences;",
@@ -31,7 +31,7 @@
     }
 .end annotation
 
-.annotation runtime Lu3/e;
+.annotation runtime Ly3/e;
     c = "androidx.datastore.preferences.SharedPreferencesMigrationKt$getMigrationFunction$1"
     f = "SharedPreferencesMigration.android.kt"
     l = {}
@@ -62,7 +62,7 @@
 
     const/4 v0, 0x3
 
-    invoke-direct {p0, v0, p1}, Lu3/i;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, v0, p1}, Ly3/i;-><init>(ILkotlin/coroutines/d;)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     iput-object p2, v0, Landroidx/datastore/preferences/SharedPreferencesMigrationKt$getMigrationFunction$1;->L$1:Ljava/lang/Object;
 
-    sget-object p1, Lr3/q;->a:Lr3/q;
+    sget-object p1, Lv3/q;->a:Lv3/q;
 
     invoke-virtual {v0, p1}, Landroidx/datastore/preferences/SharedPreferencesMigrationKt$getMigrationFunction$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -135,7 +135,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1}, Lr3/j;->b(Ljava/lang/Object;)V
+    invoke-static {p1}, Lv3/j;->b(Ljava/lang/Object;)V
 
     .line 8
     .line 9
@@ -176,7 +176,7 @@
 
     .line 27
     .line 28
-    invoke-static {v1}, Lkotlin/collections/l;->W(Ljava/lang/Iterable;)I
+    invoke-static {v1}, Lkotlin/collections/k;->u(Ljava/lang/Iterable;)I
 
     .line 29
     .line 30

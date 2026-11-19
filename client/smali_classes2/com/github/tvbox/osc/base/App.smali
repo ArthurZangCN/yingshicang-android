@@ -254,11 +254,8 @@
     .line 54
     :cond_1
     :goto_0
-    const-string v0, "nc"
-
-    .line 55
-    .line 56
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    # 魔改重签后 libnc JNI_OnLoad 会因校验失败 SIGABRT（模拟器/部分真机）；跳过预加载，保留 Dex2C 自有加载路径
+    goto :goto_1
 
     .line 57
     .line 58
@@ -273,6 +270,8 @@
 
     .line 63
     invoke-virtual {v0}, Lcom/orhanobut/hawk/HawkBuilder;->build()V
+
+    invoke-static {p0}, Lcom/github/tvbox/osc/ysc/YscBootstrap;->init(Landroid/content/Context;)V
 
     .line 64
     .line 65

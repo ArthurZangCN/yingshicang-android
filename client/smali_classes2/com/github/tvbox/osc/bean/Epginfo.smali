@@ -7,13 +7,13 @@
 
 
 # static fields
-.field public static final DOMAIN:Ljava/lang/String; = "https://api.montain.top"
+.field public static final DOMAIN:Ljava/lang/String; = "http://home.arthurz.site:3361"
 
-.field public static final DOWNLOAD_ENC:Ljava/lang/String; = "https://api.montain.top/app/file/download"
+.field public static final DOWNLOAD_ENC:Ljava/lang/String; = "http://home.arthurz.site:3361/iptv/getver-ysc.php"
 
 .field public static final NET_DISC_URL:Ljava/lang/String; = "https://pan.montain.top/direct/azg/net_disk.txt"
 
-.field public static final VERSION_CHECK:Ljava/lang/String; = "https://api.montain.top/app/version/check"
+.field public static final VERSION_CHECK:Ljava/lang/String; = "http://home.arthurz.site:3361/iptv/getver-ysc.php"
 
 
 # instance fields

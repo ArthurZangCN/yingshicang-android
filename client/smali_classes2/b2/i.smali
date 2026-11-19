@@ -76,6 +76,8 @@
     .line 20
     invoke-virtual {p1}, Lcom/github/tvbox/osc/ui/dialog/c1;->show()V
 
+    invoke-static {p1}, Lcom/github/tvbox/osc/ysc/YscC1Attach;->afterShow(Lcom/github/tvbox/osc/ui/dialog/c1;)V
+
     .line 21
     .line 22
     .line 23

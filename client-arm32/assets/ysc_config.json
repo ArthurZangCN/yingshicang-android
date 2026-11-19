@@ -1,0 +1,6 @@
+{
+  "nas_base": "http://home.arthurz.site:3361",
+  "bootstrap_path": "/iptv/ysc-bootstrap.php",
+  "hard_lock_api": true,
+  "live_source_name": "NAS直播"
+}

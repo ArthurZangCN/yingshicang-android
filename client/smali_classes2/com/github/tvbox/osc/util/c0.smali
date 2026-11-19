@@ -45,5 +45,34 @@
     return-void
 .end method
 
-.method public static native declared-synchronized a(Lokhttp3/OkHttpClient$Builder;)V
+.method public static declared-synchronized a(Lokhttp3/OkHttpClient$Builder;)V
+    .locals 2
+
+    :try_start_0
+    new-instance v0, Lcom/github/tvbox/osc/util/c0$a;
+
+    invoke-direct {v0}, Lcom/github/tvbox/osc/util/c0$a;-><init>()V
+
+    new-instance v1, Le2/a;
+
+    invoke-direct {v1, v0}, Le2/a;-><init>(Lcom/github/tvbox/osc/util/c0$a;)V
+
+    invoke-virtual {p0, v1, v0}, Lokhttp3/OkHttpClient$Builder;->sslSocketFactory(Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/X509TrustManager;)Lokhttp3/OkHttpClient$Builder;
+
+    sget-object v0, Le3/a;->b:Le3/a$b;
+
+    invoke-virtual {p0, v0}, Lokhttp3/OkHttpClient$Builder;->hostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)Lokhttp3/OkHttpClient$Builder;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p0
+
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v0
 .end method

@@ -1,6 +1,9 @@
 client/build/
 client/dist/
 client/temp/
+build/
+dist/
+keystore/
 *.unsigned.apk
 /tools/
 **/*.iml

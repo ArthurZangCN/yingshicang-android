@@ -310,63 +310,9 @@
 
     .line 136
     :cond_3
-    invoke-static {v3}, Lc8/d;->b(Landroid/content/Context;)Z
+    # 魔改：去掉「只支持电视端 / 网盘装手机版」提示
+    goto :cond_4
 
-    .line 137
-    .line 138
-    .line 139
-    move-result v0
-
-    .line 140
-    if-eqz v0, :cond_4
-
-    .line 141
-    .line 142
-    const/4 v0, 0x1
-
-    .line 143
-    sput-boolean v0, Lcom/github/tvbox/osc/util/a0;->a:Z
-
-    .line 144
-    .line 145
-    new-instance v0, Lcom/github/tvbox/osc/ui/dialog/u1;
-
-    .line 146
-    .line 147
-    new-instance v7, Lcom/github/tvbox/osc/util/z;
-
-    .line 148
-    .line 149
-    invoke-direct {v7, v3}, Lcom/github/tvbox/osc/util/z;-><init>(Lcom/github/tvbox/osc/ui/activity/HomeActivity;)V
-
-    .line 150
-    .line 151
-    .line 152
-    const-string v6, "\u6211\u77e5\u9053\u4e86"
-
-    .line 153
-    .line 154
-    const-string v4, "\u8be5\u5e94\u7528\u53ea\u652f\u6301\u7535\u89c6\u7aef\uff0c\u5176\u4ed6\u8bbe\u5907\u8bf7\u5b89\u88c5\u5f71\u89c6\u4ed3\u624b\u673a\u7248\u3002"
-
-    .line 155
-    .line 156
-    const-string v5, "\u53d6\u6d88"
-
-    .line 157
-    .line 158
-    move-object v2, v0
-
-    .line 159
-    invoke-direct/range {v2 .. v7}, Lcom/github/tvbox/osc/ui/dialog/u1;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/github/tvbox/osc/ui/dialog/u1$e;)V
-
-    .line 160
-    .line 161
-    .line 162
-    invoke-virtual {v0}, Lcom/github/tvbox/osc/ui/dialog/p;->show()V
-
-    .line 163
-    .line 164
-    .line 165
     :cond_4
     :goto_2
     return-void

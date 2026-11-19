@@ -33,6 +33,25 @@
     .locals 5
 
     .line 1
+    invoke-static {}, Lcom/github/tvbox/osc/ysc/YscLock;->isLocked()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_ysc_block
+
+    iget-object p1, p0, Lcom/github/tvbox/osc/ui/dialog/b;->a:Lcom/github/tvbox/osc/ui/dialog/e;
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/github/tvbox/osc/ysc/YscRefresh;->manualVodRefresh(Landroid/content/Context;)V
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
+
+    return-void
+
+    :cond_ysc_block
     iget-object p1, p0, Lcom/github/tvbox/osc/ui/dialog/b;->a:Lcom/github/tvbox/osc/ui/dialog/e;
 
     .line 2

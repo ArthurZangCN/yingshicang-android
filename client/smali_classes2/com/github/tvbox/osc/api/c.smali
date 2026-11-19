@@ -5180,17 +5180,41 @@
     .line 28
     if-nez p1, :cond_1
 
+    invoke-static {}, Lcom/github/tvbox/osc/ysc/YscLock;->isLocked()Z
+
+    move-result p1
+
+    if-nez p1, :cond_ysc_try
+
     .line 29
     .line 30
     const-string p1, "-1"
 
-    .line 31
-    .line 32
     invoke-interface {p2, p1}, Lcom/github/tvbox/osc/api/c$b;->error(Ljava/lang/String;)V
 
-    .line 33
-    .line 34
-    .line 35
+    return-void
+
+    :cond_ysc_try
+    invoke-static {p3}, Lcom/github/tvbox/osc/ysc/YscBootstrap;->ensureDefaultApiUrl(Landroid/content/Context;)V
+
+    const-string p1, "api_url"
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lcom/movie/libutils/d;->c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/String;->length()I
+
+    move-result p1
+
+    if-nez p1, :cond_1
+
+    const-string p1, "-1"
+
+    invoke-interface {p2, p1}, Lcom/github/tvbox/osc/api/c$b;->error(Ljava/lang/String;)V
+
     return-void
 
     .line 36

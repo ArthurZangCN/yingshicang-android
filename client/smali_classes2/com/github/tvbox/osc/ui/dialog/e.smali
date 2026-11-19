@@ -156,6 +156,40 @@
     .line 69
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    # 源锁定：标题/按钮改成「拉取 aipan 优选」，输入框只读
+    invoke-static {}, Lcom/github/tvbox/osc/ysc/YscLock;->isLocked()Z
+
+    move-result v3
+
+    # 未锁定则跳过定制 UI；锁定时展示拉取按钮
+    if-eqz v3, :ysc_cfg_ui
+
+    const-string v3, "\u66f4\u65b0 aipan \u70b9\u64ad"
+
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    iget-object v3, p0, Lcom/github/tvbox/osc/ui/dialog/e;->a:Landroid/widget/EditText;
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    invoke-virtual {v3, v4}, Landroid/view/View;->setFocusable(Z)V
+
+    instance-of v3, v2, Landroid/widget/TextView;
+
+    if-eqz v3, :ysc_cfg_ui
+
+    move-object v3, v2
+
+    check-cast v3, Landroid/widget/TextView;
+
+    const-string v4, "\u62c9\u53d6\u4f18\u9009\u7ebf\u8def"
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :ysc_cfg_ui
+
     .line 70
     .line 71
     .line 72
